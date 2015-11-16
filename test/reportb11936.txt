@@ -1,0 +1,17 @@
+poj1821--fence 动态规划（九）_highkobe_百度空间
+
+题目大意：有一段长度为n的木板也就是被分成n分，有k个工人他们负责以Si为中心的一块长为L的区域，并且每一个小格每个工人负责的价钱不等。
+求：怎么进行分配使得搜与哦工人正的总钱数最大？
+思路：f[i][iend]=max{f[i-1][ibegin-1]+(iend-ibegin+1)*p}。。接着枚举ibegin和iend即可
+时间复杂度O（n*n*k);
+根据上式可以看出f[i][x+l-1]=f[i-1][x-1]+l*p;                                                   1
+                           f[i][x+l-2]=max{f[i-1][x-2]+l*p,f[i-1][x-1]+(l-1)*p};                         2
+                           f[i][x+l-3]=max{f[i-1][x-3]+l*p,f[i-1][x-2]+(l-1)*p,f[i-1][x-1]+(l-2)*p};           3
+可以看出if（f[i-1][x-2]+l*p>f[i-1][x-1]+(l-1)*p)
+            则f[i-1][x-2]+(l-1)*p>[i-1][x-1]+(l-2)*p
+反之亦然。。。
+也就是说我们只需要算一次即可，不必做太多没用功。。。
+所以变成：f[i][x+l-3]=max{f[i-1][x-3]+l*p,f[i-1][x+l-2]+(l-1)*p},即可。
+于是我们知道之用一位方程即可：
+代码如下：
+#include<stdio.h>#include<string.h>#include<stdlib.h>typedef struct{ int num; int p; int l;}offset ;offset item[105];int f[2*16005];int cmp(const void*a,const void*b){ offset*c=(offset*)a; offset*d=(offset*)b; return c->num-d->num;}int max(int x,int y){ return (x>y)?x:y;}int main(){ int n,m,i,j,k,num,l,p,best,temp,q; while(scanf("%d%d",&n,&m)!=EOF) { memset(f,0,sizeof(f)); for(i=0;i<m;i++) scanf("%d%d%d",&item[i].l,&item[i].p,&item[i].num); qsort(item,m,sizeof(item[0]),cmp); best=0; for(i=0;i<m;i++) { l=item[i].l; num=item[i].num; p=item[i].p; q=l*p; for(j=num+l-1,k=num-1;j>=num;j--,k--) { if(j==num+l-1) temp=f[k]+q; else if(k>=0) temp=max(f[k]+q,temp-p); else temp=temp-p; f[j]=max(temp,f[j]); if(f[j]>f[best]) best=j; } for(j=best+1;j<=n;j++) f[j]=f[best]; } printf("%d\n",f[n]); } return 0;}

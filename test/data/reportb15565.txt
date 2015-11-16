@@ -1,0 +1,128 @@
+PKU 1141 Brackets Sequence - Leyni的日志 - 网易博客
+
+类型：动态规划
+
+问题：括号匹配问题。给出一个由括号组成字符串，加最少的括号使之匹配。
+
+思路：
+
+设f[i][j]为从i到j这段字串达到匹配所需最少括号数。
+
+初始状态：f[i][i] = 1;
+
+状态转移：
+
+f[i][j] = min{f[i + 1][j - 1 | s[i]与s[j]匹配]，f[i + 1][j] | s[i]为左括号，f[i][j - 1] | s[i]为右括号，min{f[i][k]+f[k][j]}}
+
+代码（16MS  280K  C++）：
+
+#include <iostream>
+
+#include <stdlib.h>
+
+#include <string.h>
+
+using namespace std;
+
+const int MAX = 102;
+
+char s[MAX];
+
+int f[MAX][MAX], path[MAX][MAX], n;
+
+void print(int l, int r){
+
+    if (l > r) return;
+
+    if (l == r){
+
+        if (s[l] == '(' || s[l] == ')') cout<<"()"; else cout<<"[]";
+
+    }else if (path[l][r] == -1){
+
+        cout<<s[l]; print(l + 1, r - 1); cout<<s[r];
+
+    }else if (path[l][r] == -2){
+
+        cout<<s[l]; print(l + 1, r);
+
+        if (s[l] == '(') cout<<")"; else cout<<"]";
+
+    }else if (path[l][r] == -3){
+
+        if (s[r] == ')') cout<<"("; else cout<<"[";    
+
+        print(l, r - 1); cout<<s[r];
+
+    }else{
+
+        print(l,path[l][r]);
+
+        print(path[l][r] + 1, r);
+
+    }
+
+}
+
+int main(){
+
+    while(gets(s) != NULL){
+
+        n = strlen(s);        
+
+        memset(f, 0, sizeof(f));
+
+        for (int i = 0; i <= n; i++) f[i][i] = 1;
+
+        for (int k = 1; k < n; k++)
+
+        for (int i = 0; i < n - k; i++){
+
+            int j = i + k; f[i][j] = INT_MAX;
+
+            if (s[i] == '(' && s[j] == ')' || s[i] == '[' && s[j] == ']')
+
+            if (f[i + 1][j - 1] < f[i][j]){
+
+                f[i][j] = f[i + 1][j - 1];
+
+                path[i][j] = -1;
+
+            }
+
+            if (s[i] == '(' || s[i] == '[') if (f[i + 1][j] + 1 < f[i][j]){
+
+                f[i][j] = f[i + 1][j] + 1;
+
+                path[i][j] = -2;
+
+            }
+
+            if (s[j] == ')' || s[j] == ']') if (f[i][j - 1] + 1 < f[i][j]){
+
+                f[i][j] = f[i][j - 1] + 1;
+
+                path[i][j] = -3;
+
+            }
+
+            for (int l = i; l < j; l++) if (f[i][l] + f[l + 1][j] < f[i][j]){
+
+                f[i][j] = f[i][l] + f[l + 1][j];
+
+                path[i][j] = l;
+
+            }
+
+        }
+
+        print(0, n - 1);
+
+        cout<<endl;
+
+    }
+
+    return 0;
+
+}
+

@@ -1,0 +1,161 @@
+poj1141 - mengxm - 博客园
+
+http://poj.org/problem?id=1141
+黑书动态规划第一道题目，书中只给了求最小添括号数的方法，输出形式有自己想，有两种解决方法，一个是记忆化搜索，一个是递推，我采用的是前者，不过大多数代码采用的是后者，输出形式就我所见也有两种，我的是每一个节点都记录自己的括号字符串，另一种是用数字代表某种意义，然后递归输出，先给我的代码，如果你有错误不知道在哪里，是一下这组数据【】【】
+ 
+ 
+  1 #include <stdio.h>
+ 2 #include <string.h>
+ 3 #include <iostream>
+ 4 #include <stdlib.h>
+ 5 using namespace std;
+ 6 char str[110];
+ 7 struct node
+ 8 {
+ 9     char str[210];
+10     int num,len;
+11 }map[110][110];
+12 void ini()//初始化
+13 {
+14     int k=strlen(str);
+15     for(int i=0;i<=k;i++)
+16         for(int j=0;j<=k;j++)
+17             map[i][j].num=-1;
+18 }
+19 void cpy(char*_str,char*str1,int&begin)//字符串复制函数
+20 {
+21     while(*_str!='\0')
+22     {
+23         str1[begin++]=*_str;
+24         _str++;
+25     }
+26 }
+27 void dps(int i,int j)
+28 {
+29     if(i==j)//当i=j是就只有一个单括号所以必须加上一个才是规则的
+30     {
+31         map[i][j].num=1;
+32         map[i][j].len=2;
+33         if(str[i]=='('||str[i]==')')
+34             map[i][j].str[0]='(',map[i][j].str[1]=')',map[i][j].str[2]='\0';
+35         if(str[i]=='['||str[i]==']')
+36             map[i][j].str[0]='[',map[i][j].str[1]=']',map[i][j].str[2]='\0';
+37     }
+38     else 
+39     {
+40         if((str[i]=='('&&str[j]==')')||(str[i]=='['&&str[j]==']'))//但两边的括号都存在时，求中间的括号字符串的添括号数最小值
+41         {
+42             map[i][j].len=0;
+43             
+44             map[i][j].str[map[i][j].len++]=str[i];
+45             if(i+1<=j-1)
+46             {
+47                 dps(i+1,j-1);
+48                 cpy(map[i+1][j-1].str,map[i][j].str,map[i][j].len);
+49                 map[i][j].num=map[i+1][j-1].num;
+50             }
+51             else
+52                 map[i][j].num=0;
+53             map[i][j].str[map[i][j].len++]=str[j];
+54             map[i][j].str[map[i][j].len++]='\0';
+55             
+56         }
+57         if(i<j)//当前者成立时，不要忽略这一步判断，否则就是这组数据出错【】【】
+58         {
+59             for(int k=i;k<j;k++)
+60             {
+61                 if(map[i][k].num==-1)
+62                     dps(i,k);
+63                 if(map[k+1][j].num==-1)
+64                     dps(k+1,j);
+65                 if(map[i][j].num==-1||(map[i][j].num>map[i][k].num+map[k+1][j].num))
+66                 {
+67                     map[i][j].len=0;
+68                     map[i][j].num=map[i][k].num+map[k+1][j].num;
+69                     cpy(map[i][k].str,map[i][j].str,map[i][j].len);
+70                     cpy(map[k+1][j].str,map[i][j].str,map[i][j].len);
+71                     map[i][j].str[map[i][j].len++]='\0';
+72                 }
+73             }
+74         }
+75     }
+76 }
+77 int main()
+78 {
+79     gets(str);
+80     if(strlen(str)) //判断有没有字符串
+81     {
+82         ini();
+83         dps(0,strlen(str)-1);
+84         printf("%s\n",map[0][strlen(str)-1].str);
+85     }
+86     else
+87         printf("\n");
+88     return 0;
+89 } 
+ 
+
+　　接下来给出另一种代码（递推形式，递归输出）
+ 
+ 
+  1 #include<iostream>
+ 2 #include<string>
+ 3 #include<fstream>
+ 4 using namespace std;
+ 5 string s;
+ 6 int d[101][101], value[101][101], length;
+ 7 void fun()
+ 8 {
+ 9     for (int p = 0; p < length; p++)d[p][p] = 1;
+10     for (int tem = 1; tem < length; tem++)
+11         for (int i = 0; i < length - tem; i++)
+12         {
+13             int j = tem + i;
+14             d[i][j] = 99999;
+15             if ((s[i] == '(' && s[j] == ')') || (s[i] == '[' && s[j] == ']'))//1@
+16             {
+17                 d[i][j] = d[i + 1][j - 1];
+18                 value[i][j] = -1;
+19             }
+20             for (int k = i; k < j; k++)//此处需要注意，即便1@处成立，也不能省略
+21                 if (d[i][j] > d[i][k] + d[k + 1][j])
+22                 {
+23                     d[i][j] = d[i][k] + d[k + 1][j];
+24                     value[i][j] = k;
+25                 }
+26         }
+27         return;
+28 }
+29 void print(int i, int j)
+30 {
+31     if (i > j)return;
+32     else if (i == j)
+33     {
+34         if (s[i] == '(' || s[i] == ')')    printf("()");
+35         if (s[i] == '[' || s[i] == ']')printf("[]");
+36     }else if (value[i][j] == -1)
+37     {
+38         printf("%c", s[i]);
+39         print(i + 1, j - 1);
+40         printf("%c", s[j]);
+41     }else {
+42         print(i, value[i][j]);
+43         print(value[i][j] + 1, j);
+44     }
+45     return;
+46 }
+47 int main()
+48 {
+49     while (getline(cin, s))
+50     {
+51         memset(d, 0, sizeof(d));
+52         length = (int)s.length();
+53         fun();
+54         print(0, length - 1);
+55         printf("\n");
+56     }
+57     return 0;
+58 } 
+ 
+
+　　

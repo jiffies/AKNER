@@ -1,0 +1,128 @@
+The Mailboxes Manufacturers Problem  pku 2904_DancingCode_百度空间
+
+162.105.81.212/JudgeOnline/problem
+
+/*
+
+算法：dp 递推
+
+ 1.d[1][1][m]=1+2+..+m   =sum[m]
+
+   如果第1次用 5个，如果炸坏了，那么结果可能只用 i个，但是
+
+   不能再试验了 ,所以只能1个个试验 
+
+   d[1][n][m]=n+n+1+n+2+..+m=sum[m]-sum[n-1], n<=m<=100
+
+ 2.d[k][n][n]=n;d[k][n][n+1]=n+n+1;
+
+   d[k][n][m]= min{max(s+d[k-1][n][s-1],s+d[k][s+1][m]),n<s<m}
+
+*/
+
+#include<iostream>
+
+#include<cmath>
+
+using namespace std;
+
+int dp[11][150][150],s,i,j,k;
+
+int x;
+
+int n,m;
+
+int c,g;
+
+int Sum(int i,int j)
+
+{
+
+    int ret=0;
+
+    for (int k=i;k<=j;k++)
+
+    {
+
+        ret+=k;
+
+    }
+
+    return ret;
+
+}
+
+ int main()
+
+{ 
+
+ memset(dp,0,sizeof(dp));
+
+ for(i=1;i<=100;i++)
+
+ { 
+
+     for(j=i;j<=100;j++)
+
+     {
+
+       dp[1][i][j]=Sum(i,j);                
+
+     }
+
+ }
+
+ for(k=2;k<=10;k++)
+
+ {
+
+   for(m=100;m>0;m--)
+
+    {
+
+    for(n=m;n>=1;n--)                 
+
+      {
+
+       if(m==n) { dp[k][n][m]=m;continue;}
+
+       if(m-1==n) {dp[k][n][m]=m+n;continue;}
+
+       dp[k][n][m]=1000000;
+
+       int t;
+
+       for(int s=n+1;s<m;s++)
+
+       {
+
+        t=max(s+dp[k-1][n][s-1],s+dp[k][s+1][m]);
+
+        dp[k][n][m]=min(dp[k][n][m],t);                     
+
+       }                                 
+
+     }
+
+ }                  
+
+ } 
+
+ int z;
+
+   cin>>g;   
+
+   while(g--)
+
+   {
+
+    cin>>c>>z;
+
+    cout<<dp[c][1][z]<<endl;                                       
+
+   }              
+
+   return 0;             
+
+}
+

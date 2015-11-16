@@ -1,0 +1,327 @@
+Brackets Sequence--poj--1141 - android开发实例 - 博客园
+
+Brackets Sequence
+ 
+ 
+  
+   
+    
+     Time Limit: 1000MS
+  
+     
+     Memory Limit: 65536K
+  
+    
+    
+     Total Submissions: 11854
+  
+     
+     Accepted: 3164
+  
+     
+     Special Judge
+  
+    
+   
+  
+ 
+Description
+ 
+Let us define a regular brackets sequence in the following way: 
+1. Empty sequence is a regular sequence. 
+2. If S is a regular sequence, then (S) and [S] are both regular sequences. 
+3. If A and B are regular sequences, then AB is a regular sequence. 
+For example, all of the following sequences of characters are regular brackets sequences: 
+(), [], (()), ([]), ()[], ()[()] 
+And all of the following character sequences are not: 
+(, [, ), )(, ([)], ([(] 
+Some sequence of characters '(', ')', '[', and ']' is given. You are to find the shortest possible regular brackets sequence, that contains the given character sequence as a subsequence. Here, a string a1 a2 ... an is called a subsequence of the string b1 b2 ... bm, if there exist such indices 1 = i1 < i2 < ... < in = m, that aj = bij for all 1 = j = n.
+ 
+Input
+ 
+The input file contains at most 100 brackets (characters '(', ')', '[' and ']') that are situated on a single line without any other characters among them.
+ 
+Output
+ 
+Write to the output file a single line that contains some regular brackets sequence that has the minimal possible length and contains the given sequence as a subsequence.
+ 
+Sample Input
+ 
+([(]
+ 
+Sample Output
+ 
+()[()]
+ 
+Source
+ 
+Northeastern Europe 2001
+ 
+先读懂题意：
+ 
+很简单，就是给出一个序列，要求添加最少的符号使其变成题目要求的规则序列。
+ 
+解题思路：
+先用递归的方法来分析问题，设输入序列SiSi+1...Sj最少需要添加d[i,j]个括号，根据不同情况，可以将问题分解为以下子问题：
+ 
+1）S形如(S’)或者[S’]
+ 
+只需要把S’变成规则的序列，则S就是规则的了；
+ 
+2）S形如(S’
+ 
+先把S’变成规则序列，接着在最后添加”)”，则S就变成规则序列了；
+ 
+3）S形如S’)或者[S’或者S’]
+ 
+和上面的情况类似解法
+ 
+4）只要序列S的长度大于1，都可以把S分成两部分：Si...Sk和Sk+1...Sj，然后分别将子序列变成规则序列，则拼接在一起的S就是规则序列了。
+ 
+下面给出递归的伪代码：
+ 
+function Bracket(i, j : Integer);     //i和j是本序列在原始输入序列中的开始和结束下标
+ 
+begin
+ 
+         if i>j then return 0
+ 
+         else if i=j then return 1;
+ 
+         else begin
+ 
+                   Answer := MAX;
+ 
+                   if s[i]s[j]='()' or s[i]s[j]='[]' then //对应上面情形1
+ 
+                            Answer := min(Answer, Bracket(i+1, j-1));
+ 
+                   if s[i]='(' or s[i]='[' then        //对应上面情形2/3
+ 
+                            Answer := min(Answer, Bracket(i+1, j) + 1); //加1表示在右边加了')'或']'
+ 
+                   if s[j]=')' or s[j]=']' then        //同上2/3
+ 
+                            Answer := min(Answer, Bracker(i, j-1)+1);
+ 
+                   For k:=i to j-1 do   //对应上面情形4
+ 
+                            Answer := min(Answer, Bracket(i, k) + Bracket(k+1, j));
+ 
+         end;
+ 
+end;
+ 
+上面递归的算法效率很低（递归进行了很多重复计算），时间复杂度是指数级的，因此我们必须在递归的基础上进行改进，即采用动态规划。
+ 
+一、记忆化搜索
+ 
+在每次调用Bracket函数之前，先检查之前是否已经计算过这个值了，如果是则直接从之前保存的表中找出：
+ 
+function Bracket(i , j : Integer);
+ 
+begin
+ 
+         if Calculated[i, j] then return d[i, j];
+ 
+         //此处插入上面的递归代码
+ 
+         d[i, j] := Answer
+ 
+         Calculated[i, j] := true;
+ 
+end;
+ 
+二、自底向上的递推法
+ 
+由于计算d[i, j]之前需要知道d[i+1, j]，d[i, j-1]和d[i+1, j-1]的值，所以按照j-i递增的顺序计算出d[i, j]：
+ 
+for i:=1 to n do d[i, i-1]:=0; //置初始值
+ 
+for i:=1 to n do d[i, i]:=1;
+ 
+for p:=1 to n-1 do
+ 
+         for i:=1 to n-p do
+ 
+         begin
+ 
+                   j:=i+p
+ 
+                   d[i, j]:=MAX;
+ 
+                   if s[i]s[j]='()' or s[i]s[j]='[]' then
+ 
+                            d[i, j] := min(d[i, j], d[i+1, j-1]);
+ 
+                   if s[i]='(' or s[i]='[' then
+ 
+                            d[i, j] :=min(d[i, j], d[i+1, j] + 1);
+ 
+                   if s[j]=')' or s[j]=']' then
+ 
+                            d[i, j] := min(d[i, j], d[i, j-1]+1);
+ 
+                   For k:=i to j-1 do
+ 
+                            d[i, j] := min(d[i, j], d[i, k] + d[k+1, j]);
+ 
+         end;
+ 
+AC代码如下：
+ 
+#include <iostream>
+ 
+#include <string>
+ 
+const int MAX = 1000;
+ 
+int flag[MAX][MAX]; //in[i]到in[j]间字符数
+ 
+int mem[MAX][MAX]; //mem[i][j]记录in[i]和in[j]之间的序列是否需要分成两部分
+ 
+std::string in;//存储输入的字符串
+ 
+int min(int x, int y)
+ 
+{
+ 
+         return (x>y ? y : x);        
+ 
+}
+ 
+//打印出结果字符
+ 
+void find(int xx, int yy)
+ 
+{
+ 
+         if(xx > yy)
+ 
+                   return;
+ 
+         if(mem[xx][yy] == -1) //当前序列不需要分成两部分
+ 
+         {
+ 
+                   if(xx == yy)//当前序列只剩一个字符
+ 
+                   {
+ 
+                            if(in[xx] =='(' || in[xx] == ')')
+ 
+                                     std::cout<<"()";
+ 
+                            else if(in[xx]=='[' || in[xx]== ']')
+ 
+                                     std::cout<<"[]";    
+ 
+                   }        
+ 
+                   else  //当前序列不止一个字符
+ 
+                   {
+ 
+                            std::cout<<in[xx];        //输出当前序列第一个字符
+ 
+                            find(xx+1, yy-1);     //对中间的部分递归
+ 
+                            std::cout<<in[yy]; //输出当前序列最后一个字符
+ 
+                   }
+ 
+         } 
+ 
+         else  //当前序列需要分成两部分
+ 
+         {
+ 
+                   int tmp = mem[xx][yy];       //分割的下标
+ 
+                   find(xx, tmp);
+ 
+                   find(tmp+1, yy); 
+ 
+         }        
+ 
+         return;
+ 
+}
+ 
+int main()
+ 
+{
+ 
+         std::cin>>in;
+ 
+         int len = in.length();
+ 
+         memset(flag, 0, sizeof(flag));
+ 
+         memset(mem, -1, sizeof(mem));
+ 
+         for(int k=0; k<len; k++)
+ 
+         {
+ 
+                   for(int i=0, j=k; j<len; i++, j++)
+ 
+                   {
+ 
+                            if(i == j)
+ 
+                                     flag[i][j] = 1;  //记录in[i]到in[j]中间字符的个数
+ 
+                            else
+ 
+                            {
+ 
+                                     int tmp = 10000000;
+ 
+                                     if((in[i]=='(' && in[j]==')') ||
+ 
+                                               (in[i]=='[' && in[j]==']'))
+ 
+                                     {
+ 
+                                               tmp = min(tmp, flag[i+1][j-1]);   
+ 
+                                     }
+ 
+                                     //只要当前序列S的长度大于1，都可以把S分成两部分：Si...Sk和Sk+1(下标)...Sj
+ 
+                                     //然后分别将子序列变成规则序列，则拼接在一起的就是规则序列了
+ 
+                                     for(int t=i; t<j; t++)
+ 
+                                     {
+ 
+                                               if(tmp>flag[i][t] + flag[t+1][j])//找出字符数最小值
+ 
+                                               {
+ 
+                                                        tmp = flag[i][t] + flag[t+1][j];
+ 
+                                                        mem[i][j] = t;         //记录分割的下标t 
+ 
+                                               }
+ 
+                                     }
+ 
+                                     flag[i][j] = tmp;//in[i]到in[j]间字符数为tmp 
+ 
+                            }        
+ 
+                   }        
+ 
+         }
+ 
+         find(0, len-1);
+ 
+         std::cout<<std::endl;
+ 
+         system("pause");
+ 
+         return 0; 
+ 
+} 
