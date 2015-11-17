@@ -22,13 +22,15 @@ def trans_txt(filename):
     annmap = extract_ann(filename.split('.')[0]+'.ann')
     with file(filename) as f:
         document = f.read()
-        document = document.replace('\r\n','\n')
-        document = document.replace('\t','    ')
+        #document = document.replace('\r\n','\n')
+        #document = document.replace('\t','    ')
         words = pseg.cut(document)
     result = []
     last_tag = None
     last_word = None
     for word,flag in words:
+        if word == '\t':
+            word = ' '
         if annmap.has_key(curr_pos):
             nertag = 'B-'+annmap[curr_pos][1]
             last_tag = (curr_pos,annmap[curr_pos][0],annmap[curr_pos][1])
@@ -52,12 +54,12 @@ def trans_txt(filename):
 
 
 if __name__ == '__main__':
-    #print trans_txt('test/reportb11936.txt')
-    result = []
-    for filename in os.listdir('test/data'):
-        if filename.endswith('.txt'):
-            result.append(trans_txt(os.path.join('test/data',filename)))
-    final = '\n'.join(result).encode('utf8')
-    with file('train','w') as f:
-        f.write(final)
+    print trans_txt('test/reportb11938.txt')
+    #result = []
+    #for filename in os.listdir('test/data'):
+        #if filename.endswith('.txt'):
+            #result.append(trans_txt(os.path.join('test/data',filename)))
+    #final = '\n'.join(result).encode('utf8')
+    #with file('train','w') as f:
+        #f.write(final)
     
