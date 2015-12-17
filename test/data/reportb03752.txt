@@ -1,0 +1,20 @@
+POJ：2713  肿瘤面积_小_船__百度空间
+
+肿瘤面积
+Time Limit:1000MS Memory Limit:65536K
+Total Submit:445 Accepted:189
+Description 
+在一个正方形的灰度图片上，肿瘤是一块矩形的区域，肿瘤的边缘所在的像素点在图片中用0表示。其它肿瘤内和肿瘤外的点都用255表示。现在要求你编写一个程序，计算肿瘤内部的像素点的个数（不包括肿瘤边缘上的点）。已知肿瘤的边缘平行于图像的边缘。
+Input 
+只有一个测试样例。第一行有一个整数n，表示正方形图像的边长。其后n行每行有n个整数，取值为0或255。整数之间用一个空格隔开。已知n不大于100。
+Output 
+输出一行，该行包含一个整数，为要求的肿瘤内的像素点的个数。
+Sample Input 
+Sample Output 
+Source 
+POJ：2713
+C语言代码：
+1
+
+Sample Result: 
+5255 255 255 255 255255 0 0 0 255255 0 255 0 255255 0 0 0 255255 255 255 255 255 #include <stdio.h>int main(){ int a[100][100],i,j,t; int m,n,x,y,sum=0,sum1=0; scanf("%d",&t); for(i=0;i<t;i++) { for(j=0;j<t;j++) scanf("%d",&a[i][j]); } for(i=0;i<t;i++) { for(j=0;j<t;j++) if(a[i][j]==0) {n=i;m=j;} } for(x=n,y=m;x>=0;x--) { if(a[x][y]==0) sum=sum+1;/计算出宽/ else break; } for(x=n,y=m;y>=0;y--) { if(a[x][y]==0) sum1=sum1+1;/计算出长/ else break; } printf("%d\n",sum*sum1-2*(sum+sum1-2)); return 0;}

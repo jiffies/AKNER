@@ -1,0 +1,75 @@
+poj1426 - Find The Multiple - 贰圣 - 博客频道 - CSDN.NET
+
+                                      想看更多的解题报告: http://blog.csdn.net/wangjian8006/article/details/7870410
+                                      转载请注明出处：http://blog.csdn.net/wangjian8006
+题目大意：
+              对于一个整数，问大于等于这个整数的一个整数能够被其整除的整数，且这个整数只能包括0和1
+解题思路：
+              一位一位的确定，比如求被6整除的不为零整数，且整数的每位上是0或1
+               从个位，十位，百位。。。一直确定上去，即每次扩展都在末尾加上0或者1
+               首先初始为1，因为倍数的最高位必为1
+              当倍数很大的时候我们可以利用同余模定理对得到的余数进行优化，字符串可以保存起来，而倍数可以对n取模。
+                             （a*b）%n = （a%n *b%n）%n
+                            （a+b）%n = （a%n +b%n）%n
+               值得注意的是，如果n是偶数,则不用进行计算，直接=ans[i/2]+"0";
+               详解：http://archive.cnblogs.com/a/2122513/
+代码：
+ 
+#include <iostream>
+#include <string>
+#include <queue>
+using namespace std;
+typedef struct{
+	int mod;
+	string ans;
+}Node;
+Node node[210],temp,now;
+bool dis[210];
+void bfs(int i){
+	int x,y;
+	queue <Node>q;
+	memset(dis,false,sizeof(dis));
+	dis[1]=true;
+	temp.ans="1";
+	temp.mod=1;
+	q.push(temp);
+	while(!q.empty()){
+		now=temp=q.front();
+		q.pop();
+		x=(temp.mod*10+1)%i;
+		y=(temp.mod*10)%i;
+		if(!x){
+			node[i].ans=temp.ans+"1";
+			return ;
+		}
+		if(!y){
+			node[i].ans=temp.ans+"0";
+			return ;
+		}
+		if(!dis[x]){
+			temp.ans=temp.ans+"1";
+			temp.mod=x;
+			q.push(temp);
+			dis[x]=true;
+		}
+		if(!dis[y]){
+			now.ans=now.ans+"0";
+			now.mod=y;
+			q.push(now);
+			dis[y]=true;
+		}
+	}
+}
+int main(){
+	int i,n;
+	node[1].ans="1";
+	for(i=2;i<=200;i++){
+		if(i%2==0) node[i].ans=node[i/2].ans+"0";
+		else bfs(i);
+	}
+	while(scanf("%d",&n) && n){
+		cout<<node[n].ans<<endl;
+	}
+	return 0;
+} 
+

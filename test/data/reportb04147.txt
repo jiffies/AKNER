@@ -1,0 +1,163 @@
+poj 2754 Similarity of necklaces 2 转换成多重背包，单调队列优化/ 二进制优化 - yefeng1627 - 博客园
+
+　　贴个官方解题报告
+ 
+ 
+ Similarity of necklaces 2
+这个问题是一个012背包问题。我们知道01背包只要逆向线性检索，无限背包只要正向检索。012背包就是说，每个物品有一个数量上限。这个问题可以用log方法，也存在线性方法，需要维护一个递增/递减序列。
+我们先把所有的Table都放成下限，接下来我们可以算出它距离总和为0还需要增加多少。对于1<=i<=M，它可以看成这样一个物品：体积为Multi[i]，费用为Pairs[i]，数量为Up[i]-Low[i]。然后就得到一个012背包问题了。
+复杂度约为：O(M*背包大小)。其中背包大小不超过M*20*25=200*20*25=100000。 
+ 
+
+　　单调队列优化解法：
+　　　　多重背包状态方程：
+　　　　　　　　
+　　　　令  转换下得到：
+　　　　　　　　
+　　　　因为 ， 当 j 确定时， 则x的取值范围为，  
+　　　　也就是说    ，  也可看作为 
+　　　　则可得
+　　　　　　　　    ，其中 j <= k
+　　　　那么意味着，对于确定的 j， 求 Xk 时候，我们只需要对  维护一个单调队列即可。
+　　　　对于任意的 Xi < Xj, 若 Xb 优于 Xa,则必将满足如下要求， 
+　　　　
+　　　　这种写法 AC时间是 1500ms，有点慢　　　　
+ 
+
+ 
+ 
+ View Code  
+  
+  #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<algorithm>
+using namespace std;
+const int maxn = 210;
+const int N = 100000+10;
+const int inf = -2139062144;
+int dp[2][N];
+int P[maxn], M[maxn], Low[maxn], Up[maxn];
+int n, m, Q[N], cnt[maxn], val;
+int max(int a,int b) {return a>b?a:b;}
+int main()
+{ 
+    while( scanf("%d", &n) != EOF)
+    {
+        m = 0; val = 0;    
+        for(int i = 1; i <= n; i++)
+        {    
+            scanf("%d%d%d%d",P+i,M+i,Low+i,Up+i);
+            m += Low[i]*M[i];
+            val += Low[i]*P[i];    
+            cnt[i] = Up[i]-Low[i];    
+        }    
+        memset(dp, 0x80, sizeof(dp));
+        dp[0][0] = 0;    
+        m = -m;
+        int cur = 0;
+        for(int i = 1; i <= n; i++)
+        {
+            int nxt = cur^1;
+            // 枚举剩余系j    
+            for(int j = 0; j < M[i]; j++)
+            {
+                //单调队列队首指针qh,队尾指针qe, 当前最大长度len    
+                int qh = 0, qe = -1, len = cnt[i]*M[i];
+                for(int k = j; k <= m; k += M[i] )
+                {
+                    if( dp[cur][k] != -inf )
+                    {
+                        while( (qh <= qe) && (dp[cur][ Q[qe] ]+(k-Q[qe])*P[i]/M[i] <= dp[cur][k] ) )
+                            qe--;
+                        Q[++qe] = k;    
+                        while( (qh <= qe) && (k-Q[qh]>len) ) qh++;
+                        if(qh <= qe)    dp[nxt][k] = dp[cur][ Q[qh] ] + (k-Q[qh])*P[i]/M[i];
+                        else    dp[nxt][k] = -inf;    
+                    }
+                }
+            }
+            cur = nxt;    
+        }
+        printf("%d\n", dp[cur][m]+val );    
+    }
+    return 0;
+} 
+  
+ 
+
+　　　　
+　　　　将其转换成 01背包：
+　　　　　　套用 背包九讲 的二进制写法就可以了，一样将Table取下限，转换出一个物品数量。
+　　　　　　模板是处理第i种物品时， 若其 体积*数量 >= 总背包大小， 则当作完全背包处理，
+　　　　　　否则 将其按照 二进制表示的形式，当作一次 01背包来处理。代码400MS左右，比上面写法快
+ 
+
+ 
+ 
+ View Code  
+  
+  #include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+using namespace std;
+const int inf = 0x80808080;
+const int N = 100010;
+int n, V, val;
+int P[210], M[210], cnt[210];
+int dp[N];
+int max(int a,int b)
+{ return a>b?a:b; }
+void ZeroOnePack( int cost, int weight )
+{
+    for(int v = V; v >= cost; v-- )    
+        dp[v] = max( dp[v], dp[v-cost] + weight );
+}
+void CompletePack( int cost, int weight )
+{
+    for(int v = cost; v <= V; v++ )
+        dp[v] = max( dp[v], dp[v-cost] + weight );
+}
+void MultiplePack( int cost, int weight, int num )
+{
+    if( cost*num >= V )
+    {    
+        CompletePack( cost, weight );
+        return ;
+    }
+    int k = 1;
+    while( k <= num )
+    {
+        ZeroOnePack( k*cost, k*weight );
+        num = num-k;
+        k <<= 1;
+    }
+    ZeroOnePack( num*cost, num*weight );
+}
+int main()
+{
+    while( scanf("%d",&n) != EOF)
+    {
+        V = 0; val = 0;
+        int up, low;
+        for(int i = 1; i <= n; i++)
+        {
+            scanf("%d%d%d%d",P+i,M+i,&low,&up);
+            V += low*M[i];
+            val += low*P[i];
+            cnt[i] = up-low;    
+        }
+        V = -V;
+        memset( dp, 0x80, sizeof(dp));
+        dp[0] = 0;
+        for(int i = 1; i <= n; i++)
+            MultiplePack( M[i], P[i], cnt[i] );    
+        printf("%d\n", dp[V]+val );
+    }    
+    return 0;
+} 
+  
+ 
+
+　　　　
+　　　　

@@ -1,0 +1,111 @@
+pku 1166 The Clocks - skywalker_sun的专栏 - 博客频道 - CSDN.NET
+
+在最优解中，每种转法最多只能转3次，因为当一种转法转到第4次时针就恢复了原来的样子，相当于没转；时针最多只有4^9个状态，之前是用bfs做的，但是这样要开很大的空间记录路径，后来看了网上牛人们的分析，其实完全可以暴力枚举来做的；
+ps：请未满18岁的同学在父母的指导下观看此代码（哈哈，代码很暴力）
+#include <cstdio>
+#include <string>
+#include <vector>
+using namespace std;
+void add(int &t, int bit, int val)
+{
+	int loc = 1;
+	bit = 9-bit;
+	for (int i = 0; i < bit; ++i)
+		loc *= 10;
+	t += loc * val;
+	if (t/loc%10 > 3)
+	{
+		t -= loc*4;
+	}
+}
+// 用opstr[]保存操作字符串 
+string opstr[] = {"", "ABDE", "ABC", "BCEF", "ADG" , "BDEFH", "CFI", "DEGH", "GHI", "EFHI"};
+int adj(int t, const string &str) // 返回t进过操作opstr[i]的结果 
+{
+	for (size_t i = 0; i < str.size(); ++i)
+	{
+		add(t, str[i] - 'A' + 1, 1);
+	}
+	return t;
+}
+void push(vector<int> &v, int val, int times)
+{
+	for (int i = 0; i < times; ++i)
+	{
+		v.push_back(val);
+	}
+}
+vector<int> vec;
+void violence(int org)
+{
+	int least = 0x7FFFFFFF;
+	for (int a = 0; a < 4; ++a)	{
+		for (int b = 0; b < 4; ++b)	{
+			for (int c = 0; c < 4; ++c)	{
+				for (int d = 0; d < 4; ++d)	{
+					for(int e = 0; e < 4; ++e) {
+						for (int f = 0; f < 4; ++f) {
+							for (int g = 0; g < 4; ++g) {
+								for (int h = 0; h < 4; ++h) {
+									for (int i = 0; i < 4; ++i) {
+										if (org==000000000)
+										{
+											int sum = a+b+c+d+e+f+g+h+i;
+											if (sum < least)
+											{
+												least = sum;
+												vec.clear();
+												push(vec, 1, a);
+												push(vec, 2, b);
+												push(vec, 3, c);
+												push(vec, 4, d);
+												push(vec, 5, e);
+												push(vec, 6, f);
+												push(vec, 7, g);
+												push(vec, 8, h);
+												push(vec, 9, i);
+												// 因为push的顺序是从高位到低位的，所以这样得到的刚好是最先的顺序 
+											}
+										}
+										org = adj(org, opstr[9]);
+									}
+									org = adj(org, opstr[8]);
+								}
+								org = adj(org, opstr[7]);
+							}
+							org = adj(org, opstr[6]);
+						}
+						org = adj(org, opstr[5]);
+					}
+					org = adj(org, opstr[4]);
+				}
+				org = adj(org, opstr[3]);
+			}
+			org = adj(org, opstr[2]);
+		}
+		org = adj(org, opstr[1]);
+	}
+}
+int main()
+{
+	int temp;
+	int org = 0;
+	for (int i = 1; i <= 9; ++i)
+	{
+		scanf("%d", &temp);
+		add(org, i, temp);
+        // 之前是用bfs作的，所以被迫把状态压缩到一个int里面保存，这里不用这样，但是懒得改了 
+	}
+	violence(org);
+	bool first = false;
+	for (size_t i = 0; i < vec.size(); ++i)
+	{
+		if(first) printf(" ");
+		first = 1;
+		printf("%d", vec[i]);
+	}
+	printf("/n");
+	system("pause");
+	return 0;
+}
+哈哈！9层循环，暴爽！

@@ -1,0 +1,811 @@
+POJ3249	eng	N	Y	O	B-OJ
+（	x	N	N	O	O
+Test	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+Job	eng	N	N	O	O
+）	x	N	N	O	O
+
+-	x	N	N	O	O
+
+Oi	eng	N	N	O	O
+不	c	N	N	O	O
+回头	v	N	N	O	O
+，	x	N	N	O	O
+菜鸟	n	N	N	O	O
+变大牛	nz	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+拓扑	v	Y	N	O	B-KNOWLEDGE
+排序	n	Y	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+打擂台	v	N	N	O	O
+
+找	v	N	N	O	O
+一个	m	N	N	O	O
+入度	ns	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+的	uj	N	N	O	O
+结点	n	Y	N	O	O
+进行	v	N	N	O	O
+DFS	eng	N	N	O	B-KNOWLEDGE
+，	x	N	N	O	O
+直到	v	N	N	O	O
+找到	v	N	N	O	O
+一个	m	N	N	O	O
+出度	n	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+的	uj	N	N	O	O
+结点	n	Y	N	O	O
+结束	v	N	N	O	O
+并	c	N	N	O	O
+更新	d	N	N	O	O
+ans	eng	N	N	O	O
+。	x	N	N	O	O
+
+数据结构	n	N	N	O	O
+使用	v	N	N	O	O
+边	d	N	N	O	O
+表	v	N	N	O	O
+。	x	N	N	O	O
+
+program	eng	N	N	O	O
+
+POJ3249	eng	N	Y	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+100001	m	N	N	O	O
+;	x	N	N	O	O
+
+maxm	eng	N	N	O	O
+=	x	N	N	O	O
+1000001	m	N	N	O	O
+;	x	N	N	O	O
+
+type	eng	N	N	O	O
+
+gta	eng	N	N	O	O
+=	x	N	N	O	O
+record	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+var	eng	N	N	O	O
+
+b	x	N	N	O	O
+:	x	N	N	O	O
+array	eng	N	N	O	O
+
+[	x	N	N	O	O
+0..	m	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+boolean	eng	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+:	x	N	N	O	O
+array	eng	N	N	O	O
+
+[	x	N	N	O	O
+0..	m	N	N	O	O
+maxm	eng	N	N	O	O
+]	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+gta	eng	N	N	O	O
+;	x	N	N	O	O
+
+c	x	N	N	O	O
+,	x	N	N	O	O
+into	eng	N	N	O	O
+,	x	N	N	O	O
+first	eng	N	N	O	O
+,	x	N	N	O	O
+f	x	N	N	O	O
+:	x	N	N	O	O
+array	eng	N	N	O	O
+
+[	x	N	N	O	O
+0..	m	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+,	x	N	N	O	O
+tot	eng	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+procedure	eng	N	N	O	O
+
+init	eng	N	N	O	O
+;	x	N	N	O	O
+
+var	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+maxlongint	eng	N	N	O	O
+;	x	N	N	O	O
+
+fillchar	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+false	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+fillchar	eng	N	N	O	O
+(	x	N	N	O	O
+f	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+f	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+200	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+fillchar	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+fillchar	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+fillchar	eng	N	N	O	O
+(	x	N	N	O	O
+into	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+into	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tot	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+readln	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+i	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+do	eng	N	N	O	O
+
+readln	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+i	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+m	x	N	N	O	O
+
+do	eng	N	N	O	O
+
+begin	eng	N	N	O	O
+
+readln	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+inc	eng	N	N	O	O
+(	x	N	N	O	O
+into	eng	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+inc	eng	N	N	O	O
+(	x	N	N	O	O
+tot	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+x1	eng	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+x2	eng	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+first	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+tot	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+procedure	eng	N	N	O	O
+
+DFS	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+var	eng	N	N	O	O
+
+t	x	N	N	O	O
+,	x	N	N	O	O
+now	eng	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+先	d	N	N	O	O
+标记	n	N	N	O	O
+这个	r	N	N	O	O
+点	m	N	N	O	O
+已	d	N	N	O	O
+访问	v	N	N	O	O
+过	ug	N	N	O	O
+。	x	N	N	O	O
+
+now	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+maxlongint	eng	N	N	O	O
+;	x	N	N	O	O
+
+t	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+先	d	N	N	O	O
+找	v	N	N	O	O
+与	p	N	N	O	O
+x	eng	N	N	O	O
+相连	d	N	N	O	O
+的	uj	N	N	O	O
+第一个	m	N	N	O	O
+结点	n	Y	N	O	O
+。	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+t	x	N	N	O	O
+<	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+
+do	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+把	p	N	N	O	O
+与	p	N	N	O	O
+x	eng	N	N	O	O
+相连	d	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+点	m	N	N	O	O
+遍历	v	Y	N	O	O
+一遍	m	N	N	O	O
+。	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+y	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+DFS	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+与	p	N	N	O	O
+x	eng	N	N	O	O
+相连	d	N	N	O	O
+的	uj	N	N	O	O
+这个	r	N	N	O	O
+点	m	N	N	O	O
+没有	v	N	N	O	O
+访问	v	N	N	O	O
+过	ug	N	N	O	O
+就	d	N	N	O	O
+访问	v	N	N	O	O
+。	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+f	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+now	eng	N	N	O	O
+
+then	eng	N	N	O	O
+
+now	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+f	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+＞	x	N	N	O	O
+now	eng	N	N	O	O
+就	d	N	N	O	O
+更新	d	N	N	O	O
+。	x	N	N	O	O
+
+t	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+访问	v	N	N	O	O
+下	f	N	N	O	O
+一个点	m	N	N	O	O
+。	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+first	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+f	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+f	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+now	eng	N	N	O	O
++	x	N	N	O	O
+c	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+这个	r	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+出度	n	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+（	x	N	N	O	O
+终点	d	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+值	n	N	N	O	O
+返回	v	N	N	O	O
+这个	r	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+值	n	N	N	O	O
+。	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+procedure	eng	N	N	O	O
+
+main	eng	N	N	O	O
+;	x	N	N	O	O
+
+var	eng	N	N	O	O
+
+i	x	N	N	O	O
+:	x	N	N	O	O
+longint	eng	N	N	O	O
+;	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+i	x	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+do	eng	N	N	O	O
+
+begin	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+into	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+
+then	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+入度	ns	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+这个	r	N	N	O	O
+点	m	N	N	O	O
+为	p	N	N	O	O
+起点	n	N	N	O	O
+。	x	N	N	O	O
+
+进行	v	N	N	O	O
+DFS	eng	N	N	O	O
+。	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+DFS	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+f	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+ans	eng	N	N	O	O
+
+then	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+:	x	N	N	O	O
+=	x	N	N	O	O
+f	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+以	p	N	N	O	O
+当前	t	N	N	O	O
+点	m	N	N	O	O
+为	p	N	N	O	O
+起点	n	N	N	O	O
+得到	v	N	N	O	O
+的	uj	N	N	O	O
+结果	n	N	N	O	O
+＞	x	N	N	O	O
+ans	eng	N	N	O	O
+就	d	N	N	O	O
+更新	d	N	N	O	O
+。	x	N	N	O	O
+
+（	x	N	N	O	O
+打擂台	v	N	N	O	O
+）	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+begin	eng	N	N	O	O
+
+assign	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+,	x	N	N	O	O
+'	x	N	N	O	O
+POJ3249	eng	N	Y	O	O
+.	m	N	N	O	O
+in	eng	Y	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+reset	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+assign	eng	N	N	O	O
+(	x	N	N	O	O
+output	eng	N	N	O	O
+,	x	N	N	O	O
+'	x	N	N	O	O
+POJ3249	eng	N	Y	O	O
+.	m	N	N	O	O
+out	eng	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+rewrite	eng	N	N	O	O
+(	x	N	N	O	O
+output	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+eof	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+begin	eng	N	N	O	O
+
+init	eng	N	N	O	O
+;	x	N	N	O	O
+
+main	eng	N	N	O	O
+;	x	N	N	O	O
+
+writeln	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+close	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+close	eng	N	N	O	O
+(	x	N	N	O	O
+output	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+.	m	N	N	O	O
+

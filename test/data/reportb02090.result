@@ -1,0 +1,533 @@
+PKU	eng	N	Y	O	B-OJ
+_	x	N	N	O	I-OJ
+1200	m	N	N	O	I-OJ
+_	x	N	N	O	O
+唐武	nr	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+hash	eng	Y	N	O	B-KNOWLEDGE
+,	x	N	N	O	O
+是	v	N	N	O	O
+每个	r	N	N	O	O
+串	v	N	N	O	O
+能够	v	N	N	O	O
+对应	vn	N	N	O	O
+一个	m	N	N	O	O
+关键码	n	N	N	O	O
+,	x	N	N	O	O
+
+如果	c	N	N	O	O
+这样的话	l	N	N	O	O
+，	x	N	N	O	O
+内存	n	N	N	O	O
+可能	v	N	N	O	O
+会	v	N	N	O	O
+很大	a	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+memory	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+NUM	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+16000010	m	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+Exit	eng	N	N	O	O
+[	x	N	N	O	O
+NUM	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+{	x	N	N	O	O
+false	eng	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+hash	eng	Y	N	O	O
+[	x	N	N	O	O
+250	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+hash	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+字母	n	Y	N	O	O
+char	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+hash	eng	Y	N	O	B-KNOWLEDGE
+值	n	N	N	O	O
+
+char	eng	N	N	O	O
+
+input	eng	N	N	O	O
+[	x	N	N	O	O
+20000000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+存储	j	N	N	O	O
+输入	v	N	N	O	O
+，	x	N	N	O	O
+内存	n	N	N	O	O
+也许	d	N	N	O	O
+还	d	N	N	O	O
+需要	v	N	N	O	O
+大	a	N	N	O	O
+一些	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+NC	eng	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+initial	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Ans	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+N	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+NC	eng	N	N	O	O
+,	x	N	N	O	O
+
+input	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+initial	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+Ans	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+initial	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+hash	eng	Y	N	O	O
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+hash	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+counter	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+size	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+size	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+hash	eng	Y	N	O	O
+[	x	N	N	O	O
+int	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+input	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+如果	c	N	N	O	O
+尚未	d	N	N	O	O
+出现	v	N	N	O	O
+
+{	x	N	N	O	O
+
+hash	eng	Y	N	O	O
+[	x	N	N	O	O
+int	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+counter	eng	N	N	O	O
+;	x	N	N	O	O
+
+counter	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+counter	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NC	eng	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Ans	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+size	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+size	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+<	x	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+temp	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+NC	eng	N	N	O	O
+
++	x	N	N	O	O
+
+hash	eng	Y	N	O	O
+[	x	N	N	O	O
+input	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+Exit	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Exit	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,409 @@
+HDU1394	eng	N	Y	O	B-OJ
+
+求	v	N	N	O	O
+最小	a	Y	N	O	O
+逆	vg	N	N	O	O
+序数	n	Y	N	O	O
+
+-	x	N	N	O	O
+
+壹	zg	N	N	O	O
+①	x	N	N	O	O
+肆陸	v	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+给	p	N	N	O	O
+你	r	N	N	O	O
+一个	m	N	N	O	O
+循环	vn	N	N	O	O
+的	uj	N	N	O	O
+序列	n	Y	N	O	O
+让	v	N	N	O	O
+你	r	N	N	O	O
+求	v	N	N	O	O
+最小	a	Y	N	O	O
+逆	vg	N	N	O	O
+序数	n	Y	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+我们	r	N	N	O	O
+先	d	N	N	O	O
+把	p	N	N	O	O
+以	f	N	N	O	O
+An	eng	N	N	O	O
+为	p	N	N	O	O
+终结	v	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+逆	n	N	N	O	O
+序数	n	Y	N	O	O
+求	v	N	N	O	O
+出来	v	N	N	O	O
+
+然后	c	N	N	O	O
+从	p	N	N	O	O
+a1	eng	N	N	O	O
+开始	v	N	N	O	O
+枚举	nz	Y	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+终结	v	N	N	O	O
+点	m	N	N	O	O
+，	x	N	N	O	O
+
+有	v	N	N	O	O
+
+now	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+pre	eng	N	N	O	O
+
++	x	N	N	O	O
+
+gt	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+lt	eng	N	N	O	O
+
+（	x	N	N	O	O
+now	eng	N	N	O	O
+
+表示	v	Y	N	O	O
+当前	t	N	N	O	O
+序列	n	Y	N	O	O
+逆	vg	N	N	O	O
+序数	n	Y	N	O	O
+，	x	N	N	O	O
+pre	eng	N	N	O	O
+表示	v	Y	N	O	O
+前	f	N	N	O	O
+一个	m	N	N	O	O
+序列	n	Y	N	O	O
+逆	vg	N	N	O	O
+序数	n	Y	N	O	O
+，	x	N	N	O	O
+gt	eng	N	N	O	O
+表示	v	Y	N	O	O
+序列	n	Y	N	O	O
+中	f	N	N	O	O
+比	p	N	N	O	O
+当前	t	N	N	O	O
+终结	v	N	N	O	O
+点	m	N	N	O	O
+大	a	N	N	O	O
+的	uj	N	N	O	O
+数	m	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+，	x	N	N	O	O
+lt	eng	N	N	O	O
+表示	v	Y	N	O	O
+比	p	N	N	O	O
+当前	t	N	N	O	O
+小	a	N	N	O	O
+的	uj	N	N	O	O
+数	m	N	N	O	O
+的	uj	N	N	O	O
+数目	n	N	N	O	O
+）	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+lt	eng	N	N	O	O
+,	x	N	N	O	O
+
+gt	eng	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+pre	eng	N	N	O	O
+,	x	N	N	O	O
+
+now	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+10010	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+gt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+-	x	N	N	O	O
+
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+lt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+seq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+
+now	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+pre	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+lt	eng	N	N	O	O
+
++	x	N	N	O	O
+
+gt	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+now	eng	N	N	O	O
+<	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+now	eng	N	N	O	O
+;	x	N	N	O	O
+
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+now	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

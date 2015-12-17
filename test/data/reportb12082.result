@@ -1,0 +1,923 @@
+poj2227	eng	N	Y	O	B-OJ
+
+The	eng	N	N	O	O
+
+Wedding	eng	N	N	O	O
+
+Juicer	eng	N	N	O	O
+_	x	N	N	O	O
+moonlight131	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+这	r	N	N	O	O
+是	v	N	N	O	O
+黑	a	N	N	O	O
+书上	s	N	N	O	O
+的	uj	N	N	O	O
+例题	n	N	N	O	O
+，	x	N	N	O	O
+需要	v	N	N	O	O
+用	p	N	N	O	O
+二叉	b	Y	N	O	O
+堆	v	N	N	O	O
+，	x	N	N	O	O
+由于	c	N	N	O	O
+本人	r	N	N	O	O
+蒟	x	N	N	O	O
+蒻	zg	N	N	O	O
+，	x	N	N	O	O
+不会	v	N	N	O	O
+自己	r	N	N	O	O
+写	v	N	N	O	O
+，	x	N	N	O	O
+只	d	N	N	O	O
+会	v	N	N	O	O
+用	p	N	N	O	O
+优先	vn	Y	N	O	B-KNOWLEDGE
+队列	n	Y	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
++	x	N	N	O	O
+bfs	eng	N	N	O	O
+水	n	N	N	O	O
+过	ug	N	N	O	O
+，	x	N	N	O	O
+希望	v	N	N	O	O
+读者	n	N	N	O	O
+谅解	v	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+queue	eng	N	N	O	O
+>	x	N	N	O	O
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+305	m	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+struct	eng	N	N	O	O
+
+NODE	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+val	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+R	x	N	N	O	O
+,	x	N	N	O	O
+P	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+w	x	N	N	O	O
+,	x	N	N	O	O
+h	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+priority	eng	N	N	O	O
+_	x	N	N	O	O
+queue	eng	N	N	O	O
+<	x	N	N	O	O
+NODE	eng	N	N	O	O
+>	x	N	N	O	O
+Q	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+move	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+bool	eng	N	N	O	O
+
+operator	eng	N	N	O	O
+<	x	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+NODE	eng	N	N	O	O
+
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+NODE	eng	N	N	O	O
+
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+>	x	N	N	O	O
+b	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x0	eng	N	N	O	O
+,	x	N	N	O	O
+y0	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+x0	eng	N	N	O	O
+=	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+move	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+y0	eng	N	N	O	O
+=	x	N	N	O	O
+y	eng	N	N	O	O
++	x	N	N	O	O
+move	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x0	eng	N	N	O	O
+>	x	N	N	O	O
+h	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+x0	eng	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+y0	eng	N	N	O	O
+>	x	N	N	O	O
+w	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+y0	eng	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+P	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+x0	eng	N	N	O	O
+;	x	N	N	O	O
+P	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+y0	eng	N	N	O	O
+;	x	N	N	O	O
+P	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+P	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+x0	eng	N	N	O	O
+,	x	N	N	O	O
+y0	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+P	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+x0	eng	N	N	O	O
+;	x	N	N	O	O
+P	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+y0	eng	N	N	O	O
+;	x	N	N	O	O
+P	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x0	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y0	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+P	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+}	x	N	N	O	O
+void	eng	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+R	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+h	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+h	x	N	N	O	O
+;	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+R	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+h	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+R	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+val	eng	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+w	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+=	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+R	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+R	x	N	N	O	O
+=	x	N	N	O	O
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+top	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+Q	eng	N	N	O	O
+.	m	N	N	O	O
+pop	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+R	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+}	x	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+argc	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+*	x	N	N	O	O
+*	x	N	N	O	O
+
+argv	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+w	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+h	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+h	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+EXIT	eng	N	N	O	O
+_	x	N	N	O	O
+SUCCESS	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+

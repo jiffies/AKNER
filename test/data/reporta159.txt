@@ -1,0 +1,75 @@
+poj1191______________________新浪博客
+
+看了那本黑书，按照它的思路写了一下，对于动态规划还是陌生啊
+#include<iostream>
+ #include<cmath>
+ #define MIN(a,b) ((a)>(b)?(b):(a))
+ #define MAX 10000000
+ using namespace std;
+ int map[8][8],dp[15][8][8][8][8],sum[8][8][8][8];
+ void init()
+ {
+  int i,j,e,g,h,tmp[8][8][8];
+  memset(sum,0,sizeof(sum));
+  for(i=0;i<8;i++)
+   for(j=0;j<8;j++)
+    for(e=j;e<8;e++)
+    {
+     if(e==j)
+      tmp[i][j][j]=map[i][j];
+     else
+      tmp[i][j][e]=tmp[i][j][e-1]+map[i][e];
+    }
+  for(i=0;i<8;i++)
+   for(j=0;j<8;j++)
+    for(e=i;e<8;e++)
+     for(g=j;g<8;g++)
+     {
+      for(h=j;h<=g;h++)
+       sum[i][j][e][g]+=tmp[h][i][e];
+     }
+ }
+ int sol(int cut,int x1,int y1,int x2,int y2)
+ {
+  if(cut==0)
+   return sum[x1][y1][x2][y2]*sum[x1][y1][x2][y2];
+  if(dp[cut][x1][y1][x2][y2])
+   return dp[cut][x1][y1][x2][y2];
+  if(x1==x2&&y1==y2&&cut)
+   return MAX;
+  int i,min,e,g;
+  min=MAX;
+  for(i=x1;i<x2;i++)
+  {
+   e=sol(cut-1,x1,y1,i,y2)+sum[i+1][y1][x2][y2]*sum[i+1][y1][x2][y2];
+   g=sol(cut-1,i+1,y1,x2,y2)+sum[x1][y1][i][y2]*sum[x1][y1][i][y2];
+   min=MIN(min,MIN(e,g));
+  }
+  for(i=y1;i<y2;i++)
+  {
+   e=sol(cut-1,x1,y1,x2,i)+sum[x1][i+1][x2][y2]*sum[x1][i+1][x2][y2];
+   g=sol(cut-1,x1,i+1,x2,y2)+sum[x1][y1][x2][i]*sum[x1][y1][x2][i];
+   min=MIN(min,MIN(e,g));
+  }
+  dp[cut][x1][y1][x2][y2]=min;
+  return min;
+ }
+ int main()
+ {
+  int i,j,k,sum1=0,sum2;
+  float ave,ss;
+  scanf("%d",&k);
+  for(i=0;i<8;i++)
+   for(j=0;j<8;j++)
+   {
+    scanf("%d",&map[i][j]);
+    sum1+=map[i][j];
+   }
+  ave=(float)sum1/(float)k;
+  ave*=ave;
+  init();
+  sum2=sol(k-1,0,0,7,7);
+  ss=(float)sum2/(float)k;
+  printf("%.3f\n",sqrt(ss-ave));
+  return 0;
+ }

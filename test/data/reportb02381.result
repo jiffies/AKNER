@@ -1,0 +1,1568 @@
+POJ	eng	N	Y	O	B-OJ
+
+1091	m	N	N	O	I-OJ
+
+跳蚤	n	N	N	O	O
+
+-	x	N	N	O	O
+
+bobten2008	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+跳蚤	n	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+3977	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+1002	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Z	x	N	N	O	O
+城市	ns	N	N	O	O
+居住	v	N	N	O	O
+着	uz	N	N	O	O
+很多	m	N	N	O	O
+只	d	N	N	O	O
+跳蚤	n	N	N	O	O
+。	x	N	N	O	O
+
+在	p	N	N	O	O
+Z	eng	N	N	O	O
+城市	ns	N	N	O	O
+周六	t	N	N	O	O
+生活	vn	N	N	O	O
+频道	n	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+娱乐节目	n	N	N	O	O
+。	x	N	N	O	O
+
+一只	m	N	N	O	O
+跳蚤	n	N	N	O	O
+将	d	N	N	O	O
+被	p	N	N	O	O
+请	v	N	N	O	O
+上	f	N	N	O	O
+一个	m	N	N	O	O
+高空	n	N	N	O	O
+钢丝	n	N	N	O	O
+的	uj	N	N	O	O
+正	a	N	N	O	O
+中央	n	N	N	O	O
+。	x	N	N	O	O
+
+钢丝	n	N	N	O	O
+很	d	N	N	O	O
+长	a	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+看作	v	N	N	O	O
+是	v	N	N	O	O
+无限	v	Y	N	O	O
+长	a	N	N	O	O
+。	x	N	N	O	O
+
+节目	n	N	N	O	O
+主持人	n	N	N	O	O
+会	v	N	N	O	O
+给	p	N	N	O	O
+该	r	N	N	O	O
+跳蚤	n	N	N	O	O
+发	v	N	N	O	O
+一张	m	N	N	O	O
+卡片	nz	N	N	O	O
+。	x	N	N	O	O
+
+卡片	nz	N	N	O	O
+上	f	N	N	O	O
+写有	v	N	N	O	O
+N	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+个	m	N	N	O	O
+自然数	l	N	N	O	O
+。	x	N	N	O	O
+
+其中	r	N	N	O	O
+最后	f	N	N	O	O
+一个	m	N	N	O	O
+是	v	N	N	O	O
+M	eng	N	N	O	O
+，	x	N	N	O	O
+而前	t	N	N	O	O
+N	eng	N	N	O	O
+个数	n	Y	N	O	O
+都	d	N	N	O	O
+不	d	N	N	O	O
+超过	v	N	N	O	O
+M	x	N	N	O	O
+，	x	N	N	O	O
+卡片	nz	N	N	O	O
+上	f	N	N	O	O
+允许	v	N	N	O	O
+有	v	N	N	O	O
+相同	d	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+。	x	N	N	O	O
+
+跳蚤	n	N	N	O	O
+每次	r	N	N	O	O
+可以	c	N	N	O	O
+从	p	N	N	O	O
+卡片	nz	N	N	O	O
+上	f	N	N	O	O
+任意	v	Y	N	O	O
+选择	v	N	N	O	O
+一个	m	N	N	O	O
+自然数	l	N	N	O	O
+S	x	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+向	p	N	N	O	O
+左	m	N	N	O	O
+，	x	N	N	O	O
+或	c	N	N	O	O
+向	p	N	N	O	O
+右	f	N	N	O	O
+跳	v	N	N	O	O
+S	eng	N	N	O	O
+个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+。	x	N	N	O	O
+
+而	c	N	N	O	O
+他	r	N	N	O	O
+最终	d	N	N	O	O
+的	uj	N	N	O	O
+任务	n	N	N	O	O
+是	v	N	N	O	O
+跳	v	N	N	O	O
+到	v	N	N	O	O
+距离	n	Y	N	O	O
+他	r	N	N	O	O
+左边	f	N	N	O	O
+一个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+的	uj	N	N	O	O
+地方	n	N	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+捡起	v	N	N	O	O
+位于	v	N	N	O	O
+那里	r	N	N	O	O
+的	uj	N	N	O	O
+礼物	n	N	N	O	O
+。	x	N	N	O	O
+
+比如	v	N	N	O	O
+当	t	N	N	O	O
+N	eng	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+，	x	N	N	O	O
+M	x	N	N	O	O
+=	x	N	N	O	O
+18	m	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+持有	v	N	N	O	O
+卡片	nz	N	N	O	O
+(	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+
+15	m	N	N	O	O
+,	x	N	N	O	O
+
+18	m	N	N	O	O
+)	x	N	N	O	O
+的	uj	N	N	O	O
+跳蚤	n	N	N	O	O
+，	x	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+完成	v	N	N	O	O
+任务	n	N	N	O	O
+：	x	N	N	O	O
+他	r	N	N	O	O
+可以	c	N	N	O	O
+先向	n	N	N	O	O
+左	f	N	N	O	O
+跳	v	N	N	O	O
+10	m	N	N	O	O
+个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+再连	d	N	N	O	O
+向	p	N	N	O	O
+左	f	N	N	O	O
+跳	v	N	N	O	O
+3	m	N	N	O	O
+次	t	N	N	O	O
+，	x	N	N	O	O
+每次	r	N	N	O	O
+15	m	N	N	O	O
+个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+，	x	N	N	O	O
+最后	f	N	N	O	O
+再	d	N	N	O	O
+向	p	N	N	O	O
+右	f	N	N	O	O
+连	u	N	N	O	O
+跳	v	N	N	O	O
+3	m	N	N	O	O
+次	t	N	N	O	O
+，	x	N	N	O	O
+每次	r	N	N	O	O
+18	m	N	N	O	O
+个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+。	x	N	N	O	O
+
+而	c	N	N	O	O
+持有	v	N	N	O	O
+卡片	nz	N	N	O	O
+(	x	N	N	O	O
+12	m	N	N	O	O
+,	x	N	N	O	O
+
+15	m	N	N	O	O
+,	x	N	N	O	O
+
+18	m	N	N	O	O
+)	x	N	N	O	O
+的	uj	N	N	O	O
+跳蚤	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+怎么	r	N	N	O	O
+也	d	N	N	O	O
+不	d	N	N	O	O
+可能	v	N	N	O	O
+跳到	v	N	N	O	O
+距	p	N	N	O	O
+他	r	N	N	O	O
+左边	f	N	N	O	O
+一个	m	N	N	O	O
+单位	n	N	N	O	O
+长度	ns	Y	N	O	O
+的	uj	N	N	O	O
+地方	n	N	N	O	O
+。	x	N	N	O	O
+
+当	t	N	N	O	O
+确定	v	N	N	O	O
+N	eng	N	N	O	O
+和	c	N	N	O	O
+M	eng	N	N	O	O
+后	t	N	N	O	O
+，	x	N	N	O	O
+显然	ad	N	N	O	O
+一共	j	N	N	O	O
+有	v	N	N	O	O
+M	eng	N	N	O	O
+^	x	N	N	O	O
+N	eng	N	N	O	O
+张	nr	N	N	O	O
+不同	a	N	N	O	O
+的	uj	N	N	O	O
+卡片	nz	N	N	O	O
+。	x	N	N	O	O
+
+现在	t	N	N	O	O
+的	uj	N	N	O	O
+问题	n	N	N	O	O
+是	v	N	N	O	O
+，	x	N	N	O	O
+在	p	N	N	O	O
+这	r	N	N	O	O
+所有	b	N	N	O	O
+的	uj	N	N	O	O
+卡片	nz	N	N	O	O
+中	f	N	N	O	O
+，	x	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+张	q	N	N	O	O
+可以	c	N	N	O	O
+完成	v	N	N	O	O
+任务	n	N	N	O	O
+。	x	N	N	O	O
+
+Input	eng	N	N	O	O
+
+两个	m	N	N	O	O
+整数	n	Y	N	O	O
+N	eng	N	N	O	O
+和	c	N	N	O	O
+M	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+15	m	N	N	O	O
+
+,	x	N	N	O	O
+
+M	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+100000000	m	N	N	O	O
+)	x	N	N	O	O
+。	x	N	N	O	O
+
+Output	eng	N	N	O	O
+
+可以	c	N	N	O	O
+完成	v	N	N	O	O
+任务	n	N	N	O	O
+的	uj	N	N	O	O
+卡片	nz	N	N	O	O
+数	n	N	N	O	O
+。	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+4	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+12	m	N	N	O	O
+
+Hint	eng	N	N	O	O
+
+这	r	N	N	O	O
+12	m	N	N	O	O
+张	nr	N	N	O	O
+卡片	nz	N	N	O	O
+分别	d	N	N	O	O
+是	v	N	N	O	O
+：	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+(	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+HNOI	eng	N	N	O	O
+
+2001	m	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+pku	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+JudgeOnline	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1091	m	N	N	O	O
+
+这	r	N	N	O	O
+题	n	N	N	O	O
+考虑	v	N	N	O	O
+到	v	N	N	O	O
+了	ul	N	N	O	O
+数论	n	Y	N	O	B-KNOWLEDGE
+和	c	N	N	O	O
+组合	v	Y	N	O	B-KNOWLEDGE
+数学	n	Y	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+相关	v	N	N	O	O
+知识	v	N	N	O	O
+，	x	N	N	O	O
+题目	n	Y	N	O	O
+大意	d	N	N	O	O
+是	v	N	N	O	O
+给定	v	N	N	O	O
+给定	v	N	N	O	O
+两个	m	N	N	O	O
+整数	n	Y	N	O	O
+n	eng	N	N	O	O
+和	c	N	N	O	O
+m	eng	N	N	O	O
+,	x	N	N	O	O
+
+求	v	N	N	O	O
+出	v	N	N	O	O
+长度	ns	Y	N	O	O
+为	p	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+的	uj	N	N	O	O
+满足条件	l	N	N	O	O
+的	uj	N	N	O	O
+数列	m	Y	N	O	O
+data	eng	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+，	x	N	N	O	O
+数列	m	Y	N	O	O
+要求	v	N	N	O	O
+如下	t	N	N	O	O
+：	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+1	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+
+2	x	N	N	O	O
+)	x	N	N	O	O
+data	eng	N	N	O	O
+[	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+3	x	N	N	O	O
+)	x	N	N	O	O
+这个	r	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+个数	n	Y	N	O	O
+满足	v	N	N	O	O
+:	x	N	N	O	O
+
+存在	v	N	N	O	O
+整数	n	Y	N	O	O
+
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+xn	eng	N	N	O	O
+,	x	N	N	O	O
+
+xn	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+满足	v	N	N	O	O
+
+x1	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+x2	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+...	m	N	N	O	O
+
++	x	N	N	O	O
+
+xn	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+
+*	x	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+根据	p	N	N	O	O
+数论	n	Y	N	O	B-KNOWLEDGE
+的	uj	N	N	O	O
+知识	v	N	N	O	O
+，	x	N	N	O	O
+n	x	N	N	O	O
+个数	n	Y	N	O	O
+的	uj	N	N	O	O
+最大公约数	n	N	N	O	O
+规定	n	N	N	O	O
+为	p	N	N	O	O
+这	r	N	N	O	O
+n	eng	N	N	O	O
+个数	n	Y	N	O	O
+线性	n	Y	N	O	O
+和	c	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+自然数	l	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+此	r	N	N	O	O
+题	n	N	N	O	O
+就是	d	N	N	O	O
+要求	v	N	N	O	O
+最大公约数	n	N	N	O	O
+为	p	N	N	O	O
+1	m	N	N	O	O
+的	uj	N	N	O	O
+数列	m	Y	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+
+由于	c	N	N	O	O
+data	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+是	v	N	N	O	O
+已知	v	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+可以	c	N	N	O	O
+用	p	N	N	O	O
+组合	v	Y	N	O	B-KNOWLEDGE
+数学	n	Y	N	O	I-KNOWLEDGE
+鸽巢	n	Y	N	O	O
+原理	n	Y	N	O	O
+的	uj	N	N	O	O
+知识	v	N	N	O	O
+来解	v	N	N	O	O
+，	x	N	N	O	O
+步骤	n	N	N	O	O
+如下	t	N	N	O	O
+：	x	N	N	O	O
+
+1	x	N	N	O	O
+）	x	N	N	O	O
+求出	v	N	N	O	O
+m	eng	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+质	ng	N	N	O	O
+约数	n	N	N	O	O
+，	x	N	N	O	O
+假设	vn	N	N	O	O
+有	v	N	N	O	O
+k	eng	N	N	O	O
+个	m	N	N	O	O
+如果	c	N	N	O	O
+这	r	N	N	O	O
+n	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+个数	n	Y	N	O	O
+的	uj	N	N	O	O
+最大公约数	n	N	N	O	O
+不是	c	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+m	x	N	N	O	O
+至少	d	N	N	O	O
+含有	v	N	N	O	O
+一个	m	N	N	O	O
+质	ng	N	N	O	O
+约数	n	N	N	O	O
+，	x	N	N	O	O
+这个	r	N	N	O	O
+质	ng	N	N	O	O
+约数	n	N	N	O	O
+也	d	N	N	O	O
+是	v	N	N	O	O
+前	f	N	N	O	O
+n	eng	N	N	O	O
+个数	n	Y	N	O	O
+的	uj	N	N	O	O
+约数	n	N	N	O	O
+
+2	x	N	N	O	O
+）	x	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+总	n	N	N	O	O
+个数	n	Y	N	O	O
+为	p	N	N	O	O
+
+m	x	N	N	O	O
+
+^	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+3	x	N	N	O	O
+）	x	N	N	O	O
+设	n	N	N	O	O
+t	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+表示	v	Y	N	O	O
+
+能够	v	N	N	O	O
+整除	v	N	N	O	O
+
+任意	v	Y	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+m	eng	N	N	O	O
+的	uj	N	N	O	O
+质	n	N	N	O	O
+约数	n	N	N	O	O
+且	zg	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	eng	N	N	O	O
+的	uj	N	N	O	O
+数	m	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+
+利用	n	N	N	O	O
+容斥	v	Y	N	O	O
+原理	n	Y	N	O	O
+可知	v	N	N	O	O
+公约数	n	N	N	O	O
+不为	c	N	N	O	O
+1	m	N	N	O	O
+的	uj	N	N	O	O
+数列	m	Y	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+为	p	N	N	O	O
+
+f	x	N	N	O	O
+
+=	x	N	N	O	O
+
+t	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+t	x	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+t	x	N	N	O	O
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+...	m	N	N	O	O
+
++	x	N	N	O	O
+
+(	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+^	x	N	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+t	x	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+4	x	N	N	O	O
+)	x	N	N	O	O
+
+符合要求	n	N	N	O	O
+的	uj	N	N	O	O
+序列	n	Y	N	O	O
+个数	n	Y	N	O	O
+为	p	N	N	O	O
+
+m	x	N	N	O	O
+
+^	x	N	N	O	O
+
+n	x	N	N	O	O
+
+-	x	N	N	O	O
+
+f	x	N	N	O	O
+
+代码	n	N	N	O	O
+如下	t	N	N	O	O
+:	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+T	eng	N	N	O	O
+
+120000	m	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+mCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+T	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+curCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+T	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+curRes	eng	N	N	O	O
+,	x	N	N	O	O
+
+totalCDNum	eng	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+myPow	eng	N	N	O	O
+(	x	N	N	O	O
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+res	eng	N	N	O	O
+
+*	x	N	N	O	O
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+res	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+getCurVal	eng	N	N	O	O
+(	x	N	N	O	O
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+curPos	eng	N	N	O	O
+,	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+curNum	eng	N	N	O	O
+,	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+totalNum	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+curNum	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+totalNum	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+tempVal	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+totalNum	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+tempVal	eng	N	N	O	O
+
+/	x	N	N	O	O
+=	x	N	N	O	O
+
+curCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+curRes	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+myPow	eng	N	N	O	O
+(	x	N	N	O	O
+tempVal	eng	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+curPos	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+totalCDNum	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+curCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+curNum	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+mCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+getCurVal	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+curNum	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+totalNum	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+寻找	v	N	N	O	O
+质	ng	N	N	O	O
+约数	n	N	N	O	O
+
+void	eng	N	N	O	O
+
+getDivisor	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+tempM	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+totalCDNum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+*	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+tempM	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tempM	eng	N	N	O	O
+
+%	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+tempM	eng	N	N	O	O
+
+%	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+tempM	eng	N	N	O	O
+
+/	x	N	N	O	O
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+mCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+totalCDNum	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tempM	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+mCDSeq	eng	N	N	O	O
+[	x	N	N	O	O
+totalCDNum	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+tempM	eng	N	N	O	O
+;	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+myPow	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+totalCDNum	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+curRes	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+getCurVal	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+%	x	N	N	O	O
+
+2	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+res	eng	N	N	O	O
+
+-	x	N	N	O	O
+=	x	N	N	O	O
+
+curRes	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+curRes	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+res	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+getDivisor	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

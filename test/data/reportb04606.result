@@ -1,0 +1,770 @@
+poj1426	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+Find	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+Multiple	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+贰	m	N	N	O	O
+圣	j	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+想	v	N	N	O	O
+看	v	N	N	O	O
+更	d	N	N	O	O
+多	m	N	N	O	O
+的	uj	N	N	O	O
+解题	n	N	N	O	O
+报告	n	N	N	O	O
+:	x	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+blog	eng	N	N	O	O
+.	m	N	N	O	O
+csdn	eng	N	N	O	O
+.	m	N	N	O	O
+net	eng	N	N	O	O
+/	x	N	N	O	O
+wangjian8006	eng	N	N	O	O
+/	x	N	N	O	O
+article	eng	N	N	O	O
+/	x	N	N	O	O
+details	eng	N	N	O	O
+/	x	N	N	O	O
+7870410	m	N	N	O	O
+
+转载	v	N	N	O	O
+请	v	N	N	O	O
+注明	v	N	N	O	O
+出处	v	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+blog	eng	N	N	O	O
+.	m	N	N	O	O
+csdn	eng	N	N	O	O
+.	m	N	N	O	O
+net	eng	N	N	O	O
+/	x	N	N	O	O
+wangjian8006	eng	N	N	O	O
+
+题目	n	Y	N	O	O
+大意	d	N	N	O	O
+：	x	N	N	O	O
+
+对于	p	N	N	O	O
+一个	m	N	N	O	O
+整数	n	Y	N	O	O
+，	x	N	N	O	O
+问	n	N	N	O	O
+大于	d	N	N	O	O
+等于	v	N	N	O	O
+这个	r	N	N	O	O
+整数	n	Y	N	O	O
+的	uj	N	N	O	O
+一个	m	N	N	O	O
+整数	n	Y	N	O	O
+能够	v	N	N	O	O
+被	p	N	N	O	O
+其	r	N	N	O	O
+整除	v	N	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+，	x	N	N	O	O
+且	zg	N	N	O	O
+这个	r	N	N	O	O
+整数	n	Y	N	O	O
+只能	v	N	N	O	O
+包括	v	N	N	O	O
+0	m	N	N	O	O
+和	c	N	N	O	O
+1	m	N	N	O	O
+
+解题	n	N	N	O	O
+思路	n	N	N	O	O
+：	x	N	N	O	O
+
+一位	m	N	N	O	O
+一位	m	N	N	O	O
+的	uj	N	N	O	O
+确定	v	N	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+求	v	N	N	O	O
+被	p	N	N	O	O
+6	m	N	N	O	O
+整除	v	N	N	O	O
+的	uj	N	N	O	O
+不为	v	N	N	O	O
+零	n	N	N	O	O
+整数	n	Y	N	O	O
+，	x	N	N	O	O
+且	zg	N	N	O	O
+整数	n	Y	N	O	O
+的	uj	N	N	O	O
+每位	r	N	N	O	O
+上	f	N	N	O	O
+是	v	N	N	O	O
+0	m	N	N	O	O
+或	c	N	N	O	O
+1	m	N	N	O	O
+
+从	p	N	N	O	O
+个位	n	N	N	O	O
+，	x	N	N	O	O
+十位	m	N	N	O	O
+，	x	N	N	O	O
+百位	m	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+一直	d	N	N	O	O
+确定	v	N	N	O	O
+上去	t	N	N	O	O
+，	x	N	N	O	O
+即	v	N	N	O	O
+每次	r	N	N	O	O
+扩展	v	N	N	O	O
+都	d	N	N	O	O
+在	p	N	N	O	O
+末尾	n	N	N	O	O
+加上	v	N	N	O	O
+0	x	N	N	O	O
+或者	c	N	N	O	O
+1	x	N	N	O	O
+
+首先	d	N	N	O	O
+初始	v	N	N	O	O
+为	p	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+倍数	n	N	N	O	O
+的	uj	N	N	O	O
+最高	a	N	N	O	O
+位	q	N	N	O	O
+必为	d	N	N	O	O
+1	m	N	N	O	O
+
+当	t	N	N	O	O
+倍数	n	N	N	O	O
+很大	a	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+我们	r	N	N	O	O
+可以	c	N	N	O	O
+利用	n	N	N	O	O
+同	p	N	N	O	O
+余模	n	N	N	O	O
+定理	vn	Y	N	O	O
+对	p	N	N	O	O
+得到	v	N	N	O	O
+的	uj	N	N	O	O
+余数	m	N	N	O	O
+进行	v	N	N	O	O
+优化	vn	Y	N	O	O
+，	x	N	N	O	O
+字符串	n	Y	N	O	O
+可以	c	N	N	O	O
+保存起来	l	N	N	O	O
+，	x	N	N	O	O
+而	c	N	N	O	O
+倍数	n	N	N	O	O
+可以	c	N	N	O	O
+对	p	N	N	O	O
+n	eng	N	N	O	O
+取模	n	Y	N	O	O
+。	x	N	N	O	O
+
+（	x	N	N	O	O
+a	x	N	N	O	O
+*	x	N	N	O	O
+b	x	N	N	O	O
+）	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+（	x	N	N	O	O
+a	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+b	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+）	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
+（	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+b	eng	N	N	O	O
+）	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+（	x	N	N	O	O
+a	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
++	x	N	N	O	O
+b	eng	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+）	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+
+值得注意	l	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+，	x	N	N	O	O
+如果	c	N	N	O	O
+n	eng	N	N	O	O
+是	v	N	N	O	O
+偶数	n	N	N	O	O
+,	x	N	N	O	O
+则	d	N	N	O	O
+不用	v	N	N	O	O
+进行	v	N	N	O	O
+计算	v	Y	N	O	O
+，	x	N	N	O	O
+直接	ad	N	N	O	O
+=	x	N	N	O	O
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+详解	v	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+archive	eng	N	N	O	O
+.	m	N	N	O	O
+cnblogs	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+a	x	N	N	O	O
+/	x	N	N	O	O
+2122513	m	N	N	O	O
+/	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+queue	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+mod	eng	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+Node	eng	N	N	O	O
+;	x	N	N	O	O
+
+Node	eng	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+210	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+temp	eng	N	N	O	O
+,	x	N	N	O	O
+now	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+210	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+
+<	x	N	N	O	O
+Node	eng	N	N	O	O
+>	x	N	N	O	O
+q	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+dis	eng	N	N	O	O
+,	x	N	N	O	O
+false	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+dis	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+mod	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+q	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+now	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+q	eng	N	N	O	O
+.	m	N	N	O	O
+front	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+q	eng	N	N	O	O
+.	m	N	N	O	O
+pop	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+mod	eng	N	N	O	O
+*	x	N	N	O	O
+10	m	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+mod	eng	N	N	O	O
+*	x	N	N	O	O
+10	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+temp	eng	N	N	O	O
+.	m	N	N	O	O
+mod	eng	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+now	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+now	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+now	eng	N	N	O	O
+.	m	N	N	O	O
+mod	eng	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+q	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+now	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+200	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
++	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

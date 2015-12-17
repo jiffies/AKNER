@@ -1,0 +1,1813 @@
+POJ	eng	N	Y	O	B-OJ
+
+1002	m	N	N	O	O
+
+487	m	N	N	O	O
+-	x	N	N	O	O
+3279	m	N	N	O	O
+
+-	x	N	N	O	O
+
+ZZB	eng	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+2000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+65536	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+151338	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+25810	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Businesses	eng	N	N	O	O
+
+like	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+.	m	N	N	O	O
+
+One	eng	N	N	O	O
+
+way	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+spell	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+word	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+phrase	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+call	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+University	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+Waterloo	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+dialing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+TUT	eng	N	N	O	O
+-	x	N	N	O	O
+GLOP	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sometimes	eng	N	N	O	O
+
+only	eng	N	N	O	O
+
+part	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+used	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+spell	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+word	eng	N	N	O	O
+.	m	N	N	O	O
+
+When	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+get	eng	N	N	O	O
+
+back	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+your	eng	N	N	O	O
+
+hotel	eng	N	N	O	O
+
+tonight	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+order	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+pizza	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+Gino	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+by	eng	N	N	O	O
+
+dialing	eng	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+GINO	eng	N	N	O	O
+.	m	N	N	O	O
+
+Another	eng	N	N	O	O
+
+way	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+group	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+memorable	eng	N	N	O	O
+
+way	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+could	eng	N	N	O	O
+
+order	eng	N	N	O	O
+
+your	eng	N	N	O	O
+
+pizza	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+Pizza	eng	N	N	O	O
+
+Hut	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+calling	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+`	x	N	N	O	O
+`	x	N	N	O	O
+three	eng	N	N	O	O
+
+tens	eng	N	N	O	O
+'	x	N	N	O	O
+'	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+3	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+seven	eng	N	N	O	O
+
+decimal	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+hyphen	eng	N	N	O	O
+
+between	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+third	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+fourth	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+
+(	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+g	eng	N	N	O	O
+.	m	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+1200	m	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+keypad	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+phone	eng	N	N	O	O
+
+supplies	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+mapping	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+letters	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+,	x	N	N	O	O
+
+as	eng	Y	N	O	O
+
+follows	eng	N	N	O	O
+:	x	N	N	O	O
+
+A	x	N	N	O	O
+,	x	N	N	O	O
+
+B	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+C	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+D	x	N	N	O	O
+,	x	N	N	O	O
+
+E	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+F	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+G	x	N	N	O	O
+,	x	N	N	O	O
+
+H	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+I	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+J	x	N	N	O	O
+,	x	N	N	O	O
+
+K	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+L	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+5	x	N	N	O	O
+
+M	x	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+O	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+6	x	N	N	O	O
+
+P	x	N	N	O	O
+,	x	N	N	O	O
+
+R	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+S	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+7	x	N	N	O	O
+
+T	x	N	N	O	O
+,	x	N	N	O	O
+
+U	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+V	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+8	x	N	N	O	O
+
+W	x	N	N	O	O
+,	x	N	N	O	O
+
+X	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+9	x	N	N	O	O
+
+There	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+mapping	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+Q	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+Z	eng	N	N	O	O
+.	m	N	N	O	O
+
+Hyphens	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+dialed	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+added	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+removed	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+necessary	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+TUT	eng	N	N	O	O
+-	x	N	N	O	O
+GLOP	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+4567	m	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+GINO	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+4466	m	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+3	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+
+is	eng	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+1010.	m	N	N	O	O
+
+Two	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+equivalent	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+.	m	N	N	O	O
+
+(	x	N	N	O	O
+They	eng	N	N	O	O
+
+dial	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+number	eng	N	N	O	O
+.	m	N	N	O	O
+)	x	N	N	O	O
+
+Your	eng	N	N	O	O
+
+company	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+compiling	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+directory	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+local	eng	N	N	O	O
+
+businesses	eng	N	N	O	O
+.	m	N	N	O	O
+
+As	eng	N	N	O	O
+
+part	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+quality	eng	N	N	O	O
+
+control	eng	N	N	O	O
+
+process	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+want	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+check	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+(	x	N	N	O	O
+or	eng	Y	N	O	O
+
+more	eng	N	N	O	O
+)	x	N	N	O	O
+
+businesses	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+directory	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+consist	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+case	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+specifies	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+directory	eng	N	N	O	O
+
+(	x	N	N	O	O
+up	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+100	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+)	x	N	N	O	O
+
+as	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+alone	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+remaining	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+
+list	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+directory	eng	N	N	O	O
+,	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+alone	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+composed	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+decimal	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+,	x	N	N	O	O
+
+uppercase	eng	N	N	O	O
+
+letters	eng	N	N	O	O
+
+(	x	N	N	O	O
+excluding	eng	N	N	O	O
+
+Q	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+Z	x	N	N	O	O
+)	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+hyphens	eng	N	N	O	O
+.	m	N	N	O	O
+
+Exactly	eng	N	N	O	O
+
+seven	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+characters	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+string	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+digits	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+letters	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Generate	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+appears	eng	N	N	O	O
+
+more	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+once	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+any	eng	N	N	O	O
+
+form	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+give	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+standard	eng	N	N	O	O
+
+form	eng	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+space	eng	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+times	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+appears	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+directory	eng	N	N	O	O
+.	m	N	N	O	O
+
+Arrange	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+telephone	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+ascending	eng	N	N	O	O
+
+lexicographical	eng	N	N	O	O
+
+order	eng	N	N	O	O
+.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+duplicates	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+print	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+line	eng	N	N	O	O
+:	x	N	N	O	O
+
+No	eng	N	N	O	O
+
+duplicates	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+12	m	N	N	O	O
+
+4873279	m	N	N	O	O
+
+ITS	eng	N	N	O	O
+-	x	N	N	O	O
+EASY	eng	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+4567	m	N	N	O	O
+
+3	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+GLOP	eng	N	N	O	O
+
+TUT	eng	N	N	O	O
+-	x	N	N	O	O
+GLOP	eng	N	N	O	O
+
+967	m	N	N	O	O
+-	x	N	N	O	O
+11	m	N	N	O	O
+-	x	N	N	O	O
+11	m	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+GINO	eng	N	N	O	O
+
+F101010	eng	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+1200	m	N	N	O	O
+
+-	x	N	N	O	O
+4	x	N	N	O	O
+-	x	N	N	O	O
+8	x	N	N	O	O
+-	x	N	N	O	O
+7	x	N	N	O	O
+-	x	N	N	O	O
+3	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+-	x	N	N	O	O
+7	x	N	N	O	O
+-	x	N	N	O	O
+9	x	N	N	O	O
+-	x	N	N	O	O
+
+487	m	N	N	O	O
+-	x	N	N	O	O
+3279	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+310	m	N	N	O	O
+-	x	N	N	O	O
+1010	m	N	N	O	O
+
+2	x	N	N	O	O
+
+487	m	N	N	O	O
+-	x	N	N	O	O
+3279	m	N	N	O	O
+
+4	x	N	N	O	O
+
+888	m	N	N	O	O
+-	x	N	N	O	O
+4567	m	N	N	O	O
+
+3	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+East	eng	N	N	O	O
+
+Central	eng	N	N	O	O
+
+North	eng	N	N	O	O
+
+America	eng	N	N	O	O
+
+1999	m	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+字符串	n	Y	N	O	B-KNOWLEDGE
+处理	v	N	N	O	I-KNOWLEDGE
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+题意	n	N	N	O	O
+：	x	N	N	O	O
+主要	b	N	N	O	O
+是	v	N	N	O	O
+输入	v	N	N	O	O
+若干	m	N	N	O	O
+字符串	n	Y	N	O	O
+，	x	N	N	O	O
+转化	v	Y	N	O	O
+为	p	N	N	O	O
+XXX	eng	N	N	O	O
+-	x	N	N	O	O
+XXXX	eng	N	N	O	O
+这样	r	N	N	O	O
+的	uj	N	N	O	O
+标准	n	N	N	O	O
+格式	n	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+查看	v	N	N	O	O
+那些	r	N	N	O	O
+是	v	N	N	O	O
+相同	d	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+按	p	N	N	O	O
+字典	n	N	N	O	O
+序	n	N	N	O	O
+输出	v	Y	N	O	O
+这些	r	N	N	O	O
+串及	v	N	N	O	O
+重复	d	Y	N	O	O
+个数	n	Y	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+程序	n	N	N	O	O
+如下	t	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+set	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+map	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+set	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+s1	eng	N	N	O	O
+,	x	N	N	O	O
+s2	eng	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+:	x	N	N	O	O
+:	x	N	N	O	O
+iterator	eng	N	N	O	O
+
+it	eng	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+>	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+20	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+20	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+\	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+switch	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+Q	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+B	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+C	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+2	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+D	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+E	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+F	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+3	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+G	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+H	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+I	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+4	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+J	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+K	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+L	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+5	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+M	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+N	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+O	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+6	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+P	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+R	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+S	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+7	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+T	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+U	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+V	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+8	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+'	x	N	N	O	O
+W	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+X	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+case	eng	N	N	O	O
+'	x	N	N	O	O
+Y	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+9	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+default	eng	N	N	O	O
+:	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+\	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+str	eng	Y	N	O	O
+;	x	N	N	O	O
+
+it	eng	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+.	m	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+it	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+s2	eng	N	N	O	O
+.	m	N	N	O	O
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+s1	eng	N	N	O	O
+.	m	N	N	O	O
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+s2	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+it	eng	N	N	O	O
+=	x	N	N	O	O
+s2	eng	N	N	O	O
+.	m	N	N	O	O
+begin	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+it	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+s2	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+it	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+*	x	N	N	O	O
+it	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+[	x	N	N	O	O
+*	x	N	N	O	O
+it	eng	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+No	eng	N	N	O	O
+
+duplicates	eng	N	N	O	O
+.	m	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+s1	eng	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s2	eng	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+m	eng	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

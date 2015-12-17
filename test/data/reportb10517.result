@@ -1,0 +1,659 @@
+POJ2472	eng	N	Y	O	B-OJ
+
+n	eng	N	N	O	O
+次	m	N	N	O	O
+迪杰	nr	N	N	O	B-KNOWLEDGE
+斯特拉	nrt	N	N	O	I-KNOWLEDGE
+
+-	x	N	N	O	O
+
+Belong	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+Sopranos	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+一个	m	N	N	O	O
+简单	a	N	N	O	O
+的	uj	N	N	O	O
+最	a	N	N	O	O
+短路	n	Y	N	O	O
+，	x	N	N	O	O
+之前	f	N	N	O	O
+写	v	N	N	O	O
+过	ug	N	N	O	O
+一个	m	N	N	O	O
+等效于	v	N	N	O	O
+floyd	eng	Y	N	O	B-KNOWLEDGE
+（	x	N	N	O	O
+floyd	eng	Y	N	O	B-KNOWLEDGE
+太	n	N	N	O	O
+简单	a	N	N	O	O
+，	x	N	N	O	O
+但	c	N	N	O	O
+人家	n	N	N	O	O
+思想	n	Y	N	O	O
+很	zg	N	N	O	O
+强大	a	N	N	O	O
+）	x	N	N	O	O
+的	uj	N	N	O	O
+DJ	eng	N	N	O	O
+，	x	N	N	O	O
+这次	r	N	N	O	O
+又	d	N	N	O	O
+重温	n	N	N	O	O
+一下	m	N	N	O	O
+，	x	N	N	O	O
+不错	a	N	N	O	O
+，	x	N	N	O	O
+依然	d	N	N	O	O
+好	a	N	N	O	O
+用	p	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+根据	p	N	N	O	O
+floyd	eng	Y	N	O	B-KNOWLEDGE
+的	uj	N	N	O	O
+思想	n	Y	N	O	O
+和	c	N	N	O	O
+DJ	eng	N	N	O	O
+的	uj	N	N	O	O
+思想	n	Y	N	O	O
+可知	v	N	N	O	O
+，	x	N	N	O	O
+n	eng	N	N	O	O
+次	t	N	N	O	O
+DJ	eng	N	N	O	O
+算法	n	Y	N	O	O
+相当于	v	N	N	O	O
+一次	m	N	N	O	O
+floyd	eng	Y	N	O	B-KNOWLEDGE
+算法	n	Y	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+buzhun	eng	N	N	O	O
+_	x	N	N	O	O
+tou	eng	N	N	O	O
+_	x	N	N	O	O
+zhuan	eng	N	N	O	O
+_	x	N	N	O	O
+pzjay	eng	N	N	O	O
+_	x	N	N	O	O
+wenzhang	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+double	eng	N	N	O	O
+
+pp	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1.00	m	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+used	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+nax	eng	N	N	O	O
+=	x	N	N	O	O
+101	m	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+DJ	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+,	x	N	N	O	O
+beg	eng	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+used	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+pp	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+used	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+min	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+beg	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+used	eng	N	N	O	O
+[	x	N	N	O	O
+beg	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+used	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+beg	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+beg	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+beg	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+beg	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+i	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+tmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+tmp	eng	N	N	O	O
+*	x	N	N	O	O
+0.01	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+DJ	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.2	m	N	N	O	O
+lf	eng	N	N	O	O
+
+"	x	N	N	O	O
+,	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.6	m	N	N	O	O
+lf	eng	N	N	O	O
+
+percent	eng	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+100.0	m	N	N	O	O
+*	x	N	N	O	O
+Pzjay	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+buzhun	eng	N	N	O	O
+_	x	N	N	O	O
+tou	eng	N	N	O	O
+_	x	N	N	O	O
+zhuan	eng	N	N	O	O
+_	x	N	N	O	O
+pzjay	eng	N	N	O	O
+_	x	N	N	O	O
+wenzhang	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

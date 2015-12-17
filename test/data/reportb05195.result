@@ -1,0 +1,1876 @@
+POJ	eng	N	Y	O	B-OJ
+
+2379	m	N	N	O	I-OJ
+
+ACM	eng	N	N	O	O
+
+Rank	eng	N	N	O	O
+
+Table	eng	N	N	O	O
+(	x	N	N	O	O
+数据结构	n	N	N	O	O
+)	x	N	N	O	O
+_	x	N	N	O	O
+奔跑	v	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+Description	eng	N	N	O	O
+
+ACM	eng	N	N	O	O
+
+contests	eng	N	N	O	O
+,	x	N	N	O	O
+
+like	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+participating	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+,	x	N	N	O	O
+
+are	eng	N	N	O	O
+
+hosted	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+special	eng	N	N	O	O
+
+software	eng	N	N	O	O
+.	m	N	N	O	O
+
+That	eng	N	N	O	O
+
+software	eng	N	N	O	O
+,	x	N	N	O	O
+
+among	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+functions	eng	N	N	O	O
+,	x	N	N	O	O
+
+preforms	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+job	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+accepting	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+evaluating	eng	N	N	O	O
+
+teams	eng	N	N	O	O
+'	x	N	N	O	O
+
+solutions	eng	N	N	O	O
+
+(	x	N	N	O	O
+runs	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+displaying	eng	N	N	O	O
+
+results	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+rank	eng	N	N	O	O
+
+table	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+scoring	eng	N	N	O	O
+
+rules	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+follows	eng	N	N	O	O
+:	x	N	N	O	O
+
+Each	eng	N	N	O	O
+
+run	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+either	eng	N	N	O	O
+
+accepted	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+rejected	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+considered	eng	N	N	O	O
+
+solved	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+team	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+runs	eng	N	N	O	O
+
+submitted	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+accepted	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+consumed	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+solved	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+elapsed	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+beginning	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+contest	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+submission	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+accepted	eng	N	N	O	O
+
+run	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+this	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+(	x	N	N	O	O
+in	eng	Y	N	O	O
+
+minutes	eng	N	N	O	O
+)	x	N	N	O	O
+
+plus	eng	N	N	O	O
+
+20	m	N	N	O	O
+
+minutes	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+every	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+run	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+this	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+before	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+accepted	eng	N	N	O	O
+
+one	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+unsolved	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+consumed	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+computed	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+total	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+consumed	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+solved	eng	N	N	O	O
+.	m	N	N	O	O
+
+Teams	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+ranked	eng	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+solved	eng	N	N	O	O
+
+problems	eng	N	N	O	O
+.	m	N	N	O	O
+
+Teams	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+problems	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+ranked	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+least	eng	N	N	O	O
+
+total	eng	N	N	O	O
+
+time	eng	N	N	O	O
+.	m	N	N	O	O
+
+While	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+shown	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+minutes	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+actual	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+measured	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+precision	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+second	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+seconds	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+taken	eng	N	N	O	O
+
+into	eng	N	N	O	O
+
+account	eng	N	N	O	O
+
+when	eng	N	N	O	O
+
+ranking	eng	N	N	O	O
+
+teams	eng	N	N	O	O
+.	m	N	N	O	O
+
+Teams	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+equal	eng	N	N	O	O
+
+rank	eng	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+above	eng	N	N	O	O
+
+rules	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+sorted	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+increasing	eng	N	N	O	O
+
+team	eng	N	N	O	O
+
+number	eng	N	N	O	O
+.	m	N	N	O	O
+
+Your	eng	N	N	O	O
+
+task	eng	N	N	O	O
+
+is	eng	N	N	O	O
+,	x	N	N	O	O
+
+given	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+list	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+runs	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+submission	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+result	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+run	eng	N	N	O	O
+,	x	N	N	O	O
+
+compute	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+rank	eng	N	N	O	O
+
+table	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+C	x	N	N	O	O
+
+teams	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+C	x	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+quartets	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+integes	eng	N	N	O	O
+
+ci	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+
+ti	eng	N	N	O	O
+
+ri	eng	Y	N	O	O
+,	x	N	N	O	O
+
+where	eng	N	N	O	O
+
+ci	eng	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+team	eng	N	N	O	O
+
+number	eng	N	N	O	O
+,	x	N	N	O	O
+
+pi	eng	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+problem	eng	N	N	O	O
+
+number	eng	N	N	O	O
+,	x	N	N	O	O
+
+ti	eng	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+submission	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+seconds	eng	N	N	O	O
+,	x	N	N	O	O
+
+ri	eng	Y	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+run	eng	N	N	O	O
+
+was	eng	N	N	O	O
+
+accepted	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+otherwise	eng	N	N	O	O
+.	m	N	N	O	O
+
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+C	x	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+1000	m	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+ci	eng	N	N	O	O
+
+≤	x	N	N	O	O
+
+C	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+pi	eng	N	N	O	O
+
+≤	x	N	N	O	O
+
+20	m	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+ti	eng	N	N	O	O
+
+≤	x	N	N	O	O
+
+36000.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+contain	eng	N	N	O	O
+
+C	x	N	N	O	O
+
+integers	eng	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+team	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+sorted	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+rank	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+3	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+3000	m	N	N	O	O
+
+0	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+3100	m	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+4200	m	N	N	O	O
+
+1	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+3	x	N	N	O	O
+
+我	r	N	N	O	O
+累	v	N	N	O	O
+个	q	N	N	O	O
+悲剧	n	N	N	O	O
+诶	e	N	N	O	O
+：	x	N	N	O	O
+竟然	d	N	N	O	O
+一直	d	N	N	O	O
+都	d	N	N	O	O
+理解	v	N	N	O	O
+错题	n	N	N	O	O
+意	n	N	N	O	O
+：	x	N	N	O	O
+关键	n	N	N	O	O
+：	x	N	N	O	O
+：	x	N	N	O	O
+1	x	N	N	O	O
+：	x	N	N	O	O
+要	v	N	N	O	O
+注意	v	N	N	O	O
+输入	v	N	N	O	O
+时间	n	N	N	O	O
+并不一定	d	N	N	O	O
+按	p	N	N	O	O
+升序	n	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+要	v	N	N	O	O
+对	p	N	N	O	O
+输入	v	N	N	O	O
+时间	n	N	N	O	O
+排序	n	Y	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+
+2	x	N	N	O	O
+：	x	N	N	O	O
+如果	c	N	N	O	O
+做	v	N	N	O	O
+题	n	N	N	O	O
+数目	n	N	N	O	O
+相同	d	N	N	O	O
+，	x	N	N	O	O
+按	p	N	N	O	O
+所有	b	N	N	O	O
+做	v	N	N	O	O
+对	p	N	N	O	O
+题目	n	Y	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+总和	n	N	N	O	O
+排序	n	Y	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+才	d	N	N	O	O
+叫	v	N	N	O	O
+公平	n	Y	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+
+3	x	N	N	O	O
+：	x	N	N	O	O
+只有	c	N	N	O	O
+该	r	N	N	O	O
+题	n	N	N	O	O
+接受	v	N	N	O	O
+时	n	N	N	O	O
+加罚	vn	N	N	O	O
+时	ng	N	N	O	O
+才	d	N	N	O	O
+有效	a	Y	N	O	O
+；	x	N	N	O	O
+所以	c	N	N	O	O
+要	v	N	N	O	O
+注意	v	N	N	O	O
+去	v	N	N	O	O
+找到	v	N	N	O	O
+没有	v	N	N	O	O
+接收	v	N	N	O	O
+的	uj	N	N	O	O
+题	n	N	N	O	O
+的	uj	N	N	O	O
+加罚	vn	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+加以	v	N	N	O	O
+忽略	d	N	N	O	O
+；	x	N	N	O	O
+
+4	x	N	N	O	O
+：	x	N	N	O	O
+最后	f	N	N	O	O
+还要	c	N	N	O	O
+注意	v	N	N	O	O
+一道	m	N	N	O	O
+题	n	N	N	O	O
+也	d	N	N	O	O
+没有	v	N	N	O	O
+提交	v	N	N	O	O
+的	uj	N	N	O	O
+队	n	N	N	O	O
+的	uj	N	N	O	O
+队号	n	N	N	O	O
+存储	j	N	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+stu1	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+c1	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t1	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+r1	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+1150	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+stu2	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+队号	n	N	N	O	O
+；	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+[	x	N	N	O	O
+25	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+解决	v	N	N	O	O
+的	uj	N	N	O	O
+题号	n	N	N	O	O
+；	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+num	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+解决	v	N	N	O	O
+的	uj	N	N	O	O
+题目	n	Y	N	O	O
+数	n	N	N	O	O
+；	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+用	p	N	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+[	x	N	N	O	O
+25	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+对应	vn	N	N	O	O
+题号	n	N	N	O	O
+的	uj	N	N	O	O
+加罚	vn	N	N	O	O
+时间	n	N	N	O	O
+；	x	N	N	O	O
+
+}	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+1150	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cmp1	eng	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+*	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+stu1	eng	N	N	O	O
+
+*	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+*	x	N	N	O	O
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+c	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+struct	eng	N	N	O	O
+
+stu1	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+d	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+struct	eng	N	N	O	O
+
+stu1	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t1	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t1	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t1	eng	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t1	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+r1	eng	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+r1	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cmp2	eng	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+*	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+stu2	eng	N	N	O	O
+
+*	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+*	x	N	N	O	O
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+c	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+struct	eng	N	N	O	O
+
+stu2	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+d	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+struct	eng	N	N	O	O
+
+stu2	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+num	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+num	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+num	eng	N	N	O	O
+-	x	N	N	O	O
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+按	p	N	N	O	O
+解决	v	N	N	O	O
+题目	n	Y	N	O	O
+数	n	N	N	O	O
+排序	n	Y	N	O	O
+；	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t	x	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+相同	d	N	N	O	O
+题目	n	Y	N	O	O
+数	m	N	N	O	O
+按	p	N	N	O	O
+时间	n	N	N	O	O
+升序	n	N	N	O	O
+排序	n	Y	N	O	O
+；	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+c	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+解决	v	N	N	O	O
+题目	n	Y	N	O	O
+数	n	N	N	O	O
+相同	d	N	N	O	O
+，	x	N	N	O	O
+时间	n	N	N	O	O
+也	d	N	N	O	O
+相同	d	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+按	p	N	N	O	O
+队号	n	N	N	O	O
+排序	n	Y	N	O	O
+；	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+c	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+n	eng	N	N	O	O
+此	r	N	N	O	O
+输入	v	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+r1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+qsort	eng	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+cmp1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+r1	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+没有	v	N	N	O	O
+AC	eng	N	N	O	O
+；	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+对应	vn	N	N	O	O
+队号	n	N	N	O	O
+的	uj	N	N	O	O
+队号	n	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+m	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+r	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+1200	m	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+对应	vn	N	N	O	O
+题号	n	N	N	O	O
+加上	v	N	N	O	O
+加罚	vn	N	N	O	O
+时	n	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如	v	N	N	O	O
+接受	v	N	N	O	O
+；	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+m	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如	v	N	N	O	O
+本	r	N	N	O	O
+对	p	N	N	O	O
+本题	n	N	N	O	O
+是	v	N	N	O	O
+第一次	m	N	N	O	O
+提交	v	N	N	O	O
+成功	a	N	N	O	O
+；	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+m	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+输入	v	N	N	O	O
+对应	vn	N	N	O	O
+题号	n	N	N	O	O
+；	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+r	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t1	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+t1	eng	N	N	O	O
++	x	N	N	O	O
+s	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+r	eng	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p1	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+当前	t	N	N	O	O
+时间	n	N	N	O	O
+加上	v	N	N	O	O
+加罚	vn	N	N	O	O
+时	n	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+c1	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+num	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+解决	v	N	N	O	O
+题目	n	Y	N	O	O
+数	m	N	N	O	O
+加	v	N	N	O	O
+一	m	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+将	d	N	N	O	O
+没有	v	N	N	O	O
+提交	v	N	N	O	O
+过	ug	N	N	O	O
+的	uj	N	N	O	O
+队	n	N	N	O	O
+的	uj	N	N	O	O
+队号	n	N	N	O	O
+打上	v	N	N	O	O
+；	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+qsort	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+cmp2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+排序	n	Y	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+c	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+c	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+p	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

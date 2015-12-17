@@ -1,0 +1,3282 @@
+POJ1859	eng	N	Y	B-OJ
+_	x	N	N	O
+oi111	eng	N	N	O
+_	x	N	N	O
+新浪	nz	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+Perfect	eng	N	N	O
+ 	x	N	N	O
+Symmetry	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Time	eng	N	N	O
+ 	x	N	N	O
+Limit	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+1000	m	N	N	O
+MS	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Memory	eng	N	N	O
+ 	x	N	N	O
+Limit	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+30000	m	N	N	O
+K	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Total	eng	N	N	O
+ 	x	N	N	O
+Submissions	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+1164	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Accepted	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+438	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+Description	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+representatives	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+NATO	eng	N	N	O
+ 	x	N	N	O
+countries	eng	N	N	O
+ 	x	N	N	O
+must	eng	N	N	O
+ 	x	N	N	O
+be	eng	Y	N	O
+ 	x	N	N	O
+guarded	eng	N	N	O
+ 	x	N	N	O
+by	eng	N	N	O
+ 	x	N	N	O
+many	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+during	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Summit	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Each	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+accompanied	eng	N	N	O
+ 	x	N	N	O
+by	eng	N	N	O
+ 	x	N	N	O
+his	eng	N	N	O
+ 	x	N	N	O
+own	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+but	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+also	eng	N	N	O
+ 	x	N	N	O
+assigned	eng	N	N	O
+ 	x	N	N	O
+many	eng	N	N	O
+ 	x	N	N	O
+other	eng	N	N	O
+ 	x	N	N	O
+specialists	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+snipers	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+etc	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+To	eng	N	N	O
+ 	x	N	N	O
+make	eng	N	N	O
+ 	x	N	N	O
+their	eng	N	N	O
+ 	x	N	N	O
+work	eng	N	N	O
+ 	x	N	N	O
+efficient	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+guarded	eng	N	N	O
+ 	x	N	N	O
+person	eng	N	N	O
+ 	x	N	N	O
+secure	eng	N	N	O
+ 	x	N	N	O
+as	eng	Y	N	O
+ 	x	N	N	O
+much	eng	N	N	O
+ 	x	N	N	O
+as	eng	Y	N	O
+ 	x	N	N	O
+possible	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+must	eng	N	N	O
+ 	x	N	N	O
+be	eng	Y	N	O
+ 	x	N	N	O
+distributed	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+various	eng	N	N	O
+ 	x	N	N	O
+directions	eng	N	N	O
+ 	x	N	N	O
+from	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+person	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+optimal	eng	N	N	O
+ 	x	N	N	O
+placement	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+such	eng	N	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+stands	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+guards	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Unfortunately	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+when	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+moves	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+it	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+very	eng	N	N	O
+ 	x	N	N	O
+hard	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+reconfigure	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+'	x	N	N	O
+ 	x	N	N	O
+positions	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+reflect	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+new	eng	N	N	O
+ 	x	N	N	O
+situation	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Most	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Czech	eng	N	N	O
+ 	x	N	N	O
+specialists	eng	N	N	O
+ 	x	N	N	O
+are	eng	N	N	O
+ 	x	N	N	O
+not	eng	N	N	O
+ 	x	N	N	O
+able	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+do	eng	N	N	O
+ 	x	N	N	O
+such	eng	N	N	O
+ 	x	N	N	O
+reconfigurations	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+real	eng	N	N	O
+-	x	N	N	O
+time	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Therefore	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Home	eng	N	N	O
+ 	x	N	N	O
+Affairs	eng	N	N	O
+ 	x	N	N	O
+Minister	eng	N	N	O
+ 	x	N	N	O
+Sobeslav	eng	N	N	O
+ 	x	N	N	O
+Gros	eng	N	N	O
+ 	x	N	N	O
+has	eng	Y	N	O
+ 	x	N	N	O
+decided	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+reverse	eng	N	N	O
+ 	x	N	N	O
+this	eng	N	N	O
+ 	x	N	N	O
+procedure	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+take	eng	N	N	O
+ 	x	N	N	O
+their	eng	N	N	O
+ 	x	N	N	O
+places	eng	N	N	O
+ 	x	N	N	O
+first	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Then	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+it	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+responsibility	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+find	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+proper	eng	N	N	O
+ 	x	N	N	O
+position	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+If	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+person	eng	N	N	O
+ 	x	N	N	O
+appears	eng	N	N	O
+ 	x	N	N	O
+anywhere	eng	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+we	eng	N	N	O
+ 	x	N	N	O
+take	eng	N	N	O
+ 	x	N	N	O
+no	eng	N	N	O
+ 	x	N	N	O
+responsibility	eng	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+ 	x	N	N	O
+his	eng	N	N	O
+/	x	N	N	O
+her	eng	Y	N	O
+ 	x	N	N	O
+security	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Your	eng	N	N	O
+ 	x	N	N	O
+task	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+automate	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+process	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Given	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+ 	x	N	N	O
+points	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+bodyguard	eng	N	N	O
+ 	x	N	N	O
+positions	eng	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+you	eng	N	N	O
+ 	x	N	N	O
+are	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+find	eng	N	N	O
+ 	x	N	N	O
+its	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+where	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+relatively	eng	N	N	O
+ 	x	N	N	O
+safe	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+More	eng	N	N	O
+ 	x	N	N	O
+formal	eng	N	N	O
+ 	x	N	N	O
+description	eng	N	N	O
+ 	x	N	N	O
+follows	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Let	eng	N	N	O
+'	x	N	N	O
+s	x	N	N	O
+ 	x	N	N	O
+have	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+A	x	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+We	eng	N	N	O
+ 	x	N	N	O
+say	eng	N	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+another	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+A	x	N	N	O
+'	x	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+image	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+A	x	N	N	O
+ 	x	N	N	O
+according	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+ 	x	N	N	O
+iff	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+joining	eng	N	N	O
+ 	x	N	N	O
+points	eng	N	N	O
+ 	x	N	N	O
+A	x	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+A	x	N	N	O
+'	x	N	N	O
+.	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+image	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+points	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+X	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+according	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+images	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+individual	eng	N	N	O
+ 	x	N	N	O
+points	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+X	x	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+said	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+possess	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+there	eng	N	N	O
+ 	x	N	N	O
+exists	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+ 	x	N	N	O
+such	eng	N	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+image	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+X	x	N	N	O
+ 	x	N	N	O
+according	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+equal	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+X	x	N	N	O
+ 	x	N	N	O
+itself	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Input	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+input	eng	N	N	O
+ 	x	N	N	O
+consists	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+several	eng	N	N	O
+ 	x	N	N	O
+assignments	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Each	eng	N	N	O
+ 	x	N	N	O
+assignment	eng	N	N	O
+ 	x	N	N	O
+begins	eng	N	N	O
+ 	x	N	N	O
+with	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+containing	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+single	eng	N	N	O
+ 	x	N	N	O
+integer	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+20000.	m	N	N	O
+ 	x	N	N	O
+It	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+followed	eng	N	N	O
+ 	x	N	N	O
+by	eng	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+ 	x	N	N	O
+lines	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+each	eng	N	N	O
+ 	x	N	N	O
+containing	eng	N	N	O
+ 	x	N	N	O
+two	eng	N	N	O
+ 	x	N	N	O
+integer	eng	N	N	O
+ 	x	N	N	O
+numbers	eng	N	N	O
+ 	x	N	N	O
+Xi	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+Yi	eng	N	N	O
+ 	x	N	N	O
+separated	eng	N	N	O
+ 	x	N	N	O
+with	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+space	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+10	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+5	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+Xi	eng	N	N	O
+,	x	N	N	O
+Yi	eng	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+10	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+5.	m	N	N	O
+ 	x	N	N	O
+These	eng	N	N	O
+ 	x	N	N	O
+are	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Cartesian	eng	N	N	O
+ 	x	N	N	O
+coordinates	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+th	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Since	eng	N	N	O
+ 	x	N	N	O
+no	eng	N	N	O
+ 	x	N	N	O
+two	eng	N	N	O
+ 	x	N	N	O
+bodyguards	eng	N	N	O
+ 	x	N	N	O
+occupy	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+same	eng	N	N	O
+ 	x	N	N	O
+place	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+no	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+will	eng	N	N	O
+ 	x	N	N	O
+appear	eng	N	N	O
+ 	x	N	N	O
+twice	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+same	eng	N	N	O
+ 	x	N	N	O
+assignment	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+However	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+note	eng	N	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+bodyguard	eng	N	N	O
+ 	x	N	N	O
+can	eng	N	N	O
+ 	x	N	N	O
+be	eng	Y	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+same	eng	N	N	O
+ 	x	N	N	O
+place	eng	N	N	O
+ 	x	N	N	O
+as	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+After	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+last	eng	N	N	O
+ 	x	N	N	O
+assignment	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+there	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+containing	eng	N	N	O
+ 	x	N	N	O
+zero	eng	N	N	O
+ 	x	N	N	O
+instead	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+points	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+This	eng	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+should	eng	N	N	O
+ 	x	N	N	O
+not	eng	N	N	O
+ 	x	N	N	O
+be	eng	Y	N	O
+ 	x	N	N	O
+processed	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Output	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+For	eng	N	N	O
+ 	x	N	N	O
+each	eng	N	N	O
+ 	x	N	N	O
+assignment	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+output	eng	N	N	O
+ 	x	N	N	O
+exactly	eng	N	N	O
+ 	x	N	N	O
+one	eng	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+If	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+given	eng	N	N	O
+ 	x	N	N	O
+set	eng	N	N	O
+ 	x	N	N	O
+possesses	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+print	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+text	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+should	eng	N	N	O
+ 	x	N	N	O
+stay	eng	N	N	O
+ 	x	N	N	O
+at	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+X	x	N	N	O
+,	x	N	N	O
+Y	x	N	N	O
+)	x	N	N	O
+.	x	N	N	O
+"	x	N	N	O
+ 	x	N	N	O
+where	eng	N	N	O
+ 	x	N	N	O
+X	x	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+Y	x	N	N	O
+ 	x	N	N	O
+are	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Cartesian	eng	N	N	O
+ 	x	N	N	O
+coordinates	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+rounded	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+nearest	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+with	eng	N	N	O
+ 	x	N	N	O
+exactly	eng	N	N	O
+ 	x	N	N	O
+one	eng	N	N	O
+ 	x	N	N	O
+digit	eng	N	N	O
+ 	x	N	N	O
+after	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+decimal	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+If	eng	N	N	O
+ 	x	N	N	O
+there	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+no	eng	N	N	O
+ 	x	N	N	O
+center	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+symmetry	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+output	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+text	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+This	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+dangerous	eng	N	N	O
+ 	x	N	N	O
+situation	eng	N	N	O
+!	x	N	N	O
+"	x	N	N	O
+.	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Sample	eng	N	N	O
+ 	x	N	N	O
+Input	eng	N	N	O
+
+	x	N	N	O
+8	x	N	N	O
+
+	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+10	m	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+6	x	N	N	O
+
+	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+8	x	N	N	O
+
+	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+4	x	N	N	O
+
+	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+
+	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+5	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+Sample	eng	N	N	O
+ 	x	N	N	O
+Output	eng	N	N	O
+
+	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+should	eng	N	N	O
+ 	x	N	N	O
+stay	eng	N	N	O
+ 	x	N	N	O
+at	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2.0	m	N	N	O
+,	x	N	N	O
+3.0	m	N	N	O
+)	x	N	N	O
+.	x	N	N	O
+
+	x	N	N	O
+This	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+dangerous	eng	N	N	O
+ 	x	N	N	O
+situation	eng	N	N	O
+!	x	N	N	O
+
+	x	N	N	O
+Source	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+CTU	eng	N	N	O
+ 	x	N	N	O
+Open	eng	N	N	O
+ 	x	N	N	O
+2002	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+iostream	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+math	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+{	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+30000	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+pig	eng	N	N	O
+(	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+a	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+<	x	N	N	O
+b	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+a	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+b	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+&&	x	N	N	O
+a	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+<	x	N	N	O
+b	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+swap	eng	N	N	O
+(	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+=	x	N	N	O
+x	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+=	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+=	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+dog	eng	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+,	x	N	N	O
+y1	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+point	eng	N	N	O
+ 	x	N	N	O
+mid	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+=	x	N	N	O
+x	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+=	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+mid	eng	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+(	x	N	N	O
+x	eng	N	N	O
++	x	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+do	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+pig	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+mid	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+x	eng	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+pig	eng	N	N	O
+(	x	N	N	O
+mid	eng	N	N	O
+,	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+swap	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x	eng	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+<	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+<	x	N	N	O
+y1	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+dog	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+y1	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x1	eng	N	N	O
+<	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+dog	eng	N	N	O
+(	x	N	N	O
+x1	eng	N	N	O
+,	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+tx	eng	N	N	O
+,	x	N	N	O
+ty	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+d	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+dog	eng	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+n	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+"	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+%	x	N	N	O
+2	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+tx	eng	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ty	eng	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+tx	eng	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ty	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+true	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+should	eng	N	N	O
+ 	x	N	N	O
+stay	eng	N	N	O
+ 	x	N	N	O
+at	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+%	x	N	N	O
+.1	m	N	N	O
+lf	eng	N	N	O
+,	x	N	N	O
+%	x	N	N	O
+.1	m	N	N	O
+lf	eng	N	N	O
+)	x	N	N	O
+.	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+tx	eng	N	N	O
+/	x	N	N	O
+2.0	m	N	N	O
+,	x	N	N	O
+ty	eng	N	N	O
+/	x	N	N	O
+2.0	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+This	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+dangerous	eng	N	N	O
+ 	x	N	N	O
+situation	eng	N	N	O
+!	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+tx	eng	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+(	x	N	N	O
+1	m	N	N	O
++	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+*	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ty	eng	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+(	x	N	N	O
+1	m	N	N	O
++	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+*	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+tx	eng	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
++	x	N	N	O
+a	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ty	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+d	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+true	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+V	eng	N	N	O
+.	m	N	N	O
+I	eng	N	N	O
+.	m	N	N	O
+P	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+should	eng	N	N	O
+ 	x	N	N	O
+stay	eng	N	N	O
+ 	x	N	N	O
+at	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+%	x	N	N	O
+.1	m	N	N	O
+lf	eng	N	N	O
+,	x	N	N	O
+%	x	N	N	O
+.1	m	N	N	O
+lf	eng	N	N	O
+)	x	N	N	O
+.	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+tx	eng	N	N	O
+/	x	N	N	O
+2.0	m	N	N	O
+,	x	N	N	O
+ty	eng	N	N	O
+/	x	N	N	O
+2.0	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+This	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+dangerous	eng	N	N	O
+ 	x	N	N	O
+situation	eng	N	N	O
+!	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+cin	eng	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O

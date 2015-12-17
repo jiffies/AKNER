@@ -1,0 +1,647 @@
+pku	eng	N	Y	O	B-OJ
+
+1160	m	N	N	O	I-OJ
+_	x	N	N	O	O
+King	eng	N	N	O	O
+___	x	N	N	O	O
+haha	eng	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1160	m	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+状态	n	Y	N	O	O
+转移	v	N	N	O	O
+方程	n	Y	N	O	O
+：	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+mid	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+其中	r	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+<	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+
+mid	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+从	p	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+个	m	N	N	O	O
+村庄	n	N	N	O	O
+到	v	N	N	O	O
+第	m	N	N	O	O
+j	eng	N	N	O	O
+个	m	N	N	O	O
+村庄	n	N	N	O	O
+建	v	N	N	O	O
+一个	m	N	N	O	O
+邮局	n	N	N	O	O
+的	uj	N	N	O	O
+最优	d	N	N	O	O
+解	v	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+其中	r	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+=	x	N	N	O	O
+<	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+特别	d	N	N	O	O
+要	v	N	N	O	O
+注意	v	N	N	O	O
+初始化	l	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+maxn1	eng	N	N	O	O
+
+35	m	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+maxn2	eng	N	N	O	O
+
+305	m	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+maxn3	eng	N	N	O	O
+
+2110000000	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+maxn2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+maxn2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+maxn1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+mid	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+mid	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+DP	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+v	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+po	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+maxn3	eng	N	N	O	O
+;	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+cost	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+DP	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

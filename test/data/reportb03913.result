@@ -1,0 +1,549 @@
+poj	eng	N	Y	O	B-OJ
+
+1583	m	N	N	O	I-OJ
+
+Choose	eng	N	N	O	O
+
+Your	eng	N	N	O	O
+
+Words	eng	N	N	O	O
+
+Carefully	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+yzl	eng	N	N	O	O
+_	x	N	N	O	O
+rex	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+足足	v	N	N	O	O
+用	p	N	N	O	O
+了	ul	N	N	O	O
+我	r	N	N	O	O
+4	m	N	N	O	O
+个	m	N	N	O	O
+多	m	N	N	O	O
+小时	n	N	N	O	O
+来	v	N	N	O	O
+检查	vn	N	N	O	O
+错误	n	N	N	O	O
+（	x	N	N	O	O
+半个	m	N	N	O	O
+小时	n	N	N	O	O
+写	v	N	N	O	O
+代码	n	N	N	O	O
+）	x	N	N	O	O
+！	x	N	N	O	O
+实在	v	N	N	O	O
+太	d	N	N	O	O
+愚蠢	a	N	N	O	O
+了	ul	N	N	O	O
+！	x	N	N	O	O
+头	n	N	N	O	O
+都	d	N	N	O	O
+爆	v	N	N	O	O
+了	ul	N	N	O	O
+！	x	N	N	O	O
+哎	e	N	N	O	O
+！	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+而且	c	N	N	O	O
+这	r	N	N	O	O
+一题	n	N	N	O	O
+并	c	N	N	O	O
+没有	v	N	N	O	O
+区分	n	N	N	O	O
+大小写	b	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+一般	a	N	N	O	O
+没有	v	N	N	O	O
+考虑	v	N	N	O	O
+到	v	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+，	x	N	N	O	O
+都	d	N	N	O	O
+可以	c	N	N	O	O
+通过	p	N	N	O	O
+代码	n	N	N	O	O
+后面	f	N	N	O	O
+的	uj	N	N	O	O
+样例	n	N	N	O	O
+发现	v	N	N	O	O
+，	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+实在	v	N	N	O	O
+太坑	ns	N	N	O	O
+爹	n	N	N	O	O
+了	ul	N	N	O	O
+！	x	N	N	O	O
+被	p	N	N	O	O
+折磨	v	N	N	O	O
+了	ul	N	N	O	O
+数	m	N	N	O	O
+小时	n	N	N	O	O
+，	x	N	N	O	O
+经历	n	N	N	O	O
+了	ul	N	N	O	O
+无限	v	Y	N	O	O
+次	t	N	N	O	O
+WA	eng	N	N	O	O
+！	x	N	N	O	O
+虽然	c	N	N	O	O
+是	v	N	N	O	O
+水题	n	N	N	O	O
+一道	m	N	N	O	O
+！	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+map	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+>	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+>	x	N	N	O	O
+:	x	N	N	O	O
+:	x	N	N	O	O
+iterator	eng	N	N	O	O
+
+it	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+
+max	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+word	eng	N	N	O	O
+,	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+word	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+word	eng	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+flag	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+isalpha	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+tolower	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+flag	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+{	x	N	N	O	O
+
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+++	x	N	N	O	O
+m	eng	N	N	O	O
+[	x	N	N	O	O
+tmp	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+flag	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+time	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+max	eng	N	N	O	O
+)	x	N	N	O	O
+
+max	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+++	x	N	N	O	O
+m	eng	N	N	O	O
+[	x	N	N	O	O
+tmp	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+time	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+max	eng	N	N	O	O
+)	x	N	N	O	O
+
+max	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+max	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+occurrences	eng	N	N	O	O
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+it	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+m	eng	N	N	O	O
+.	m	N	N	O	O
+begin	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+m	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+it	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+it	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+second	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+max	eng	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+it	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+first	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+a	eng	N	N	O	O
+.	m	N	N	O	O
+a	eng	N	N	O	O
+/	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+a	x	N	N	O	O
+\	x	N	N	O	O
+a	x	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+and	eng	N	N	O	O
+..	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+and	eng	N	N	O	O
+.	m	N	N	O	O
+and	eng	N	N	O	O
+.	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+.	m	N	N	O	O
+ans	eng	N	N	O	O
+
+New	eng	N	N	O	O
+
+new	eng	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+

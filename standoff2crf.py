@@ -55,6 +55,8 @@ def trans_txt(filename,tagmode=False):
                 nertag = 'I-' + last_tag[2]
             else:
                 nertag = 'O'
+        else:
+            nertag='O'
         if last_word == u'。' and word != '\n' and word!=last_word:
             result.append('')
         for item in knowledge_dict:
@@ -75,12 +77,13 @@ def trans_txt(filename,tagmode=False):
         if not tagmode:
             result.append('\t'.join([word,flag,inKnowledgeDict,inOjDict,nertag]))
         else:
-            result.append('\t'.join([word,flag,inKnowledgeDict,inOjDict]))
+            result.append('\t'.join([word,flag,inKnowledgeDict,inOjDict,nertag]))
 
         curr_pos+=len(word)
         last_word = word
 
     output = '\n'.join(result)
+    output = output.replace('\r\n','\n')
     with file(filename.split('.')[0]+'.crf','w') as f:
         f.write(output.encode('utf8'))
     return output
@@ -103,6 +106,9 @@ def cross_validation(data,num=5):
     for i in range(num):
         testset = random.sample(data,sample_num)
         trainset = list(set(data).difference(set(testset)))
+        #trainset = random.sample(data,total-sample_num)
+        #testset = random.sample(data,sample_num)
+        
         yield (trainset,testset)
 
 
@@ -131,7 +137,7 @@ def get_ne(test_result,tagmode=False):
         names = NAMES
     else:
         names = copy.copy(NAMES)
-        names.remove('nertag')
+        #names.remove('nertag')
     df = pd.read_csv(test_result,sep='\t',header=None,quoting=csv.QUOTE_NONE,names=names)
     predict = zip(df['token'],df['predict'])
     for token,tag in predict:
@@ -141,7 +147,9 @@ def get_ne(test_result,tagmode=False):
                 curtag = None
             curtag = token
         elif tag.startswith('I-'):
-            curtag += token
+            if curtag:
+                curtag += ' '
+                curtag += token
         elif tag == 'O':
             if curtag:
                 NE.append(curtag)
@@ -171,10 +179,10 @@ def generate_ne(docset):
 
 
 if __name__ == '__main__':
-    data = [os.path.join('test/NE',filename) for filename in os.listdir('test/NE') if filename.endswith('.txt')]
-    generate_ne(data)
-    #data = [os.path.join('test/data',filename) for filename in os.listdir('test/data') if filename.endswith('.txt')]
-    #test(data)
+    #data = [os.path.join('test/data/txt',filename) for filename in os.listdir('test/data/txt') if filename.endswith('.txt')]
+    #generate_ne(data)
+    data = [os.path.join('test/data',filename) for filename in os.listdir('test/data') if filename.endswith('.txt')]
+    test(data)
     #print trans_txt('test/reportb09877.txt')
     #result = []
     #for filename in os.listdir('test/data'):

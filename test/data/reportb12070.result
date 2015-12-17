@@ -1,0 +1,1196 @@
+poj2181	eng	N	Y	O	B-OJ
+-	x	N	N	O	O
+-	x	N	N	O	O
+Jumping	eng	N	N	O	O
+
+Cows	eng	N	N	O	O
+（	x	N	N	O	O
+DP	eng	N	N	O	B-KNOWLEDGE
+）	x	N	N	O	O
+_	x	N	N	O	O
+易川	nr	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+cows	eng	N	N	O	O
+
+would	eng	N	N	O	O
+
+like	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+
+over	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+moon	eng	N	N	O	O
+,	x	N	N	O	O
+
+just	eng	N	N	O	O
+
+like	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cows	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+their	eng	N	N	O	O
+
+favorite	eng	N	N	O	O
+
+nursery	eng	N	N	O	O
+
+rhyme	eng	N	N	O	O
+.	m	N	N	O	O
+
+Unfortunately	eng	N	N	O	O
+,	x	N	N	O	O
+
+cows	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+local	eng	N	N	O	O
+
+witch	eng	N	N	O	O
+
+doctor	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+mixed	eng	N	N	O	O
+
+up	eng	N	N	O	O
+
+P	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+P	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+150	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+)	x	N	N	O	O
+
+potions	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+aid	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cows	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+their	eng	N	N	O	O
+
+quest	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+.	m	N	N	O	O
+
+These	eng	N	N	O	O
+
+potions	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+administered	eng	N	N	O	O
+
+exactly	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+order	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+were	eng	N	N	O	O
+
+created	eng	N	N	O	O
+,	x	N	N	O	O
+
+though	eng	N	N	O	O
+
+some	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+skipped	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+potion	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+strength	eng	N	N	O	O
+'	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+strength	eng	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+500	m	N	N	O	O
+)	x	N	N	O	O
+
+that	eng	N	N	O	O
+
+enhances	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cows	eng	N	N	O	O
+'	x	N	N	O	O
+
+jumping	eng	N	N	O	O
+
+ability	eng	N	N	O	O
+.	m	N	N	O	O
+
+Taking	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+potion	eng	N	N	O	O
+
+during	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+odd	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+step	eng	N	N	O	O
+
+increases	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cows	eng	N	N	O	O
+'	x	N	N	O	O
+
+jump	eng	N	N	O	O
+;	x	N	N	O	O
+
+taking	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+potion	eng	N	N	O	O
+
+during	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+even	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+step	eng	N	N	O	O
+
+decreases	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+.	m	N	N	O	O
+
+Before	eng	N	N	O	O
+
+taking	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+potions	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cows	eng	N	N	O	O
+'	x	N	N	O	O
+
+jumping	eng	N	N	O	O
+
+ability	eng	N	N	O	O
+
+is	eng	N	N	O	O
+,	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+course	eng	N	N	O	O
+,	x	N	N	O	O
+
+0.	m	N	N	O	O
+
+No	eng	N	N	O	O
+
+potion	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+taken	eng	N	N	O	O
+
+twice	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+once	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cow	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+begun	eng	N	N	O	O
+
+taking	eng	N	N	O	O
+
+potions	eng	N	N	O	O
+,	x	N	N	O	O
+
+one	eng	N	N	O	O
+
+potion	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+taken	eng	N	N	O	O
+
+during	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+step	eng	N	N	O	O
+,	x	N	N	O	O
+
+starting	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+1.	m	N	N	O	O
+
+One	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+more	eng	N	N	O	O
+
+potions	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+skipped	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+turn	eng	N	N	O	O
+.	m	N	N	O	O
+
+Determine	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+potions	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+get	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+highest	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+Line	eng	N	N	O	O
+
+1	x	N	N	O	O
+:	x	N	N	O	O
+
+A	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+,	x	N	N	O	O
+
+P	x	N	N	O	O
+
+*	x	N	N	O	O
+
+Lines	eng	N	N	O	O
+
+2..	m	N	N	O	O
+P	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+:	x	N	N	O	O
+
+Each	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+strength	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+potion	eng	N	N	O	O
+.	m	N	N	O	O
+
+Line	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+gives	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+strength	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+potion	eng	N	N	O	O
+;	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+gives	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+strength	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+second	eng	N	N	O	O
+
+potion	eng	N	N	O	O
+;	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+on	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+Line	eng	N	N	O	O
+
+1	x	N	N	O	O
+:	x	N	N	O	O
+
+A	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+possible	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+8	x	N	N	O	O
+
+7	x	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+8	x	N	N	O	O
+
+4	x	N	N	O	O
+
+3	x	N	N	O	O
+
+5	x	N	N	O	O
+
+6	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+17	m	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+题意	n	N	N	O	O
+是	v	N	N	O	O
+有	v	N	N	O	O
+P	eng	N	N	O	O
+瓶	n	N	N	O	O
+魔法	n	N	N	O	O
+药水	n	N	N	O	O
+，	x	N	N	O	O
+能	v	N	N	O	O
+让	v	N	N	O	O
+牛	n	N	N	O	O
+每次	r	N	N	O	O
+跳	v	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+相应	v	N	N	O	O
+的	uj	N	N	O	O
+增加	v	N	N	O	O
+或	c	N	N	O	O
+减少	v	N	N	O	O
+。	x	N	N	O	O
+
+有	v	N	N	O	O
+头牛	n	N	N	O	O
+每	r	N	N	O	O
+跳	v	N	N	O	O
+一步	m	N	N	O	O
+喝	vg	N	N	O	O
+一瓶	m	N	N	O	O
+，	x	N	N	O	O
+当	p	N	N	O	O
+它	r	N	N	O	O
+跳	v	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+第奇	nz	N	N	O	O
+数步	m	N	N	O	O
+，	x	N	N	O	O
+跳	v	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+增加	v	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+如果	c	N	N	O	O
+是	v	N	N	O	O
+第	m	N	N	O	O
+偶数	n	N	N	O	O
+步	n	N	N	O	O
+，	x	N	N	O	O
+跳	v	N	N	O	O
+得	ud	N	N	O	O
+高度	n	Y	N	O	O
+就	d	N	N	O	O
+减少	v	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+问	n	N	N	O	O
+怎样	r	N	N	O	O
+合理安排	n	N	N	O	O
+，	x	N	N	O	O
+让	v	N	N	O	O
+牛	n	N	N	O	O
+跳	v	N	N	O	O
+得	ud	N	N	O	O
+更	d	N	N	O	O
+高	a	N	N	O	O
+？	x	N	N	O	O
+
+·	x	N	N	O	O
+
+#	x	N	N	O	O
+
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+·	x	N	N	O	O
+
+#	x	N	N	O	O
+
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+·	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+200000	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+200000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+分别	d	N	N	O	O
+记录	n	Y	N	O	O
+喝	vg	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+瓶	n	N	N	O	O
+药水	n	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+如果	c	N	N	O	O
+是	v	N	N	O	O
+奇	ag	N	N	O	O
+数步	m	N	N	O	O
+时	ng	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+和	c	N	N	O	O
+是	v	N	N	O	O
+偶数	n	N	N	O	O
+步时	n	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+!	x	N	N	O	O
+!	x	N	N	O	O
+!	x	N	N	O	O
+
+·	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+200000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+{	x	N	N	O	O
+
+·	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+max1	eng	N	N	O	O
+,	x	N	N	O	O
+max2	eng	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+h1	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+h1	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+h2	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+h2	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+{	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+{	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+}	x	N	N	O	O
+
+·	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+·	x	N	N	O	O
+
+{	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+是	v	N	N	O	O
+奇	ag	N	N	O	O
+数步	m	N	N	O	O
+，	x	N	N	O	O
+那	r	N	N	O	O
+该	r	N	N	O	O
+步	q	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+为	p	N	N	O	O
+前	f	N	N	O	O
+偶数	n	N	N	O	O
+步	n	N	N	O	O
++	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+如果	c	N	N	O	O
+是	v	N	N	O	O
+偶数	n	N	N	O	O
+步	n	N	N	O	O
+，	x	N	N	O	O
+那	r	N	N	O	O
+该	r	N	N	O	O
+步	q	N	N	O	O
+的	uj	N	N	O	O
+高度	n	Y	N	O	O
+为	p	N	N	O	O
+前	f	N	N	O	O
+奇	v	N	N	O	O
+数步	m	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+}	x	N	N	O	O
+
+·	x	N	N	O	O
+
+·	x	N	N	O	O
+
+}	x	N	N	O	O
+
+·	x	N	N	O	O
+
+max1	eng	N	N	O	O
+=	x	N	N	O	O
+max2	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+{	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+max1	eng	N	N	O	O
+<	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+max1	eng	N	N	O	O
+=	x	N	N	O	O
+h1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+max2	eng	N	N	O	O
+<	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+max2	eng	N	N	O	O
+=	x	N	N	O	O
+h2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+}	x	N	N	O	O
+
+·	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+max1	eng	N	N	O	O
+<	x	N	N	O	O
+max2	eng	N	N	O	O
+)	x	N	N	O	O
+
+·	x	N	N	O	O
+
+max1	eng	N	N	O	O
+=	x	N	N	O	O
+max2	eng	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+max1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+·	x	N	N	O	O
+
+}	x	N	N	O	O
+

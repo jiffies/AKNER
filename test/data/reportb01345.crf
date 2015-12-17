@@ -1,0 +1,1750 @@
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+2992	m	N	N	I-OJ
+ 	x	N	N	O
+Divisors	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+bingshen	eng	N	N	O
+的	uj	N	N	O
+专栏	n	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+博客	nr	N	N	O
+频道	n	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+CSDN	eng	N	N	O
+.	m	N	N	O
+NET	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Divisors	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Time	eng	N	N	O
+ 	x	N	N	O
+Limit	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+1000	m	N	N	O
+MS	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Memory	eng	N	N	O
+ 	x	N	N	O
+Limit	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+65536	m	N	N	O
+K	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Total	eng	N	N	O
+ 	x	N	N	O
+Submissions	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+7635	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Accepted	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+2098	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Description	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Your	eng	N	N	O
+ 	x	N	N	O
+task	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+this	eng	N	N	O
+ 	x	N	N	O
+problem	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+to	eng	N	N	O
+ 	x	N	N	O
+determine	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+divisors	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Cnk	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Just	eng	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+ 	x	N	N	O
+fun	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+or	eng	Y	N	O
+ 	x	N	N	O
+do	eng	N	N	O
+ 	x	N	N	O
+you	eng	N	N	O
+ 	x	N	N	O
+need	eng	N	N	O
+ 	x	N	N	O
+any	eng	N	N	O
+ 	x	N	N	O
+special	eng	N	N	O
+ 	x	N	N	O
+reason	eng	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+ 	x	N	N	O
+such	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+useful	eng	N	N	O
+ 	x	N	N	O
+computation	eng	N	N	O
+?	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Input	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+input	eng	N	N	O
+ 	x	N	N	O
+consists	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+several	eng	N	N	O
+ 	x	N	N	O
+instances	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+Each	eng	N	N	O
+ 	x	N	N	O
+instance	eng	N	N	O
+ 	x	N	N	O
+consists	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+single	eng	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+containing	eng	N	N	O
+ 	x	N	N	O
+two	eng	N	N	O
+ 	x	N	N	O
+integers	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+≤	x	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+ 	x	N	N	O
+≤	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+≤	x	N	N	O
+ 	x	N	N	O
+431	m	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+separated	eng	N	N	O
+ 	x	N	N	O
+by	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+single	eng	N	N	O
+ 	x	N	N	O
+space	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Output	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+For	eng	N	N	O
+ 	x	N	N	O
+each	eng	N	N	O
+ 	x	N	N	O
+instance	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+output	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+line	eng	N	N	O
+ 	x	N	N	O
+containing	eng	N	N	O
+ 	x	N	N	O
+exactly	eng	N	N	O
+ 	x	N	N	O
+one	eng	N	N	O
+ 	x	N	N	O
+integer	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+distinct	eng	N	N	O
+ 	x	N	N	O
+divisors	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Cnk	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+For	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+input	eng	N	N	O
+ 	x	N	N	O
+instances	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+this	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+does	eng	N	N	O
+ 	x	N	N	O
+not	eng	N	N	O
+ 	x	N	N	O
+exceed	eng	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+63	m	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+1.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Sample	eng	N	N	O
+ 	x	N	N	O
+Input	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+5	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+3	x	N	N	O
+
+	x	N	N	O
+10	m	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Sample	eng	N	N	O
+ 	x	N	N	O
+Output	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+6	x	N	N	O
+
+	x	N	N	O
+16	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Source	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+CTU	eng	N	N	O
+ 	x	N	N	O
+Open	eng	N	N	O
+ 	x	N	N	O
+2005	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+看似	v	N	N	O
+简单	a	N	N	O
+的	uj	N	N	O
+一道	m	N	N	O
+题目	n	Y	N	O
+，	x	N	N	O
+纠结	v	N	N	O
+了	ul	N	N	O
+我	r	N	N	O
+好久好久	l	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+Orz	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+我	r	N	N	O
+先	d	N	N	O
+开始	v	N	N	O
+太天真	nr	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+数据量	n	N	N	O
+只有	c	N	N	O
+431	m	N	N	O
+所以	c	N	N	O
+我	r	N	N	O
+以为	c	N	N	O
+随便	d	N	N	O
+搞	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+于是	c	N	N	O
+就	d	N	N	O
+直接	ad	N	N	O
+把	p	N	N	O
+那个	r	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+r	x	N	N	O
+)	x	N	N	O
+的	uj	N	N	O
+每	r	N	N	O
+一个	m	N	N	O
+乘法	n	Y	N	O
+分开	v	N	N	O
+来质	n	N	N	O
+因数分解	n	N	N	O
+。	x	N	N	O
+
+（	x	N	N	O
+其实	d	N	N	O
+对于	p	N	N	O
+单组	n	N	N	O
+数据	n	N	N	O
+还是	c	N	N	O
+很快	d	N	N	O
+的	uj	N	N	O
+，	x	N	N	O
+不过	c	N	N	O
+数据量	n	N	N	O
+太	d	N	N	O
+大	a	N	N	O
+）	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+然后	c	N	N	O
+直接	ad	N	N	O
+超时	b	N	N	O
+了	ul	N	N	O
+。	x	N	N	O
+
+紧接着	c	N	N	O
+又	d	N	N	O
+各种	r	N	N	O
+优化	vn	Y	N	O
+，	x	N	N	O
+仍然	d	N	N	O
+超时	b	N	N	O
+。	x	N	N	O
+
+后来	t	N	N	O
+就	d	N	N	O
+直接	ad	N	N	O
+预处理	vn	N	N	O
+打表	v	Y	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+我	r	N	N	O
+试了试	v	N	N	O
+，	x	N	N	O
+果然	d	N	N	O
+很	zg	N	N	O
+慢	a	N	N	O
+，	x	N	N	O
+要	v	N	N	O
+把	p	N	N	O
+所有	b	N	N	O
+的	uj	N	N	O
+表打	v	N	N	O
+出来	v	N	N	O
+，	x	N	N	O
+差不多	l	N	N	O
+要	v	N	N	O
+花	v	N	N	O
+5	m	N	N	O
+到	v	N	N	O
+6	m	N	N	O
+秒	m	N	N	O
+的	uj	N	N	O
+时间	n	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+而且	c	N	N	O
+优化	vn	Y	N	O
+了	ul	N	N	O
+和	c	N	N	O
+没	v	N	N	O
+优化	vn	Y	N	O
+差不多	l	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+然后	c	N	N	O
+后来	t	N	N	O
+又	d	N	N	O
+用到	v	N	N	O
+了	ul	N	N	O
+那个	r	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+r	x	N	N	O
+)	x	N	N	O
+=	x	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+r	x	N	N	O
+)	x	N	N	O
+的	uj	N	N	O
+公式	n	Y	N	O
+继续	v	N	N	O
+优化	vn	Y	N	O
+，	x	N	N	O
+瞬间	t	N	N	O
+，	x	N	N	O
+时间	n	N	N	O
+降到	v	N	N	O
+了	ul	N	N	O
+1	m	N	N	O
+秒	m	N	N	O
+多	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+但是	c	N	N	O
+速度	n	N	N	O
+仍然	d	N	N	O
+很	zg	N	N	O
+慢	a	N	N	O
+，	x	N	N	O
+还是	c	N	N	O
+要	v	N	N	O
+TLE	eng	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+然后	c	N	N	O
+看	v	N	N	O
+了	ul	N	N	O
+下	v	N	N	O
+discuss	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+发现	v	N	N	O
+有	v	N	N	O
+如下	t	N	N	O
+公式	n	Y	N	O
+：	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+k	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+=	x	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+k	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+(	x	N	N	O
+k	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+k	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+于是	c	N	N	O
+就	d	N	N	O
+想到	v	N	N	O
+了	ul	N	N	O
+递推	v	Y	N	B-KNOWLEDGE
+。	x	N	N	O
+
+可惜	v	N	N	O
+我	r	N	N	O
+模拟能力	n	N	N	B-KNOWLEDGE
+严重	a	N	N	O
+匮乏	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+写	v	N	N	O
+了	ul	N	N	O
+很久	m	N	N	O
+终于	d	N	N	O
+搞	v	N	N	O
+出来	v	N	N	O
+了	ul	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+用	p	N	N	O
+这个	r	N	N	O
+方法	n	Y	N	O
+，	x	N	N	O
+我	r	N	N	O
+没有	v	N	N	O
+任何	r	N	N	O
+优化	vn	Y	N	O
+，	x	N	N	O
+688	m	N	N	O
+MS	eng	N	N	O
+过掉	v	N	N	O
+了	ul	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+代码	n	N	N	O
+：	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+string	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+typedef	eng	N	N	O
+ 	x	N	N	O
+__	x	N	N	O
+int64	eng	N	N	O
+ 	x	N	N	O
+ll	eng	Y	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+500	m	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+500	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+500	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+solve	eng	N	N	O
+(	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+flag	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+*	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+%	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+/	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+flag	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+%	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+flag	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+/	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+>	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+flag	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+r	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+res	eng	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+r	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+solve	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+,	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+r	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+solve	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+500	m	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+res	eng	N	N	O
+=	x	N	N	O
+res	eng	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+res	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+ADD	eng	N	N	O
+(	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+res	eng	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+solve	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+solve	eng	N	N	O
+(	x	N	N	O
+y	x	N	N	O
+,	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+500	m	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+res	eng	N	N	O
+=	x	N	N	O
+res	eng	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+res	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ll	eng	Y	N	O
+ 	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+j	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+432	m	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+num	eng	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+num	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+C	x	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+j	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+j	x	N	N	O
+<	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+j	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+ADD	eng	N	N	O
+(	x	N	N	O
+j	x	N	N	O
+,	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+j	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+k	eng	N	N	O
+)	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+EOF	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+I64d	eng	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ans	eng	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+k	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O

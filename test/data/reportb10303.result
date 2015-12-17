@@ -1,0 +1,368 @@
+pku	eng	N	Y	O	B-OJ
+
+2242	m	N	N	O	I-OJ
+_	x	N	N	O	O
+何长兵	nr	N	N	O	O
+
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+求	v	N	N	O	O
+三角形	n	Y	N	O	O
+外接圆	n	N	N	O	O
+的	uj	N	N	O	O
+周长	n	Y	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+PI	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+3.141592653589793	m	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+y	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+xx	eng	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+yy	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+s	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+-	x	N	N	O	O
+
+xx	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+-	x	N	N	O	O
+
+xx	eng	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+(	x	N	N	O	O
+y	x	N	N	O	O
+
+-	x	N	N	O	O
+
+yy	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+y	x	N	N	O	O
+
+-	x	N	N	O	O
+
+yy	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+,	x	N	N	O	O
+d1	eng	N	N	O	O
+,	x	N	N	O	O
+d2	eng	N	N	O	O
+,	x	N	N	O	O
+d3	eng	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+,	x	N	N	O	O
+R	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+d1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+d2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+d3	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+d1	eng	N	N	O	O
+
++	x	N	N	O	O
+
+d2	eng	N	N	O	O
+
++	x	N	N	O	O
+
+d3	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+
+d1	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+
+d2	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+
+d3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+
+=	x	N	N	O	O
+
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+R	x	N	N	O	O
+
+=	x	N	N	O	O
+
+PI	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+d1	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+d2	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+d3	eng	N	N	O	O
+
+/	x	N	N	O	O
+
+s	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.2	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+R	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

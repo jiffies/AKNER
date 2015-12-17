@@ -1,0 +1,305 @@
+hdu	eng	N	Y	O	B-OJ
+
+1060	m	N	N	O	I-OJ
+_	x	N	N	O	O
+striver	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+题目	n	Y	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+hdu	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+showproblem	eng	N	N	O	O
+.	m	N	N	O	O
+php	eng	N	N	O	O
+?	x	N	N	O	O
+pid	eng	N	N	O	O
+=	x	N	N	O	O
+1060	m	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+刚	d	N	N	O	O
+开始	v	N	N	O	O
+做	v	N	N	O	O
+，	x	N	N	O	O
+发现	v	N	N	O	O
+很	zg	N	N	O	O
+纠结	v	N	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+
+后来	t	N	N	O	O
+，	x	N	N	O	O
+看到	v	N	N	O	O
+了	ul	N	N	O	O
+一个	m	N	N	O	O
+人	n	N	N	O	O
+的	uj	N	N	O	O
+分析	vn	N	N	O	O
+，	x	N	N	O	O
+是	v	N	N	O	O
+这样	r	N	N	O	O
+转换	v	Y	N	O	O
+的	uj	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+^	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+两边	f	N	N	O	O
+同取	v	N	N	O	O
+对数	n	Y	N	O	O
+，	x	N	N	O	O
+得到	v	N	N	O	O
+，	x	N	N	O	O
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+再	d	N	N	O	O
+得到	v	N	N	O	O
+，	x	N	N	O	O
+m	x	N	N	O	O
+=	x	N	N	O	O
+10	m	N	N	O	O
+^	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+然后	c	N	N	O	O
+，	x	N	N	O	O
+对于	p	N	N	O	O
+10	m	N	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+次	m	N	N	O	O
+幂	n	N	N	O	O
+，	x	N	N	O	O
+第一位	m	N	N	O	O
+是	v	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+，	x	N	N	O	O
+第一位	m	N	N	O	O
+数	n	N	N	O	O
+取决于	v	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+的	uj	N	N	O	O
+小数	n	Y	N	O	O
+部分	n	Y	N	O	O
+
+总之	c	N	N	O	O
+，	x	N	N	O	O
+log	eng	N	N	O	O
+很	d	N	N	O	O
+强大	a	N	N	O	O
+啊	zg	N	N	O	O
+，	x	N	N	O	O
+在	p	N	N	O	O
+求	v	N	N	O	O
+一个	m	N	N	O	O
+数	m	N	N	O	O
+的	uj	N	N	O	O
+位数	n	Y	N	O	O
+上	f	N	N	O	O
+，	x	N	N	O	O
+在	p	N	N	O	O
+将	d	N	N	O	O
+大	a	N	N	O	O
+整数	n	Y	N	O	O
+化成	v	N	N	O	O
+范围	n	N	N	O	O
+内	f	N	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+上	f	N	N	O	O
+，	x	N	N	O	O
+在	p	N	N	O	O
+指数	n	N	N	O	O
+问题	n	N	N	O	O
+上	f	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+*	x	N	N	O	O
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+sum	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

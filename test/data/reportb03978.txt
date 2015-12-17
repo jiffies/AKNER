@@ -1,0 +1,130 @@
+谁能够帮忙把POJ1706的源代码编出来啊？谢谢了！_百度知道
+
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+char line[100];       //当前处理的那一行
+char ref[3002][83];      //记录Reference description
+int orig[1002], now[1002], st[1002]; //分别是原始编号，现在编号，分配空间的起始行
+int p, num, tt;
+bool empty(char a[])     //判断是否是空行
+{
+ int i;
+ for (i = 0; a[i] != 0; i++)
+  if (a[i] != ' ')
+   return false;
+ return true;
+}
+int getnum(char a[], int &k)   //从字符数组中获取 数
+{
+ int tmp = 0;
+ for (; isdigit(a[k]); k++)
+  tmp = tmp * 10 + a[k] - '0';
+ return tmp;
+}
+int find(int x)       //找原始编号为x的Reference的位置
+{
+ int i;
+ for (i = 0; i < p; i++)
+  if (orig[i] == x)
+   return i;
+ return -1;
+}
+void proc()        //处理正文
+{
+ int k, tmp, q;
+ for (k = 0; line[k] != 0; k++)
+  if (line[k] == '[')    //若引用Reference，则重新给它一个编号
+  {
+   k++;
+   tmp = getnum(line, k);
+   if ((q = find(tmp)) == -1) //若没有记录过当前Reference，则分配新的编号
+   {
+    orig[p] = tmp; now[p] = num; st[p] = 0;
+    q = p;
+    p++; num++;
+   }
+   else
+    if (now[q] == -1)  //否则若没有分配编号，则分配
+    {
+     now[q] = num;
+     num++;
+    }
+   printf("[%d]", now[q] + 1);
+  }
+  else
+   printf("%c", line[k]);  //其他数据正常输出
+ printf("\n");
+}
+int main()
+{
+ bool rec, emptyline, cont;
+ int k, tmp, q, i, j;
+ tt = p = num = 0; rec = 0; emptyline = 1; cont = 1;
+ while (gets(line))
+ {
+  if (!empty(line))    //非空行
+  {
+   if (line[0] == '[' && !cont)//若是Reference description的首行则记录
+   {
+    k = 1;
+    tmp = getnum(line, k);
+    if ((q = find(tmp)) == -1)
+    {
+     orig[p] = tmp;
+     now[p] = -1;
+     st[p] = tt;
+     p++;
+    }
+    else
+     st[q] = tt;
+    strcpy(ref[tt], line);
+    tt++;
+    rec = 1;
+   }
+   else
+    if (rec)    //是Reference description的接下去几行
+    {
+     strcpy(ref[tt], line);
+     tt++;
+    }
+    else     //是正文
+    {
+     emptyline = 0;
+     proc();
+    }
+  }
+  else
+  {
+   rec = 0; cont = 0;   //若是空行，则多于一个空行只输出一个
+   if (!emptyline)
+   {
+    printf("\n");
+    emptyline = 1;
+   }
+  }
+ }
+ for (i = 0; i < p; i++)    //输出Reference description
+ {
+  for (j = 0; j < p; j++)   //按照顺序输出
+   if (now[j] == i)
+    break;
+  j = st[j];
+  printf("[%d]", i + 1);
+  k = 1;
+  getnum(ref[j], k);
+  k++;
+  for (; ref[j][k] != 0; k++)
+   printf("%c", ref[j][k]);
+  printf("\n");
+  j++;
+  while (j < tt && ref[j][0] != '[')
+  {
+   puts(ref[j]);
+   j++;
+  }
+  if (i != p - 1)
+   printf("\n");
+ }
+ return 0; 
+}

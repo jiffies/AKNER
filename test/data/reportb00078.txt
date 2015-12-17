@@ -1,0 +1,49 @@
+【pku2128】lost Cows(模拟版) - lovekid的日志 - 网易博客
+
+Source Code
+ 
+ 
+  
+   
+   Problem: 2182 
+    
+   User: loveKid
+   
+   
+   Memory: 236K 
+    
+   Time: 375MS
+   
+   
+   Language: C++ 
+    
+   Result: Accepted
+  
+ 
+ 
+ 
+ Source Code  
+ //直接模拟的时候时间是375ms,但是代码比较简洁~~ 
+ #include<stdio.h>
+#include<string.h>
+const int MAXNUM=8002;
+int input[MAXNUM];
+void Init(){
+ memset(input,0,sizeof(input));
+}
+int main(){
+ //freopen("C:\\Documents and Settings\\Administrator\\桌面\\in.txt","r",stdin);
+ int n,i,j;
+ while(scanf("%d",&n)!=EOF){
+  Init();
+  for(i=2;i<=n;i++){
+   scanf("%d",&input[i]);
+   for(j=1;j<i;j++)
+    if(input[j]>=input[i])
+     input[j]++;
+  }
+  for(i=1;i<=n;i++)
+   printf("%d\n",input[i]+1);
+ }
+}
+

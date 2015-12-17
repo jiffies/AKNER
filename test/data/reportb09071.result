@@ -1,0 +1,815 @@
+POJ	eng	N	Y	O	B-OJ
+
+2570	m	N	N	O	I-OJ
+
+Fiber	eng	N	N	O	O
+
+Network	eng	N	N	O	O
+_	x	N	N	O	O
+乐吾天	nr	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+hi	eng	N	N	O	O
+.	m	N	N	O	O
+baidu	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+lewutian	eng	N	N	O	O
+
+题意	n	N	N	O	O
+:	x	N	N	O	O
+一些	m	N	N	O	O
+公司	n	N	N	O	O
+共同	d	N	N	O	O
+拥有	v	N	N	O	O
+一个	m	N	N	O	O
+具有	v	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+顶点	n	Y	N	O	O
+的	uj	N	N	O	O
+网络	n	Y	N	O	O
+,	x	N	N	O	O
+给出	v	N	N	O	O
+了有	v	N	N	O	O
+关于	p	N	N	O	O
+这个	r	N	N	O	O
+网络	n	Y	N	O	O
+的	uj	N	N	O	O
+信息	n	N	N	O	O
+,	x	N	N	O	O
+即边	d	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+>	x	N	N	O	O
+以及	c	N	N	O	O
+与	p	N	N	O	O
+这条	mq	N	N	O	O
+边	d	N	N	O	O
+相连	d	N	N	O	O
+的	uj	N	N	O	O
+公司	n	N	N	O	O
+,	x	N	N	O	O
+现在	t	N	N	O	O
+题目	n	Y	N	O	O
+给出	v	N	N	O	O
+一条	m	N	N	O	O
+路径	n	Y	N	O	O
+的	uj	N	N	O	O
+起点	n	N	N	O	O
+和	c	N	N	O	O
+终点	d	N	N	O	O
+,	x	N	N	O	O
+要求	v	N	N	O	O
+求出	v	N	N	O	O
+这条	mq	N	N	O	O
+路径	n	Y	N	O	O
+经过	p	N	N	O	O
+哪些	r	N	N	O	O
+公司	n	N	N	O	O
+.	x	N	N	O	O
+
+很	zg	N	N	O	O
+容易	a	N	N	O	O
+想到	v	N	N	O	O
+求图	v	N	N	O	O
+的	uj	N	N	O	O
+传递	v	Y	N	O	B-KNOWLEDGE
+闭	v	N	N	O	I-KNOWLEDGE
+包	v	N	N	O	I-KNOWLEDGE
+,	x	N	N	O	O
+而	c	N	N	O	O
+这里	r	N	N	O	O
+两点	m	N	N	O	O
+之间	f	N	N	O	O
+可能	v	N	N	O	O
+有	v	N	N	O	O
+多条	m	Y	N	O	O
+线路	n	N	N	O	O
+,	x	N	N	O	O
+如果	c	N	N	O	O
+对	p	N	N	O	O
+每个	r	N	N	O	O
+字母	n	Y	N	O	O
+(	x	N	N	O	O
+也	d	N	N	O	O
+就是	d	N	N	O	O
+每个	r	N	N	O	O
+公司	n	N	N	O	O
+)	x	N	N	O	O
+单独	d	Y	N	O	O
+来	v	N	N	O	O
+进行	v	N	N	O	O
+一遍	m	N	N	O	O
+Floyd	eng	N	N	O	B-KNOWLEDGE
+,	x	N	N	O	O
+很	zg	N	N	O	O
+可能	v	N	N	O	O
+会	v	N	N	O	O
+超时	b	N	N	O	O
+,	x	N	N	O	O
+这里	r	N	N	O	O
+输入	v	N	N	O	O
+的	uj	N	N	O	O
+公司	n	N	N	O	O
+标志	n	N	N	O	O
+为	p	N	N	O	O
+不同	a	N	N	O	O
+的	uj	N	N	O	O
+小写字母	n	N	N	O	O
+,	x	N	N	O	O
+所以	c	N	N	O	O
+我们	r	N	N	O	O
+可以	c	N	N	O	O
+根据	p	N	N	O	O
+位	q	N	N	O	O
+运算	vn	Y	N	O	O
+来	v	N	N	O	O
+进行	v	N	N	O	O
+优化	vn	Y	N	O	O
+(	x	N	N	O	O
+使得	v	N	N	O	O
+传递	v	Y	N	O	B-KNOWLEDGE
+闭包	v	Y	N	O	I-KNOWLEDGE
+和	c	N	N	O	O
+每个	r	N	N	O	O
+字母	n	Y	N	O	O
+都	d	N	N	O	O
+有	v	N	N	O	O
+关联	ns	N	N	O	O
+,	x	N	N	O	O
+而后	c	N	N	O	O
+根据	p	N	N	O	O
+这种	r	N	N	O	O
+关联	ns	N	N	O	O
+即可	d	N	N	O	O
+推出	v	N	N	O	O
+是否	v	N	N	O	O
+连通	a	Y	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+ss	eng	Y	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+Floyd	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+Floyd	eng	N	N	O	B-KNOWLEDGE
+算法	n	Y	N	O	O
+求解	v	N	N	O	O
+传递	v	Y	N	O	O
+闭	v	N	N	O	O
+包	v	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+(	x	N	N	O	O
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+&	x	N	N	O	O
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+slove	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+u	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+mat	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+mat	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+u	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+v	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+v	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ss	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+ss	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+(	x	N	N	O	O
+ss	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+注意	v	N	N	O	O
+这里	r	N	N	O	O
+的	uj	N	N	O	O
+建图	n	Y	N	O	O
+
+}	x	N	N	O	O
+
+Floyd	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+u	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+v	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+v	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+26	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+mat	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+&	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+注意	v	N	N	O	O
+这里	r	N	N	O	O
+判断	v	Y	N	O	O
+连通性	n	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+c	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+-	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+slove	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+hi	eng	N	N	O	O
+.	m	N	N	O	O
+baidu	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+lewutian	eng	N	N	O	O
+推荐	v	N	N	O	O
+文章	n	N	N	O	O
+:	x	N	N	O	O
+
+1.	m	N	N	O	O
+
+第二次	m	N	N	O	O
+个人赛	n	N	N	O	O
+D	eng	N	N	O	O
+题	n	N	N	O	O
+
+Y2K	eng	N	N	O	O
+
+Accounting	eng	N	N	O	O
+
+Bug	eng	N	N	O	O
+
+2.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+3171	m	N	N	O	I-OJ
+
+Cleaning	eng	N	N	O	O
+
+Shifts	eng	N	N	O	O
+【	x	N	N	O	O
+线段	n	Y	N	O	B-KNOWLEDGE
+树	n	N	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+dp	eng	Y	N	O	B-KNOWLEDGE
+】	x	N	N	O	O
+
+3.	m	N	N	O	O
+
+今天	t	N	N	O	O
+做	v	N	N	O	O
+的	uj	N	N	O	O
+几个	m	N	N	O	O
+map	eng	N	N	O	O
+题目	n	Y	N	O	O
+
+4.	m	N	N	O	O
+
+Ultra	eng	N	N	O	O
+-	x	N	N	O	O
+QuickSort	eng	N	N	O	O
+【	x	N	N	O	O
+poj	eng	N	Y	O	B-OJ
+】	x	N	N	O	O
+2299	m	N	N	O	O
+
+5.	m	N	N	O	O
+
+Phone	eng	N	N	O	O
+
+List	eng	N	N	O	O
+【	x	N	N	O	O
+poj	eng	N	Y	O	B-OJ
+】	x	N	N	O	O
+3630	m	N	N	O	O
+
+6.	m	N	N	O	O
+
+并	c	N	N	O	B-KNOWLEDGE
+查集	v	Y	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+优先	vn	Y	N	O	B-KNOWLEDGE
+队列	n	Y	N	O	I-KNOWLEDGE
+=	x	N	N	O	O
+=	x	N	N	O	O
+邪恶	a	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	B-KNOWLEDGE
+生成	v	Y	N	O	I-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+！	x	N	N	O	O
+
+7.	m	N	N	O	O
+
+暑假	t	N	N	O	O
+实习	v	N	N	O	O
+
+8.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+2954	m	N	N	O	I-OJ
+
+Triangle	eng	N	N	O	O
+
+PICK	eng	N	N	O	O
+定理	vn	Y	N	O	O
+
+GCD	eng	N	N	O	O
+欧几里得	ns	Y	N	O	B-KNOWLEDGE
+定理	vn	Y	N	O	I-KNOWLEDGE
+
+9.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1932	m	N	N	O	I-OJ
+
+XYZZY	eng	N	N	O	O
+
+10.	m	N	N	O	O
+
+ACM	eng	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+1035	m	N	N	O	I-OJ
+
+Spell	eng	N	N	O	O
+
+checker	eng	N	N	O	O
+

@@ -1,0 +1,1257 @@
+2	x	N	N	O	B-KNOWLEDGE
+-	x	N	N	O	I-KNOWLEDGE
+SAT	eng	N	N	O	I-KNOWLEDGE
+—	x	N	N	O	O
+—	x	N	N	O	O
+3.0	m	N	N	O	O
+（	x	N	N	O	O
+poj3207	eng	N	Y	O	B-OJ
+）	x	N	N	O	O
+
+-	x	N	N	O	O
+
+laoda	eng	N	N	O	O
+扯	v	N	N	O	O
+一	m	N	N	O	O
+扯	v	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+poj3207	eng	N	Y	O	B-OJ
+
+Ikki	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+Story	eng	N	N	O	O
+
+IV	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+Panda	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+Trick	eng	N	N	O	O
+
+这个	r	N	N	O	O
+题卡	n	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+建图	v	Y	N	O	O
+，	x	N	N	O	O
+我	r	N	N	O	O
+开始	v	N	N	O	O
+一直	d	N	N	O	O
+没想到	l	N	N	O	O
+怎么	r	N	N	O	O
+建图	n	Y	N	O	O
+，	x	N	N	O	O
+后来	t	N	N	O	O
+看	v	N	N	O	O
+了	ul	N	N	O	O
+报告	n	N	N	O	O
+才	d	N	N	O	O
+明白	nr	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+=	x	N	N	O	O
+
+=	x	N	N	O	O
+！	x	N	N	O	O
+
+题意	n	N	N	O	O
+是	v	N	N	O	O
+说	v	N	N	O	O
+给出	v	N	N	O	O
+一个	m	N	N	O	O
+圆	vg	N	N	O	O
+上	f	N	N	O	O
+的	uj	N	N	O	O
+
+n	x	N	N	O	O
+
+个	m	N	N	O	O
+点	m	N	N	O	O
+（	x	N	N	O	O
+0	x	N	N	O	O
+~	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+编号	n	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+在	p	N	N	O	O
+指定	v	N	N	O	O
+的	uj	N	N	O	O
+
+m	x	N	N	O	O
+
+对	p	N	N	O	O
+点	m	N	N	O	O
+之间	f	N	N	O	O
+各	r	N	N	O	O
+连	u	N	N	O	O
+一条线	l	N	N	O	O
+（	x	N	N	O	O
+可以	c	N	N	O	O
+在	p	N	N	O	O
+圆	n	N	N	O	O
+内	f	N	N	O	O
+，	x	N	N	O	O
+也	d	N	N	O	O
+可以	c	N	N	O	O
+在	p	N	N	O	O
+圆外	a	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+是	v	N	N	O	O
+曲线	n	N	N	O	O
+，	x	N	N	O	O
+这点	mq	N	N	O	O
+真心	d	N	N	O	O
+坑	n	N	N	O	O
+爹	n	N	N	O	O
+，	x	N	N	O	O
+开始	v	N	N	O	O
+一直	d	N	N	O	O
+木	n	N	N	O	O
+有	v	N	N	O	O
+看	v	N	N	O	O
+明白	nr	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+问	v	N	N	O	O
+你	r	N	N	O	O
+是否	v	N	N	O	O
+能	v	N	N	O	O
+使	v	N	N	O	O
+这些	r	N	N	O	O
+线	n	N	N	O	O
+都	d	N	N	O	O
+不	d	N	N	O	O
+相交	v	Y	N	O	O
+。	x	N	N	O	O
+
+以	p	N	N	O	O
+每	r	N	N	O	O
+条	q	N	N	O	O
+线段	n	Y	N	O	O
+为	p	N	N	O	O
+点	m	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+对于	p	N	N	O	O
+两点	m	N	N	O	O
+之间	f	N	N	O	O
+的	uj	N	N	O	O
+一条	m	N	N	O	O
+位于	v	N	N	O	O
+圆	n	N	N	O	O
+内部	f	Y	N	O	O
+的	uj	N	N	O	O
+曲线	n	N	N	O	O
+
+B	x	N	N	O	O
+，	x	N	N	O	O
+肯定	v	N	N	O	O
+有	v	N	N	O	O
+一条	m	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+位于	v	N	N	O	O
+圆	n	N	N	O	O
+外部	f	N	N	O	O
+的	uj	N	N	O	O
+曲线	n	N	N	O	O
+
+B	x	N	N	O	O
+‘	x	N	N	O	O
+，	x	N	N	O	O
+显然	ad	N	N	O	O
+这	r	N	N	O	O
+两个	m	N	N	O	O
+点	m	N	N	O	O
+满足	v	N	N	O	O
+
+2	x	N	N	O	B-KNOWLEDGE
+-	x	N	N	O	I-KNOWLEDGE
+SAT	eng	N	N	O	I-KNOWLEDGE
+
+问题	n	N	N	O	O
+模型	n	Y	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+
+“	x	N	N	O	O
+B	x	N	N	O	O
+
+与	p	N	N	O	O
+
+非	d	N	N	O	O
+B	eng	N	N	O	O
+”	x	N	N	O	O
+
+的	uj	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+对于	p	N	N	O	O
+每	r	N	N	O	O
+对	p	N	N	O	O
+两条	m	N	N	O	O
+同	p	N	N	O	O
+在	p	N	N	O	O
+圆	n	N	N	O	O
+内部	f	Y	N	O	O
+（	x	N	N	O	O
+或者	c	N	N	O	O
+外部	f	N	N	O	O
+）	x	N	N	O	O
+的	uj	N	N	O	O
+曲线	n	N	N	O	O
+来说	u	N	N	O	O
+，	x	N	N	O	O
+通过	p	N	N	O	O
+他们	r	N	N	O	O
+的	uj	N	N	O	O
+起点	n	N	N	O	O
+，	x	N	N	O	O
+终点	d	N	N	O	O
+坐标	v	Y	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+判断	v	Y	N	O	O
+2	m	N	N	O	O
+者	k	N	N	O	O
+是否	v	N	N	O	O
+矛盾	an	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+从而	c	N	N	O	O
+依赖	v	N	N	O	O
+这个	r	N	N	O	O
+关系	n	N	N	O	O
+建图	n	Y	N	O	O
+，	x	N	N	O	O
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+就是	d	N	N	O	O
+塞	v	N	N	O	O
+模板	n	Y	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stack	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+climits	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+=	x	N	N	O	O
+
+250010	m	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Edge	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+vis	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+cnt	eng	N	N	O	O
+,	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+instack	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+belong	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+AddEdge	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+e	eng	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+=	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+getmap	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+px	eng	N	N	O	O
+[	x	N	N	O	O
+510	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+510	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+px	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+px	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+py	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+py	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+tmp	eng	N	N	O	O
+=	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+e	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+py	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+py	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+px	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+AddEdge	eng	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+AddEdge	eng	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+AddEdge	eng	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+AddEdge	eng	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+stack	eng	N	N	O	O
+
+<	x	N	N	O	O
+int	eng	N	N	O	O
+>	x	N	N	O	O
+st	eng	Y	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+tarjan	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+++	x	N	N	O	O
+vis	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+instack	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+st	eng	Y	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+=	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+e	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+tarjan	eng	Y	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+instack	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+do	eng	N	N	O	O
+{	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+st	eng	Y	N	O	O
+.	m	N	N	O	O
+top	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+st	eng	Y	N	O	O
+.	m	N	N	O	O
+pop	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+instack	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+belong	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+cnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+while	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+vis	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+=	x	N	N	O	O
+cnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+instack	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+instack	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+belong	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+belong	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+tim	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+tim	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tim	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+tarjan	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+belong	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+belong	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+panda	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+telling	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+truth	eng	N	N	O	O
+...	m	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+the	eng	N	N	O	O
+
+evil	eng	N	N	O	O
+
+panda	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+lying	eng	N	N	O	O
+
+again	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+~	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+getmap	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

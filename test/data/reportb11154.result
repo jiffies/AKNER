@@ -1,0 +1,431 @@
+POJ	eng	N	Y	O	B-OJ
+
+1063	m	N	N	O	I-OJ
+
+-	x	N	N	O	O
+
+ACM	eng	N	N	O	O
+-	x	N	N	O	O
+King	eng	N	N	O	O
+伟	nr	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+又	d	N	N	O	O
+是	v	N	N	O	O
+一道	m	N	N	O	O
+经典	n	N	N	O	O
+题	n	N	N	O	O
+，	x	N	N	O	O
+数塔	n	N	N	O	O
+的	uj	N	N	O	O
+DP	eng	N	N	O	B-KNOWLEDGE
+思想	n	Y	N	O	O
+极容易	d	N	N	O	O
+理解	v	N	N	O	O
+，	x	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+学	n	N	N	O	O
+DP	eng	N	N	O	B-KNOWLEDGE
+很好	a	N	N	O	O
+的	uj	N	N	O	O
+开端	n	N	N	O	O
+例子	n	N	N	O	O
+，	x	N	N	O	O
+毕竟	d	N	N	O	O
+不是	c	N	N	O	O
+每个	r	N	N	O	O
+人	n	N	N	O	O
+都	d	N	N	O	O
+可以	c	N	N	O	O
+马上	d	N	N	O	O
+理解	v	N	N	O	O
+投	vn	N	N	O	O
+0	m	N	N	O	B-KNOWLEDGE
+-	x	N	N	O	I-KNOWLEDGE
+1	x	N	N	O	I-KNOWLEDGE
+背包	n	Y	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+t	x	N	N	O	O
+>	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+代码	n	N	N	O	O
+短	a	N	N	O	O
+，	x	N	N	O	O
+记得	v	N	N	O	O
+DP	eng	N	N	O	B-KNOWLEDGE
+自下而上	l	N	N	O	O
+，	x	N	N	O	O
+有点	n	N	N	O	O
+把	p	N	N	O	O
+平常	a	N	N	O	O
+思维	n	N	N	O	O
+倒	v	N	N	O	O
+过来	t	N	N	O	O
+的	uj	N	N	O	O
+味道	n	N	N	O	O
+，	x	N	N	O	O
+逆	vg	N	N	O	O
+着想	v	N	N	O	O
+就	d	N	N	O	O
+差不多	l	N	N	O	O
+可以	c	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+例如	v	N	N	O	O
+先	d	N	N	O	O
+假设	vn	N	N	O	O
+当	t	N	N	O	O
+问题	n	N	N	O	O
+的	uj	N	N	O	O
+最优	d	N	N	O	O
+解得	v	N	N	O	O
+出来	v	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+得出	v	N	N	O	O
+最优	d	N	N	O	O
+解的	nz	N	N	O	O
+上	f	N	N	O	O
+一步	m	N	N	O	O
+也	d	N	N	O	O
+必须	d	N	N	O	O
+是	v	N	N	O	O
+最优	d	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+一步步	m	N	N	O	O
+向上	d	N	N	O	O
+找	v	N	N	O	O
+，	x	N	N	O	O
+那个	r	N	N	O	O
+专业	n	N	N	O	O
+一点	m	N	N	O	O
+的	uj	N	N	O	O
+名词	n	N	N	O	O
+叫	v	N	N	O	O
+什么	r	N	N	O	O
+来	v	N	N	O	O
+的	uj	N	N	O	O
+?	x	N	N	O	O
+?	x	N	N	O	O
+?	x	N	N	O	O
+貌似	v	N	N	O	O
+是	v	N	N	O	O
+“	x	N	N	O	O
+最优	d	N	N	O	O
+子结构	n	N	N	O	O
+”	x	N	N	O	O
+。	x	N	N	O	O
+

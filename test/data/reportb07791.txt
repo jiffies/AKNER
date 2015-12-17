@@ -1,0 +1,73 @@
+POJ 2914 Minimum Cut - scorpiocj的专栏 - 博客频道 - CSDN.NET
+
+无向图，每对顶点间可能有多条边，问最少删除多少条边才能将图分为两个子图
+把两点间的边数看成权重，就变成了求带权无向图的最小割了，采用Stoer-Wagner算法
+代码：
+#include<iostream>
+using namespace std;
+const int inf=1<<30;
+const int MAX=510;
+int g[MAX][MAX];
+int MinCut(int n)
+{
+	int dis[MAX],node[MAX],vis[MAX];//dis[i]表示第i点到A的距离，node[i]表示i号节点属于哪个点 
+	int i,j,k,prev,maxj,ans=inf;
+	for(i=0;i<n;i++)
+	{
+		node[i]=i;
+	}
+	while(n>1)
+	{
+		maxj=1;
+		for(i=0;i<n;i++)
+		{
+			dis[node[i]]=g[node[0]][node[i]];//初始化A(node[0])与各点的距离,即W(A,p) 
+			if(dis[node[i]]>dis[node[maxj]])//选出第二个加入A的点 
+				maxj=i;	
+		}
+		prev=0;//第一个加入的点是0号点 
+		memset(vis,0,sizeof(vis));
+		vis[node[0]]=1;
+		for(i=1;i<n;i++)
+		{
+			if(i==n-1)//A=V 
+			{
+				ans=min(ans,dis[node[maxj]]);
+				for(k=0;k<n;k++)//将prev和maxj两个点缩为一个点 ,prev
+				{
+					g[node[k]][node[prev]]=(g[node[prev]][node[k]]+=g[node[k]][node[maxj]]);
+				}
+				node[maxj]=node[--n];//删除顶点maxj 
+			}
+			vis[node[maxj]]=1;
+			prev=maxj;
+			maxj=-1;
+			for(j=1;j<n;j++)//找点加入A，同时更新W(A,p) ,因为A新加入了节点prev 
+			{
+				if(!vis[node[j]])
+				{
+					dis[node[j]]+=g[node[prev]][node[j]];
+					if(maxj==-1||dis[node[maxj]]<dis[node[j]])
+						maxj=j;
+				}
+			}
+		}
+	}
+	return ans;
+}
+int main()
+{
+	int a,b,n,m,w;
+	while(scanf("%d%d",&n,&m)!=EOF)
+	{
+		memset(g,0,sizeof(g));
+		while(m--)
+		{
+			scanf("%d%d%d",&a,&b,&w);
+			g[a][b]+=w;
+			g[b][a]+=w;
+		}
+		printf("%d/n",MinCut(n));
+	}
+	return 0;
+} 

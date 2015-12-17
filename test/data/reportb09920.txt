@@ -1,0 +1,139 @@
+POJ 1013 - XtestW的日志 - 网易博客
+
+       1013 一开始的算法是even时每个赋值为0，即必为真币，不是“even”的时候，重的赋值1，轻的赋值为-1（初始化所有为-2）
+
+最后扫描一遍，-1,1中必有一个只出现一次的，那个就是假币，后来WA。。。。。。
+
+       改了算法，初始化为0，even赋值为1000，必为真币，不是even的重的加1，轻的减1，然后最后扫描一遍，不是1000的中得绝对值最大的那个是假币，正的重，负的轻，AC鸟~
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+int main()
+
+{
+
+    int  a[12];
+
+    char str1[10];
+
+    char str2[10];
+
+    char str3[5];
+
+    char *str="";//must 
+
+    char s[100];
+
+    int tt,mm;
+
+   int n,i,j,k,min,flag;
+
+   scanf("%d",&n);
+
+   for (i=0;i<n;i++)
+
+   {
+
+       for (j=0;j<12;j++)
+
+       {
+
+           a[j]=0;
+
+       }
+
+       for (j=0;j<3;j++)
+
+       {
+
+           scanf("%s %s %s",str1,str2,str3);
+
+         if (!strcmp(str3,"even"))
+
+         {
+
+             for (k=0;k<strlen(str1);k++) 
+
+                 a[str1[k]-'A']=1000;
+
+             for (k=0;k<strlen(str2);k++) 
+
+                 a[str2[k]-'A']=1000;
+
+         }
+
+         if (!strcmp(str3,"up"))
+
+         {
+
+             for (k=0;k<strlen(str1);k++) 
+
+                 if (a[str1[k]-'A']!=1000) 
+
+                     a[str1[k]-'A']++;
+
+             for (k=0;k<strlen(str2);k++) 
+
+                 if (a[str2[k]-'A']!=1000) 
+
+                     a[str2[k]-'A']-- ;
+
+         }
+
+         if (!strcmp(str3,"down"))
+
+         {
+
+             for (k=0;k<strlen(str1);k++) 
+
+                 if (a[str1[k]-'A']!=1000) 
+
+                     a[str1[k]-'A']--;
+
+             for (k=0;k<strlen(str2);k++) 
+
+                 if (a[str2[k]-'A']!=1000) 
+
+                     a[str2[k]-'A']++ ;
+
+         }
+
+       }
+
+       k=0;
+
+       for (j=0;j<12;j++)
+
+       {
+
+           if (a[j]==1000) continue;
+
+           if (k<abs(a[j])) {
+
+               k=abs(a[j]);
+
+               flag=j;
+
+           }
+
+       }
+
+       if (a[flag]>0) 
+
+           str="heavy";
+
+           else
+
+           str="light";
+
+       printf("%c is the counterfeit coin and it is %s.\n",flag+'A',str);
+
+   }
+
+    return 0;
+
+}

@@ -1,0 +1,616 @@
+poj	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1775	m	N	N	I-OJ
+ 	x	N	N	O
+Sum	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+Factorials	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+martinblack954	eng	N	N	O
+的	uj	N	N	O
+日志	ns	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+网易	n	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+题目	n	Y	N	O
+链接	n	N	N	O
+：	x	N	N	O
+
+	x	N	N	O
+http	eng	N	N	O
+:	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+poj	eng	N	Y	O
+.	m	N	N	O
+org	eng	N	N	O
+/	x	N	N	O
+problem	eng	N	N	O
+?	x	N	N	O
+id	eng	N	N	O
+=	x	N	N	O
+1775	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+题意	n	N	N	O
+：	x	N	N	O
+给定	v	N	N	O
+一个	m	N	N	O
+正整数	n	N	N	O
+n	x	N	N	O
+，	x	N	N	O
+问	n	N	N	O
+能否	v	N	N	O
+找出	v	Y	N	O
+几个	m	N	N	O
+不同	a	N	N	O
+的	uj	N	N	O
+整数	n	Y	N	O
+xi	eng	N	N	O
+，	x	N	N	O
+xi	eng	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+，	x	N	N	O
+使得	v	N	N	O
+这些	r	N	N	O
+xi	eng	N	N	O
+的	uj	N	N	O
+阶乘	nz	N	N	O
+之	u	N	N	O
+和	c	N	N	O
+等于	v	N	N	O
+这个	r	N	N	O
+正整数	n	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+思路	n	N	N	O
+：	x	N	N	O
+暴	n	N	N	O
+搜	v	N	N	O
+。	x	N	N	O
+
+n	x	N	N	O
+范围	n	N	N	O
+为	p	N	N	O
+0	m	N	N	O
+~	x	N	N	O
+1000000	m	N	N	O
+，	x	N	N	O
+而	c	N	N	O
+10	m	N	N	O
+!	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+3628800	m	N	N	O
+，	x	N	N	O
+所以	c	N	N	O
+xi	eng	N	N	O
+的	uj	N	N	O
+取值	v	N	N	O
+只是	c	N	N	O
+0	x	N	N	O
+~	x	N	N	O
+9	x	N	N	O
+。	x	N	N	O
+
+而	c	N	N	O
+由于	c	N	N	O
+各个	r	N	N	O
+xi	eng	N	N	O
+不会	v	N	N	O
+重复	d	Y	N	O
+，	x	N	N	O
+所以	c	N	N	O
+暴	n	N	N	O
+搜	v	N	N	O
+枚举	nz	Y	N	O
+组合	v	Y	N	O
+最多	d	N	N	O
+也	d	N	N	O
+只是	c	N	N	O
+2	x	N	N	O
+^	x	N	N	O
+10	m	N	N	O
+=	x	N	N	O
+1024	m	N	N	O
+种	m	N	N	O
+方式	n	N	N	O
+。	x	N	N	O
+
+实际上	d	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+做法	v	N	N	O
+是	v	N	N	O
+反过来	d	N	N	O
+枚举	nz	Y	N	O
+。	x	N	N	O
+
+将	d	N	N	O
+n	eng	N	N	O
+拿	v	N	N	O
+去	v	N	N	O
+尝试	vn	N	N	O
+减	v	N	N	O
+这些	r	N	N	O
+阶乘	nz	N	N	O
+，	x	N	N	O
+若	c	N	N	O
+最后	f	N	N	O
+能够	v	N	N	O
+变成	v	N	N	O
+0	x	N	N	O
+，	x	N	N	O
+就	d	N	N	O
+说明	v	N	N	O
+能够	v	N	N	O
+找到	v	N	N	O
+这些	r	N	N	O
+xi	eng	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+PS	eng	N	N	O
+：	x	N	N	O
+在	p	N	N	O
+这里	r	N	N	O
+要	v	N	N	O
+记住	v	N	N	O
+，	x	N	N	O
+0	x	N	N	O
+!	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+，	x	N	N	O
+所以	c	N	N	O
+对于	p	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+4	x	N	N	O
+，	x	N	N	O
+有	v	N	N	O
+解为	v	N	N	O
+4	m	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+!	x	N	N	O
++	x	N	N	O
+1	m	N	N	O
+!	x	N	N	O
++	x	N	N	O
+2	m	N	N	O
+!	x	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+11	m	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+{	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+2	x	N	N	O
+,	x	N	N	O
+6	x	N	N	O
+,	x	N	N	O
+24	m	N	N	O
+,	x	N	N	O
+120	m	N	N	O
+,	x	N	N	O
+720	m	N	N	O
+,	x	N	N	O
+5040	m	N	N	O
+,	x	N	N	O
+40320	m	N	N	O
+,	x	N	N	O
+362880	m	N	N	O
+,	x	N	N	O
+3628800	m	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+find	eng	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+,	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+s	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+t	x	N	N	O
+]	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+s	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+s	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+find	eng	N	N	O
+(	x	N	N	O
+s	x	N	N	O
+-	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+>	x	N	N	O
+0	m	N	N	O
+&&	x	N	N	O
+n	eng	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+>	x	N	N	O
+0	m	N	N	O
+&&	x	N	N	O
+find	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+YES	eng	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+NO	eng	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O

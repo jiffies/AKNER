@@ -1,0 +1,67 @@
+pku2480-积性函数，欧拉_110c_百度空间
+
+                                                                                   Longge's problem 
+Time Limit: 1000MS 
+Memory Limit: 65536K 
+Total Submissions: 4184 
+Accepted: 1258 
+
+Description
+Longge is good at mathematics and he likes to think about hard mathematical problems which will be solved by some graceful algorithms. Now a problem comes: Given an integer N(1 < N < 2^31),you are to calculate ∑gcd(i, N) 1<=i <=N. 
+
+"Oh, I know, I know!" Longge shouts! But do you know? Please solve it.
+
+Input
+Input contain several test case. 
+
+A number N per line.
+
+Output
+For each N, output ,∑gcd(i, N) 1<=i <=N, a line
+
+Sample Input
+26
+
+Sample Output
+315 
+
+1）因为gcd(i,m*n)=gcd(i*m)*gcd(i*n),m,n互质，所以gcd是积性函数
+积性函数的和函数也是积性函数,所以所求函数是积性函数
+（2）
+所以如果我们设所求答案是f(n) 则： f(n) = f(m1)*(m2) 其中，m1*m2 = n 
+且m1,m2互质！经过因子分解，那种只要求到f(p^k)就可以利用积性把所有结果
+相乘得到最后答案。
+还要一个结论： f(n) = sum(p * phi(n/p)) 其中p是n的因子，phi(n/p) 
+是从1到n有多少个数和n的gcd是p, 这个结论比较好证明的。
+推出来一个公式f(p^r)=r*(p^r-p^(r-1))+p^r;
+剩下的用积性函数的性质就可以解决了
+一些要注意的细节看代码
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+ long long s,n;
+ while(scanf("%I64d",&n)!=-1)
+ {
+    s=1;
+    long long x,r;
+    for(long long i=2;i*i<=n;i++)
+    if(n%i==0) //注意i要定义成long long，要不相乘越界可能出现负数，因为这里超时一次
+    {
+       x=1;r=0;
+       do
+       {
+         n/=i;
+         x*=i;
+         r++;
+       }while(n%i==0);
+       s*=(r+1)*x-r*x/i;//直接利用结论，真方便 
+    }
+    if(n>1)
+    s*=(2*n-1);
+    printf("%I64d\n",s);
+ } 
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}

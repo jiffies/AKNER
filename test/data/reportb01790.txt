@@ -1,0 +1,97 @@
+HDU_1060 Leftmost Digit - 枭笔记 - 博客频道 - CSDN.NET
+
+ 
+Leftmost Digit 
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)
+ Total Submission(s): 8280    Accepted Submission(s): 3178
+ 
+
+ Problem Description
+ 
+
+ Given a positive integer N, you should output the leftmost digit of N^N.
+ 
+ 
+
+ Input
+ 
+
+ The input contains several test cases. The first line of the input is a single integer T which is the number of test cases. T test cases follow.
+ 
+ Each test case contains a single positive integer N(1<=N<=1,000,000,000).
+ 
+ 
+
+ Output
+ 
+
+ For each test case, you should output the leftmost digit of N^N.
+ 
+ 
+
+ Sample Input
+ 
+ 
+ 
+  
+   2
+3
+4
+   
+ 
+
+  
+ 
+
+ 
+
+ Sample Output
+ 
+ 
+ 
+  
+   2
+2
+
+   
+    
+     Hint
+     In the first case, 3 * 3 * 3 = 27, so the leftmost digit is 2. In the second case, 4 * 4 * 4 * 4 = 256, so the leftmost digit is 2. 
+   
+    
+   
+ 
+
+  
+ 
+#include<stdio.h>
+#include<math.h>
+int T;
+int main()
+{
+    int n,a;
+    double m;
+    scanf("%d",&T);
+    while(T--){
+        scanf("%d",&n);
+        m = n * log10(n);
+        printf("%d\n",(int)floor(pow(10,m - floor(m))));
+    }
+   return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+n^n = a * 10^b; 
+ 将乘方转化为科学计数法，则此时floor(a)就是我们要就的Leftmost Digit.
+两边同时取log10,
+n * lg(n) = lg(a) + b;
+考虑到科学计数法的表达，a < 10,则lg(a) < 1; 则 b 为 n * lg(n) 的整数部分，lg(a) 为小数部分；
+则 lg(a) = n * lg(n) - b;  b = floor(n * lg(n));
+ 
+函数定义与语法 
+
+ 
+#include <math.h>
+double   log(double x);   /* 计算一个数字的自然对数 */
+double log10(double x);   /* 计算以10为基数的对数 */
+函数名: floor　　功 能: 返回小于或者等于指定表达式的最大整数　　用 法: double floor(double x);　　头文件:math.h

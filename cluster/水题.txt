@@ -1,0 +1,1183 @@
+2,"poj 2657 Comfort_chenwenwen0210_百度空间
+
+题目大意：在一个圈中从1开始跳，每次跳K步，遇到障碍物不能跳，问K最少要多少才能跳到目标。
+解题报告：点数比较少，可以直接枚举步数验证。
+
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<algorithm>
+#include<map>
+using namespace std;
+typedef __int64 lld;
+const int MAX=1100;
+const lld MOD=1000007;
+const int INF=1000000001;
+const double PI=acos(-1.0);
+const double EPS=1.0e-8;
+const int dir[4][2]={{1,0},{0,1},{-1,0},{0,-1}};
+map<int,bool>mp;
+struct EDGE
+{
+    int v,next;
+}edge[51000];
+int head[MAX],E;
+bool dgr[MAX];
+void add(int s,int t)
+{
+    edge[E].v=t;
+    edge[E].next=head[s];
+    head[s]=E++;
+}
+const lld BIT=1000000000;
+const int MM=100000000;
+struct BigNum
+{
+    lld dig[100];
+    int len;
+    void clr()
+    {
+        memset(dig,0,sizeof(dig));
+        len=1;
+    }
+    void print(bool flag=false)
+    {
+        int i=len-1;
+        printf(""%I64d"",dig[i]);
+        for(i--;i>=0;i--)
+        {
+            printf(""%09I64d"",dig[i]);
+        }
+        if(flag)puts("""");
+    }
+    bool zero()
+    {
+        return dig[0]==0&&len==1;
+    }
+};
+BigNum multi(BigNum a,lld b)
+{
+    int i;
+    for(i=0;i<a.len;i++)
+    {
+        a.dig[i]*=b;
+    }
+    for(i=0;i<a.len;i++)
+    {
+        if(a.dig[i]>=BIT)
+        {
+            a.dig[i+1]+=a.dig[i]/BIT;
+            a.dig[i]%=BIT;
+        }
+    }
+    while(a.dig[a.len]>0)
+    {
+        a.dig[a.len+1]+=a.dig[a.len]/BIT;
+        a.dig[a.len]%=BIT;
+        a.len++;
+    }
+    return a;
+}
+BigNum add(BigNum a,BigNum b)
+{
+    int i;
+    if(b.len>a.len)a.len=b.len;
+    for(i=0;i<a.len;i++)
+    {
+        a.dig[i]+=b.dig[i];
+        if(a.dig[i]>=BIT)
+        {
+            a.dig[i]-=BIT;
+            a.dig[i+1]++;
+        }
+    }
+    if(a.dig[a.len]>0)a.len++;
+    return a;
+}
+BigNum dp[1100];
+bool stk[MAX];
+bool vis[MAX];
+bool ok(int t,int n,int step)
+{
+    int i;
+    for(i=0;i<=n;i++)
+    {
+        vis[i]=stk[i];
+    }
+    int s=1;
+    while(!vis[s]&&s!=t)
+    {
+        vis[s]=true;
+        s+=step;
+        if(s>n)s-=n;
+    }
+    return s==t;
+}
+int main()
+{
+    int n,m,i,j;
+    int z;
+    while(scanf(""%d%d%d"",&n,&z,&m)!=EOF)
+    {
+        memset(stk,false,sizeof(stk));
+        while(m--)
+        {
+            scanf(""%d"",&i);
+            stk[i]=true;
+        }
+        for(i=1;i<=n;i++)
+        {
+            if(ok(z,n,i))break;
+        }
+        printf(""%d\n"",i);
+    }
+    return 0;
+}
+/*
+*/
+
+"
+5,"poj 3279 Fliptile_chenwenwen0210_百度空间
+
+题目大意：老题目了，就是给你N*M的0，1矩阵，要求对其中的某些格子进行操作，使得所有的格子变成0，
+解题报告：n,m比较小，可以通过枚举第一行的操作情况，因为第一行操作完之后，某些不是0，必须要通过第二行的来操作，这样就可以确定了第二行的情况，这样一行一行推。复杂度2^m*(n*m)
+
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<algorithm>
+using namespace std;
+typedef __int64 lld;
+const int MAX=16;
+const lld MOD=1000007;
+const int INF=1000000001;
+const double PI=acos(-1.0);
+const double EPS=1.0e-8;
+const int dir[4][2]={{1,0},{0,1},{-1,0},{0,-1}};
+int ans[MAX][MAX];
+int tmp[MAX][MAX];
+int save[MAX][MAX];
+int cur[MAX][MAX];
+int count(int a[MAX][MAX],int n,int m)
+{
+    int cnt=0;
+    for(int i=0;i<n;i++)for(int j=0;j<m;j++)cnt+=a[i][j];
+    return cnt;
+}
+int cmp(int n,int m)
+{
+    int i,j;
+    int cb=count(ans,n,m);
+    int ca=count(tmp,n,m);
+    if(ca<cb)return -1;
+    else if(ca>cb)return 1;
+    for(i=0;i<n;i++)for(j=0;j<m;j++)
+    {
+        if(tmp[i][j]!=ans[i][j])return tmp[i][j]-ans[i][j];
+    }
+    return 0;
+}
+void cpy(int a[MAX][MAX],int b[MAX][MAX],int n,int m)
+{
+    int i,j;
+    for(i=0;i<n;i++)for(j=0;j<m;j++)a[i][j]=b[i][j];
+}
+bool flip(int n,int m,int s)
+{
+    int i,j;
+    for(i=0;i<m;i++)
+    {
+        if((1<<i)&s)
+        {
+            tmp[0][i]=1;
+            cur[0][i]^=1;
+            if(i>0)  cur[0][i-1]^=1;
+            if(i+1<m)cur[0][i+1]^=1;
+            if(1<n)cur[1][i]^=1;
+        }
+        else tmp[0][i]=0;
+    }
+    for(i=1;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            if(cur[i-1][j])
+            {
+                tmp[i][j]=1;
+                cur[i-1][j]^=1;
+                cur[i][j]^=1;
+                if(j>0)cur[i][j-1]^=1;
+                if(j+1<m)cur[i][j+1]^=1;
+                if(i+1<n)cur[i+1][j]^=1;
+            }
+            else tmp[i][j]=0;
+        }
+    }
+    for(j=0;j<m;j++)if(cur[n-1][j])return false;
+    return true;
+}
+int main()
+{
+    int n,m,i,j;
+    while(scanf(""%d%d"",&n,&m)!=EOF)
+    {
+        for(i=0;i<n;i++)for(j=0;j<m;j++)
+        {
+            scanf(""%d"",&save[i][j]);
+            ans[i][j]=1;
+        }
+        bool flag=false;
+        for(i=0;i<(1<<m);i++)
+        {
+            cpy(cur,save,n,m);
+            if(flip(n,m,i))
+            {
+                flag=true;
+                if(cmp(n,m)<0)
+                {
+                    cpy(ans,tmp,n,m);
+                }
+            }
+        }
+        if(flag)
+        {
+            for(i=0;i<n;i++)
+            {
+                for(j=0;j<m;j++)
+                {
+                    if(j)putchar(' ');
+                    putchar('0'+ans[i][j]);
+                }
+                puts("""");
+            }
+        }
+        else puts(""IMPOSSIBLE"");
+    }
+    return 0;
+}
+/*
+100 0 0 0
+100 22 0  0
+100 35 25 -10.5
+10  90 25 -28
+0 0 0 0
+*/
+
+"
+19,"poj 3844 Divisible Subsequences - 计算机的艺术 - 博客频道 - CSDN.NET
+
+ 
+ Description
+ 
+
+ Given a sequence of positive integers, count all contiguous subsequences (sometimes called substrings, in contrast to subsequences, which may leave out elements) the sum of which is divisible by a given number. These subsequences may overlap. For example, the sequence (see sample input) 
+  
+ 
+  2, 1, 2, 1, 1, 2, 1, 2
+  
+ 
+ contains six contiguous subsequences the sum of which is divisible by four: the first to eighth number, the second to fourth number, the second to seventh number, the third to fifth number, the fourth to sixth number, and the fifth to seventh number.
+ 
+ Input
+ 
+
+ The first line of the input consists of an integer c (1 <= c <= 200), the number of test cases. Then follow two lines per test case. 
+ Each test case starts with a line consisting of two integers d (1 <= d <= 1 000 000) and n (1 <= n <= 50 000), the divisor of the sum of the subsequences and the length of the sequence, respectively. The second line of a test case contains the elements of the sequence, which are integers between 1 and 1 000 000 000, inclusively.
+ 
+ Output
+ 
+
+ For each test case, print a single line consisting of a single integer, the number of contiguous subsequences the sum of which is divisible by d.
+ 
+ Sample Input
+ 
+2
+7 3
+1 2 3
+4 8
+2 1 2 1 1 2 1 2 
+ Sample Output
+ 
+0
+6 
+ Source
+ 
+
+ 2009 ACM North Western European Regional Contest
+ 
+
+ 先求累加和sum[i](a[0]+a[1]+...+a[i])，然后求余，若两个累加和sum[i]%d==sum[j]%d，那么(sum[j]-sum[i])%d==0，即a[i+1], ... , a[j]就是一个满足条件的连续子序列。注意余数为0的情况，可以在原序列最前面加上一个假设的元素0，这就就可以统一处理了。
+ 
+
+ 
+ #include <stdio.h>
+#include <memory.h>
+#define MAX_LEN 50010
+#define MAX_NUMBER 1000010
+int sum[MAX_LEN];
+__int64 mod[MAX_NUMBER];
+int main()
+{
+	int c;
+	scanf(""%d"", &c);
+	while(c--)
+	{
+		int d, n;
+		scanf(""%d%d"", &d, &n);
+		int x;
+		memset(mod, 0, sizeof(mod));
+		sum[0] = 0;
+		mod[0] = 1;
+		for(int i = 1; i <= n; i++)
+		{
+			scanf(""%d"", &x);
+			sum[i] = sum[i-1] + x;
+			sum[i] %= d;
+			mod[sum[i]]++;
+		}
+		__int64 result = 0;
+		for(int i = 0; i < d; i++)
+			if(mod[i] > 0)
+				result += mod[i] * (mod[i]-1) / 2;
+		printf(""%I64d\n"", result);
+	}
+	return 0;
+}
+ 
+ 
+"
+27,"poj 2440_志当存高远_百度空间
+
+/*Description
+A kind of virus has attacked the X planet, and many lives are infected. After weeks of study, The CHO (Creature Healthy Organization) of X planet finally finds out that this kind of virus has two kind of very simple DNA, and can be represented by 101 and 111. Unfortunately, the lives on the planet also have DNA formed by 0s and 1s. If a creature's DNA contains the virus' DNA, it will be affected; otherwise it will not. Given an integer L, it is clear that there will be 2 ^ L different lives, of which the length of DNA is L. Your job is to find out in the 2 ^ L lives how many won't be affected?
+Input
+The input contains several test cases. For each test case it contains a positive integer L (1 <= L <= 10 ^ 8). The end of input is indicated by end-of-file.
+Output
+For each test case, output K mod 2005, here K is the number of lives that will not be affected.
+Sample Input
+4
+Sample Output
+9
+解题思路
+可以推出递推公式f(n)=f(n-1)+f(n-3)+f(n-4)。然后输出1000结果查看结果的循环规律，得到200。
+*/
+#include<iostream>
+using namespace std;
+int ans[205];
+void Cal()
+{
+    ans[0]=1;
+    ans[1]=2;
+    ans[2]=4;
+    ans[3]=6;
+    ans[4]=9;
+    ans[5]=15;
+    for(int i=6;i<200;++i)
+    {
+        ans[i]=ans[i-1]+ans[i-3]+ans[i-4];
+        ans[i]%=2005;
+    }
+}
+int getNum(int n)
+{
+    n%=200;
+    return ans[n];
+}
+int main()
+{
+    //freopen(""car.in"",""r"",stdin);
+    //freopen(""car.out"",""w"",stdout);
+    int n;
+    Cal();
+    while(scanf(""%d"",&n)!=EOF)
+    {
+        printf(""%d\n"",getNum(n));
+    }
+    return 0;
+}
+"
+30,"POJ 1598 Excuses, Excuses! - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+Description
+Judge Ito is having a problem with people subpoenaed for jury duty giving rather lame excuses in order to avoid serving. In order to reduce the amount of time required listening to goofy excuses, Judge Ito has asked that you write a program that will search for a list of keywords in a list of excuses identifying lame excuses. Keywords can be matched in an excuse regardless of case.
+ Input
+Input to your program will consist of multiple sets of data. Line 1 of each set will contain exactly two integers. The first number (1 <= K <= 20) defines the number of keywords to be used in the search. The second number (1 <= E <= 20) defines the number of excuses in the set to be searched. Lines 2 through K+1 each contain exactly one keyword. Lines K+2 through K+1+E each contain exactly one excuse. All keywords in the keyword list will contain only contiguous lower case alphabetic characters of length L (1 <= L <= 20) and will occupy columns 1 through L in the input line. All excuses can contain any upper or lower case alphanumeric character, a space, or any of the following punctuation marks ["".,!?] not including the square brackets and will not exceed 70 characters in length. Excuses will contain at least 1 non-space character.
+ Output
+For each input set, you are to print the worst excuse(s) from the list. The worst excuse(s) is/are defined as the excuse(s) which contains the largest number of incidences of keywords. If a keyword occurs more than once in an excuse, each occurrance is considered a separate incidence. A keyword ""occurs"" in an excuse if and only if it exists in the string in contiguous form and is delimited by the beginning or end of the line or any non-alphabetic character or a space.
+For each set of input, you are to print a single line with the number of the set immediately after the string ""Excuse Set #"". (See the Sample Output). The following line(s) is/are to contain the worst excuse(s) one per line exactly as read in. If there is more than one worst excuse, you may print them in any order. After each set of output, you should print a blank line.
+ Sample Input
+5 3
+ dog
+ ate
+ homework
+ canary
+ died
+ My dog ate my homework.
+ Can you believe my dog died after eating my canary... AND MY HOMEWORK?
+ This excuse is so good that it contain 0 keywords.
+ 6 5
+ superhighway
+ crazy
+ thermonuclear
+ bedroom
+ war
+ building
+ I am having a superhighway built in my bedroom.
+ I am actually crazy.
+ 1234567890.....,,,,,0987654321?????!!!!!!
+ There was a thermonuclear war!
+ I ate my dog, my canary, and my homework ... note outdated keywords?
+ Sample Output
+Excuse Set #1
+ Can you believe my dog died after eating my canary... AND MY HOMEWORK?
+Excuse Set #2
+ I am having a superhighway built in my bedroom.
+ There was a thermonuclear war!
+ 题目大概意思：给出N个关键词，M个句子，打印含有关键词最多的句子,如果句子中的词为大写，但转换为小写时是关键词的也考虑进去。
+ 这个题没有什么井，直接打就可以。
+代码：
+ #include<stdio.h> 
+ #include<string.h> 
+ #include<ctype.h> 
+ int main() 
+ { 
+     //freopen(""in.txt"",""r"",stdin); 
+     int m,n,i,j,num[20],max,t=1,a,k,len; 
+     char word[20][20],excuse[20][71],ch[71]; 
+     while(scanf(""%d%d"",&m,&n)!=EOF) 
+     { 
+         getchar(); 
+         for(i=0; i<m; i++) 
+         { 
+             scanf(""%s"",word[i]); 
+             getchar(); 
+         }   www.2cto.com
+         memset(num,0,sizeof(num)); 
+         max=0; 
+         for(i=0; i<n; i++) 
+         { 
+             gets(excuse[i]); 
+             len=strlen(excuse[i]); 
+             for(j=0; j<len; j++) 
+             { 
+                 a=0; 
+                 while(isalpha(excuse[i][j])) 
+                 { 
+                     ch[a++]=tolower(excuse[i][j]); 
+                     j++; 
+                 } 
+                 if(a>0) 
+                 { 
+                     ch[a]='\0'; 
+                     for(k=0; k<m; k++) 
+                     { 
+                         if(strcmp(ch,word[k])==0) 
+                         { 
+                             num[i]++;break; 
+                         } 
+                     } 
+                 } 
+             } 
+             max=max>num[i]?max:num[i]; 
+         } 
+         printf(""Excuse Set #%d\n"",t++); 
+         for(i=0; i<n; i++) 
+         { 
+             if(num[i]==max) 
+             { 
+                 printf(""%s\n"",excuse[i]); 
+             } 
+         } 
+         printf(""\n""); 
+     } 
+     return 0; 
+ } 
+ 作者：ultimater"
+34,"PKU 1026 Cipher_乐吾天_百度空间
+
+这需要求每一个位置的循环因子，最后用k模每一位的循环因子，然后输出相应的字符即可。
+不过陷阱不少，WA了N次。
+    每个block之后有个 空行。
+    scanf(""%d "",&k); 也会WA。要用      scanf(""%d"",&k); getchar();
+     输出必须有n位，后面需要补空格 ' ' ;
+Source Code
+ Problem: 1026 User: AlbertLiu Memory: 312K Time: 47MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include <iostream>const int klen=200 ;int a[klen][klen] , sw[klen] , mod[klen] , n ;char word[klen] , res[klen] ;int main(){ int i , j , k ; while( scanf(""%d"",&n)&&n ) { for(i=0; i<n; ++i) scanf(""%d"",sw+i); for(i=0; i<n; ++i) --sw[i]; for( i=1,j=0; j<n; ++j,i=1) { a[0][j]=j ; do { a[i][j]= sw[ a[i-1][j] ] ; } while( a[i++][j]!=j ) ; mod[j] = i-1; } while( scanf(""%d"",&k)&&k ) { getchar(); gets(word); for(i=0; word[i]&&word[i]!=10 ; ++i); for(;i<n; ++i) word[i]=' '; for( j=0; j<n; ++j) res[ a[k%mod[j]][j] ] = word[j] ; res[n]=0; puts(res); } printf(""\n""); } return 0;} 
+
+
+推荐文章:
+
+1. 
+POJ 1733 / URAL 1003 Parity game [并查集]
+
+2. 
+poj 1611-The Suspects
+
+3. 
+POJ 1006 Biorhythms
+
+4. 
+POJ 1005 I Think I Need a Houseboat
+
+5. 
+[POJ 2019]矩阵处理
+
+6. 
+[POJ 1019]数字处理
+
+7. 
+[POJ 2299]逆序对
+
+8. 
+[POJ 2029]矩阵处理
+
+9. 
+poj 1140 Expanding Fractions 模拟
+
+"
+74,"poj 1583 Choose Your Words Carefully - yzl_rex - 博客频道 - CSDN.NET
+
+//这题足足用了我4个多小时来检查错误（半个小时写代码）！实在太愚蠢了！头都爆了！哎！
+//而且这一题并没有区分大小写的，一般没有考虑到的情况，都可以通过代码后面的样例发现，
+//这题实在太坑爹了！被折磨了数小时，经历了无限次WA！虽然是水题一道！ 
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+map<string, int> m;
+map<string, int>::iterator it; 
+int main()
+{
+    int i, len, max = 0, time; 
+    string word, tmp; 
+    bool flag; 
+    while (cin >> word){
+          len = word.length();
+          tmp.clear(); 
+          flag = false; 
+          for (i = 0; i < len; i++){
+              if (isalpha(word[i])){
+                   word[i] = tolower(word[i]);
+                   tmp.push_back(word[i]); 
+                   flag = false; 
+              }
+              else{
+                   time = ++m[tmp];
+                   flag = true; 
+                   if (time > max)
+                       max = time;
+                   tmp.clear(); 
+              } 
+          }
+          if (!flag){
+               time = ++m[tmp];
+               if (time > max)
+                   max = time; 
+          } 
+    } 
+    cout << max << "" occurrences"" << endl;
+    for (it = m.begin(); it != m.end(); it++){
+        if (it->second == max)
+            cout << it->first << endl; 
+    } 
+    system(""pause""); 
+} 
+/*
+a,a.a/a'a;a\a-a(a)
+and.. and
+and.and. and
+ans.ans 
+New new 
+*/ 
+
+"
+77,"POJ 2142 The Balance_编织梦想，编织未来_百度空间
+
+题目大意：给定两种重量的砝码a,b，和一个重量为d的物品。物品放在天枰的右边，问需要多少个a和多少个b使得天枰平衡，假设需要x个a和y个b,那么x+y最少者为最优解，如果两种方案的x+y一样小，那么a*x+b*y最小者为最优解，求最优的x和y。
+解题思路：很简单的一个求同余方程问题。
+附代码：
+#include<iostream>
+#include<cstring>
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int extend_gcd(int a, int b, int &x, int &y)
+{
+    int i,j,k;
+    if(b == 0)
+    {
+        x = 1; y = 0;
+        return a;
+    }
+    i = extend_gcd(b,a%b,x,y);
+    j = x; x = y; y = j - (a/b)*y;
+    return i;
+}
+int main()
+{
+    int i,j,k;
+    int a,b,n,d,x,y,xx,yy;
+    int ansa, ansb, ansc, ansd;
+    while(scanf(""%d%d%d"",&a,&n,&b),a||n||b)
+    {
+        ansa = ansb = -1;
+        ansc = ansd = -1;
+        d = extend_gcd(a,n,x,y);
+        xx = (b/d)*x;
+        xx = xx % n;
+        if(xx < 0) xx += n;
+        j = n / d;
+        for(i = 1; i <= d; i++)
+        {
+            yy = (a*xx-b)/n;
+            k = abs(yy);
+            if(ansa == -1 && ansb == -1) {ansa = xx; ansb = k;}
+            else if(xx + k < ansa + ansb)
+            {
+                ansa = xx; ansb = k;
+            }
+            else if(xx + k == ansa + ansb && (xx*a+k*n < ansa*a+ansb*n))
+            {
+                ansa = xx; ansb = k;
+            }
+            xx = (xx + j)%n;
+        }
+        i = a; a = n; n = i;
+        d = extend_gcd(a,n,x,y);
+        xx = (b/d)*x;
+        xx = xx % n;
+        if(xx < 0) xx += n;
+        j = n / d;
+        for(i = 1; i <= d; i++)
+        {
+            yy = (a*xx-b)/n;
+            k = abs(yy);
+            if(ansc == -1 && ansd == -1) {ansc = xx; ansd = k;}
+            else if(xx + k < ansc + ansd)
+            {
+                ansc = xx; ansd = k;
+            }
+            else if(xx + k == ansa + ansb && (xx*a+k*n < ansc*a+ansd*n))
+            {
+                ansc = xx; ansd = k;
+            }
+            xx = (xx + j)%n;
+        }
+        if(ansa + ansb > ansc + ansd)
+        {
+            ansa = ansd; ansb = ansc;
+        }
+        else if(ansa + ansb == ansd + ansc && (ansa*n+ansb*a > ansc*a + ansd*n))
+        {
+            ansa = ansd; ansb = ansc;
+        }
+        printf(""%d %d\n"",ansa,ansb);
+    }
+    return 0;
+}
+"
+85,"poj 3661 running_冰刃逆袭丿月夜_新浪博客
+
+题目叙述条件比较多：Bessie参加跑步比赛，每一分钟可以选择跑或者休息，同时给出每一分钟如果跑的话，可以跑的距离：跑的话，疲劳度会加1，对应的分钟可以跑对应的距离；休息的话，疲劳度减1；且疲劳度不可以超过m。跑完后疲劳度必须为0，求满足条件可以跑得最远距离。
+我以为动态方程是这样的dp[i][j]=max(dp[i-1][j-1]+a,dp[i-1][j+1]);
+ 但不是，可能是因为。当疲劳度为0时，再继续休息，仍是0。
+所以思路整理如下：
+dp[i][j] 表示在第 i分钟，疲劳度为 j 的最优子状态，中间的状态转移比较麻烦。
+首先，dp[i][j] = dp[ i - 1][ j - 1] + a[i] ,if j < m, and j <= i ( 每分钟最多可以加1)
+其次，dp[i][0] = dp [i - 1][0] 表示第 i 分钟继续休息
+也可以由以前的状态休息得来，eg: dp[4][0]<- dp[3][1],dp[2][2]
+dp[i][0] = min （dp[i][0], dp[ i - j][j] )， j <= m && i - j >= j （ dp[i-j][j]中，i-j不可能<j）
+最后结果就是dp[n][0]
+代码：
+#include <iostream>
+ #include <cstring>
+ using namespace std;
+ int dp[10005][505];
+ int a[10005];
+ int max(int x,int y)
+ {
+    return x>y?x:y;
+ }
+ int main()
+ {
+     int i,j;
+     int n,m;
+     while(cin>>n>>m)
+     {
+        for(i=1;i<=n;i++)
+           cin>>a[i];
+    for(i=1;i<=n;i++)
+     {
+        for(j=1;j<=m&&j<=i;j++)
+         dp[i][j]=dp[i-1][j-1]+a[i];
+         dp[i][0]=dp[i-1][0];
+         for(j=1;j<=m&&i-j>=j;j++)
+         dp[i][0]=max(dp[i-j][j],dp[i][0]);
+     }
+     cout<<dp[n][0]<<endl;
+    }
+     return 0;
+ }
+"
+87,"POJ 3176 - AllenLSY 孤而无寂 - 博客频道 - CSDN.NET
+
+数字三角形问题
+f[i][j]=max( f[i+1][j], f[i+1][j+1] )+a[i][j]
+初始情况为f[n][i]=a[n][i] 1<=i<=n
+求f[1][1]
+#include <iostream>
+#define F(i,a,b) for (int i=a;i<=b;i++)
+using namespace std;
+int n, a[351][351], f[351][351];
+int main()
+{
+	cin >> n;
+	F(i,1,n)
+		F(j,1,i)
+			cin >> a[i][j];
+	for (int i=1;i<=n;i++)
+		f[n][i]=a[n][i];
+	for (int i=n-1;i>=1;i--)
+	{
+		for (int j=1;j<=i;j++)
+			f[i][j]=max(f[i+1][j], f[i+1][j+1])+a[i][j];
+	}
+	cout << f[1][1];
+	return 0;
+}
+"
+94,"POJ 1226 Substrings - ZZB的日志 - 网易博客
+
+ 
+  
+   
+   Time Limit: 1000MS 
+    
+   Memory Limit: 10000K
+   
+   
+   Total Submissions: 6609 
+    
+   Accepted: 2192
+  
+ 
+ 
+
+Description
+ 
+
+ You are given a number of case-sensitive strings of alphabetic characters, find the largest string X, such that either X, or its inverse can be found as a substring of any of the given strings. 
+ 
+
+Input
+ 
+
+ The first line of the input contains a single integer t (1 <= t <= 10), the number of test cases, followed by the input data for each test case. The first line of each test case contains a single integer n (1 <= n <= 100), the number of given strings, followed by n lines, each representing one string of minimum length 1 and maximum length 100. There is no extra white space before and after a string. 
+ 
+
+Output
+ 
+
+ There should be one line per test case containing the length of the largest string found. 
+ 
+
+Sample Input
+
+2  
+3  
+ABCD  
+BCDFF  
+BRCD  
+2  
+rose  
+orchid 
+
+Sample Output
+
+2  
+2  
+
+Source
+ 
+
+ Tehran 2002 Preliminary
+ 
+
+ //搜索+字符串理
+ 
+
+ //学习strstr()+strncpy()+reverse()
+ 
+
+ //Source Code
+ 
+
+ #include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+ char ch[102][102];
+bool mark;
+int t,n;
+ void solve(char str[],int len,int nn)
+{
+       bool flag=true;
+       int i,lentemp;
+       char str1[102],str2[102];
+        if(nn==n+1)
+       {
+              mark=true;
+              printf(""%d\n"",len);
+              return;
+       }
+       lentemp=len;
+       while(lentemp)
+       {
+              flag=false;  
+              for(i=0;i<=len-lentemp;i++)
+              {
+                      strncpy(str1,str+i,lentemp);
+                      str1[lentemp]='\0';
+                      strcpy(str2,str1);
+                      reverse(str2,str2+lentemp);
+                      if(strstr(ch[nn],str1)||strstr(ch[nn],str2))
+                      {
+                             flag=true;
+                             break;
+                      }
+              }
+              if(flag)
+              {
+                      solve(str1,lentemp,nn+1);
+                      break;
+              }
+              lentemp--;
+       }
+       if(!flag) mark=false;
+       return;
+}
+ int main()
+{
+       int i,min_len;
+       char str[102];
+        scanf(""%d"",&t);
+       while(t--)
+       {
+              scanf(""%d"",&n);getchar();
+              min_len=INT_MAX;
+              for(i=1;i<=n;i++)
+              {
+                      scanf(""%s"",ch[i]);
+                      int len=strlen(ch[i]);
+                      if(len<min_len)
+                      {
+                             min_len=len;
+                             strcpy(str,ch[i]);
+                      }
+              }
+              solve(str,min_len,1);
+              if(!mark)
+              printf(""%d\n"",0);
+       }
+       return 0;
+}
+
+"
+98,"poj 2241 - 宇宙吾心 - 博客园
+
+题意：已知有n（n<30）种类型的block，以及它们的长宽高，每种类型的block都有无限多个。问如果把他们叠起来（上面block的底面的长宽，必须比下面的block的底面长宽都短），最高能有多高。
+代码：
+
+ 
+ #include<iostream>
+#include<fstream>
+using namespace std;
+int n;
+struct e{
+	int s,t,h;
+};
+e a[100];
+int cmp(const void *a,const void *b){
+	return (*(e *)a).s-(*(e *)b).s;
+}
+int dp[101];
+void read(){
+//	ifstream cin(""in.txt"");
+	int i,j,k=0,s,t,h;
+	while(cin>>n)
+	{
+		if(n==0) return;
+		k++;
+		printf(""Case %d: maximum height = "",k);
+		for(i=1;i<=n;i++)
+		{
+			cin>>s>>t>>h;
+			int x,y,v;
+			x=min(s,t);
+			y=max(s,t);
+			v=h;
+			e b;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i-2]=b;
+			x=min(s,h);
+			y=max(s,h);
+			v=t;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i-1]=b;
+			x=min(t,h);
+			y=max(t,h);
+			v=s;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i]=b;
+		}
+		qsort(a+1,3*n,sizeof(e),cmp);
+		n=3*n;
+		for(i=1;i<=n;i++)
+			dp[i]=a[i].h;
+		for(i=2;i<=n;i++)
+			for(j=1;j<i;j++)
+				if(a[i].s>a[j].s&&a[i].t>a[j].t)
+				{	
+					dp[i]=max(dp[j]+a[i].h,dp[i]);
+				}
+		int ans=0;
+		for(i=1;i<=n;i++)
+			ans=max(ans,dp[i]);
+		cout<<ans<<endl;
+	}
+}
+int main(){
+	read();
+	return 0;
+}
+"
+99,"poj 1493 : Machined Surfaces_依然_新浪博客
+
+ 题意：每张照片由n行串组成，每行串长度为25，都由X开头，空格中间(也可没有)，X结尾。所有串的左边X部分同时右移，直到有一个串没有空格。问这时所有串合起来总共有几个空格。
+思路：水题。求最短的空格数minLen，每一行的空格数减去minLen之和就是结果了。
+源代码：(212K, 0MS)
+#include<iostream>
+ #define min(a,b) ((a)<(b)?(a):(b))
+ using namespace std;
+int sum[15];
+ char img[30];
+int main(){
+     int n, i, j;
+     while(scanf(""%d"", &n) && n){
+         getchar();
+         int minLen = 30;
+         for(i = 0; i < n; i ++){
+             gets(img);
+             for(sum[i] = j = 0; j < 25; j ++)
+                 if(img[j] == ' ')
+                     sum[i] ++;
+             minLen = min(minLen, sum[i]);
+         }
+         int ans = 0;
+         for(i = 0; i < n; i ++)
+             ans += sum[i] - minLen;
+         cout << ans << endl;
+     }
+     return 0;
+ }
+"
+130,"POJ 2379 ACM Rank Table(数据结构)_奔跑_新浪博客
+
+Description
+ 
+
+ ACM contests, like the one you are participating in, are hosted by the special software. That software, among other functions, preforms a job of accepting and evaluating teams' solutions (runs), and displaying results in a rank table. The scoring rules are as follows:
+ 
+ 
+  
+  Each run is either accepted or rejected.
+ 
+  The problem is considered solved by the team, if one of the runs submitted for it is accepted.
+ 
+  The time consumed for a solved problem is the time elapsed from the beginning of the contest to the submission of the first accepted run for this problem (in minutes) plus 20 minutes for every other run for this problem before the accepted one. For an unsolved problem consumed time is not computed.
+ 
+  The total time is the sum of the time consumed for each problem solved.
+ 
+  Teams are ranked according to the number of solved problems. Teams that solve the same number of problems are ranked by the least total time.
+ 
+  While the time shown is in minutes, the actual time is measured to the precision of 1 second, and the the seconds are taken into account when ranking teams.
+ 
+  Teams with equal rank according to the above rules must be sorted by increasing team number. 
+  
+ 
+ Your task is, given the list of N runs with submission time and result of each run, compute the rank table for C teams.
+ 
+Input
+ 
+
+ Input contains integer numbers C N, followed by N quartets of integes ci pi ti ri, where ci -- team number, pi -- problem number, ti -- submission time in seconds, ri -- 1, if the run was accepted, 0 otherwise.
+ 
+ 1 ≤ C, N ≤ 1000, 1 ≤ ci ≤ C, 1 ≤ pi ≤ 20, 1 ≤ ti ≤ 36000.
+ 
+
+Output
+ 
+
+ Output must contain C integers -- team numbers sorted by rank.
+ 
+
+Sample Input
+3 3
+1 2 3000 0
+1 2 3100 1
+2 1 4200 1
+Sample Output
+2 1 3
+我累个悲剧诶：竟然一直都理解错题意：关键：：1：要注意输入时间并不一定按升序，所以要对输入时间排序！！
+2：如果做题数目相同，按所有做对题目的时间总和排序，这样才叫公平！！
+3：只有该题接受时加罚时才有效；所以要注意去找到没有接收的题的加罚时，并加以忽略；
+4：最后还要注意一道题也没有提交的队的队号存储！！！
+#include<stdio.h>
+ #include<stdlib.h>
+ #include<string.h>
+ struct stu1{
+  int c1;
+  int p1;
+  int t1;
+  int r1;
+ }s1[1150];
+ struct stu2{
+  int p;//队号；
+  int m[25];//解决的题号；
+  int num;//解决的题目数；
+  int t;//用的时间;
+  int r[25];//对应题号的加罚时间；
+ }s[1150];
+ int cmp1(const void*a,const void*b)
+ {
+  struct stu1 *c,*d;
+  c=(struct stu1 *)a;
+  d=(struct stu1 *)b;
+  if(c->t1!=d->t1)
+  return c->t1-d->t1;
+  else
+   return c->r1-d->r1;
+ }
+ int cmp2(const void*a,const void*b)
+ {
+  struct stu2 *c,*d;
+  c=(struct stu2 *)a;
+  d=(struct stu2 *)b;
+  if(c->num!=d->num)
+   return d->num-c->num;//按解决题目数排序；
+  else if( c->t!=d->t)
+   return c->t-d->t;//相同题目数按时间升序排序；
+  else
+   return c->p-d->p;//解决题目数相同，时间也相同的，按队号排序；
+ }
+ int main()
+ {
+  int n,c,i;
+  while(scanf(""%d%d"",&c,&n)!=-1)
+  {
+   memset(s,0,sizeof(s));
+   for(i=0;i<n;i++)//n此输入
+   {
+    scanf(""%d%d%d%d"",&s1[i].c1,&s1[i].p1,&s1[i].t1,&s1[i].r1);
+   }
+   qsort(s1,n,sizeof(s1[0]),cmp1);
+   for(i=0;i<n;i++)
+   {
+   if(s1[i].r1==0)//如果没有AC；
+    {
+     s[s1[i].c1-1].p=s1[i].c1;//对应队号的队号;
+     if(s[s1[i].c1-1].m[s1[i].p1]==0)
+     s[s1[i].c1-1].r[s1[i].p1]+=1200;//对应题号加上加罚时;
+    }
+    else//如接受；
+    {
+     s[s1[i].c1-1].p=s1[i].c1;
+     if(!s[s1[i].c1-1].m[s1[i].p1])//如本对本题是第一次提交成功；
+     {
+        s[s1[i].c1-1].m[s1[i].p1]=s1[i].p1;//输入对应题号；
+       s[s1[i].c1-1].t+=s[s1[i].c1-1].r[s1[i].p1];
+       s[s1[i].c1-1].t+=s1[i].t1;//s[s1[i].c1-1].t+=s1[i].t1+s[s1[i].c1-1].r[s1[i].p1];//当前时间加上加罚时;
+        s[s1[i].c1-1].num++;//解决题目数加一
+     }
+    }
+   }
+   for(i=0;i<c;i++)//将没有提交过的队的队号打上；
+   {
+    if(s[i].p==0)
+     s[i].p=i+1;
+   }
+   qsort(s,c,sizeof(s[0]),cmp2);//排序
+   for(i=0;i<c-1;i++)
+    printf(""%d "",s[i].p);
+   printf(""%d\n"",s[c-1].p);
+  }
+  return 0;
+ }
+"
+170,"POJ 1519：Digital Roots - 紫荆的日志 - 网易博客
+
+
+ 
+  描述
+ 
+ 
+  The digital root of a positive integer is found by summing the digits of the integer. If the resulting value is a single digit then that digit is the digital root. If the resulting value contains two or more digits, those digits are summed and the process is repeated. This is continued as long as necessary to obtain a single digit.
+  
+For example, consider the positive integer 24. Adding the 2 and the 4 yields a value of 6. Since 6 is a single digit, 6 is the digital root of 24. Now consider the positive integer 39. Adding the 3 and the 9 yields 12. Since 12 is not a single digit, the process must be repeated. Adding the 1 and the 2 yeilds 3, a single digit and also the digital root of 39.
+ 
+ 
+  输入
+ 
+ 
+  The input file will contain a list of positive integers, one per line. The end of the input will be indicated by an integer value of zero.
+ 
+ 
+  输出
+ 
+ 
+  For each integer in the input, output its digital root on a separate line of the output.
+ 
+ 
+  样例输入
+ 
+ 
+  24 39 0
+ 
+ 
+  样例输出
+ 
+ 
+  6 3
+ 
+
+
+ code:
+
+
+ 
+#include <iostream>
+using namespace std;
+int main()
+{
+    char n[10100];
+    while(cin>>n&&n[0]!='0'){
+        int t = 0;
+        for(int i = 0; n[i] != '\0'; i++) {
+            t += (n[i] - '0');
+            if(t>=10) t = t%10 + t/10;
+        }
+        cout<<t<<endl;
+    }
+    return 0;
+}
+
+##
+"

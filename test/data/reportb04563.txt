@@ -1,0 +1,9 @@
+PKU Problem: 2959_Gaming & programing_百度空间
+
+Source Code
+Problem: 2959User: jesse_luzexiMemory: 196KTime: 0MSLanguage: C++Result: Accepted
+
+
+ Source Code #include "iostream"#include "math.h"using namespace std;#define pi 3.1415926535897932384626433832795int main(){ int Case; scanf("%d",&Case); for( ;Case--; ) { double D,d,s; scanf("%lf%lf%lf",&D,&d,&s); int res = (int)( pi/asin((s+d)/(D-d)) ); printf("%d\n",res); } return 0;}
+
+

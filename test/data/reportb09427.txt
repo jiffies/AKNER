@@ -1,0 +1,129 @@
+pku 1190 搜索好题 - nizhenyang的日志 - 网易博客
+
+搜索顺序的选择
+ 
+由于R和H是从下到上递减，所以体积也是从下到上递减，因此选择从下到上的搜索顺序有利于判断当前情况是否可行。
+ 
+此外，注意到表面积包括每层蛋糕的侧面积和裸露的顶面积。确定了最底层的蛋糕就确定了每层蛋糕裸露的顶面积之和，需要考虑的只剩下每层蛋糕的侧面积。因此这样的搜索顺序有利于判断是否可能出现比已知最优解更优的解
+ 
+我们设当前为第i层蛋糕，上一层蛋糕的半径和高度为lastr,lasth,当前的面积为S,余下的体积为leftv.
+ 
+我们可以用(i,lastr,lasth,leftv,S)表示一个状态.
+ 
+初始状态为(M-1,Rm,Hm,N,R*R*H,R*R+2*R*H),Rm,Hm为第m层的半径和高，R*R*H表示第一层的体积，R*R+2*R*H表示顶面积加侧面积,即当前总面积.
+ 
+目标状态(0,R1,H1,0,S),其中R1,H1为第一层的半径和高，S表示总面积．于是我们的目标是找到一条路径从初始节点到任意目标节点，并且S最小.
+ 
+递归的式子：
+ 
+(i,Ri,Hi,Vi,Si)à(i-1,Ri-1,Hi-1,Vi-1,Si-1)
+ 
+其中必须满足:
+ 
+Ri>Ri-1
+ 
+Hi>Hi-1
+ 
+Vi-1=Vi-Ri*Ri*Hi
+ 
+Si-1=Si+2*Ri*Hi
+ 
+直接的搜索显然是会超时的。因此必须加以优化。
+ 
+1、 切到当前层时表面积比最小的面积大，可以剪枝；
+ 
+2、 如果剩下的体积，比可能切出的最小体积小，剪枝。
+ 
+3、从第K层到M层还需要加上的面积= 
+ 
+。所以，当已经花费的面积
+ 
+时可剪枝，余下的则是写递归程序的问题。
+ 
+#include<iostream>
+ 
+using namespace std;
+ 
+int no1s,mins=10000000,lever,n,m;
+ 
+int n3(int x)
+ 
+{
+ 
+return (x+1)*(x+1)*x*x/4;   // 求和公式
+ 
+}
+ 
+void f(int leftv,int floor,int lastr ,int lasth,int s)
+ 
+{
+ 
+if (  s + 2*leftv/lastr  >=  mins  )
+ 
+return;
+ 
+if( leftv < n3(floor) )
+ 
+return;
+ 
+if(floor==0)
+ 
+{
+ 
+if(leftv==0)
+ 
+mins=s;
+ 
+return;
+ 
+}
+ 
+int r,h,r2,maxh;
+ 
+for(r=lastr-1;r>=floor;r--)
+ 
+{
+ 
+r2=r*r;
+ 
+if(floor==m)
+ 
+s=r2;
+ 
+maxh=(leftv-n3(floor-1))/r2;
+ 
+if(maxh>lasth-1)
+ 
+maxh=lasth-1;
+ 
+for(h=maxh;h>=floor;h--)
+ 
+f(leftv-r2*h,floor-1,r,h,s+2*r*h);
+ 
+}
+ 
+}
+ 
+int main()
+ 
+{
+ 
+cin>>n>>m;
+ 
+int sum=0;
+ 
+f(n, m, 10000, 1000, 0);
+ 
+if(mins>100000000)
+ 
+cout<<0;
+ 
+else
+ 
+cout<<mins<<endl;
+ 
+return 0;
+ 
+}
+ 
+总结：学到了搜索中的状态的设计方法，搜索中的剪枝技巧，递归解决的设计方法

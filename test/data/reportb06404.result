@@ -1,0 +1,637 @@
+栈	n	N	N	O	B-KNOWLEDGE
+可是	c	N	N	O	O
+一个	m	N	N	O	O
+好	a	N	N	O	O
+东西	ns	N	N	O	O
+啊	y	N	N	O	O
+pku3044	eng	N	Y	O	B-OJ
+_	x	N	N	O	O
+苏航	j	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+比较	d	N	N	O	O
+好	a	N	N	O	O
+的	uj	N	N	O	O
+栈	n	N	N	O	B-KNOWLEDGE
+类型	n	Y	N	O	O
+题目	n	Y	N	O	O
+。	x	N	N	O	O
+
+值得纪念	v	N	N	O	O
+！	x	N	N	O	O
+
+题目	n	Y	N	O	O
+大意	d	N	N	O	O
+：	x	N	N	O	O
+
+给	p	N	N	O	O
+我们	r	N	N	O	O
+一个	m	N	N	O	O
+由	p	N	N	O	O
+一些	m	N	N	O	O
+矩形	n	Y	N	O	O
+构造	v	Y	N	O	O
+出来	v	N	N	O	O
+的	uj	N	N	O	O
+图	n	N	N	O	O
+，	x	N	N	O	O
+我们	r	N	N	O	O
+需要	v	N	N	O	O
+找到	v	N	N	O	O
+最少	d	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+块数	n	N	N	O	O
+来	v	N	N	O	O
+覆盖	v	Y	N	O	O
+它	r	N	N	O	O
+。	x	N	N	O	O
+
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+pku	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+JudgeOnline	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+
+解题	n	N	N	O	O
+思路	n	N	N	O	O
+：	x	N	N	O	O
+
+首先	d	N	N	O	O
+可以	c	N	N	O	O
+肯定	v	N	N	O	O
+如果	c	N	N	O	O
+有	v	N	N	O	O
+两块	m	N	N	O	O
+矩形	n	Y	N	O	O
+是	v	N	N	O	O
+连在一起	l	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+肯定	v	N	N	O	O
+是	v	N	N	O	O
+用	p	N	N	O	O
+低	a	N	N	O	O
+的	uj	N	N	O	O
+那块	r	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+高	a	N	N	O	O
+去	v	N	N	O	O
+覆盖	v	Y	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+再	d	N	N	O	O
+去	v	N	N	O	O
+覆盖	v	Y	N	O	O
+高	a	N	N	O	O
+的	uj	N	N	O	O
+那块	r	N	N	O	O
+矩形	n	Y	N	O	O
+,	x	N	N	O	O
+
+所以	c	N	N	O	O
+横坐标	n	N	N	O	O
+是	v	N	N	O	O
+没有	v	N	N	O	O
+关系	n	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+只	d	N	N	O	O
+会	v	N	N	O	O
+受到	v	N	N	O	O
+矩形	n	Y	N	O	O
+高度	n	Y	N	O	O
+的	uj	N	N	O	O
+影响	vn	N	N	O	O
+。	x	N	N	O	O
+
+但是	c	N	N	O	O
+如果	c	N	N	O	O
+直接	ad	N	N	O	O
+这样	r	N	N	O	O
+贪心	v	Y	N	O	B-KNOWLEDGE
+，	x	N	N	O	O
+会	v	N	N	O	O
+出现	v	N	N	O	O
+这种	r	N	N	O	O
+情况	n	N	N	O	O
+：	x	N	N	O	O
+1	x	N	N	O	O
+、	x	N	N	O	O
+2	x	N	N	O	O
+、	x	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+做	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+1	m	N	N	O	O
+与	p	N	N	O	O
+2	m	N	N	O	O
+用	p	N	N	O	O
+1	m	N	N	O	O
+先	n	N	N	O	O
+覆盖	v	Y	N	O	O
+，	x	N	N	O	O
+但是	c	N	N	O	O
+之后	f	N	N	O	O
+这个	r	N	N	O	O
+1	m	N	N	O	O
+是	v	N	N	O	O
+不	d	N	N	O	O
+需要	v	N	N	O	O
+多余	m	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+来	v	N	N	O	O
+覆盖	v	Y	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+所以	c	N	N	O	O
+可以	c	N	N	O	O
+用到	v	N	N	O	O
+栈	ng	N	N	O	B-KNOWLEDGE
+来	v	N	N	O	O
+处理	v	N	N	O	O
+这个	r	N	N	O	O
+东西	ns	N	N	O	O
+。	x	N	N	O	O
+
+首先	d	N	N	O	O
+我	r	N	N	O	O
+要	v	N	N	O	O
+保证	v	N	N	O	O
+栈	ng	N	N	O	B-KNOWLEDGE
+是	v	N	N	O	O
+单调	n	Y	N	O	O
+上升	v	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+当前	t	N	N	O	O
+插入	v	N	N	O	O
+一个	m	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+高度	n	Y	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+，	x	N	N	O	O
+也	d	N	N	O	O
+就是	d	N	N	O	O
+在	p	N	N	O	O
+栈	ng	N	N	O	O
+中	f	N	N	O	O
+插入	v	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+小于	v	N	N	O	O
+栈顶	n	N	N	O	O
+元素	n	N	N	O	O
+那么	r	N	N	O	O
+踢掉	v	N	N	O	O
+栈顶	n	N	N	O	O
+元素	n	N	N	O	O
+，	x	N	N	O	O
+答案	n	N	N	O	O
+累加	v	Y	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+知道	v	N	N	O	O
+大于	d	N	N	O	O
+等于	v	N	N	O	O
+栈顶	n	N	N	O	O
+元素	n	N	N	O	O
+为止	v	N	N	O	O
+。	x	N	N	O	O
+
+因为	c	N	N	O	O
+在	p	N	N	O	O
+你	r	N	N	O	O
+加入	v	N	N	O	O
+这个	r	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+如果	c	N	N	O	O
+它	r	N	N	O	O
+前面	f	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+高于	v	N	N	O	O
+它	r	N	N	O	O
+肯定	v	N	N	O	O
+
+要	v	N	N	O	O
+竖	v	N	N	O	O
+着	uz	N	N	O	O
+去	v	N	N	O	O
+覆盖	v	Y	N	O	O
+那个	r	N	N	O	O
+矩形	n	Y	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+最后	f	N	N	O	O
+再	d	N	N	O	O
+累加	v	Y	N	O	O
+栈	ng	N	N	O	B-KNOWLEDGE
+中	f	N	N	O	O
+元素	n	N	N	O	O
+即可	d	N	N	O	O
+！	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+C++	nz	N	N	O	O
+语言	n	N	N	O	O
+:	x	N	N	O	O
+
+Codee	eng	N	N	O	O
+#	x	N	N	O	O
+883001	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+02	m	N	N	O	O
+
+03	m	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+50123	m	N	N	O	O
+;	x	N	N	O	O
+
+04	m	N	N	O	O
+
+05	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+tot	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+w	x	N	N	O	O
+,	x	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+06	m	N	N	O	O
+
+07	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+08	m	N	N	O	O
+
+{	x	N	N	O	O
+
+09	m	N	N	O	O
+
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+p3044	eng	N	N	O	O
+.	m	N	N	O	O
+in	eng	Y	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+r	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+stdin	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+10	m	N	N	O	O
+
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+p3044	eng	N	N	O	O
+.	m	N	N	O	O
+out	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+w	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+stdout	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+11	m	N	N	O	O
+
+12	m	N	N	O	O
+
+13	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+tot	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+14	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+w	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+15	m	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+16	m	N	N	O	O
+
+{	x	N	N	O	O
+
+17	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+18	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+19	m	N	N	O	O
+
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+20	m	N	N	O	O
+
+}	x	N	N	O	O
+
+21	m	N	N	O	O
+
+h	x	N	N	O	O
+[	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+22	m	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+23	m	N	N	O	O
+
+{	x	N	N	O	O
+
+24	m	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+tot	eng	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+25	m	N	N	O	O
+
+{	x	N	N	O	O
+
+26	m	N	N	O	O
+
+tot	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+27	m	N	N	O	O
+
+ans	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+28	m	N	N	O	O
+
+}	x	N	N	O	O
+
+29	m	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+30	m	N	N	O	O
+
+{	x	N	N	O	O
+
+31	m	N	N	O	O
+
+tot	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+32	m	N	N	O	O
+
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+tot	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+h	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+33	m	N	N	O	O
+
+}	x	N	N	O	O
+
+34	m	N	N	O	O
+
+}	x	N	N	O	O
+
+35	m	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+36	m	N	N	O	O
+
+37	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+38	m	N	N	O	O
+
+}	x	N	N	O	O
+

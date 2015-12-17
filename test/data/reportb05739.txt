@@ -1,0 +1,94 @@
+pku 1505 copying books(DP) - xmx - 博客园
+
+#include<stdio.h>
+ #include<string>
+ #include<algorithm>
+ using namespace std;
+int t,k,m;
+ int books[510];
+ int dp[510][510];
+ int part[510];
+#define Max(x,y) ((x)>(y)?(x):(y))
+ #define Min(x,y) ((x)<(y)?(x):(y))
+int sum(int i,int j)
+ {
+  int t=0,p;
+  for(p=i;p<=j;p++)
+   t += books[p];
+  return t;
+ }
+ void cal2()
+ {
+  int i,j,l,st;
+  for(i=1;i<=k;i++)
+   dp[i][1] = sum(i,k);
+ dp[k][1] = books[k];
+ for(i=2;i<=m;i++)
+  {
+   dp[k-i+1][i] = Max(books[k-i+1], dp[k-i+2][i-1]);
+   j = k-i+1;
+   for(l=k-i; l>=m-i+1; l--)
+   {
+    if(sum(l,j) <= dp[j+1][i-1])
+     dp[l][i] = dp[j+1][i-1];
+    else if(books[l] >= dp[l+1][i-1])
+     dp[l][i] = books[l] , j = l;
+    else
+    {
+     while(sum(l,j-1) >= dp[j][i-1])
+      j--;
+     dp[l][i] = Min( sum(l,j), dp[j][i-1]);
+     if(dp[l][i] == dp[j][l-1])
+      j--;
+    }
+   }
+  }
+ }
+ int main()
+ {
+  int i ,j, st;
+  scanf("%d",&t);
+  books[0]=0;
+  while(t--)
+  {
+   scanf("%d %d",&k,&m);
+   for(i=1;i<=k;i++) scanf("%d",&books[i]);
+   memset(dp,0,sizeof(dp));
+   cal2();
+   st = 0; j = 0;
+   for(i=k;i>=1;i--)
+   {
+    st += books[i];
+    if(st > dp[1][m])
+    {
+     part[j++] = i+1;
+     st = books[i];
+    }
+      if(st == dp[1][m])
+    {
+     if(m-j <= i)
+     {
+      part[j++] = i;
+      st = 0;
+     }
+     else
+     {
+      part[j++] = i+1;
+      st = books[i];
+     }
+    }
+   }
+  j--;
+   printf("%d",books[1]);
+   for(i=k;i<=2;i++)
+   {
+    if(i == part[j])
+    {
+     printf(" /");
+     j--;
+    }
+    printf(" %d",books[i]);
+   }
+   printf("\n");
+  }
+ }

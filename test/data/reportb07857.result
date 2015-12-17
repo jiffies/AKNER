@@ -1,0 +1,1465 @@
+POJ1273	eng	N	Y	O	B-OJ
+
+Drainage	eng	N	N	O	O
+
+Ditches	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+Zsys	eng	N	N	O	O
+
+Algorithm	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+Drainage	eng	N	N	O	O
+
+Ditches	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+25097	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+9168	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Every	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+rains	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+fields	eng	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+pond	eng	N	N	O	O
+
+forms	eng	N	N	O	O
+
+over	eng	N	N	O	O
+
+Bessie	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+favorite	eng	N	N	O	O
+
+clover	eng	N	N	O	O
+
+patch	eng	N	N	O	O
+.	m	N	N	O	O
+
+This	eng	N	N	O	O
+
+means	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+clover	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+covered	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+awhile	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+takes	eng	N	N	O	O
+
+quite	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+regrow	eng	N	N	O	O
+.	m	N	N	O	O
+
+Thus	eng	N	N	O	O
+,	x	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+built	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+set	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+drainage	eng	N	N	O	O
+
+ditches	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+Bessie	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+clover	eng	N	N	O	O
+
+patch	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+never	eng	N	N	O	O
+
+covered	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+water	eng	N	N	O	O
+.	m	N	N	O	O
+
+Instead	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+drained	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+nearby	eng	N	N	O	O
+
+stream	eng	N	N	O	O
+.	m	N	N	O	O
+
+Being	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+ace	eng	N	N	O	O
+
+engineer	eng	N	N	O	O
+,	x	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+also	eng	N	N	O	O
+
+installed	eng	N	N	O	O
+
+regulators	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+beginning	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+,	x	N	N	O	O
+
+so	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+can	eng	N	N	O	O
+
+control	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+what	eng	N	N	O	O
+
+rate	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+flows	eng	N	N	O	O
+
+into	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+.	m	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+
+knows	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+only	eng	N	N	O	O
+
+how	eng	N	N	O	O
+
+many	eng	N	N	O	O
+
+gallons	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+transport	eng	N	N	O	O
+
+per	eng	N	N	O	O
+
+minute	eng	N	N	O	O
+
+but	eng	N	N	O	O
+
+also	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+exact	eng	N	N	O	O
+
+layout	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+ditches	eng	N	N	O	O
+,	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+feed	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+pond	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+into	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+stream	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+potentially	eng	N	N	O	O
+
+complex	eng	N	N	O	O
+
+network	eng	N	N	O	O
+.	m	N	N	O	O
+
+Given	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+information	eng	N	N	O	O
+,	x	N	N	O	O
+
+determine	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+rate	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+transported	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+pond	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+into	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+stream	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+,	x	N	N	O	O
+
+water	eng	N	N	O	O
+
+flows	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+only	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+direction	eng	N	N	O	O
+,	x	N	N	O	O
+
+but	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+might	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+way	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+flow	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+circle	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+includes	eng	N	N	O	O
+
+several	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+space	eng	N	N	O	O
+-	x	N	N	O	O
+separated	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+
+(	x	N	N	O	O
+0	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+200	m	N	N	O	O
+)	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+M	x	N	N	O	O
+
+(	x	N	N	O	O
+2	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+M	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+200	m	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+N	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+ditches	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+Farmer	eng	N	N	O	O
+
+John	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+dug	eng	N	N	O	O
+.	m	N	N	O	O
+
+M	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+intersections	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+those	eng	N	N	O	O
+
+ditches	eng	N	N	O	O
+.	m	N	N	O	O
+
+Intersection	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+pond	eng	N	N	O	O
+.	m	N	N	O	O
+
+Intersection	eng	N	N	O	O
+
+point	eng	N	N	O	O
+
+M	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+stream	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+following	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+lines	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+,	x	N	N	O	O
+
+Si	eng	N	N	O	O
+,	x	N	N	O	O
+
+Ei	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+Ci	eng	N	N	O	O
+.	m	N	N	O	O
+
+Si	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+Ei	eng	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+Si	eng	N	N	O	O
+,	x	N	N	O	O
+
+Ei	eng	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+M	x	N	N	O	O
+)	x	N	N	O	O
+
+designate	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+intersections	eng	N	N	O	O
+
+between	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+
+flows	eng	N	N	O	O
+.	m	N	N	O	O
+
+Water	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+flow	eng	N	N	O	O
+
+through	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+Si	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+Ei	eng	N	N	O	O
+.	m	N	N	O	O
+
+Ci	eng	N	N	O	O
+
+(	x	N	N	O	O
+0	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+Ci	eng	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+10	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+)	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+rate	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+flow	eng	N	N	O	O
+
+through	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+ditch	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+output	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+rate	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+water	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+emptied	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+pond	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+5	x	N	N	O	O
+
+4	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+40	m	N	N	O	O
+
+1	x	N	N	O	O
+
+4	x	N	N	O	O
+
+20	m	N	N	O	O
+
+2	x	N	N	O	O
+
+4	x	N	N	O	O
+
+20	m	N	N	O	O
+
+2	x	N	N	O	O
+
+3	x	N	N	O	O
+
+30	m	N	N	O	O
+
+3	x	N	N	O	O
+
+4	x	N	N	O	O
+
+10	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+50	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+USACO	eng	N	Y	O	B-OJ
+
+93	m	N	N	O	O
+
+很	zg	N	N	O	O
+单纯	a	N	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+流	n	N	N	O	I-KNOWLEDGE
+问题	n	N	N	O	O
+，	x	N	N	O	O
+比较简单	l	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxflow	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+2100000000	m	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+qf	eng	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+qr	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+visited	eng	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+visited	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+qr	eng	N	N	O	O
+<	x	N	N	O	O
+qf	eng	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+not	eng	N	N	O	O
+
+visited	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qr	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+qr	eng	N	N	O	O
+,	x	N	N	O	O
+
+visited	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+qr	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+(	x	N	N	O	O
+qf	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+t	x	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+min	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+qf	eng	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+qf	eng	N	N	O	O
+=	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+qf	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+argc	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+*	x	N	N	O	O
+
+argv	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+m	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+j	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+graph	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+maxflow	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

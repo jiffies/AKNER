@@ -1,0 +1,4765 @@
+0,"poj 2893 M × N Puzzle (由逆序对求解8数码问题的推广)_answerme11的空间_百度空间
+
+    这是一道8数码问题推广的题目，可通过逆序对个数判定问题是否可解。
+    解决这个问题，我们可以首先把初始矩阵按从上到下，从左到右顺序排列成一个一维数组的数列，然后将问题化成求解逆序对的问题。若初始矩阵的逆序对数与目标矩阵的逆序对数奇偶性一致，则问题可解。（其中两个矩阵都要扣除数字0对逆序对数的影响）。
+    至于为什么这样求解，我也无法完全解释，但是可以提供一些参考知识：
+     假设这个矩阵有3列，且逆序对总数设为N
+    （1）首先，对于可左右移动的数字，它左右移动是不会对逆序对总数产生影响；
+    （2）若数字a0上下移动的话会移到它之前或之后的两个数字的位置，假设是向上移动，且这两个数字为a1，a2：(3个数字肯定是不同数字)
+         若a0 < a1 < a2，则新的逆序对总数为N-2，
+         若a1 < a0 < a2, 则新的逆序对总数为N - 1 + 1 = N，
+         若a1 < a2 < a0, 则新的逆序对总数为N+2，
+       由此可见，数字的移动是不影响矩阵逆序对总数的奇偶性的，推广到列数为奇数的情况也是一样。那么若判定初始矩阵与目标矩阵的逆序对总数是否相同，即可判定问题是否可解，若同则可解，否则不可解。
+      若列数为偶数的话，数字左右移动同理不影响，但是上下移动一次会改变一次逆序对总数的奇偶性，所以对于这种情况，我们可以计算初始矩阵0的位置到目标矩阵0的位置的差值 S ，这样可以判定奇偶性被如何改变了。由于0最终是要到目标位置的，所以无论0在工程中如何移动，逆序对的奇偶性只和S有关。那有些人可能会想，我们怎么只考虑0的上下移动，不考虑其他数字的上下移动，我们可以这样想，无论那个数字要移动都是要和0交换位置，也就是说无论那个数字的移动都是0的移动，所以在这里我们就只分析0的上下移动即可。
+       以下是本题的代码，求解逆序对数用的是归并法的模板，其实用树状数组也可以求解逆序对数。但自己写嫌麻烦，就用了USO同学的归并法的模板了。
+#include<iostream>
+using namespace std;
+#define MAXN 1000005
+int cnt;
+int a[MAXN],c[MAXN];
+//a[0...n-1] 初始化cnt=0; call:MergeSort(0,n);
+void MergeSort(int l,int r)//归并求逆序对数
+{
+    int mid,i,j,tmp;
+    if(r>l+1)
+    {
+        mid=(l+r)/2;
+        MergeSort(l,mid);
+        MergeSort(mid,r);
+        tmp=l;
+        for(i=l,j=mid;i<mid&&j<r;)
+        {
+            if(a[i]>a[j])
+            {
+                c[tmp++]=a[j++];
+                cnt+=mid-i;
+            }
+            else c[tmp++]=a[i++];
+        }
+        while(j<r)   c[tmp++]=a[j++];
+        while(i<mid) c[tmp++]=a[i++];
+        for(i=l;i<r;++i)   a[i]=c[i];
+    }
+}
+int main()
+{
+    int n,m,pl;
+    while(scanf(""%d%d"",&n,&m)!=EOF)
+    {
+        if(n == 0 || m == 0)break;
+        cnt = 0;
+        pl = 0;
+        int x,loc0;
+        for(int i = 0; i < n*m; i++)
+        {
+            scanf(""%d"",&a[pl]);
+            if(a[pl] == 0)
+            {
+                x = pl/m;
+                loc0 = pl;
+            }
+            pl++;
+        }
+        MergeSort(0,pl);
+        cnt -= loc0; //扣除0的逆序数
+        int step = 0;
+        if(m%2 == 1)//若列数为奇数，则数字的上下左右移动都不影响最终逆序对的总数
+            step = 0;
+        else
+            step = n - 1 - x;//若列数为偶数，左右移动不影响，但上下移动一次，会改变一次逆序对总数的奇偶性
+        if(step%2 == cnt % 2)//初始，结束状态的逆序对总数奇偶性一致，则问题可解
+            printf(""YES\n"");
+        else
+            printf(""NO\n"");
+    }
+    return 0;
+}
+"
+12,"字典树 ZOJ1109  HDU1251 PKU1204 HDU1075 - 孟起 - 博客园
+
+又称单词查找树，Trie树，是一种树形结构，是一种哈希树的变种。典型应用是用于统计，排序和保存大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计。它的优点是：利用字符串的公共前缀来节约存储空间，最大限度地减少无谓的字符串比较，查询效率比哈希表高。 
+ 
+假设有abc，abcd，abd, b, bcd，efg，hii这7个单词，可构建字典树如下：
+查找一个字符串时，我们只需从根结点按字符串中字符出现顺序依次往下走。如果到最后字符串结束时，对应的结点标记为红色，则该字符串存在;否则不存在。
+插入时也只需从根结点往下遍历，碰到已存在的字符结点就往下遍历，否则，建立新结点;最后标记最后一个字符的结点为红色即可。
+性质 
+　　它有3个基本性质： 
+      根节点不包含字符，除根节点外每一个节点都只包含一个字符。 
+      从根节点到某一节点，路径上经过的字符连接起来，为该节点对应的字符串。
+      每个节点的所有子节点包含的字符都不相同。 
+基本操作 
+      其基本操作有:查找 插入和删除,当然删除操作比较少见.我在这里只是实现了对整个树的删除操作,至于单个word的删除操作也很简单. 
+搜索字典项目的方法为： 
+　　(1) 从根结点开始一次搜索； 
+　　(2) 取得要查找关键词的第一个字母，并根据该字母选择对应的子树并转到该子树继续进行检索； 
+　　(3) 在相应的子树上，取得要查找关键词的第二个字母,并进一步选择对应的子树进行检索。 
+　　(4) 迭代过程…… 
+　　(5) 在某个结点处，关键词的所有字母已被取出，则读取附在该结点上的信息，即完成查找。 
+　　其他操作类似处理
+以上内容来自百度百科：。对应练习：ZOJ1109  HDU1251
+ZOJ1109 Language of FatMouse
+map方法 1320MS 9556K
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    iostream
+    >
+    
+#include
+    <
+    string
+    >
+    
+#include
+    <
+    map
+    >
+    
+
+    #pragma
+     warning (disable:4786)
+    
+
+    using
+     
+    namespace
+     std;
+
+    int
+     main()
+{
+ map
+    <
+    string
+    ,
+    string
+    >
+     m;
+ 
+    int
+     len,i;
+ 
+    char
+     str[
+    40
+    ],a[
+    20
+    ],b[
+    20
+    ];
+ 
+    while
+    (
+    1
+    )
+ {
+ gets(str);
+ len
+    =
+    strlen(str);
+ 
+    if
+    (len
+    ==
+    0
+    )
+ 
+    break
+    ;
+ 
+    for
+    (i
+    =
+    0
+    ;str[i]
+    !=
+    '
+     
+    '
+    ;i
+    ++
+    );
+ strncpy(a,str,i);
+ a[i]
+    =
+    0
+    ;
+ strncpy(b,str
+    +
+    i
+    +
+    1
+    ,len
+    -
+    i
+    -
+    1
+    );
+ b[len
+    -
+    i
+    -
+    1
+    ]
+    =
+    0
+    ;
+ m[b]
+    =
+    a;
+ }
+ map
+    <
+    string
+    ,
+    string
+    >
+    ::iterator it;
+ 
+    while
+    (scanf(
+    ""
+    %s
+    ""
+    ,str)
+    !=
+    EOF)
+ {
+ it
+    =
+    m.find(str);
+ 
+    if
+    (it
+    !=
+    m.end())
+ cout
+    <<
+    (
+    *
+    it).second
+    <<
+    endl;
+ 
+    else
+    
+ puts(
+    ""
+    eh
+    ""
+    );
+ }
+ 
+    return
+     
+    0
+    ; 
+}
+字典树：140MS 14960K
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    stdio.h
+    >
+    
+#include
+    <
+    stdlib.h
+    >
+    
+#include
+    <
+    string
+    .h
+    >
+    
+
+    #define
+     N 100006
+    
+typedef 
+    struct
+     node{
+ 
+    char
+     s[
+    12
+    ];
+ 
+    int
+     h;
+ 
+    struct
+     node 
+    *
+    next[
+    26
+    ];
+}
+    *
+    Tree,T;
+
+    void
+     init(Tree 
+    &
+    root)
+{
+ root
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ root
+    ->
+    h
+    =
+    0
+    ;
+ 
+    for
+    (
+    int
+     i
+    =
+    0
+    ;i
+    <
+    26
+    ;i
+    ++
+    )
+ root
+    ->
+    next[i]
+    =
+    NULL;
+}
+
+    void
+     insert(
+    char
+     path[],
+    char
+     s[],Tree root)
+{
+ 
+    int
+     len,i,j;
+ len
+    =
+    strlen(path);
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    len;i
+    ++
+    )
+ {
+ 
+    if
+    (root
+    ->
+    next[path[i]
+    -
+    '
+    a
+    '
+    ]
+    ==
+    NULL)
+ {
+ Tree t
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ 
+    for
+    (j
+    =
+    0
+    ;j
+    <
+    26
+    ;j
+    ++
+    )
+ {
+ t
+    ->
+    next[j]
+    =
+    NULL;
+ t
+    ->
+    h
+    =
+    0
+    ;
+ }
+ root
+    ->
+    next[path[i]
+    -
+    '
+    a
+    '
+    ]
+    =
+    t;
+ }
+ root
+    =
+    root
+    ->
+    next[path[i]
+    -
+    '
+    a
+    '
+    ];
+ }
+ root
+    ->
+    h
+    =
+    1
+    ;
+ strcpy(root
+    ->
+    s,s);
+}
+
+    void
+     find(
+    char
+     s[],Tree root)
+{
+ 
+    int
+     len,i;
+ len
+    =
+    strlen(s);
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    len;i
+    ++
+    )
+ {
+ 
+    if
+    (root
+    ->
+    next[s[i]
+    -
+    '
+    a
+    '
+    ]
+    !=
+    NULL)
+ root
+    =
+    root
+    ->
+    next[s[i]
+    -
+    '
+    a
+    '
+    ];
+ 
+    else
+    
+ 
+    break
+    ;
+ }
+ 
+    if
+    (i
+    ==
+    len 
+    &&
+     root
+    ->
+    h
+    ==
+    1
+    )
+ puts(root
+    ->
+    s);
+ 
+    else
+    
+ puts(
+    ""
+    eh
+    ""
+    );
+}
+
+    int
+     main()
+{
+ Tree root;
+ 
+    int
+     len,i;
+ 
+    char
+     str[
+    25
+    ],a[
+    12
+    ],b[
+    12
+    ];
+ init(root);
+ 
+    while
+    (
+    1
+    )
+ {
+ gets(str);
+ len
+    =
+    strlen(str);
+ 
+    if
+    (len
+    ==
+    0
+    )
+ 
+    break
+    ;
+ 
+    for
+    (i
+    =
+    0
+    ;str[i]
+    !=
+    '
+     
+    '
+    ;i
+    ++
+    );
+ strncpy(a,str,i);
+ a[i]
+    =
+    0
+    ;
+ strncpy(b,str
+    +
+    i
+    +
+    1
+    ,len
+    -
+    i
+    -
+    1
+    );
+ b[len
+    -
+    i
+    -
+    1
+    ]
+    =
+    0
+    ;
+ insert(b,a,root);
+ }
+ 
+    while
+    (scanf(
+    ""
+    %s
+    ""
+    ,str)
+    !=
+    EOF)
+ find(str,root);
+ 
+    return
+     
+    0
+    ; 
+}
+HDU1251 统计难题  140MS 43736K
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    stdio.h
+    >
+    
+#include
+    <
+    stdlib.h
+    >
+    
+#include
+    <
+    string
+    .h
+    >
+    
+typedef 
+    struct
+     node{
+ 
+    int
+     cnt;
+ 
+    struct
+     node 
+    *
+    next[
+    26
+    ];
+}
+    *
+    Tree,T;
+Tree root;
+
+    void
+     insert(
+    char
+     
+    *
+    str) 
+    //
+    建字典树
+    
+
+    {
+ 
+    int
+     i;
+ Tree p,newnode;
+ p
+    =
+    root;
+ 
+    for
+    (; 
+    *
+    str;str
+    ++
+    )
+ {
+ 
+    if
+    (p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ]
+    !=
+    NULL)
+ {
+ p
+    =
+    p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ];
+ p
+    ->
+    cnt
+    ++
+    ;
+ }
+ 
+    else
+    
+ {
+ newnode
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    26
+    ;i
+    ++
+    )
+ newnode
+    ->
+    next[i]
+    =
+    NULL;
+ p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ]
+    =
+    newnode;
+ p
+    =
+    p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ];
+ p
+    ->
+    cnt
+    =
+    1
+    ;
+ }
+ }
+}
+
+    int
+     find(
+    char
+     
+    *
+    str) 
+    //
+    查找
+    
+
+    {
+ Tree p;
+ p
+    =
+    root;
+ 
+    for
+    (;
+    *
+    str;str
+    ++
+    )
+ {
+ 
+    if
+    (p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ]
+    !=
+    NULL)
+ p
+    =
+    p
+    ->
+    next[
+    *
+    str
+    -
+    '
+    a
+    '
+    ];
+ 
+    else
+    
+ 
+    return
+     
+    0
+    ;
+ }
+ 
+    return
+     p
+    ->
+    cnt;
+}
+
+    int
+     main()
+{
+ 
+    int
+     i;
+ 
+    char
+     str[
+    20
+    ];
+ root
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    26
+    ;i
+    ++
+    )
+ root
+    ->
+    next[i]
+    =
+    NULL;
+ root
+    ->
+    cnt
+    =
+    0
+    ;
+ 
+    while
+    (gets(str))
+ {
+ 
+    if
+    (strcmp(str,
+    """"
+    )
+    ==
+    0
+    )
+ 
+    break
+    ;
+ insert(str);
+ }
+ 
+    while
+    (gets(str))
+ printf(
+    ""
+    %d\n
+    ""
+    ,find(str));
+ 
+    return
+     
+    0
+    ;
+}
+    
+  
+ 
+
+PKU1204 Word Puzzles
+字典树：1485MS 14320K（对给定的单词建树，对表进行暴力search）
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    stdio.h
+    >
+    
+#include
+    <
+    string
+    .h
+    >
+    
+#include
+    <
+    stdlib.h
+    >
+    
+
+    #define
+     N 1002
+    
+typedef 
+    struct
+     tree{
+ 
+    int
+     count;
+ 
+    struct
+     tree 
+    *
+    next[
+    26
+    ];
+}
+    *
+    Tree,T;
+Tree root;
+
+    int
+     l,c,w;
+
+    char
+     map[N][N];
+
+    int
+     result[N][
+    3
+    ];
+
+    int
+     dir[
+    8
+    ][
+    2
+    ]
+    =
+    {{
+    -
+    1
+    ,
+    0
+    },{
+    -
+    1
+    ,
+    1
+    },{
+    0
+    ,
+    1
+    },{
+    1
+    ,
+    1
+    },{
+    1
+    ,
+    0
+    },{
+    1
+    ,
+    -
+    1
+    },{
+    0
+    ,
+    -
+    1
+    },{
+    -
+    1
+    ,
+    -
+    1
+    }};
+
+    void
+     insert(
+    char
+     
+    *
+    s,
+    int
+     con)
+{
+ Tree p
+    =
+    root,q;
+ 
+    for
+    (
+    int
+     i
+    =
+    0
+    ;s[i];i
+    ++
+    )
+ {
+ 
+    if
+    (p
+    ->
+    next[s[i]
+    -
+    '
+    A
+    '
+    ]
+    ==
+    NULL)
+ {
+ q
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ memset(q
+    ->
+    next,
+    0
+    ,
+    sizeof
+    (q
+    ->
+    next));
+ q
+    ->
+    count
+    =-
+    1
+    ;
+ p
+    ->
+    next[s[i]
+    -
+    '
+    A
+    '
+    ]
+    =
+    q;
+ }
+ p
+    =
+    p
+    ->
+    next[s[i]
+    -
+    '
+    A
+    '
+    ];
+ }
+ p
+    ->
+    count
+    =
+    con;
+}
+
+    void
+     search(
+    int
+     x,
+    int
+     y,
+    int
+     k)
+{
+ 
+    int
+     x1
+    =
+    x,y1
+    =
+    y;
+ Tree p
+    =
+    root;
+ 
+    while
+    (x1
+    >=
+    0
+     
+    &&
+     x1
+    <
+    l 
+    &&
+     y1
+    >=
+    0
+     
+    &&
+     y1
+    <
+    c)
+ {
+ 
+    int
+     id
+    =
+    map[x1][y1]
+    -
+    '
+    A
+    '
+    ;
+ 
+    if
+    (p
+    ->
+    next[id]
+    ==
+    NULL)
+ 
+    break
+    ;
+ 
+    else
+    
+ p
+    =
+    p
+    ->
+    next[id];
+ 
+    if
+    (p
+    ->
+    count
+    !=-
+    1
+    )
+ {
+ result[p
+    ->
+    count][
+    0
+    ]
+    =
+    x;
+ result[p
+    ->
+    count][
+    1
+    ]
+    =
+    y;
+ result[p
+    ->
+    count][
+    2
+    ]
+    =
+    k
+    +
+    '
+    A
+    '
+    ;
+ }
+ x1
+    +=
+    dir[k][
+    0
+    ]; y1
+    +=
+    dir[k][
+    1
+    ];
+ }
+}
+
+    void
+     slove()
+{
+ 
+    int
+     i,j,k;
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    l;i
+    ++
+    )
+ 
+    for
+    (j
+    =
+    0
+    ;j
+    <
+    c;j
+    ++
+    )
+ 
+    for
+    (k
+    =
+    0
+    ;k
+    <
+    8
+    ;k
+    ++
+    )
+ search(i,j,k);
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    w;i
+    ++
+    )
+ printf(
+    ""
+    %d %d %c\n
+    ""
+    ,result[i][
+    0
+    ],result[i][
+    1
+    ],result[i][
+    2
+    ]);
+}
+
+    int
+     main()
+{
+ 
+    int
+     i;
+ 
+    char
+     word[N];
+ scanf(
+    ""
+    %d%d%d
+    ""
+    ,
+    &
+    l,
+    &
+    c,
+    &
+    w);
+ getchar();
+ root
+    =
+    (Tree)malloc(
+    sizeof
+    (T));
+ memset(root
+    ->
+    next,
+    0
+    ,
+    sizeof
+    (root
+    ->
+    next));
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    l;i
+    ++
+    )
+ gets(map[i]);
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    w;i
+    ++
+    )
+ {
+ gets(word);
+ insert(word,i);
+ }
+ slove();
+ 
+    return
+     
+    0
+    ;
+}
+    
+  
+ 
+
+据说这题还可以用AC自动机实现，不了解AC自动机，有待提高……
+HDU1075 同ZOJ1109同一道理，字典树基本应用。
+map方法 3375MS 42368K 752B
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    iostream
+    >
+    
+#include
+    <
+    string
+    >
+    
+#include
+    <
+    map
+    >
+    
+
+    using
+     
+    namespace
+     std;
+
+    int
+     main()
+{
+ map
+    <
+    string
+    ,
+    string
+    >
+     M;
+ 
+    string
+     a,b;
+ cin
+    >>
+    a;
+ 
+    while
+    (cin
+    >>
+    a,a
+    !=
+    ""
+    END
+    ""
+    )
+ {
+ cin
+    >>
+    b;
+ M[b]
+    =
+    a;
+ }
+ cin
+    >>
+    a;
+ getchar();
+ 
+    char
+     tmp[
+    3005
+    ];
+ 
+    while
+    (gets(tmp),strcmp(tmp,
+    ""
+    END
+    ""
+    ))
+ {
+ 
+    int
+     len
+    =
+    strlen(tmp);
+ tmp[len
+    ++
+    ]
+    =
+    '
+     
+    '
+    ;
+ tmp[len]
+    =
+    0
+    ;
+ b
+    =
+    """"
+    ;
+ 
+    for
+    (
+    int
+     i
+    =
+    0
+    ;i
+    <
+    len;i
+    ++
+    )
+ {
+ 
+    if
+    (
+    !
+    islower(tmp[i]))
+ {
+ 
+    if
+    (M[b]
+    !=
+    """"
+    )
+ cout
+    <<
+    M[b];
+ 
+    else
+    
+ cout
+    <<
+    b;
+ b
+    =
+    """"
+    ;
+ 
+    if
+    (i
+    !=
+    len
+    -
+    1
+    )
+ cout
+    <<
+    tmp[i];
+ }
+ 
+    else
+    
+ b
+    +=
+    tmp[i];
+ }
+ cout
+    <<
+    endl;
+ }
+ 
+    return
+     
+    0
+    ;
+}
+字典树：437MS 59796K 1274B（可以用做模板了吧）
+ 
+
+ 
+ 
+ 代码 
+  
+  
+   
+    
+    #include
+    <
+    stdio.h
+    >
+    
+#include
+    <
+    string
+    .h
+    >
+    
+#include
+    <
+    ctype.h
+    >
+    
+#include
+    <
+    stdlib.h
+    >
+    
+typedef 
+    struct
+     node{
+ node 
+    *
+    next[
+    26
+    ];
+ 
+    int
+     h;
+ 
+    char
+     word[
+    12
+    ];
+ node()
+ {
+ h
+    =
+    0
+    ;
+ memset(next,
+    0
+    ,
+    sizeof
+    (next));
+ }
+}
+    *
+    Tree,T;
+Tree root
+    =
+    new
+     node();
+
+    void
+     insert(
+    char
+     
+    *
+    eng,
+    char
+     
+    *
+    mar)
+{
+ Tree p
+    =
+    root;
+ 
+    while
+    (
+    *
+    mar)
+ {
+ 
+    int
+     id
+    =*
+    mar
+    -
+    '
+    a
+    '
+    ;
+ 
+    if
+    (p
+    ->
+    next[id]
+    ==
+    NULL)
+ p
+    ->
+    next[id]
+    =
+    new
+     node();
+ p
+    =
+    p
+    ->
+    next[id];
+ mar
+    ++
+    ;
+ }
+ p
+    ->
+    h
+    =
+    1
+    ;
+ strcpy(p
+    ->
+    word,eng);
+}
+
+    char
+     
+    *
+    find(
+    char
+     
+    *
+    str)
+{
+ Tree p
+    =
+    root;
+ 
+    while
+    (
+    *
+    str)
+ {
+ 
+    int
+     id
+    =*
+    str
+    -
+    '
+    a
+    '
+    ;
+ 
+    if
+    (p
+    ->
+    next[id]
+    ==
+    NULL)
+ 
+    break
+    ;
+ p
+    =
+    p
+    ->
+    next[id];
+ str
+    ++
+    ;
+ }
+ 
+    if
+    (
+    *
+    str
+    ==
+    NULL 
+    &&
+     p
+    ->
+    h
+    ==
+    1
+    )
+ 
+    return
+     p
+    ->
+    word;
+ 
+    else
+    
+ 
+    return
+     NULL;
+}
+
+    int
+     main()
+{
+ 
+    int
+     i,k,len;
+ 
+    char
+     a[
+    12
+    ],b[
+    12
+    ],tmp[
+    3005
+    ],tp[
+    3005
+    ];
+ 
+    char
+     
+    *
+    p;
+ scanf(
+    ""
+    %s
+    ""
+    ,a);
+ 
+    while
+    (scanf(
+    ""
+    %s
+    ""
+    ,a) 
+    &&
+     strcmp(a,
+    ""
+    END
+    ""
+    )
+    !=
+    0
+    )
+ {
+ scanf(
+    ""
+    %s
+    ""
+    ,b);
+ insert(a,b);
+ }
+ scanf(
+    ""
+    %s
+    ""
+    ,a);
+ getchar();
+ k
+    =
+    0
+    ;
+ 
+    while
+    (gets(tmp),strcmp(tmp,
+    ""
+    END
+    ""
+    ))
+ {
+ len
+    =
+    strlen(tmp);
+ tmp[len
+    ++
+    ]
+    =
+    '
+     
+    '
+    ;
+ tmp[len]
+    =
+    0
+    ;
+ 
+    for
+    (i
+    =
+    0
+    ;i
+    <
+    len;i
+    ++
+    )
+ {
+ 
+    if
+    (
+    !
+    islower(tmp[i]))
+ {
+ tp[k]
+    =
+    0
+    ;
+ k
+    =
+    0
+    ;
+ p
+    =
+    find(tp);
+ 
+    if
+    (p)
+ printf(
+    ""
+    %s
+    ""
+    ,p);
+ 
+    else
+    
+ printf(
+    ""
+    %s
+    ""
+    ,tp);
+ 
+    if
+    (i
+    !=
+    len
+    -
+    1
+    )
+ putchar(tmp[i]);
+ }
+ 
+    else
+    
+ tp[k
+    ++
+    ]
+    =
+    tmp[i];
+ }
+ puts(
+    """"
+    );
+ }
+ 
+    return
+     
+    0
+    ;
+}
+    
+  
+ 
+
+"
+14,"POJ2886  Who Gets the Most Candies? 线段树+约瑟夫+反素数 - Albafica_iCpc  - 博客频道 - CSDN.NET
+
+
+ 线段树+约瑟夫+反素数。
+ 
+
+ 用线段数跟新队伍中的人数。每次查询将要出队的人在当前队伍中的位置。在通过将要移动的位置，找出下一个位置。
+ 
+
+ 通过这一题知道了反素数。。。。ORZ   膜拜众神犇
+ 
+
+ Who Gets the Most Candies?
+ 
+ 
+  
+   
+    
+     Time Limit: 5000MS
+  
+     Memory Limit: 131072K
+  
+    
+    
+     Total Submissions: 6075
+  
+     Accepted: 1752
+  
+    
+    
+     Case Time Limit: 2000MS
+  
+    
+   
+  
+ 
+Description
+N children are sitting in a circle to play a game.
+The children are numbered from 1 to N in clockwise order. Each of them has a card with a non-zero integer on it in his/her hand. The game starts from theK-th child, who tells all the others the integer on his card and jumps out of the circle. The integer on his card tells the next child to jump out. LetA denote the integer. IfA is positive, the next child will be theA-th child to the left. IfA is negative, the next child will be the (?A)-th child to the right.
+The game lasts until all children have jumped out of the circle. During the game, thep-th child jumping out will getF(p) candies where F(p) is the number of positive integers that perfectly dividep. Who gets the most candies?
+ 
+ 
+Input
+ 
+
+ There are several test cases in the input. Each test case starts with two integers
+ N (0 <
+ N 
+ ≤ 500,000) and K (1 ≤ K ≤ N) on the first line. The nextN lines contains the names of the children (consisting of at most 10 letters) and the integers (non-zero with magnitudes within 108) on their cards in increasing order of the children’s numbers, a name and an integer separated by a single space in a line with no leading or trailing spaces.
+ 
+Output
+Output one line for each test case containing the name of the luckiest child and the number of candies he/she gets. If ties occur, always choose the child who jumps out of the circle first.
+ 
+ 
+Sample Input
+ 
+4 2
+Tom 2
+Jack 4
+Mary -1
+Sam 1 
+Sample Output
+ 
+Sam 3 
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<string>
+#include<iterator>
+using namespace std;
+#define lson l,m,root<<1
+#define rson m+1,r,root<<1|1
+#define MAXN 600020
+int num[MAXN<<2],step[MAXN];
+int n,s;
+const int a[37]={1,2,4,6,12,24,36,48,60,120,180,240,360,720,840,1260,1680,2520,5040,7560,10080,15120,20160,25200,27720,45360,50400,55440,83160,110880,166320,221760,277200,332640,498960,500001};
+const int b[37]={1,2,3,4,6,8,9,10,12,16,18,20,24,30,32,36,40,48,60,64,72,80,84,90,96,100,108,120,128,144,160,168,180,192,200,1314521};
+char m2[MAXN][20];
+void push_up(int root)
+{
+	num[root]=num[root<<1]+num[root<<1|1];
+}
+void build(int l,int r,int root)
+{
+	if(l==r)
+	{		
+		scanf(""%s%d"",m2[l],&step[l]);
+		num[root]=1;
+		return;
+	}
+	int m=(l+r)/2;
+	build(lson);
+	build(rson);
+	push_up(root);
+}
+int query(int p,int l,int r,int root)
+{
+	if(l==r)
+		return l;
+	int m=(l+r)/2;
+	if(p<=num[root<<1])
+		return query(p,lson);
+	else
+	{
+		p=p-num[root<<1];
+		return query(p,rson);
+	}
+}
+void update(int p,int l,int r,int root)
+{
+	if(l==r)
+	{
+		num[root]=0;
+		return ;
+	}
+	int m=(l+r)>>1;
+	if(p<=m)
+		update(p,lson);
+	else
+		update(p,rson);
+	push_up(root);
+}
+int search(int n)
+{
+	int l=0,h=37;
+	int m;
+	while(l<=h)
+	{
+		m=(l+h)>>1;
+		if(a[m]>n)
+			h=m-1;
+		else
+			l=m+1;
+		if(a[m]==n)
+			return m;
+	}
+	return h;	
+}
+void solve(int tag,int num)
+{
+	int pos,temp,x;
+	update(s-1,0,n-1,1);    //位置为s 的人出队 ，更新线段树 
+	temp=s-1;                 
+	x=s;
+	for(int i=1;i<=n;i++)
+	{
+		if(i==num)            //判断当前出队数是否为目标的反素数 
+		{
+			printf(""%s %d\n"",m2[temp],b[tag]);  
+			return ;
+		}
+		pos=step[temp];
+		if(pos<0)            //利用取模运算，找出下一个出队的人是当前队伍中第几个 
+			x=(x+pos-1)%(n-i);
+		else
+			x=(x+pos-2)%(n-i);
+		while(x<0)           //注意负数 
+			x+=n-i;
+		x+=1;
+		temp=query(x,0,n-1,1); //查找位置 
+		update(temp,0,n-1,1);  //出队，更新 
+	}
+}
+int main()
+{
+	while(scanf(""%d%d"",&n,&s)!=EOF)
+	{
+		build(0,n-1,1);
+		int tag=search(n); //用二分找出目标的反素数 
+		solve(tag,a[tag]);
+	}
+	return 0;
+}
+"
+15,"pku 1170[状态Dp]  记忆化搜索 - MickJack的专栏 - 博客频道 - CSDN.NET
+
+ 题目连接：http://acm.pku.edu.cn/JudgeOnline/problem?id=1170
+ 题目大意：一个篮子里面有pNums中商品，每种商品在1~999中有一个编号id，每一种商品有Num个，每个的价格为price；现在推出一系列的优惠策略来吸引顾客。把一种商品的n个或几种商品的n个组合在一起作为一种策略，比如case：
+2   2中商品 最多5种
+7 3 2  第一种商品
+8 2 5  第2种商品
+2        2中优惠策略
+1 7 3 5           第1中优惠策略
+2 7 1 8 2 10   第2种优惠策略
+因为每件商品最多5件，最多5件商品，那么买这5种商品的状态最多有6^5,然后递归到0状态，求解出最优解。对每一件商品的数目的多少，最为一个状态；
+那么将其对应到相应十进制数。。。然后对状态进行记忆化搜索。。
+#include<iostream>
+#include<cmath>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+const int MAX_S=10000;
+const int MAX_P=6;
+const int MAX_C=100;
+const int inf=10000000;
+struct product
+{
+     int code,num,price;  
+}products[MAX_P];
+struct combline
+{
+     int Nums[MAX_P];
+     int Sumprice;
+     combline()
+     {
+              memset(Nums,0,sizeof(Nums));      
+     } 
+}comblines[MAX_C];
+int pNums,cNums,state,dp[MAX_S]; 
+int getid(int code)
+{
+       for(int i=0;i<pNums;i++)
+               if(products[i].code==code) return i; 
+       return -1;        
+} 
+void To_six(int CurNum[],int Curstate)
+{
+       for(int i=0;i<pNums;i++)
+       {
+              CurNum[i]=Curstate%6;
+              Curstate/=6;
+       } 
+}
+int   To_ten(int CurNum[])
+{
+      int sum=0; 
+      for(int i=0;i<pNums;i++)   
+              sum+=CurNum[i]*(int)pow((double)6,i);
+      return sum;         
+}
+int check(int CurNum[],int ReNum[],int t)
+{
+        for(int i=0;i<pNums;i++)
+                if(CurNum[i]>=comblines[t].Nums[i])
+                         ReNum[i]=CurNum[i]-comblines[t].Nums[i]; 
+                else return 0;
+        return 1;                         
+}
+int dpslove(int Curstate)
+{
+    if(dp[Curstate]!=inf) return dp[Curstate];
+    int CurNum[MAX_P]={0};
+    To_six(CurNum,Curstate);
+    int ReNum[MAX_P]={0},Min=inf;                     
+    for(int i=0;i<cNums;i++)
+    {
+            if(check(CurNum,ReNum,i))
+            {
+                  int ans=comblines[i].Sumprice+dpslove(To_ten(ReNum));             
+                  if(ans<Min) Min=ans;
+            }                        
+    }                               
+    int res=0;
+    if(Min==inf) 
+    {
+            for(int i=0;i<pNums;i++)
+                res+=CurNum[i]*products[i].price; 
+    }        
+    else   res=Min;
+    dp[Curstate]=res;
+    return res;
+} 
+int main()
+{
+       scanf(""%d"",&pNums);
+       state=0; 
+       for(int i=0;i<pNums;i++)
+       { 
+                scanf(""%d%d%d"",&products[i].code,&products[i].num,&products[i].price);         
+                state+=(int)pow(double(6),i)*products[i].num;
+       } 
+       scanf(""%d"",&cNums);
+       int pair,id,n; 
+       for(int i=0;i<cNums;i++)
+       {
+                scanf(""%d"",&pair);       
+                for(int j=0;j<pair;j++)
+                {
+                        scanf(""%d%d"",&id,&n);  
+                        int tempid=getid(id);
+                        comblines[i].Nums[tempid]=n;  
+                }
+                scanf(""%d"",&comblines[i].Sumprice);
+       }
+       for(int i=0;i<=state+1;i++) dp[i]=inf;
+       dp[0]=0;
+       dpslove(state);
+       printf(""%d/n"",dp[state]);     
+       return 0;
+}
+"
+16,"又一线段树 PKU 2464_下雪的天空_新浪博客
+
+题目的意思是Stan和Ollie玩一个游戏，在一个平面上有很多点，Stan选择一个点，通过这个点作y轴，在这条直线通过的点中选择一个点（有可能会多个，因为x会一样）, 然后Ollie通过这个点作一个x轴,于是Stan的分数就是第一象限然和第三象限的点的个数，Ollie的分数是第二和第四象限的点的个数。由于2个人都想分数最高，Stan会让所取y轴通过的点的分数的最小值，在这些所有的最小值中取最大值，同样Ollie会在Stan取到的y轴中选自己分数最大的点，现在要求输出Stan和Ollie能取到的最大值。似乎，这样分析下来，这个题不难了，只要对x排序,然后遍历一遍，每次算出它所得的分数，注意上述中说的在同一直线的情况，但是再一看数据是200000，5S,普通的查询肯定是不可以的，肯定会卡时间，于是想某种结构，可以快速查询以及维护的，最终应该可以是查找树，不过我用了线段树来实现，还有考虑有负数，而且没有给数的范围，于是考虑给y离散化。
+代码：
+ 
+#include <iostream>
+ 
+#include <vector>
+ 
+#include <algorithm>
+ 
+#define inf 1<<30
+ 
+#define max(x,y)x>y?x:y
+ 
+#define min(x,y)x<y?x:y
+ 
+#define maxn 200020
+ 
+#define maxt 1000000
+ 
+#define l(a) a<<1
+ 
+#define r(a) (a<<1)+1
+ 
+using namespace std;
+ 
+int tmp,tt,t,t1,t2,i,j,k,ans,pos,ans1[maxn],ans2[maxn];
+ 
+vector<int> mm;
+ 
+struct point
+ 
+{
+ 
+     bool operator<(const point& t)const
+ 
+     {
+ 
+         return x<t.x;
+ 
+     }
+ 
+     int x,y;
+ 
+};
+ 
+point p[maxn];
+ 
+struct py
+ 
+{
+ 
+     bool operator<(const py& t)const
+ 
+     {
+ 
+         return y<t.y;
+ 
+     }
+ 
+     int id,y;
+ 
+};
+ 
+py y[maxn];
+ 
+struct segment_tree
+ 
+{
+ 
+     int l,r,count;//count用来记录值
+ 
+};
+ 
+segment_tree tree[maxt];
+ 
+void build(int node,int l,int r)
+ 
+{
+ 
+     tree[node].l=l;
+ 
+     tree[node].r=r;
+ 
+     tree[node].count=0;
+ 
+     if(l==r)return;
+ 
+     int mid=(l+r)>>1;
+ 
+     build(l(node),l,mid);
+ 
+     build(r(node),mid+1,r);
+ 
+}
+ 
+void update(int node,int l,int r)
+ 
+{
+ 
+     //if(node>=maxt)return;
+ 
+     if(tree[node].l==l&&tree[node].r==r)
+ 
+     {
+ 
+         tree[node].count++;
+ 
+         return;
+ 
+     }
+ 
+     int mid=(tree[node].l+tree[node].r)>>1;
+ 
+     if(r<=mid)update(l(node),l,r);
+ 
+     else if(l>mid)update(r(node),l,r);
+ 
+     else
+ 
+     {
+ 
+         update(l(node),l,mid);
+ 
+         update(r(node),mid+1,r);
+ 
+     }
+ 
+     tree[node].count++;//更新出比查询值小的数的个数
+ 
+     return;
+ 
+}
+ 
+int query(int node,int l,int r)
+ 
+{
+ 
+     //if(node>=maxt)return -1;
+ 
+     segment_tree *tt=&tree[node];
+ 
+     if(tt->l==l&&tt->r==r)return tree[node].count;
+ 
+     int mid=(tt->l+tt->r)>>1;
+ 
+     if(r<=mid)return query(l(node),l,r);
+ 
+     else if(l>mid)return query(r(node),l,r);
+ 
+     else return query(l(node),l,mid)+query(r(node),mid+1,r);
+ 
+     return 0;
+ 
+}
+ 
+int main()
+ 
+{
+ 
+     while(scanf(""%d"",&t)!=EOF&&t)
+ 
+     {
+ 
+         for(i=0;i<t;i++)
+ 
+         {
+ 
+              scanf(""%d%d"",&p[i].x,&y[i].y);
+ 
+              y[i].id=i;
+ 
+         }
+ 
+         sort(y,y+t);//对y排序
+ 
+         p[y[0].id].y=1;
+ 
+         for(i=j=1;i<t;i++)
+ 
+         {
+ 
+              if(y[i].y!=y[i-1].y)++j;
+ 
+              p[y[i].id].y=j;
+ 
+         }//对y离散化
+ 
+         ++j;
+ 
+         sort(p,p+t);
+ 
+         p[t].x=-inf;
+ 
+         build(1,0,j);//先正方向查一次，记录了第二三象限的值
+ 
+         update(1,p[0].y,p[0].y);
+ 
+         ans1[0]=0;
+ 
+         ans2[0]=0;
+ 
+         for(i=1;i<t;i++)
+ 
+         {
+ 
+              k=i-1;
+ 
+              t1=t2=0;
+ 
+              while(k>=0&&p[k].x==p[i].x)
+ 
+              {
+ 
+                   if(p[i].y>p[k].y)++t1;
+ 
+                   else if(p[i].y<p[k].y)++t2;
+ 
+                   k--;
+ 
+              }
+ 
+              update(1,p[i].y,p[i].y);
+ 
+              ans1[i]=query(1,0,p[i].y-1)-t1;
+ 
+              ans2[i]=query(1,p[i].y+1,j)-t2;
+ 
+         }
+ 
+         build(1,0,j);//反方向一次，记录一四象限的值
+ 
+         t1=t2=0;
+ 
+         update(1,p[t-1].y,p[t-1].y);
+ 
+         for(i=t-2;i>=0;i--)
+ 
+         {
+ 
+              k=i+1;
+ 
+              t1=t2=0;
+ 
+              while(k<t&&p[k].x==p[i].x)
+ 
+              {
+ 
+                   if(p[i].y>p[k].y)++t1;
+ 
+                   else if(p[i].y<p[k].y)++t2;
+ 
+                   k++;
+ 
+              }
+ 
+              update(1,p[i].y,p[i].y);
+ 
+              ans1[i]+=query(1,p[i].y+1,j)-t2;
+ 
+              ans2[i]+=query(1,0,p[i].y-1)-t1;
+ 
+         }
+ 
+         ans=-inf;
+ 
+         for(i=0;i<t;i++)
+ 
+         {
+ 
+              tt=ans1[i];
+ 
+              j=i+1;
+ 
+              while(p[j].x==p[i].x)
+ 
+              {
+ 
+                   if(tt>ans1[j])tt=ans1[j];
+ 
+                   ++j;
+ 
+              }
+ 
+              if(tt==ans)
+ 
+              {
+ 
+                   tmp=-1;
+ 
+                   for(k=i;k<j;k++)tmp=max(tmp,ans2[k]);
+ 
+                   mm.push_back(tmp);
+ 
+              }
+ 
+              else if(tt>ans)
+ 
+              {
+ 
+                   ans=tt;
+ 
+                   mm.clear();
+ 
+                   tmp=-1;
+ 
+                   for(k=i;k<j;k++)tmp=max(tmp,ans2[k]);
+ 
+                   mm.push_back(tmp);
+ 
+              }
+ 
+              i=j-1;
+ 
+         }
+ 
+         printf(""Stan: %d; Ollie:"",ans);
+ 
+         sort(mm.begin(),mm.end());
+ 
+         printf("" %d"",mm[0]);
+ 
+         tt=mm[0];
+ 
+         for(i=1;i<mm.size();i++)
+ 
+              if(mm[i]!=tt)
+ 
+              {
+ 
+                   printf("" %d"",mm[i]);
+ 
+                   tt=mm[i];
+ 
+              }
+ 
+              printf("";\n"");
+ 
+              mm.clear();
+ 
+     }
+}                         
+"
+26,"【树状数组】 poj3321 Apple Tree - Ted's 游乐园 - 博客频道 - CSDN.NET
+
+Apple Tree
+题目：http://poj.org/problem?id=3321
+题意：一棵有n个结点的树，初始时每个结点都有一个苹果，之后有m个操作，C操作：如果x结点有苹果，执行操作后x结点无苹果;如果x结点没有苹果，执行操作后x结点出现苹果。Q操作：问x结点及其子树上一共有多少苹果。
+题解：单点更新，区间查询，一看就是线段树类型的题目。但是这个是树形结构，需要转换成线性的才能计算。先序遍历整个树，这样每个结点的子结点都是连续存放的。
+代码：
+ 
+#include<cstdio>
+#include<cstring>
+using namespace std;
+#define MAX 100005
+int edge[MAX<<1];//表示第i条边的终点
+int next[MAX<<1];//与第i条边同起点的下一条边的位置
+int head[MAX<<1];//以i为起点的第一条边的储存位置
+int low[MAX],high[MAX],c[MAX];
+bool visit[MAX];
+int cnt,n;
+#define lowbit(x) ((x)&(-(x)))
+void update(int pos,int value) //更新pos的值
+{
+    int x=pos;
+    for(; x<=n; x+=lowbit(x))
+        c[x]+=value;
+}
+int getsum(int pos)//求1到pos位置的和
+{
+    int x=pos,sum=0;
+    for(; x>0; x-=lowbit(x))
+        sum+=c[x];
+    return sum;
+}
+void insert(int i,int a,int b)//a起点,b终点
+{
+    edge[i]=b;
+    next[i]=head[a];
+    head[a]=i;
+}
+void dfs(int x,int pre)
+{
+    low[x]=(++cnt);
+    for(int i=head[x]; i!=-1; i=next[i])
+        if(edge[i]!=pre)
+            dfs(edge[i],x);
+    high[x]=cnt;
+}
+int main()
+{
+    int m;
+    int a,b;
+    char op[5];
+    for(; ~scanf(""%d"",&n);)
+    {
+        cnt=0;
+        memset(head,-1,sizeof(head));
+        memset(next,-1,sizeof(next));
+        memset(c,0,sizeof(c));
+        for(int i=1,j=1; i<n; ++i)
+        {
+            scanf(""%d%d"",&a,&b);
+            insert(j++,a,b);
+            insert(j++,b,a);
+        }
+        dfs(1,-1);//遍历树
+        //初始化
+        for(int i=1; i<=n; ++i)
+            update(i,1);
+        memset(visit,false,sizeof(visit));
+        scanf(""%d"",&m);
+        for(int i=0; i<m; ++i)
+        {
+            scanf(""%s%d"",op,&a);
+            if(op[0]=='C')//更新
+            {
+                if(visit[a])
+                {
+                    update(low[a],1);
+                    visit[a]=false;
+                }
+                else
+                {
+                    update(low[a],-1);
+                    visit[a]=true;
+                }
+            }
+            else//查询
+                printf(""%d\n"",getsum(high[a])-getsum(low[a]-1));
+        }
+    }
+    return 0;
+}
+ 
+来源：
+http://blog.csdn.net/ACM_Ted
+
+"
+35,"POJ 4047 Garden  线段树 - 水 - 博客频道 - CSDN.NET
+
+这题只要想出怎么建树就简单了吧。
+他问的是连续k个值最大的是多少
+就可以用1~k之和，2~k+1之和，3~k+2之和.......做为结点。
+然后就发现，变成了简单的区间更新和区间查询问题了。
+
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+#include <string>
+#include <cstdio>
+#include <cmath>
+#include <queue>
+#include <map>
+#include <set>
+#define eps 1e-5
+#define MAXN 222222
+#define MAXM 22222
+#define INF 1000000007
+#define lch(x) x<<1
+#define rch(x) x<<1|1
+#define lson l,m,rt<<1
+#define rson m+1,r,rt<<1|1
+using namespace std;
+int val[MAXN];
+int n, k, m;
+int t[MAXN];
+int mx[4 * MAXN], cover[4 * MAXN];
+void up(int rt)
+{
+    mx[rt] = max(mx[lch(rt)], mx[rch(rt)]);
+}
+void down(int rt)
+{
+    if(cover[rt])
+    {
+        cover[lch(rt)] += cover[rt];
+        cover[rch(rt)] += cover[rt];
+        mx[lch(rt)] += cover[rt];
+        mx[rch(rt)] += cover[rt];
+        cover[rt] = 0;
+    }
+}
+void build(int l, int r, int rt)
+{
+    cover[rt] = 0;
+    if(l == r)
+    {
+        mx[rt] = t[l];
+        return;
+    }
+    int m = (l + r) >> 1;
+    build(lson);
+    build(rson);
+    up(rt);
+}
+void update(int L, int R, int l, int r, int rt, int v)
+{
+    if(L <= l && R >= r)
+    {
+        mx[rt] += v;
+        cover[rt] += v;
+        return;
+    }
+    down(rt);
+    int m = (l + r) >> 1;
+    if(m >= L) update(L, R, lson, v);
+    if(m < R) update(L, R, rson, v);
+    up(rt);
+}
+int query(int L, int R, int l, int r, int rt)
+{
+    if(L <= l && R >= r) return mx[rt];
+    down(rt);
+    int tmp = -INF;
+    int m = (l + r) >> 1;
+    if(m >= L) tmp = max(tmp, query(L, R, lson));
+    if(m < R) tmp = max(tmp, query(L, R, rson));
+    return tmp;
+}
+void change(int x, int y)
+{
+    int st = x - k + 1, ed = x;
+    if(st < 1) st = 1;
+    update(st, ed, 1, n, 1, y - val[x]);
+    val[x] = y;
+}
+int main()
+{
+    int T;
+    scanf(""%d"", &T);
+    while(T--)
+    {
+        scanf(""%d%d%d"", &n, &m, &k);
+        for(int i = 1; i <= n; i++) scanf(""%d"", &val[i]);
+        t[1] = 0;
+        for(int i = 1; i <= k; i++) t[1] += val[i];
+        for(int i = 2; i <= n - k + 1; i++) t[i] = t[i - 1] - val[i - 1] + val[i - 1 + k];
+        n = n - k + 1;
+        build(1, n, 1);
+        int op, x, y;
+        while(m--)
+        {
+            scanf(""%d%d%d"", &op, &x, &y);
+            if(op == 0) change(x, y);
+            else if(op == 1)
+            {
+                int tmp = val[x];
+                change(x, val[y]);
+                change(y, tmp);
+            }
+            else if(op == 2) printf(""%d\n"", query(x, y - k + 1, 1, n, 1));
+        }
+    }
+    return 0;
+}
+"
+51,"2012金华邀请赛D题(POJ4047 Garden)解题报告 - NKHe!!oWor!d - 博客园
+
+金华邀请赛D题，现场lazy标记推错了，颇为不爽，重做一下。
+给出一个N个数的序列以及一个k（0<k<=n<=200000)，m个操作p,x,y，其中
+p=0：将x位置的数替换为y
+p=1：将x y位置的数互换
+p=2:  查询x-y位置区间连续k个数的和的最大值
+很快可以想到用O(n)的复杂度预处理，将从i位置起始连续k个数的和求出来，那么对于查询操作，就变为查询和数组中x~y-k+1这个区间里的最大值。
+再看对于前两种操作，第二种可以等效于两次第一种操作。对于第一种操作，将x位置由y0替换为y，变化量det=y-y0，这个变化量会对和数组产生怎样得影响呢？很明显会导致和数组的x-k+1~x这也一段产生影响，效果为值都变化det。
+至此，整个问题就变成了成段修改成段查询问题。用线段数可以解决。
+对于成段修改，需要用到lazy思想，即能不多改就不多改，等需要时再改。去年暑假时是做过不少各种类型的线段树的，但是区域赛后就再没写过，于是现场时就死在了这个问题上……这是客观因素，主观上也有理解的深度不够的问题……其实此题唯一算是难点的地方在于构造成适合线段树的形式，难点搞过了却卡在了实现上……
+需要注意的一点是，当需要用到真实值的时候，必须先进行pushdown操作，无论在任何地方都是这样！今天第一次提交就因为在update中求最大值时没有对左右孩子进行pushdown而WA了一次……
+ 
+ 
+   1 //10184789    NKHelloWorld    4047    Accepted    5980K    329MS    G++    2373B    2012-05-11 20:59:20
+  2 #include <cstdio>
+  3 #include <iostream>
+  4 using namespace std;
+  5 #define MAXN 210000
+  6 
+  7 int a[MAXN],sum[MAXN];
+  8 int n,m,k;
+  9 
+ 10 struct SEGTREE
+ 11 {
+ 12     int l,r,maxval,det;
+ 13 }tree[MAXN*4];
+ 14 
+ 15 void buildsegtree(int root,int l,int r)
+ 16 {
+ 17     tree[root].l = l;    tree[root].r = r;
+ 18     tree[root].det = 0;
+ 19     if(l == r)
+ 20     {
+ 21         tree[root].maxval = sum[l];
+ 22         return ;
+ 23     }
+ 24     int mid = (l+r)>>1;
+ 25     buildsegtree(root<<1,l,mid);
+ 26     buildsegtree(root<<1|1,mid+1,r);
+ 27     tree[root].maxval = max(tree[root<<1].maxval,tree[root<<1|1].maxval);
+ 28 }
+ 29 
+ 30 void pushdown(int root)
+ 31 {
+ 32     if(tree[root].det == 0)    return ;
+ 33     tree[root].maxval += tree[root].det;
+ 34     if(tree[root].l != tree[root].r)
+ 35     {
+ 36         tree[root<<1].det += tree[root].det;
+ 37         tree[root<<1|1].det += tree[root].det;
+ 38     }
+ 39     tree[root].det = 0;
+ 40 }
+ 41 
+ 42 void update(int root,int l,int r,int det)
+ 43 {
+ 44     pushdown(root);
+ 45     if(tree[root].l == l && tree[root].r == r)
+ 46     {
+ 47         tree[root].det += det;
+ 48         return ;
+ 49     }
+ 50     int mid = (tree[root].l + tree[root].r)>>1;
+ 51     if(r <= mid)
+ 52         update(root<<1,l,r,det);
+ 53     else if(l >mid)
+ 54         update(root<<1|1,l,r,det);
+ 55     else
+ 56     {
+ 57         update(root<<1,l,mid,det);
+ 58         update(root<<1|1,mid+1,r,det);
+ 59     }
+ 60     pushdown(root<<1);
+ 61     pushdown(root<<1|1);
+ 62     tree[root].maxval = max(tree[root<<1].maxval,tree[root<<1|1].maxval);
+ 63 }
+ 64 
+ 65 int query(int root,int l,int r)
+ 66 {
+ 67     pushdown(root);
+ 68     if(tree[root].l == l && tree[root].r == r)
+ 69     {
+ 70         return tree[root].maxval;
+ 71     }
+ 72     int mid = (tree[root].l + tree[root].r)>>1;
+ 73     if(r <= mid)
+ 74         return query(root<<1,l,r);
+ 75     else if(l >mid)
+ 76         return query(root<<1|1,l,r);
+ 77     else
+ 78         return max(query(root<<1,l,mid),query(root<<1|1,mid+1,r));
+ 79 }
+ 80 
+ 81 void edit(int x,int y)
+ 82 {
+ 83     int det = y - a[x];
+ 84     a[x] = y;
+ 85     int ll = x-k+1;
+ 86     if(ll <1)    ll = 1;
+ 87     int rr = x;
+ 88     if(x > n - k +1)    rr = n-k+1;
+ 89     update(1,ll,rr,det);
+ 90 }
+ 91 
+ 92 int main()
+ 93 {
+ 94     int totcase,i,j;
+ 95     scanf(""%d"",&totcase);
+ 96     while(totcase--)
+ 97     {
+ 98         scanf(""%d%d%d"",&n,&m,&k);
+ 99         for(i=1;i<=n;i++)
+100         {
+101             scanf(""%d"",&a[i]);
+102         }
+103         sum[1] = 0;
+104         for(i=1;i<=k;i++)    sum[1] += a[i];
+105         for(i=2;i<=n-k+1;i++)    sum[i] = sum[i-1] - a[i-1] + a[i+k-1];
+106         buildsegtree(1,1,n-k+1);
+107         int p,x,y;
+108         while(m--)
+109         {
+110             scanf(""%d%d%d"",&p,&x,&y);
+111             if(p==0)
+112             {
+113                 edit(x,y);
+114             }
+115             else if(p ==1 )
+116             {
+117                 int xx = a[x],yy = a[y];
+118                 edit(y,xx);
+119                 edit(x,yy);
+120             }
+121             else
+122             {
+123                 printf(""%d\n"",query(1,x,y-k+1));
+124             }
+125         }
+126     }
+127     return 0;
+128 } 
+"
+91,"POJ3277(线段树,离散化,扫描线)_飘羽逸狂_新浪博客
+
+
+ City Horizon
+ 
+ 
+  
+   
+    
+    Time Limit: 2000MS 
+     
+    Memory Limit: 65536K 
+    
+    
+    Total Submissions: 13819 
+     
+    Accepted: 3734 
+    
+   
+  
+ 
+
+Description
+Farmer John has taken his cows on a trip to the city! As the sun sets, the cows gaze at the city horizon and observe the beautiful silhouettes formed by the rectangular buildings.
+The entire horizon is represented by a number line with N (1 ≤ N ≤ 40,000) buildings. Building i's silhouette has a base that spans locations Ai through Bi along the horizon (1 ≤ Ai < Bi ≤ 1,000,000,000) and has height Hi (1 ≤ Hi ≤ 1,000,000,000). Determine the area, in square units, of the aggregate silhouette formed by all N buildings.
+Input
+ 
+
+ Line 1: A single integer: N
+ Lines 2..N+1: Input line i+1 describes building i with three space-separated integers: Ai, Bi, and Hi
+ 
+
+Output
+ 
+
+ Line 1: The total area, in square units, of the silhouettes formed by all N buildings
+ 
+
+Sample Input
+4
+2 5 1
+9 10 4
+6 8 2
+4 6 3
+Sample Output
+16
+Hint
+ 
+
+ The first building overlaps with the fourth building for an area of 1 square unit, so the total area is just 3*1 + 1*4 + 2*2 + 2*3 - 1 = 16.
+ 
+
+Source
+ 
+
+  USACO 2007 Open Silver
+ 
+
+ //----------------------------------------------------------------
+ 
+
+ MYCode:
+ 
+
+ #pragma warning(disable:4786)
+ #include<iostream>
+ #include<algorithm>
+ using namespace std;
+ //线段树模板
+ struct line
+ {
+  __int64 left,right;//左端点、右端点
+  __int64 len;
+  int cover;
+ };
+ 
+
+ struct sline
+ {
+  __int64 left,right;
+  __int64 x;
+  int flag;
+ };
+ int id;
+ __int64 y[40001];//在y轴上建立线段树,所以对y排序并去重
+ __int64 rev[40001];//给出每个编号对应的高度
+ struct line a[350001];//y轴线段树
+ sline p[80001];//插入线段树的竖直线段
+ __int64 yy[40001];
+ //建立
+ void build(int s,int t,int n)
+ {
+  int mid=(s+t)/2;
+  a[n].left=s;
+  a[n].right=t;
+  a[n].len = 0;
+  a[n].cover = 0;
+  if (t - s == 1) return;//叶节点返回
+  build(s,mid,2*n);//端点模型,不是格子模型
+  build(mid,t,2*n+1);
+ }
+ //插入
+ void insert(int left,int right,double x,int flag,int step)//要插入的线段的左端点和右端点、以及当前线段树中的某条线段
+ {
+   if(left == a[step].left && right == a[step].right)
+   {
+     a[step].cover += flag;
+     return;//插入结束返回
+   }
+   if (a[step].left == a[step].right - 1)   return;//当前线段树的线段没有儿子，插入结束返回
+   int mid=(a[step].left+a[step].right)/2;
+   if (mid>=right)    insert(left,right,x,flag,step*2);//如果中点在t的右边，则应该插入到左儿子
+   else if (mid<left)    insert(left,right,x,flag,step*2+1);//如果中点在s的左边，则应该插入到右儿子
+   else//否则，中点一定在s和t之间，把待插线段分成两半分别插到左右儿子里面
+   {
+         insert(left,mid,x,flag,step*2);
+         insert(mid,right,x,flag,step*2+1);
+   }
+ }
+ //访问
+ void update(int step)
+ {
+  if (a[step].cover > 0)
+  {
+   a[step].len = yy[a[step].right] - yy[a[step].left]; 
+   return;
+  }
+     else if (a[step].left == a[step].right-1)
+  {
+   a[step].len = 0;
+   return;
+  }
+     else
+     {
+      update(step*2);
+      update(step*2+1);
+      a[step].len = a[step*2].len + a[step*2+1].len;
+     }
+ }
+ int cmp(const sline&p1,const sline&p2)
+ {
+  return p1.x < p2.x;
+ };
+ int b_search(__int64 key)
+ {
+  int left = 0,right = id;//note
+  while(left < right-1)//note
+  {
+   __int64 mid = (left + right)/2;
+   if(yy[mid] == key)
+   return mid;
+   if(yy[mid] < key)
+   left = mid;
+   else
+   right = mid;
+  }
+ }
+ int main()
+ {
+   int n,i;
+   scanf(""%d"",&n);
+   memset(a,0,sizeof(a));
+   __int64 x1,x2,yi;
+   for(i = 1;i <= n; i++)
+   {
+    scanf(""%I64d%I64d%I64d"",&x1,&x2,&yi);
+    p[2*i-1].x = x1 ;
+    p[2*i-1].left = 0;
+    p[2*i-1].right = yi;
+    p[2*i-1].flag = 1;
+    p[2*i].x = x2;
+    p[2*i].left = 0;
+    p[2*i].right = yi;
+    p[2*i].flag = -1;
+    y[i] = yi;
+   }
+   sort(y+1,y+n+1);
+   sort(p+1,p+2*n+1,cmp);
+   id = 2;
+   yy[0] = 0;
+   yy[1] = y[1];
+   for(i = 2 ;i <= n;i++)
+   {
+    if(y[i] != y[i-1])
+    yy[id++] = y[i];
+   }
+   build(0,id-1,1);//线段树区间[0,id-1];
+   __int64 total = 0;
+   insert(0,b_search(p[1].right),p[1].x,p[1].flag,1);
+   for(i = 2;i <= (n*2); i++)
+   {
+    update(1);//更新线段树
+    total += a[1].len*(p[i].x - p[i-1].x);
+    insert(0,b_search(p[i].right),p[i].x,p[i].flag,1);
+   }
+   printf(""%I64d\n"",total);
+ }
+ 
+ 
+  
+   
+    
+    Run ID 
+    User 
+    Problem 
+    Result 
+    Memory 
+    Time 
+    Language 
+    Code Length 
+    Submit Time 
+    
+    
+    10616667 
+    ruffy 
+    3277 
+    Accepted 
+    14244K 
+    938MS 
+    C++ 
+    3114B 
+    2012-08-06 13:07:35 
+    
+    
+    10616077 
+    ruffy 
+    3277 
+    Time Limit Exceeded 
+     
+     
+    C++ 
+    2634B 
+    2012-08-06 11:38:11 
+    
+   
+  
+ 
+
+ //-----------------------------------------------------------------
+ 
+
+ 这道题和POJ1151类似,更为简单一些,1151可以用map离散化,不会超时,但是这道题离散化的方式只能够是二分查找,如果用map的话将会TLE,因为这道题的数据量更大,map的缺陷就暴露出来了.
+ 
+
+ 虽然用STL的map可以使得离散化变得更为简单一些,但是效率不行,所以离散化还是要用自己写的二分查找.
+ 
+
+ 这道题有一点不明白,为什么中间数据会超int?如果只有结果用__int64将会得到wa.
+"
+116,"POJ  3695  Cell Phone Network（ 记忆化搜索）_doxi_百度空间
+
+代码其实写的乱七八糟，但是放在这里， 其中部分代码由XCLEE 提供...
+
+其中date[maxt][3]代表的是记忆化的值.....
+
+date[x][0]   代表的是在x地方放一个后 ，以他为根的子树最少需要多少个
+
+date[x][1]   代表的是在 x的地方不放，但是他的儿子中有一个可以覆盖到他
+
+date[x][2]  代表的是在x的地方不放，而且他的儿子都不可以覆盖到他
+
+#include<iostream>
+
+#include<string.h>
+
+#include<vector>
+
+#define MAXN 10001
+
+using namespace std;
+
+vector<vector<int> >g;
+
+int n;
+
+bool vis[MAXN];
+
+vector<int>S;
+
+int C[MAXN];
+
+int pre[MAXN];
+
+int date[MAXN][3];
+
+vector< int > V[MAXN];
+
+void dfs(int id)
+
+{
+
+ int sz=g[id].size();
+
+ for(int i =0; i<sz; i++)
+
+ {
+
+ int v = g[id][i];
+
+ if(pre[id]!=v)
+
+ {
+
+ pre[v]=id;
+
+ dfs(v);
+
+ }
+
+ }
+
+}
+
+int Min( int a, int b)
+
+{
+
+ return ( a <= b ? a : b);
+
+}
+
+int DFS( int city , int mark)
+
+{
+
+ if(date[city][mark]!=MAXN)return date[city][mark];
+
+ int all = 0;
+
+ int sz=V[city].size();
+
+ if( sz == 0) return 0;
+
+ if( mark == 0)
+
+ {
+
+ for(int i = 0;i< sz; i++)
+
+ {
+
+ int id= V[city][i];
+
+ all += Min( DFS( id , 0) , Min( DFS( id , 1) , DFS( id , 2)));
+
+ }
+
+ all ++;
+
+ }
+
+ else if( mark == 1)
+
+ { 
+
+ //他的儿子中，有一个是date[id][0];
+
+ //其他的都用date[id][1]和date[id][0]中的最值;
+
+ all =1000000;
+
+ int sum = 0;
+
+ for( int i =0 ; i < sz ;i ++)
+
+ {
+
+ int id = V[city][i];
+
+ sum = DFS( id , 0);
+
+ for( int j = 0 ; j < sz ; ++j)
+
+ {
+
+ if( i == j) continue;
+
+ int dd = V[city][j];
+
+ sum += Min(DFS( dd , 0 ),DFS( dd , 1));
+
+ }
+
+ all = Min( sum , all);
+
+ }
+
+ }
+
+ else // mark == 2;
+
+ {
+
+ for( int i = 0 ; i < sz ; i ++)
+
+ {
+
+ int id = V[city][i];
+
+ all += DFS( id , 1);
+
+ }
+
+ }
+
+ if( all == 0) all = MAXN;
+
+ date[city][mark] = all;
+
+ return all;
+
+}
+
+int main(){
+
+ //freopen(""date.in"",""r"",stdin);
+
+ while(scanf(""%d"",&n) != EOF)
+
+ {
+
+ g.resize(MAXN);
+
+ g.clear();
+
+ for( int i = 1 ; i <= n ; ++i) V[i].clear();
+
+ for(int i =1; i<n ;i++)
+
+ {
+
+ int a,b;
+
+ scanf(""%d %d"",&a,&b);
+
+ g[a].push_back(b);
+
+ g[b].push_back(a);
+
+ }
+
+ for(int i=1;i<=n ;i++)C[i] =0,pre[i]=-1 ;
+
+ memset(vis,0,sizeof(vis));
+
+ dfs(1);
+
+ int mark;
+
+ for(int i =1;i<=n; i++)
+
+ {
+
+ if( pre[i] != -1) V[pre[i]].push_back(i);
+
+ else mark = i;
+
+ }
+
+ for( int i = 1 ; i <= n ; ++i)
+
+ {
+
+ for( int j = 0 ; j <= 2 ; ++j)
+
+ date[i][j] = MAXN;
+
+ }
+
+ for( int i = 1 ; i <= n ; ++i) 
+
+ {
+
+ if( V[i].size() == 0)
+
+ {
+
+ date[i][1] = date[i][0] = 1;
+
+ date[i][2] = 0;
+
+ }
+
+ }
+
+ DFS( mark , 0);
+
+ DFS( mark , 1);
+
+ int ans = Min( date[mark][0] , date[mark][1]);
+
+ printf(""%d\n"",ans);
+
+ }
+
+ return 0;
+
+}"
+118,"Poj1164_Abalone_新浪博客
+
+我的思路是广度优先搜索算法 BFS 
+
+ 
+
+ 
+
+ WA了好几次，原来没有考虑到重复进队的情况，哎，好久不写程序了，悲剧啊
+ 
+
+ 就是这种情况啊
+ 
+
+ 3 3
+ 
+
+ 3 2 6
+ 
+
+ 1 0 4
+ 
+
+ 9 8 12
+ 
+
+ 那个0会重复进队啊，呵呵
+ 
+
+ 
+
+ 
+
+ 没什么好说的，一道水题目，上代码了
+ 
+
+ 
+
+ 
+
+ ******************************************************
+ 
+ 
+ 
+  #include<iostream>
+  
+ 
+  #include<queue>
+  
+ 
+  
+
+  
+ 
+  using namespace std;
+  
+ 
+  
+
+  
+ 
+  const int dir[4] = { 8, 4, 2, 1};
+  
+ 
+  const int move[4][2] = { {1, 0}, {0, 1}, {-1, 0}, {0, -1} };
+  
+ 
+  
+
+  
+ 
+  struct Node{
+  
+ 
+   
+   
+    
+  int x;
+  
+ 
+   
+   
+    
+  int y;
+  
+ 
+   
+   
+    
+  int wallSum;
+  
+ 
+   
+   
+    
+  Node(int x, int y, int wallSum){
+  
+ 
+   
+   
+    
+    
+    
+  this->x = x;
+  
+ 
+   
+   
+    
+    
+    
+  this->y = y;
+  
+ 
+   
+   
+    
+    
+    
+  this->wallSum = wallSum;
+  
+ 
+   
+   
+    
+  }
+  
+ 
+  };
+  
+ 
+  
+
+  
+ 
+  class Castle{
+  
+ 
+   
+  public:
+  
+ 
+   
+   
+    
+  Castle() {}
+  
+ 
+   
+   
+    
+  void calculate();
+  
+ 
+   
+  private:
+  
+ 
+   
+   
+    
+  void BFS();
+  
+ 
+   
+   
+    
+  void initial();
+  
+ 
+   
+   
+    
+  int R;
+  
+ 
+   
+   
+    
+  int C;
+  
+ 
+   
+   
+    
+  int maxRoom;
+  
+ 
+   
+   
+    
+  int roomNum;
+  
+ 
+   
+   
+    
+  int map[50][50];
+  
+ 
+  };
+  
+ 
+  
+
+  
+ 
+  void Castle::calculate(){
+  
+ 
+   
+   
+    
+  this->initial();
+  
+ 
+   
+   
+    
+  this->BFS();
+  
+ 
+   
+   
+    
+  cout<<roomNum<<endl;
+  
+ 
+   
+   
+    
+  cout<<maxRoom<<endl;
+  
+ 
+  }
+  
+ 
+  
+
+  
+ 
+  void Castle::BFS(){
+  
+ 
+   
+   
+    
+  for (int i=0; i<R; i++)
+  
+ 
+   
+   
+    
+    
+    
+  for (int j=0; j<C; j++)
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+  if (map[i][j] < 16){
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  roomNum++;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  int capacity = 0;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  queue<Node*> roomQueue;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  Node* np = new Node(i, j, map[i][j]);
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  map[i][j] = 16;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  roomQueue.push(np);
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  while (!roomQueue.empty()){
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  Node* npre = roomQueue.front();
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  roomQueue.pop();
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  capacity++;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  int sum = npre->wallSum;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  for (int n=0; n<4; n++){
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  if (sum/dir[n]==0 && map[npre->x+move[n][0]][npre->y+move[n][1]]<16){
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  int x = npre->x+move[n][0];
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  int y = npre->y+move[n][1];
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  np = new Node(x, y, map[x][y]);
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  map[x][y] = 16;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  roomQueue.push(np);
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  sum %= dir[n];
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  }
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+    
+    
+  maxRoom = maxRoom > capacity ? maxRoom : capacity;
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+  }
+  
+ 
+  }
+  
+ 
+  
+
+  
+ 
+  void Castle::initial(){
+  
+ 
+   
+   
+    
+  maxRoom = 0;
+  
+ 
+   
+   
+    
+  roomNum = 0;
+  
+ 
+   
+   
+    
+  cin>>R>>C;
+  
+ 
+   
+   
+    
+  for (int i=0; i<R; i++)
+  
+ 
+   
+   
+    
+    
+    
+  for (int j=0; j<C; j++)
+  
+ 
+   
+   
+    
+    
+    
+    
+    
+  cin>>map[i][j];
+  
+ 
+  }
+  
+ 
+  
+
+  
+ 
+  int main(){
+  
+ 
+   
+   
+    
+  Castle castle;
+  
+ 
+   
+   
+    
+  castle.calculate();
+  
+ 
+   
+   
+    
+  return 0;
+  
+ 
+  }
+  
+ 
+
+ 
+
+"
+134,"POJ2464——树状数组_lovedream_新浪博客
+
+ 题目超恶心，好几个步骤，最重要的是题意超不明确！恶心啊！debug了一晚上，最后才知道原来对于Ollie，相同的分数只输出一次！擦擦擦擦擦。。。
+准确的说，那句Stan and Ollie each try to maximize his own score.其实就是bullshit。题目是要你求所有竖线中，每条竖线上Stan可能得到的最低分，这些最低分里面的最高分，跟Ollie取不取最大值没关系。然后这些可以取到最大的最小分数的竖线里面，Ollie能够在每条竖线上取到的最高分是多少，如果有几个一样的就只输出其中一个。。。
+离散化，排序，树状数组模拟，最后DP，比较麻烦。不过看了其他人得解法，包括线段树的，都差不多都挺麻烦。
+ 首先很容易想到枚举原点，然后数四个象限上得点数，这样复杂度高，于是可以用数据结构来优化。其实只需要数清楚第一和第三象限的点，用N-第一象限-第三象限-坐标轴上得点，就等于第二象限和第四象限的点。数点数显然可以用树状数组，而要数两个象限，可以分两次，第一次数第三象限，第二次数第一象限。
+ 具体是：先按y排序，离散化y坐标值。然后按x升序（x相等时y升序）排序。然后用树状数组一边插入，查询，减去坐标轴上的点，就是x,y都<=当前点的点数；同理，再从反方向做一遍，就得到x,y都>=当前点的点数，加起来就是Stan的分数，然后利用Stan的分数算Ollie得分数。最后DP。
+#include<stdio.h>
+ #include<string.h>
+ #include<algorithm>
+ #include<vector>
+ using namespace std;
+struct Node
+ {
+     int x,y;
+ }node[210000];
+int cmp(const Node &a,const Node &b)
+ {
+     return a.y<b.y;
+ }
+ int cmp2(const Node &a,const Node &b)
+ {
+     if(a.x==b.x)
+         return a.y<b.y;
+     return a.x<b.x;
+ }
+int index[210000],c[210000],cnt[210000],num,ans[210000];
+ int low[210000],c2[210000],ans2[210000],N;
+int update(int n)
+ {
+     int t=n;
+     while(n<=N)
+     {
+         c[n]++;
+         n+=low[n];
+     }
+     n=t,t=0;
+     while(n>=1)
+     {
+         t+=c[n];
+         n-=low[n];
+     }
+     return t;
+ }
+ int Bsearch(int n,int N)
+ {
+     int l=1,r=N,mid;
+    while(l<r-1)
+     {
+         mid=(l+r)>>1;
+         if(index[mid]>n)
+             r=mid;
+         else
+             l=mid;
+     }
+     if(index[l]==n)
+         return l;
+     return l+1;
+ }
+int main()
+ {
+     int i,j,t,Min,Max,be;
+    for(i=1;i<=200000;i++)
+         low[i]=i&(-i);
+     while(scanf(""%d"",&N),N)
+     {
+         memset(ans,0,sizeof(ans));
+         memset(c2,0,sizeof(c2));
+         for(i=1;i<=N;i++)
+             scanf(""%d%d"",&node[i].x,&node[i].y);
+         sort(node+1,node+N+1,cmp);
+         for(i=2,index[1]=node[1].y,j=2;i<=N;i++)if(node[i].y-node[i-1].y)
+             index[j++]=node[i].y;
+         for(i=1;i<=N;i++)
+             node[i].y=Bsearch(node[i].y,j-1);
+         sort(node+1,node+1+N,cmp2);
+         for(i=2,be=1;i<=N;i++)if(node[i].x-node[i-1].x)
+             c2[i-1]=i-be,be=i;
+         c2[N]=i-be;
+         for(i=N;i>=1;i--)
+         {
+             if(c2[i])
+                 be=c2[i];
+             else
+                 c2[i]=be;
+         }
+         memset(c,0,sizeof(c));
+         memset(cnt,0,sizeof(cnt));
+         for(i=1;i<=N;i++)
+         {
+             if(i==1||node[i].x-node[i-1].x)
+                 num=1;
+             else
+                 num++;
+             cnt[node[i].y]++;
+             ans[i]=update(node[i].y)-cnt[node[i].y]-num+1;
+         }
+         memset(c,0,sizeof(c));
+         memset(cnt,0,sizeof(cnt));
+         for(i=N;i>0;i--)
+         {
+             if(i==N||node[i].x-node[i+1].x)
+                 num=1;
+             else
+                 num++;
+             cnt[node[i].y]++;
+             ans[i]+=update(j-node[i].y)-cnt[node[i].y]-num+1;
+         }
+         for(i=1;i<=N;i++)   
+             ans2[i]=N-ans[i]-cnt[node[i].y]-c2[i]+1;
+         for(i=2,Min=ans[1],Max=-1,t=ans2[1],j=0;i<=N;i++)
+         {
+             if(node[i].x-node[i-1].x)
+             {
+                 if(Min>Max)
+                 {
+                     j=1;
+                     c2[0]=t;
+                     Max=Min;
+                 }
+                 else if(Min==Max)
+                     c2[j++]=t;
+                 t=ans2[i];
+                 Min=ans[i];
+             }
+             else
+                 Min=Min<ans[i]?Min:ans[i],t=t>ans2[i]?t:ans2[i];
+         }
+         if(Min>Max)
+         {
+             Max=Min;
+             j=1;
+             c2[0]=t;
+         }
+         else if(Min==Max)
+             c2[0]=t;
+         printf(""Stan: %d; Ollie:"",Max);
+         sort(c2,c2+j);
+         if(j==1)
+             printf("" %d"",c2[0]);
+         else
+         {
+             if(c2[0]-c2[1])
+                 printf("" %d"",c2[0]);
+             for(i=1;i<j;i++)if(c2[i]-c2[i-1])
+                 printf("" %d"",c2[i]);
+             if(c2[0]==c2[j-1])
+                 printf("" %d"",c2[0]);
+         }
+         printf("";\n"");
+     }
+ }
+"
+151,"字典树模版(T9 PKU 1451)_piratehome_百度空间
+
+字典树模版(T9 PKU 1451)
+#include ""stdio.h""
+#include ""iostream""
+using namespace std;
+int dir[10][4]={-1,-1,-1,-1,
+                -1,-1,-1,-1,
+                0,1,2,-1,
+                3,4,5,-1,
+                6,7,8,-1,
+                9,10,11,-1,
+                12,13,14,-1,
+                15,16,17,18,
+                19,20,21,-1,
+                22,23,24,25};
+int nowp;
+int maxsum;
+char strp[150];
+typedef struct Node
+{
+    Node* letter[26];
+    int frq[26];
+}*DicTree,Node;
+DicTree NewTree()
+{
+    DicTree DicT;
+    DicT=new Node;
+    memset(DicT->letter,NULL,sizeof(DicT->letter));
+    memset(DicT->frq,0,sizeof(DicT->frq));
+    return DicT;
+}
+void BuiltTree(DicTree &DicT)
+{
+    DicT=NewTree();
+}
+DicTree InsetLetter(DicTree &DicT,char les, int frqu)
+{
+    if(DicT->letter[les-'a']==NULL)
+        DicT->letter[les-'a']=NewTree();
+    DicT->frq[les-'a']+=frqu;
+    return DicT->letter[les-'a'];
+}
+void InsetString(DicTree &DicT,char str[], int frqu)
+{
+    int i;
+    DicTree TempTree=DicT;
+    for(i=0; str[i]!='\0'; i++)
+        TempTree=InsetLetter(TempTree,str[i],frqu);
+}
+void DelTree(DicTree &DicT)
+{
+    if(DicT==NULL)
+        return ;
+    for(int i=0; i<26; i++)
+        DelTree(DicT->letter[i]);
+    delete DicT;
+    return;
+}
+bool FindWords(DicTree &DicT, char instr[], char outstr[],int p, int mx)
+{
+    if(p==nowp)
+    {
+        if(mx>maxsum)
+        {
+            maxsum=mx;
+            for(int i=0; i<p; i++)
+                strp[i]=outstr[i];
+        }
+        return true;
+    }
+    int t=instr[p]-'0';
+    int i;
+    bool have=false;
+    for(i=0; i<4; i++)
+        if(dir[t][i]!=-1&& DicT->frq[dir[t][i]]!=0)
+        {
+                outstr[p]='a'+dir[t][i];
+                have|=FindWords(DicT->letter[dir[t][i]],instr,outstr,p+1,DicT->frq[dir[t][i]]);
+        }
+    return have;
+}
+int main()
+{
+    int cas, n,fq, i, len,j,time=0, k;
+    DicTree DicT;
+    char instr[150],outstr[150],str[150];
+    bool have;
+    scanf(""%d"",&cas);
+    while(cas--)
+    {
+        time++;
+        printf(""Scenario #%d:\n"",time);
+        BuiltTree(DicT);
+        scanf(""%d"",&n);
+        for(i=0; i<n; i++)
+        {
+            scanf(""%s %d"",str,&fq);
+            InsetString(DicT,str,fq);
+        }
+        scanf(""%d"",&n);
+        for(i=0; i<n; i++)
+        {
+            scanf(""%s"",instr);
+            nowp=0; have=true;
+            len=strlen(instr);
+            for(j=0; j<len-1; j++)
+            {
+                if(have)
+                {
+                    nowp=j+1;
+                    maxsum=0;
+                    have=FindWords(DicT,instr,outstr,0,0);
+                }
+                if(have)
+                {
+                    for(k=0;k<=j;k++)
+                        printf(""%c"",strp[k]);
+                    printf(""\n"");
+                }
+                else
+                    printf(""MANUALLY\n"");
+            }
+            printf(""\n"");
+        }
+        printf(""\n"");
+        DelTree(DicT);
+    }
+    return 0;
+}
+"
+153,"PKU 2750 Potted Flower 解题报告 - ldyhot的专栏 - 博客频道 - CSDN.NET
+
+
+ 
+  /*
+    Title: Potted Flower
+    Author: Jeff
+    Time:  2008/10/28
+    Complexity: O(nlog(n));
+    Result: 7884K 344MS/ AC
+    Reference: 
+          http://203.208.39.99/search?q=cache:bZTSBU3KVGUJ:hi.baidu.com/fandywang_jlu/blog/item/505b40f4c864bddff3d38574.html+poj+2750&hl=zh-CN&lr=lang_zh-CN|lang_zh-TW&newwindow=1&gl=cn&st_usg=ALhdy29PmISlzFU8Pg-GsftyKbxS8Nqc6A&strip=1
+    Description: 
+          给定一个环形序列，进行在线操作，每次修改一个元素，
+          输出环上的最大连续子列的和。
+    Tips:
+          线段树+DP 
+          出题者的简单解题报告：把环从一个地方，切断拉成一条直线，
+          用线段树记录当前区间的非空最大子列和当前区间的非空最小
+          子列。如果环上的数都是正整数，答案是：环上数的总和－根
+          结点的非空最小子列；否则，答案是：max{根结点的非空最大
+          子列, 环上数的总和－根结点的非空最小子列}，每次问答的
+          复杂度是O(logN)。
+    p.s. 
+    
+  */
+  
+
+  #include <cstdio>
+  #include <cstring>
+  
+  using namespace std;
+  
+  const int MAX = 100000;
+  
+  struct Node{
+      int sum;    //该区间数的总和 
+      int maxSum, minSum; //该区间 最大子列和 与 最小子列和 
+      int maxl, maxr; //该区间 从左端点开始的最大子列和 与 到右端点结束的最小子列和 
+      int minl, minr; //该区间 从左端点开始的最小子列和 与 到右端点结束的最小子列和 
+  };
+  
+  int Num[MAX];
+  Node M[1 << 18];
+  
+
+  
+  inline int min(int a, int b){
+      return a < b ? a : b; 
+  }
+  inline int max(int a, int b){
+      return a > b ? a : b;    
+  }
+  
+
+  
+  //根据左右子节点更新父亲节点 (DP)
+  void update_node(int parent, int left, int right){
+      M[parent].sum = M[left].sum + M[right].sum;
+      M[parent].maxSum = max(max(M[left].maxSum, M[right].maxSum), 
+                  M[left].maxr + M[right].maxl);
+      M[parent].minSum = min(min(M[left].minSum, M[right].minSum),
+                  M[left].minr + M[right].minl);
+      M[parent].maxl = max(M[left].maxl, M[left].sum+M[right].maxl);
+      M[parent].maxr = max(M[left].maxr+M[right].sum, M[right].maxr);
+      M[parent].minl = min(M[left].minl, M[left].sum+M[right].minl);
+      M[parent].minr = min(M[left].minr+M[right].sum, M[right].minr);
+  }
+  
+  //初始化线段树 
+  void init_tree(int node, int l, int r){
+      if(l == r){
+          M[node].sum = M[node].maxSum = M[node].minSum = Num[l];    
+          M[node].maxl = M[node].maxr = M[node].minl = M[node].minr = Num[l];
+      }else{
+          init_tree(node * 2, l, (l+r)/2);
+          init_tree(node*2+1, (l+r)/2+1, r);
+          update_node(node, node * 2, node * 2 + 1);    
+      }
+      //printf(""(%d %d): %d %d %d/n"", l, r, M[node].sum, M[node].maxSum, M[node].minSum);
+  }
+  
+
+  
+  //改变一个叶子节点的值，从叶子到树根更新各个节点值 log(n)
+  void change_query(int node, int l, int r, int pos, int value){
+      //if(l <= pos <= r){
+          if(l == r){
+              if(l == pos)
+                  M[node].sum = M[node].maxSum = M[node].minSum = value;
+                  M[node].maxl = M[node].maxr = M[node].minl = M[node].minr = value;    
+          }else{
+              if(l <= pos && pos <= (l+r)/2)
+                  change_query(node * 2, l, (l+r)/2, pos, value);
+              else 
+                  change_query(node*2+1, (l+r)/2+1, r, pos, value);
+              update_node(node, node*2, node*2+1);
+          }
+      //}
+      //printf(""(%d %d): %d %d %d/n"", l, r, M[node].sum, M[node].maxSum, M[node].minSum);    
+  }
+  
+
+  
+  int main(){
+      freopen(""in.txt"", ""r"", stdin);
+      freopen(""out.txt"", ""w"", stdout);
+      int N;
+      while(scanf(""%d"", &N) != EOF){
+          for(int i = 0; i < N; i++)
+              scanf(""%d"", &Num[i]);
+          init_tree(1, 0, N-1);
+          int K, A, B;
+          scanf(""%d"", &K);
+          for(int i = 0; i < K; i++){
+              scanf(""%d%d"", &A, &B);
+              change_query(1, 0, N-1, A-1, B);
+              //printf(""%d %d %d "", M[1].sum, M[1].maxSum, M[1].minSum);
+              if(M[1].sum == M[1].maxSum)printf(""%d/n"", M[1].sum - M[1].minSum);
+              else printf(""%d/n"", max(M[1].maxSum, M[1].sum - M[1].minSum));
+          }
+      }
+      return 0;    
+  }
+  
+ 
+ "
+187,"poj 2836 Rectangular Covering_鈺仯爺_百度空间
+
+状态压缩DP，不错又学到了不少。
+
+因为要面积最小，一定是以每次覆盖两个点为主，并让这两个点在矩形的对角。
+
+此题不可以出现面积为0的矩形，所以当出现x[i]==x[j]或者y[i]==y[j]时，让它为0的这边的边长变成1。
+
+预处理，枚举任意两点，求它的面积，并看这两点之间还有多少点被覆盖，将被覆盖的所有点存入状态。
+
+然后就可以DP了，有人说这道题可以记忆化搜索，但是记忆化搜索好像必须从状态(（1<<n）-1)向0状态推吧。我不知道该如何推，状态的转移该怎么样弄。
+
+#include<iostream>
+
+#include<cmath>
+
+using namespace std;
+
+#define INF 99999999
+
+int n,m;
+
+int x[16],y[16];
+
+int dp[1<<15];
+
+int s[16*16];
+
+int state[16*16];
+
+void gets(int i,int j)
+
+{
+
+ int k=(1<<i)+(1<<j);
+
+ for(int t=0;t<n;t++)
+
+ if((x[i]-x[t])*(x[t]-x[j])>=0&&(y[i]-y[t])*(y[t]-y[j])>=0)
+
+ k|=(1<<t);
+
+ int are=0;
+
+ if(x[i]==x[j])are=abs(y[i]-y[j]);
+
+ else if(y[i]==y[j])are=abs(x[i]-x[j]);
+
+ else are=abs(x[i]-x[j])*abs(y[i]-y[j]);
+
+ state[m]=k;
+
+ s[m++]=are;
+
+ return;
+
+}
+
+int main()
+
+{
+
+ int i,j;
+
+ while(scanf(""%d"",&n)&&n)
+
+ {
+
+ for(i=0;i<n;i++)
+
+ scanf(""%d%d"",&x[i],&y[i]);
+
+ m=0;
+
+ for(i=1;i<n;i++)
+
+ for(j=0;j<i;j++)
+
+ gets(i,j);
+
+ for(i=1;i<(1<<n);i++)
+
+ dp[i]=INF;
+
+ dp[0]=0;
+
+ for(i=0;i<(1<<n);i++)
+
+ for(j=0;j<m;j++)
+
+ {
+
+ int temp=i|state[j];
+
+ if(temp==i)continue;
+
+ dp[temp]=min(dp[temp],dp[i]+s[j]);
+
+ }
+
+ printf(""%d\n"",dp[(1<<n)-1]);
+
+ }
+
+}"
+188,"poj1606-没想好就不要下手，否则浪费时间-模拟题的教训 - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+这道题目题意很简单，就是给你两个容器，求出获得指定量水的步骤。
+ 一看稍微分析就知道是广度优先搜索。就是每次最多有六种情况，填满a，填满b，清空a，清空b，从a倒到b，从b倒到a。对每种情况将在这种情况下的可能的情况进入队列，直到找到最终结果。
+ 注意不要以为和题目答案不一样就以为自己是错的，因为倒的方法可能不一样，所以最好自己验证一下，题目也标出了special judge，就是答案不止一种。
+ 下面是代码及注释，注释的地方就是自己没关注细节浪费时间的地方。。。。
+ [cpp]
+ #include <stdio.h> 
+ #include <stdlib.h> 
+ #include <string.h> 
+ #define Max(a,b) (a>b?a:b) 
+ #define Min(a,b) (a<b?a:b) 
+  enum METHOD//这里用了一下枚举 
+ { 
+     fillA = 0, 
+     fillB, 
+     emptyA, 
+     emptyB, 
+     pourAB, 
+     pourBA 
+ }methods; 
+ struct QUEUE 
+ { 
+     int nowA,nowB;//a，b当前的水量 
+     int method;//上一步是通过什么方式到这一步的 
+     int pre;//记录上一步在队列中的下标 
+ }queue[100000]; 
+ int Ca,Cb,N;//输入 
+ int start, end;//队列的头和尾 
+ void output() 
+ { 
+     int step[10000]; 
+     int index = 0; 
+     //找到success的整个路径，倒着找到第一个，放到step数组中 
+     step[index ++] = start; 
+     int k = queue[start].pre; 
+     while (k != -1) 
+     { 
+         step[index ++] = k; 
+         k = queue[k].pre; 
+     } 
+     //输出，注意queue的下标是step数组，开始写成i了，怎么搞都不对。。。。 
+     for (int i = index - 1; i >= 0; -- i) 
+     { 
+         if (queue[step[i]].method == fillA) 
+         { 
+             printf(""fill A\n""); 
+         } 
+         if (queue[step[i]].method == fillB) 
+         { 
+             printf(""fill B\n""); 
+         } 
+         if (queue[step[i]].method == emptyA) 
+         { 
+             printf(""empty A\n""); 
+         } 
+         if (queue[step[i]].method == emptyB) 
+         { 
+             printf(""empty B\n""); 
+         } 
+         if (queue[step[i]].method == pourAB) 
+         { 
+             printf(""pour A B\n""); 
+         } 
+         if (queue[step[i]].method == pourBA) 
+         { 
+             printf(""pour B A\n""); 
+         } 
+     } 
+     printf(""success\n""); 
+ } 
+ void bfs() 
+ { 
+     start = -1,end = 0; 
+     //初始化队列，第一步肯定是先填满A或者B    
+     queue[end].method = fillA; 
+     queue[end].nowA = Ca; 
+     queue[end].nowB = 0; 
+     queue[end].pre = -1; 
+     end ++; 
+     queue[end].method = fillB; 
+     queue[end].nowA = 0; 
+     queue[end].nowB = Cb; 
+     queue[end].pre = -1; 
+     end ++; 
+     //广度优先搜索 
+     while (start < end) 
+     { 
+         start ++; 
+         if (queue[start].nowB == N || queue[start].nowA == N)//如果A或者B达到最终状态，那么队列结束 
+         { 
+             break; 
+         } 
+         //如果A，B都不是全满的情况下，可以填充其中一个，因为都满了没意义。 
+         if (queue[start].nowA < Ca && queue[start].nowB < Cb) 
+         { 
+             queue[end].method = fillA; 
+             queue[end].nowA = Ca; 
+             queue[end].nowB = queue[start].nowB; 
+             queue[end].pre = start; 
+             end ++; 
+             queue[end].method = fillB; 
+             queue[end].nowA = queue[start].nowA; 
+             queue[end].nowB = Cb; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果AB都不是空的情况下，才清空其中一个，因为都空的情况又回到了初始状态，浪费queue的空间，浪费搜索的时间 
+         if (queue[start].nowA != 0 && queue[start].nowB != 0) 
+         { 
+             queue[end].method = emptyA; 
+             queue[end].nowA = 0; 
+             queue[end].nowB = queue[start].nowB; 
+             queue[end].pre = start; 
+             end ++; 
+             queue[end].method = emptyB; 
+             queue[end].nowA = queue[start].nowA; 
+             queue[end].nowB = 0; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果a不为空且B没有满，才执行从a向b倒。如果a空了或者b已经满了，执行这一步没意义 
+         if (queue[start].nowA != 0 && queue[start].nowB < Cb) 
+         { 
+             if (queue[start].nowA > Cb - queue[start].nowB) 
+             { 
+                 queue[end].nowA = queue[start].nowA - Cb + queue[start].nowB; 
+                 queue[end].nowB = Cb; 
+             } 
+             else 
+             { 
+                 queue[end].nowA = 0; 
+                 queue[end].nowB = queue[start].nowB + queue[start].nowA; 
+             } 
+             queue[end].method = pourAB; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果b不为空且a没有满，才执行从b向a倒。如果b空了或者a已经满了，执行这一步没意义 
+         if (queue[start].nowB != 0 && queue[start].nowA < Ca) 
+         { 
+             if (queue[start].nowB > Ca - queue[start].nowA) 
+             { 
+                 queue[end].nowB =queue[start].nowB -  Ca + queue[start].nowA; 
+                 queue[end].nowA = Ca; 
+             } 
+             else 
+             { 
+                 queue[end].nowB = 0; 
+                 queue[end].nowA = queue[start].nowA + queue[start].nowB; 
+             } 
+             queue[end].method = pourBA; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+     } 
+     output(); 
+ } 
+ int main() 
+ { 
+     while (scanf(""%d %d %d"", &Ca, &Cb, &N) != EOF) 
+     { 
+         bfs(); 
+     } 
+     return 0; 
+ } 
+"

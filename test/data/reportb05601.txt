@@ -1,0 +1,84 @@
+POJ 2142 The Balance_编织梦想，编织未来_百度空间
+
+题目大意：给定两种重量的砝码a,b，和一个重量为d的物品。物品放在天枰的右边，问需要多少个a和多少个b使得天枰平衡，假设需要x个a和y个b,那么x+y最少者为最优解，如果两种方案的x+y一样小，那么a*x+b*y最小者为最优解，求最优的x和y。
+解题思路：很简单的一个求同余方程问题。
+附代码：
+#include<iostream>
+#include<cstring>
+#include<cstdio>
+#include<algorithm>
+using namespace std;
+int extend_gcd(int a, int b, int &x, int &y)
+{
+    int i,j,k;
+    if(b == 0)
+    {
+        x = 1; y = 0;
+        return a;
+    }
+    i = extend_gcd(b,a%b,x,y);
+    j = x; x = y; y = j - (a/b)*y;
+    return i;
+}
+int main()
+{
+    int i,j,k;
+    int a,b,n,d,x,y,xx,yy;
+    int ansa, ansb, ansc, ansd;
+    while(scanf("%d%d%d",&a,&n,&b),a||n||b)
+    {
+        ansa = ansb = -1;
+        ansc = ansd = -1;
+        d = extend_gcd(a,n,x,y);
+        xx = (b/d)*x;
+        xx = xx % n;
+        if(xx < 0) xx += n;
+        j = n / d;
+        for(i = 1; i <= d; i++)
+        {
+            yy = (a*xx-b)/n;
+            k = abs(yy);
+            if(ansa == -1 && ansb == -1) {ansa = xx; ansb = k;}
+            else if(xx + k < ansa + ansb)
+            {
+                ansa = xx; ansb = k;
+            }
+            else if(xx + k == ansa + ansb && (xx*a+k*n < ansa*a+ansb*n))
+            {
+                ansa = xx; ansb = k;
+            }
+            xx = (xx + j)%n;
+        }
+        i = a; a = n; n = i;
+        d = extend_gcd(a,n,x,y);
+        xx = (b/d)*x;
+        xx = xx % n;
+        if(xx < 0) xx += n;
+        j = n / d;
+        for(i = 1; i <= d; i++)
+        {
+            yy = (a*xx-b)/n;
+            k = abs(yy);
+            if(ansc == -1 && ansd == -1) {ansc = xx; ansd = k;}
+            else if(xx + k < ansc + ansd)
+            {
+                ansc = xx; ansd = k;
+            }
+            else if(xx + k == ansa + ansb && (xx*a+k*n < ansc*a+ansd*n))
+            {
+                ansc = xx; ansd = k;
+            }
+            xx = (xx + j)%n;
+        }
+        if(ansa + ansb > ansc + ansd)
+        {
+            ansa = ansd; ansb = ansc;
+        }
+        else if(ansa + ansb == ansd + ansc && (ansa*n+ansb*a > ansc*a + ansd*n))
+        {
+            ansa = ansd; ansb = ansc;
+        }
+        printf("%d %d\n",ansa,ansb);
+    }
+    return 0;
+}

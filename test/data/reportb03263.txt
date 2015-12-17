@@ -1,0 +1,136 @@
+POJ 1226 Substrings - ZZB的日志 - 网易博客
+
+ 
+  
+   
+   Time Limit: 1000MS 
+    
+   Memory Limit: 10000K
+   
+   
+   Total Submissions: 6609 
+    
+   Accepted: 2192
+  
+ 
+ 
+
+Description
+ 
+
+ You are given a number of case-sensitive strings of alphabetic characters, find the largest string X, such that either X, or its inverse can be found as a substring of any of the given strings. 
+ 
+
+Input
+ 
+
+ The first line of the input contains a single integer t (1 <= t <= 10), the number of test cases, followed by the input data for each test case. The first line of each test case contains a single integer n (1 <= n <= 100), the number of given strings, followed by n lines, each representing one string of minimum length 1 and maximum length 100. There is no extra white space before and after a string. 
+ 
+
+Output
+ 
+
+ There should be one line per test case containing the length of the largest string found. 
+ 
+
+Sample Input
+
+2  
+3  
+ABCD  
+BCDFF  
+BRCD  
+2  
+rose  
+orchid 
+
+Sample Output
+
+2  
+2  
+
+Source
+ 
+
+ Tehran 2002 Preliminary
+ 
+
+ //搜索+字符串理
+ 
+
+ //学习strstr()+strncpy()+reverse()
+ 
+
+ //Source Code
+ 
+
+ #include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+ char ch[102][102];
+bool mark;
+int t,n;
+ void solve(char str[],int len,int nn)
+{
+       bool flag=true;
+       int i,lentemp;
+       char str1[102],str2[102];
+        if(nn==n+1)
+       {
+              mark=true;
+              printf("%d\n",len);
+              return;
+       }
+       lentemp=len;
+       while(lentemp)
+       {
+              flag=false;  
+              for(i=0;i<=len-lentemp;i++)
+              {
+                      strncpy(str1,str+i,lentemp);
+                      str1[lentemp]='\0';
+                      strcpy(str2,str1);
+                      reverse(str2,str2+lentemp);
+                      if(strstr(ch[nn],str1)||strstr(ch[nn],str2))
+                      {
+                             flag=true;
+                             break;
+                      }
+              }
+              if(flag)
+              {
+                      solve(str1,lentemp,nn+1);
+                      break;
+              }
+              lentemp--;
+       }
+       if(!flag) mark=false;
+       return;
+}
+ int main()
+{
+       int i,min_len;
+       char str[102];
+        scanf("%d",&t);
+       while(t--)
+       {
+              scanf("%d",&n);getchar();
+              min_len=INT_MAX;
+              for(i=1;i<=n;i++)
+              {
+                      scanf("%s",ch[i]);
+                      int len=strlen(ch[i]);
+                      if(len<min_len)
+                      {
+                             min_len=len;
+                             strcpy(str,ch[i]);
+                      }
+              }
+              solve(str,min_len,1);
+              if(!mark)
+              printf("%d\n",0);
+       }
+       return 0;
+}
+

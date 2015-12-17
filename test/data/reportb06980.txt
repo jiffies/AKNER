@@ -1,0 +1,220 @@
+数据结构与算法学习之九【图论其他问题】HOJ 1303/POJ 1776 + HOJ 1115/POJ 1129 + HOJ 1266/POJ 1620_漫步在橙色夕阳下的路_新浪博客
+
+ 
+  HOJ 1303/POJ 1776 Task Sequences（比赛图构造哈密顿图）  
+ 
+
+传送门：http://acm.hit.edu.cn/hoj/problem/view?id=1303
+http://poj.org/problem?id=1776
+题意：Tom有一个machine，要做很多task，machine不能在多个task之间自由移动，只能从特定的task移动到它的后继，如果不存在后继，则要重启机器，请问怎样安排machine的工作流程，才能使得启动次数最少。
+输入：task的个数，还有可达矩阵，如果可达则为1，否则为0。
+输出：需要启动的次数(肯定为1)，每次启动的task个数(肯定为n)，然后task顺序。
+思路：此题为求比赛图的哈密顿路，由于此有向图中任意两点都有边，则该图必有哈密顿路。
+构造方法：
+初始：将点1加入没有边的路中。
+考虑点2。如果有（1，2），则将2加入1之后，形成1，2路，否则，将2加入1之前，形成2，1。
+依次考虑点3，4，5，……，i；设形成路a1，a2，a3，……，ai；现在将i+1加入此路，如果有（i+1，a1)，则将i+1加入a1之前；否则，有（a1，i+1)，如果有（i+1，a2),则将i+1加入a1和a2之间；否则，考虑（a2,i+1)………。直到最后，如果有(ai,i+1),则将i+1加入ai之后。
+程序：
+ 
+
+ #include <iostream>
+ #include <deque>
+ using namespace std;
+ const int MAX = 1024;
+ int main() {
+     deque<int> q;
+     bool map[MAX][MAX];
+     int n;
+     while (cin >> n) {
+         for (int i = 0; i < n; i++) {
+             for (int j = 0; j < n; j++) {
+                 cin >> map[i][j];
+             }
+         }
+         q.clear();
+         q.push_front(0);
+         for (int i = 1; i < n; i++) {
+             if (map[i][q.front()]) {
+                 q.push_front(i);
+             } else if (map[q.back()][i]) {
+                 q.push_back(i);
+             } else {
+                 deque<int>::iterator iter;
+                 bool first = true;
+                 for (iter = q.begin(); iter != q.end(); iter++) {
+                     if (!map[*iter][i] && !first) {
+                         break;
+                     } else {
+                         first = !map[*iter][i];
+                     }
+                 }
+                 q.insert(iter, i);
+             }
+         }
+         cout << 1 << endl << n << endl;
+         bool first = true;
+         for (deque<int>::iterator iter = q.begin(); iter != q.end(); iter++) {
+             if (first) {
+                 first = false;
+                 cout << *iter + 1;
+             } else {
+                 cout << " " << *iter + 1;
+             }
+         }
+         cout << endl;
+     }
+     return 0;
+ }
+
+ 
+ 
+  HOJ 1115/POJ 1129 Channel Allocation（染色问题+四色定理）  
+ 
+
+传送门：http://acm.hit.edu.cn/hoj/problem/view?id=1115
+http://poj.org/problem?id=1129
+题意：染色问题，相邻的repeater之间不能用相同的颜色。
+输入：邻接表。
+输出：最少需要的颜色（注意单数和复数形式）。
+思路：最多用四种颜色即可，用DFS进行枚举即可。
+程序：
+ 
+
+ #include <iostream>
+ #include <cstring>
+ using namespace std;
+ const int MAX = 26;
+ int n, color[MAX];
+ bool map[MAX][MAX];
+ void init() {
+     memset(map, false, sizeof(map));
+ }
+ bool check(int v) {
+     for (int i = 0; i < n; i++) {
+         if (map[v][i] && color[v] == color[i]) {
+             return false;
+         }
+     }
+     return true;
+ }
+ bool DFS(int v, int c) {
+     if (c == 4 || v >= n) {
+         return true;
+     }
+     for (int i = 1; i <= c; i++) {
+         color[v] = i;
+         if (check(v)) {
+             if (DFS(v + 1, c)) {
+                 return true;
+             }
+         }
+         color[v] = 0;
+     }
+     return false;
+ }
+ int main() {
+     while (cin >> n && n) {
+         init();
+         for (int i = 0; i < n; i++) {
+             string s;
+             cin >> s;
+             for (int j = 2; j < (int)s.length(); j++) {
+                 map[s[0] - 'A'][s[j] - 'A'] = map[s[j] - 'A'][s[0] - 'A'] = true;
+             }
+         }
+         for (int i = 1; i <= 4; i++) {
+             memset(color, 0, sizeof(color));
+             if (DFS(0, i)) {
+                 if (i == 1) {
+                     cout << "1 channel needed." << endl;
+                 } else {
+                     cout << i << " channels needed." << endl;
+                 }
+                 break;
+             }
+         }
+     }
+     return 0;
+ }
+
+ 
+ 
+  HOJ 1266/POJ 1620 Phone Home（染色问题+四色定理）  
+ 
+
+传送门：http://acm.hit.edu.cn/hoj/problem/view?id=1266
+http://poj.org/problem?id=1620
+题意：还是染色问题，就是改成频率，距离在20以内的就是算邻居。
+输入：每个Tower的坐标。
+输出：最少需要的颜色。
+思路：还是DFS，枚举四种颜色即可。
+ 
+程序： 
+
+ #include <iostream>
+ #include <cstring>
+ using namespace std;
+ const int MAX = 12;
+ class Tower {
+ public:
+     double x, y;
+     void set() {
+         cin >> x >> y;
+     }
+     bool near(const Tower& t) const {
+         return ((x - t.x) * (x - t.x) + (y - t.y) * (y - t.y)) <= 20 * 20;
+     }
+ };
+ int n, no = 0, color[MAX];
+ bool map[MAX][MAX];
+ Tower tower[MAX];
+ void init() {
+     memset(map, false, sizeof(map));
+ }
+ bool check(int v) {
+     for (int i = 0; i < n; i++) {
+         if (map[v][i] && color[v] == color[i]) {
+             return false;
+         }
+     }
+     return true;
+ }
+ bool DFS(int v, int c) {
+     if (c == 4 || v >= n) {
+         return true;
+     }
+     for (int i = 1; i <= c; i++) {
+         color[v] = i;
+         if (check(v)) {
+             if (DFS(v + 1, c)) {
+                 return true;
+             }
+         }
+         color[v] = 0;
+     }
+     return false;
+ }
+ int main() {
+     while (cin >> n && n) {
+         init();
+         for (int i = 0; i < n; i++) {
+             tower[i].set();
+         }
+         for (int i = 0; i < n - 1; i++) {
+             for (int j = i + 1; j < n; j++) {
+                 if (tower[i].near(tower[j])) {
+                     map[i][j] = map[j][i] = true;
+                 }
+             }
+         }
+         for (int i = 1; i <= 4; i++) {
+             memset(color, 0, sizeof(color));
+             if (DFS(0, i)) {
+                 cout << "The towers in case " << ++no << " can be covered in " << i << " frequencies." << endl;
+                 break;
+             }
+         }
+     }
+     return 0;
+ }
+

@@ -1,0 +1,70 @@
+HDU 2517 (PKU 1191) 棋盘分割_Hurricane_百度空间
+
+http://acm.hdu.edu.cn/showproblem.php?pid=2517
+http://poj.org/problem?id=1191
+#include<stdio.h>
+#include<math.h>
+const int INF = 2000000000;
+int f[9][9][9][9][15];
+int s[9][9][9][9];
+int d[9][9];
+void init()//初始化 将s[x1][y1][x2][y2]保存一个“矩形面积”范围的格子值之和，
+               //若x1=x2,y1=y2表示s[x1][y1][x2][y2]所保存的值是一个格子的值
+{
+ int x1,y1,x2,y2;
+ int i,j,sum;
+ for(x1=1;x1<=8;x1++)
+  for(y1=1;y1<=8;y1++)
+   for(x2=x1;x2<=8;x2++)
+    for(y2=y1;y2<=8;y2++)
+    {
+     sum=0;
+     for(i=x1;i<=x2;i++)
+      for(j=y1;j<=y2;j++)
+       sum+=d[i][j];// 求矩形框每个格子值的和
+    s[x1][y1][x2][y2]=sum;
+    f[x1][y1][x2][y2][1]=sum*sum;//保存sum的平方值
+   }
+}
+int main()
+{
+ int n,i,j,k;
+ int x1,y1,x2,y2;
+ int a,b,t,tmp;
+ double p=0;
+ scanf("%d",&n);
+ for(i=1;i<=8;i++)
+   for(j=1;j<=8;j++)
+    {
+     scanf("%d",&d[i][j]);
+     p+=d[i][j];//所有格子值的和
+   }
+   p/=n;//求平均值
+   init();
+   for(k=2;k<=n;k++)//分割N-1次
+   {
+    for(x1=1;x1<=8;x1++)
+     for(y1=1;y1<=8;y1++)
+      for(x2=x1;x2<=8;x2++)
+       for(y2=y1;y2<=8;y2++)
+       {
+          tmp=INF;
+          for(a=x1;a<x2;a++)//水平方向切割
+          {
+           t=f[x1][y1][a][y2][k-1]+s[a+1][y1][x2][y2]*s[a+1][y1][x2][y2];
+           if(tmp>t) tmp=t;
+           t=f[a+1][y1][x2][y2][k-1]+s[x1][y1][a][y2]*s[x1][y1][a][y2];
+          if(tmp>t)  tmp=t;
+          }
+         for(b=y1;b<y2;b++)//竖直方向切割
+        {
+          t=f[x1][y1][x2][b][k-1]+s[x1][b+1][x2][y2]*s[x1][b+1][x2][y2];
+         if(tmp>t) tmp=t;
+         t=f[x1][b+1][x2][y2][k-1]+s[x1][y1][x2][b]*s[x1][y1][x2][b];
+         if(tmp>t) tmp=t;
+         }
+        f[x1][y1][x2][y2][k]=tmp;
+       }
+   }
+  printf("%.3lf\n",sqrt((double)(f[1][1][8][8][n])/(double)(n)-p*p));
+}

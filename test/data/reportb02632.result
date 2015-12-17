@@ -1,0 +1,1848 @@
+POJ2886	eng	N	Y	O	B-OJ
+
+Who	eng	N	N	O	O
+
+Gets	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+Most	eng	N	N	O	O
+
+Candies	eng	N	N	O	O
+?	x	N	N	O	O
+
+线段	n	Y	N	O	B-KNOWLEDGE
+树	n	N	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+约瑟夫	nrt	Y	N	O	B-KNOWLEDGE
++	x	N	N	O	O
+反	v	N	N	O	B-KNOWLEDGE
+素数	n	Y	N	O	I-KNOWLEDGE
+
+-	x	N	N	O	O
+
+Albafica	eng	N	N	O	O
+_	x	N	N	O	O
+iCpc	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+线段	n	Y	N	O	B-KNOWLEDGE
+树	n	N	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+约瑟夫	nrt	Y	N	O	B-KNOWLEDGE
++	x	N	N	O	O
+反	v	N	N	O	B-KNOWLEDGE
+素数	n	Y	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+用	p	N	N	O	O
+线段	n	Y	N	O	O
+数	m	N	N	O	O
+跟	p	N	N	O	O
+新	a	N	N	O	O
+队伍	n	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+人数	n	N	N	O	O
+。	x	N	N	O	O
+
+每次	r	N	N	O	O
+查询	v	N	N	O	O
+将要	d	N	N	O	O
+出队	n	N	N	O	O
+的	uj	N	N	O	O
+人	n	N	N	O	O
+在	p	N	N	O	O
+当前	t	N	N	O	O
+队伍	n	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+位置	v	N	N	O	O
+。	x	N	N	O	O
+
+在	p	N	N	O	O
+通过	p	N	N	O	O
+将要	d	N	N	O	O
+移动	vn	N	N	O	O
+的	uj	N	N	O	O
+位置	v	N	N	O	O
+，	x	N	N	O	O
+找出	v	Y	N	O	O
+下	f	N	N	O	O
+一个	m	N	N	O	O
+位置	v	N	N	O	O
+。	x	N	N	O	O
+
+通过	p	N	N	O	O
+这一	r	N	N	O	O
+题	n	N	N	O	O
+知道	v	N	N	O	O
+了反	v	N	N	O	O
+素数	n	Y	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+ORZ	eng	N	N	O	O
+
+膜拜	v	N	N	O	O
+众	ng	N	N	O	O
+神	n	N	N	O	O
+犇	zg	N	N	O	O
+
+Who	eng	N	N	O	O
+
+Gets	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+Most	eng	N	N	O	O
+
+Candies	eng	N	N	O	O
+?	x	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+5000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+131072	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+6075	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+1752	m	N	N	O	O
+
+Case	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+2000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Description	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+children	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+sitting	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+circle	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+play	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+game	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+children	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+numbered	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+clockwise	eng	N	N	O	O
+
+order	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+card	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+non	eng	N	N	O	O
+-	x	N	N	O	O
+zero	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+his	eng	N	N	O	O
+/	x	N	N	O	O
+her	eng	Y	N	O	O
+
+hand	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+game	eng	N	N	O	O
+
+starts	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+theK	eng	N	N	O	O
+-	x	N	N	O	O
+th	eng	N	N	O	O
+
+child	eng	N	N	O	O
+,	x	N	N	O	O
+
+who	eng	N	N	O	O
+
+tells	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+others	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+card	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+jumps	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+circle	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+card	eng	N	N	O	O
+
+tells	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+jump	eng	N	N	O	O
+
+out	eng	N	N	O	O
+.	m	N	N	O	O
+
+LetA	eng	N	N	O	O
+
+denote	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+.	m	N	N	O	O
+
+IfA	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+positive	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+theA	eng	N	N	O	O
+-	x	N	N	O	O
+th	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+left	eng	N	N	O	O
+.	m	N	N	O	O
+
+IfA	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+negative	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+(	x	N	N	O	O
+?	x	N	N	O	O
+A	x	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+th	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+right	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+game	eng	N	N	O	O
+
+lasts	eng	N	N	O	O
+
+until	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+children	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+jumped	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+circle	eng	N	N	O	O
+.	m	N	N	O	O
+
+During	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+game	eng	N	N	O	O
+,	x	N	N	O	O
+
+thep	eng	N	N	O	O
+-	x	N	N	O	O
+th	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+jumping	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+getF	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+candies	eng	N	N	O	O
+
+where	eng	N	N	O	O
+
+F	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+perfectly	eng	N	N	O	O
+
+dividep	eng	N	N	O	O
+.	m	N	N	O	O
+
+Who	eng	N	N	O	O
+
+gets	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+most	eng	N	N	O	O
+
+candies	eng	N	N	O	O
+?	x	N	N	O	O
+
+Input	eng	N	N	O	O
+
+There	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+several	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+starts	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+(	x	N	N	O	O
+0	x	N	N	O	O
+
+<	x	N	N	O	O
+
+N	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+500	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+)	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+K	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+K	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+nextN	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+names	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+children	eng	N	N	O	O
+
+(	x	N	N	O	O
+consisting	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+most	eng	N	N	O	O
+
+10	m	N	N	O	O
+
+letters	eng	N	N	O	O
+)	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+(	x	N	N	O	O
+non	eng	N	N	O	O
+-	x	N	N	O	O
+zero	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+magnitudes	eng	N	N	O	O
+
+within	eng	N	N	O	O
+
+108	m	N	N	O	O
+)	x	N	N	O	O
+
+on	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+cards	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+increasing	eng	N	N	O	O
+
+order	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+children	eng	N	N	O	O
+’	x	N	N	O	O
+s	x	N	N	O	O
+
+numbers	eng	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+name	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+integer	eng	N	N	O	O
+
+separated	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+space	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+leading	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+trailing	eng	N	N	O	O
+
+spaces	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+name	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+luckiest	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+candies	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+/	x	N	N	O	O
+she	eng	N	N	O	O
+
+gets	eng	N	N	O	O
+.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+ties	eng	N	N	O	O
+
+occur	eng	N	N	O	O
+,	x	N	N	O	O
+
+always	eng	N	N	O	O
+
+choose	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+child	eng	N	N	O	O
+
+who	eng	N	N	O	O
+
+jumps	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+circle	eng	N	N	O	O
+
+first	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+2	x	N	N	O	O
+
+Tom	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+Jack	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+Mary	eng	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+Sam	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Sam	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iterator	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+lson	eng	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+rson	eng	N	N	O	O
+
+m	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+r	x	N	N	O	O
+,	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+|	x	N	N	O	O
+1	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAXN	eng	N	N	O	O
+
+600020	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+37	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+6	x	N	N	O	O
+,	x	N	N	O	O
+12	m	N	N	O	O
+,	x	N	N	O	O
+24	m	N	N	O	O
+,	x	N	N	O	O
+36	m	N	N	O	O
+,	x	N	N	O	O
+48	m	N	N	O	O
+,	x	N	N	O	O
+60	m	N	N	O	O
+,	x	N	N	O	O
+120	m	N	N	O	O
+,	x	N	N	O	O
+180	m	N	N	O	O
+,	x	N	N	O	O
+240	m	N	N	O	O
+,	x	N	N	O	O
+360	m	N	N	O	O
+,	x	N	N	O	O
+720	m	N	N	O	O
+,	x	N	N	O	O
+840	m	N	N	O	O
+,	x	N	N	O	O
+1260	m	N	N	O	O
+,	x	N	N	O	O
+1680	m	N	N	O	O
+,	x	N	N	O	O
+2520	m	N	N	O	O
+,	x	N	N	O	O
+5040	m	N	N	O	O
+,	x	N	N	O	O
+7560	m	N	N	O	O
+,	x	N	N	O	O
+10080	m	N	N	O	O
+,	x	N	N	O	O
+15120	m	N	N	O	O
+,	x	N	N	O	O
+20160	m	N	N	O	O
+,	x	N	N	O	O
+25200	m	N	N	O	O
+,	x	N	N	O	O
+27720	m	N	N	O	O
+,	x	N	N	O	O
+45360	m	N	N	O	O
+,	x	N	N	O	O
+50400	m	N	N	O	O
+,	x	N	N	O	O
+55440	m	N	N	O	O
+,	x	N	N	O	O
+83160	m	N	N	O	O
+,	x	N	N	O	O
+110880	m	N	N	O	O
+,	x	N	N	O	O
+166320	m	N	N	O	O
+,	x	N	N	O	O
+221760	m	N	N	O	O
+,	x	N	N	O	O
+277200	m	N	N	O	O
+,	x	N	N	O	O
+332640	m	N	N	O	O
+,	x	N	N	O	O
+498960	m	N	N	O	O
+,	x	N	N	O	O
+500001	m	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+37	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+6	x	N	N	O	O
+,	x	N	N	O	O
+8	x	N	N	O	O
+,	x	N	N	O	O
+9	x	N	N	O	O
+,	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+12	m	N	N	O	O
+,	x	N	N	O	O
+16	m	N	N	O	O
+,	x	N	N	O	O
+18	m	N	N	O	O
+,	x	N	N	O	O
+20	m	N	N	O	O
+,	x	N	N	O	O
+24	m	N	N	O	O
+,	x	N	N	O	O
+30	m	N	N	O	O
+,	x	N	N	O	O
+32	m	N	N	O	O
+,	x	N	N	O	O
+36	m	N	N	O	O
+,	x	N	N	O	O
+40	m	N	N	O	O
+,	x	N	N	O	O
+48	m	N	N	O	O
+,	x	N	N	O	O
+60	m	N	N	O	O
+,	x	N	N	O	O
+64	m	N	N	O	O
+,	x	N	N	O	O
+72	m	N	N	O	O
+,	x	N	N	O	O
+80	m	N	N	O	O
+,	x	N	N	O	O
+84	m	N	N	O	O
+,	x	N	N	O	O
+90	m	N	N	O	O
+,	x	N	N	O	O
+96	m	N	N	O	O
+,	x	N	N	O	O
+100	m	N	N	O	O
+,	x	N	N	O	O
+108	m	N	N	O	O
+,	x	N	N	O	O
+120	m	N	N	O	O
+,	x	N	N	O	O
+128	m	N	N	O	O
+,	x	N	N	O	O
+144	m	N	N	O	O
+,	x	N	N	O	O
+160	m	N	N	O	O
+,	x	N	N	O	O
+168	m	N	N	O	O
+,	x	N	N	O	O
+180	m	N	N	O	O
+,	x	N	N	O	O
+192	m	N	N	O	O
+,	x	N	N	O	O
+200	m	N	N	O	O
+,	x	N	N	O	O
+1314521	m	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+m2	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+20	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+push	eng	N	N	O	O
+_	x	N	N	O	O
+up	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+|	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+build	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+l	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+m2	eng	N	N	O	O
+[	x	N	N	O	O
+l	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+l	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+l	eng	N	N	O	O
++	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+build	eng	N	N	O	O
+(	x	N	N	O	O
+lson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+build	eng	N	N	O	O
+(	x	N	N	O	O
+rson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+push	eng	N	N	O	O
+_	x	N	N	O	O
+up	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+query	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+l	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+l	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+l	eng	N	N	O	O
++	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+query	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+lson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+p	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+query	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+rson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+l	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+root	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+l	eng	N	N	O	O
++	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+lson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+rson	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+push	eng	N	N	O	O
+_	x	N	N	O	O
+up	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+search	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+l	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+h	x	N	N	O	O
+=	x	N	N	O	O
+37	m	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+l	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+h	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+l	eng	N	N	O	O
++	x	N	N	O	O
+h	eng	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+m	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+h	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+l	x	N	N	O	O
+=	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+m	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+h	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+tag	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+num	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+temp	eng	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+位置	v	N	N	O	O
+为	p	N	N	O	O
+s	eng	N	N	O	O
+
+的	uj	N	N	O	O
+人	n	N	N	O	O
+出队	v	N	N	O	O
+
+，	x	N	N	O	O
+更新	d	N	N	O	O
+线段	n	Y	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+判断	v	Y	N	O	O
+当前	t	N	N	O	O
+出队	n	N	N	O	O
+数	n	N	N	O	O
+是否	v	N	N	O	O
+为	p	N	N	O	O
+目标	n	N	N	O	O
+的	uj	N	N	O	O
+反	vn	N	N	O	B-KNOWLEDGE
+素数	n	Y	N	O	I-KNOWLEDGE
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+m2	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+tag	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+<	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+利用	n	N	N	O	O
+取模	n	Y	N	O	O
+运算	vn	Y	N	O	O
+，	x	N	N	O	O
+找出	v	Y	N	O	O
+下	f	N	N	O	O
+一个	m	N	N	O	O
+出队	n	N	N	O	O
+的	uj	N	N	O	O
+人	n	N	N	O	O
+是	v	N	N	O	O
+当前	t	N	N	O	O
+队伍	n	N	N	O	O
+中	f	N	N	O	O
+第几个	m	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+pos	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+pos	eng	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+<	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+注意	v	N	N	O	O
+负数	n	N	N	O	O
+
+x	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+x	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+query	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+查找	v	Y	N	O	O
+位置	v	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+出队	n	N	N	O	O
+，	x	N	N	O	O
+更新	d	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+build	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tag	eng	N	N	O	O
+=	x	N	N	O	O
+search	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+用	p	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+找出	v	Y	N	O	O
+目标	n	N	N	O	O
+的	uj	N	N	O	O
+反	vn	N	N	O	B-KNOWLEDGE
+素数	n	Y	N	O	I-KNOWLEDGE
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+tag	eng	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+tag	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

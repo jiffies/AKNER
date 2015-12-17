@@ -1,0 +1,1217 @@
+pku	eng	N	Y	O	B-OJ
+
+1170	m	N	N	O	I-OJ
+[	x	N	N	O	O
+状态	n	Y	N	O	O
+Dp	eng	N	N	O	B-KNOWLEDGE
+]	x	N	N	O	O
+
+记忆	n	Y	N	O	B-KNOWLEDGE
+化	n	N	N	O	I-KNOWLEDGE
+搜索	v	Y	N	O	I-KNOWLEDGE
+
+-	x	N	N	O	O
+
+MickJack	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+题目	n	Y	N	O	O
+连接	v	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+pku	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+JudgeOnline	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1170	m	N	N	O	O
+
+题目	n	Y	N	O	O
+大意	d	N	N	O	O
+：	x	N	N	O	O
+一个	m	N	N	O	O
+篮子	n	N	N	O	O
+里面	f	N	N	O	O
+有	v	N	N	O	O
+pNums	eng	N	N	O	O
+中	ns	N	N	O	O
+商品	n	N	N	O	O
+，	x	N	N	O	O
+每种	r	N	N	O	O
+商品	n	N	N	O	O
+在	p	N	N	O	O
+1	m	N	N	O	O
+~	x	N	N	O	O
+999	m	N	N	O	O
+中	f	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+编号	n	N	N	O	O
+id	eng	N	N	O	O
+，	x	N	N	O	O
+每	zg	N	N	O	O
+一种	m	N	N	O	O
+商品	n	N	N	O	O
+有	v	N	N	O	O
+Num	eng	N	N	O	O
+个	m	N	N	O	O
+，	x	N	N	O	O
+每个	r	N	N	O	O
+的	uj	N	N	O	O
+价格	n	N	N	O	O
+为	p	N	N	O	O
+price	eng	N	N	O	O
+；	x	N	N	O	O
+现在	t	N	N	O	O
+推出	v	N	N	O	O
+一系列	m	N	N	O	O
+的	uj	N	N	O	O
+优惠	vn	N	N	O	O
+策略	n	N	N	O	O
+来	v	N	N	O	O
+吸引	v	N	N	O	O
+顾客	nr	N	N	O	O
+。	x	N	N	O	O
+
+把	p	N	N	O	O
+一种	m	N	N	O	O
+商品	n	N	N	O	O
+的	uj	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+或	c	N	N	O	O
+几种	m	N	N	O	O
+商品	n	N	N	O	O
+的	uj	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+组合	v	Y	N	O	O
+在	p	N	N	O	O
+一起	m	N	N	O	O
+作为	v	N	N	O	O
+一种	m	N	N	O	O
+策略	n	N	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+case	eng	N	N	O	O
+：	x	N	N	O	O
+
+2	x	N	N	O	O
+
+2	m	N	N	O	O
+中	ns	N	N	O	O
+商品	n	N	N	O	O
+
+最多	d	N	N	O	O
+5	m	N	N	O	O
+种	m	N	N	O	O
+
+7	x	N	N	O	O
+
+3	x	N	N	O	O
+
+2	x	N	N	O	O
+
+第一种	m	N	N	O	O
+商品	n	N	N	O	O
+
+8	x	N	N	O	O
+
+2	x	N	N	O	O
+
+5	x	N	N	O	O
+
+第	m	N	N	O	O
+2	m	N	N	O	O
+种	m	N	N	O	O
+商品	n	N	N	O	O
+
+2	x	N	N	O	O
+
+2	m	N	N	O	O
+中	ns	N	N	O	O
+优惠	vn	N	N	O	O
+策略	n	N	N	O	O
+
+1	x	N	N	O	O
+
+7	x	N	N	O	O
+
+3	x	N	N	O	O
+
+5	x	N	N	O	O
+
+第	m	N	N	O	O
+1	m	N	N	O	O
+中	ns	N	N	O	O
+优惠	vn	N	N	O	O
+策略	n	N	N	O	O
+
+2	x	N	N	O	O
+
+7	x	N	N	O	O
+
+1	x	N	N	O	O
+
+8	x	N	N	O	O
+
+2	x	N	N	O	O
+
+10	m	N	N	O	O
+
+第	m	N	N	O	O
+2	m	N	N	O	O
+种	m	N	N	O	O
+优惠	vn	N	N	O	O
+策略	n	N	N	O	O
+
+因为	c	N	N	O	O
+每件	d	N	N	O	O
+商品	n	N	N	O	O
+最多	d	N	N	O	O
+5	m	N	N	O	O
+件	q	N	N	O	O
+，	x	N	N	O	O
+最多	d	N	N	O	O
+5	m	N	N	O	O
+件	q	N	N	O	O
+商品	n	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+买	v	N	N	O	O
+这	r	N	N	O	O
+5	m	N	N	O	O
+种	m	N	N	O	O
+商品	n	N	N	O	O
+的	uj	N	N	O	O
+状态	n	Y	N	O	O
+最多	d	N	N	O	O
+有	v	N	N	O	O
+6	m	N	N	O	O
+^	x	N	N	O	O
+5	x	N	N	O	O
+,	x	N	N	O	O
+然后	c	N	N	O	O
+递归	v	Y	N	O	B-KNOWLEDGE
+到	v	N	N	O	O
+0	m	N	N	O	O
+状态	n	Y	N	O	O
+，	x	N	N	O	O
+求解	v	N	N	O	O
+出	v	N	N	O	O
+最优	d	N	N	O	O
+解	v	N	N	O	O
+。	x	N	N	O	O
+
+对	p	N	N	O	O
+每一件	l	N	N	O	O
+商品	n	N	N	O	O
+的	uj	N	N	O	O
+数目	n	N	N	O	O
+的	uj	N	N	O	O
+多少	m	N	N	O	O
+，	x	N	N	O	O
+最为	d	N	N	O	O
+一个	m	N	N	O	O
+状态	n	Y	N	O	O
+；	x	N	N	O	O
+
+那么	r	N	N	O	O
+将	d	N	N	O	O
+其	r	N	N	O	O
+对应	vn	N	N	O	O
+到	v	N	N	O	O
+相应	v	N	N	O	O
+十进制	j	N	N	O	O
+数	n	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+然后	c	N	N	O	O
+对	p	N	N	O	O
+状态	n	Y	N	O	O
+进行	v	N	N	O	O
+记忆	n	Y	N	O	B-KNOWLEDGE
+化	n	N	N	O	I-KNOWLEDGE
+搜索	v	Y	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+S	eng	N	N	O	O
+=	x	N	N	O	O
+10000	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+P	eng	N	N	O	O
+=	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+C	eng	N	N	O	O
+=	x	N	N	O	O
+100	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+inf	eng	N	N	O	O
+=	x	N	N	O	O
+10000000	m	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+product	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+code	eng	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+price	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+P	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+combline	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Nums	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+P	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Sumprice	eng	N	N	O	O
+;	x	N	N	O	O
+
+combline	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+Nums	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+Nums	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+C	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pNums	eng	N	N	O	O
+,	x	N	N	O	O
+cNums	eng	N	N	O	O
+,	x	N	N	O	O
+state	eng	N	N	O	O
+,	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+S	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+getid	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+code	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+code	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+code	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+To	eng	N	N	O	O
+_	x	N	N	O	O
+six	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+Curstate	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+Curstate	eng	N	N	O	O
+%	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+Curstate	eng	N	N	O	O
+/	x	N	N	O	O
+=	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+To	eng	N	N	O	O
+_	x	N	N	O	O
+ten	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+6	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+check	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+ReNum	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+Nums	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+ReNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+Nums	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dpslove	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+Curstate	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+Curstate	eng	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+Curstate	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+P	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+0	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+To	eng	N	N	O	O
+_	x	N	N	O	O
+six	eng	N	N	O	O
+(	x	N	N	O	O
+CurNum	eng	N	N	O	O
+,	x	N	N	O	O
+Curstate	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ReNum	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+_	x	N	N	O	O
+P	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+0	x	N	N	O	O
+}	x	N	N	O	O
+,	x	N	N	O	O
+Min	eng	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+cNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+check	eng	N	N	O	O
+(	x	N	N	O	O
+CurNum	eng	N	N	O	O
+,	x	N	N	O	O
+ReNum	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+Sumprice	eng	N	N	O	O
++	x	N	N	O	O
+dpslove	eng	N	N	O	O
+(	x	N	N	O	O
+To	eng	N	N	O	O
+_	x	N	N	O	O
+ten	eng	N	N	O	O
+(	x	N	N	O	O
+ReNum	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+<	x	N	N	O	O
+Min	eng	N	N	O	O
+)	x	N	N	O	O
+
+Min	eng	N	N	O	O
+=	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+res	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+Min	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+res	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+CurNum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+price	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+res	eng	N	N	O	O
+=	x	N	N	O	O
+Min	eng	N	N	O	O
+;	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+Curstate	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+res	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+res	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+pNums	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+state	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+pNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+code	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+price	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+state	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+6	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+products	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+cNums	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pair	eng	N	N	O	O
+,	x	N	N	O	O
+id	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+cNums	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+pair	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+pair	eng	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+id	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tempid	eng	N	N	O	O
+=	x	N	N	O	O
+getid	eng	N	N	O	O
+(	x	N	N	O	O
+id	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+Nums	eng	N	N	O	O
+[	x	N	N	O	O
+tempid	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+comblines	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+Sumprice	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+state	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+;	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+dpslove	eng	N	N	O	O
+(	x	N	N	O	O
+state	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+state	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

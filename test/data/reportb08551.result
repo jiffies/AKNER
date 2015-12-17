@@ -1,0 +1,1049 @@
+POJ3589	eng	N	Y	O	B-OJ
+_	x	N	N	O	O
+泛星	nz	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+Number	eng	N	N	O	O
+-	x	N	N	O	O
+guessing	eng	N	N	O	O
+
+Game	eng	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Larry	eng	N	N	O	O
+
+likes	eng	N	N	O	O
+
+playing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+-	x	N	N	O	O
+guessing	eng	N	N	O	O
+
+game	eng	N	N	O	O
+.	m	N	N	O	O
+
+Two	eng	N	N	O	O
+
+players	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+game	eng	N	N	O	O
+.	m	N	N	O	O
+
+Suppose	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+Y	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+presents	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+Y	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+guess	eng	N	N	O	O
+.	m	N	N	O	O
+
+Firstly	eng	N	N	O	O
+,	x	N	N	O	O
+
+X	x	N	N	O	O
+
+chooses	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+four	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+,	x	N	N	O	O
+
+keeping	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+mind	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+tells	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+start	eng	N	N	O	O
+
+guessing	eng	N	N	O	O
+.	m	N	N	O	O
+
+Every	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+has	eng	Y	N	O	O
+
+guessed	eng	N	N	O	O
+,	x	N	N	O	O
+
+X	x	N	N	O	O
+
+should	eng	N	N	O	O
+
+give	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+*	x	N	N	O	O
+A	x	N	N	O	O
+*	x	N	N	O	O
+B	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+show	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+how	eng	N	N	O	O
+
+close	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+answer	eng	N	N	O	O
+
+is	eng	N	N	O	O
+.	m	N	N	O	O
+
+Here	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+symbol	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+stands	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+before	eng	N	N	O	O
+
+A	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+Y	x	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+answer	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+both	eng	N	N	O	O
+
+correct	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+position	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+before	eng	N	N	O	O
+
+B	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+Y	x	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+answer	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+correct	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+but	eng	N	N	O	O
+
+incorrect	eng	N	N	O	O
+
+position	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+chooses	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+5204	m	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+guesses	eng	N	N	O	O
+
+4902	m	N	N	O	O
+,	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+should	eng	N	N	O	O
+
+give	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+1	m	N	N	O	O
+A2B	eng	N	N	O	O
+,	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+which	eng	N	N	O	O
+
+1	m	N	N	O	O
+A	eng	N	N	O	O
+
+corresponds	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+digit	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+both	eng	N	N	O	O
+
+correct	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+position	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+2	m	N	N	O	O
+B	eng	N	N	O	O
+
+corresponds	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+digit	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+correct	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+but	eng	N	N	O	O
+
+incorrect	eng	N	N	O	O
+
+position	eng	N	N	O	O
+.	m	N	N	O	O
+
+Then	eng	N	N	O	O
+
+Y	x	N	N	O	O
+
+will	eng	N	N	O	O
+
+go	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+guessing	eng	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+1	m	N	N	O	O
+A2B	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+presents	eng	N	N	O	O
+
+him	eng	N	N	O	O
+
+until	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+gets	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+totally	eng	N	N	O	O
+
+correct	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+5204	m	N	N	O	O
+
+(	x	N	N	O	O
+when	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+shows	eng	N	N	O	O
+
+him	eng	N	N	O	O
+
+4	m	N	N	O	O
+A0B	eng	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+Now	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+what	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+need	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+just	eng	N	N	O	O
+
+testing	eng	N	N	O	O
+
+how	eng	N	N	O	O
+
+close	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+are	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+integer	eng	N	N	O	O
+
+T	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+indicates	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+input	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+four	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+digits	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+output	eng	N	N	O	O
+
+*	x	N	N	O	O
+A	x	N	N	O	O
+*	x	N	N	O	O
+B	x	N	N	O	O
+
+stands	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+how	eng	N	N	O	O
+
+close	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+are	eng	N	N	O	O
+.	m	N	N	O	O
+
+　	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+5204	m	N	N	O	O
+
+4902	m	N	N	O	O
+
+0123	m	N	N	O	O
+
+3210	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+1	m	N	N	O	O
+A2B	eng	N	N	O	O
+
+0	m	N	N	O	O
+A4B	eng	N	N	O	O
+
+该	r	N	N	O	O
+题	n	N	N	O	O
+需注意	n	N	N	O	O
+可能	v	N	N	O	O
+会	v	N	N	O	O
+有	v	N	N	O	O
+数字	n	Y	N	O	O
+的	uj	N	N	O	O
+重复	d	Y	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+a1	eng	N	N	O	O
+,	x	N	N	O	O
+b1	eng	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a1	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+b1	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+11	m	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+a1	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+a1	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+a1	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+a1	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+b1	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+�	x	N	N	O	O
+�	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+a1	eng	N	N	O	O
+,	x	N	N	O	O
+b1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+

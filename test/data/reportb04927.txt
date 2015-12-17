@@ -1,0 +1,130 @@
+HDU3068 && PKU3974（回文算法manacher）_cchun_百度空间
+
+求字符串中包含的最长回文
+HDU3068
+/*
+name:cchun
+PROG:HDU3068
+algorithm:manacher
+*/
+#include<iostream>
+#include<string>
+#include<string.h>
+#define Min(a,b) a>b? b:a
+const int MAX=110005;
+using namespace std;
+char str2[MAX*3],str1[MAX];
+int nn;
+int rad[MAX*3];
+void init()
+{
+ int i;
+ str2[0]='$';
+ str2[1]='#';
+ int len1=strlen(str1);
+ for(i=0;i<len1;i++)
+  str2[i*2+2]=str1[i],str2[i*2+3]='#';
+ str2[(i-1)*2+4]='\0';
+ nn=(i-1)*2+4;
+}
+void manacher()
+{
+ int mx=0,id=0;
+ int len2=strlen(str2);
+ for(int i=1;i<nn;i++)
+ {
+  if(mx>i)
+   rad[i]=Min(rad[2*id-i],mx-i);
+  else
+   rad[i]=1;
+  for(;str2[i-rad[i]]==str2[i+rad[i]];rad[i]++)
+   ;
+  if(rad[i]+i>mx)
+  {
+   mx=rad[i]+i;
+   id=i;
+  }
+ }
+}
+int main(void)
+{
+ int i;
+ while(scanf("%s",str1)!=EOF)
+ {
+  init();//预处理
+  manacher();
+  int max=0;
+  int len2=strlen(str2);
+  for(i=0;i<nn;i++)
+  {
+   if(max<rad[i])
+    max=rad[i];
+  }
+  cout<<max-1<<endl;
+ }
+ return 0;
+}
+PKU3974
+/*
+name:cchun
+PROG:PKU3974
+algorithm:manacher
+*/
+#include<iostream>
+#include<string>
+#include<string.h>
+#define Min(a,b) a>b? b:a
+const int MAX=1000005;
+using namespace std;
+char str2[MAX*3],str1[MAX];
+int nn;
+int rad[MAX*3];
+void init()
+{
+ int i;
+ str2[0]='$';
+ str2[1]='#';
+ int len1=strlen(str1);
+ for(i=0;i<len1;i++)
+  str2[i*2+2]=str1[i],str2[i*2+3]='#';
+ str2[(i-1)*2+4]='\0';
+ nn=(i-1)*2+4;
+}
+void manacher()
+{
+ int mx=0,id=0;
+ int len2=strlen(str2);
+ for(int i=1;i<nn;i++)
+ {
+  if(mx>i)
+   rad[i]=Min(rad[2*id-i],mx-i);
+  else
+   rad[i]=1;
+  for(;str2[i-rad[i]]==str2[i+rad[i]];rad[i]++)
+   ;
+  if(rad[i]+i>mx)
+  {
+   mx=rad[i]+i;
+   id=i;
+  }
+ }
+}
+int main(void)
+{
+ int i,cas_c=1;
+ while(scanf("%s",str1),strcmp(str1,"END"))
+ {
+  cout<<"Case "<<cas_c++<<": ";
+  init();//预处理
+  manacher();
+  int max=0;
+  int len2=strlen(str2);
+  for(i=0;i<nn;i++)
+  {
+   if(max<rad[i])
+    max=rad[i];
+  }
+  cout<<max-1<<endl;
+ }
+ return 0;
+}

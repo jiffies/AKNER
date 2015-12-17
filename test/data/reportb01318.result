@@ -1,0 +1,403 @@
+FOJ	eng	N	N	O	O
+
+1000	m	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+1000	m	N	N	O	O
+
+FJNU	eng	N	N	O	O
+
+1000	m	N	N	O	O
+
+A	x	N	N	O	O
+
+B	x	N	N	O	O
+
+Problem	eng	N	N	O	O
+_	x	N	N	O	O
+乐吾天	nr	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Calculate	eng	N	N	O	O
+
+a	x	N	N	O	O
+
++	x	N	N	O	O
+
+b	x	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+consist	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+series	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+pairs	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+separated	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+space	eng	N	N	O	O
+,	x	N	N	O	O
+
+one	eng	N	N	O	O
+
+pair	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+per	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+pair	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+b	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+b	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+,	x	N	N	O	O
+and	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+52	m	N	N	O	O
+
+3	m	N	N	O	O
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+65	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+<	x	N	N	O	O
+?	x	N	N	O	O
+xml	eng	N	N	O	O
+:	x	N	N	O	O
+namespace	eng	N	N	O	O
+
+prefix	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+o	x	N	N	O	O
+
+ns	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+urn	eng	N	N	O	O
+:	x	N	N	O	O
+schemas	eng	N	N	O	O
+-	x	N	N	O	O
+microsoft	eng	N	N	O	O
+-	x	N	N	O	O
+com	eng	N	N	O	O
+:	x	N	N	O	O
+office	eng	N	N	O	O
+:	x	N	N	O	O
+office	eng	N	N	O	O
+"	x	N	N	O	O
+
+/	x	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+还记	v	N	N	O	O
+的	uj	N	N	O	O
+第一次	m	N	N	O	O
+写	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+不	d	N	N	O	O
+知道	v	N	N	O	O
+什么	r	N	N	O	O
+EOF	eng	N	N	O	O
+..	m	N	N	O	O
+Orz	eng	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+hi	eng	N	N	O	O
+.	m	N	N	O	O
+baidu	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+lewutian	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+推荐	v	N	N	O	O
+文章	n	N	N	O	O
+:	x	N	N	O	O
+
+1.	m	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+OJ	eng	N	N	O	O
+
+1019	m	N	N	O	O
+
+Number	eng	N	N	O	O
+
+Sequence	eng	N	N	O	O
+
+2.	m	N	N	O	O
+
+pku	eng	N	Y	O	B-OJ
+
+1166	m	N	N	O	I-OJ
+[	x	N	N	O	O
+回溯	v	Y	N	O	B-KNOWLEDGE
+]	x	N	N	O	O
+
+3.	m	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+2329	m	N	N	O	I-OJ
+
+4.	m	N	N	O	O
+
+pku	eng	N	Y	O	B-OJ
+
+1160	m	N	N	O	I-OJ
+
+Post	eng	N	N	O	O
+
+Office	eng	N	N	O	O
+
+5.	m	N	N	O	O
+
+Pku	eng	N	Y	O	B-OJ
+
+acm	eng	N	N	O	O
+
+2492	m	N	N	O	O
+
+A	x	N	N	O	O
+
+Bug	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+Life	eng	N	N	O	O
+数据结构	n	N	N	O	O
+题目	n	Y	N	O	O
+解题	n	N	N	O	O
+报告	n	N	N	O	O
+(	x	N	N	O	O
+十	m	N	N	O	O
+)	x	N	N	O	O
+
+6.	m	N	N	O	O
+
+pku	eng	N	Y	O	B-OJ
+
+2385	m	N	N	O	I-OJ
+
+Apple	eng	N	N	O	O
+
+Catching	eng	N	N	O	O
+
+7.	m	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+1011	m	N	N	O	I-OJ
+
+Sticks	eng	N	N	O	O
+
+8.	m	N	N	O	O
+
+pku	eng	N	Y	O	B-OJ
+
+3378	m	N	N	O	I-OJ
+（	x	N	N	O	O
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
+实现	v	N	N	O	O
+）	x	N	N	O	O
+
+9.	m	N	N	O	O
+
+pku	eng	N	Y	O	B-OJ
+
+1057	m	N	N	O	I-OJ
+
+文件	n	N	N	O	O
+结构	n	Y	N	O	O
+问题	n	N	N	O	O
+
+10.	m	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+1002	m	N	N	O	O
+
+487	m	N	N	O	O
+

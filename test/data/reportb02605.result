@@ -1,0 +1,1527 @@
+POJ	eng	N	Y	O	B-OJ
+
+1129	m	N	N	O	I-OJ
+
+Channel	eng	N	N	O	O
+
+Allocation	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+c++	nz	N	N	O	O
+语言	n	N	N	O	O
+程序开发	nr	N	N	O	O
+技术	n	N	N	O	O
+文章	n	N	N	O	O
+_	x	N	N	O	O
+c++	nz	N	N	O	O
+编程	n	N	N	O	O
+
+-	x	N	N	O	O
+
+红	a	N	N	O	O
+黑	a	N	N	O	O
+联盟	j	N	N	O	O
+
+Channel	eng	N	N	O	O
+
+Allocation	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+10300	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+5245	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+When	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+radio	eng	N	N	O	O
+
+station	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+broadcasting	eng	N	N	O	O
+
+over	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+very	eng	N	N	O	O
+
+large	eng	N	N	O	O
+
+area	eng	N	N	O	O
+,	x	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+used	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+retransmit	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+signal	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+every	eng	N	N	O	O
+
+receiver	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+strong	eng	N	N	O	O
+
+signal	eng	N	N	O	O
+.	m	N	N	O	O
+
+However	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+used	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+carefully	eng	N	N	O	O
+
+chosen	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+nearby	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+interfere	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+another	eng	N	N	O	O
+.	m	N	N	O	O
+
+This	eng	N	N	O	O
+
+condition	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+satisfied	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+use	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+.	m	N	N	O	O
+
+Since	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+radio	eng	N	N	O	O
+
+frequency	eng	N	N	O	O
+
+spectrum	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+precious	eng	N	N	O	O
+
+resource	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+required	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+given	eng	N	N	O	O
+
+network	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+minimised	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+write	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+program	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+reads	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+description	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+network	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+determines	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+minimum	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+required	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+maps	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+networks	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+map	eng	N	N	O	O
+
+begins	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+.	m	N	N	O	O
+
+This	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+between	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+26	m	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+referred	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+consecutive	eng	N	N	O	O
+
+upper	eng	N	N	O	O
+-	x	N	N	O	O
+case	eng	N	N	O	O
+
+letters	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+alphabet	eng	N	N	O	O
+
+starting	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+A	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+ten	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+would	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+names	eng	N	N	O	O
+
+A	x	N	N	O	O
+,	x	N	N	O	O
+B	x	N	N	O	O
+,	x	N	N	O	O
+C	x	N	N	O	O
+,	x	N	N	O	O
+...	m	N	N	O	O
+,	x	N	N	O	O
+I	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+J	eng	N	N	O	O
+.	m	N	N	O	O
+
+A	x	N	N	O	O
+
+network	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+zero	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+indicates	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+
+Following	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+list	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+adjacency	eng	N	N	O	O
+
+relationships	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+form	eng	N	N	O	O
+:	x	N	N	O	O
+
+A	x	N	N	O	O
+:	x	N	N	O	O
+BCDH	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+indicates	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+B	x	N	N	O	O
+,	x	N	N	O	O
+
+C	x	N	N	O	O
+,	x	N	N	O	O
+
+D	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+H	x	N	N	O	O
+
+are	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+A	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+describes	eng	N	N	O	O
+
+those	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+A	x	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+second	eng	N	N	O	O
+
+those	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+B	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+all	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+repeater	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+other	eng	N	N	O	O
+,	x	N	N	O	O
+
+its	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+A	x	N	N	O	O
+:	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+listed	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+alphabetical	eng	N	N	O	O
+
+order	eng	N	N	O	O
+.	m	N	N	O	O
+
+Note	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+adjacency	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+symmetric	eng	N	N	O	O
+
+relationship	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+A	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+B	x	N	N	O	O
+,	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+B	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+necessarily	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+A	eng	N	N	O	O
+.	m	N	N	O	O
+
+Also	eng	N	N	O	O
+,	x	N	N	O	O
+
+since	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+lie	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+plane	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+graph	eng	N	N	O	O
+
+formed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+connecting	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+segments	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+cross	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+map	eng	N	N	O	O
+
+(	x	N	N	O	O
+except	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+final	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+repeaters	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+print	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+minumum	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+adjacent	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+interfere	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+sample	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+shows	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+format	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Take	eng	N	N	O	O
+
+care	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+channels	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+singular	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+when	eng	N	N	O	O
+
+only	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+channel	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+required	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+A	x	N	N	O	O
+:	x	N	N	O	O
+
+B	x	N	N	O	O
+:	x	N	N	O	O
+
+4	x	N	N	O	O
+
+A	x	N	N	O	O
+:	x	N	N	O	O
+BC	eng	N	N	O	O
+
+B	x	N	N	O	O
+:	x	N	N	O	O
+ACD	eng	N	N	O	O
+
+C	x	N	N	O	O
+:	x	N	N	O	O
+ABD	eng	N	N	O	O
+
+D	x	N	N	O	O
+:	x	N	N	O	O
+BC	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+A	x	N	N	O	O
+:	x	N	N	O	O
+BCD	eng	N	N	O	O
+
+B	x	N	N	O	O
+:	x	N	N	O	O
+ACD	eng	N	N	O	O
+
+C	x	N	N	O	O
+:	x	N	N	O	O
+ABD	eng	N	N	O	O
+
+D	x	N	N	O	O
+:	x	N	N	O	O
+ABC	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+channel	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+
+3	x	N	N	O	O
+
+channels	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+
+4	x	N	N	O	O
+
+channels	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Southern	eng	N	N	O	O
+
+African	eng	N	N	O	O
+
+2001	m	N	N	O	O
+
+其实	d	N	N	O	O
+这	r	N	N	O	O
+道	q	N	N	O	O
+题目	n	Y	N	O	O
+并	c	N	N	O	O
+不难	d	N	N	O	O
+
+dfs	eng	Y	N	O	B-KNOWLEDGE
+暴	n	N	N	O	O
+搜	v	N	N	O	O
+一下	m	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+但是	c	N	N	O	O
+确实	ad	N	N	O	O
+很	zg	N	N	O	O
+容易	a	N	N	O	O
+错	v	N	N	O	O
+
+，	x	N	N	O	O
+请	v	N	N	O	O
+注意	v	N	N	O	O
+最后	f	N	N	O	O
+输出	v	Y	N	O	O
+的	uj	N	N	O	O
+单复数	n	N	N	O	O
+的	uj	N	N	O	O
+变化	vn	N	N	O	O
+，	x	N	N	O	O
+结果	n	N	N	O	O
+是	v	N	N	O	O
+1	m	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+是	v	N	N	O	O
+不加	v	N	N	O	O
+s	eng	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+或者	c	N	N	O	O
+复数	n	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+应该	v	N	N	O	O
+加	v	N	N	O	O
+s	eng	N	N	O	O
+
+很	zg	N	N	O	O
+容易	a	N	N	O	O
+忽视	v	N	N	O	O
+掉	zg	N	N	O	O
+
+[	x	N	N	O	O
+cpp	eng	N	N	O	O
+]	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+1000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+chan	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+,	x	N	N	O	O
+key	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+l	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+chan	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+chan	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+s1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+l	x	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+l	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+s1	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+res	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+key	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+res	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+channel	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+channels	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+u	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+key	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+b	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+chan	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+u	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+u	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+chan	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+res	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+www	eng	N	N	O	O
+.2	m	N	N	O	O
+cto	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+
+key	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+chan	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+

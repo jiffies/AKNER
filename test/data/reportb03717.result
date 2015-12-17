@@ -1,0 +1,393 @@
+poj1730	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+Ruansf	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+链接	n	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1730	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+求	v	N	N	O	O
+x	eng	N	N	O	O
+^	x	N	N	O	O
+b	eng	N	N	O	O
+的	uj	N	N	O	O
+b	eng	N	N	O	O
+的	uj	N	N	O	O
+最大值	l	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+ll	eng	Y	N	O	O
+;	x	N	N	O	O
+
+ll	eng	Y	N	O	O
+
+coun	eng	N	N	O	O
+(	x	N	N	O	O
+ll	eng	Y	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+ll	eng	Y	N	O	O
+
+m	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ll	eng	Y	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+coun	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ll	eng	Y	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+ll	eng	Y	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+n	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+?	x	N	N	O	O
+n	x	N	N	O	O
+:	x	N	N	O	O
+(	x	N	N	O	O
+-	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ll	eng	Y	N	O	O
+
+pan	eng	N	N	O	O
+(	x	N	N	O	O
+ll	eng	Y	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+n	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+?	x	N	N	O	O
+2	x	N	N	O	O
+:	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ll	eng	Y	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+res	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+ll	eng	Y	N	O	O
+)	x	N	N	O	O
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+32	m	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+2	m	N	N	O	O
+&&	x	N	N	O	O
+res	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+pan	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+coun	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+res	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+<	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+coun	eng	N	N	O	O
+(	x	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+res	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

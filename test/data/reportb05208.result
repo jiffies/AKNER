@@ -1,0 +1,679 @@
+POJ3030	eng	N	Y	O	B-OJ
+-	x	N	N	O	O
+Nasty	eng	N	N	O	O
+
+Hacks	eng	N	N	O	O
+_	x	N	N	O	O
+Annie	eng	N	N	O	O
+
+de	eng	N	N	O	O
+
+blog	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Description	eng	N	N	O	O
+
+You	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+CEO	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+Nasty	eng	N	N	O	O
+
+Hacks	eng	N	N	O	O
+
+Inc	eng	N	N	O	O
+.	m	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+company	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+creates	eng	N	N	O	O
+
+small	eng	N	N	O	O
+
+pieces	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+malicious	eng	N	N	O	O
+
+software	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+teenagers	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+use	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+fool	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+friends	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+company	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+just	eng	N	N	O	O
+
+finished	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+product	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+sell	eng	N	N	O	O
+
+it	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+want	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+much	eng	N	N	O	O
+
+money	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+possible	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+consider	eng	N	N	O	O
+
+advertising	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+order	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+increase	eng	N	N	O	O
+
+sales	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+get	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+analyst	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+predict	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+expected	eng	N	N	O	O
+
+revenue	eng	N	N	O	O
+,	x	N	N	O	O
+
+both	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+without	eng	N	N	O	O
+
+advertising	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+now	eng	N	N	O	O
+
+want	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+decision	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+to	eng	N	N	O	O
+
+whether	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+not	eng	N	N	O	O
+,	x	N	N	O	O
+
+given	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+expected	eng	N	N	O	O
+
+revenues	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+cases	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+giving	eng	N	N	O	O
+
+n	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+lines	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+contain	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+integers	eng	N	N	O	O
+,	x	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+c	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+,	x	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+expected	eng	N	N	O	O
+
+revenue	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+second	eng	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+,	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+expected	eng	N	N	O	O
+
+revenue	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+third	eng	N	N	O	O
+,	x	N	N	O	O
+
+c	x	N	N	O	O
+,	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cost	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+advertising	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+assume	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+follow	eng	N	N	O	O
+
+these	eng	N	N	O	O
+
+restrictions	eng	N	N	O	O
+:	x	N	N	O	O
+
+−	x	N	N	O	O
+106	m	N	N	O	O
+
+≤	x	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+106	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+c	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+106.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+:	x	N	N	O	O
+
+“	x	N	N	O	O
+advertise	eng	N	N	O	O
+”	x	N	N	O	O
+,	x	N	N	O	O
+
+“	x	N	N	O	O
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+”	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+“	x	N	N	O	O
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+matter	eng	N	N	O	O
+”	x	N	N	O	O
+,	x	N	N	O	O
+
+presenting	eng	N	N	O	O
+
+whether	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+most	eng	N	N	O	O
+
+profitable	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+not	eng	N	N	O	O
+,	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+whether	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+difference	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+0	x	N	N	O	O
+
+100	m	N	N	O	O
+
+70	m	N	N	O	O
+
+100	m	N	N	O	O
+
+130	m	N	N	O	O
+
+30	m	N	N	O	O
+
+-	x	N	N	O	O
+100	m	N	N	O	O
+
+-	x	N	N	O	O
+70	m	N	N	O	O
+
+40	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+matter	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+ld	eng	N	N	O	O
+%	x	N	N	O	O
+ld	eng	N	N	O	O
+%	x	N	N	O	O
+ld	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+advertise	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+matter	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+advertise	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+

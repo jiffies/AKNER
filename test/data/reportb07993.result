@@ -1,0 +1,726 @@
+poj	eng	N	Y	O	B-OJ
+
+2790	m	N	N	O	I-OJ
+
+dfs	eng	Y	N	O	B-KNOWLEDGE
+
+-	x	N	N	O	O
+
+天逸南爵	nr	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+给定	v	N	N	O	O
+一个	m	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+m	x	N	N	O	O
+矩阵	n	Y	N	O	O
+0	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+矩阵	n	Y	N	O	O
+，	x	N	N	O	O
+每行	r	N	N	O	O
+代表	n	N	N	O	O
+1	x	N	N	O	O
+个人	n	N	N	O	O
+，	x	N	N	O	O
+每	r	N	N	O	O
+列	v	N	N	O	O
+代表	n	N	N	O	O
+一个	m	N	N	O	O
+事件	n	N	N	O	O
+，	x	N	N	O	O
+这个	r	N	N	O	O
+矩阵	n	Y	N	O	O
+代表	n	N	N	O	O
+了	ul	N	N	O	O
+每个	r	N	N	O	O
+人	n	N	N	O	O
+是否	v	N	N	O	O
+参加	v	N	N	O	O
+了	ul	N	N	O	O
+某个	r	N	N	O	O
+事件	n	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+找	v	N	N	O	O
+一个	m	N	N	O	O
+事件	n	N	N	O	O
+排列	v	Y	N	O	O
+，	x	N	N	O	O
+使得	v	N	N	O	O
+每个	r	N	N	O	O
+人	n	N	N	O	O
+参加	v	N	N	O	O
+事件	n	N	N	O	O
+连续	a	Y	N	O	O
+
+枚举	nz	Y	N	O	O
++	x	N	N	O	O
+回溯	v	Y	N	O	B-KNOWLEDGE
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+400	m	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+个	m	N	N	O	O
+参与	v	N	N	O	O
+的	uj	N	N	O	O
+事件	n	N	N	O	O
+总数	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+保存	v	N	N	O	O
+排列	v	Y	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+置换	v	N	N	O	O
+后	f	N	N	O	O
+的	uj	N	N	O	O
+每个	r	N	N	O	O
+人	n	N	N	O	O
+参加	v	N	N	O	O
+的	uj	N	N	O	O
+事件	n	N	N	O	O
+数	n	N	N	O	O
+
+bool	eng	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+列	nr	N	N	O	O
+是否	v	N	N	O	O
+有	v	N	N	O	O
+
+bool	eng	N	N	O	O
+
+check	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+检查	vn	N	N	O	O
+该	r	N	N	O	O
+列	v	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+i	eng	N	N	O	O
+不	c	N	N	O	O
+参加	v	N	N	O	O
+x	eng	N	N	O	O
+列	nr	N	N	O	O
+活动	vn	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+i	x	N	N	O	O
+
+已经	d	N	N	O	O
+参加	v	N	N	O	O
+活动	vn	N	N	O	O
+
+；	x	N	N	O	O
+x	x	N	N	O	O
+活动	vn	N	N	O	O
+不能	v	N	N	O	O
+被	p	N	N	O	O
+参加	v	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+枚举	nz	Y	N	O	O
+每	zg	N	N	O	O
+一列	m	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+check	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+cnt	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

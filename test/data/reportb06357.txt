@@ -1,0 +1,66 @@
+POJ2038 - hongshundi的专栏 - 博客频道 - CSDN.NET
+
+摘要：水题，用了next_permutation
+#include <iostream>
+ #include <algorithm>
+ #include <string>
+ using namespace std; 
+ const int size = 100;
+ const int length = 5;
+ int array[length];
+ string data[size+1];
+ int n = 0;
+ int calDist()
+ {
+     int dist = 0;    
+     for(int i=1; i<=n; i++){
+         for(int j=0; j<length; j++){
+             for(int k=j+1; k<length; k++){
+                 int index_1 = 0; 
+                 int index_2 = 0;
+                 for(int s=0; s<length; s++){
+                     if(data[i].at(s) == array[j]){
+                         index_1 = s;    
+                     }    
+                     if(data[i].at(s) == array[k]){
+                         index_2 = s;
+                     }
+                 }
+                 if(index_1 > index_2){
+                     dist++;
+                 }
+             }
+         }            
+     }
+     return dist;
+ }
+ int main()
+ {
+     while( cin >> n ){
+         if( n == 0 ){
+             break;
+         }
+         for(int i=1; i<=n; i++){
+             cin >> data[i]; 
+         }    
+         int min_value = 100 * 10;
+         for(int i=0; i<length; i++){
+             array[i] = 'A'+i;    
+         }
+         string median_str = "ABCDE";    
+         min_value = min(min_value, calDist());
+         while( next_permutation(array, array+length) ){
+             int value = calDist();
+             if( value < min_value ){
+                 min_value = value;
+                 median_str.clear();
+                 char buf[10];    
+                 for(int i=0; i<length; i++){
+                     sprintf(buf, "%c", array[i]);
+                     median_str += buf;    
+                 }
+             }    
+         }    
+         cout << median_str << " is the median ranking with value " << min_value << "." << endl;    
+     }
+ }

@@ -1,0 +1,1080 @@
+POJ	eng	N	Y	O	B-OJ
+
+2142	m	N	N	O	I-OJ
+
+The	eng	N	N	O	O
+
+Balance	eng	N	N	O	O
+_	x	N	N	O	O
+编织	n	N	N	O	O
+梦想	n	N	N	O	O
+，	x	N	N	O	O
+编织	n	N	N	O	O
+未来	t	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+题目	n	Y	N	O	O
+大意	d	N	N	O	O
+：	x	N	N	O	O
+给定	v	N	N	O	O
+两种	m	N	N	O	O
+重量	n	N	N	O	O
+的	uj	N	N	O	O
+砝码	n	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+，	x	N	N	O	O
+和	c	N	N	O	O
+一个	m	N	N	O	O
+重量	n	N	N	O	O
+为	p	N	N	O	O
+d	eng	N	N	O	O
+的	uj	N	N	O	O
+物品	n	N	N	O	O
+。	x	N	N	O	O
+
+物品	n	N	N	O	O
+放在	v	N	N	O	O
+天	q	N	N	O	O
+枰	ng	N	N	O	O
+的	uj	N	N	O	O
+右边	f	N	N	O	O
+，	x	N	N	O	O
+问	n	N	N	O	O
+需要	v	N	N	O	O
+多少	m	N	N	O	O
+个	m	N	N	O	O
+a	eng	N	N	O	O
+和	c	N	N	O	O
+多少	m	N	N	O	O
+个	m	N	N	O	O
+b	eng	N	N	O	O
+使得	v	N	N	O	O
+天	q	N	N	O	O
+枰	ng	N	N	O	O
+平衡	a	Y	N	O	O
+，	x	N	N	O	O
+假设	vn	N	N	O	O
+需要	v	N	N	O	O
+x	eng	N	N	O	O
+个	m	N	N	O	O
+a	eng	N	N	O	O
+和	c	N	N	O	O
+y	eng	N	N	O	O
+个	m	N	N	O	O
+b	eng	N	N	O	O
+,	x	N	N	O	O
+那么	r	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+y	eng	N	N	O	O
+最少	d	N	N	O	O
+者	k	N	N	O	O
+为	p	N	N	O	O
+最优	d	N	N	O	O
+解	v	N	N	O	O
+，	x	N	N	O	O
+如果	c	N	N	O	O
+两种	m	N	N	O	O
+方案	n	N	N	O	O
+的	uj	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+y	eng	N	N	O	O
+一样	r	N	N	O	O
+小	a	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+a	x	N	N	O	O
+*	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+b	eng	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+最小	a	Y	N	O	O
+者	k	N	N	O	O
+为	p	N	N	O	O
+最优	d	N	N	O	O
+解	v	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+最优	d	N	N	O	O
+的	uj	N	N	O	O
+x	eng	N	N	O	O
+和	c	N	N	O	O
+y	eng	N	N	O	O
+。	x	N	N	O	O
+
+解题	n	N	N	O	O
+思路	n	N	N	O	O
+：	x	N	N	O	O
+很	zg	N	N	O	O
+简单	a	N	N	O	O
+的	uj	N	N	O	O
+一个	m	N	N	O	O
+求同	v	N	N	O	O
+余	m	N	N	O	O
+方程	n	Y	N	O	O
+问题	n	N	N	O	O
+。	x	N	N	O	O
+
+附	v	N	N	O	O
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+extend	eng	N	N	O	O
+_	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+&	x	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+extend	eng	N	N	O	O
+_	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+%	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+
+j	x	N	N	O	O
+
+-	x	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+/	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+xx	eng	N	N	O	O
+,	x	N	N	O	O
+yy	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ansa	eng	N	N	O	O
+,	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+,	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+,	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+n	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+d	x	N	N	O	O
+
+=	x	N	N	O	O
+
+extend	eng	N	N	O	O
+_	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+b	x	N	N	O	O
+/	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+/	x	N	N	O	O
+
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+yy	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+*	x	N	N	O	O
+xx	eng	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+yy	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+*	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+k	eng	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+*	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+ansb	eng	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+j	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+d	x	N	N	O	O
+
+=	x	N	N	O	O
+
+extend	eng	N	N	O	O
+_	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+b	x	N	N	O	O
+/	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+/	x	N	N	O	O
+
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+yy	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+*	x	N	N	O	O
+xx	eng	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+yy	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ansc	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+ansc	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+*	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+k	eng	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+*	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+ansd	eng	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+xx	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+xx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+xx	eng	N	N	O	O
+
++	x	N	N	O	O
+
+j	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ansa	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ansa	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+
++	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+ansa	eng	N	N	O	O
+*	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+ansb	eng	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+
+>	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+
++	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ansa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansd	eng	N	N	O	O
+;	x	N	N	O	O
+
+ansb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+ansc	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ansa	eng	N	N	O	O
+,	x	N	N	O	O
+ansb	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

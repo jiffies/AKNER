@@ -1,0 +1,116 @@
+pku 1170[状态Dp]  记忆化搜索 - MickJack的专栏 - 博客频道 - CSDN.NET
+
+ 题目连接：http://acm.pku.edu.cn/JudgeOnline/problem?id=1170
+ 题目大意：一个篮子里面有pNums中商品，每种商品在1~999中有一个编号id，每一种商品有Num个，每个的价格为price；现在推出一系列的优惠策略来吸引顾客。把一种商品的n个或几种商品的n个组合在一起作为一种策略，比如case：
+2   2中商品 最多5种
+7 3 2  第一种商品
+8 2 5  第2种商品
+2        2中优惠策略
+1 7 3 5           第1中优惠策略
+2 7 1 8 2 10   第2种优惠策略
+因为每件商品最多5件，最多5件商品，那么买这5种商品的状态最多有6^5,然后递归到0状态，求解出最优解。对每一件商品的数目的多少，最为一个状态；
+那么将其对应到相应十进制数。。。然后对状态进行记忆化搜索。。
+#include<iostream>
+#include<cmath>
+#include<stdio.h>
+#include<string.h>
+using namespace std;
+const int MAX_S=10000;
+const int MAX_P=6;
+const int MAX_C=100;
+const int inf=10000000;
+struct product
+{
+     int code,num,price;  
+}products[MAX_P];
+struct combline
+{
+     int Nums[MAX_P];
+     int Sumprice;
+     combline()
+     {
+              memset(Nums,0,sizeof(Nums));      
+     } 
+}comblines[MAX_C];
+int pNums,cNums,state,dp[MAX_S]; 
+int getid(int code)
+{
+       for(int i=0;i<pNums;i++)
+               if(products[i].code==code) return i; 
+       return -1;        
+} 
+void To_six(int CurNum[],int Curstate)
+{
+       for(int i=0;i<pNums;i++)
+       {
+              CurNum[i]=Curstate%6;
+              Curstate/=6;
+       } 
+}
+int   To_ten(int CurNum[])
+{
+      int sum=0; 
+      for(int i=0;i<pNums;i++)   
+              sum+=CurNum[i]*(int)pow((double)6,i);
+      return sum;         
+}
+int check(int CurNum[],int ReNum[],int t)
+{
+        for(int i=0;i<pNums;i++)
+                if(CurNum[i]>=comblines[t].Nums[i])
+                         ReNum[i]=CurNum[i]-comblines[t].Nums[i]; 
+                else return 0;
+        return 1;                         
+}
+int dpslove(int Curstate)
+{
+    if(dp[Curstate]!=inf) return dp[Curstate];
+    int CurNum[MAX_P]={0};
+    To_six(CurNum,Curstate);
+    int ReNum[MAX_P]={0},Min=inf;                     
+    for(int i=0;i<cNums;i++)
+    {
+            if(check(CurNum,ReNum,i))
+            {
+                  int ans=comblines[i].Sumprice+dpslove(To_ten(ReNum));             
+                  if(ans<Min) Min=ans;
+            }                        
+    }                               
+    int res=0;
+    if(Min==inf) 
+    {
+            for(int i=0;i<pNums;i++)
+                res+=CurNum[i]*products[i].price; 
+    }        
+    else   res=Min;
+    dp[Curstate]=res;
+    return res;
+} 
+int main()
+{
+       scanf("%d",&pNums);
+       state=0; 
+       for(int i=0;i<pNums;i++)
+       { 
+                scanf("%d%d%d",&products[i].code,&products[i].num,&products[i].price);         
+                state+=(int)pow(double(6),i)*products[i].num;
+       } 
+       scanf("%d",&cNums);
+       int pair,id,n; 
+       for(int i=0;i<cNums;i++)
+       {
+                scanf("%d",&pair);       
+                for(int j=0;j<pair;j++)
+                {
+                        scanf("%d%d",&id,&n);  
+                        int tempid=getid(id);
+                        comblines[i].Nums[tempid]=n;  
+                }
+                scanf("%d",&comblines[i].Sumprice);
+       }
+       for(int i=0;i<=state+1;i++) dp[i]=inf;
+       dp[0]=0;
+       dpslove(state);
+       printf("%d/n",dp[state]);     
+       return 0;
+}

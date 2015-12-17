@@ -1,0 +1,2089 @@
+POJ	eng	N	Y	O	B-OJ
+-	x	N	N	O	I-OJ
+2057	m	N	N	O	I-OJ
+
+The	eng	N	N	O	O
+
+Lost	eng	N	N	O	O
+
+House	eng	N	N	O	O
+
+贪心	v	Y	N	O	B-KNOWLEDGE
+在	p	N	N	O	O
+动态	n	Y	N	O	B-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+中	f	N	N	O	O
+的	uj	N	N	O	O
+应用	v	N	N	O	O
+
+-	x	N	N	O	O
+
+沐阳	nz	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+这	r	N	N	O	O
+题	n	N	N	O	O
+题意	n	N	N	O	O
+在	p	N	N	O	O
+代码	n	N	N	O	O
+中	f	N	N	O	O
+有	v	N	N	O	O
+解释	v	N	N	O	O
+,	x	N	N	O	O
+
+求	v	N	N	O	O
+的	uj	N	N	O	O
+最优	d	N	N	O	O
+值	n	N	N	O	O
+初	f	N	N	O	O
+看	v	N	N	O	O
+不太好	v	N	N	O	O
+理解	v	N	N	O	O
+.	x	N	N	O	O
+
+求	v	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+给定	v	N	N	O	O
+一个	m	N	N	O	O
+决策	n	N	N	O	O
+下	f	N	N	O	O
+的	uj	N	N	O	O
+找到	v	N	N	O	O
+房子	n	N	N	O	O
+的	uj	N	N	O	O
+最优	d	N	N	O	O
+期望值	n	N	N	O	O
+.	x	N	N	O	O
+
+那么	r	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+其实	d	N	N	O	O
+要	v	N	N	O	O
+做	v	N	N	O	O
+的	uj	N	N	O	O
+就是	d	N	N	O	O
+一件	m	N	N	O	O
+事	n	N	N	O	O
+那	r	N	N	O	O
+就是	d	N	N	O	O
+给	p	N	N	O	O
+所有	b	N	N	O	O
+的	uj	N	N	O	O
+分叉	v	N	N	O	O
+口	q	N	N	O	O
+的	uj	N	N	O	O
+选择	v	N	N	O	O
+拍	v	N	N	O	O
+一个	m	N	N	O	O
+次序	n	N	N	O	O
+出来	v	N	N	O	O
+.	x	N	N	O	O
+根据	p	N	N	O	O
+这个	r	N	N	O	O
+次序	n	N	N	O	O
+我们	r	N	N	O	O
+就	d	N	N	O	O
+能够	v	N	N	O	O
+给出	v	N	N	O	O
+这	r	N	N	O	O
+只	d	N	N	O	O
+蜗牛	n	N	N	O	O
+在	p	N	N	O	O
+碰到	v	N	N	O	O
+有所	n	N	N	O	O
+情况	n	N	N	O	O
+下	f	N	N	O	O
+的	uj	N	N	O	O
+唯一	b	N	N	O	O
+的	uj	N	N	O	O
+一条	m	N	N	O	O
+爬行	v	N	N	O	O
+路线	n	N	N	O	O
+.	x	N	N	O	O
+
+题目	n	Y	N	O	O
+就是	d	N	N	O	O
+当	t	N	N	O	O
+我们	r	N	N	O	O
+安排	v	N	N	O	O
+好	a	N	N	O	O
+这样	r	N	N	O	O
+的	uj	N	N	O	O
+这个	r	N	N	O	O
+次序	n	N	N	O	O
+后	f	N	N	O	O
+,	x	N	N	O	O
+
+假设	vn	N	N	O	O
+房子	n	N	N	O	O
+在	p	N	N	O	O
+各个	r	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+
+需要	v	N	N	O	O
+走	v	N	N	O	O
+的	uj	N	N	O	O
+路径	n	Y	N	O	O
+总长	n	N	N	O	O
+最小	a	Y	N	O	O
+.	x	N	N	O	O
+
+这里	r	N	N	O	O
+的	uj	N	N	O	O
+每	r	N	N	O	O
+一棵	m	N	N	O	O
+子树	nr	N	N	O	O
+,	x	N	N	O	O
+
+在	p	N	N	O	O
+枚举	nz	Y	N	O	O
+的	uj	N	N	O	O
+过程	n	N	N	O	O
+中	f	N	N	O	O
+总是	c	N	N	O	O
+充当	a	N	N	O	O
+着	uz	N	N	O	O
+不同	a	N	N	O	O
+的	uj	N	N	O	O
+角色	n	N	N	O	O
+,	x	N	N	O	O
+
+当	t	N	N	O	O
+枚举	nz	Y	N	O	O
+到	v	N	N	O	O
+的	uj	N	N	O	O
+房子	n	N	N	O	O
+在	p	N	N	O	O
+自己	r	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+中	f	N	N	O	O
+时	ng	N	N	O	O
+,	x	N	N	O	O
+
+其	r	N	N	O	O
+要	v	N	N	O	O
+考虑	v	N	N	O	O
+能够	v	N	N	O	O
+安排	v	N	N	O	O
+最快	d	N	N	O	O
+的	uj	N	N	O	O
+路径	n	Y	N	O	O
+让	v	N	N	O	O
+蜗牛	n	N	N	O	O
+找到	v	N	N	O	O
+.	x	N	N	O	O
+
+当	t	N	N	O	O
+没有	v	N	N	O	O
+在	p	N	N	O	O
+自己	r	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+时	ng	N	N	O	O
+又	d	N	N	O	O
+不想	v	N	N	O	O
+让	v	N	N	O	O
+其	r	N	N	O	O
+放在	v	N	N	O	O
+前面	f	N	N	O	O
+让	v	N	N	O	O
+蜗牛	n	N	N	O	O
+白	a	N	N	O	O
+忙活	a	N	N	O	O
+一场	m	N	N	O	O
+.	x	N	N	O	O
+
+所以	c	N	N	O	O
+综合	vn	N	N	O	O
+一	m	N	N	O	O
+看	v	N	N	O	O
+,	x	N	N	O	O
+
+貌似	v	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+很	zg	N	N	O	O
+复杂	a	N	N	O	O
+的	uj	N	N	O	O
+问题	n	N	N	O	O
+.	x	N	N	O	O
+
+但是	c	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+就是	d	N	N	O	O
+在	p	N	N	O	O
+如何	r	N	N	O	O
+安排	v	N	N	O	O
+子	ng	N	N	O	O
+节点	n	N	N	O	O
+访问	v	N	N	O	O
+顺序	n	N	N	O	O
+时	n	N	N	O	O
+满足	v	N	N	O	O
+一个	m	N	N	O	O
+贪心	v	Y	N	O	B-KNOWLEDGE
+策略	n	N	N	O	O
+.	x	N	N	O	O
+
+这点	mq	N	N	O	O
+在	p	N	N	O	O
+代码	n	N	N	O	O
+中会	j	N	N	O	O
+有	v	N	N	O	O
+介绍	v	N	N	O	O
+.	x	N	N	O	O
+
+当	t	N	N	O	O
+我们	r	N	N	O	O
+能够	v	N	N	O	O
+利用	n	N	N	O	O
+一个	m	N	N	O	O
+排序	n	Y	N	O	O
+安排	v	N	N	O	O
+出	v	N	N	O	O
+足够	v	N	N	O	O
+好	a	N	N	O	O
+的	uj	N	N	O	O
+序列	n	Y	N	O	O
+出来	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+.	x	N	N	O	O
+
+在	p	N	N	O	O
+通过	p	N	N	O	O
+动态	n	Y	N	O	B-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+,	x	N	N	O	O
+
+最终	d	N	N	O	O
+由子	nr	N	N	O	O
+问题	n	N	N	O	O
+最优	d	N	N	O	O
+得到	v	N	N	O	O
+了	ul	N	N	O	O
+全局	n	Y	N	O	O
+最优	d	N	N	O	O
+.	x	N	N	O	O
+
+使用	v	N	N	O	O
+yefeng1627	eng	N	N	O	O
+推荐	v	N	N	O	O
+的	uj	N	N	O	O
+公式	n	Y	N	O	O
+生成	v	Y	N	O	O
+利器	n	N	N	O	O
+生成	v	Y	N	O	O
+的	uj	N	N	O	O
+动态	n	Y	N	O	B-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+方程	n	Y	N	O	O
+:	x	N	N	O	O
+
+当	t	N	N	O	O
+
+j	x	N	N	O	O
+
+是	v	N	N	O	O
+
+i	x	N	N	O	O
+
+的	uj	N	N	O	O
+子	n	N	N	O	O
+节点	n	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+
+特别	d	N	N	O	O
+的	uj	N	N	O	O
+,	x	N	N	O	O
+当为	d	N	N	O	O
+
+i	x	N	N	O	O
+
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+时	ng	N	N	O	O
+有	v	N	N	O	O
+
+当	t	N	N	O	O
+
+j	x	N	N	O	O
+
+是	v	N	N	O	O
+
+i	x	N	N	O	O
+
+的	uj	N	N	O	O
+子	n	N	N	O	O
+节点	n	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+
+特别	d	N	N	O	O
+的	uj	N	N	O	O
+,	x	N	N	O	O
+
+当	t	N	N	O	O
+
+i	x	N	N	O	O
+
+为	p	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+时	ng	N	N	O	O
+有	v	N	N	O	O
+
+代码	n	N	N	O	O
+如下	t	N	N	O	O
+:	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+vector	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+题意	n	N	N	O	O
+:	x	N	N	O	O
+有	v	N	N	O	O
+一只	m	N	N	O	O
+蜗牛	n	N	N	O	O
+爬	v	N	N	O	O
+上	f	N	N	O	O
+树	v	N	N	O	O
+睡着	v	N	N	O	O
+之后	f	N	N	O	O
+从	p	N	N	O	O
+树上	s	N	N	O	O
+掉下来	v	N	N	O	O
+,	x	N	N	O	O
+发现	v	N	N	O	O
+后面	f	N	N	O	O
+的	uj	N	N	O	O
+"	x	N	N	O	O
+房子	n	N	N	O	O
+"	x	N	N	O	O
+却	d	N	N	O	O
+丢在	v	N	N	O	O
+了	ul	N	N	O	O
+树	n	N	N	O	O
+上面	f	N	N	O	O
+,	x	N	N	O	O
+
+现在	t	N	N	O	O
+这	r	N	N	O	O
+
+只	d	N	N	O	O
+蜗牛	n	N	N	O	O
+要求	v	N	N	O	O
+寻找	v	N	N	O	O
+它	r	N	N	O	O
+的	uj	N	N	O	O
+房子	n	N	N	O	O
+,	x	N	N	O	O
+它	r	N	N	O	O
+又	d	N	N	O	O
+得	ud	N	N	O	O
+从	p	N	N	O	O
+树根	n	N	N	O	O
+开始	v	N	N	O	O
+爬	v	N	N	O	O
+起	v	N	N	O	O
+,	x	N	N	O	O
+现在	t	N	N	O	O
+要求	v	N	N	O	O
+一条	m	N	N	O	O
+路径	n	Y	N	O	O
+使得	v	N	N	O	O
+其	r	N	N	O	O
+找到	v	N	N	O	O
+房子	n	N	N	O	O
+
+所	c	N	N	O	O
+要	v	N	N	O	O
+爬行	v	N	N	O	O
+的	uj	N	N	O	O
+期望	v	Y	N	O	O
+距离	n	Y	N	O	O
+最小	a	Y	N	O	O
+.	x	N	N	O	O
+
+爬行	v	N	N	O	O
+距离	n	Y	N	O	O
+如下	t	N	N	O	O
+计算	v	Y	N	O	O
+,	x	N	N	O	O
+
+题目	n	Y	N	O	O
+规定	n	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+分支	n	Y	N	O	O
+和	c	N	N	O	O
+枝	q	N	N	O	O
+末	f	N	N	O	O
+都	d	N	N	O	O
+看做	v	N	N	O	O
+是	v	N	N	O	O
+
+一个	m	N	N	O	O
+节点	n	N	N	O	O
+,	x	N	N	O	O
+
+这些	r	N	N	O	O
+节点	n	N	N	O	O
+之间	f	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+都	d	N	N	O	O
+是	v	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+
+在	p	N	N	O	O
+分支	n	Y	N	O	O
+上	f	N	N	O	O
+可能	v	N	N	O	O
+会	v	N	N	O	O
+有	v	N	N	O	O
+热心	n	N	N	O	O
+的	uj	N	N	O	O
+毛毛虫	nr	N	N	O	O
+,	x	N	N	O	O
+
+这些	r	N	N	O	O
+毛毛虫	nr	N	N	O	O
+
+会	v	N	N	O	O
+如实	d	N	N	O	O
+的	uj	N	N	O	O
+告诉	v	N	N	O	O
+蜗牛	n	N	N	O	O
+他	r	N	N	O	O
+之前	f	N	N	O	O
+是否	v	N	N	O	O
+经过	p	N	N	O	O
+这	r	N	N	O	O
+条	n	N	N	O	O
+路径	n	Y	N	O	O
+,	x	N	N	O	O
+
+也	d	N	N	O	O
+正是	d	N	N	O	O
+因为	c	N	N	O	O
+毛毛虫	nr	N	N	O	O
+,	x	N	N	O	O
+
+因此	c	N	N	O	O
+询问	v	N	N	O	O
+毛毛虫	nr	N	N	O	O
+的	uj	N	N	O	O
+顺	n	N	N	O	O
+
+序	n	N	N	O	O
+使得	v	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+的	uj	N	N	O	O
+期望	v	Y	N	O	O
+是	v	N	N	O	O
+不同	a	N	N	O	O
+的	uj	N	N	O	O
+.	m	N	N	O	O
+
+输入	v	N	N	O	O
+数据	n	N	N	O	O
+时	n	N	N	O	O
+给定	v	N	N	O	O
+的	uj	N	N	O	O
+一个	m	N	N	O	O
+邻接	v	Y	N	O	O
+关系	n	N	N	O	O
+,	x	N	N	O	O
+通过	p	N	N	O	O
+上	f	N	N	O	O
+一个	m	N	N	O	O
+节点	n	N	N	O	O
+来	v	N	N	O	O
+构图	v	Y	N	O	O
+
+同时	c	N	N	O	O
+字符	n	Y	N	O	O
+
+'	x	N	N	O	O
+Y	x	N	N	O	O
+'	x	N	N	O	O
+表示	v	Y	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+有	v	N	N	O	O
+毛毛虫	nr	N	N	O	O
+,	x	N	N	O	O
+
+字符	n	Y	N	O	O
+'	x	N	N	O	O
+N	x	N	N	O	O
+'	x	N	N	O	O
+表示	v	Y	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+
+解法	v	Y	N	O	O
+:	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+以	p	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+为	p	N	N	O	O
+根	q	N	N	O	O
+的	uj	N	N	O	O
+节点	n	N	N	O	O
+找	v	N	N	O	O
+不到	v	N	N	O	O
+房子	n	N	N	O	O
+时	ng	N	N	O	O
+要	v	N	N	O	O
+爬行	v	N	N	O	O
+最少	d	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+,	x	N	N	O	O
+
+这个	r	N	N	O	O
+值有	v	N	N	O	O
+什么	r	N	N	O	O
+用	p	N	N	O	O
+呢	y	N	N	O	O
+?	x	N	N	O	O
+
+这个	r	N	N	O	O
+值	n	N	N	O	O
+就是	d	N	N	O	O
+用	p	N	N	O	O
+去	v	N	N	O	O
+计算	v	Y	N	O	O
+房子	n	N	N	O	O
+落	v	N	N	O	O
+在	p	N	N	O	O
+其他	r	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+其	r	N	N	O	O
+对	p	N	N	O	O
+爬行	v	N	N	O	O
+距离	n	Y	N	O	O
+的	uj	N	N	O	O
+负面效应	n	N	N	O	O
+有	v	N	N	O	O
+多	m	N	N	O	O
+大	a	N	N	O	O
+.	m	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+以	p	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+为	p	N	N	O	O
+根	q	N	N	O	O
+的	uj	N	N	O	O
+节点	n	N	N	O	O
+在	p	N	N	O	O
+选择	v	N	N	O	O
+好	a	N	N	O	O
+所有	b	N	N	O	O
+分支	n	Y	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+爬行	v	N	N	O	O
+方案	n	N	N	O	O
+后	f	N	N	O	O
+,	x	N	N	O	O
+枚举	nz	Y	N	O	O
+完	v	N	N	O	O
+房子	n	N	N	O	O
+落	v	N	N	O	O
+在	p	N	N	O	O
+该	r	N	N	O	O
+
+子树	nr	N	N	O	O
+所有	b	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+上	f	N	N	O	O
+的	uj	N	N	O	O
+总	n	N	N	O	O
+爬行	v	N	N	O	O
+距离	n	Y	N	O	O
+的	uj	N	N	O	O
+最小值	l	N	N	O	O
+,	x	N	N	O	O
+这	r	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+值	n	N	N	O	O
+告诉	v	N	N	O	O
+我们	r	N	N	O	O
+这	r	N	N	O	O
+棵子	n	N	N	O	O
+树	v	N	N	O	O
+对	p	N	N	O	O
+爬行	v	N	N	O	O
+距离	n	Y	N	O	O
+
+的	uj	N	N	O	O
+正面	ad	N	N	O	O
+效应	n	N	N	O	O
+有	v	N	N	O	O
+多	m	N	N	O	O
+大	a	N	N	O	O
+.	m	N	N	O	O
+那么	r	N	N	O	O
+有	v	N	N	O	O
+动态	n	Y	N	O	O
+方程	n	Y	N	O	O
+:	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+x	x	N	N	O	O
+节点	n	N	N	O	O
+一共	j	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个	q	N	N	O	O
+孩子	n	N	N	O	O
+节点	n	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+sum	eng	N	N	O	O
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+2	x	N	N	O	O
+
+}	x	N	N	O	O
+
+当	t	N	N	O	O
+i	eng	N	N	O	O
+没有	v	N	N	O	O
+毛毛虫	nr	N	N	O	O
+且	zg	N	N	O	O
+要求	v	N	N	O	O
+j	eng	N	N	O	O
+是	v	N	N	O	O
+i	eng	N	N	O	O
+的	uj	N	N	O	O
+孩子	n	N	N	O	O
+节点	n	N	N	O	O
+,	x	N	N	O	O
+这个	r	N	N	O	O
+是	v	N	N	O	O
+很	d	N	N	O	O
+好	a	N	N	O	O
+
+理解	v	N	N	O	O
+的	uj	N	N	O	O
+,	x	N	N	O	O
+
+多	m	N	N	O	O
+出来	v	N	N	O	O
+的	uj	N	N	O	O
+2	m	N	N	O	O
+就是	d	N	N	O	O
+连接	v	N	N	O	O
+该	r	N	N	O	O
+孩子	n	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+边	n	N	N	O	O
+来回	v	N	N	O	O
+的	uj	N	N	O	O
+两次	m	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+当	p	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+有	v	N	N	O	O
+毛毛虫	nr	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+,	x	N	N	O	O
+
+原因	n	N	N	O	O
+是因为	c	N	N	O	O
+毛毛虫	nr	N	N	O	O
+会	v	N	N	O	O
+告诉	v	N	N	O	O
+我们	r	N	N	O	O
+这点	mq	N	N	O	O
+下面	f	N	N	O	O
+没有	v	N	N	O	O
+房子	n	N	N	O	O
+
+当	t	N	N	O	O
+一个	m	N	N	O	O
+节点	n	N	N	O	O
+时	n	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+,	x	N	N	O	O
+那么	r	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+要	v	N	N	O	O
+明确	ad	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+是	v	N	N	O	O
+表示	v	Y	N	O	O
+在	p	N	N	O	O
+遇到	v	N	N	O	O
+分支	n	Y	N	O	O
+选择	v	N	N	O	O
+的	uj	N	N	O	O
+先后顺序	i	N	N	O	O
+决定	v	N	N	O	O
+后	f	N	N	O	O
+,	x	N	N	O	O
+我们	r	N	N	O	O
+枚举	nz	Y	N	O	O
+房子	n	N	N	O	O
+在	p	N	N	O	O
+其	r	N	N	O	O
+各个	r	N	N	O	O
+叶子	nr	N	N	O	O
+
+上	f	N	N	O	O
+的	uj	N	N	O	O
+所要	b	N	N	O	O
+爬行	v	N	N	O	O
+的	uj	N	N	O	O
+总	n	N	N	O	O
+距离	n	Y	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+sum	eng	N	N	O	O
+{	x	N	N	O	O
+
+(	x	N	N	O	O
+sum	eng	N	N	O	O
+{	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+1..	m	N	N	O	O
+j	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+}	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+}	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+}	x	N	N	O	O
+,	x	N	N	O	O
+
+其中	r	N	N	O	O
+j	eng	N	N	O	O
+是	v	N	N	O	O
+i	eng	N	N	O	O
+的	uj	N	N	O	O
+孩子	n	N	N	O	O
+
+这个	r	N	N	O	O
+方程	n	Y	N	O	O
+要	v	N	N	O	O
+怎么	r	N	N	O	O
+去	v	N	N	O	O
+理解	v	N	N	O	O
+呢	y	N	N	O	O
+?	x	N	N	O	O
+
+意思	n	N	N	O	O
+翻译	v	N	N	O	O
+过来	t	N	N	O	O
+就是	d	N	N	O	O
+遍历	v	Y	N	O	O
+i	eng	N	N	O	O
+的	uj	N	N	O	O
+孩子	n	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+j	eng	N	N	O	O
+号子	n	N	N	O	O
+树	v	N	N	O	O
+所有	b	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+所	c	N	N	O	O
+
+要	v	N	N	O	O
+爬行	v	N	N	O	O
+的	uj	N	N	O	O
+最	a	N	N	O	O
+短距离	n	N	N	O	O
+.	m	N	N	O	O
+其	r	N	N	O	O
+值	n	N	N	O	O
+就是	d	N	N	O	O
+:	x	N	N	O	O
+
+前面	f	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+号子	n	N	N	O	O
+树	v	N	N	O	O
+没有	v	N	N	O	O
+找到	v	N	N	O	O
+节点	n	N	N	O	O
+所	c	N	N	O	O
+爬行	v	N	N	O	O
+的	uj	N	N	O	O
+最	a	N	N	O	O
+短距离	n	N	N	O	O
+加上	v	N	N	O	O
+走	v	N	N	O	O
+了	ul	N	N	O	O
+的	uj	N	N	O	O
+多余	m	N	N	O	O
+的边	d	N	N	O	O
+再	d	N	N	O	O
+加上	v	N	N	O	O
+遍历	v	Y	N	O	O
+j	x	N	N	O	O
+
+号子	n	N	N	O	O
+树	v	N	N	O	O
+所有	b	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+所	c	N	N	O	O
+爬行	v	N	N	O	O
+的	uj	N	N	O	O
+最	a	N	N	O	O
+短距离	n	N	N	O	O
+,	x	N	N	O	O
+
+那么	r	N	N	O	O
+这里	r	N	N	O	O
+显然	ad	N	N	O	O
+谁	r	N	N	O	O
+前	f	N	N	O	O
+谁	r	N	N	O	O
+后	f	N	N	O	O
+就	d	N	N	O	O
+会	v	N	N	O	O
+决定	v	N	N	O	O
+最后	f	N	N	O	O
+值	n	N	N	O	O
+的	uj	N	N	O	O
+大小	b	N	N	O	O
+
+现在	t	N	N	O	O
+只	d	N	N	O	O
+考虑	v	N	N	O	O
+序列	n	Y	N	O	O
+中	f	N	N	O	O
+任意	v	Y	N	O	O
+两棵	m	N	N	O	O
+子树	nr	N	N	O	O
+A	eng	N	N	O	O
+,	x	N	N	O	O
+B	x	N	N	O	O
+,	x	N	N	O	O
+
+如果	c	N	N	O	O
+A	eng	N	N	O	O
+放	v	N	N	O	O
+前面	f	N	N	O	O
+的话	u	N	N	O	O
+,	x	N	N	O	O
+
+枚举	nz	Y	N	O	O
+完	v	N	N	O	O
+所有	b	N	N	O	O
+房子	n	N	N	O	O
+所在位置	n	N	N	O	O
+后	f	N	N	O	O
+的	uj	N	N	O	O
+总	n	N	N	O	O
+距离	n	Y	N	O	O
+就是	d	N	N	O	O
+
+ans1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+前	f	N	N	O	O
+一个	m	N	N	O	O
+括号	n	N	N	O	O
+是	v	N	N	O	O
+假设	vn	N	N	O	O
+枚举	nz	Y	N	O	O
+房子	n	N	N	O	O
+落	v	N	N	O	O
+在	p	N	N	O	O
+A	eng	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+叶子	nr	N	N	O	O
+上	f	N	N	O	O
+,	x	N	N	O	O
+
+后面	f	N	N	O	O
+的	uj	N	N	O	O
+扩后	v	N	N	O	O
+是	v	N	N	O	O
+枚举	nz	Y	N	O	O
+在	p	N	N	O	O
+B	eng	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+叶子	nr	N	N	O	O
+上	f	N	N	O	O
+
+ans2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+ans1	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+ans2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+B	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+A	x	N	N	O	O
+]	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+idx	eng	N	N	O	O
+,	x	N	N	O	O
+
+at	eng	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+
+yes	eng	N	N	O	O
+,	x	N	N	O	O
+
+next	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+e	x	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+++	x	N	N	O	O
+idx	eng	N	N	O	O
+;	x	N	N	O	O
+
+e	x	N	N	O	O
+[	x	N	N	O	O
+idx	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+v	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+[	x	N	N	O	O
+idx	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+idx	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+建立	v	N	N	O	O
+邻接	v	Y	N	O	O
+链表	n	Y	N	O	O
+
+}	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+说明	v	N	N	O	O
+x	x	N	N	O	O
+肯定	v	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+返回	v	N	N	O	O
+时	n	N	N	O	O
+叶子	nr	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+
+}	x	N	N	O	O
+
+vector	eng	N	N	O	O
+<	x	N	N	O	O
+int	eng	N	N	O	O
+>	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+e	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+v	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+v	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+v	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+v	eng	N	N	O	O
+.	m	N	N	O	O
+begin	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+v	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+v	eng	N	N	O	O
+.	m	N	N	O	O
+size	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+就	d	N	N	O	O
+相当于	v	N	N	O	O
+dp	eng	Y	N	O	B-KNOWLEDGE
+方程	n	Y	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+sum	eng	N	N	O	O
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+1..	m	N	N	O	O
+j	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+2	m	N	N	O	O
+
+}	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+at	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pre	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+N	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+idx	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+head	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+pre	eng	N	N	O	O
+,	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+这	r	N	N	O	O
+两个	m	N	N	O	O
+的	uj	N	N	O	O
+值	n	N	N	O	O
+已经	d	N	N	O	O
+毫无意义	l	N	N	O	O
+了	ul	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+pre	eng	N	N	O	O
+,	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+at	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+Y	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+pre	eng	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+1	m	N	N	O	O
+号	m	N	N	O	O
+节点	n	N	N	O	O
+永远	d	N	N	O	O
+是	v	N	N	O	O
+根	p	N	N	O	O
+节点	n	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.4	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+1.	m	N	N	O	O
+*	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+/	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

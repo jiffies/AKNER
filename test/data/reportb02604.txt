@@ -1,0 +1,62 @@
+pku1129 Channel Allocation_xiao_yu_feng的空间_百度空间
+
+这题和地图涂色问题类似，只要计算最大团中所包含的顶点个数就可以了
+#include<stdio.h>
+#include<string.h>
+int a[28][28];
+char str[28];
+int x[28],cn,bestn,n;
+void backtrack(int p)//找邻接矩阵的最大团，最大团中所含的顶点个数即为answer
+{
+ int i,flag;
+ if(p>n)
+ {
+   //for(i=1;i<=n;i++)bestx[i]=x[i];
+   bestn=cn;
+   return ;
+ }
+    flag=1;
+ for(i=1;i<p;i++)
+   if(x[i]&&a[p][i]==0)
+   {
+    //p与i不相连
+    flag=0;
+    break;
+   }
+ if(flag)//进入左子树,必须确认从定点i到已选入的顶点集中每一个顶点都有边相连
+ {
+   x[p]=1;//当且仅当顶点p属于已找到的最大团
+   cn++;//当前顶点数
+   backtrack(p+1);
+   x[p]=0;
+   cn--;
+ }
+ if(cn+n-p>bestn)//右子树，必须确认还有足够多的可选择顶点使得有可能在右子树中找到更大的团
+ {
+   x[p]=0;
+   backtrack(p+1);
+ }   
+}
+int main()
+{
+ int i,j,len;
+ while(scanf("%d",&n)!=EOF)
+ {
+   if(n==0)break;
+   memset(a,0,sizeof(a));
+   for(i=1;i<=n;i++)
+   {
+    scanf("%s",str);
+    len=strlen(str);
+    for(j=2;j<len;j++)
+     a[i][str[j]-'A'+1]=1;//构造邻接矩阵
+   }
+        cn=0;bestn=0;
+   backtrack(1);
+   if(bestn==1)
+      printf("1 channel needed.\n");
+   else
+    printf("%d channels needed.\n",bestn);
+ }
+ return 0;
+}

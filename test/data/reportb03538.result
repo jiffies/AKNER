@@ -1,0 +1,1193 @@
+POJ	eng	N	Y	O	B-OJ
+
+3286	m	N	N	O	O
+
+How	eng	N	N	O	O
+
+many	eng	N	N	O	O
+
+0	x	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+?	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2282	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+Counting	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+
+排列组合	n	Y	N	O	O
+统计数字	l	Y	N	O	O
+
+-	x	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+比如	v	N	N	O	O
+算	v	N	N	O	O
+4123	m	N	N	O	O
+中	f	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个	m	N	N	O	O
+2	m	N	N	O	O
+
+按	p	N	N	O	O
+位	v	N	N	O	O
+统计	v	Y	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+先算	d	N	N	O	O
+各位	r	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+个位	n	N	N	O	O
+是	v	N	N	O	O
+2	m	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+有	v	N	N	O	O
+413	m	N	N	O	O
+种	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+因为	c	N	N	O	O
+各位	r	N	N	O	O
+左边	f	N	N	O	O
+可以	c	N	N	O	O
+0	x	N	N	O	O
+~	x	N	N	O	O
+412	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+而	c	N	N	O	O
+右边	f	N	N	O	O
+没有	v	N	N	O	O
+数字	n	Y	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+
+然后	c	N	N	O	O
+是	v	N	N	O	O
+十位	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+十位	m	N	N	O	O
+是	v	N	N	O	O
+2	m	N	N	O	O
+的	uj	N	N	O	O
+有	v	N	N	O	O
+41	m	N	N	O	O
+*	x	N	N	O	O
+10	m	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+*	x	N	N	O	O
+4	m	N	N	O	O
+种	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+当	t	N	N	O	O
+左边	f	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+~	x	N	N	O	O
+40	m	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+右边	f	N	N	O	O
+可以	c	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+~	x	N	N	O	O
+9	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+而	c	N	N	O	O
+左边	f	N	N	O	O
+为	p	N	N	O	O
+41	m	N	N	O	O
+时	n	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+右边	f	N	N	O	O
+只能	v	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+~	x	N	N	O	O
+3	x	N	N	O	O
+
+然后	c	N	N	O	O
+是	v	N	N	O	O
+百位	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+百位	m	N	N	O	O
+有	v	N	N	O	O
+4	m	N	N	O	O
+*	x	N	N	O	O
+100	m	N	N	O	O
+种	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+即	v	N	N	O	O
+左边	f	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+~	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+右边	f	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+~	x	N	N	O	O
+99	m	N	N	O	O
+
+千位	m	N	N	O	O
+有	v	N	N	O	O
+
+1	x	N	N	O	O
+*	x	N	N	O	O
+1000	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+左边	f	N	N	O	O
+没有	v	N	N	O	O
+数字	n	Y	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+右边	f	N	N	O	O
+0	x	N	N	O	O
+~	x	N	N	O	O
+999	m	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+
+上面	f	N	N	O	O
+是	v	N	N	O	O
+计算	v	Y	N	O	O
+1	x	N	N	O	O
+~	x	N	N	O	O
+9	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+计算	v	Y	N	O	O
+0	m	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+比较	d	N	N	O	O
+特殊	a	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+原因	n	N	N	O	O
+是	v	N	N	O	O
+除了	p	N	N	O	O
+0	m	N	N	O	O
+这	r	N	N	O	O
+一个	m	N	N	O	O
+数字	n	Y	N	O	O
+之外	f	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+不能	v	N	N	O	O
+做	v	N	N	O	O
+开头	v	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+
+可以	c	N	N	O	O
+看到	v	N	N	O	O
+在	p	N	N	O	O
+求	v	N	N	O	O
+1	m	N	N	O	O
+~	x	N	N	O	O
+9	m	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+都	d	N	N	O	O
+是	v	N	N	O	O
+分为	v	N	N	O	O
+2	x	N	N	O	O
+部分	n	Y	N	O	O
+相乘	v	Y	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+这样	r	N	N	O	O
+0	m	N	N	O	O
+的	uj	N	N	O	O
+处理	v	N	N	O	O
+也	d	N	N	O	O
+很	d	N	N	O	O
+简单	a	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+只	d	N	N	O	O
+需	v	N	N	O	O
+把	p	N	N	O	O
+相乘	v	Y	N	O	O
+的	uj	N	N	O	O
+左半	m	N	N	O	O
+部分	n	Y	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+,	x	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+3286	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+输入	v	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+[	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+之间	f	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+数	m	N	N	O	O
+中	f	N	N	O	O
+0	m	N	N	O	O
+出现	v	N	N	O	O
+的	uj	N	N	O	O
+次数	n	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+lint	eng	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+lint	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+12	m	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+{	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+10	m	N	N	O	O
+,	x	N	N	O	O
+
+100	m	N	N	O	O
+,	x	N	N	O	O
+
+1000	m	N	N	O	O
+,	x	N	N	O	O
+
+10000	m	N	N	O	O
+,	x	N	N	O	O
+
+100000	m	N	N	O	O
+,	x	N	N	O	O
+
+1000000	m	N	N	O	O
+,	x	N	N	O	O
+
+10000000	m	N	N	O	O
+,	x	N	N	O	O
+
+100000000	m	N	N	O	O
+,	x	N	N	O	O
+
+1000000000	m	N	N	O	O
+,	x	N	N	O	O
+
+10000000000	m	N	N	O	O
+,	x	N	N	O	O
+
+100000000000	m	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+count	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+left	eng	N	N	O	O
+,	x	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+12	m	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+left	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+/	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+left	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+求出	v	N	N	O	O
+从	p	N	N	O	O
+第	m	N	N	O	O
+到	v	N	N	O	O
+高	a	N	N	O	O
+的	uj	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+位	q	N	N	O	O
+上	f	N	N	O	O
+的	uj	N	N	O	O
+具体	a	N	N	O	O
+数字	n	Y	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+m	x	N	N	O	O
+
+>	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+count	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+count	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+2282	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+输入	v	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+[	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+之间	f	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+数	m	N	N	O	O
+中	f	N	N	O	O
+0	m	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+5	x	N	N	O	O
+,	x	N	N	O	O
+6	x	N	N	O	O
+,	x	N	N	O	O
+7	x	N	N	O	O
+,	x	N	N	O	O
+8	x	N	N	O	O
+,	x	N	N	O	O
+9	x	N	N	O	O
+出现	v	N	N	O	O
+的	uj	N	N	O	O
+次数	n	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+lint	eng	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+9	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+{	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+10	m	N	N	O	O
+,	x	N	N	O	O
+
+100	m	N	N	O	O
+,	x	N	N	O	O
+
+1000	m	N	N	O	O
+,	x	N	N	O	O
+
+10000	m	N	N	O	O
+,	x	N	N	O	O
+
+100000	m	N	N	O	O
+,	x	N	N	O	O
+
+1000000	m	N	N	O	O
+,	x	N	N	O	O
+
+10000000	m	N	N	O	O
+,	x	N	N	O	O
+
+100000000	m	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+count	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+lint	eng	N	N	O	O
+
+left	eng	N	N	O	O
+,	x	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+9	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+left	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+/	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+(	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+left	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+求出	v	N	N	O	O
+从	p	N	N	O	O
+第	m	N	N	O	O
+到	v	N	N	O	O
+高	a	N	N	O	O
+的	uj	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+位	q	N	N	O	O
+上	f	N	N	O	O
+的	uj	N	N	O	O
+具体	a	N	N	O	O
+数字	n	Y	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+m	x	N	N	O	O
+
+>	x	N	N	O	O
+
+id	eng	N	N	O	O
+
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+id	eng	N	N	O	O
+
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+%	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+x	x	N	N	O	O
+
+>	x	N	N	O	O
+
+y	x	N	N	O	O
+
+)	x	N	N	O	O
+
+swap	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+9	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+
+"	x	N	N	O	O
+,	x	N	N	O	O
+count	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+count	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

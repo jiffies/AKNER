@@ -1,0 +1,66 @@
+The Fun Number System [ PKU 1023 ]_青云行客_百度空间
+
+The Fun Number System 
+Time Limit: 1000MS 
+Memory Limit: 10000K 
+Total Submissions: 3621 
+Accepted: 993 
+
+Description
+In a k bit 2's complement number, where the bits are indexed from 0 to k-1, the weight of the most significant bit (i.e., in position k-1), is -2^(k-1), and the weight of a bit in any position i (0 ≤ i < k-1) is 2^i. For example, a 3 bit number 101 is -2^2 + 0 + 2^0 = -3. A negatively weighted bit is called a negabit (such as the most significant bit in a 2's complement number), and a positively weighted bit is called a posibit. 
+
+A Fun number system is a positional binary number system, where each bit can be either a negabit, or a posibit. For example consider a 3-bit fun number system Fun3, where bits in positions 0, and 2 are posibits, and the bit in position 1 is a negabit. (110)Fun3 is evaluated as 2^2-2^1 + 0 = 3. Now you are going to have fun with the Fun number systems! You are given the description of a k-bit Fun number system Funk, and an integer N (possibly negative. You should determine the k bits of a representation of N in Funk, or report that it is not possible to represent the given N in the given Funk. For example, a representation of -1 in the Fun3 number system (defined above), is 011 (evaluated as 0 - 2^1 + 2^0), and 
+
+representing 6 in Fun3 is impossible.
+
+Input
+The first line of the input file contains a single integer t (1 ≤ t ≤ 10), the number of test cases, followed by the input data for each test case. Each test case is given in three consecutive lines. In the first line there is a positive integer k (1 ≤ k ≤ 64). In the second line of a test data there is a string of length k, composed only of letters n, and p, describing the Fun number system for that test data, where each n (p) indicates that the bit in that position is a negabit (posibit). 
+
+The third line of each test data contains an integer N (-2^63 ≤ N < 2^63), the number to be represented in the Funk number 
+
+system by your program.
+
+Output
+For each test data, you should print one line containing either a k-bit string representing the given number N in the Funk number system, or the word Impossible, when it is impossible to represent the given number.
+
+Sample Input
+23pnp64ppnn10
+
+Sample Output
+Impossible1110
+
+Source
+Tehran 2002, First Iran Nationwide Internet Programming Contest
+//-------------------------------------------------------------------------------------------
+#include <stdio.h>
+int main( )
+{
+    long long n;
+    int cases, k;
+    char pn[70];
+scanf("%d", &cases);
+    while(cases--)
+{
+   scanf("%d%s%I64d", &k, pn, &n);
+        while(k--)
+   {// 关键是直接用n的二进制形式，每次判断处理最后一位 
+            if( n & 0x1 )
+    {// n二进制形式的最后一位为1
+     n += (pn[k]=='p')?-1:1;
+     pn[k]='1';// 该位都要置1，不过为'n'时还要进1位
+    }
+    else 
+     pn[k]='0';
+    n >>= 1;// 处理该位以前的位
+   }
+   puts(n?"Impossible":pn);
+}
+    return 0;
+}
+/*
+算法说明：
+（1）、一个符号数转换为二进制01序列，要对应到给我们的pn序列上填充01
+（2）、一个比较好的想法是从低位到高位的逐位填充，因为最低位的01选择对应着当前填充数的奇偶，是唯一的
+（3）、当 n & 0x1 为1时，还要判断pn序列：当为'n'时说明填上了-1（相对的位上-1），于是要加上1；否则加-1
+（4）、处理一位后右移一位，作为当前值处理
+*/

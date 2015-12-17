@@ -1,0 +1,98 @@
+POJ 3544 Journey with Pigs 贪心 - 水 - 博客频道 - CSDN.NET
+
+首先根据村庄离A的距离和单位路程的花费，以及当地猪肉的价格，我们可以把到达每一个村庄卖猪单位重量赚的钱算出来。然后，按收益降序排列，再把猪的重量降序排序，这时，根据排序不等式，就可以达到最大盈利了。
+所谓排序不等式：
+排序不等式（sequence inequality,又称排序原理
+设有两组数 a1 , a2 ,…… an; b1 , b2 ,…… bn 满足 a1 ≤ a2 ≤……≤ an, b1 ≤ b2 ≤……≤ bn ，其中c1,c2,……,cn是b1,b2,……，bn的任一排列，则有
+a1* bn + a2 *b{n-1}+ ... + an *b1
+≤ a1 *c1 + a2* c2 +……+ an *cn
+≤ a1 *b1 + a2 *b2 + ……+an* bn.
+当且仅当 a1 = a2 = ... = an 或 b1 = b2 = ... = bn 时等号成立，即反序和等于顺序和。
+以上排序不等式也可简记为： 反序和≤乱序和≤同序和.
+
+ /*
+ID: sdj22251
+PROG: calfflac
+LANG: C++
+*/
+#include <iostream>
+#include <vector>
+#include <list>
+#include <map>
+#include <set>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <bitset>
+#include <algorithm>
+#include <functional>
+#include <numeric>
+#include <utility>
+#include <sstream>
+#include <iomanip>
+#include <cstdio>
+#include <cmath>
+#include <cstdlib>
+#include <cctype>
+#include <string>
+#include <cstring>
+#include <cmath>
+#include <ctime>
+#define LOCA
+#define PI acos(-1.0)
+using namespace std;
+struct village
+{
+    __int64 price, dis, profit;
+    int id;
+}p[1001];
+struct zhu
+{
+    __int64 weight;
+    int id;
+}pig[1001];
+bool cmp1(village a, village b)
+{
+    return a.profit > b.profit;
+}
+bool cmp2(zhu a, zhu b)
+{
+    return a.weight > b.weight;
+}
+int main()
+{
+#ifdef LOCAL
+    freopen("calfflac.in","r",stdin);
+    freopen("calfflac.out","w",stdout);
+#endif
+    int n, i;
+    __int64 t;
+    scanf("%d%I64d", &n, &t);
+    for(i = 0; i < n; i++)
+    {
+        scanf("%I64d", &pig[i].weight);
+        pig[i].id = i + 1;
+    }
+    sort(pig, pig + n, cmp2);
+    for(i = 0; i < n; i++)
+    {
+        scanf("%I64d", &p[i].dis);
+    }
+    for(i = 0; i < n; i++)
+    {
+        scanf("%I64d", &p[i].price);
+        p[i].id = i + 1;
+        p[i].profit = p[i].price - p[i].dis * t;
+    }
+    sort(p, p + n, cmp1);
+    int ans[1001];
+    for(i = 0; i < n; i++)
+    {
+        ans[p[i].id] = pig[i].id;
+    }
+    for(i = 1; i < n; i++)
+    printf("%d ", ans[i]);
+    printf("%d\n", ans[n]);
+	return 0;
+}
+ 

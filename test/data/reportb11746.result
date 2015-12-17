@@ -1,0 +1,716 @@
+poj2703	eng	N	Y	O	B-OJ
+-	x	N	N	O	O
+Maximum	eng	N	N	O	O
+
+Area	eng	N	N	O	O
+
+Covered	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+Rectangles	eng	N	N	O	O
+_	x	N	N	O	O
+abentu	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+这	r	N	N	O	O
+道题	n	N	N	O	O
+的	uj	N	N	O	O
+意思	n	N	N	O	O
+稍微	d	N	N	O	O
+绕	v	N	N	O	O
+了	ul	N	N	O	O
+一点	m	N	N	O	O
+，	x	N	N	O	O
+其实	d	N	N	O	O
+读懂	v	N	N	O	O
+之后	f	N	N	O	O
+发现	v	N	N	O	O
+也	d	N	N	O	O
+不难	d	N	N	O	O
+：	x	N	N	O	O
+给出	v	N	N	O	O
+一些	m	N	N	O	O
+矩形	n	Y	N	O	O
+，	x	N	N	O	O
+已知	v	N	N	O	O
+他们	r	N	N	O	O
+一定	d	N	N	O	O
+可以	c	N	N	O	O
+分成	v	N	N	O	O
+一些	m	N	N	O	O
+集合	v	N	N	O	O
+：	x	N	N	O	O
+每个	r	N	N	O	O
+集合	v	N	N	O	O
+里面	f	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+宽	a	N	N	O	O
+（	x	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+短边	b	N	N	O	O
+边长	n	N	N	O	O
+）	x	N	N	O	O
+都	d	N	N	O	O
+相等	v	N	N	O	O
+，	x	N	N	O	O
+而且	c	N	N	O	O
+任何	r	N	N	O	O
+两个	m	N	N	O	O
+集合	v	N	N	O	O
+之间	f	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+不	d	N	N	O	O
+存在	v	N	N	O	O
+覆盖	v	Y	N	O	O
+关系	n	N	N	O	O
+（	x	N	N	O	O
+所谓	b	N	N	O	O
+覆盖	v	Y	N	O	O
+关系	n	N	N	O	O
+就是	d	N	N	O	O
+一个	m	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+长	a	N	N	O	O
+和	c	N	N	O	O
+宽大	a	N	N	O	O
+于	p	N	N	O	O
+另	r	N	N	O	O
+一个	m	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+长	a	N	N	O	O
+和	c	N	N	O	O
+宽	a	N	N	O	O
+）	x	N	N	O	O
+。	x	N	N	O	O
+
+现在	t	N	N	O	O
+让	v	N	N	O	O
+你	r	N	N	O	O
+把	p	N	N	O	O
+这些	r	N	N	O	O
+矩形	n	Y	N	O	O
+沿着	p	N	N	O	O
+xoy	eng	N	N	O	O
+放在	v	N	N	O	O
+第一	m	N	N	O	O
+象限	n	N	N	O	O
+（	x	N	N	O	O
+横	v	N	N	O	O
+着数	n	N	N	O	O
+着	uz	N	N	O	O
+两种	m	N	N	O	O
+方法	n	Y	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+矩形	n	Y	N	O	O
+覆盖	v	Y	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	O
+面积	n	Y	N	O	O
+。	x	N	N	O	O
+
+一个	m	N	N	O	O
+显而易见	i	N	N	O	O
+的	uj	N	N	O	O
+事实	n	N	N	O	O
+，	x	N	N	O	O
+是	v	N	N	O	O
+每个	r	N	N	O	O
+集合	v	N	N	O	O
+里	f	N	N	O	O
+只要	c	N	N	O	O
+选出	v	N	N	O	O
+两个	m	N	N	O	O
+最大	a	Y	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+就	d	N	N	O	O
+好	a	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+都	d	N	N	O	O
+不用	v	N	N	O	O
+。	x	N	N	O	O
+
+而	c	N	N	O	O
+这	r	N	N	O	O
+两个	m	N	N	O	O
+矩形	n	Y	N	O	O
+必然	d	N	N	O	O
+一个	m	N	N	O	O
+竖	v	N	N	O	O
+着	uz	N	N	O	O
+一个	m	N	N	O	O
+横	v	N	N	O	O
+着	uz	N	N	O	O
+放	v	N	N	O	O
+，	x	N	N	O	O
+至于	p	N	N	O	O
+这些	r	N	N	O	O
+被	p	N	N	O	O
+选出	v	N	N	O	O
+来	v	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+应该	v	N	N	O	O
+怎么	r	N	N	O	O
+放	v	N	N	O	O
+，	x	N	N	O	O
+其实	d	N	N	O	O
+做	v	N	N	O	O
+一个	m	N	N	O	O
+小小的	z	N	N	O	O
+贪心	v	Y	N	O	B-KNOWLEDGE
+就	d	N	N	O	O
+好	a	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+严谨	a	N	N	O	O
+的话	u	N	N	O	O
+可以	c	N	N	O	O
+在	p	N	N	O	O
+写	v	N	N	O	O
+代码	n	N	N	O	O
+之前	f	N	N	O	O
+先	d	N	N	O	O
+证明	n	N	N	O	O
+一下	m	N	N	O	O
+（	x	N	N	O	O
+这个	r	N	N	O	O
+证明	n	N	N	O	O
+不是	c	N	N	O	O
+很	d	N	N	O	O
+难	a	N	N	O	O
+）	x	N	N	O	O
+不管怎么	l	N	N	O	O
+放	v	N	N	O	O
+只要	c	N	N	O	O
+一竖	d	N	N	O	O
+一横	a	N	N	O	O
+（	x	N	N	O	O
+如果	c	N	N	O	O
+一个	m	N	N	O	O
+集合	v	N	N	O	O
+只有	c	N	N	O	O
+一个	m	N	N	O	O
+矩形	n	Y	N	O	O
+就	d	N	N	O	O
+随便	d	N	N	O	O
+怎么	r	N	N	O	O
+放	v	N	N	O	O
+都	d	N	N	O	O
+可以	c	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+整个	b	N	N	O	O
+图形	n	Y	N	O	O
+覆盖	v	Y	N	O	O
+的	uj	N	N	O	O
+面积	n	Y	N	O	O
+不变	v	N	N	O	O
+。	x	N	N	O	O
+
+这样的话	l	N	N	O	O
+这	r	N	N	O	O
+道题	n	N	N	O	O
+就	d	N	N	O	O
+简单	a	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+水	n	N	N	O	O
+过	ug	N	N	O	O
+~	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+memory	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAXN	eng	N	N	O	O
+
+1000	m	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+
+struct	eng	N	N	O	O
+
+rec	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+operator	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+rec	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+rec	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+b	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+b	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+b	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+w0	eng	N	N	O	O
+,	x	N	N	O	O
+
+w	x	N	N	O	O
+,	x	N	N	O	O
+
+h1	eng	N	N	O	O
+,	x	N	N	O	O
+
+h2	eng	N	N	O	O
+,	x	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+n	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+;	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+a	eng	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+w0	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+w	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+;	x	N	N	O	O
+
+h1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+;	x	N	N	O	O
+
+h2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+w	x	N	N	O	O
+
+-	x	N	N	O	O
+
+w0	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+w	x	N	N	O	O
+
+-	x	N	N	O	O
+
+w0	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+w	x	N	N	O	O
+
+-	x	N	N	O	O
+
+w0	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+h1	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+w	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+w	x	N	N	O	O
+
+-	x	N	N	O	O
+
+w0	eng	N	N	O	O
+)	x	N	N	O	O
+
+*	x	N	N	O	O
+
+(	x	N	N	O	O
+h2	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+w	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+w	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+w0	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,165 @@
+Poj3567/Bzoj1023 Cactus 仙人掌图的直径 | [IOI2008] Island ---树上DP+环上单调队列_Poetize Space_百度空间
+
+这两个题主体思路差不多，都是在树上树状DP、环上单调队列优化的DP。只不过前者的图是一棵仙人掌，后者的图是一棵外/内向树。
+前者题目描述很直接：求仙人掌直径；后者仔细分析可以发现，答案就是各个连通分量内最长链之和。
+设F[i]表示点i为根的子树中最长链有多长。
+对于这两个题，图中的边实际上只有两种：1.割边，也就是在树上的边。2.非割边，也就是在环上的边（双连通分量内部的边）。
+对于割边(u,v)，如果u是v的父亲，首先用F[v]+F[u]+w(u,v)更新ans，因为此时还没有用F[v]更新F[u]，所以F[u]一定是从另一个儿子转移来的；然后再用F[v]+w(u,v)更新F[u]。
+对于环上两点(u,v)，我们用F[u]+F[v]+dist(u,v)更新ans，对于Cactus一题，还要用F[v]+dist(u,v)更新某个环在DFS树上的最高点u。
+Cactus这题，我们需要在Tarjan的过程中找出割边并且用上述方法更新，同时找出所有的环，当这个环上的所有点的F[]值都被更新完之后，立即对这个环进行处理。具体做法是：对于一个点x，如果存在一条边(x,y)，并且在DFS树中x不是y的父亲，并且dfn[x]<dfn[y]，说明x和y是一个环上两个相邻的点，并且在DFS树中二者没有相邻，因此此时环上(x……y)这些点都已经DFS过了，就可以对这个环进行处理了。
+Island这题，首先遍历一遍图，找出各个连通分量并标记，对于每个连通分量都用变量维护最长链。然后利用拓扑序自底向上BFS，处理完所有的树边，此时就只剩下一个个环了。
+那么接下来两者面临的就是同一个问题：在O(n)时间内处理一个环。
+我们要用到单调队列优化的DP。首先把环拆成链放到一个数组里，然后把数组扩大一倍（也就是复制一遍接到后边），这样就相当于一个环了。然后对于决策i和j，当前循环到的点+1时，决策i和j距离当前循环到的点的距离同时+1，因此如果某时刻i比j优，那么下一时刻i仍然比j优，所以决策单调。跟据题目的不同要留，Cactus这题当队头决策和当前点相距超过半个环长时删掉队头，Island这题相距达到一个环长时删掉队头决策。
+具体问题详见代码，代码还是比较容易看懂的，代码长度两道题都排第一。。
+POJ3567 / Bzoj1023 Cactus
+#include<iostream>
+#include<cstdio>
+using namespace std;
+const int u=50010,w=200010;
+int ver[w],next[w],head[u],dfn[u],low[u],fa[u],f[u],q[u*2],a[u*2];
+int n,m,tot,num,ans,i,j,k,x,y;
+void add(int x,int y)
+{
+ ver[++tot]=y; next[tot]=head[x]; head[x]=tot;
+}
+void dp(int x,int y)
+{
+ int m,i,l,r,p;
+ for(m=0;y!=x;y=fa[y]) a[++m]=f[y];
+ for(a[++m]=f[x],i=1;i<m;i++) a[m+i]=a[i];
+ l=r=q[1]=1; p=m/2;
+ for(i=2;i<=m+p;i++)
+ {
+  while(l<=r&&i-q[l]>p) l++;
+  ans=max(ans,a[q[l]]+a[i]+i-q[l]);
+  while(l<=r&&a[q[r]]+i-q[r]<=a[i]) r--;
+  q[++r]=i;
+ }
+ for(i=1;i<m;i++) f[x]=max(f[x],a[i]+min(i,m-i));
+}
+void tarjan(int x)
+{
+ dfn[x]=low[x]=++num;
+ for(int i=head[x];i;i=next[i])
+  if(fa[x]!=ver[i])
+   if(!dfn[ver[i]])
+   {
+    fa[ver[i]]=x;
+    tarjan(ver[i]);
+    low[x]=min(low[x],low[ver[i]]);
+    if(dfn[x]<low[ver[i]])
+    {
+     ans=max(ans,f[x]+f[ver[i]]+1);
+     f[x]=max(f[x],f[ver[i]]+1);
+    }
+   }
+   else low[x]=min(low[x],dfn[ver[i]]);
+ for(int i=head[x];i;i=next[i])
+  if(fa[ver[i]]!=x&&dfn[x]<dfn[ver[i]]) dp(x,ver[i]);
+}
+int main()
+{
+ cin>>n>>m;
+ for(i=1;i<=m;i++)
+ {
+  scanf("%d%d",&k,&x);
+  for(j=1;j<k;j++)
+  {
+   scanf("%d",&y);
+   add(x,y); add(y,x);
+   x=y;
+  }
+ }
+ tarjan(1);
+ cout<<ans<<endl;
+ return 0;
+}
+ Bzoj1791 [IOI2008] Island
+#include<iostream>
+#include<cstdio>
+using namespace std;
+const int u=1000010;
+int ver[2*u],edge[2*u],next[2*u],head[u],du[u],c[u],v[u],q[2*u];
+long long f[u],d[u],a[2*u],b[2*u],ans;
+int n,m,tot,t,i,x,y;
+void add(int x,int y,int z)
+{
+ ver[++tot]=y; edge[tot]=z; next[tot]=head[x]; head[x]=tot; du[y]++;
+}
+void bfs(int s,int t)
+{
+ int l,r,i;
+ q[l=r=1]=s; c[s]=t;
+ while(l<=r)
+ {
+  for(i=head[q[l]];i;i=next[i])
+   if(!c[ver[i]]) {q[++r]=ver[i]; c[ver[i]]=t;}
+  l++;
+ }
+}
+void topsort()
+{
+ int l=1,r=0,i,x,y;
+ for(i=1;i<=n;i++)
+  if(du[i]==1) q[++r]=i;
+ while(l<=r)
+ {
+  for(i=head[x=q[l]];i;i=next[i])
+   if(du[y=ver[i]]>1)
+   {
+    d[c[x]]=max(d[c[x]],f[x]+f[y]+edge[i]);
+    f[y]=max(f[y],f[x]+edge[i]);
+    if((--du[y])==1) q[++r]=y;
+   }
+  l++;
+ }
+}
+void dp(int t,int x)
+{
+ int m=0,i,l=0,r,y=x;
+ do{
+  a[++m]=f[y]; du[y]=1;
+  for(i=head[y];i;i=next[i])
+   if(du[ver[i]]>1)
+    {y=ver[i]; b[m+1]=b[m]+edge[i]; break;}
+ }while(i);
+ if(m==2)
+ {
+  for(i=head[y];i;i=next[i])
+   if(ver[i]==x) {l=max(l,edge[i]);}
+  d[t]=max(d[t],f[x]+f[y]+l);
+  return;
+ }
+ for(i=head[y];i;i=next[i])
+  if(ver[i]==x) {b[m+1]=b[m]+edge[i]; break;}
+ for(i=1;i<m;i++) {a[m+i]=a[i]; b[m+i]=b[m+1]+b[i];}
+ q[l=r=1]=1;
+ for(i=2;i<2*m;i++)
+ {
+  while(l<=r&&i-q[l]>=m) l++;
+  d[t]=max(d[t],a[i]+a[q[l]]+b[i]-b[q[l]]);
+  while(l<=r&&a[q[r]]+b[i]-b[q[r]]<=a[i]) r--;
+  q[++r]=i;
+ }
+}
+int main()
+{
+ cin>>n;
+ for(i=1;i<=n;i++)
+ {
+  scanf("%d%d",&x,&y);
+  add(i,x,y); add(x,i,y);
+ }
+ for(i=1;i<=n;i++)
+  if(!c[i]) bfs(i,++t);
+ topsort();
+ for(i=1;i<=n;i++)
+  if(du[i]>1&&!v[c[i]])
+  {
+   v[c[i]]=1;
+   dp(c[i],i);
+   ans+=d[c[i]];
+  }
+ cout<<ans<<endl;
+ return 0;
+}

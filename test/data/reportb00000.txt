@@ -1,0 +1,96 @@
+poj 2777 Count Color - 静涛 - 博客频道 - CSDN.NET
+
+//更新区间，求区间数的种类
+#include<stdio.h>
+#include<string.h>
+const int max=100000;
+int flag[31];
+struct node
+{
+	int left,right,color;
+}nodes[3*max];
+void build(int l,int r,int id)
+{
+	nodes[id].left=l;//这里是参数l，大写是L，而不是1，错了几次
+	nodes[id].right=r;
+	nodes[id].color=1;//这里是数字1
+	if(l==r) return ;
+	int mid=(l+r)>>1;
+	build(l,mid,id<<1);//id*2
+	build(mid+1,r,id<<1|1);//id*2+1
+}
+void insert(int id,int l,int r,int cc)
+{
+	if(nodes[id].left>=l&&nodes[id].right<=r)
+	{
+		nodes[id].color=cc;
+		return ;
+	}
+	if(nodes[id].left==nodes[id].right)return ;
+	if(nodes[id].color>0)//懒惰标记，标记父节点，而暂时不更新子节点，当要询问时再来更新
+        {
+		nodes[id*2].color=nodes[id].color;
+		nodes[id*2+1].color=nodes[id].color;
+		nodes[id].color=-1;
+	}
+	int mid=(nodes[id].left+nodes[id].right)>>1;
+	if(mid>=r) insert(id*2,l,r,cc);
+	else if(mid<l) insert(id*2+1,l,r,cc);
+	else
+	{
+		insert(id*2,l,mid,cc);
+		insert(id*2+1,mid+1,r,cc);
+	}
+}
+void count(int l,int r,int id)
+{
+	if(nodes[id].color>0)
+	{
+		flag[nodes[id].color]=1;
+		return ;
+	}
+	int mid=(nodes[id].left+nodes[id].right)>>1;
+	if(mid>=r) count(l,r,id*2);
+	else if(mid<l) count(l,r,id*2+1);
+	else 
+	{
+		count(l,mid,id*2);
+		count(mid+1,r,id*2+1);
+	}
+}
+int main()
+{
+	int n,m,k,a,b,c,ee,ff;
+	char char1;
+	scanf("%d%d%d",&n,&m,&k);
+	build(1,n,1);
+	while(k--)
+	{
+		getchar();
+		scanf("%c",&char1);
+		if(char1=='C')
+		{
+			scanf("%d%d%d",&a,&b,&c);
+			if(a>b)
+				insert(1,b,a,c);
+			else 
+				insert(1,a,b,c);
+		}
+		else
+		{ 
+		     scanf("%d%d",&ee,&ff);
+			 memset(flag,0,sizeof(flag));
+			 if(ee>ff) 
+				 count(ff,ee,1);
+			 else 
+				 count(ee,ff,1);
+			 int sum=0;
+	         for(int j=1;j<=m;j++)
+	         {
+                if(flag[j])sum++;
+	         }
+	         printf("%d\n",sum);
+		}
+	}
+	return 0;
+}

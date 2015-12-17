@@ -1,0 +1,825 @@
+POJ	eng	N	Y	O	B-OJ
+
+1655	m	N	N	O	I-OJ
+
+Balancing	eng	N	N	O	O
+
+Act	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+浙西	ns	N	N	O	O
+贫农	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+实际上	d	N	N	O	O
+，	x	N	N	O	O
+这个	r	N	N	O	O
+题	n	N	N	O	O
+不难	d	N	N	O	O
+，	x	N	N	O	O
+状态	n	Y	N	O	O
+很	d	N	N	O	O
+好	a	N	N	O	O
+写	v	N	N	O	O
+：	x	N	N	O	O
+balace	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+max	eng	N	N	O	O
+(	x	N	N	O	O
+size	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+N	x	N	N	O	O
+-	x	N	N	O	O
+size	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+，	x	N	N	O	O
+其中	r	N	N	O	O
+i	eng	N	N	O	O
+是	v	N	N	O	O
+j	eng	N	N	O	O
+的	uj	N	N	O	O
+父	n	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+size	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+以	p	N	N	O	O
+节点	n	N	N	O	O
+i	eng	N	N	O	O
+为	p	N	N	O	O
+根	a	N	N	O	O
+节点	n	N	N	O	O
+所	c	N	N	O	O
+构成	v	N	N	O	O
+子树	n	N	N	O	O
+的	uj	N	N	O	O
+节点	n	N	N	O	O
+总数	n	N	N	O	O
+。	x	N	N	O	O
+
+一遍	m	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
+就	d	N	N	O	O
+可以	c	N	N	O	O
+搞定	v	N	N	O	O
+。	x	N	N	O	O
+
+题目	n	Y	N	O	O
+里	f	N	N	O	O
+给	p	N	N	O	O
+的	uj	N	N	O	O
+数据	n	N	N	O	O
+是	v	N	N	O	O
+告诉	v	N	N	O	O
+你	r	N	N	O	O
+每	r	N	N	O	O
+两个	m	N	N	O	O
+节点	n	N	N	O	O
+之间	f	N	N	O	O
+有	v	N	N	O	O
+一条	m	N	N	O	O
+边	d	N	N	O	O
+，	x	N	N	O	O
+而	c	N	N	O	O
+不是	c	N	N	O	O
+父子	n	N	N	O	O
+节点	n	N	N	O	O
+关系	n	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+2	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+3	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+vector	eng	N	N	O	O
+>	x	N	N	O	O
+
+4	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+
+0	m	N	N	O	O
+xffffff	eng	N	N	O	O
+
+5	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+6	x	N	N	O	O
+
+7	x	N	N	O	O
+
+vector	eng	N	N	O	O
+
+<	x	N	N	O	O
+int	eng	N	N	O	O
+>	x	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+20001	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+8	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+20001	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+9	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+20001	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+10	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+11	m	N	N	O	O
+
+12	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+max	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+13	m	N	N	O	O
+
+{	x	N	N	O	O
+
+14	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+>	x	N	N	O	O
+
+b	x	N	N	O	O
+
+?	x	N	N	O	O
+
+a	x	N	N	O	O
+
+:	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+15	m	N	N	O	O
+
+}	x	N	N	O	O
+
+16	m	N	N	O	O
+
+17	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+18	m	N	N	O	O
+
+{	x	N	N	O	O
+
+19	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+
+?	x	N	N	O	O
+
+a	x	N	N	O	O
+
+:	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+20	m	N	N	O	O
+
+}	x	N	N	O	O
+
+21	m	N	N	O	O
+
+22	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+)	x	N	N	O	O
+
+23	m	N	N	O	O
+
+{	x	N	N	O	O
+
+24	m	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+25	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+26	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+vector	eng	N	N	O	O
+<	x	N	N	O	O
+int	eng	N	N	O	O
+>	x	N	N	O	O
+:	x	N	N	O	O
+:	x	N	N	O	O
+size	eng	N	N	O	O
+_	x	N	N	O	O
+type	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+size	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+27	m	N	N	O	O
+
+{	x	N	N	O	O
+
+28	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+
+=	x	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+29	m	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+30	m	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+31	m	N	N	O	O
+
+32	m	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+33	m	N	N	O	O
+
+sum	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+34	m	N	N	O	O
+
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+max	eng	N	N	O	O
+(	x	N	N	O	O
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+35	m	N	N	O	O
+
+}	x	N	N	O	O
+
+36	m	N	N	O	O
+
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+max	eng	N	N	O	O
+(	x	N	N	O	O
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+
+-	x	N	N	O	O
+
+sum	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+37	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+38	m	N	N	O	O
+
+}	x	N	N	O	O
+
+39	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+40	m	N	N	O	O
+
+{	x	N	N	O	O
+
+41	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+t	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+42	m	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+t	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+43	m	N	N	O	O
+
+{	x	N	N	O	O
+
+44	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+q	x	N	N	O	O
+;	x	N	N	O	O
+
+45	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+46	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+47	m	N	N	O	O
+
+{	x	N	N	O	O
+
+48	m	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+49	m	N	N	O	O
+
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+50	m	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+51	m	N	N	O	O
+
+}	x	N	N	O	O
+
+52	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+53	m	N	N	O	O
+
+{	x	N	N	O	O
+
+54	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+q	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+55	m	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+q	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+56	m	N	N	O	O
+
+G	x	N	N	O	O
+[	x	N	N	O	O
+q	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+57	m	N	N	O	O
+
+}	x	N	N	O	O
+
+58	m	N	N	O	O
+
+59	m	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+60	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+MAX	eng	N	N	O	O
+;	x	N	N	O	O
+
+61	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+62	m	N	N	O	O
+
+{	x	N	N	O	O
+
+63	m	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+64	m	N	N	O	O
+
+{	x	N	N	O	O
+
+65	m	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+balance	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+66	m	N	N	O	O
+
+flag	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+67	m	N	N	O	O
+
+}	x	N	N	O	O
+
+68	m	N	N	O	O
+
+}	x	N	N	O	O
+
+69	m	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+flag	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+70	m	N	N	O	O
+
+}	x	N	N	O	O
+
+71	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+72	m	N	N	O	O
+
+}	x	N	N	O	O
+

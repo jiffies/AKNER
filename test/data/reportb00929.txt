@@ -1,0 +1,23 @@
+poj3183解题报告_水过境迁…_百度空间
+
+水淋淋的题目，注意边缘数据就成了，炸突起的或者是平的
+#include<iostream>
+#include<cstdio>
+using namespace std;
+int main()
+{
+    int a[50010];
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)    scanf("%d",&a[i]);
+    int i=1;
+    if(a[0]>=a[1])
+        cout<<"1"<<endl;
+    while(i<n)
+    {
+        if(a[i-1]<=a[i]&&a[i]>=a[i+1])
+            cout<<i+1<<endl;
+        i++;
+    }
+    return 0;
+}

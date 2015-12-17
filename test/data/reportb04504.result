@@ -1,0 +1,600 @@
+POJ	eng	N	Y	O	B-OJ
+
+2976	m	N	N	O	I-OJ
+
+-	x	N	N	O	O
+
+tmeteorj	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+算是	v	N	N	O	O
+一道	m	N	N	O	O
+裸	ag	N	N	O	O
+的	uj	N	N	O	O
+0	m	N	N	O	B-KNOWLEDGE
+-	x	N	N	O	I-KNOWLEDGE
+1	x	N	N	O	I-KNOWLEDGE
+分数	n	Y	N	O	I-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+0	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+规划	n	Y	N	O	O
+正确性	n	N	N	O	O
+的	uj	N	N	O	O
+证明	n	N	N	O	O
+请	v	N	N	O	O
+参考	v	N	N	O	O
+OI	eng	N	N	O	O
+论文	nz	N	N	O	O
+《	x	N	N	O	O
+最小	a	Y	N	O	O
+割	v	N	N	O	O
+模型	n	Y	N	O	O
+在	p	N	N	O	O
+信息学	n	N	N	O	O
+竞赛	vn	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+应用	v	N	N	O	O
+》	x	N	N	O	O
+，	x	N	N	O	O
+里面	f	N	N	O	O
+非常	d	N	N	O	O
+详细	ad	N	N	O	O
+。	x	N	N	O	O
+
+总之	c	N	N	O	O
+，	x	N	N	O	O
+就是	d	N	N	O	O
+枚举	nz	Y	N	O	O
+比例	n	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+a	eng	N	N	O	O
+-	x	N	N	O	O
+bx	eng	N	N	O	O
+的	uj	N	N	O	O
+最大值	l	N	N	O	O
+，	x	N	N	O	O
+由于	c	N	N	O	O
+最	d	N	N	O	O
+多	m	N	N	O	O
+可以	c	N	N	O	O
+删去	v	N	N	O	O
+k	eng	N	N	O	O
+个	m	N	N	O	O
+物品	n	N	N	O	O
+，	x	N	N	O	O
+实际	n	N	N	O	O
+就是	d	N	N	O	O
+保留	v	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+k	eng	N	N	O	O
+个	m	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+就	d	N	N	O	O
+在	p	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+物品	n	N	N	O	O
+中	f	N	N	O	O
+选出	v	N	N	O	O
+最大	a	Y	N	O	O
+的	uj	N	N	O	O
+n	eng	N	N	O	O
+-	x	N	N	O	O
+k	eng	N	N	O	O
+个	m	N	N	O	O
+物品	n	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+再	d	N	N	O	O
+看	v	N	N	O	O
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+物品	n	N	N	O	O
+里面	f	N	N	O	O
+权值	n	N	N	O	O
+为	p	N	N	O	O
+正	d	N	N	O	O
+就	d	N	N	O	O
+加进来	nr	N	N	O	O
+，	x	N	N	O	O
+最后	f	N	N	O	O
+，	x	N	N	O	O
+看	v	N	N	O	O
+ans	eng	N	N	O	O
+是否	v	N	N	O	O
+等于	v	N	N	O	O
+0	x	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+2	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+3	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+4	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+5	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+6	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+double	eng	N	N	O	O
+
+eps	eng	N	N	O	O
+=	x	N	N	O	O
+1	m	N	N	O	O
+e	eng	N	N	O	O
+-	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+
+7	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+8	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+9	x	N	N	O	O
+
+{	x	N	N	O	O
+
+10	m	N	N	O	O
+
+double	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+1005	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+11	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+12	m	N	N	O	O
+
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+100	m	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+x	x	N	N	O	O
+*	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+13	m	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+,	x	N	N	O	O
+temp	eng	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+14	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+15	m	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+16	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	eng	N	N	O	O
+&&	x	N	N	O	O
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+-	x	N	N	O	O
+eps	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+17	m	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+18	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+19	m	N	N	O	O
+
+}	x	N	N	O	O
+
+20	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+21	m	N	N	O	O
+
+{	x	N	N	O	O
+
+22	m	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+23	m	N	N	O	O
+
+{	x	N	N	O	O
+
+24	m	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+25	m	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+26	m	N	N	O	O
+
+r	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+27	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+28	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+a	eng	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+29	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+30	m	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+b	eng	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+31	m	N	N	O	O
+
+double	eng	N	N	O	O
+
+ll	eng	Y	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+rr	eng	N	N	O	O
+=	x	N	N	O	O
+100	m	N	N	O	O
+,	x	N	N	O	O
+mid	eng	N	N	O	O
+;	x	N	N	O	O
+
+32	m	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+rr	eng	N	N	O	O
+-	x	N	N	O	O
+ll	eng	Y	N	O	O
+>	x	N	N	O	O
+eps	eng	N	N	O	O
+)	x	N	N	O	O
+
+33	m	N	N	O	O
+
+{	x	N	N	O	O
+
+34	m	N	N	O	O
+
+mid	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+ll	eng	Y	N	O	O
++	x	N	N	O	O
+rr	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2.0	m	N	N	O	O
+;	x	N	N	O	O
+
+35	m	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+mid	eng	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+eps	eng	N	N	O	O
+)	x	N	N	O	O
+
+36	m	N	N	O	O
+
+ll	eng	Y	N	O	O
+=	x	N	N	O	O
+mid	eng	N	N	O	O
+;	x	N	N	O	O
+
+37	m	N	N	O	O
+
+else	eng	N	N	O	O
+
+38	m	N	N	O	O
+
+rr	eng	N	N	O	O
+=	x	N	N	O	O
+mid	eng	N	N	O	O
+;	x	N	N	O	O
+
+39	m	N	N	O	O
+
+}	x	N	N	O	O
+
+40	m	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.0	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ll	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+41	m	N	N	O	O
+
+}	x	N	N	O	O
+
+42	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+43	m	N	N	O	O
+
+}	x	N	N	O	O
+

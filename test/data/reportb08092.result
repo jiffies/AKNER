@@ -1,0 +1,375 @@
+POJ	eng	N	Y	O	B-OJ
+
+3100	m	N	N	O	O
+
+Root	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+_	x	N	N	O	O
+乐吾天	nr	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+power	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+
+m	x	N	N	O	O
+*	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+b	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+power	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+>	x	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+power	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+
+>	x	N	N	O	O
+
+b	x	N	N	O	O
+-	x	N	N	O	O
+power	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+推荐	v	N	N	O	O
+文章	n	N	N	O	O
+:	x	N	N	O	O
+
+1.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1036	m	N	N	O	I-OJ
+
+DP	eng	N	N	O	B-KNOWLEDGE
+
+强盗	n	N	N	O	O
+闯门	nrt	N	N	O	O
+
+2.	m	N	N	O	O
+
+转	v	N	N	O	O
+一首	m	N	N	O	O
+poj	eng	N	Y	O	B-OJ
+的	uj	N	N	O	O
+情诗	n	N	N	O	O
+，	x	N	N	O	O
+先	d	N	N	O	O
+留	v	N	N	O	O
+这里	r	N	N	O	O
+，	x	N	N	O	O
+以后	f	N	N	O	O
+定	v	N	N	O	O
+有用	v	N	N	O	O
+
+3.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+2311	m	N	N	O	I-OJ
+
+Cutting	eng	N	N	O	O
+
+Game	eng	N	N	O	O
+(	x	N	N	O	O
+博弈论	n	Y	N	O	B-KNOWLEDGE
+
+之	u	N	N	O	O
+
+sg	eng	N	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+)	x	N	N	O	O
+
+4.	m	N	N	O	O
+
+转战	v	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+5.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+3150	m	N	N	O	I-OJ
+
+Cellular	eng	N	N	O	O
+
+Automaton	eng	N	N	O	O
+
+矩阵	n	Y	N	O	O
+法	j	N	N	O	O
+
+6.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+2352	m	N	N	O	I-OJ
+
+Stars	eng	N	N	O	O
+
+[	x	N	N	O	O
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
+]	x	N	N	O	O
+
+7.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+2288	m	N	N	O	I-OJ
+—	x	N	N	O	O
+—	x	N	N	O	O
+Islands	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+Bridges	eng	N	N	O	O
+—	x	N	N	O	O
+—	x	N	N	O	O
+基于	p	N	N	O	O
+Hamilton	eng	N	N	O	O
+回路	v	Y	N	O	O
+的	uj	N	N	O	O
+状态	n	Y	N	O	O
+压缩	v	Y	N	O	O
+动态	n	Y	N	O	B-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+（	x	N	N	O	O
+DP	eng	N	N	O	B-KNOWLEDGE
+)	x	N	N	O	O
+
+8.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+3530	m	N	N	O	I-OJ
+—	x	N	N	O	O
+—	x	N	N	O	O
+A	x	N	N	O	O
+
+Modular	eng	N	N	O	O
+
+Arithmetic	eng	N	N	O	O
+
+Challenge	eng	N	N	O	O
+—	x	N	N	O	O
+—	x	N	N	O	O
+数论	n	Y	N	O	B-KNOWLEDGE
+
+9.	m	N	N	O	O
+
+都	d	N	N	O	O
+不想	v	N	N	O	O
+在	p	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+上	f	N	N	O	O
+做题	v	N	N	O	O
+了	ul	N	N	O	O
+
+10.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1201	m	N	N	O	I-OJ
+

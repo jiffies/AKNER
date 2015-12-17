@@ -1,0 +1,367 @@
+POJ 2418 Hardwood Species(排序二叉树) - Alasky的日志 - 网易博客
+
+//不用平衡技术的后果...果断1313MS
+
+
+ //一般我的代码会相对比较长，因为我自己写栈。。初学者还是多自己写写吧。。。
+
+
+ 
+
+
+
+ 
+  #include "stdio.h"
+ 
+ 
+  #include "string.h"
+ 
+ 
+  #include "malloc.h"
+ 
+ 
+  #include "stdlib.h"
+ 
+ 
+  
+
+ 
+ 
+  #define SIZE 30
+ 
+ 
+  #define STACKSIZE 10000
+ 
+ 
+  #define EQ(a, b) (!strcmp((a), (b)))
+ 
+ 
+  #define RT(a, b) (strcmp((a), (b)) > 0)
+ 
+ 
+  #define LT(a, b) (strcmp((a), (b)) < 0)
+ 
+ 
+  
+
+ 
+ 
+  typedef struct BSTNode{
+ 
+ 
+   int n;
+   
+  //amount of the tree of this type
+ 
+ 
+   char key[SIZE+1];
+   
+  //tree name
+ 
+ 
+   BSTNode *lchild, *rchild;
+ 
+ 
+  }BSTNode, *BSTree;
+ 
+ 
+  
+
+ 
+ 
+  BSTree root;
+ 
+ 
+  int total;
+   
+  //树的总数
+ 
+ 
+  
+
+ 
+ 
+  //____________得，自己再写一个栈，The fact is that it only costs a few time. 
+ 
+ 
+  typedef struct SNode{
+ 
+ 
+   BSTree *base;
+ 
+ 
+   BSTree *top;
+ 
+ 
+   int stacksize;
+ 
+ 
+  }SqStack;
+ 
+ 
+  
+
+ 
+ 
+  bool InitStack(SqStack &S){
+ 
+ 
+   
+  //初始化一个栈
+ 
+ 
+   if (!(S.base = (BSTree*)malloc(STACKSIZE*sizeof(BSTree)))) exit(0);
+ 
+ 
+   S.top = S.base;
+ 
+ 
+   S.stacksize = STACKSIZE;
+ 
+ 
+   return true;
+ 
+ 
+  }
+  //InitStack
+ 
+ 
+  bool Push(SqStack &S, BSTree e){
+ 
+ 
+   if (S.top - S.base >= S.stacksize){
+ 
+ 
+   S.base = (BSTree *)realloc(S.base, (S.stacksize + STACKSIZE)*sizeof(BSTree));
+ 
+ 
+   if (!S.base) exit(0);
+ 
+ 
+   S.top = S.base + S.stacksize;
+ 
+ 
+   S.stacksize += STACKSIZE;
+ 
+ 
+   }
+ 
+ 
+   *S.top++ = e;
+ 
+ 
+   return true;
+ 
+ 
+  }
+  //Push
+ 
+ 
+  bool Pop(SqStack &S, BSTree &e){
+ 
+ 
+   if (S.top == S.base)
+ 
+ 
+   return false;
+ 
+ 
+   e = *(--S.top);
+ 
+ 
+   return true;
+ 
+ 
+  }
+  //Pop
+ 
+ 
+  bool EmptyStack(SqStack &S){
+ 
+ 
+   if (S.top == S.base)
+ 
+ 
+   return true;
+ 
+ 
+   else return false;
+ 
+ 
+  }
+  //EmptyStack
+ 
+ 
+  
+
+ 
+ 
+  bool SearchBST(BSTree T, char *key, BSTree f, BSTree &p){
+ 
+ 
+   
+  //在二叉树中查找key，查找成功，对应n值+1；否则
+ 
+ 
+   //p值返回应该插入的结点的双亲
+ 
+ 
+   if (!T) {p = f; return false;}
+ 
+ 
+   else if (EQ(key, T->key)) {T->n++; return true;}
+ 
+ 
+   else if (LT(key, T->key)) return SearchBST(T->lchild, key, T, p);
+ 
+ 
+   else return SearchBST(T->rchild, key, T, p);
+ 
+ 
+  }
+  //SearchBST
+ 
+ 
+  bool InsertBST(BSTree &T, char *e){
+ 
+ 
+   
+  //查找e.key，如果存在n值+1；否则插入
+ 
+ 
+   BSTNode *p;
+ 
+ 
+   if (!SearchBST(T, e, NULL, p)){
+ 
+ 
+   BSTNode *s = (BSTree)malloc(sizeof(BSTNode));
+ 
+ 
+   s->n = 1;
+ 
+ 
+   strcpy(s->key, e);
+ 
+ 
+   s->lchild = s->rchild = NULL;
+ 
+ 
+   
+ 
+ 
+   if (!p) T = s;
+ 
+ 
+   else if (LT(e, p->key)) p->lchild = s;
+ 
+ 
+   else p->rchild = s;
+ 
+ 
+   return true;
+ 
+ 
+   }
+ 
+ 
+   return false;
+ 
+ 
+  }
+  //InsertBST
+ 
+ 
+  //从小到大输出需要中序遍历
+ 
+ 
+  bool InOrdTraverse(BSTree T){
+ 
+ 
+   
+  //中序遍历排序二叉树，虽然这里我没有引入平衡二叉树的结构，但勉强来一次吧。。
+ 
+ 
+   //damn it!!我突然发现，Stack is in demand。。。。。more time will elaps~~~~
+ 
+ 
+   SqStack S;
+ 
+ 
+   InitStack(S);
+ 
+ 
+   while (T || !EmptyStack(S)){
+ 
+ 
+   if (T){
+ 
+ 
+   Push(S, T);
+ 
+ 
+   T = T->lchild;
+ 
+ 
+   }
+ 
+ 
+   else{
+ 
+ 
+   Pop(S, T);
+ 
+ 
+   printf("%s %.4lf\n", T->key, (double)T->n/total*100);
+ 
+ 
+   T = T->rchild;
+ 
+ 
+   }
+ 
+ 
+   }
+ 
+ 
+   return true;
+ 
+ 
+  }
+  //InOrdTraverse
+ 
+ 
+  
+
+ 
+ 
+  int main(){
+ 
+ 
+   char s[SIZE+1];
+ 
+ 
+   total = 0;
+ 
+ 
+   while (gets(s)){
+ 
+ 
+   total++;
+ 
+ 
+   InsertBST(root, s);
+   
+ 
+ 
+   }
+ 
+ 
+   InOrdTraverse(root);
+ 
+ 
+   return 0;
+ 
+ 
+  }
+ 

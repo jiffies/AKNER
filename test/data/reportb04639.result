@@ -1,0 +1,1769 @@
+poj1135	eng	N	Y	O	B-OJ
+
+Domino	eng	N	N	O	O
+
+Effect	eng	N	N	O	O
+(	x	N	N	O	O
+最	d	N	N	O	B-KNOWLEDGE
+短	a	N	N	O	I-KNOWLEDGE
+路径	n	Y	N	O	I-KNOWLEDGE
+)	x	N	N	O	O
+_	x	N	N	O	O
+chenhuang	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+题目	n	Y	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+pku	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+JudgeOnline	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1135	m	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+达到	v	N	N	O	O
+每个	r	N	N	O	O
+关键	n	N	N	O	O
+多米诺	nrt	N	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+就是	d	N	N	O	O
+与	p	N	N	O	O
+第一个	m	N	N	O	O
+关键	n	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+的	uj	N	N	O	O
+最	a	N	N	O	O
+短距离	n	N	N	O	O
+
+与	p	N	N	O	O
+第一个	m	N	N	O	O
+关键	n	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+距离	n	Y	N	O	O
+最远	a	Y	N	O	O
+的	uj	N	N	O	O
+关键	n	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+必定	d	N	N	O	O
+最	d	N	N	O	O
+晚	tg	N	N	O	O
+倒下	v	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+
+穷举	n	N	N	O	O
+每个	r	N	N	O	O
+关键	n	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+和	c	N	N	O	O
+它	r	N	N	O	O
+的	uj	N	N	O	O
+相邻	v	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+，	x	N	N	O	O
+查找	v	Y	N	O	O
+最	d	N	N	O	O
+晚	tg	N	N	O	O
+倒下	v	N	N	O	O
+的	uj	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+
+源代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+vector	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+queue	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+INF	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+100000000	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAXN	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+501	m	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+to	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+Edge	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+骨牌	n	N	N	O	O
+的	uj	N	N	O	O
+排数	n	N	N	O	O
+，	x	N	N	O	O
+即	v	N	N	O	O
+边数	n	N	N	O	O
+
+vector	eng	N	N	O	O
+<	x	N	N	O	O
+Edge	eng	N	N	O	O
+>	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+存放	v	N	N	O	O
+图	n	N	N	O	O
+的	uj	N	N	O	O
+邻接	v	Y	N	O	O
+表	v	N	N	O	O
+
+priority	eng	N	N	O	O
+_	x	N	N	O	O
+queue	eng	N	N	O	O
+<	x	N	N	O	O
+Edge	eng	N	N	O	O
+>	x	N	N	O	O
+
+pq	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+存放	v	N	N	O	O
+每个	r	N	N	O	O
+关键	n	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+到	v	N	N	O	O
+1	m	N	N	O	O
+号	m	N	N	O	O
+多米诺骨牌	nz	N	N	O	O
+的	uj	N	N	O	O
+最短	a	Y	N	O	B-KNOWLEDGE
+路径	n	Y	N	O	I-KNOWLEDGE
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+比较	d	N	N	O	O
+器	n	N	N	O	O
+
+bool	eng	N	N	O	O
+
+operator	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+Edge	eng	N	N	O	O
+&	x	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+Edge	eng	N	N	O	O
+&	x	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	eng	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+b	eng	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+Init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+Dijkstra	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+ct	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+Edge	eng	N	N	O	O
+
+e	x	N	N	O	O
+,	x	N	N	O	O
+e1	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+INF	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+pop	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+e	eng	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+ct	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+!	x	N	N	O	O
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+do	eng	N	N	O	O
+{	x	N	N	O	O
+
+e	x	N	N	O	O
+
+=	x	N	N	O	O
+
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+top	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+pop	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+!	x	N	N	O	O
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+empty	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+ct	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+size	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+;	x	N	N	O	O
+
+e1	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+;	x	N	N	O	O
+
+e1	eng	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+pq	eng	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+(	x	N	N	O	O
+e1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+GetAns	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+p2	eng	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+<	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+size	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
++	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+>	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
++	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
+>	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+>	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
++	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+
+>	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+double	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
++	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+>	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dist	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p1	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p1	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+p2	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+^	x	N	N	O	O
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+
+p2	eng	N	N	O	O
+
+^	x	N	N	O	O
+=	x	N	N	O	O
+
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+^	x	N	N	O	O
+=	x	N	N	O	O
+
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+The	eng	N	N	O	O
+
+last	eng	N	N	O	O
+
+domino	eng	N	N	O	O
+
+falls	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+%	x	N	N	O	O
+.1	m	N	N	O	O
+f	eng	N	N	O	O
+
+seconds	eng	N	N	O	O
+,	x	N	N	O	O
+
+between	eng	N	N	O	O
+
+key	eng	N	N	O	O
+
+dominoes	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+,	x	N	N	O	O
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+p2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+The	eng	N	N	O	O
+
+last	eng	N	N	O	O
+
+domino	eng	N	N	O	O
+
+falls	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+%	x	N	N	O	O
+.1	m	N	N	O	O
+f	eng	N	N	O	O
+
+seconds	eng	N	N	O	O
+,	x	N	N	O	O
+
+at	eng	N	N	O	O
+
+key	eng	N	N	O	O
+
+domino	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+,	x	N	N	O	O
+p1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+void	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ct	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+z	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+Edge	eng	N	N	O	O
+
+e	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+n	x	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+m	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+建图	n	Y	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+x	x	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+y	x	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+z	x	N	N	O	O
+;	x	N	N	O	O
+
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+e	eng	N	N	O	O
+.	m	N	N	O	O
+time	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+z	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+e	eng	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+push	eng	N	N	O	O
+_	x	N	N	O	O
+back	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+Dijkstra	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+System	eng	N	N	O	O
+
+#	x	N	N	O	O
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+ct	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+GetAns	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

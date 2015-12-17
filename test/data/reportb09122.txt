@@ -1,0 +1,71 @@
+PKU_1147_唐武的空间_百度空间
+
+//虽然在网上找到不少代码，但的确看的不是很明白，只好自己再摸索规律。
+//假设最后一列有n个0，则可以确定第1列的前n个也是0，后面的全为1，第1列的第i个0和最后一列0相对应，第j个1和最后一列的第j个1相对应。
+#include <stdio.h>
+const int NUM = 3001;
+int input[NUM];
+int zero[NUM];           //zero[i]表示第i个0在input中的位置
+int one[NUM];            //one[i]表示第i个1在input中的位置 
+int output[NUM];
+int N;                   //输入的0、1的个数
+int zero_num;            //0的个数
+int one_num;
+void Ans();
+int main()
+{
+ int i;
+ while(scanf("%d", &N) != EOF)
+ {
+   zero_num = one_num = 0;
+   for(i = 1; i <= N; i++)
+   {
+    scanf("%d", &input[i]);
+    if(input[i] == 0)
+    {
+     zero_num++;
+     zero[zero_num] = i;
+    }
+    else
+    {
+     one_num++;
+     one[one_num] = i;
+    }
+   }
+   Ans();
+   for(i = 1; i <= N; i++)
+    printf("%d ", output[i]);
+   printf("\n");
+ }
+ return 0;
+}
+void Ans()
+{
+ int i;
+ if(zero_num > 0)
+   output[1] = 0;        //第一个一定是0
+ else
+ {
+   for(i = 1; i <= N; i++)
+    output[i] = 1;
+   return ;
+ }
+ int k = 0, h = 1, c = zero[h]; //k表示是0还是1，h表示是第几个0或第几个1
+ for(i = 2; i <= N; i++)
+ {
+   if(c > zero_num)
+   {
+    k = 1;
+    h = c - zero_num;
+    output[i] = 1;
+    c = one[h];
+   }
+   else
+   {
+    output[i] = 0;
+    k = 0;
+    h = c;
+    c = zero[h];
+   }
+ }
+}

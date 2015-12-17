@@ -1,0 +1,2005 @@
+POJ	eng	N	Y	O	B-OJ
+
+2226	m	N	N	O	O
+
+Muddy	eng	N	N	O	O
+
+Fields	eng	N	N	O	O
+_	x	N	N	O	O
+Lonely	eng	N	N	O	O
+
+Star	eng	N	N	O	O
+-	x	N	N	O	O
+浩	nr	N	N	O	O
+宇孤星	nr	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+这个	r	N	N	O	O
+问题	n	N	N	O	O
+转化	v	Y	N	O	O
+为	p	N	N	O	O
+
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+覆盖	v	Y	N	O	O
+。	x	N	N	O	O
+
+等价	n	N	N	O	O
+于	p	N	N	O	O
+求	v	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+最大	a	Y	N	O	O
+匹配	v	Y	N	O	O
+。	x	N	N	O	O
+
+为了	p	N	N	O	O
+做	v	N	N	O	O
+这	r	N	N	O	O
+道题	n	N	N	O	O
+专门	n	N	N	O	O
+看	v	N	N	O	O
+了	ul	N	N	O	O
+下	v	N	N	O	O
+组合	v	Y	N	O	B-KNOWLEDGE
+数学	n	Y	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+原来	d	N	N	O	O
+树上	s	N	N	O	O
+求	v	N	N	O	O
+最大	a	Y	N	O	O
+匹配	v	Y	N	O	O
+的	uj	N	N	O	O
+算法	n	Y	N	O	O
+就是	d	N	N	O	O
+　	x	N	N	O	O
+匈牙利	ns	Y	N	O	B-KNOWLEDGE
+算法	n	Y	N	O	O
+。	x	N	N	O	O
+
+计算	v	Y	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+算法	n	Y	N	O	O
+有	v	N	N	O	O
+网络	n	Y	N	O	B-KNOWLEDGE
+流	n	N	N	O	I-KNOWLEDGE
+算法	n	Y	N	O	O
+和	c	N	N	O	O
+匈牙利	ns	Y	N	O	B-KNOWLEDGE
+算法	n	Y	N	O	O
+（	x	N	N	O	O
+目前	t	N	N	O	O
+就	d	N	N	O	O
+知道	v	N	N	O	O
+这	r	N	N	O	O
+两种	m	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+其中	r	N	N	O	O
+匈牙利	ns	Y	N	O	B-KNOWLEDGE
+算法	n	Y	N	O	O
+是	v	N	N	O	O
+比较	d	N	N	O	O
+巧妙	a	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+具体	a	N	N	O	O
+过程	n	N	N	O	O
+如下	t	N	N	O	O
+（	x	N	N	O	O
+
+转自	v	N	N	O	O
+组合	v	Y	N	O	B-KNOWLEDGE
+数学	n	Y	N	O	I-KNOWLEDGE
+）	x	N	N	O	O
+：	x	N	N	O	O
+
+令	nrt	N	N	O	O
+g	eng	N	N	O	O
+=	x	N	N	O	O
+（	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+*	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+）	x	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+其中	r	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+...	m	N	N	O	O
+}	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+....	m	N	N	O	O
+}	x	N	N	O	O
+.	m	N	N	O	O
+令	nrt	N	N	O	O
+m	eng	N	N	O	O
+为	p	N	N	O	O
+g	eng	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+任意	v	Y	N	O	O
+匹配	v	Y	N	O	O
+。	x	N	N	O	O
+
+1	x	N	N	O	O
+。	x	N	N	O	O
+
+将	d	N	N	O	O
+x	eng	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+不	d	N	N	O	O
+与	p	N	N	O	O
+m	eng	N	N	O	O
+的	uj	N	N	O	O
+边	n	N	N	O	O
+关联	ns	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+表上	v	N	N	O	O
+￥	x	N	N	O	O
+，	x	N	N	O	O
+并称	v	N	N	O	O
+所有	b	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+为	p	N	N	O	O
+未	t	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+转到	v	N	N	O	O
+2	m	N	N	O	O
+。	x	N	N	O	O
+
+2	x	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+在	p	N	N	O	O
+上	f	N	N	O	O
+一步	m	N	N	O	O
+没有	v	N	N	O	O
+新	a	N	N	O	O
+的	uj	N	N	O	O
+标记	n	N	N	O	O
+加到	v	N	N	O	O
+x	eng	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+上	f	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+停	v	N	N	O	O
+，	x	N	N	O	O
+否则	c	N	N	O	O
+
+，	x	N	N	O	O
+转	v	N	N	O	O
+3	m	N	N	O	O
+
+3	x	N	N	O	O
+。	x	N	N	O	O
+
+当	t	N	N	O	O
+存在	v	N	N	O	O
+x	eng	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+选择	v	N	N	O	O
+一个	m	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+x	eng	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+xi	eng	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+（	x	N	N	O	O
+xi	eng	N	N	O	O
+）	x	N	N	O	O
+标	n	N	N	O	O
+
+记	n	N	N	O	O
+y	eng	N	N	O	O
+
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+顶点	n	Y	N	O	O
+，	x	N	N	O	O
+这些	r	N	N	O	O
+顶点	n	Y	N	O	O
+被	p	N	N	O	O
+不	v	N	N	O	O
+属于	v	N	N	O	O
+m	eng	N	N	O	O
+且	c	N	N	O	O
+尚未	d	N	N	O	O
+标记	n	N	N	O	O
+的边	d	N	N	O	O
+连到	v	N	N	O	O
+xi	eng	N	N	O	O
+。	x	N	N	O	O
+
+现在	t	N	N	O	O
+顶点	n	Y	N	O	O
+xi	eng	N	N	O	O
+
+是	v	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+不	d	N	N	O	O
+存在	v	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+，	x	N	N	O	O
+转	v	N	N	O	O
+4	m	N	N	O	O
+。	x	N	N	O	O
+
+4	x	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+在	p	N	N	O	O
+步骤	n	N	N	O	O
+3	x	N	N	O	O
+没有	v	N	N	O	O
+新	a	N	N	O	O
+的	uj	N	N	O	O
+标记	n	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+到	v	N	N	O	O
+y	eng	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+上	f	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+停	v	N	N	O	O
+，	x	N	N	O	O
+否则	c	N	N	O	O
+转	v	N	N	O	O
+5	m	N	N	O	O
+。	x	N	N	O	O
+
+5	x	N	N	O	O
+。	x	N	N	O	O
+
+当	t	N	N	O	O
+存在	v	N	N	O	O
+y	eng	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+时	n	N	N	O	O
+。	x	N	N	O	O
+
+选择	v	N	N	O	O
+y	eng	N	N	O	O
+的	uj	N	N	O	O
+一个	m	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+yj	eng	N	N	O	O
+，	x	N	N	O	O
+
+用	p	N	N	O	O
+（	x	N	N	O	O
+yj	eng	N	N	O	O
+）	x	N	N	O	O
+标记	n	N	N	O	O
+x	eng	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+，	x	N	N	O	O
+这些	r	N	N	O	O
+顶点	n	Y	N	O	O
+被	p	N	N	O	O
+属于	v	N	N	O	O
+m	eng	N	N	O	O
+且	c	N	N	O	O
+尚未	d	N	N	O	O
+标记	n	N	N	O	O
+的边	d	N	N	O	O
+连到	v	N	N	O	O
+yj	eng	N	N	O	O
+。	x	N	N	O	O
+
+现在	t	N	N	O	O
+，	x	N	N	O	O
+顶点	n	Y	N	O	O
+yj	eng	N	N	O	O
+是	v	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+不	d	N	N	O	O
+存在	v	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+但	c	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+则	d	N	N	O	O
+转道	v	N	N	O	O
+2	x	N	N	O	O
+。	x	N	N	O	O
+
+由于	c	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+顶点	n	Y	N	O	O
+最多	d	N	N	O	O
+被	p	N	N	O	O
+标记	n	N	N	O	O
+一次	m	N	N	O	O
+且	zg	N	N	O	O
+由于	c	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+顶点	n	Y	N	O	O
+最多	d	N	N	O	O
+被	p	N	N	O	O
+扫描	v	Y	N	O	O
+一次	m	N	N	O	O
+，	x	N	N	O	O
+本	r	N	N	O	O
+匹配	v	Y	N	O	O
+算法	n	Y	N	O	O
+在	p	N	N	O	O
+有限	a	Y	N	O	O
+步	q	N	N	O	O
+内	f	N	N	O	O
+终止	v	N	N	O	O
+。	x	N	N	O	O
+
+贴	v	N	N	O	O
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+2226	m	N	N	O	O
+
+User	eng	N	N	O	O
+:	x	N	N	O	O
+
+AlbertLiu	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+:	x	N	N	O	O
+
+1152	m	N	N	O	O
+K	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+
+16	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Language	eng	N	N	O	O
+:	x	N	N	O	O
+
+C++	nz	N	N	O	O
+
+Result	eng	N	N	O	O
+:	x	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+Ｄ	x	N	N	O	B-KNOWLEDGE
+Ｆ	x	N	N	O	I-KNOWLEDGE
+Ｓ	x	N	N	O	I-KNOWLEDGE
+增广	v	N	N	O	O
+　	x	N	N	O	O
+和	c	N	N	O	O
+　	x	N	N	O	O
+Ｂ	x	N	N	O	B-KNOWLEDGE
+Ｆ	x	N	N	O	I-KNOWLEDGE
+Ｓ	x	N	N	O	I-KNOWLEDGE
+增广	v	N	N	O	O
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+500	m	N	N	O	O
+;	x	N	N	O	O
+char	eng	N	N	O	O
+
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+mapx	eng	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+mapy	eng	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+51	m	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+nx	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+ny	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+mk	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+与	p	N	N	O	O
+Xi	eng	N	N	O	O
+匹配	v	Y	N	O	O
+的	uj	N	N	O	O
+Y	eng	N	N	O	O
+顶点	n	Y	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+同理	n	N	N	O	O
+int	eng	N	N	O	O
+
+R	x	N	N	O	O
+
+,	x	N	N	O	O
+
+C	x	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+MaxMatch	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+path	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+MaxMatchBFS	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+in	eng	Y	N	O	O
+.	m	N	N	O	O
+txt	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+r	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+stdin	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+R	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+C	eng	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+R	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+C	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+R	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+横	v	N	N	O	O
+着	uz	N	N	O	O
+分点	n	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+C	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+*	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+*	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+mapx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+nx	eng	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+nx	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+C	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+竖	v	N	N	O	O
+着	uz	N	N	O	O
+分点	n	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+R	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+*	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+*	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+mapy	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+ny	eng	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+ny	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+R	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+构造	v	Y	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+C	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+grid	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+*	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+
+mapx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+mapy	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+MaxMatch	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+MaxMatchBFS	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+/	x	N	N	O	O
+*	x	N	N	O	O
+DFS	eng	N	N	O	O
+增广	v	N	N	O	O
+从	p	N	N	O	O
+某	r	N	N	O	O
+一个	m	N	N	O	O
+X	x	N	N	O	O
+顶点	n	Y	N	O	O
+出发	v	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+深度	ns	Y	N	O	O
+优先	vn	Y	N	O	O
+的	uj	N	N	O	O
+策略	n	N	N	O	O
+寻找	v	N	N	O	O
+增广	v	N	N	O	O
+路	n	N	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+在	p	N	N	O	O
+找到	v	N	N	O	O
+之后	f	N	N	O	O
+，	x	N	N	O	O
+巧妙	a	N	N	O	O
+地	uv	N	N	O	O
+利用	n	N	N	O	O
+递归	v	Y	N	O	B-KNOWLEDGE
+来	v	N	N	O	O
+修改	v	N	N	O	O
+匹配	v	Y	N	O	O
+。	x	N	N	O	O
+
+优点	n	N	N	O	O
+：	x	N	N	O	O
+实现	v	N	N	O	O
+简洁	a	N	N	O	O
+，	x	N	N	O	O
+理解	v	N	N	O	O
+容易	a	N	N	O	O
+适用	v	N	N	O	O
+：	x	N	N	O	O
+稠密	a	N	N	O	O
+图	n	N	N	O	O
+，	x	N	N	O	O
+由于	c	N	N	O	O
+边	d	N	N	O	O
+多	m	N	N	O	O
+，	x	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
+找	v	N	N	O	O
+增广	v	N	N	O	O
+路	n	N	N	O	O
+很快	d	N	N	O	O
+复杂度	n	N	N	O	O
+：	x	N	N	O	O
+O	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+^	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+int	eng	N	N	O	O
+
+path	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+v	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ny	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+v	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+从	p	N	N	O	O
+X	eng	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+u	eng	N	N	O	O
+出发	v	N	N	O	O
+，	x	N	N	O	O
+遍历	v	Y	N	O	O
+所有	b	N	N	O	O
+相连	d	N	N	O	O
+且	c	N	N	O	O
+未	d	N	N	O	O
+访问	v	N	N	O	O
+的	uj	N	N	O	O
+Y	eng	N	N	O	O
+点	m	N	N	O	O
+。	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+!	x	N	N	O	O
+mk	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+mk	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+path	eng	N	N	O	O
+(	x	N	N	O	O
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+递归	v	Y	N	O	B-KNOWLEDGE
+直到	v	N	N	O	O
+有	v	N	N	O	O
+某个	r	N	N	O	O
+Y	eng	N	N	O	O
+点	m	N	N	O	O
+不	d	N	N	O	O
+在	p	N	N	O	O
+匹配	v	Y	N	O	O
+中	f	N	N	O	O
+，	x	N	N	O	O
+或	c	N	N	O	O
+失败	v	N	N	O	O
+。	x	N	N	O	O
+
+当	t	N	N	O	O
+找到	v	N	N	O	O
+时则	n	N	N	O	O
+形成	v	N	N	O	O
+一条	m	N	N	O	O
+增广	v	N	N	O	O
+路径	n	Y	N	O	O
+
+{	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+v	x	N	N	O	O
+
+;	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+u	x	N	N	O	O
+
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+表示	v	Y	N	O	O
+X	eng	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+u	eng	N	N	O	O
+有	v	N	N	O	O
+一条	m	N	N	O	O
+指向	n	N	N	O	O
+Y	eng	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+v	eng	N	N	O	O
+的	uj	N	N	O	O
+匹配	v	Y	N	O	O
+
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+}	x	N	N	O	O
+int	eng	N	N	O	O
+
+MaxMatch	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+res	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+cy	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+cy	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+nx	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+深度	ns	Y	N	O	O
+遍历	v	Y	N	O	O
+所有	b	N	N	O	O
+X	x	N	N	O	O
+集合	v	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+找出	v	Y	N	O	O
+所有	b	N	N	O	O
+增广	v	N	N	O	O
+路径	n	Y	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+mk	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+mk	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+防止	v	N	N	O	O
+增光	v	N	N	O	O
+路径	n	Y	N	O	O
+回路	v	Y	N	O	O
+死循环	i	N	N	O	O
+
+res	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+path	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+若	c	N	N	O	O
+找到	v	N	N	O	O
+一条	m	N	N	O	O
+增广	v	N	N	O	O
+路径	n	Y	N	O	O
+则	d	N	N	O	O
+匹配	v	Y	N	O	O
+加	v	N	N	O	O
+1	m	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
+;	x	N	N	O	O
+}	x	N	N	O	O
+/	x	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+、	x	N	N	O	O
+BFS	eng	N	N	O	B-KNOWLEDGE
+增广	v	N	N	O	O
+
+复杂度	n	N	N	O	O
+：	x	N	N	O	O
+O	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+^	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+适用	v	N	N	O	O
+：	x	N	N	O	O
+稀疏	a	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+边少	nr	N	N	O	O
+，	x	N	N	O	O
+增广	v	N	N	O	O
+路	n	N	N	O	O
+短	a	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+int	eng	N	N	O	O
+
+pred	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+open	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+MaxMatchBFS	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+,	x	N	N	O	O
+
+u	x	N	N	O	O
+
+,	x	N	N	O	O
+
+v	x	N	N	O	O
+
+,	x	N	N	O	O
+
+t	x	N	N	O	O
+
+,	x	N	N	O	O
+
+d	x	N	N	O	O
+
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cur	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+tail	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+res	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+mk	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+mk	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+cy	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+xff	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+cy	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+nx	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+pred	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+cur	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+tail	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+open	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+
+;	x	N	N	O	O
+
+cur	eng	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+tail	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+cur	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+u	x	N	N	O	O
+
+=	x	N	N	O	O
+
+open	eng	N	N	O	O
+[	x	N	N	O	O
+cur	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+v	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+v	x	N	N	O	O
+
+<	x	N	N	O	O
+
+ny	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+v	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+mk	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+mk	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+
+;	x	N	N	O	O
+
+open	eng	N	N	O	O
+[	x	N	N	O	O
+++	x	N	N	O	O
+tail	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+open	eng	N	N	O	O
+[	x	N	N	O	O
+tail	eng	N	N	O	O
+]	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+pred	eng	N	N	O	O
+[	x	N	N	O	O
+open	eng	N	N	O	O
+[	x	N	N	O	O
+tail	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+u	x	N	N	O	O
+
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+d	x	N	N	O	O
+
+=	x	N	N	O	O
+
+u	x	N	N	O	O
+
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+
+=	x	N	N	O	O
+
+v	x	N	N	O	O
+
+;	x	N	N	O	O
+
+d	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+t	x	N	N	O	O
+
+=	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+d	x	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+d	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+e	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cy	eng	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+d	x	N	N	O	O
+
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+
+=	x	N	N	O	O
+
+t	x	N	N	O	O
+
+,	x	N	N	O	O
+
+d	x	N	N	O	O
+
+=	x	N	N	O	O
+
+pred	eng	N	N	O	O
+[	x	N	N	O	O
+d	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+cx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+res	eng	N	N	O	O
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+参考	v	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+www	eng	N	N	O	O
+.	m	N	N	O	O
+cnblogs	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+jesonpeng	eng	N	N	O	O
+/	x	N	N	O	O
+articles	eng	N	N	O	O
+/	x	N	N	O	O
+1352713.	m	N	N	O	O
+html	eng	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+hi	eng	N	N	O	O
+.	m	N	N	O	O
+baidu	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+scaneelingg	eng	N	N	O	O
+/	x	N	N	O	O
+blog	eng	N	N	O	O
+/	x	N	N	O	O
+item	eng	N	N	O	O
+/	x	N	N	O	O
+b368a1cba775248fc817685b	eng	N	N	O	O
+.	m	N	N	O	O
+html	eng	N	N	O	O
+

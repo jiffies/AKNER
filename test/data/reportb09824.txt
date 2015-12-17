@@ -1,0 +1,54 @@
+pku1007 poj 1007 hdu1379 DNA Sorting - jw72jw的专栏 - 博客频道 - CSDN.NET
+
+//poj1007
+ //puk 1007
+ //DNA Sorting
+ //开始时老是不能理解题意，后来仔细再看了一下题目和测试数据，恍然大悟啊
+ //题目给出若干个字符串，然后要你数出有多少对是前面一个比后面一个大的
+ //举个例子：A A C A T G A A G G，每一个数一数后面有多少个比它大
+ //分别是：  0 0 3 0 5 2 0 0 0 0  这一个串就有是10
+ //然后根据这个的大小给所有串排序
+ #include<iostream>
+ #include<string>
+ using namespace std;
+ struct DNA                         //结构体，方便排序
+ {
+  string a;
+  int length;
+ }dna[110];
+ int calNumber( string ch, int n )  //找出每一个串有多少对
+ {
+  int count=0;
+  int i,j;
+  for( i=0; i<n-1; i++ )
+   for( j=i+1; j<n; j++ )
+   {
+    if( ch[i]>ch[j] )
+    {
+     count++;
+    }
+   }
+  return count;
+ }
+ int cmp( const void *a ,const void *b)   //qsort比较函数
+ { 
+              return (*(DNA *)a).length < (*(DNA *)b).length ? 1 : -1; 
+ } 
+ int main()
+ {
+  int n,cases;
+  int i;
+  char a[100];
+  scanf("%d%d",&n,&cases);
+  for(i=0;i<cases;i++)
+  {
+   cin>>dna[i].a;
+   dna[i].length=calNumber( dna[i].a , n );
+ //  cout<<dna[i].length<<endl;
+  }
+     qsort(dna,cases,sizeof(dna[0]),cmp);
+ // cout<<endl;
+  for(i=cases-1;i>=0;i--)
+   cout<<dna[i].a/*<<dna[i].length*/<<endl;
+  return 0;
+ }

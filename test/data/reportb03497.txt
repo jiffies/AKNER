@@ -1,0 +1,385 @@
+poj1833 排列 求字典序的下k个序列_hala_acmer_新浪博客
+
+这个题目就是 要清楚求字典序的下一个的算法了，数据n最大1024，所以不能全保存n!个顺序了，至于怎么求下一个 下面三个步骤 
+
+ 1 从最右边开始找，找到第一个j，使得arr[j]>arr[j-1];
+ 
+
+ 2 从j到n这个范围找到最小的比arr[j-1]大的数字，交换这个数和arr[j-1];
+ 
+
+ 3 从 arr [j]到arr[n] 排序 sort(arr+j,arr+n+1);
+ 
+
+ 贴代码了
+ 
+ 
+ 
+  #include<iostream>
+  
+ 
+  #include<cstdio>
+  
+ 
+  #include<algorithm>
+  
+ 
+  using namespace std;
+  
+ 
+  const int maxn=1025;
+  
+ 
+  int arr[maxn];
+  
+ 
+  int main()
+  
+ 
+  {
+  
+ 
+   
+    
+   int T; scanf("%d",&T);
+  
+ 
+   
+    
+   int n,i,j,k;
+  
+ 
+   
+    
+   while(T--)
+  
+ 
+   
+    
+   {
+  
+ 
+   
+    
+    
+    
+   scanf("%d%d",&n,&k);
+  
+ 
+   
+    
+    
+    
+   for(i=1;i<=n;++i)
+  
+ 
+   
+    
+    
+    
+   scanf("%d",&arr[i]);
+  
+ 
+   
+    
+    
+    
+   while(k--)
+  
+ 
+   
+    
+    
+    
+   {
+  
+ 
+   
+    
+    
+    
+    
+    
+   for(i=n;i>=1;--i)
+  
+ 
+   
+    
+    
+    
+    
+    
+   {
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   if(arr[i]>arr[i-1])
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   break;
+  
+ 
+   
+    
+    
+    
+    
+    
+   }
+  
+ 
+   
+    
+    
+    
+    
+    
+   if(i==1)
+  
+ 
+   
+    
+    
+    
+    
+    
+   {
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   for(i=1;i<=n;++i)
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   arr[i]=i;
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   continue;
+  
+ 
+   
+    
+    
+    
+    
+    
+   }
+  
+ 
+   
+    
+    
+    
+    
+    
+   int min=1025;
+  
+ 
+   
+    
+    
+    
+    
+    
+   int index;
+  
+ 
+   
+    
+    
+    
+    
+    
+   for(j=i;j<=n;++j)
+  
+ 
+   
+    
+    
+    
+    
+    
+   {
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   if(arr[j]>=arr[i-1]&&arr[j]<min)
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   {
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   min=arr[j];index=j;
+  
+ 
+   
+    
+    
+    
+    
+    
+    
+    
+   }
+  
+ 
+   
+    
+    
+    
+    
+    
+   }
+  
+ 
+   
+    
+    
+    
+    
+    
+   int t=arr[i-1];
+  
+ 
+   
+    
+    
+    
+    
+    
+   arr[i-1]=arr[index];
+  
+ 
+   
+    
+    
+    
+    
+    
+   arr[index]=t;
+  
+ 
+   
+    
+    
+    
+    
+    
+   sort(arr+i,arr+n+1);
+  
+ 
+   
+    
+    
+    
+   }
+  
+ 
+   
+    
+    
+    
+   printf("%d",arr[1]);
+  
+ 
+   
+    
+    
+    
+   for(i=2;i<=n;++i)
+  
+ 
+   
+    
+    
+    
+   printf(" %d",arr[i]);
+  
+ 
+   
+    
+    
+    
+   printf("\n");
+  
+ 
+   
+    
+   }
+  
+ 
+   
+    
+   return 0;
+  
+ 
+  }
+  
+ 
+
+ 
+

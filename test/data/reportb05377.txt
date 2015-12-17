@@ -1,0 +1,142 @@
+2012金华邀请赛D题(POJ4047 Garden)解题报告 - NKHe!!oWor!d - 博客园
+
+金华邀请赛D题，现场lazy标记推错了，颇为不爽，重做一下。
+给出一个N个数的序列以及一个k（0<k<=n<=200000)，m个操作p,x,y，其中
+p=0：将x位置的数替换为y
+p=1：将x y位置的数互换
+p=2:  查询x-y位置区间连续k个数的和的最大值
+很快可以想到用O(n)的复杂度预处理，将从i位置起始连续k个数的和求出来，那么对于查询操作，就变为查询和数组中x~y-k+1这个区间里的最大值。
+再看对于前两种操作，第二种可以等效于两次第一种操作。对于第一种操作，将x位置由y0替换为y，变化量det=y-y0，这个变化量会对和数组产生怎样得影响呢？很明显会导致和数组的x-k+1~x这也一段产生影响，效果为值都变化det。
+至此，整个问题就变成了成段修改成段查询问题。用线段数可以解决。
+对于成段修改，需要用到lazy思想，即能不多改就不多改，等需要时再改。去年暑假时是做过不少各种类型的线段树的，但是区域赛后就再没写过，于是现场时就死在了这个问题上……这是客观因素，主观上也有理解的深度不够的问题……其实此题唯一算是难点的地方在于构造成适合线段树的形式，难点搞过了却卡在了实现上……
+需要注意的一点是，当需要用到真实值的时候，必须先进行pushdown操作，无论在任何地方都是这样！今天第一次提交就因为在update中求最大值时没有对左右孩子进行pushdown而WA了一次……
+ 
+ 
+   1 //10184789    NKHelloWorld    4047    Accepted    5980K    329MS    G++    2373B    2012-05-11 20:59:20
+  2 #include <cstdio>
+  3 #include <iostream>
+  4 using namespace std;
+  5 #define MAXN 210000
+  6 
+  7 int a[MAXN],sum[MAXN];
+  8 int n,m,k;
+  9 
+ 10 struct SEGTREE
+ 11 {
+ 12     int l,r,maxval,det;
+ 13 }tree[MAXN*4];
+ 14 
+ 15 void buildsegtree(int root,int l,int r)
+ 16 {
+ 17     tree[root].l = l;    tree[root].r = r;
+ 18     tree[root].det = 0;
+ 19     if(l == r)
+ 20     {
+ 21         tree[root].maxval = sum[l];
+ 22         return ;
+ 23     }
+ 24     int mid = (l+r)>>1;
+ 25     buildsegtree(root<<1,l,mid);
+ 26     buildsegtree(root<<1|1,mid+1,r);
+ 27     tree[root].maxval = max(tree[root<<1].maxval,tree[root<<1|1].maxval);
+ 28 }
+ 29 
+ 30 void pushdown(int root)
+ 31 {
+ 32     if(tree[root].det == 0)    return ;
+ 33     tree[root].maxval += tree[root].det;
+ 34     if(tree[root].l != tree[root].r)
+ 35     {
+ 36         tree[root<<1].det += tree[root].det;
+ 37         tree[root<<1|1].det += tree[root].det;
+ 38     }
+ 39     tree[root].det = 0;
+ 40 }
+ 41 
+ 42 void update(int root,int l,int r,int det)
+ 43 {
+ 44     pushdown(root);
+ 45     if(tree[root].l == l && tree[root].r == r)
+ 46     {
+ 47         tree[root].det += det;
+ 48         return ;
+ 49     }
+ 50     int mid = (tree[root].l + tree[root].r)>>1;
+ 51     if(r <= mid)
+ 52         update(root<<1,l,r,det);
+ 53     else if(l >mid)
+ 54         update(root<<1|1,l,r,det);
+ 55     else
+ 56     {
+ 57         update(root<<1,l,mid,det);
+ 58         update(root<<1|1,mid+1,r,det);
+ 59     }
+ 60     pushdown(root<<1);
+ 61     pushdown(root<<1|1);
+ 62     tree[root].maxval = max(tree[root<<1].maxval,tree[root<<1|1].maxval);
+ 63 }
+ 64 
+ 65 int query(int root,int l,int r)
+ 66 {
+ 67     pushdown(root);
+ 68     if(tree[root].l == l && tree[root].r == r)
+ 69     {
+ 70         return tree[root].maxval;
+ 71     }
+ 72     int mid = (tree[root].l + tree[root].r)>>1;
+ 73     if(r <= mid)
+ 74         return query(root<<1,l,r);
+ 75     else if(l >mid)
+ 76         return query(root<<1|1,l,r);
+ 77     else
+ 78         return max(query(root<<1,l,mid),query(root<<1|1,mid+1,r));
+ 79 }
+ 80 
+ 81 void edit(int x,int y)
+ 82 {
+ 83     int det = y - a[x];
+ 84     a[x] = y;
+ 85     int ll = x-k+1;
+ 86     if(ll <1)    ll = 1;
+ 87     int rr = x;
+ 88     if(x > n - k +1)    rr = n-k+1;
+ 89     update(1,ll,rr,det);
+ 90 }
+ 91 
+ 92 int main()
+ 93 {
+ 94     int totcase,i,j;
+ 95     scanf("%d",&totcase);
+ 96     while(totcase--)
+ 97     {
+ 98         scanf("%d%d%d",&n,&m,&k);
+ 99         for(i=1;i<=n;i++)
+100         {
+101             scanf("%d",&a[i]);
+102         }
+103         sum[1] = 0;
+104         for(i=1;i<=k;i++)    sum[1] += a[i];
+105         for(i=2;i<=n-k+1;i++)    sum[i] = sum[i-1] - a[i-1] + a[i+k-1];
+106         buildsegtree(1,1,n-k+1);
+107         int p,x,y;
+108         while(m--)
+109         {
+110             scanf("%d%d%d",&p,&x,&y);
+111             if(p==0)
+112             {
+113                 edit(x,y);
+114             }
+115             else if(p ==1 )
+116             {
+117                 int xx = a[x],yy = a[y];
+118                 edit(y,xx);
+119                 edit(x,yy);
+120             }
+121             else
+122             {
+123                 printf("%d\n",query(1,x,y-k+1));
+124             }
+125         }
+126     }
+127     return 0;
+128 } 

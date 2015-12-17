@@ -1,0 +1,55 @@
+poj 1583 Choose Your Words Carefully - yzl_rex - 博客频道 - CSDN.NET
+
+//这题足足用了我4个多小时来检查错误（半个小时写代码）！实在太愚蠢了！头都爆了！哎！
+//而且这一题并没有区分大小写的，一般没有考虑到的情况，都可以通过代码后面的样例发现，
+//这题实在太坑爹了！被折磨了数小时，经历了无限次WA！虽然是水题一道！ 
+#include <iostream>
+#include <string>
+#include <map>
+using namespace std;
+map<string, int> m;
+map<string, int>::iterator it; 
+int main()
+{
+    int i, len, max = 0, time; 
+    string word, tmp; 
+    bool flag; 
+    while (cin >> word){
+          len = word.length();
+          tmp.clear(); 
+          flag = false; 
+          for (i = 0; i < len; i++){
+              if (isalpha(word[i])){
+                   word[i] = tolower(word[i]);
+                   tmp.push_back(word[i]); 
+                   flag = false; 
+              }
+              else{
+                   time = ++m[tmp];
+                   flag = true; 
+                   if (time > max)
+                       max = time;
+                   tmp.clear(); 
+              } 
+          }
+          if (!flag){
+               time = ++m[tmp];
+               if (time > max)
+                   max = time; 
+          } 
+    } 
+    cout << max << " occurrences" << endl;
+    for (it = m.begin(); it != m.end(); it++){
+        if (it->second == max)
+            cout << it->first << endl; 
+    } 
+    system("pause"); 
+} 
+/*
+a,a.a/a'a;a\a-a(a)
+and.. and
+and.and. and
+ans.ans 
+New new 
+*/ 
+

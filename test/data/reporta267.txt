@@ -1,0 +1,70 @@
+pku2430 Lazy Cows - ccsu_001的专栏 - 博客频道 - CSDN.NET
+
+题目链接：http://162.105.81.212/JudgeOnline/problem?id=2430
+题意简述：求用最少的矩形把给定的点完全覆盖。
+解题思路：状态dp。设0表示值覆盖一格，1表示覆盖两格但是属于同一矩形，2表示覆盖两格不属于同一矩形。
+代码：
+#include<stdio.h>
+#include<algorithm>
+using namespace std;
+#define min(a,b) (a<b?a:b)
+const int inf=(1<<30);
+const int Len=1024;
+struct node{
+       int x,y;
+}P[Len];
+bool cmp(node a,node b)
+{
+     return a.y<b.y;
+}
+int dp[Len][Len][5];
+int main()
+{
+    int n,k,b;
+    while(scanf("%d%d%d",&n,&k,&b)!=EOF)
+    {
+         for(int i=1;i<=n;++i)
+             scanf("%d%d",&P[i].x,&P[i].y);
+         sort(P+1,P+1+n,cmp);
+         dp[1][1][0]=1,dp[1][1][1]=2,dp[1][1][2]=inf,dp[1][2][2]=2;
+         for(int i=2;i<=n;++i)
+             for(int j=1;j<=k&&j<=i;++j)
+                 for(int p=0;p<3;++p)
+                 {
+                      int Min=inf;
+                      if(p==0)
+                      {
+                           if(j>1) for(int e=0;e<3;++e) Min=min(Min,dp[i-1][j-1][e]+1);
+                           if(i>j)
+                           {
+                               int l=P[i].y-P[i-1].y;
+                               if(P[i].x==P[i-1].x) Min=min(Min,dp[i-1][j][0]+l);
+                               Min=min(Min,dp[i-1][j][2]+l);
+                           }
+                           dp[i][j][p]=Min;
+                           continue;
+                      }
+                      if(p==1)
+                      {
+                           if(j>1) for(int e=0;e<3;++e) Min=min(Min,dp[i-1][j-1][e]+2);
+                           if(i>j)
+                           {
+                               int l=P[i].y-P[i-1].y;
+                               Min=min(Min,dp[i-1][j][1]+2*l);
+                           }
+                           dp[i][j][p]=Min;
+                           continue;
+                      }
+                      if(j>2) for(int e=0;e<3;++e) Min=min(Min,dp[i-1][j-2][2]+2);
+                      int l=P[i].y-P[i-1].y;
+                      if(j>1) Min=min(Min,dp[i-1][j-1][0]+1+l);
+                      if(i>j) Min=min(Min,dp[i-1][j][2]+2*l);
+                      dp[i][j][p]=Min;
+                 }
+         int ans=inf;
+         for(int i=0;i<3;++i)
+             ans=min(dp[n][k][i],ans);
+         printf("%d/n",ans);
+    }
+    return 0;
+}

@@ -1,0 +1,373 @@
+POJ	eng	N	Y	O	B-OJ
+
+1491	m	N	N	O	I-OJ
+
+简单	a	N	N	O	B-KNOWLEDGE
+模拟	v	Y	N	O	I-KNOWLEDGE
+_	x	N	N	O	O
+石家庄	nr	N	N	O	O
+二中	nrt	N	N	O	O
+2011	m	N	N	O	O
+级	q	N	N	O	O
+OI	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+都	d	N	N	O	O
+是	v	N	N	O	O
+英语	nz	N	N	O	O
+阅读	v	N	N	O	O
+理解	v	N	N	O	O
+。	x	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+给出	v	N	N	O	O
+n	x	N	N	O	O
+（	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+50	m	N	N	O	O
+）	x	N	N	O	O
+个数	n	Y	N	O	O
+和	c	N	N	O	O
+计算公式	n	N	N	O	O
+6	x	N	N	O	O
+/	x	N	N	O	O
+pi	eng	N	N	O	O
+^	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+/	x	N	N	O	O
+y	x	N	N	O	O
+，	x	N	N	O	O
+其中	r	N	N	O	O
+y	x	N	N	O	O
+为数	n	N	N	O	O
+对	p	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+，	x	N	N	O	O
+x	eng	N	N	O	O
+为	p	N	N	O	O
+互质	n	N	N	O	O
+的	uj	N	N	O	O
+数对	m	Y	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+。	x	N	N	O	O
+
+输出	v	Y	N	O	O
+pi	eng	N	N	O	O
+的	uj	N	N	O	O
+计算结果	n	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+，	x	N	N	O	O
+输出	v	Y	N	O	O
+No	eng	N	N	O	O
+
+estimate	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+this	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+set	eng	N	N	O	O
+.	m	N	N	O	O
+
+直接	ad	N	N	O	B-KNOWLEDGE
+模拟	v	Y	N	O	I-KNOWLEDGE
+吧	y	N	N	O	O
+，	x	N	N	O	O
+没有	v	N	N	O	O
+可说	v	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+（	x	N	N	O	O
+代码	n	N	N	O	O
+仅供参考	l	N	N	O	O
+和	c	N	N	O	O
+学习	v	N	N	O	O
+，	x	N	N	O	O
+请	v	N	N	O	O
+不要	df	N	N	O	O
+直接	ad	N	N	O	O
+粘贴	n	N	N	O	O
+刷	v	N	N	O	O
+AC	eng	N	N	O	O
+数	n	N	N	O	O
+，	x	N	N	O	O
+期待	v	N	N	O	O
+你	r	N	N	O	O
+写出	v	N	N	O	O
+更好	d	N	N	O	O
+的	uj	N	N	O	O
+代码	n	N	N	O	O
+）	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+inline	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+%	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+cnt	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.6	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+6.0	m	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+/	x	N	N	O	O
+cnt	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+No	eng	N	N	O	O
+
+estimate	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+this	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+set	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

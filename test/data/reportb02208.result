@@ -1,0 +1,441 @@
+zoj	eng	N	Y	O	B-OJ
+
+1024	m	N	N	O	O
+
+Calendar	eng	N	N	O	O
+
+Game	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+I	x	N	N	O	O
+
+am	eng	Y	N	O	O
+
+coming	eng	N	N	O	O
+！	x	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+zoj	eng	N	Y	O	B-OJ
+_	x	N	N	O	I-OJ
+1024	m	N	N	O	O
+
+博弈	v	Y	N	O	O
+
+引用	v	N	N	O	O
+别人	r	N	N	O	O
+解释	v	N	N	O	O
+：	x	N	N	O	O
+
+Tips	eng	N	N	O	O
+:	x	N	N	O	O
+
+这	r	N	N	O	O
+是	v	N	N	O	O
+一道	m	N	N	O	O
+博弈	v	Y	N	O	O
+题	n	N	N	O	O
+，	x	N	N	O	O
+活	n	N	N	O	O
+的	uj	N	N	O	O
+胜利	vn	N	N	O	O
+的	uj	N	N	O	O
+一方	m	N	N	O	O
+必须	d	N	N	O	O
+翻倒	v	N	N	O	O
+2001	m	N	N	O	O
+年	m	N	N	O	O
+11	m	N	N	O	O
+月	m	N	N	O	O
+4	m	N	N	O	O
+日	m	N	N	O	O
+；	x	N	N	O	O
+
+下面	f	N	N	O	O
+是	v	N	N	O	O
+观察	v	N	N	O	O
+推论	v	N	N	O	O
+结果	n	N	N	O	O
+，	x	N	N	O	O
+11	m	N	N	O	O
+月	m	N	N	O	O
+4	m	N	N	O	O
+日	m	N	N	O	O
+，	x	N	N	O	O
+11	m	N	N	O	O
++	x	N	N	O	O
+4	m	N	N	O	O
+=	x	N	N	O	O
+15	m	N	N	O	O
+是	v	N	N	O	O
+奇数	n	Y	N	O	O
+。	x	N	N	O	O
+
+由于	c	N	N	O	O
+无论是	c	N	N	O	O
+加	v	N	N	O	O
+
+一天	m	N	N	O	O
+还是	c	N	N	O	O
+加	v	N	N	O	O
+一个月	m	N	N	O	O
+都	d	N	N	O	O
+会	v	N	N	O	O
+改变	v	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+d	eng	N	N	O	O
+的	uj	N	N	O	O
+奇偶性	n	N	N	O	O
+，	x	N	N	O	O
+除了	p	N	N	O	O
+下面	f	N	N	O	O
+几个	m	N	N	O	O
+特例	n	N	N	O	O
+
+2	m	N	N	O	O
+月	m	N	N	O	O
+28	m	N	N	O	O
+日	m	N	N	O	O
+、	x	N	N	O	O
+9	m	N	N	O	O
+月	m	N	N	O	O
+30	m	N	N	O	O
+日	m	N	N	O	O
+和	c	N	N	O	O
+11	m	N	N	O	O
+月	m	N	N	O	O
+30	m	N	N	O	O
+日	m	N	N	O	O
+，	x	N	N	O	O
+显然	ad	N	N	O	O
+如果	c	N	N	O	O
+m	eng	N	N	O	O
+和	c	N	N	O	O
+d	eng	N	N	O	O
+是	v	N	N	O	O
+这	r	N	N	O	O
+三个	m	N	N	O	O
+日子	n	N	N	O	O
+的话	u	N	N	O	O
+
+则	d	N	N	O	O
+先行者	n	N	N	O	O
+必胜	v	N	N	O	O
+：	x	N	N	O	O
+
+2	m	N	N	O	O
+月	m	N	N	O	O
+28	m	N	N	O	O
+日	m	N	N	O	O
+到	v	N	N	O	O
+3	m	N	N	O	O
+月	m	N	N	O	O
+28	m	N	N	O	O
+日	m	N	N	O	O
+
+9	m	N	N	O	O
+月	m	N	N	O	O
+30	m	N	N	O	O
+日	m	N	N	O	O
+到	v	N	N	O	O
+10	m	N	N	O	O
+月	m	N	N	O	O
+1	m	N	N	O	O
+日	m	N	N	O	O
+
+11	m	N	N	O	O
+月	m	N	N	O	O
+30	m	N	N	O	O
+日	m	N	N	O	O
+到	v	N	N	O	O
+12	m	N	N	O	O
+月	m	N	N	O	O
+1	m	N	N	O	O
+日	m	N	N	O	O
+
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+只有	c	N	N	O	O
+当	t	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+d	eng	N	N	O	O
+为	p	N	N	O	O
+偶数	n	N	N	O	O
+时	n	N	N	O	O
+先行者	n	N	N	O	O
+必胜	v	N	N	O	O
+。	x	N	N	O	O
+
+这里	r	N	N	O	O
+还要	c	N	N	O	O
+说明	v	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+在	p	N	N	O	O
+中间	f	N	N	O	O
+的	uj	N	N	O	O
+过程	n	N	N	O	O
+中	f	N	N	O	O
+会	v	N	N	O	O
+不会	v	N	N	O	O
+遇到	v	N	N	O	O
+这	r	N	N	O	O
+几个	m	N	N	O	O
+特殊	a	N	N	O	O
+情况	n	N	N	O	O
+，	x	N	N	O	O
+答案	n	N	N	O	O
+
+是	v	N	N	O	O
+否定	v	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+认真	ad	N	N	O	O
+想	v	N	N	O	O
+一下	m	N	N	O	O
+就	d	N	N	O	O
+很快	d	N	N	O	O
+能	v	N	N	O	O
+明白	nr	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+这个	r	N	N	O	O
+MS	eng	N	N	O	O
+是	v	N	N	O	O
+01	m	N	N	O	O
+年	m	N	N	O	O
+韩国	ns	N	N	O	O
+亚洲	ns	N	N	O	O
+赛	v	N	N	O	O
+的	uj	N	N	O	O
+题目	n	Y	N	O	O
+，	x	N	N	O	O
+看来	v	N	N	O	O
+数学	n	Y	N	O	O
+还是	c	N	N	O	O
+王道	nr	N	N	O	O
+的	uj	N	N	O	O
+啊	y	N	N	O	O
+！	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+year	eng	N	N	O	O
+,	x	N	N	O	O
+month	eng	N	N	O	O
+,	x	N	N	O	O
+day	eng	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+year	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+month	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+day	eng	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+month	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+9	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+day	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+30	m	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+YES	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+month	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+11	m	N	N	O	O
+
+&&	x	N	N	O	O
+
+day	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+30	m	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+YES	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+(	x	N	N	O	O
+month	eng	N	N	O	O
++	x	N	N	O	O
+day	eng	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+YES	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+NO	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

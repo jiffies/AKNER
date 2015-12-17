@@ -1,0 +1,609 @@
+poj2007	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+Rainy	eng	N	N	O	O
+
+Days	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+极坐标	n	N	N	O	O
+排序	n	Y	N	O	B-KNOWLEDGE
+
+注意	v	N	N	O	O
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+的	uj	N	N	O	O
+使用	v	N	N	O	O
+方法	n	Y	N	O	O
+，	x	N	N	O	O
+y	eng	N	N	O	O
+在	p	N	N	O	O
+前	f	N	N	O	O
+，	x	N	N	O	O
+x	eng	N	N	O	O
+在	p	N	N	O	O
+后	f	N	N	O	O
+。	x	N	N	O	O
+
+返回	v	N	N	O	O
+X	eng	N	N	O	O
+轴	n	N	N	O	O
+正	d	N	N	O	O
+方向	n	N	N	O	O
+到	v	N	N	O	O
+原点	n	N	N	O	O
+到	v	N	N	O	O
+（	x	N	N	O	O
+x	x	N	N	O	O
+，	x	N	N	O	O
+y	x	N	N	O	O
+）	x	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+射线	n	N	N	O	O
+的	uj	N	N	O	O
+到	v	N	N	O	O
+角	n	N	N	O	O
+。	x	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+
+55	m	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+
+acos	eng	N	N	O	O
+(	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Point	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+operator	eng	N	N	O	O
+
+<	x	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+Point	eng	N	N	O	O
+
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+Point	eng	N	N	O	O
+
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+a	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+
+a	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+
+<	x	N	N	O	O
+
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+b	eng	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+
+b	eng	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+cal	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
++	x	N	N	O	O
+
+2	x	N	N	O	O
+
+*	x	N	N	O	O
+
+pi	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+t	eng	N	N	O	O
+.	m	N	N	O	O
+txt	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+r	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+stdin	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+n	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+point	eng	N	N	O	O
+,	x	N	N	O	O
+
+point	eng	N	N	O	O
+
++	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+=	x	N	N	O	O
+
+cal	eng	N	N	O	O
+(	x	N	N	O	O
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+
+>	x	N	N	O	O
+
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+(	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+
++	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+
++	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

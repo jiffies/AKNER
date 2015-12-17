@@ -1,0 +1,571 @@
+pku1129	eng	N	Y	O	B-OJ
+
+Channel	eng	N	N	O	O
+
+Allocation	eng	N	N	O	O
+_	x	N	N	O	O
+xiao	eng	N	N	O	O
+_	x	N	N	O	O
+yu	eng	N	N	O	O
+_	x	N	N	O	O
+feng	eng	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+这	r	N	N	O	O
+题	n	N	N	O	O
+和	c	N	N	O	O
+地图	n	N	N	O	B-KNOWLEDGE
+涂色	n	Y	N	O	I-KNOWLEDGE
+问题	n	N	N	O	O
+类似	v	N	N	O	O
+，	x	N	N	O	O
+只要	c	N	N	O	O
+计算	v	Y	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+团	n	N	N	O	I-KNOWLEDGE
+中	f	N	N	O	O
+所	u	N	N	O	O
+包含	v	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+个数	n	Y	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+了	ul	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+28	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+28	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+28	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+28	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+cn	eng	N	N	O	O
+,	x	N	N	O	O
+bestn	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+backtrack	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+找	v	N	N	O	O
+邻接矩阵	nz	N	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+团	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+团	n	N	N	O	I-KNOWLEDGE
+中	f	N	N	O	O
+所含	v	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+个数	n	Y	N	O	O
+即为	c	N	N	O	O
+answer	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+flag	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+bestx	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bestn	eng	N	N	O	O
+=	x	N	N	O	O
+cn	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+p	eng	N	N	O	O
+与	p	N	N	O	O
+i	eng	N	N	O	O
+不	c	N	N	O	O
+相连	d	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+进入	v	N	N	O	O
+左子树	nr	N	N	O	O
+,	x	N	N	O	O
+必须	d	N	N	O	O
+确认	v	N	N	O	O
+从	p	N	N	O	O
+定点	n	N	N	O	O
+i	eng	N	N	O	O
+到	v	N	N	O	O
+已	d	N	N	O	O
+选入	v	N	N	O	O
+的	uj	N	N	O	O
+顶点	n	Y	N	O	O
+集中	v	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+顶点	n	Y	N	O	O
+都	d	N	N	O	O
+有	v	N	N	O	O
+边	d	N	N	O	O
+相连	d	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+当	p	N	N	O	O
+且仅	c	N	N	O	O
+当	t	N	N	O	O
+顶点	n	Y	N	O	O
+p	x	N	N	O	O
+属于	v	N	N	O	O
+已	d	N	N	O	O
+找到	v	N	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+团	n	N	N	O	I-KNOWLEDGE
+
+cn	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+当前	t	N	N	O	O
+顶点	n	Y	N	O	O
+数	n	N	N	O	O
+
+backtrack	eng	N	N	O	O
+(	x	N	N	O	O
+p	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+cn	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+cn	eng	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+-	x	N	N	O	O
+p	x	N	N	O	O
+>	x	N	N	O	O
+bestn	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+右子	n	N	N	O	O
+树	n	N	N	O	O
+，	x	N	N	O	O
+必须	d	N	N	O	O
+确认	v	N	N	O	O
+还有	v	N	N	O	O
+足够	v	N	N	O	O
+多	m	N	N	O	O
+的	uj	N	N	O	O
+可	v	N	N	O	O
+选择	v	N	N	O	O
+顶点	n	Y	N	O	O
+使得	v	N	N	O	O
+有	v	N	N	O	O
+可能	v	N	N	O	O
+在	p	N	N	O	O
+右子	n	N	N	O	O
+树中	s	N	N	O	O
+找到	v	N	N	O	O
+更	d	N	N	O	O
+大	a	N	N	O	O
+的	uj	N	N	O	O
+团	n	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+backtrack	eng	N	N	O	O
+(	x	N	N	O	O
+p	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+构造	v	Y	N	O	O
+邻接矩阵	nz	N	N	O	O
+
+}	x	N	N	O	O
+
+cn	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+bestn	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+backtrack	eng	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+bestn	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+
+channel	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+channels	eng	N	N	O	O
+
+needed	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+bestn	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

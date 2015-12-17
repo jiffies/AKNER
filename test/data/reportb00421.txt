@@ -1,0 +1,33 @@
+(调换次序)POJ2013  Symmetric Order_On_the_road_新浪博客
+
+题目：http://poj.org/problem?id=2013
+#include <stdio.h>
+ #include <stdlib.h>
+ int main()
+ {
+     int n,set=1;
+     char str[20][30],s[30];
+     while(scanf("%d",&n),n)
+     {
+         for(int i=1;i<=n;i++)
+         {
+              scanf("%s",&str[i]);
+         }
+         printf("SET %d\n",set++);
+         if(n%2==0)
+         {
+             for(int i=1;i<=n;i+=2)
+                 printf("%s\n",str[i]);
+             for(int i=n;i>0;i-=2)
+                 printf("%s\n",str[i]);
+         }
+         else
+         {
+             for(int i=1;i<=n;i+=2)
+                 printf("%s\n",str[i]);
+             for(int i=n-1;i>0;i-=2)
+                 printf("%s\n",str[i]);
+         }
+     }
+     return 0;
+ }

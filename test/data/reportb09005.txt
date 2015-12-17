@@ -1,0 +1,152 @@
+POJ2464——树状数组_lovedream_新浪博客
+
+ 题目超恶心，好几个步骤，最重要的是题意超不明确！恶心啊！debug了一晚上，最后才知道原来对于Ollie，相同的分数只输出一次！擦擦擦擦擦。。。
+准确的说，那句Stan and Ollie each try to maximize his own score.其实就是bullshit。题目是要你求所有竖线中，每条竖线上Stan可能得到的最低分，这些最低分里面的最高分，跟Ollie取不取最大值没关系。然后这些可以取到最大的最小分数的竖线里面，Ollie能够在每条竖线上取到的最高分是多少，如果有几个一样的就只输出其中一个。。。
+离散化，排序，树状数组模拟，最后DP，比较麻烦。不过看了其他人得解法，包括线段树的，都差不多都挺麻烦。
+ 首先很容易想到枚举原点，然后数四个象限上得点数，这样复杂度高，于是可以用数据结构来优化。其实只需要数清楚第一和第三象限的点，用N-第一象限-第三象限-坐标轴上得点，就等于第二象限和第四象限的点。数点数显然可以用树状数组，而要数两个象限，可以分两次，第一次数第三象限，第二次数第一象限。
+ 具体是：先按y排序，离散化y坐标值。然后按x升序（x相等时y升序）排序。然后用树状数组一边插入，查询，减去坐标轴上的点，就是x,y都<=当前点的点数；同理，再从反方向做一遍，就得到x,y都>=当前点的点数，加起来就是Stan的分数，然后利用Stan的分数算Ollie得分数。最后DP。
+#include<stdio.h>
+ #include<string.h>
+ #include<algorithm>
+ #include<vector>
+ using namespace std;
+struct Node
+ {
+     int x,y;
+ }node[210000];
+int cmp(const Node &a,const Node &b)
+ {
+     return a.y<b.y;
+ }
+ int cmp2(const Node &a,const Node &b)
+ {
+     if(a.x==b.x)
+         return a.y<b.y;
+     return a.x<b.x;
+ }
+int index[210000],c[210000],cnt[210000],num,ans[210000];
+ int low[210000],c2[210000],ans2[210000],N;
+int update(int n)
+ {
+     int t=n;
+     while(n<=N)
+     {
+         c[n]++;
+         n+=low[n];
+     }
+     n=t,t=0;
+     while(n>=1)
+     {
+         t+=c[n];
+         n-=low[n];
+     }
+     return t;
+ }
+ int Bsearch(int n,int N)
+ {
+     int l=1,r=N,mid;
+    while(l<r-1)
+     {
+         mid=(l+r)>>1;
+         if(index[mid]>n)
+             r=mid;
+         else
+             l=mid;
+     }
+     if(index[l]==n)
+         return l;
+     return l+1;
+ }
+int main()
+ {
+     int i,j,t,Min,Max,be;
+    for(i=1;i<=200000;i++)
+         low[i]=i&(-i);
+     while(scanf("%d",&N),N)
+     {
+         memset(ans,0,sizeof(ans));
+         memset(c2,0,sizeof(c2));
+         for(i=1;i<=N;i++)
+             scanf("%d%d",&node[i].x,&node[i].y);
+         sort(node+1,node+N+1,cmp);
+         for(i=2,index[1]=node[1].y,j=2;i<=N;i++)if(node[i].y-node[i-1].y)
+             index[j++]=node[i].y;
+         for(i=1;i<=N;i++)
+             node[i].y=Bsearch(node[i].y,j-1);
+         sort(node+1,node+1+N,cmp2);
+         for(i=2,be=1;i<=N;i++)if(node[i].x-node[i-1].x)
+             c2[i-1]=i-be,be=i;
+         c2[N]=i-be;
+         for(i=N;i>=1;i--)
+         {
+             if(c2[i])
+                 be=c2[i];
+             else
+                 c2[i]=be;
+         }
+         memset(c,0,sizeof(c));
+         memset(cnt,0,sizeof(cnt));
+         for(i=1;i<=N;i++)
+         {
+             if(i==1||node[i].x-node[i-1].x)
+                 num=1;
+             else
+                 num++;
+             cnt[node[i].y]++;
+             ans[i]=update(node[i].y)-cnt[node[i].y]-num+1;
+         }
+         memset(c,0,sizeof(c));
+         memset(cnt,0,sizeof(cnt));
+         for(i=N;i>0;i--)
+         {
+             if(i==N||node[i].x-node[i+1].x)
+                 num=1;
+             else
+                 num++;
+             cnt[node[i].y]++;
+             ans[i]+=update(j-node[i].y)-cnt[node[i].y]-num+1;
+         }
+         for(i=1;i<=N;i++)   
+             ans2[i]=N-ans[i]-cnt[node[i].y]-c2[i]+1;
+         for(i=2,Min=ans[1],Max=-1,t=ans2[1],j=0;i<=N;i++)
+         {
+             if(node[i].x-node[i-1].x)
+             {
+                 if(Min>Max)
+                 {
+                     j=1;
+                     c2[0]=t;
+                     Max=Min;
+                 }
+                 else if(Min==Max)
+                     c2[j++]=t;
+                 t=ans2[i];
+                 Min=ans[i];
+             }
+             else
+                 Min=Min<ans[i]?Min:ans[i],t=t>ans2[i]?t:ans2[i];
+         }
+         if(Min>Max)
+         {
+             Max=Min;
+             j=1;
+             c2[0]=t;
+         }
+         else if(Min==Max)
+             c2[0]=t;
+         printf("Stan: %d; Ollie:",Max);
+         sort(c2,c2+j);
+         if(j==1)
+             printf(" %d",c2[0]);
+         else
+         {
+             if(c2[0]-c2[1])
+                 printf(" %d",c2[0]);
+             for(i=1;i<j;i++)if(c2[i]-c2[i-1])
+                 printf(" %d",c2[i]);
+             if(c2[0]==c2[j-1])
+                 printf(" %d",c2[0]);
+         }
+         printf(";\n");
+     }
+ }

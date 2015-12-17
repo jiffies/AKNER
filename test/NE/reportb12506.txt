@@ -1,0 +1,95 @@
+2-SAT——3.0（poj3207） - laoda扯一扯  - 博客频道 - CSDN.NET
+
+poj3207 Ikki's Story IV - Panda's Trick
+这个题卡的是建图，我开始一直没想到怎么建图，后来看了报告才明白的，= =！
+题意是说给出一个圆上的 n 个点（0~n-1编号），然后在指定的 m 对点之间各连一条线（可以在圆内，也可以在圆外，可以是曲线，这点真心坑爹，开始一直木有看明白），然后问你是否能使这些线都不相交。
+以每条线段为点，那么对于两点之间的一条位于圆内部的曲线 B，肯定有一条对应的位于圆外部的曲线 B‘，显然这两个点满足 2-SAT 问题模型中的 “B 与 非B” 的关系，然后对于每对两条同在圆内部（或者外部）的曲线来说，通过他们的起点，终点坐标就可以判断2者是否矛盾了，从而依赖这个关系建图，剩下的就是塞模板了。
+代码：
+ 
+#include<cstdio>
+#include<cstring>
+#include<stack>
+#include<climits>
+using namespace std;
+const int N = 250010;
+struct Edge{
+	int s,e,next;
+}edge[N];
+int n,m,e_num,vis_num,cnt,head[N],instack[N],tim[N],low[N],belong[N];
+void AddEdge(int a,int b){
+	edge[e_num].s=a; edge[e_num].e=b; edge[e_num].next=head[a]; head[a]=e_num++;
+}
+void getmap(){
+	int i,j,tmp;
+	int px[510],py[510];
+	memset(px,0,sizeof(px));
+	memset(py,0,sizeof(py));
+	for(i=1;i<=m;i++){
+		scanf("%d%d",&px[i],&py[i]);
+		if(px[i]>py[i]){tmp=px[i]; px[i]=py[i]; py[i]=tmp;}
+	}
+	e_num=0;
+	memset(head,-1,sizeof(head));
+	for(i=1;i<=m;i++){
+		for(j=i+1;j<=m;j++){
+			if(px[j]>=px[i]&&px[j]<=py[i]&&py[j]>=py[i] || py[j]>=px[i]&&py[j]<=py[i]&&px[j]<=px[i]){
+				AddEdge(2*i-1,2*j);
+				AddEdge(2*j-1,2*i);
+				AddEdge(2*j,2*i-1);
+				AddEdge(2*i,2*j-1);
+			}
+		}
+	}
+}
+stack <int>st;
+void tarjan(int x){
+	int i;
+	tim[x]=low[x]=++vis_num;
+	instack[x]=1;
+	st.push(x);
+	for(i=head[x];i!=-1;i=edge[i].next){
+		int u=edge[i].e;
+		if(tim[u]==-1){
+			tarjan(u);
+			if(low[x]>low[u])low[x]=low[u];
+		}
+		else if(instack[u] && low[x]>tim[u])low[x]=tim[u];
+	}
+	if(low[x]==tim[x]){
+		cnt++;
+		do{
+			i=st.top();
+			st.pop();
+			instack[i]=0;
+			belong[i]=cnt;
+		}while(i!=x);
+	}
+}
+void solve(){
+	int i;
+	vis_num=cnt=0;
+	memset(instack,0,sizeof(instack));
+	memset(belong,-1,sizeof(belong));
+	memset(tim,-1,sizeof(tim));
+	memset(low,0,sizeof(low));
+	for(i=1;i<=2*m;i++){
+		if(tim[i]==-1)tarjan(i);
+	}
+	int flag=1;
+	for(i=1;i<2*m;i=i+2){
+		if(belong[i]==belong[i+1]){
+			flag=0;break;
+		}
+	}
+	if(flag)puts("panda is telling the truth...");
+	else puts("the evil panda is lying again");
+}
+int main()
+{
+	while(~scanf("%d%d",&n,&m)){
+		getmap();
+		solve();
+	}
+	return 0;
+}
+

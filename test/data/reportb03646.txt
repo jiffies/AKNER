@@ -1,0 +1,63 @@
+poj 2275_wegnahz的空间_百度空间
+
+我发现。。。一边看电视剧一边写代码效率的确太低了。。。
+这题从8点多一直写到10点，题目并不难，就是给你个二叉树，问有多少种不同顺序的输入序列也能构造出相同结构的二叉树。其实只要构造出树的形状，那么设f[i]为以i为根的子树的答案
+f[i]=c[i的孩子数][i的左（右）孩子数]×f[左孩子]×f[右孩子]，输出根节点的答案即可。因为我半秃，秃然想写个完全非递归的，于是插入节点和递推的时候都用非递归，拿栈模拟了个，结果。。。不管怎么说，好歹ac了
+/* pku2775 */
+/* produced by wegnahz */
+#include <iostream>
+#include <string>
+#include <string.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <ctype.h>
+using namespace std;
+const int inf=100000000,mm=9901;
+const double pi=acos(-1.0);
+const double eps=1e-8;
+const int maxn=101;
+template<class T> inline void checkmin(T &a,T b){if(b<a) a=b;}
+template<class T> inline void checkmax(T &a,T b){if(b>a) a=b;}
+inline void fill(int *a,int b,int c){
+ for (int i=0;i<c/4;i++,a++) *a=b;}
+int n,a[maxn],c[maxn][maxn],l[maxn],r[maxn],nl[maxn],nr[maxn],f[maxn],s[maxn];
+int main(){
+    int i,j,k,t;
+    freopen("pku2775.in","r",stdin);
+    freopen("pku2775.out","w",stdout);
+    for (c[0][0]=1,i=1;i<=100;i++)
+        for (c[i][0]=1,j=1;j<=i;j++)
+            c[i][j]=(c[i-1][j]+c[i-1][j-1])% mm;
+    while (cin>>n,n)
+    {
+        memset(nl,0,sizeof(nl));
+        memset(nr,0,sizeof(nr));
+        memset(l,0,sizeof(l));
+        memset(r,0,sizeof(r));
+        for (cin>>a[1],i=2;i<=n;i++)
+            for (cin>>a[i],j=1;j!=i;)
+                if (a[i]<=a[j])
+                {
+                    nl[j]++;
+                    if (!l[j]) l[j]=i;
+                    j=l[j];
+                } else
+                {
+                    nr[j]++;
+                    if (!r[j]) r[j]=i;
+                    j=r[j];
+                }
+        memset(f,0,sizeof(f));
+        for (i=1;i<=n;i++) a[i]=c[nl[i]+nr[i]][nl[i]];
+        for (t=1,s[1]=1;t;)
+        {
+            if (!s[t]) f[s[--t]]++; else
+            if (f[s[t]]==0) {s[t+1]=l[s[t]]; t++;} else
+            if (f[s[t]]==1) {s[t+1]=r[s[t]]; t++;} else
+            {f[s[--t]]++; a[s[t]]=(a[s[t]]*a[s[t+1]])%mm;}            
+        }
+        cout<<a[1]<<endl;
+    }
+    return 0;
+}

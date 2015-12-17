@@ -1,0 +1,666 @@
+poj	eng	N	Y	O	B-OJ
+
+2013	m	N	N	O	I-OJ
+
+Symmetric	eng	N	N	O	O
+
+Order	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+martinblack954	eng	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+题目	n	Y	N	O	O
+链接	n	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+2013	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+按	p	N	N	O	O
+长度	ns	Y	N	O	O
+从小到大	l	N	N	O	O
+排列	v	Y	N	O	O
+的	uj	N	N	O	O
+单词	n	Y	N	O	O
+列表	n	N	N	O	O
+，	x	N	N	O	O
+现	tg	N	N	O	O
+需要	v	N	N	O	O
+对	p	N	N	O	O
+这个	r	N	N	O	O
+列表	n	N	N	O	O
+的	uj	N	N	O	O
+单词	n	Y	N	O	O
+进行	v	N	N	O	O
+二次	m	N	N	O	O
+排序	n	Y	N	O	O
+。	x	N	N	O	O
+
+排序	n	Y	N	O	O
+规则	n	N	N	O	O
+是	v	N	N	O	O
+，	x	N	N	O	O
+原	n	N	N	O	O
+序列	n	Y	N	O	O
+单词	n	Y	N	O	O
+两个	m	N	N	O	O
+两个	m	N	N	O	O
+分成	v	N	N	O	O
+一组	m	N	N	O	O
+。	x	N	N	O	O
+
+然后	c	N	N	O	O
+第一组	m	N	N	O	O
+的	uj	N	N	O	O
+第一个	m	N	N	O	O
+单词	n	Y	N	O	O
+为	p	N	N	O	O
+新	a	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+第一个	m	N	N	O	O
+单词	n	Y	N	O	O
+，	x	N	N	O	O
+第二个	m	N	N	O	O
+单词	n	Y	N	O	O
+为	p	N	N	O	O
+新	a	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+倒数	n	N	N	O	O
+第一个	m	N	N	O	O
+单词	n	Y	N	O	O
+；	x	N	N	O	O
+第二组	m	N	N	O	O
+的	uj	N	N	O	O
+第一个	m	N	N	O	O
+单词	n	Y	N	O	O
+为	p	N	N	O	O
+新	a	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+第二个	m	N	N	O	O
+单词	n	Y	N	O	O
+，	x	N	N	O	O
+第二个	m	N	N	O	O
+单词	n	Y	N	O	O
+为	p	N	N	O	O
+新	a	N	N	O	O
+序列	n	Y	N	O	O
+的	uj	N	N	O	O
+倒数	n	N	N	O	O
+第二个	m	N	N	O	O
+单词	n	Y	N	O	O
+，	x	N	N	O	O
+以此类推	l	N	N	O	O
+。	x	N	N	O	O
+
+问	v	N	N	O	O
+该	r	N	N	O	O
+单词	n	Y	N	O	O
+列表	n	N	N	O	O
+二次	m	N	N	O	O
+排序	n	Y	N	O	O
+后	f	N	N	O	O
+的	uj	N	N	O	O
+序列	n	Y	N	O	O
+。	x	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+模拟	v	Y	N	O	B-KNOWLEDGE
+。	x	N	N	O	O
+
+按	p	N	N	O	O
+题目	n	Y	N	O	O
+描述	v	N	N	O	O
+的	uj	N	N	O	O
+二次	m	N	N	O	O
+排序	n	Y	N	O	O
+方式	n	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+一个	m	N	N	O	O
+循环	vn	N	N	O	O
+变量	vn	N	N	O	O
+直接	ad	N	N	O	O
+正数	n	N	N	O	O
+倒数	n	N	N	O	O
+去	v	N	N	O	O
+进行	v	N	N	O	O
+二次	m	N	N	O	O
+赋值	n	N	N	O	O
+即可	d	N	N	O	O
+。	x	N	N	O	O
+
+PS	eng	N	N	O	O
+：	x	N	N	O	O
+我	r	N	N	O	O
+实现	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+，	x	N	N	O	O
+以为	c	N	N	O	O
+输入	v	N	N	O	O
+是	v	N	N	O	O
+无序	n	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+还	d	N	N	O	O
+冒泡排序	i	N	N	O	B-KNOWLEDGE
+了	ul	N	N	O	O
+一下	m	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+-	x	N	N	O	O
+
+-	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+malloc	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+M	x	N	N	O	O
+
+18	m	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+M	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+bub	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+s2	eng	N	N	O	O
+[	x	N	N	O	O
+M	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+M	x	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+n	eng	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+free	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+char	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+bub	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+s2	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+2	m	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+s2	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+SET	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+t	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+s2	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

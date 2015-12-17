@@ -1,0 +1,173 @@
+POJ2886  Who Gets the Most Candies? 线段树+约瑟夫+反素数 - Albafica_iCpc  - 博客频道 - CSDN.NET
+
+
+ 线段树+约瑟夫+反素数。
+ 
+
+ 用线段数跟新队伍中的人数。每次查询将要出队的人在当前队伍中的位置。在通过将要移动的位置，找出下一个位置。
+ 
+
+ 通过这一题知道了反素数。。。。ORZ   膜拜众神犇
+ 
+
+ Who Gets the Most Candies?
+ 
+ 
+  
+   
+    
+     Time Limit: 5000MS
+  
+     Memory Limit: 131072K
+  
+    
+    
+     Total Submissions: 6075
+  
+     Accepted: 1752
+  
+    
+    
+     Case Time Limit: 2000MS
+  
+    
+   
+  
+ 
+Description
+N children are sitting in a circle to play a game.
+The children are numbered from 1 to N in clockwise order. Each of them has a card with a non-zero integer on it in his/her hand. The game starts from theK-th child, who tells all the others the integer on his card and jumps out of the circle. The integer on his card tells the next child to jump out. LetA denote the integer. IfA is positive, the next child will be theA-th child to the left. IfA is negative, the next child will be the (?A)-th child to the right.
+The game lasts until all children have jumped out of the circle. During the game, thep-th child jumping out will getF(p) candies where F(p) is the number of positive integers that perfectly dividep. Who gets the most candies?
+ 
+ 
+Input
+ 
+
+ There are several test cases in the input. Each test case starts with two integers
+ N (0 <
+ N 
+ ≤ 500,000) and K (1 ≤ K ≤ N) on the first line. The nextN lines contains the names of the children (consisting of at most 10 letters) and the integers (non-zero with magnitudes within 108) on their cards in increasing order of the children’s numbers, a name and an integer separated by a single space in a line with no leading or trailing spaces.
+ 
+Output
+Output one line for each test case containing the name of the luckiest child and the number of candies he/she gets. If ties occur, always choose the child who jumps out of the circle first.
+ 
+ 
+Sample Input
+ 
+4 2
+Tom 2
+Jack 4
+Mary -1
+Sam 1 
+Sample Output
+ 
+Sam 3 
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<string>
+#include<iterator>
+using namespace std;
+#define lson l,m,root<<1
+#define rson m+1,r,root<<1|1
+#define MAXN 600020
+int num[MAXN<<2],step[MAXN];
+int n,s;
+const int a[37]={1,2,4,6,12,24,36,48,60,120,180,240,360,720,840,1260,1680,2520,5040,7560,10080,15120,20160,25200,27720,45360,50400,55440,83160,110880,166320,221760,277200,332640,498960,500001};
+const int b[37]={1,2,3,4,6,8,9,10,12,16,18,20,24,30,32,36,40,48,60,64,72,80,84,90,96,100,108,120,128,144,160,168,180,192,200,1314521};
+char m2[MAXN][20];
+void push_up(int root)
+{
+	num[root]=num[root<<1]+num[root<<1|1];
+}
+void build(int l,int r,int root)
+{
+	if(l==r)
+	{		
+		scanf("%s%d",m2[l],&step[l]);
+		num[root]=1;
+		return;
+	}
+	int m=(l+r)/2;
+	build(lson);
+	build(rson);
+	push_up(root);
+}
+int query(int p,int l,int r,int root)
+{
+	if(l==r)
+		return l;
+	int m=(l+r)/2;
+	if(p<=num[root<<1])
+		return query(p,lson);
+	else
+	{
+		p=p-num[root<<1];
+		return query(p,rson);
+	}
+}
+void update(int p,int l,int r,int root)
+{
+	if(l==r)
+	{
+		num[root]=0;
+		return ;
+	}
+	int m=(l+r)>>1;
+	if(p<=m)
+		update(p,lson);
+	else
+		update(p,rson);
+	push_up(root);
+}
+int search(int n)
+{
+	int l=0,h=37;
+	int m;
+	while(l<=h)
+	{
+		m=(l+h)>>1;
+		if(a[m]>n)
+			h=m-1;
+		else
+			l=m+1;
+		if(a[m]==n)
+			return m;
+	}
+	return h;	
+}
+void solve(int tag,int num)
+{
+	int pos,temp,x;
+	update(s-1,0,n-1,1);    //位置为s 的人出队 ，更新线段树 
+	temp=s-1;                 
+	x=s;
+	for(int i=1;i<=n;i++)
+	{
+		if(i==num)            //判断当前出队数是否为目标的反素数 
+		{
+			printf("%s %d\n",m2[temp],b[tag]);  
+			return ;
+		}
+		pos=step[temp];
+		if(pos<0)            //利用取模运算，找出下一个出队的人是当前队伍中第几个 
+			x=(x+pos-1)%(n-i);
+		else
+			x=(x+pos-2)%(n-i);
+		while(x<0)           //注意负数 
+			x+=n-i;
+		x+=1;
+		temp=query(x,0,n-1,1); //查找位置 
+		update(temp,0,n-1,1);  //出队，更新 
+	}
+}
+int main()
+{
+	while(scanf("%d%d",&n,&s)!=EOF)
+	{
+		build(0,n-1,1);
+		int tag=search(n); //用二分找出目标的反素数 
+		solve(tag,a[tag]);
+	}
+	return 0;
+}

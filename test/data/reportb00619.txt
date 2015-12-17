@@ -1,0 +1,29 @@
+poj 1493 : Machined Surfaces_依然_新浪博客
+
+ 题意：每张照片由n行串组成，每行串长度为25，都由X开头，空格中间(也可没有)，X结尾。所有串的左边X部分同时右移，直到有一个串没有空格。问这时所有串合起来总共有几个空格。
+思路：水题。求最短的空格数minLen，每一行的空格数减去minLen之和就是结果了。
+源代码：(212K, 0MS)
+#include<iostream>
+ #define min(a,b) ((a)<(b)?(a):(b))
+ using namespace std;
+int sum[15];
+ char img[30];
+int main(){
+     int n, i, j;
+     while(scanf("%d", &n) && n){
+         getchar();
+         int minLen = 30;
+         for(i = 0; i < n; i ++){
+             gets(img);
+             for(sum[i] = j = 0; j < 25; j ++)
+                 if(img[j] == ' ')
+                     sum[i] ++;
+             minLen = min(minLen, sum[i]);
+         }
+         int ans = 0;
+         for(i = 0; i < n; i ++)
+             ans += sum[i] - minLen;
+         cout << ans << endl;
+     }
+     return 0;
+ }

@@ -1,0 +1,846 @@
+POJ	eng	N	Y	O	B-OJ
+
+3090	m	N	N	O	O
+
+Visible	eng	N	N	O	O
+
+Lattice	eng	N	N	O	O
+
+Points	eng	N	N	O	O
+_	x	N	N	O	O
+JJing	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+欧拉	ns	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+一个	m	N	N	O	O
+应用	v	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+出	v	N	N	O	O
+互质	n	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+Description	eng	N	N	O	O
+
+A	x	N	N	O	O
+
+lattice	eng	N	N	O	O
+
+point	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+quadrant	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+y	x	N	N	O	O
+
+are	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+greater	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+equal	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+other	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+origin	eng	N	N	O	O
+,	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+visible	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+origin	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+(	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+to	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+pass	eng	N	N	O	O
+
+through	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+lattice	eng	N	N	O	O
+
+point	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+point	eng	N	N	O	O
+
+(	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+visible	eng	N	N	O	O
+
+since	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+origin	eng	N	N	O	O
+
+passes	eng	N	N	O	O
+
+through	eng	N	N	O	O
+
+(	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+figure	eng	N	N	O	O
+
+below	eng	N	N	O	O
+
+shows	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+5	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+origin	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+visible	eng	N	N	O	O
+
+points	eng	N	N	O	O
+.	m	N	N	O	O
+
+3090	m	N	N	O	O
+
+Visible	eng	N	N	O	O
+
+Lattice	eng	N	N	O	O
+
+Points	eng	N	N	O	O
+"	x	N	N	O	O
+>	x	N	N	O	O
+
+Write	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+program	eng	N	N	O	O
+
+which	eng	N	N	O	O
+,	x	N	N	O	O
+
+given	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+value	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+size	eng	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+computes	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+visible	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+with	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+N	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+C	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+C	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+datasets	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+follow	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+dataset	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+N	x	N	N	O	O
+
+≤	x	N	N	O	O
+
+1000	m	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+size	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+dataset	eng	N	N	O	O
+,	x	N	N	O	O
+
+there	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+consisting	eng	N	N	O	O
+
+of	eng	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+dataset	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+starting	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+space	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+size	eng	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+space	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+visible	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+that	eng	N	N	O	O
+
+size	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+2	x	N	N	O	O
+
+4	x	N	N	O	O
+
+5	x	N	N	O	O
+
+231	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+5	x	N	N	O	O
+
+2	x	N	N	O	O
+
+4	x	N	N	O	O
+
+13	m	N	N	O	O
+
+3	x	N	N	O	O
+
+5	x	N	N	O	O
+
+21	m	N	N	O	O
+
+4	x	N	N	O	O
+
+231	m	N	N	O	O
+
+32549	m	N	N	O	O
+
+3090	m	N	N	O	O
+
+Visible	eng	N	N	O	O
+
+Lattice	eng	N	N	O	O
+
+Points	eng	N	N	O	O
+"	x	N	N	O	O
+
+title	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+POJ	eng	N	Y	O	O
+
+3090	m	N	N	O	O
+
+Visible	eng	N	N	O	O
+
+Lattice	eng	N	N	O	O
+
+Points	eng	N	N	O	O
+"	x	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+M	x	N	N	O	O
+
+1005	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+M	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+oula	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+欧拉	ns	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+M	x	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+M	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+M	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+/	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cas	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+oula	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+cas	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cas	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+phi	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+v	eng	N	N	O	O
+++	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+*	x	N	N	O	O
+2	m	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

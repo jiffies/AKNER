@@ -1,0 +1,191 @@
+网络流 HDU2732 && PKU 2711 最大流 SAP - 下棋找高手，弄斧就要到班门____啊啊啊啊啊 - 博客频道 - CSDN.NET
+
+这题目没别的就是TM英语难理解，说什么不好说蜥蜴跳啊跳题目理解了半天，输出TM更BT，还要有单复数之分。哎。。。
+题目意思：
+是有一些蜥蜴在一个迷宫里面，求这些蜥蜴还有多少是无论如何都逃不出来的。题目只给定一个行数，一个最远能够跳跃的距离，列数是不确定的（题目告知列数小于等于20），但是数据一定会是一个矩阵。每只蜥蜴有一个初始的位置，题目保证这些位置都有一些柱子，每次蜥蜴从一个位置跳到另外一个位置的时候，就会由于反作用力使得一根柱子倒下，你的任务是让尽量多的蜥蜴逃到边界外。每行每列中相邻石柱的距离为1，蜥蜴的跳跃距离是d，即蜥蜴可以跳到平面距离不超过d的任何一个石柱上。
+ 石柱都不稳定，每次当蜥蜴跳跃时，所离开 的石柱高度减1（如果仍然落在地图内部，则到达的石柱高度不变），
+ 如果该石柱原来高度为1，则蜥蜴离开后消失。以后其他蜥蜴不能落脚。任何时刻不能有两只 蜥蜴在同一个石柱上。
+还有就是题目说d只会是0-3 又是错的 不信你加个if(d>=4)break; 绝对是错的害我wa了好久真心坑爹。后来去了这一句就ac了。哎。。。太扣条件反而会错呢。
+分析：
+很显然，这一题，可以用网络流来求解，建图：首先我们要确定一个贪心思想，即如果从某一根柱子能够直接跳到迷宫的外面，那么我们就将这个点连接到汇点，而不用将这个点连接到其他的点了。对于哪些不能跳出去但是又有柱子的点，那么我们就去按照跳跃距离搜寻有没有其他的柱子能够去跳跃，如果能够找到的话，那么连接这两点，并且将容量控制为弧尾节点的柱子数，也正是由于一条弧只能够约束一个顶点，所以我们需要进行拆点，点内之间流量为本身柱子数。题目给定的第二个矩阵其实就是用来确定源点的。该题输入要小心，要符合英语语法～～
+步骤：
+ 源点s到每条蜥蜴都连一条容量为1的边 
+ 对于每个格子出发，看做一个点，那么这个点能够到达的点和这个点（-）连一条容量无穷的边
+ 由于点有容量的限制，所以把一个点拆成点（-）和点（+），添加 一条容量为点的容量的边，如果某个点可以跳出来，那么就从这个点（+）
+ 向汇点添加一条容量无穷的边，然后最大流即可 
+最开始做的优化不是很好，看到网上有用数组保存个点的，那样建图比较快，后来那样优化了下就0MS了
+我是0做起点 t是r*c*2+1 ISAP做还是比较快的
+ 
+#include<iostream> 
+#include<cstdio> 
+#include<cmath>
+#include<cstring> 
+using namespace std;   
+#define MAXN 810 
+#define MAXE 30000 
+#define INF 0x7fffff      
+int ne,nv,tmp,s,t,index;
+int dir[40][2]={
+               {1,0},{0,-1},{-1,0},{0,1},//4
+               {2,0},{1,-1},{0,-2},{-1,-1},{-2,0},{-1,1},{0,2},{1,1},//8
+               {3,0},{2,-1},{1,-2},{0,-3},{-1,-2},{-2,-1},{-3,0},{-2,1},{-1,2},{0,3},{1,2},{2,1},//12
+               {4,0},{3,-1},{2,-2},{1,-3},{0,-4},{-1,-3},{-2,-2},{-3,-1},{-4,0},{-3,1},{-2,2},{-1,3},{0,4},{1,3},{2,2},{3,1},//16
+               }; 
+int size[5]={0,4,12,24,40};  
+struct Edge{ 
+    int next,pair; 
+    int v,cap,fLow; 
+}edge[MAXE];
+int net[MAXN];
+int hash[22][22],id;
+char gid[22][22],map[22][22];
+int getid(int x,int y)
+{
+    if(hash[x][y]==-1)hash[x][y]=id++;
+    return hash[x][y];
+} 
+bool check(int x,int y,int n,int m)
+{
+    if(x>=0&&x<n&&y>=0&&y<m)return 1;
+    return 0; 
+} 
+int ISAP() 
+{ 
+	int numb[MAXN],dist[MAXN],curedge[MAXN],pre[MAXN]; 
+    int cur_fLow,max_fLow,u,tmp,neck,i; 
+    memset(dist,0,sizeof(dist)); 
+    memset(numb,0,sizeof(numb)); 
+    memset(pre,-1,sizeof(pre)); 
+    for(i = 1 ; i <= nv ; ++i) 
+        curedge[i] = net[i]; 
+    numb[nv] = nv; 
+    max_fLow = 0; 
+    u = s; 
+    while(dist[s] < nv) 
+    { 
+        if(u == t) 
+        { 
+            cur_fLow = INF; 
+            for(i = s; i != t;i = edge[curedge[i]].v)  
+            {   
+                if(cur_fLow > edge[curedge[i]].cap) 
+                { 
+                    neck = i; 
+                    cur_fLow = edge[curedge[i]].cap; 
+                } 
+            } 
+            for(i = s; i != t; i = edge[curedge[i]].v) 
+            { 
+                tmp = curedge[i]; 
+                edge[tmp].cap -= cur_fLow; 
+                edge[tmp].fLow += cur_fLow; 
+                tmp = edge[tmp].pair; 
+                edge[tmp].cap += cur_fLow; 
+                edge[tmp].fLow -= cur_fLow; 
+            } 
+            max_fLow += cur_fLow; 
+            u = neck; 
+        } 
+        for(i = curedge[u]; i != -1; i = edge[i].next) 
+            if(edge[i].cap > 0 && dist[u] == dist[edge[i].v]+1) 
+                break; 
+        if(i != -1) 
+        { 
+            curedge[u] = i; 
+            pre[edge[i].v] = u; 
+            u = edge[i].v; 
+        }else{ 
+            if(0 == --numb[dist[u]]) break; 
+            curedge[u] = net[u]; 
+            for(tmp = nv,i = net[u]; i != -1; i = edge[i].next) 
+                if(edge[i].cap > 0) 
+                    tmp = tmp<dist[edge[i].v]?tmp:dist[edge[i].v]; 
+            dist[u] = tmp + 1; 
+            ++numb[dist[u]]; 
+            if(u != s) u = pre[u]; 
+        } 
+    }      
+    return max_fLow; 
+}
+void addedge(int u,int v,int f)
+{
+	edge[index].next = net[u]; 
+    edge[index].v = v; 
+    edge[index].cap = f; 
+    edge[index].fLow = 0; 
+    edge[index].pair = index+1; 
+    net[u] = index++; 
+    edge[index].next = net[v]; 
+    edge[index].v = u; 
+    edge[index].cap = 0; 
+    edge[index].fLow = 0; 
+    edge[index].pair = index-1; 
+    net[v] = index++;
+} 
+int main() 
+{ 
+    int i,j,np,nc,m,n; 
+    int a,b,d,k,xx,yy,y; 
+    int cases;
+    scanf("%d",&cases);
+    for(int zz=1;zz<=cases;zz++)
+    {
+    	scanf("%d%d",&n,&d);
+    	if(d>4)break;
+    	int lizard=0,r=n,c=0,sum=0;		
+		index=0;//index从0开始扫 
+        s = 0;  
+        memset(net,-1,sizeof(net));
+        memset(hash,-1,sizeof(hash));
+		memset(gid,0,sizeof(gid));
+		memset(map,0,sizeof(map));
+		for(i=0;i<n;i++)scanf("%s",gid[i]);
+		for(i=0;i<n;i++)scanf("%s",map[i]);
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			if(map[i][j]=='L')lizard++;
+		c=strlen(gid[0]);
+		sum=r*c;
+		s=0;t=sum+sum+1;
+		nv=t+1;
+		id=1;//对应点的id 
+		/*建图*/
+		//连接源点到各个蜥蜴的边
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				if(map[i][j]=='L')
+				addedge(s,getid(i,j),1);
+			}
+		//连接点与拆点之间的边
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				if(gid[i][j]>'0')
+				addedge(getid(i,j),getid(i,j)+sum,gid[i][j]-'0');
+			}
+		//连接各个可以跳出去的点到汇点的边和点与点之间的边 
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				//dir代表每次往外可以调的格子，
+				//距离为1跳4个方向，距离2就可以调8个了以此往外跳 
+				int temp=getid(i,j)+sum;
+				for(k=0;k<size[d];k++)
+              	{
+					xx=i+dir[k][0];
+                  	yy=j+dir[k][1];
+                  	if(check(xx,yy,r,c)==0)y=t;
+                  	else y=getid(xx,yy);
+                  	addedge(temp,y,INF);                                    
+            	}
+			}
+		int ans=ISAP();
+		lizard-=ans;
+		printf("Case #%d: ",zz);
+		if(lizard==0)printf("no lizard was left behind.\n");
+        else if(lizard==1)printf("%d lizard was left behind.\n",lizard);
+        else printf("%d lizards were left behind.\n",lizard); 
+    } 
+    return 0; 
+}

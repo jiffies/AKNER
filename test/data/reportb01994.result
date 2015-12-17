@@ -1,0 +1,554 @@
+Coin	eng	N	N	O	O
+
+Toss	eng	N	N	O	O
+【	x	N	N	O	O
+poj	eng	N	Y	O	B-OJ
+】	x	N	N	O	O
+3440	m	N	N	O	O
+
+-	x	N	N	O	O
+
+只是	c	N	N	O	O
+路过	v	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+主要	b	N	N	O	O
+是	v	N	N	O	O
+找准	v	N	N	O	O
+图形	n	Y	N	O	O
+的	uj	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+区域	n	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+代码	n	N	N	O	O
+就	d	N	N	O	O
+简单	a	N	N	O	O
+了	ul	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+
+3.141592653	m	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+a2	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+v	x	N	N	O	O
+-	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+r	eng	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+/	x	N	N	O	O
+2.0	m	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+a4	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+/	x	N	N	O	O
+4.0	m	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+a3	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+-	x	N	N	O	O
+pi	eng	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+/	x	N	N	O	O
+4.0	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+arc	eng	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+m	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+v	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+arc	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+:	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+are2	eng	N	N	O	O
+=	x	N	N	O	O
+a2	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+arc	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+are4	eng	N	N	O	O
+=	x	N	N	O	O
+a4	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+arc	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+are3	eng	N	N	O	O
+=	x	N	N	O	O
+a3	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+arc	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+are1	eng	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+-	x	N	N	O	O
+are2	eng	N	N	O	O
+-	x	N	N	O	O
+are3	eng	N	N	O	O
+-	x	N	N	O	O
+are4	eng	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Case	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+:	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Probability	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+covering	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+tile	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+%	x	N	N	O	O
+.4	m	N	N	O	O
+f	eng	N	N	O	O
+%	x	N	N	O	O
+%	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+are1	eng	N	N	O	O
+*	x	N	N	O	O
+100	m	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Probability	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+covering	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+tiles	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+%	x	N	N	O	O
+.4	m	N	N	O	O
+f	eng	N	N	O	O
+%	x	N	N	O	O
+%	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+are2	eng	N	N	O	O
+*	x	N	N	O	O
+100	m	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Probability	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+covering	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+tiles	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+%	x	N	N	O	O
+.4	m	N	N	O	O
+f	eng	N	N	O	O
+%	x	N	N	O	O
+%	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+are3	eng	N	N	O	O
+*	x	N	N	O	O
+100	m	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Probability	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+covering	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+tiles	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+%	x	N	N	O	O
+.4	m	N	N	O	O
+f	eng	N	N	O	O
+%	x	N	N	O	O
+%	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+are4	eng	N	N	O	O
+*	x	N	N	O	O
+100	m	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+*	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

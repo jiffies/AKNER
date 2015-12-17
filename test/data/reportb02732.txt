@@ -1,0 +1,84 @@
+POJ3249（Test for Job） - Oi不回头，菜鸟变大牛 - 博客频道 - CSDN.NET
+
+拓扑排序+打擂台
+找一个入度为0的结点进行DFS，直到找到一个出度为0的结点结束并更新ans。
+数据结构使用边表。
+
+program POJ3249;
+const
+	maxn=100001;
+	maxm=1000001;
+type
+	gta=record
+		x,y,next:longint;
+	end;
+var
+	b:array [0..maxn] of boolean;
+	map:array [0..maxm] of gta;
+	c,into,first,f:array [0..maxn] of longint;
+	n,m,ans,tot:longint;
+procedure init;
+var
+	i,x1,x2:longint;
+begin
+	ans:=-maxlongint;	
+	fillchar(b,sizeof(b),false);	
+	fillchar(f,sizeof(f),200);
+	fillchar(map,sizeof(map),0);
+	fillchar(first,sizeof(first),0);
+	fillchar(into,sizeof(into),0);
+	tot:=0;
+	readln(n,m);
+	for i:=1 to n do readln(c[i]);
+	for i:=1 to m do
+		begin
+			readln(x1,x2);
+			inc(into[x2]);
+			inc(tot);
+			map[tot].x:=x1;
+			map[tot].y:=x2;
+			map[tot].next:=first[x1];
+			first[x1]:=tot;
+		end;
+end;
+procedure DFS(x:longint);		
+var
+	t,now,y:longint;
+begin
+	b[x]:=true;//先标记这个点已访问过。
+	now:=-maxlongint;
+	t:=first[x];//先找与x相连的第一个结点。
+	while t<>0 do//把与x相连的所有点遍历一遍。
+		begin
+			y:=map[t].y;
+			if not b[y] then DFS(y);//如果与x相连的这个点没有访问过就访问。
+			if f[y]>now then now:=f[y];//如果＞now就更新。
+			t:=map[t].next;//访问下一个点。
+		end;
+	if first[x]=0 then f[x]:=c[x] else f[x]:=now+c[x];//如果这个点的出度为0（终点），值返回这个点的值。
+end;	
+procedure main;
+var
+	i:longint;
+begin	
+	for i:=1 to n do 
+		begin
+			if into[i]=0 then//如果入度为0，则这个点为起点。进行DFS。
+				begin
+					DFS(i);
+					if f[i]>ans then ans:=f[i];//如果以当前点为起点得到的结果＞ans就更新。（打擂台）
+				end;
+		end;
+end;	
+begin
+	assign(input,'POJ3249.in'); reset(input);
+	assign(output,'POJ3249.out'); rewrite(output);
+	while not eof do
+		begin
+			init;
+			main;
+			writeln(ans);
+		end;
+	close(input); close(output);
+end.
+

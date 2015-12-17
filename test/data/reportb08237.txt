@@ -1,0 +1,190 @@
+pku 1535 dfs - 小鱼的日志 - 网易博客
+
+这题还好了，怎么ac那么少的人。诡异!,就是在dfs去的方向同时判断回来的方向。
+
+ 
+  
+
+ 
+ 
+  #include <iostream>
+ 
+ 
+  using namespace std;
+ 
+ 
+  
+
+ 
+ 
+  const int N =101;
+ 
+ 
+  
+
+ 
+ 
+  int m,n;
+ 
+ 
+  int x0,y0,x1,y1;
+ 
+ 
+  bool a[N][N],vis[N][N];
+ 
+ 
+  int path[4]={0,2,3,1};// 前后左右
+ 
+ 
+  int pos[4][2]={{-1,0},{0,1},{1,0},{0,-1}};//上右下左
+ 
+ 
+  
+
+ 
+ 
+  bool in(int x,int y)
+ 
+ 
+  {
+ 
+ 
+   return !(x <0 || x>=m || y <0 || y>=n);
+ 
+ 
+  }
+ 
+ 
+  bool dfs(int xs,int ys,int ps,int xe,int ye,int pe)
+ 
+ 
+  {
+ 
+ 
+   if(xs == x1 && ys == y1)
+ 
+ 
+   return (xe== x0 && ye== y0);
+ 
+ 
+   if(xe== x0 && ye== y0)
+ 
+ 
+   return (xs == x1 && ys == y1);
+ 
+ 
+  
+
+ 
+ 
+   int xss,yss,xee,yee;
+ 
+ 
+   for(int j,i=0;i<4;i++)
+ 
+ 
+   {
+ 
+ 
+   xss = xs + pos[j = (ps+path[i])%4][0];
+ 
+ 
+   yss = ys + pos[j][1];
+ 
+ 
+   xee = xe + pos[j = (pe+path[i])%4][0];
+ 
+ 
+   yee = ye+ pos[j][1];
+ 
+ 
+   if(!in(xss,yss) || !in(xee,yee))continue;
+ 
+ 
+   if(vis[xss][yss] || a[xss][yss] || a[xee][yee])continue;
+ 
+ 
+   vis[xss][yss] =1;
+ 
+ 
+   if(dfs(xss,yss,(ps+path[i])%4,xee,yee,(pe+path[i])%4))
+ 
+ 
+   return true;
+ 
+ 
+   vis[xss][yss] =0;
+ 
+ 
+   }
+ 
+ 
+   return false;
+ 
+ 
+  }
+ 
+ 
+  int main()
+ 
+ 
+  {
+ 
+ 
+   while(scanf("%d %d",&m,&n), m || n)
+ 
+ 
+   {
+ 
+ 
+   scanf("%d %d %d %d",&x0,&y0,&x1,&y1);
+ 
+ 
+   memset(a,0,sizeof(a));
+ 
+ 
+   int x,y,k,i;
+ 
+ 
+   scanf("%d",&k);
+ 
+ 
+   for(i=0;i<k;i++){
+ 
+ 
+   scanf("%d %d",&x,&y);
+ 
+ 
+   a[x][y] =1;
+ 
+ 
+   }
+ 
+ 
+  
+
+ 
+ 
+   memset(vis,0,sizeof(vis));
+ 
+ 
+   vis[x0][y0]=1;
+ 
+ 
+   if(dfs(x0,y0,1,x1,y1,3))
+ 
+ 
+   printf("YES\n");
+ 
+ 
+   else printf("NO\n");
+ 
+ 
+   }
+ 
+ 
+   return 0;
+ 
+ 
+  }
+ 

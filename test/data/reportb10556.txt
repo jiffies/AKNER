@@ -1,0 +1,58 @@
+pku 3349 (Snowflake Snow Snowflakes)未解决_void com(fool G,fool G){happy every day!}_百度空间
+
+//先留着，思想都有，写得太麻烦，等做够足够的HASH题再说吧
+#include <iostream>
+using namespace std;
+const int Prime=14997 ;
+int a[100010][7] ;
+const int maxn=150000;
+struct node
+{
+ node()
+ {
+   idx=-1;next=NULL;
+ }
+ node(int id)
+ {
+ idx=id;
+ next=NULL;
+ }
+ int idx;
+ node *next;
+}table[maxn];
+void init(int n)
+{
+ int i;
+    for(i = 0 ; i < n ; i++)
+ {
+         table[i].idx=-1;
+        table[i].next=NULL;
+    }
+}
+int hash(int *a)
+ {
+      __int64 sum=0;
+   int i;
+      for(i = 0 ; i < 6 ; i++) 
+    sum+=a[i];
+     return sum%149997;
+ }
+int main()
+{
+    int N,OK(0),i(0),count(0);
+ scanf("%d",&N);
+ init(N);
+ for(;N--;)
+ {
+        for(i = 0 ; i < 6 ; i++)
+    scanf("%d",&a[count][i]);
+     count++;
+ }
+/* for(i = 0 ; i < count ; i++)
+ {
+   for(int j = 0 ; j < 6 ; j++)
+    cout<<a[i][j]<<" ";
+         cout<<endl;
+ }*/
+ return 0;
+}

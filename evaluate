@@ -1,0 +1,144 @@
+-e new round
+
+
+processed 37732 tokens with 237 phrases; found: 140 phrases; correct: 118.
+accuracy:  99.42%; precision:  84.29%; recall:  49.79%; FB1:  62.60
+        KNOWLEDGE: precision:  79.71%; recall:  39.86%; FB1:  53.14  69
+               OJ: precision:  88.73%; recall:  63.64%; FB1:  74.12  71
+-e new round
+
+
+processed 35474 tokens with 226 phrases; found: 173 phrases; correct: 140.
+accuracy:  99.62%; precision:  80.92%; recall:  61.95%; FB1:  70.18
+        KNOWLEDGE: precision:  68.52%; recall:  45.68%; FB1:  54.81  54
+               OJ: precision:  86.55%; recall:  71.03%; FB1:  78.03  119
+-e new round
+
+
+processed 34142 tokens with 154 phrases; found: 112 phrases; correct: 96.
+accuracy:  99.73%; precision:  85.71%; recall:  62.34%; FB1:  72.18
+        KNOWLEDGE: precision:  78.72%; recall:  55.22%; FB1:  64.91  47
+               OJ: precision:  90.77%; recall:  67.82%; FB1:  77.63  65
+-e new round
+
+
+processed 39580 tokens with 213 phrases; found: 149 phrases; correct: 120.
+accuracy:  99.60%; precision:  80.54%; recall:  56.34%; FB1:  66.30
+        KNOWLEDGE: precision:  79.01%; recall:  56.14%; FB1:  65.64  81
+               OJ: precision:  82.35%; recall:  56.57%; FB1:  67.07  68
+-e new round
+
+
+processed 30884 tokens with 191 phrases; found: 130 phrases; correct: 108.
+accuracy:  99.54%; precision:  83.08%; recall:  56.54%; FB1:  67.29
+        KNOWLEDGE: precision:  80.85%; recall:  43.68%; FB1:  56.72  47
+               OJ: precision:  84.34%; recall:  67.31%; FB1:  74.87  83
+-e new round
+
+
+-e new round
+
+
+-e new round
+
+
+-e new round
+
+
+-e new round
+
+
+processed 35743 tokens with 234 phrases; found: 156 phrases; correct: 131.
+accuracy:  99.54%; precision:  83.97%; recall:  55.98%; FB1:  67.18
+        KNOWLEDGE: precision:  75.41%; recall:  36.51%; FB1:  49.20  61
+               OJ: precision:  89.47%; recall:  78.70%; FB1:  83.74  95
+-e new round
+
+
+processed 31010 tokens with 181 phrases; found: 127 phrases; correct: 108.
+accuracy:  99.59%; precision:  85.04%; recall:  59.67%; FB1:  70.13
+        KNOWLEDGE: precision:  75.47%; recall:  54.05%; FB1:  62.99  53
+               OJ: precision:  91.89%; recall:  63.55%; FB1:  75.14  74
+-e new round
+
+
+processed 31876 tokens with 171 phrases; found: 135 phrases; correct: 106.
+accuracy:  99.65%; precision:  78.52%; recall:  61.99%; FB1:  69.28
+        KNOWLEDGE: precision:  66.13%; recall:  51.25%; FB1:  57.75  62
+               OJ: precision:  89.04%; recall:  71.43%; FB1:  79.27  73
+-e new round
+
+
+processed 31622 tokens with 179 phrases; found: 126 phrases; correct: 103.
+accuracy:  99.60%; precision:  81.75%; recall:  57.54%; FB1:  67.54
+        KNOWLEDGE: precision:  65.85%; recall:  39.13%; FB1:  49.09  41
+               OJ: precision:  89.41%; recall:  69.09%; FB1:  77.95  85
+-e new round
+
+
+processed 30181 tokens with 183 phrases; found: 134 phrases; correct: 111.
+accuracy:  99.65%; precision:  82.84%; recall:  60.66%; FB1:  70.03
+        KNOWLEDGE: precision:  58.70%; recall:  40.30%; FB1:  47.79  46
+               OJ: precision:  95.45%; recall:  72.41%; FB1:  82.35  88
+-e new round
+
+
+processed 31968 tokens with 151 phrases; found: 148 phrases; correct: 148.
+accuracy:  99.99%; precision: 100.00%; recall:  98.01%; FB1:  99.00
+        KNOWLEDGE: precision: 100.00%; recall: 100.00%; FB1: 100.00  77
+               OJ: precision: 100.00%; recall:  95.95%; FB1:  97.93  71
+-e new round
+
+
+-e new round
+
+
+processed 34910 tokens with 186 phrases; found: 162 phrases; correct: 159.
+accuracy:  99.87%; precision:  98.15%; recall:  85.48%; FB1:  91.38
+        KNOWLEDGE: precision:  96.55%; recall:  80.00%; FB1:  87.50  87
+               OJ: precision: 100.00%; recall:  92.59%; FB1:  96.15  75
+-e new round
+
+
+processed 36567 tokens with 241 phrases; found: 231 phrases; correct: 221.
+accuracy:  99.89%; precision:  95.67%; recall:  91.70%; FB1:  93.64
+        KNOWLEDGE: precision:  95.12%; recall:  92.13%; FB1:  93.60  123
+               OJ: precision:  96.30%; recall:  91.23%; FB1:  93.69  108
+-e new round
+
+
+-e new round
+
+
+processed 31221 tokens with 194 phrases; found: 152 phrases; correct: 122.
+accuracy:  99.63%; precision:  80.26%; recall:  62.89%; FB1:  70.52
+        KNOWLEDGE: precision:  68.42%; recall:  48.75%; FB1:  56.93  57
+               OJ: precision:  87.37%; recall:  72.81%; FB1:  79.43  95
+-e new round
+
+
+processed 36479 tokens with 170 phrases; found: 110 phrases; correct: 92.
+accuracy:  99.64%; precision:  83.64%; recall:  54.12%; FB1:  65.71
+        KNOWLEDGE: precision:  75.00%; recall:  39.80%; FB1:  52.00  52
+               OJ: precision:  91.38%; recall:  73.61%; FB1:  81.54  58
+-e new round
+
+
+processed 36367 tokens with 148 phrases; found: 100 phrases; correct: 77.
+accuracy:  99.67%; precision:  77.00%; recall:  52.03%; FB1:  62.10
+        KNOWLEDGE: precision:  73.17%; recall:  42.25%; FB1:  53.57  41
+               OJ: precision:  79.66%; recall:  61.04%; FB1:  69.12  59
+-e new round
+
+
+processed 38539 tokens with 250 phrases; found: 160 phrases; correct: 130.
+accuracy:  99.50%; precision:  81.25%; recall:  52.00%; FB1:  63.41
+        KNOWLEDGE: precision:  75.00%; recall:  42.52%; FB1:  54.27  72
+               OJ: precision:  86.36%; recall:  61.79%; FB1:  72.04  88
+-e new round
+
+
+processed 31297 tokens with 181 phrases; found: 131 phrases; correct: 116.
+accuracy:  99.66%; precision:  88.55%; recall:  64.09%; FB1:  74.36
+        KNOWLEDGE: precision:  80.43%; recall:  55.22%; FB1:  65.49  46
+               OJ: precision:  92.94%; recall:  69.30%; FB1:  79.40  85

@@ -1,0 +1,60 @@
+poj 1849  Two - Because Of You - 博客园
+
+在某个点派出两个点去遍历所有的边，花费为边的权值，求最少的花费
+仔细分析后发现从哪个点出发是无所谓的
+如果从某个点出发要回到这个点，那么它走过的边肯定都被他遍历了两遍，画个图模拟一下就知道了
+但是如果不回来，则所走路径中有一条简单路径是可以只走一遍的，派出了两个点去遍历，也就是说有两条简单路径是可以直走一边的，我们要使这两条简单路径的总和尽可能的长，就转换为了树的最长路径问题了
+所以答案就为总的边权和的两倍减去树的最长路
+ 
+
+ 
+ 
+ View Code  
+  
+  #include<cstdio>
+#include<cstring>
+#include<vector>
+#include<queue>
+#include<algorithm>
+using namespace std;
+vector<pair<int,int> > edge[100010];
+int step[100100];
+int vis[100010];
+int bfs(int &s){
+    int Max=0;
+    memset(vis,0,sizeof(vis));
+    queue<int> Q;
+    Q.push(s);step[s]=0;
+    while(!Q.empty()){
+        int fr=Q.front();Q.pop();
+        for(int i=0;i<edge[fr].size();i++){
+        int to=edge[fr][i].first,w=edge[fr][i].second;
+            if(vis[to]) continue;
+            step[to]=step[fr]+w;
+            if(step[to]>Max){
+                Max=step[to];
+                s=to;
+            }
+            vis[to]=1;
+            Q.push(to);
+        }
+    }return Max;
+}
+int main(){
+    int n,s,i,a,b,w;
+    while(scanf("%d%d",&n,&s)!=EOF){
+        int sum=0;
+        for(i=0;i<n-1;i++){
+            scanf("%d%d%d",&a,&b,&w);
+            sum+=2*w;
+            edge[a].push_back(make_pair(b,w));
+            edge[b].push_back(make_pair(a,w));
+        }
+        bfs(s);
+        int mm=bfs(s);
+        printf("%d\n",sum-mm);
+    }
+} 
+  
+ 
+

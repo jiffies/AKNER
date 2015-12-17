@@ -1,0 +1,166 @@
+poj1606-没想好就不要下手，否则浪费时间-模拟题的教训 - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+这道题目题意很简单，就是给你两个容器，求出获得指定量水的步骤。
+ 一看稍微分析就知道是广度优先搜索。就是每次最多有六种情况，填满a，填满b，清空a，清空b，从a倒到b，从b倒到a。对每种情况将在这种情况下的可能的情况进入队列，直到找到最终结果。
+ 注意不要以为和题目答案不一样就以为自己是错的，因为倒的方法可能不一样，所以最好自己验证一下，题目也标出了special judge，就是答案不止一种。
+ 下面是代码及注释，注释的地方就是自己没关注细节浪费时间的地方。。。。
+ [cpp]
+ #include <stdio.h> 
+ #include <stdlib.h> 
+ #include <string.h> 
+ #define Max(a,b) (a>b?a:b) 
+ #define Min(a,b) (a<b?a:b) 
+  enum METHOD//这里用了一下枚举 
+ { 
+     fillA = 0, 
+     fillB, 
+     emptyA, 
+     emptyB, 
+     pourAB, 
+     pourBA 
+ }methods; 
+ struct QUEUE 
+ { 
+     int nowA,nowB;//a，b当前的水量 
+     int method;//上一步是通过什么方式到这一步的 
+     int pre;//记录上一步在队列中的下标 
+ }queue[100000]; 
+ int Ca,Cb,N;//输入 
+ int start, end;//队列的头和尾 
+ void output() 
+ { 
+     int step[10000]; 
+     int index = 0; 
+     //找到success的整个路径，倒着找到第一个，放到step数组中 
+     step[index ++] = start; 
+     int k = queue[start].pre; 
+     while (k != -1) 
+     { 
+         step[index ++] = k; 
+         k = queue[k].pre; 
+     } 
+     //输出，注意queue的下标是step数组，开始写成i了，怎么搞都不对。。。。 
+     for (int i = index - 1; i >= 0; -- i) 
+     { 
+         if (queue[step[i]].method == fillA) 
+         { 
+             printf("fill A\n"); 
+         } 
+         if (queue[step[i]].method == fillB) 
+         { 
+             printf("fill B\n"); 
+         } 
+         if (queue[step[i]].method == emptyA) 
+         { 
+             printf("empty A\n"); 
+         } 
+         if (queue[step[i]].method == emptyB) 
+         { 
+             printf("empty B\n"); 
+         } 
+         if (queue[step[i]].method == pourAB) 
+         { 
+             printf("pour A B\n"); 
+         } 
+         if (queue[step[i]].method == pourBA) 
+         { 
+             printf("pour B A\n"); 
+         } 
+     } 
+     printf("success\n"); 
+ } 
+ void bfs() 
+ { 
+     start = -1,end = 0; 
+     //初始化队列，第一步肯定是先填满A或者B    
+     queue[end].method = fillA; 
+     queue[end].nowA = Ca; 
+     queue[end].nowB = 0; 
+     queue[end].pre = -1; 
+     end ++; 
+     queue[end].method = fillB; 
+     queue[end].nowA = 0; 
+     queue[end].nowB = Cb; 
+     queue[end].pre = -1; 
+     end ++; 
+     //广度优先搜索 
+     while (start < end) 
+     { 
+         start ++; 
+         if (queue[start].nowB == N || queue[start].nowA == N)//如果A或者B达到最终状态，那么队列结束 
+         { 
+             break; 
+         } 
+         //如果A，B都不是全满的情况下，可以填充其中一个，因为都满了没意义。 
+         if (queue[start].nowA < Ca && queue[start].nowB < Cb) 
+         { 
+             queue[end].method = fillA; 
+             queue[end].nowA = Ca; 
+             queue[end].nowB = queue[start].nowB; 
+             queue[end].pre = start; 
+             end ++; 
+             queue[end].method = fillB; 
+             queue[end].nowA = queue[start].nowA; 
+             queue[end].nowB = Cb; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果AB都不是空的情况下，才清空其中一个，因为都空的情况又回到了初始状态，浪费queue的空间，浪费搜索的时间 
+         if (queue[start].nowA != 0 && queue[start].nowB != 0) 
+         { 
+             queue[end].method = emptyA; 
+             queue[end].nowA = 0; 
+             queue[end].nowB = queue[start].nowB; 
+             queue[end].pre = start; 
+             end ++; 
+             queue[end].method = emptyB; 
+             queue[end].nowA = queue[start].nowA; 
+             queue[end].nowB = 0; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果a不为空且B没有满，才执行从a向b倒。如果a空了或者b已经满了，执行这一步没意义 
+         if (queue[start].nowA != 0 && queue[start].nowB < Cb) 
+         { 
+             if (queue[start].nowA > Cb - queue[start].nowB) 
+             { 
+                 queue[end].nowA = queue[start].nowA - Cb + queue[start].nowB; 
+                 queue[end].nowB = Cb; 
+             } 
+             else 
+             { 
+                 queue[end].nowA = 0; 
+                 queue[end].nowB = queue[start].nowB + queue[start].nowA; 
+             } 
+             queue[end].method = pourAB; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+         //如果b不为空且a没有满，才执行从b向a倒。如果b空了或者a已经满了，执行这一步没意义 
+         if (queue[start].nowB != 0 && queue[start].nowA < Ca) 
+         { 
+             if (queue[start].nowB > Ca - queue[start].nowA) 
+             { 
+                 queue[end].nowB =queue[start].nowB -  Ca + queue[start].nowA; 
+                 queue[end].nowA = Ca; 
+             } 
+             else 
+             { 
+                 queue[end].nowB = 0; 
+                 queue[end].nowA = queue[start].nowA + queue[start].nowB; 
+             } 
+             queue[end].method = pourBA; 
+             queue[end].pre = start; 
+             end ++; 
+         } 
+     } 
+     output(); 
+ } 
+ int main() 
+ { 
+     while (scanf("%d %d %d", &Ca, &Cb, &N) != EOF) 
+     { 
+         bfs(); 
+     } 
+     return 0; 
+ } 

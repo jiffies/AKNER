@@ -1,0 +1,58 @@
+poj3077 - xuezhongfenfei的专栏 - 博客频道 - CSDN.NET
+
+水题啊水题！
+ 
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+	char a[10];
+	int len,i,t,j,n;
+	cin>>n;
+	while(n--) 
+	{
+		scanf("%s",a);
+		t=0;
+		len=strlen(a);
+		if(len==1)
+			cout<<a<<endl;
+		else
+		{
+			for(i=1; i<len; i++)
+			{
+				if(a[i]>='5')
+				{
+				   if(a[0]=='9')
+                   printf("10");
+				   else
+					   printf("%c",a[0]+1);
+				   for(j=1; j<len; j++)
+					   cout<<'0';
+				   cout<<endl;
+				   t=1;
+				   break;
+				}
+				else if(a[i]<'4')
+				{
+                   printf("%c",a[0]);
+				   for(j=1; j<len; j++)
+					   cout<<'0';
+				   cout<<endl;
+				   t=1;
+				   break;
+				}
+			}
+			if(t==0)
+			{
+                  printf("%c",a[0]);
+				   for(j=1; j<len; j++)
+					   cout<<'0';
+				   cout<<endl;
+				   t=1;
+			}
+		}
+	}
+	return 0;
+} 
+

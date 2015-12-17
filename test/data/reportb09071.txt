@@ -1,0 +1,97 @@
+POJ 2570 Fiber Network_乐吾天_百度空间
+
+http://hi.baidu.com/lewutian
+     题意:一些公司共同拥有一个具有n个顶点的网络,给出了有关于这个网络的信息,即边<i,j>以及与这条边相连的公司,现在题目给出一条路径的起点和终点,要求求出这条路径经过哪些公司.
+     很容易想到求图的传递闭包,而这里两点之间可能有多条线路,如果对每个字母(也就是每个公司)单独来进行一遍Floyd,很可能会超时,这里输入的公司标志为不同的小写字母,所以我们可以根据位运算来进行优化(使得传递闭包和每个字母都有关联,而后根据这种关联即可推出是否连通).
+#include<iostream>
+#include<string>
+#include<cstdlib>
+#include<algorithm>
+using namespace std;
+int mat[205][205];
+char ss[30];
+void Floyd(int n)                                                               //Floyd算法求解传递闭包
+{
+     int i,j,k;
+     for(k=1;k<=n;k++)
+       for(i=1;i<=n;i++)
+         for(j=1;j<=n;j++)
+           mat[i][j]=mat[i][j]|(mat[i][k]&mat[k][j]);
+}
+void slove()
+{
+     int i,j,u,v,n,len;
+     bool flag;
+     while(scanf("%d",&n)!=EOF)
+     {
+         if(n==0)
+           break;
+         memset(mat,0,sizeof(mat));
+         while(scanf("%d%d",&u,&v)!=EOF)
+         {
+             if(u==0&&v==0)
+                break;
+             scanf("%s",ss);
+             len=strlen(ss);
+             for(i=0;i<len;i++)
+                mat[u][v]|=(1<<(ss[i]-'a'));                                 //注意这里的建图
+         }
+         Floyd(n);
+         while(scanf("%d%d",&u,&v)!=EOF)
+         {
+              if(u==0&&v==0)
+                 break;
+              flag=false;
+              for(i=0;i<26;i++)
+                if(mat[u][v]&(1<<i))                                        //注意这里判断连通性
+                {
+                    flag=true;
+                    printf("%c",'a'+i);
+                }
+              if(flag)
+                 printf("\n");
+              else
+                 printf("-\n");
+         }
+         printf("\n"); 
+     }
+     return;
+}
+int main()
+{
+    slove();
+    system("pause");
+    return 0;
+}
+http://hi.baidu.com/lewutian推荐文章:
+
+1. 
+ 第二次个人赛D题 Y2K Accounting Bug
+
+2. 
+ POJ 3171 Cleaning Shifts【线段树+dp】
+
+3. 
+ 今天做的几个map题目
+
+4. 
+ Ultra-QuickSort【poj】2299
+
+5. 
+ Phone List【poj】3630
+
+6. 
+ 并查集+优先队列==邪恶的最小生成树！
+
+7. 
+ 暑假实习
+
+8. 
+ poj 2954 Triangle PICK定理 GCD欧几里得定理
+
+9. 
+ POJ 1932 XYZZY
+
+10. 
+ ACM poj 1035 Spell checker
+

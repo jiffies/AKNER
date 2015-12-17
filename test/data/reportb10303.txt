@@ -1,0 +1,27 @@
+pku 2242_何长兵 的空间_百度空间
+
+求三角形外接圆的周长
+#include "stdio.h"
+#include "math.h"
+double PI = 3.141592653589793;
+double dist(double x,double y,double xx,double yy)
+{
+double s = (x - xx) * (x - xx) + (y - yy) * (y - yy);
+return sqrt(s);
+}
+int main()
+{
+double x1,x2,x3,y1,y2,y3,d1,d2,d3,p,s,R;
+while(scanf("%lf%lf%lf%lf%lf%lf",&x1,&y1,&x2,&y2,&x3,&y3)!=EOF)
+{
+   d1 = dist(x1,y1,x2,y2);
+   d2 = dist(x1,y1,x3,y3);
+   d3 = dist(x2,y2,x3,y3);
+   p = (d1 + d2 + d3) / 2;
+   s = p * (p - d1) * (p - d2) * (p - d3);
+   s = sqrt(s);
+   R = PI * d1 * d2 * d3 / s / 2;
+   printf("%.2lf\n",R);
+}
+return 0;
+}

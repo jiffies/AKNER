@@ -1,0 +1,874 @@
+HDU	eng	N	Y	O	B-OJ
+_	x	N	N	O	I-OJ
+1060	m	N	N	O	I-OJ
+
+Leftmost	eng	N	N	O	O
+
+Digit	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+枭	n	N	N	O	O
+笔记	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+Leftmost	eng	N	N	O	O
+
+Digit	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+2000	m	N	N	O	O
+/	x	N	N	O	O
+1000	m	N	N	O	O
+
+MS	eng	N	N	O	O
+
+(	x	N	N	O	O
+Java	eng	N	N	O	O
+/	x	N	N	O	O
+Others	eng	N	N	O	O
+)	x	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+65536	m	N	N	O	O
+/	x	N	N	O	O
+32768	m	N	N	O	O
+
+K	x	N	N	O	O
+
+(	x	N	N	O	O
+Java	eng	N	N	O	O
+/	x	N	N	O	O
+Others	eng	N	N	O	O
+)	x	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submission	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+:	x	N	N	O	O
+
+8280	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Submission	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+:	x	N	N	O	O
+
+3178	m	N	N	O	O
+
+Problem	eng	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Given	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+leftmost	eng	N	N	O	O
+
+digit	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+N	x	N	N	O	O
+^	x	N	N	O	O
+N	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+several	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+T	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+T	x	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+
+follow	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+N	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+leftmost	eng	N	N	O	O
+
+digit	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+N	x	N	N	O	O
+^	x	N	N	O	O
+N	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+3	x	N	N	O	O
+
+4	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+2	x	N	N	O	O
+
+Hint	eng	N	N	O	O
+
+In	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+
+*	x	N	N	O	O
+
+3	x	N	N	O	O
+
+*	x	N	N	O	O
+
+3	x	N	N	O	O
+
+=	x	N	N	O	O
+
+27	m	N	N	O	O
+,	x	N	N	O	O
+
+so	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+leftmost	eng	N	N	O	O
+
+digit	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+2.	m	N	N	O	O
+
+In	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+second	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+4	x	N	N	O	O
+
+*	x	N	N	O	O
+
+4	x	N	N	O	O
+
+*	x	N	N	O	O
+
+4	x	N	N	O	O
+
+*	x	N	N	O	O
+
+4	x	N	N	O	O
+
+=	x	N	N	O	O
+
+256	m	N	N	O	O
+,	x	N	N	O	O
+
+so	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+leftmost	eng	N	N	O	O
+
+digit	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+2.	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+T	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+T	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+T	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+m	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+
+-	x	N	N	O	O
+
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+n	x	N	N	O	O
+^	x	N	N	O	O
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+
+*	x	N	N	O	O
+
+10	m	N	N	O	O
+^	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+将	d	N	N	O	O
+乘方	n	N	N	O	O
+转化	v	Y	N	O	O
+为	p	N	N	O	O
+科学	n	N	N	O	O
+计数法	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+此时	c	N	N	O	O
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+就是	d	N	N	O	O
+我们	r	N	N	O	O
+要	v	N	N	O	O
+就	d	N	N	O	O
+的	uj	N	N	O	O
+Leftmost	eng	N	N	O	O
+
+Digit	eng	N	N	O	O
+.	m	N	N	O	O
+
+两边	f	N	N	O	O
+同时	c	N	N	O	O
+取	v	N	N	O	O
+log10	eng	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+考虑	v	N	N	O	O
+到	v	N	N	O	O
+科学	n	N	N	O	O
+计数法	n	N	N	O	O
+的	uj	N	N	O	O
+表达	v	Y	N	O	O
+，	x	N	N	O	O
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+
+10	m	N	N	O	O
+,	x	N	N	O	O
+则	d	N	N	O	O
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+<	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+则	d	N	N	O	O
+
+b	x	N	N	O	O
+
+为	p	N	N	O	O
+
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+部分	n	Y	N	O	O
+，	x	N	N	O	O
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+为	p	N	N	O	O
+小数	n	Y	N	O	O
+部分	n	Y	N	O	O
+；	x	N	N	O	O
+
+则	d	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+
+=	x	N	N	O	O
+
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+
+lg	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+函数	n	Y	N	O	O
+定义	n	N	N	O	O
+与	p	N	N	O	O
+语法	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+log	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+计算	v	Y	N	O	O
+一个	m	N	N	O	O
+数字	n	Y	N	O	O
+的	uj	N	N	O	O
+自然对数	l	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+log10	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+计算	v	Y	N	O	O
+以	p	N	N	O	O
+10	m	N	N	O	O
+为	p	N	N	O	O
+基数	n	N	N	O	O
+的	uj	N	N	O	O
+对数	n	Y	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+函数	n	Y	N	O	O
+名	q	N	N	O	O
+:	x	N	N	O	O
+
+floor	eng	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+功	n	N	N	O	O
+
+能	v	N	N	O	O
+:	x	N	N	O	O
+
+返回	v	N	N	O	O
+小于	v	N	N	O	O
+或者	c	N	N	O	O
+等于	v	N	N	O	O
+指定	v	N	N	O	O
+表达式	n	Y	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	O
+整数	n	Y	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+用	p	N	N	O	O
+
+法	j	N	N	O	O
+:	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+头文件	n	N	N	O	O
+:	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+

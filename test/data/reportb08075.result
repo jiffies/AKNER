@@ -1,0 +1,594 @@
+POJ	eng	N	Y	O	B-OJ
+
+1657	m	N	N	O	I-OJ
+
+Distance	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+Chessboard	eng	N	N	O	O
+
+解题	n	N	N	O	O
+报告	n	N	N	O	O
+
+-	x	N	N	O	O
+
+端木	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1657	m	N	N	O	I-OJ
+
+Distance	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+Chessboard	eng	N	N	O	O
+
+解题	n	N	N	O	O
+报告	n	N	N	O	O
+
+编号	n	N	N	O	O
+：	x	N	N	O	O
+1657	m	N	N	O	O
+
+考查	vn	N	N	O	O
+点	m	N	N	O	O
+：	x	N	N	O	O
+简单	a	N	N	O	O
+计算题	n	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+水题	n	N	N	O	O
+，	x	N	N	O	O
+有	v	N	N	O	O
+一点	m	N	N	O	O
+弯弯的	z	N	N	O	O
+就是	d	N	N	O	O
+象是	v	N	N	O	O
+如何	r	N	N	O	O
+走	v	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+仔细观察	n	N	N	O	O
+可知	v	N	N	O	O
+：	x	N	N	O	O
+象	n	N	N	O	O
+只	d	N	N	O	O
+可以	c	N	N	O	O
+在	p	N	N	O	O
+横竖	d	N	N	O	O
+坐标	v	Y	N	O	O
+之	u	N	N	O	O
+差	a	N	N	O	O
+为	p	N	N	O	O
+偶数	n	N	N	O	O
+的	uj	N	N	O	O
+两点	m	N	N	O	O
+移动	vn	N	N	O	O
+.	m	N	N	O	O
+看	v	N	N	O	O
+出来	v	N	N	O	O
+这点	mq	N	N	O	O
+就	d	N	N	O	O
+相当	d	N	N	O	O
+easy	eng	N	N	O	O
+了	ul	N	N	O	O
+
+提交	v	N	N	O	O
+情况	n	N	N	O	O
+:	x	N	N	O	O
+
+刷	v	N	N	O	O
+水题	n	N	N	O	O
+，	x	N	N	O	O
+一次	m	N	N	O	O
+AC	eng	N	N	O	O
+.	m	N	N	O	O
+。	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+：	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+Grids	eng	N	N	O	O
+
+1657	m	N	N	O	I-OJ
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+iostream	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+;	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+t	x	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+str1	eng	N	N	O	O
+,	x	N	N	O	O
+str2	eng	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+str1	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+str2	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+
+0	x	N	N	O	O
+
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+
+0	x	N	N	O	O
+
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
++	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+>	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+x	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+y	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+2	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+2	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+-	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+2	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+2	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+Inf	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+总结	n	N	N	O	O
+：	x	N	N	O	O
+这	r	N	N	O	O
+道题	n	N	N	O	O
+我	r	N	N	O	O
+寒假	n	N	N	O	O
+刚	d	N	N	O	O
+开始	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+做	v	N	N	O	O
+过	ug	N	N	O	O
+，	x	N	N	O	O
+现在	t	N	N	O	O
+再	d	N	N	O	O
+做	v	N	N	O	O
+一遍	m	N	N	O	O
+，	x	N	N	O	O
+感觉	n	N	N	O	O
+自己	r	N	N	O	O
+进步	d	N	N	O	O
+了	ul	N	N	O	O
+很多	m	N	N	O	O
+，	x	N	N	O	O
+思路	n	N	N	O	O
+也	d	N	N	O	O
+开阔	v	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+想当年	l	N	N	O	O
+这	r	N	N	O	O
+道题	n	N	N	O	O
+我	r	N	N	O	O
+用	p	N	N	O	O
+了	ul	N	N	O	O
+四个	m	N	N	O	O
+小时	n	N	N	O	O
+，	x	N	N	O	O
+汗	n	N	N	O	O
+.	m	N	N	O	O
+。	x	N	N	O	O
+
+By	eng	N	N	O	O
+
+Ns517	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+09.02.11	m	N	N	O	O
+

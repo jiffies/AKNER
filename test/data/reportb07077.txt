@@ -1,0 +1,47 @@
+POJ1256 (C++ compare函数) - bobchou - 博客园
+
+问题：
+　　有一个只含大小写字母的字符串，给出所有该字符串的排列，以字典顺序输出。其中 'A'<'a'<'B'<'b'<...<'Z'<'z'。
+方法：
+　　只需调用C++ STL中 next_permutation() 和 sort() 函数，重点在于编写自定义的compare() 函数。
+hint：（compare 函数的编写方法）
+ 
+ 
+ bool cmp(int a, int b){
+      a = ....;                      // 处理a
+      b = ....;                      // 处理b
+      return (condition);    // 若要增序排列，只需将condition填补为所有可能使a小于b的情况
+} 
+ 
+
+代码：
+ 
+ 
+ #include<iostream>
+#include<algorithm>
+#include<string>
+using namespace std;
+bool cmp(char a, char b){
+    if(a <= 'Z' && b <= 'Z')
+        return a < b;
+    else if(a >= 'a' && b >= 'a')
+        return a < b;
+    else if(a >= 'a' && b <= 'Z')
+        return a - 'a' < b - 'A';
+    else if(b >= 'a' && a <= 'Z')
+        return a - 'A' <= b - 'a';
+}
+int main(){
+    string input;
+    int N;
+    cin >> N;
+    while(N--){
+        cin >> input;
+        sort(input.begin(), input.end(), cmp);
+        do{
+            cout << input << endl;
+        }while(next_permutation(input.begin(), input.end(), cmp));
+    }
+} 
+ 
+

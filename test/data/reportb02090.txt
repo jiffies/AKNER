@@ -1,0 +1,56 @@
+PKU_1200_唐武的空间_百度空间
+
+//hash,是每个串能够对应一个关键码, 如果这样的话，内存可能会很大
+#include <stdio.h>
+#include <memory>
+#include <cmath>
+using namespace std;
+const int NUM = 16000010;
+bool Exit[NUM] = {false};
+int hash[250];      //hash[i]表示字母char(i + 'a')对应的hash值
+char input[20000000]; //存储输入，内存也许还需要大一些 
+int N, NC;
+void initial();
+int Ans();
+int main()
+{
+ scanf("%d%d%s", &N, &NC, input);
+ initial();
+ printf("%d\n", Ans());
+ return 0;
+}
+void initial()
+{
+ memset(hash, -1, sizeof(hash));
+ int i, counter = 0, size = strlen(input);
+ for(i = 0; i < size; i++)
+   if(hash[int(input[i])] == -1) //input[i]如果尚未出现
+   {
+    hash[int(input[i])] = counter;
+    counter++;
+    if(counter == NC)
+     break;
+   }
+}
+int Ans()
+{
+ int ans = 0;
+ int size = strlen(input);
+ int temp;
+ int i, end = size - N, j, k;
+ for(i = 0; i <= end; i++)
+ {
+   temp = 0;
+   for(k = 0; k < N; k++)
+   {
+    j = i + k;
+    temp = temp * NC + hash[input[j]];
+   }
+   if(!Exit[temp])
+   {
+    Exit[temp] = true;
+    ans++;
+   }
+ }
+ return ans;
+}

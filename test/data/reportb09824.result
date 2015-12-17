@@ -1,0 +1,601 @@
+pku1007	eng	N	Y	O	B-OJ
+
+poj	eng	N	Y	O	B-OJ
+
+1007	m	N	N	O	I-OJ
+
+hdu1379	eng	N	Y	O	B-OJ
+
+DNA	eng	N	N	O	O
+
+Sorting	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+jw72jw	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj1007	eng	N	Y	O	B-OJ
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+puk	eng	N	N	O	B-OJ
+
+1007	m	N	N	O	I-OJ
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+DNA	eng	N	N	O	O
+
+Sorting	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+开始	v	N	N	O	O
+时	ng	N	N	O	O
+老	a	N	N	O	O
+是	v	N	N	O	O
+不能	v	N	N	O	O
+理解	v	N	N	O	O
+题意	n	N	N	O	O
+，	x	N	N	O	O
+后来	t	N	N	O	O
+仔细	ad	N	N	O	O
+再	d	N	N	O	O
+看	v	N	N	O	O
+了	ul	N	N	O	O
+一下	m	N	N	O	O
+题目	n	Y	N	O	O
+和	c	N	N	O	O
+测试数据	n	N	N	O	O
+，	x	N	N	O	O
+恍然大悟	i	N	N	O	O
+啊	zg	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+题目	n	Y	N	O	O
+给出	v	N	N	O	O
+若干个	m	N	N	O	O
+字符串	n	Y	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+要	v	N	N	O	O
+你	r	N	N	O	O
+数出	m	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+对	p	N	N	O	O
+是	v	N	N	O	O
+前面	f	N	N	O	O
+一个	m	N	N	O	O
+比	p	N	N	O	O
+后面	f	N	N	O	O
+一个	m	N	N	O	O
+大	a	N	N	O	O
+的	uj	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+举	v	N	N	O	O
+个	q	N	N	O	O
+例子	n	N	N	O	O
+：	x	N	N	O	O
+A	x	N	N	O	O
+
+A	x	N	N	O	O
+
+C	x	N	N	O	O
+
+A	x	N	N	O	O
+
+T	x	N	N	O	O
+
+G	x	N	N	O	O
+
+A	x	N	N	O	O
+
+A	x	N	N	O	O
+
+G	x	N	N	O	O
+
+G	x	N	N	O	O
+，	x	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+数一数	m	N	N	O	O
+后面	f	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个	m	N	N	O	O
+比	p	N	N	O	O
+它	r	N	N	O	O
+大	d	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+分别	d	N	N	O	O
+是	v	N	N	O	O
+：	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+3	x	N	N	O	O
+
+0	x	N	N	O	O
+
+5	x	N	N	O	O
+
+2	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+这	r	N	N	O	O
+一个	m	N	N	O	O
+串	v	N	N	O	O
+就	d	N	N	O	O
+有	v	N	N	O	O
+是	v	N	N	O	O
+10	m	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+然后	c	N	N	O	O
+根据	p	N	N	O	O
+这个	r	N	N	O	O
+的	uj	N	N	O	O
+大小	b	N	N	O	O
+给	p	N	N	O	O
+所有	b	N	N	O	O
+串	v	N	N	O	O
+排序	n	Y	N	O	B-KNOWLEDGE
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+DNA	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+结构	n	Y	N	O	O
+体	n	N	N	O	O
+，	x	N	N	O	O
+方便	a	N	N	O	O
+排序	n	Y	N	O	O
+
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+110	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+calNumber	eng	N	N	O	O
+(	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+找出	v	Y	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+串有	v	N	N	O	O
+多少	m	N	N	O	O
+对	p	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+count	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+count	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+
+*	x	N	N	O	O
+a	x	N	N	O	O
+
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+
+*	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+qsort	eng	N	N	O	B-KNOWLEDGE
+比较	d	N	N	O	O
+函数	n	Y	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+DNA	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+DNA	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+
+?	x	N	N	O	O
+
+1	x	N	N	O	O
+
+:	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+cases	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+cases	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+cases	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+a	eng	N	N	O	O
+;	x	N	N	O	O
+
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+=	x	N	N	O	O
+calNumber	eng	N	N	O	O
+(	x	N	N	O	O
+
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+a	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+qsort	eng	N	N	O	O
+(	x	N	N	O	O
+dna	eng	N	N	O	O
+,	x	N	N	O	O
+cases	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+cases	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+a	eng	N	N	O	O
+/	x	N	N	O	O
+*	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+dna	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

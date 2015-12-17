@@ -1,0 +1,1161 @@
+ZOJ	eng	N	Y	O	B-OJ
+
+1123	m	N	N	O	I-OJ
+
+Triangle	eng	N	N	O	O
+
+Encapsulation	eng	N	N	O	O
+_	x	N	N	O	O
+庒	y	N	N	O	O
+谐	ag	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+求解	v	N	N	O	O
+位于	v	N	N	O	O
+三角形	n	Y	N	O	O
+内部	f	Y	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+坐标	v	Y	N	O	O
+点	m	N	N	O	O
+,	x	N	N	O	O
+由于	c	N	N	O	O
+三角形	n	Y	N	O	O
+特别	d	N	N	O	O
+小	a	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+y	x	N	N	O	O
+坐标	v	Y	N	O	O
+的	uj	N	N	O	O
+范围	n	N	N	O	O
+是	v	N	N	O	O
+-	x	N	N	O	O
+9	x	N	N	O	O
+…	x	N	N	O	O
+…	x	N	N	O	O
+9	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+使用	v	N	N	O	O
+一个	m	N	N	O	O
+平行	n	N	N	O	O
+于	p	N	N	O	O
+坐标轴	n	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+把	p	N	N	O	O
+三角形	n	Y	N	O	O
+套起来	l	N	N	O	O
+.	x	N	N	O	O
+显然	ad	N	N	O	O
+矩形	n	Y	N	O	O
+的	uj	N	N	O	O
+边界	n	N	N	O	O
+是	v	N	N	O	O
+三角形	n	Y	N	O	O
+三个	m	N	N	O	O
+顶点	n	Y	N	O	O
+坐标	v	Y	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	O
+,	x	N	N	O	O
+最小值	l	N	N	O	O
+.	x	N	N	O	O
+
+采用	v	N	N	O	O
+计算	v	Y	N	O	O
+三角形	n	Y	N	O	O
+面积	n	Y	N	O	O
+的	uj	N	N	O	O
+办法	n	N	N	O	O
+判断	v	Y	N	O	O
+点	m	N	N	O	O
+是否	v	N	N	O	O
+在	p	N	N	O	O
+三角形	n	Y	N	O	O
+内部	f	Y	N	O	O
+,	x	N	N	O	O
+如果	c	N	N	O	O
+顶点	n	Y	N	O	O
+p	eng	N	N	O	O
+在	p	N	N	O	O
+三角形	n	Y	N	O	O
+内部	f	Y	N	O	O
+,	x	N	N	O	O
+该店	r	N	N	O	O
+与	p	N	N	O	O
+三角形	n	Y	N	O	O
+三个	m	N	N	O	O
+顶点	n	Y	N	O	O
+构成	v	N	N	O	O
+的	uj	N	N	O	O
+三个	m	N	N	O	O
+三角形	n	Y	N	O	O
+面积	n	Y	N	O	O
+的	uj	N	N	O	O
+和	c	N	N	O	O
+等于	v	N	N	O	O
+大	a	N	N	O	O
+三角形	n	Y	N	O	O
+的	uj	N	N	O	O
+面积	n	Y	N	O	O
+,	x	N	N	O	O
+否则	c	N	N	O	O
+不	d	N	N	O	O
+相等	v	N	N	O	O
+.	x	N	N	O	O
+如果	c	N	N	O	O
+顶点	n	Y	N	O	O
+p	eng	N	N	O	O
+在	p	N	N	O	O
+三角形	n	Y	N	O	O
+的	uj	N	N	O	O
+边界	n	N	N	O	O
+上	f	N	N	O	O
+,	x	N	N	O	O
+则	d	N	N	O	O
+三个	m	N	N	O	O
+三角形	n	Y	N	O	O
+中	f	N	N	O	O
+,	x	N	N	O	O
+必然	d	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+面积	n	Y	N	O	O
+为	p	N	N	O	O
+0.	m	N	N	O	O
+但	c	N	N	O	O
+x	eng	N	N	O	O
+-	x	N	N	O	O
+y	x	N	N	O	O
+坐标	v	Y	N	O	O
+的	uj	N	N	O	O
+范围	n	N	N	O	O
+是	v	N	N	O	O
+-	x	N	N	O	O
+9	x	N	N	O	O
+…	x	N	N	O	O
+…	x	N	N	O	O
+9	x	N	N	O	O
+,	x	N	N	O	O
+直接	ad	N	N	O	O
+用	p	N	N	O	O
+xy	eng	N	N	O	O
+当做	v	N	N	O	O
+数组	n	Y	N	O	O
+的	uj	N	N	O	O
+下表	v	N	N	O	O
+,	x	N	N	O	O
+负	v	N	N	O	O
+数值	n	Y	N	O	O
+是	v	N	N	O	O
+非法	b	N	N	O	O
+的	uj	N	N	O	O
+,	x	N	N	O	O
+所以	c	N	N	O	O
+在	p	N	N	O	O
+坐标	v	Y	N	O	O
+上	f	N	N	O	O
+加上	v	N	N	O	O
+10	m	N	N	O	O
+即可	d	N	N	O	O
+,	x	N	N	O	O
+输出	v	Y	N	O	O
+时	ng	N	N	O	O
+在	p	N	N	O	O
+减去	v	N	N	O	O
+10.	m	N	N	O	O
+
+在	p	N	N	O	O
+矩形	n	Y	N	O	O
+区域	n	N	N	O	O
+内	f	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+如果	c	N	N	O	O
+标记	n	N	N	O	O
+数组	n	Y	N	O	O
+为	p	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+则	d	N	N	O	O
+输出	v	Y	N	O	O
+该	r	N	N	O	O
+坐标	v	Y	N	O	O
+,	x	N	N	O	O
+否则	c	N	N	O	O
+为	p	N	N	O	O
+空	n	N	N	O	O
+输出	v	Y	N	O	O
+域	n	N	N	O	O
+.	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+最小值	l	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+<	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+a	x	N	N	O	O
+:	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+<	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+tmp	eng	N	N	O	O
+:	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+max	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+最大值	l	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+>	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+a	x	N	N	O	O
+:	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+>	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+tmp	eng	N	N	O	O
+:	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+area	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+d	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+面积	n	Y	N	O	O
+,	x	N	N	O	O
+叉	n	N	N	O	O
+乘	v	N	N	O	O
+的	uj	N	N	O	O
+方法	n	Y	N	O	O
+,	x	N	N	O	O
+是	v	N	N	O	O
+实际	n	N	N	O	O
+面积	n	Y	N	O	O
+的	uj	N	N	O	O
+两倍	m	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+*	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+*	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+<	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+三角形	n	Y	N	O	O
+三个	m	N	N	O	O
+顶点	n	Y	N	O	O
+的	uj	N	N	O	O
+坐标	v	Y	N	O	O
+
+int	eng	N	N	O	O
+
+right	eng	N	N	O	O
+,	x	N	N	O	O
+top	eng	N	N	O	O
+,	x	N	N	O	O
+left	eng	N	N	O	O
+,	x	N	N	O	O
+below	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+套住	v	N	N	O	O
+三角形	n	Y	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+边界	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+minx	eng	N	N	O	O
+,	x	N	N	O	O
+miny	eng	N	N	O	O
+,	x	N	N	O	O
+maxx	eng	N	N	O	O
+,	x	N	N	O	O
+maxy	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+套住	v	N	N	O	O
+三角形	n	Y	N	O	O
+内部	f	Y	N	O	O
+整数	n	Y	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+边界	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+ss	eng	Y	N	O	O
+,	x	N	N	O	O
+s1	eng	N	N	O	O
+,	x	N	N	O	O
+s2	eng	N	N	O	O
+,	x	N	N	O	O
+s3	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+三角形	n	Y	N	O	O
+面积	n	Y	N	O	O
+
+char	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+50	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+50	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+保存	v	N	N	O	O
+坐标	v	Y	N	O	O
+点	m	N	N	O	O
+在	p	N	N	O	O
+三角形	n	Y	N	O	O
+内外	s	N	N	O	O
+的	uj	N	N	O	O
+状态	n	Y	N	O	O
+
+int	eng	N	N	O	O
+
+border	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+控制	v	Y	N	O	O
+行末	n	N	N	O	O
+的	uj	N	N	O	O
+空	n	N	N	O	O
+输出	v	Y	N	O	O
+域	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Program	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+by	eng	N	N	O	O
+
+team	eng	N	N	O	O
+
+X	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x3	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+minx	eng	N	N	O	O
+=	x	N	N	O	O
+miny	eng	N	N	O	O
+=	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+maxx	eng	N	N	O	O
+=	x	N	N	O	O
+maxy	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+ss	eng	Y	N	O	O
+=	x	N	N	O	O
+area	eng	N	N	O	O
+(	x	N	N	O	O
+x2	eng	N	N	O	O
+-	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+-	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+-	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+-	x	N	N	O	O
+y1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+right	eng	N	N	O	O
+=	x	N	N	O	O
+max	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+包含	v	N	N	O	O
+三角形	n	Y	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+
+top	eng	N	N	O	O
+
+=	x	N	N	O	O
+max	eng	N	N	O	O
+(	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+left	eng	N	N	O	O
+
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+below	eng	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+left	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+right	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+判断	v	Y	N	O	O
+该	r	N	N	O	O
+矩形	n	Y	N	O	O
+内	n	N	N	O	O
+那些	r	N	N	O	O
+点	m	N	N	O	O
+是	v	N	N	O	O
+三角形	n	Y	N	O	O
+内部	f	Y	N	O	O
+的	uj	N	N	O	O
+整数	n	Y	N	O	O
+点	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+below	eng	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+top	eng	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s1	eng	N	N	O	O
+=	x	N	N	O	O
+area	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s2	eng	N	N	O	O
+=	x	N	N	O	O
+area	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s3	eng	N	N	O	O
+=	x	N	N	O	O
+area	eng	N	N	O	O
+(	x	N	N	O	O
+x2	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+x3	eng	N	N	O	O
+-	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y3	eng	N	N	O	O
+-	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+s2	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+s3	eng	N	N	O	O
+
+&&	x	N	N	O	O
+(	x	N	N	O	O
+s1	eng	N	N	O	O
++	x	N	N	O	O
+s2	eng	N	N	O	O
++	x	N	N	O	O
+s3	eng	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+ss	eng	Y	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+若	c	N	N	O	O
+某个	r	N	N	O	O
+面积	n	Y	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+,	x	N	N	O	O
+表示	v	Y	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+在	p	N	N	O	O
+边界	n	N	N	O	O
+上	f	N	N	O	O
+
+{	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+<	x	N	N	O	O
+minx	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+包围	v	N	N	O	O
+三角形	n	Y	N	O	O
+内	n	N	N	O	O
+整点	n	N	N	O	O
+的	uj	N	N	O	O
+矩形	n	Y	N	O	O
+
+minx	eng	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+>	x	N	N	O	O
+maxx	eng	N	N	O	O
+)	x	N	N	O	O
+
+maxx	eng	N	N	O	O
+=	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+>	x	N	N	O	O
+maxy	eng	N	N	O	O
+)	x	N	N	O	O
+
+maxy	eng	N	N	O	O
+=	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+<	x	N	N	O	O
+miny	eng	N	N	O	O
+)	x	N	N	O	O
+
+miny	eng	N	N	O	O
+=	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+maxy	eng	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+miny	eng	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+minx	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+maxx	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+行末	n	N	N	O	O
+的	uj	N	N	O	O
+右	n	N	N	O	O
+边界	n	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+border	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+minx	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+border	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+minx	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+(	x	N	N	O	O
+%	x	N	N	O	O
+2	m	N	N	O	O
+d	eng	N	N	O	O
+,	x	N	N	O	O
+
+%	x	N	N	O	O
+2	m	N	N	O	O
+d	eng	N	N	O	O
+)	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+10	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+9	m	N	N	O	O
+个	m	N	N	O	O
+空格	n	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+End	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+program	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+by	eng	N	N	O	O
+
+team	eng	N	N	O	O
+
+X	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

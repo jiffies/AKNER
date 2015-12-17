@@ -1,0 +1,71 @@
+poj 2790 dfs - 天逸南爵的专栏 - 博客频道 - CSDN.NET
+
+#include<iostream>
+#include<cstdio>
+using namespace std;
+//dfs
+//给定一个n*m矩阵0-1矩阵，每行代表1个人，每列代表一个事件，这个矩阵代表了每个人是否参加了某个事件
+//找一个事件排列，使得每个人参加事件连续 枚举+回溯
+const int maxn=400;
+int n,m,len;
+char map[maxn][maxn];
+int sum[maxn];//sum[i]表示第i个参与的事件总数
+int s[maxn];//保存排列
+int cnt[maxn];///置换后的每个人参加的事件数
+bool use[maxn];///use[i]表示第i列是否有
+bool check(int x)///检查该列
+{
+    int i,ans=0;
+    for(i=0; i<n; i++)
+    {
+        if(map[i][x]==0)///i不参加x列活动
+        {
+            if(cnt[i]>0&&cnt[i]<sum[i])///i 已经参加活动 ；x活动不能被参加
+            return 0;
+        }
+    }
+    return 1;
+}
+bool dfs(int x)
+{
+    if(x==m)return 1;
+    int i,j;
+    for(i=1; i<m; i++) ///枚举每一列
+    {
+        if(use[i]==0&&check(i))
+        {
+            for(j=0; j<n; j++)
+            {
+                cnt[j]+=map[j][i];
+            }
+            s[x]=i;
+            use[i]=1;
+            if(dfs(x+1))return 1;
+            use[i]=0;
+            for(j=0; j<n; j++)cnt[j]-=map[j][i];
+        }
+    }
+    return 0;
+}
+int main()
+{
+    int i,j,k;
+    while(scanf("%d%d",&n,&m)!=EOF)
+    {
+        for(i=0; i<n; i++)
+        {
+            sum[i]=0;
+            scanf("%s",map[i]);
+            for(j=0; j<m; j++)
+            {
+                map[i][j]-='0';
+                sum[i]+=map[i][j];
+            }
+        }
+        for(i=0; i<n; i++)cnt[i]=map[i][0];
+        s[0]=0;
+        dfs(1);
+        for(i=0; i<m; i++)printf("%d\n",s[i]);
+    }
+    return 0;
+}

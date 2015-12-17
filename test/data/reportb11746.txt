@@ -1,0 +1,43 @@
+poj2703-Maximum Area Covered by Rectangles_abentu_新浪博客
+
+    这道题的意思稍微绕了一点，其实读懂之后发现也不难：给出一些矩形，已知他们一定可以分成一些集合：每个集合里面的矩形的宽（矩形的短边边长）都相等，而且任何两个集合之间的矩形不存在覆盖关系（所谓覆盖关系就是一个矩形的长和宽大于另一个矩形的长和宽）。现在让你把这些矩形沿着xoy放在第一象限（横着数着两种方法），求矩形覆盖的最大面积。
+    一个显而易见的事实，是每个集合里只要选出两个最大的矩形就好了，剩下的矩形都不用。而这两个矩形必然一个竖着一个横着放，至于这些被选出来的矩形应该怎么放，其实做一个小小的贪心就好了。严谨的话可以在写代码之前先证明一下（这个证明不是很难）不管怎么放只要一竖一横（如果一个集合只有一个矩形就随便怎么放都可以），整个图形覆盖的面积不变。这样的话这道题就简单了。
+    水过~
+代码：
+#include <iostream>
+ #include <cmath>
+ #include <algorithm>
+ #include <memory>
+ #include <string>
+ using namespace std;
+ #define MAXN 1000+10
+ struct rec
+ {
+     int x, y;
+ }a[MAXN];
+ bool operator < (rec a, rec b) {
+     if (a.x < b.x) return true;
+     if (a.x > b.x) return false;
+     if (a.y > b.y) return true;
+     else return false; 
+ }
+ int n;
+ int main()
+ {
+     int i, w0, w, h1, h2, ans;
+     while (cin >> n && n != -1) {
+         for (i = 0; i < n; i++) cin >> a[i].x >> a[i].y;
+         sort(a, a+n);
+         ans = w0 = 0;
+         for (i = 0; i < n; i++) {
+             w = a[i].x; h1 = a[i].y;
+             h2 = a[i+1].y; ans += (w - w0) * (w - w0);
+             ans += (w - w0) * (h1 - w);
+             ans += (w - w0) * (h2 - w);
+             while (i+1 < n && w == a[i+1].x) i++;
+             w0 = w;
+         }
+         cout << ans << endl;
+     }
+ return 0;
+ }

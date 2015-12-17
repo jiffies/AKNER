@@ -1,0 +1,138 @@
+poj 2657 Comfort_chenwenwen0210_百度空间
+
+题目大意：在一个圈中从1开始跳，每次跳K步，遇到障碍物不能跳，问K最少要多少才能跳到目标。
+解题报告：点数比较少，可以直接枚举步数验证。
+
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<algorithm>
+#include<map>
+using namespace std;
+typedef __int64 lld;
+const int MAX=1100;
+const lld MOD=1000007;
+const int INF=1000000001;
+const double PI=acos(-1.0);
+const double EPS=1.0e-8;
+const int dir[4][2]={{1,0},{0,1},{-1,0},{0,-1}};
+map<int,bool>mp;
+struct EDGE
+{
+    int v,next;
+}edge[51000];
+int head[MAX],E;
+bool dgr[MAX];
+void add(int s,int t)
+{
+    edge[E].v=t;
+    edge[E].next=head[s];
+    head[s]=E++;
+}
+const lld BIT=1000000000;
+const int MM=100000000;
+struct BigNum
+{
+    lld dig[100];
+    int len;
+    void clr()
+    {
+        memset(dig,0,sizeof(dig));
+        len=1;
+    }
+    void print(bool flag=false)
+    {
+        int i=len-1;
+        printf("%I64d",dig[i]);
+        for(i--;i>=0;i--)
+        {
+            printf("%09I64d",dig[i]);
+        }
+        if(flag)puts("");
+    }
+    bool zero()
+    {
+        return dig[0]==0&&len==1;
+    }
+};
+BigNum multi(BigNum a,lld b)
+{
+    int i;
+    for(i=0;i<a.len;i++)
+    {
+        a.dig[i]*=b;
+    }
+    for(i=0;i<a.len;i++)
+    {
+        if(a.dig[i]>=BIT)
+        {
+            a.dig[i+1]+=a.dig[i]/BIT;
+            a.dig[i]%=BIT;
+        }
+    }
+    while(a.dig[a.len]>0)
+    {
+        a.dig[a.len+1]+=a.dig[a.len]/BIT;
+        a.dig[a.len]%=BIT;
+        a.len++;
+    }
+    return a;
+}
+BigNum add(BigNum a,BigNum b)
+{
+    int i;
+    if(b.len>a.len)a.len=b.len;
+    for(i=0;i<a.len;i++)
+    {
+        a.dig[i]+=b.dig[i];
+        if(a.dig[i]>=BIT)
+        {
+            a.dig[i]-=BIT;
+            a.dig[i+1]++;
+        }
+    }
+    if(a.dig[a.len]>0)a.len++;
+    return a;
+}
+BigNum dp[1100];
+bool stk[MAX];
+bool vis[MAX];
+bool ok(int t,int n,int step)
+{
+    int i;
+    for(i=0;i<=n;i++)
+    {
+        vis[i]=stk[i];
+    }
+    int s=1;
+    while(!vis[s]&&s!=t)
+    {
+        vis[s]=true;
+        s+=step;
+        if(s>n)s-=n;
+    }
+    return s==t;
+}
+int main()
+{
+    int n,m,i,j;
+    int z;
+    while(scanf("%d%d%d",&n,&z,&m)!=EOF)
+    {
+        memset(stk,false,sizeof(stk));
+        while(m--)
+        {
+            scanf("%d",&i);
+            stk[i]=true;
+        }
+        for(i=1;i<=n;i++)
+        {
+            if(ok(z,n,i))break;
+        }
+        printf("%d\n",i);
+    }
+    return 0;
+}
+/*
+*/
+

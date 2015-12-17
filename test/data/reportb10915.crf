@@ -1,0 +1,1924 @@
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+ 	x	N	N	I-OJ
+3695	m	N	N	I-OJ
+ 	x	N	N	O
+ 	x	N	N	O
+Cell	eng	N	N	O
+ 	x	N	N	O
+Phone	eng	N	N	O
+ 	x	N	N	O
+Network	eng	N	N	O
+（	x	N	N	O
+ 	x	N	N	O
+记忆	n	Y	N	B-KNOWLEDGE
+化	n	N	N	I-KNOWLEDGE
+搜索	v	Y	N	I-KNOWLEDGE
+）	x	N	N	O
+_	x	N	N	O
+doxi	eng	N	N	O
+_	x	N	N	O
+百度	n	N	N	O
+空间	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+代码	n	N	N	O
+其实	d	N	N	O
+写	v	N	N	O
+的	uj	N	N	O
+乱七八糟	i	N	N	O
+，	x	N	N	O
+但是	c	N	N	O
+放在	v	N	N	O
+这里	r	N	N	O
+，	x	N	N	O
+ 	x	N	N	O
+其中	r	N	N	O
+部分	n	Y	N	O
+代码	n	N	N	O
+由	c	N	N	O
+XCLEE	eng	N	N	O
+ 	x	N	N	O
+提供	v	N	N	O
+...	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+其中	r	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+maxt	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+3	x	N	N	O
+]	x	N	N	O
+代表	n	N	N	O
+的	uj	N	N	O
+是	v	N	N	O
+记忆	n	Y	N	O
+化的值	l	N	N	O
+.....	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+代表	n	N	N	O
+的	uj	N	N	O
+是	v	N	N	O
+在	p	N	N	O
+x	eng	N	N	O
+地方	n	N	N	O
+放	v	N	N	O
+一个	m	N	N	O
+后	f	N	N	O
+ 	x	N	N	O
+，	x	N	N	O
+以	p	N	N	O
+他	r	N	N	O
+为	p	N	N	O
+根	q	N	N	O
+的	uj	N	N	O
+子树	n	N	N	O
+最少	d	N	N	O
+需要	v	N	N	O
+多少	m	N	N	O
+个	q	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+代表	n	N	N	O
+的	uj	N	N	O
+是	v	N	N	O
+在	p	N	N	O
+ 	x	N	N	O
+x	eng	N	N	O
+的	uj	N	N	O
+地方	n	N	N	O
+不	d	N	N	O
+放	v	N	N	O
+，	x	N	N	O
+但是	c	N	N	O
+他	r	N	N	O
+的	uj	N	N	O
+儿子	n	N	N	O
+中	f	N	N	O
+有	v	N	N	O
+一个	m	N	N	O
+可以	c	N	N	O
+覆盖	v	Y	N	O
+到	v	N	N	O
+他	r	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+代表	n	N	N	O
+的	uj	N	N	O
+是	v	N	N	O
+在	p	N	N	O
+x	eng	N	N	O
+的	uj	N	N	O
+地方	n	N	N	O
+不	d	N	N	O
+放	v	N	N	O
+，	x	N	N	O
+而且	c	N	N	O
+他	r	N	N	O
+的	uj	N	N	O
+儿子	n	N	N	O
+都	d	N	N	O
+不	d	N	N	O
+可以	c	N	N	O
+覆盖	v	Y	N	O
+到	v	N	N	O
+他	r	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+iostream	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+string	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+vector	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+MAXN	eng	N	N	O
+ 	x	N	N	O
+10001	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+vector	eng	N	N	O
+<	x	N	N	O
+vector	eng	N	N	O
+<	x	N	N	O
+int	eng	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+g	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+vis	eng	N	N	O
+[	x	N	N	O
+MAXN	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+vector	eng	N	N	O
+<	x	N	N	O
+int	eng	N	N	O
+>	x	N	N	O
+S	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+C	x	N	N	O
+[	x	N	N	O
+MAXN	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+MAXN	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+MAXN	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+3	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+vector	eng	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+MAXN	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+=	x	N	N	O
+g	x	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+size	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+sz	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+v	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+g	x	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+v	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+v	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+id	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+v	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+ 	x	N	N	O
+?	x	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+city	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+mark	eng	N	N	O
+]	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+MAXN	eng	N	N	O
+)	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+mark	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+=	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+size	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+他	r	N	N	O
+的	uj	N	N	O
+儿子	n	N	N	O
+中	f	N	N	O
+，	x	N	N	O
+有	v	N	N	O
+一个	m	N	N	O
+是	v	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+其他	r	N	N	O
+的	uj	N	N	O
+都	d	N	N	O
+用	p	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+和	c	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+id	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+中	f	N	N	O
+的	uj	N	N	O
+最值	n	Y	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+1000000	m	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+j	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+dd	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+dd	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+dd	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+sz	eng	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+id	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+MAXN	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+city	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+mark	eng	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+all	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+freopen	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+date	eng	N	N	O
+.	m	N	N	O
+in	eng	Y	N	O
+"	x	N	N	O
+,	x	N	N	O
+"	x	N	N	O
+r	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+stdin	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+EOF	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+g	eng	N	N	O
+.	m	N	N	O
+resize	eng	N	N	O
+(	x	N	N	O
+MAXN	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+g	eng	N	N	O
+.	m	N	N	O
+clear	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+clear	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+b	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+ 	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+a	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+b	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+g	x	N	N	O
+[	x	N	N	O
+a	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+push	eng	N	N	O
+_	x	N	N	O
+back	eng	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+g	x	N	N	O
+[	x	N	N	O
+b	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+push	eng	N	N	O
+_	x	N	N	O
+back	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+C	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+vis	eng	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+vis	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+pre	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+push	eng	N	N	O
+_	x	N	N	O
+back	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+j	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+MAXN	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+V	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+size	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+DFS	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+mark	eng	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+Min	eng	N	N	O
+(	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+mark	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+date	eng	N	N	O
+[	x	N	N	O
+mark	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ans	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O

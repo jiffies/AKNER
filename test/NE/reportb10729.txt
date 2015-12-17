@@ -1,0 +1,98 @@
+POJ 1204 - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+trie树做法
+ [cpp] 
+ #include<cstdio> 
+ #include<cstring> 
+ #include<queue> 
+ #include<cstdlib> 
+ const int kind=26; 
+ using namespace std; 
+ char s[1010][1010]; 
+ int h[]={-1,-1,0,1,1,1,0,-1}; 
+ int g[]={0,1,1,1,0,-1,-1,-1}; 
+ int m,n,q,sum; 
+ int xx[1010],yy[1010],zz[1010]; 
+ struct trie{ 
+     struct trie * fail,*next[kind]; 
+     int count,num; 
+ }; 
+ struct trie * root; 
+ void insert(char* str,int ii){ 
+     int len=strlen(str),i,tem; 
+     struct trie *p,*q; 
+     p=root; 
+     for(i=0;i<len;i++){ 
+         tem=str[i]-'A'; 
+         if(p->next[tem]==NULL){ 
+             q=(struct trie*)calloc(1,sizeof(struct trie)); 
+             q->count=0; 
+             q->num=0; 
+             q->fail=NULL; 
+             memset(q->next,NULL,sizeof(q->next)); 
+             p->next[tem]=q; 
+         } 
+         p=p->next[tem]; 
+     } 
+     p->count=1; 
+     p->num=ii; 
+ } 
+ bool yes(int i,int j){ 
+     if(i>=0 && j>=0 && i<n && j<m) 
+         return 1; 
+     return 0; 
+ } 
+ void query(int i,int j,int k){ 
+     int tem,x,y,pp; 
+     struct trie* tmp=root,*p; 
+     x=i,y=j; 
+     for(pp=0;yes(i+pp*h[k],j+pp*g[k]);pp++){ 
+         x=i+pp*h[k]; 
+         y=j+pp*g[k]; 
+         tem=s[x][y]-'A'; 
+         if(tmp->next[tem]==NULL) 
+             return; 
+         tmp=tmp->next[tem]; 
+         if(tmp->count){ 
+             sum++; 
+             xx[tmp->num]=i; 
+             yy[tmp->num]=j; 
+             zz[tmp->num]=k; 
+             tmp->count=0; 
+         } 
+     } 
+ } 
+ void sea(){ 
+     char str[2010]; 
+     int i,j,k; 
+     sum=0; 
+     for(i=0;i<n;i++) 
+         for(j=0;j<m;j++){ 
+             for(k=0;k<8;k++){ 
+                 query(i,j,k); 
+                 if(sum==q)return; 
+             } 
+         } 
+ } 
+ int main(){ 
+     int i; 
+     char str[2010]; 
+     root=(struct trie*)calloc(1,sizeof(struct trie)); 
+     root->fail=NULL; 
+     root->count=0; 
+     root->num=0; 
+     memset(root->next,NULL,sizeof(root->next)); 
+     scanf("%d %d %d",&n,&m,&q); 
+     for(i=0;i<n;i++) 
+         scanf("%s",s[i]); 
+     for(i=1;i<=q;i++){ 
+         scanf("%s",str); 
+         insert(str,i); 
+     } 
+     sea(); 
+     for(i=1;i<=q;i++){ 
+         printf("%d %d %c\n",xx[i],yy[i],'A'+zz[i]); 
+     } 
+ } 
+ AC自动机做法
+ 作者：waitfor_

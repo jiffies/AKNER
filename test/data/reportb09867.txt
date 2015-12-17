@@ -1,0 +1,59 @@
+pku 1160_King___haha的空间_百度空间
+
+http://poj.org/problem?id=1160
+///状态转移方程：
+// cost[i][j]+=(po[k]-po[mid]) 其中 i=<k<=j mid=(i+j)/2;
+//cost[i][j]表示从第i个村庄到第j个村庄建一个邮局的最优解 
+///dp[i][j]=min(dp[i-1][k]+cost[k+1][j])      其中i-1=<k<=j-1
+//特别要注意初始化 
+#include <iostream>
+#include <cmath>
+using namespace std;
+#define maxn1 35
+#define maxn2 305
+#define maxn3 2110000000
+int po[maxn2];
+int cost[maxn2][maxn2];
+int dp[maxn1][maxn2];
+int v,p;
+void init()
+{
+    int i,j,k;
+    for(i=1;i<=v;i++) 
+        for(j=i;j<=v;j++)
+        {
+            int mid=(i+j)/2;
+            for(k=i;k<=j;k++)
+            {
+                 cost[i][j]+=abs(po[k]-po[mid]);
+            }
+            cost[j][i]=cost[i][j];
+        }
+}
+void DP()
+{
+    int i,j,k;
+    for(i=2;i<=p;i++)
+        for(j=i;j<=v;j++)
+        {
+            for(k=i-1;k<=j-1;k++)
+            {
+                dp[i][j]=min(dp[i][j],dp[i-1][k]+cost[k+1][j]);
+            }
+        }
+}
+int main()
+{
+    int i,j;
+    scanf("%d%d",&v,&p);
+    for(i=1;i<=v;i++)
+        scanf("%d",&po[i]);
+    for(i=1;i<=p;i++)
+        for(j=i;j<=v;j++)
+           dp[i][j]=maxn3;
+    init();
+    for(i=1;i<=v;i++)
+        dp[1][i]=cost[1][i];
+    DP();
+    printf("%d\n",dp[p][v]);
+}

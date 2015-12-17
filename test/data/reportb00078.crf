@@ -1,0 +1,474 @@
+【	x	N	N	O
+pku2128	eng	N	Y	B-OJ
+】	x	N	N	O
+lost	eng	N	N	O
+ 	x	N	N	O
+Cows	eng	N	N	O
+(	x	N	N	O
+模拟	v	Y	N	O
+版	n	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+lovekid	eng	N	N	O
+的	uj	N	N	O
+日志	ns	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+网易	n	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+Source	eng	N	N	O
+ 	x	N	N	O
+Code	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Problem	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+2182	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+User	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+loveKid	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Memory	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+236	m	N	N	O
+K	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Time	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+375	m	N	N	O
+MS	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Language	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+C++	nz	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Result	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+Accepted	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Source	eng	N	N	O
+ 	x	N	N	O
+Code	eng	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+直接	ad	N	N	B-KNOWLEDGE
+模拟	v	Y	N	I-KNOWLEDGE
+的	uj	N	N	O
+时候	n	N	N	O
+时间	n	N	N	O
+是	v	N	N	O
+375	m	N	N	O
+ms	eng	N	N	O
+,	x	N	N	O
+但是	c	N	N	O
+代码	n	N	N	O
+比较	d	N	N	O
+简洁	a	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+string	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+const	eng	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+MAXNUM	eng	N	N	O
+=	x	N	N	O
+8002	m	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+MAXNUM	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+Init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+input	eng	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+input	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+freopen	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+C	x	N	N	O
+:	x	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+Documents	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+Settings	eng	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+Administrator	eng	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+桌面	n	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+in	eng	Y	N	O
+.	m	N	N	O
+txt	eng	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+"	x	N	N	O
+r	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+stdin	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+j	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+EOF	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+j	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+j	x	N	N	O
+<	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+j	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+input	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O

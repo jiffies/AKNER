@@ -1,0 +1,139 @@
+poj1835 宇航员 三维空间的模拟_hala_acmer_新浪博客
+
+ 
+  之前一直在wa，本来是用了一个二维数组保存，arr[i][j]，i表示当前的方向代表的数字，j表示需要做的转向，其实仅仅这些信息是不够的，比如在xy平面上，面朝z方向，向左转，这样根本不知道左是哪个方向，而如果一个人面朝的方向和头顶的方向能确定，那么就确定了一个二维平面，所以左边和右边也就定了，这样需要一个6*6的数组保存前方和上方确定下以后左边的方向，下面是代码
+ 
+  #include<iostream>
+ 
+  #include<cstdio>
+ 
+  #include<string>
+ 
+  using namespace std;
+ 
+  int arr[6][6];
+ 
+  char direction[20];
+ 
+  void init()
+ 
+  {
+ 
+      arr[0][1]=2;arr[0][2]=4;arr[0][4]=5;arr[0][5]=1;
+ 
+      arr[1][2]=0;arr[1][5]=3;arr[1][0]=5;arr[1][3]=2;
+ 
+      arr[2][0]=1;arr[2][3]=4;arr[2][1]=3;arr[2][4]=0;
+ 
+      arr[3][1]=5;arr[3][4]=2;arr[3][2]=1;arr[3][5]=4;
+ 
+      arr[4][0]=2;arr[4][3]=5;arr[4][2]=3;arr[4][5]=0;
+ 
+      arr[5][4]=3;arr[5][1]=0;arr[5][0]=4;arr[5][3]=1;
+ 
+  }
+ 
+  void cal(int &x,int &y,int &z,int pos,int step)
+ 
+  {
+ 
+      if(pos==0) x+=step;
+ 
+      else if(pos==1) y+=step;
+ 
+      else if(pos==2) z+=step;
+ 
+      else if(pos==3) x-=step;
+ 
+      else if(pos==4) y-=step;
+ 
+      else if(pos==5) z-=step;
+ 
+  }
+ 
+  int main()
+ 
+  {
+ 
+      init();
+ 
+      int T;scanf("%d",&T);
+ 
+      int n,x,y,z,pos,step,head;
+ 
+      while(T--)
+ 
+      {
+ 
+          scanf("%d",&n);
+ 
+          x=y=z=pos=0;
+ 
+          head=2;
+ 
+          while(n--)
+ 
+          {
+ 
+              scanf("%s %d",direction,&step);
+ 
+              if(direction[0]=='b')
+ 
+              {
+ 
+                  pos=(pos+3)%6;
+ 
+              }
+ 
+              else if(direction[0]=='l')
+ 
+              {
+ 
+                  pos=arr[pos][head];
+ 
+              }
+ 
+              else if(direction[0]=='r')
+ 
+              {
+ 
+                  pos=((arr[pos][head])+3)%6;
+ 
+              }
+ 
+              else if(direction[0]=='u')
+ 
+              {
+ 
+                  int t=pos;
+ 
+                  pos=head;
+ 
+                  head=(t+3)%6;
+ 
+              }
+ 
+              else if(direction[0]=='d')
+ 
+              {
+ 
+                  int t=pos;
+ 
+                  pos=(head+3)%6;
+ 
+                  head=t;
+ 
+              }
+ 
+              cal(x,y,z,pos,step);
+ 
+          }
+ 
+          printf("%d %d %d %d\n",x,y,z,pos);
+ 
+      }
+ 
+      return 0;
+ 
+  }
+ 

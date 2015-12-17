@@ -1,0 +1,46 @@
+poj1491简单题_七七·Jianglu_百度空间
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+#include <memory.h>
+#include <string.h>
+using namespace std;
+long gcd(long a,long b)
+{
+    return b==0?a:gcd(b,a%b);
+}
+int main()
+{
+   int n;
+   long a[51];
+   while(scanf("%d",&n)!=EOF)
+   {
+       if(n==0)
+       break;
+       for(int i=0;i<n;i++)
+       scanf("%d",&a[i]);
+       int sum=0;
+       int s=n*(n-1)/2;
+       for(int i=0;i<n;i++)
+       {
+           for(int j=0;j<n;j++)
+           {
+               if(a[i]!=a[j])
+               {
+                   if(gcd(a[i],a[j])==1)
+                   sum++;
+               }
+           }
+       }
+       sum=sum/2;
+       if(sum==0)
+       printf("No estimate for this data set.\n");
+       else
+       {
+       double r=s*6*1.0/sum;
+       r=sqrt(r);
+       printf("%.6lf\n",r);
+       }
+   }
+}

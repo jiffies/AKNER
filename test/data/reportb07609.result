@@ -1,0 +1,663 @@
+PKU	eng	N	Y	O	B-OJ
+
+1286	m	N	N	O	O
+
+Necklace	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+Beads	eng	N	N	O	O
+_	x	N	N	O	O
+prayer	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Necklace	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+BeadsDescriptionBeads	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+red	eng	N	N	O	O
+,	x	N	N	O	O
+
+blue	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+green	eng	N	N	O	O
+
+colors	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+connected	eng	N	N	O	O
+
+together	eng	N	N	O	O
+
+into	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+circular	eng	N	N	O	O
+
+necklace	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+beads	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+
+24	m	N	N	O	O
+
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+If	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+repetitions	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+produced	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+rotation	eng	N	N	O	O
+
+around	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+center	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+circular	eng	N	N	O	O
+
+necklace	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+reflection	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+axis	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+symmetry	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+neglected	eng	N	N	O	O
+,	x	N	N	O	O
+
+how	eng	N	N	O	O
+
+many	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+forms	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+necklace	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+there	eng	N	N	O	O
+?	x	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+several	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+n	eng	N	N	O	O
+.	m	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+denotes	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+file	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+contain	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+data	eng	N	N	O	O
+:	x	N	N	O	O
+
+Number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+forms	eng	N	N	O	O
+,	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+correspondent	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+data	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+45	m	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+2139	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Xi	eng	N	N	O	O
+'	x	N	N	O	O
+an	eng	Y	N	O	O
+
+2002	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+1286	m	N	N	O	O
+
+User	eng	N	N	O	O
+:	x	N	N	O	O
+
+prayer	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+:	x	N	N	O	O
+
+356	m	N	N	O	O
+K	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+
+0	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Language	eng	N	N	O	O
+:	x	N	N	O	O
+
+G	eng	N	N	O	O
+++	x	N	N	O	O
+
+Result	eng	N	N	O	O
+:	x	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+M	x	N	N	O	O
+;	x	N	N	O	O
+bool	eng	N	N	O	O
+
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+1003	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+N	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+N	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+M	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+Len	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+Len	eng	N	N	O	O
+<	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+Len	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+vis	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+vis	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+K	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+K	x	N	N	O	O
+=	x	N	N	O	O
+K	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+jj	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+
+(	x	N	N	O	O
+jj	eng	N	N	O	O
++	x	N	N	O	O
+Len	eng	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+N	x	N	N	O	O
+
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+(	x	N	N	O	O
+jj	eng	N	N	O	O
++	x	N	N	O	O
+Len	eng	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+N	x	N	N	O	O
+
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+jj	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+jj	eng	N	N	O	O
++	x	N	N	O	O
+Len	eng	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+N	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+K	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+M	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+K	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+
+%	x	N	N	O	O
+2	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+*	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+M	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+/	x	N	N	O	O
+2	m	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+ans	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+M	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+/	x	N	N	O	O
+2	m	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+N	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+pow	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+M	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+N	x	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+0.0	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+

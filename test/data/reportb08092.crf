@@ -1,0 +1,727 @@
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+3100	m	N	N	I-OJ
+ 	x	N	N	O
+Root	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Problem	eng	N	N	O
+_	x	N	N	O
+乐吾天	nr	N	N	O
+_	x	N	N	O
+百度	n	N	N	O
+空间	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+power	eng	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+*	x	N	N	O
+a	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+ 	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+b	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+power	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+power	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+b	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+-	x	N	N	O
+power	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+推荐	v	N	N	O
+文章	n	N	N	O
+:	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+1.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1036	m	N	N	I-OJ
+ 	x	N	N	O
+DP	eng	N	N	B-KNOWLEDGE
+ 	x	N	N	O
+强盗	n	N	N	O
+闯门	nrt	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+2.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+转	v	N	N	O
+一首	m	N	N	O
+poj	eng	N	Y	B-OJ
+的	uj	N	N	O
+情诗	n	N	N	O
+，	x	N	N	O
+先	d	N	N	O
+留	v	N	N	O
+这里	r	N	N	O
+，	x	N	N	O
+以后	f	N	N	O
+定	v	N	N	O
+有用	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+3.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+poj	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+2311	m	N	N	I-OJ
+ 	x	N	N	O
+Cutting	eng	N	N	O
+ 	x	N	N	O
+Game	eng	N	N	O
+(	x	N	N	O
+博弈论	n	Y	N	B-KNOWLEDGE
+ 	x	N	N	O
+之	u	N	N	O
+ 	x	N	N	O
+sg	eng	N	N	B-KNOWLEDGE
+函数	n	Y	N	I-KNOWLEDGE
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+4.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+转战	v	N	N	O
+POJ	eng	N	Y	B-OJ
+
+	x	N	N	O
+
+	x	N	N	O
+5.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+3150	m	N	N	I-OJ
+ 	x	N	N	O
+Cellular	eng	N	N	O
+ 	x	N	N	O
+Automaton	eng	N	N	O
+ 	x	N	N	O
+矩阵	n	Y	N	O
+法	j	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+6.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+2352	m	N	N	I-OJ
+ 	x	N	N	O
+Stars	eng	N	N	O
+ 	x	N	N	O
+[	x	N	N	O
+树状	n	Y	N	B-KNOWLEDGE
+数组	n	Y	N	I-KNOWLEDGE
+]	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+7.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+poj	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+2288	m	N	N	I-OJ
+—	x	N	N	O
+—	x	N	N	O
+Islands	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+Bridges	eng	N	N	O
+—	x	N	N	O
+—	x	N	N	O
+基于	p	N	N	O
+Hamilton	eng	N	N	O
+回路	v	Y	N	O
+的	uj	N	N	O
+状态	n	Y	N	O
+压缩	v	Y	N	O
+动态	n	Y	N	B-KNOWLEDGE
+规划	n	Y	N	I-KNOWLEDGE
+（	x	N	N	O
+DP	eng	N	N	B-KNOWLEDGE
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+8.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+poj	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+3530	m	N	N	I-OJ
+—	x	N	N	O
+—	x	N	N	O
+A	x	N	N	O
+ 	x	N	N	O
+Modular	eng	N	N	O
+ 	x	N	N	O
+Arithmetic	eng	N	N	O
+ 	x	N	N	O
+Challenge	eng	N	N	O
+—	x	N	N	O
+—	x	N	N	O
+数论	n	Y	N	B-KNOWLEDGE
+
+	x	N	N	O
+
+	x	N	N	O
+9.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+都	d	N	N	O
+不想	v	N	N	O
+在	p	N	N	O
+POJ	eng	N	Y	B-OJ
+上	f	N	N	O
+做题	v	N	N	O
+了	ul	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+10.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1201	m	N	N	I-OJ
+
+	x	N	N	O
+
+	x	N	N	O

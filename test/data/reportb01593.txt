@@ -1,0 +1,15 @@
+hdu1049_seoxiaoniu_百度空间
+
+include<iostream>
+using namespace std;
+intmain()
+{
+    int n,u,d,i;
+    while(cin>>n>>u>>d&&n)
+    {
+        for(i=0;;i++)
+            if((u-d)*i+u>=n)break;
+        cout<<i*2+1<<endl;
+    }
+    return0;
+}

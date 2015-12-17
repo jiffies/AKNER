@@ -1,0 +1,86 @@
+哈密顿回路，状态dp poj2288 - suressay的专栏 - 博客频道 - CSDN.NET
+
+状态dp求哈密顿回路，dp[p][u][s]来记录状态，表示当前点为u，父亲点为p，状态为s时的最大价值，cnt[p][i][j]表示到从此状态出发的路径。
+ 
+#include<stdio.h>
+#include<iostream>
+#include<algorithm>
+using namespace std;
+const int maxn=15;
+const int inf=-1000000000;
+int dp[14][14][1<<13],first[maxn],val[maxn],flag[maxn][maxn];
+long long cnt[14][14][1<<13],ret_cnt;
+int T,N,M,ret_dp,size;
+void init()
+{
+	memset(cnt,0,sizeof(cnt));
+	ret_dp=inf;ret_cnt=0;
+	for(int p=0;p<=N;p++)
+		for(int i=1;i<=N;i++)
+		{
+			for(int j=0;j<(1<<N);j++)
+				dp[p][i][j]=inf;
+			if(flag[p][i])
+			{
+				dp[p][i][(1<<N)-1]=0;
+				cnt[p][i][(1<<N)-1]=1;
+			}
+		}
+}
+int dfs(int p,int u,int s)
+{
+	if(dp[p][u][s]!=inf) return dp[p][u][s];
+	for(int v=1;v<=N;v++)
+		if(flag[u][v] && !(s&(1<<(v-1))))
+		{
+			int detal=0;
+			detal+=(val[v]+val[u]*val[v]);
+			if(flag[p][v]) detal+=val[p]*val[u]*val[v];
+			int st=s|(1<<(v-1)),ret=dfs(u,v,st)+detal;
+			if(ret>dp[p][u][s]) 
+			{
+				dp[p][u][s]=ret;
+				cnt[p][u][s]=cnt[u][v][st];
+			}
+			else if(ret==dp[p][u][s]) cnt[p][u][s]+=cnt[u][v][st];
+		}
+	return dp[p][u][s];
+}
+int main()
+{
+//	freopen("test.txt","r",stdin);
+	scanf("%d",&T);
+	while(T--)
+	{
+		scanf("%d%d",&N,&M);
+		for(int i=1;i<=N;i++)
+			scanf("%d",&val[i]);
+		memset(flag,0,sizeof(flag));
+		for(int i=0;i<M;i++)
+		{
+			int u,v;
+			scanf("%d%d",&u,&v);
+			flag[u][v]=flag[v][u]=1;
+		}
+		init();
+		for(int i=1;i<=N;i++)
+		{
+			int ret=val[i]+dfs(0,i,1<<(i-1));
+			if(ret>ret_dp)
+			{
+				ret_dp=ret;
+				ret_cnt=cnt[0][i][1<<(i-1)];
+			}
+			else if(ret==ret_dp)
+				ret_cnt+=cnt[0][i][1<<(i-1)];
+		}
+		if(N==1)
+		{
+			ret_cnt=2; ret_dp=val[1];
+		}
+		if(!ret_cnt) printf("0 0\n");
+		else printf("%d %lld\n",ret_dp,ret_cnt/2);
+	}
+	return 0;
+} 
+

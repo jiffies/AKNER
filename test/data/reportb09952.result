@@ -1,0 +1,602 @@
+poj1016	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+冰上	s	N	N	O	O
+游鱼	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+fstream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+change	eng	N	N	O	O
+(	x	N	N	O	O
+string	eng	N	N	O	O
+
+s	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+output	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+s	eng	N	N	O	O
+.	m	N	N	O	O
+length	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+count	eng	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+count	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+count	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+[	x	N	N	O	O
+33	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+sprintf	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+count	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+output	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+output	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+char	eng	N	N	O	O
+(	x	N	N	O	O
+'	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+output	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ifstream	eng	N	N	O	O
+
+cin	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+input	eng	N	N	O	O
+.	m	N	N	O	O
+txt	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ofstream	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+output	eng	N	N	O	O
+.	m	N	N	O	O
+txt	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+16	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+15	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+change	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+m	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+m	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+m	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+self	eng	N	N	O	O
+-	x	N	N	O	O
+inventorying	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+self	eng	N	N	O	O
+-	x	N	N	O	O
+inventorying	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+steps	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+enters	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+inventory	eng	N	N	O	O
+
+loop	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+m	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+can	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+classified	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+15	m	N	N	O	O
+
+iterations	eng	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

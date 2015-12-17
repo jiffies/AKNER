@@ -1,0 +1,95 @@
+【树状数组】 poj3321 Apple Tree - Ted's 游乐园 - 博客频道 - CSDN.NET
+
+Apple Tree
+题目：http://poj.org/problem?id=3321
+题意：一棵有n个结点的树，初始时每个结点都有一个苹果，之后有m个操作，C操作：如果x结点有苹果，执行操作后x结点无苹果;如果x结点没有苹果，执行操作后x结点出现苹果。Q操作：问x结点及其子树上一共有多少苹果。
+题解：单点更新，区间查询，一看就是线段树类型的题目。但是这个是树形结构，需要转换成线性的才能计算。先序遍历整个树，这样每个结点的子结点都是连续存放的。
+代码：
+ 
+#include<cstdio>
+#include<cstring>
+using namespace std;
+#define MAX 100005
+int edge[MAX<<1];//表示第i条边的终点
+int next[MAX<<1];//与第i条边同起点的下一条边的位置
+int head[MAX<<1];//以i为起点的第一条边的储存位置
+int low[MAX],high[MAX],c[MAX];
+bool visit[MAX];
+int cnt,n;
+#define lowbit(x) ((x)&(-(x)))
+void update(int pos,int value) //更新pos的值
+{
+    int x=pos;
+    for(; x<=n; x+=lowbit(x))
+        c[x]+=value;
+}
+int getsum(int pos)//求1到pos位置的和
+{
+    int x=pos,sum=0;
+    for(; x>0; x-=lowbit(x))
+        sum+=c[x];
+    return sum;
+}
+void insert(int i,int a,int b)//a起点,b终点
+{
+    edge[i]=b;
+    next[i]=head[a];
+    head[a]=i;
+}
+void dfs(int x,int pre)
+{
+    low[x]=(++cnt);
+    for(int i=head[x]; i!=-1; i=next[i])
+        if(edge[i]!=pre)
+            dfs(edge[i],x);
+    high[x]=cnt;
+}
+int main()
+{
+    int m;
+    int a,b;
+    char op[5];
+    for(; ~scanf("%d",&n);)
+    {
+        cnt=0;
+        memset(head,-1,sizeof(head));
+        memset(next,-1,sizeof(next));
+        memset(c,0,sizeof(c));
+        for(int i=1,j=1; i<n; ++i)
+        {
+            scanf("%d%d",&a,&b);
+            insert(j++,a,b);
+            insert(j++,b,a);
+        }
+        dfs(1,-1);//遍历树
+        //初始化
+        for(int i=1; i<=n; ++i)
+            update(i,1);
+        memset(visit,false,sizeof(visit));
+        scanf("%d",&m);
+        for(int i=0; i<m; ++i)
+        {
+            scanf("%s%d",op,&a);
+            if(op[0]=='C')//更新
+            {
+                if(visit[a])
+                {
+                    update(low[a],1);
+                    visit[a]=false;
+                }
+                else
+                {
+                    update(low[a],-1);
+                    visit[a]=true;
+                }
+            }
+            else//查询
+                printf("%d\n",getsum(high[a])-getsum(low[a]-1));
+        }
+    }
+    return 0;
+}
+ 
+来源：
+http://blog.csdn.net/ACM_Ted
+

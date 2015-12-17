@@ -1,0 +1,140 @@
+pku1274（基本的二分图最大匹配） - 弓虽子 - 博客频道 - CSDN.NET
+
+http://162.105.81.212/JudgeOnline/problem?id=1274
+题意：有m头奶牛和n个牛棚，其中每头奶牛只愿意进它愿意进的牛棚。也许每头牛只愿进一个棚，也许一个棚只容纳一头牛。现在给定m头年和n个牛棚，并且给定每头牛愿意进的牛棚编号，请让你设计一种牛对棚的方案，使牛——棚的匹配数最大，并输出这个最大匹配值。
+思路：其实这题就是求一个二分图最大匹配。
+下面是用邻接矩阵写的AC~
+#include<iostream>
+using namespace std;
+const int maxn = 201;
+const int maxm = 201;
+int uN, vN;
+bool g[maxn][maxn];
+int xM[maxn], yM[maxn];
+bool chk[maxn];
+bool find(int u)
+{
+	int v;
+	for(v=1; v<=vN; v++)
+		if(g[u][v] && !chk[v])
+		{
+			chk[v] = true;
+			if(yM[v] == -1 || find(yM[v]))
+			{
+				yM[v] = u; xM[u] = v;
+				return true;
+			}
+		}
+	return false;
+}
+int MaxMatch()
+{
+	int u, ret = 0;
+	memset(xM, -1, sizeof(xM));
+	memset(yM, -1, sizeof(yM));
+	for(u=1; u<=uN; u++)
+		if(xM[u] == -1)
+		{
+			memset(chk, false, sizeof(chk));
+			if(find(u))
+				ret++;
+		}
+	return ret;
+}
+int main()
+{
+	int i, j, k, x, y;
+	int ans;
+	while(cin>>uN>>vN)		//0ms
+	//while(scanf("%d%d",&uN,&vN) != EOF)  //16ms
+	{
+		memset(g, false, sizeof(g));
+		for(x=1; x<=uN; x++)
+		{
+			cin>>k;
+			//scanf("%d",&k);
+			for(j=1; j<=k; j++)
+			{
+				cin>>y;
+				//scanf("%d",&y);
+				g[x][y] = true;
+			}
+		}
+		ans = MaxMatch();
+		cout<<ans<<endl;
+		//printf("%d/n",ans);
+	}
+	return 0;
+} 
+但是用链表写的就超时：
+#include<iostream>
+using namespace std;
+const int maxn = 201;
+const int maxm = 201;
+struct gtype
+{
+	int x, y, next;
+};
+gtype g[maxm];
+int first[maxn];
+int link[maxn];
+bool used[maxn];
+int n, m, tot;
+void add(int x, int y)
+{
+	tot++;
+	g[tot].x = x;
+	g[tot].y = y;
+	g[tot].next = first[x];
+	first[x] = tot;
+}
+bool find(int s)
+{
+	int temp;
+	temp = first[s];
+	while(temp != -1)
+	{
+		if( !used[g[temp].y])
+		{
+			used[g[temp].y] = true;
+			if(link[g[temp].y]==0 || find(link[g[temp].y]))
+			{
+				link[g[temp].y] = s;
+				return true;
+			}
+		}
+		temp = g[temp].next;
+	}
+	return false;
+}
+int main()
+{
+	int i, j, k, x, y;
+	int ans;
+	while(scanf("%d%d",&n, &m) != EOF)
+	{
+		for(x=1; x<=n; x++)
+		{
+			scanf("%d",&k);
+			for(j=1; j<=k; j++)
+			{
+				scanf("%d",&y);
+				add(x, y);
+			}
+		}
+		memset(link, 0, sizeof(link));
+		for(i=1; i<=n; i++)
+		{
+			memset(used, false, sizeof(used));
+			find(i);
+		}
+		ans = 0;
+		for(i=1; i<=n; i++)
+		{
+			if(link[i] != 0)
+				ans++;
+		}
+		printf("%d/n",ans);
+	}
+	return 0;
+} 

@@ -1,0 +1,78 @@
+poj2181--Jumping Cows（DP）_易川_新浪博客
+
+Description
+Farmer John's cows would like to jump over the moon, just like the cows in their favorite nursery rhyme. Unfortunately, cows can not jump.
+ The local witch doctor has mixed up P (1 <= P <= 150,000) potions to aid the cows in their quest to jump. These potions must be administered exactly in the order they were created, though some may be skipped.
+ Each potion has a 'strength' (1 <= strength <= 500) that enhances the cows' jumping ability. Taking a potion during an odd time step increases the cows' jump; taking a potion during an even time step decreases the jump. Before taking any potions the cows' jumping ability is, of course, 0.
+ No potion can be taken twice, and once the cow has begun taking potions, one potion must be taken during each time step, starting at time 1. One or more potions may be skipped in each turn.
+ Determine which potions to take to get the highest jump.
+Input
+ 
+
+ * Line 1: A single integer, P
+ 
+ * Lines 2..P+1: Each line contains a single integer that is the strength of a potion. Line 2 gives the strength of the first potion; line 3 gives the strength of the second potion; and so on.
+ 
+ 
+ Output
+ 
+
+ * Line 1: A single integer that is the maximum possible jump.
+ 
+Sample Input
+8
+ 7
+ 2
+1
+ 8
+ 4
+ 3
+ 5
+ 6
+Sample Output
+17
+////////////////////////////////////////////////////////////
+题意是有P瓶魔法药水，能让牛每次跳的高度相应的增加或减少。有头牛每跳一步喝一瓶，当它跳的是第奇数步，跳的高度增加a[i],如果是第偶数步，跳得高度就减少a[i].问怎样合理安排，让牛跳得更高？
+·                # include<stdio.h>
+·                # include<string.h>
+·                int h1[200000],h2[200000];//h1[],h2[]分别记录喝第i瓶药水时，如果是奇数步时的高度和是偶数步时的高度!!!
+·                int a[200000];
+·                int main()
+·                {
+·                      int i,p,max1,max2;
+·                      scanf("%d",&p);
+·                      for(i=1;i<=p;i++)
+·                            scanf("%d",&a[i]);
+·                      memset(h1,0,sizeof(h1));
+·                      memset(h2,0,sizeof(h2));
+·                      for(i=1;i<=p;i++)
+·                      {
+·                            if(i==1)
+·                            {
+·                                  h1[i]=a[i];
+·                                  h2[i]=0;
+·                            }
+·                            else
+·                            {
+·                                  h1[i]=h2[i-1]+a[i];//如果是奇数步，那该步的高度为前偶数步+a[i];
+·                                  if(h1[i]<h1[i-1])
+·                                        h1[i]=h1[i-1];
+·                                  h2[i]=h1[i]-a[i];如果是偶数步，那该步的高度为前奇数步-a[i];
+·                                  if(h2[i]<h2[i-1])
+·                                        h2[i]=h2[i-1];
+·                            }
+·                 
+·                      }
+·                      max1=max2=-1;
+·                      for(i=1;i<=p;i++)
+·                      {
+·                            if(max1<h1[i])
+·                                  max1=h1[i];
+·                            if(max2<h2[i])
+·                                  max2=h2[i];
+·                      }
+·                      if(max1<max2)
+·                            max1=max2;
+·                      printf("%d\n",max1);
+·                      return 0;
+·                }

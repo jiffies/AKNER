@@ -1,0 +1,204 @@
+【POJ 3204】【Ikki's Story I - Road Reconstruction】【求关键边】_AekdyCoin的空间_百度空间
+
+【题目地址】
+
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3204
+
+【题目大意】
+
+求关键边，关键边定义为 :通过增加某个边的容量使得网络的最大流增加
+
+如下图
+
+【My Solution】
+
+定义 F(a -> b) 表示 a -> b的路中流流量的最小值
+
+那么如果(x,y) 为符合条件的边，则必须满足上图
+
+于是我们从S,T分别开始 DFS标记，之后枚举边即可
+
+PS:
+
+(1) 
+S开始DFS,能流就流
+
+(2) T开始的话，
+也只能流就流 (具体参见代码)
+
+(3) 考虑的边的流量大于0才继续
+
+【程序代码】
+
+#include<iostream>
+
+#include<stdio.h>
+
+#include<string.h>
+
+using namespace std;
+
+const int maxn = 505;
+
+const int maxm = 20005;
+
+const int inf = 0x3f3f3f3f;
+
+int l,head[maxn],d[maxn],now[maxn],vh[maxn],pre[maxn],preh[maxn];
+
+struct Edge{int v,f,p;}e[maxm];
+
+void init(){
+
+ l = 1;
+
+ memset(head, 0, sizeof head);
+
+ memset(d, 0, sizeof d) ;
+
+} 
+
+void add(int a,int b,int c){
+
+ Edge &A = e[++l];A.v=b;A.f=c;A.p=head[a];head[a]=l;
+
+ Edge &B = e[++l];B.v=a;B.f=0;B.p=head[b];head[b]=l;
+
+}
+
+int sap(int n,int s,int t){
+
+ int i,x,y,k,ans = 0, f;
+
+ for(i = 0; i < n; ++ i) now[i] = head[i];
+
+ vh[0] = n; x = s;
+
+ while(d[s] < n){
+
+ if(x == t){
+
+ for( f = inf, i = t; i ^ s; i = pre[i]) f = min(f, e[preh[i]].f) ; ans += f;
+
+ do{e[preh[x]].f -= f; e[preh[x] ^ 1].f += f; x = pre[x];} while(x ^ s);
+
+ }
+
+ for(i = now[x]; i; i =e[i].p) if(e[i].f > 0 && d[y = e[i].v] + 1 == d[x]){now[x] = i; break;}
+
+ if(i) pre[y] = x, preh[y] = i, x = y; 
+
+ else{
+
+ if(!--vh[d[x]]) break; k = n;
+
+ for(i = now[x] = head[x];i;i=e[i].p) if(e[i].f > 0 && k > d[e[i].v]) now[x] = i, k = d[e[i].v];
+
+ ++vh[d[x] = k + 1]; if(x ^ s) x = pre[x];
+
+ }
+
+ }
+
+ return ans; 
+
+}
+
+int n,m;
+
+int s, t; 
+
+int col[maxn];
+
+bool get(){
+
+ if(EOF == scanf("%d%d",&n,&m)) return 0;
+
+ init();
+
+ s = 0;
+
+ t = n - 1;
+
+ while(m --){
+
+ int a,b , c;
+
+ scanf("%d%d%d",&a,&b,&c);
+
+ add(a, b, c) ;
+
+ }
+
+ return 1;
+
+}
+
+void dfs(int x){ 
+
+ col[x] = 1;
+
+ int i;
+
+ for(i = head[x]; i; i = e[i].p){
+
+ if(e[i].f > 0 && !col[e[i].v]) dfs(e[i].v) ;
+
+ }
+
+}
+
+void dfs0(int x){
+
+ col[x] = 2;
+
+ int i;
+
+ for(i = head[x]; i; i = e[i].p){
+
+ if(e[i ^ 1].f > 0 && e[i].f > 0 && !col[e[i].v])
+
+ dfs0(e[i].v) ;
+
+ } 
+
+}
+
+void work(){
+
+ memset(col,0, sizeof col);
+
+ sap(n, s, t);
+
+ dfs(s) ;
+
+ dfs0(t) ;
+
+ int ans = 0;
+
+ int i,j;
+
+ for(i = 0; i < n; ++ i)
+
+ for(j = head[i]; j; j = e[j].p){
+
+ if(j % 2 == 1) continue ; //只考虑正向
+
+ if(col[i] == 1 && col[e[j].v] == 2 )
+
+ ++ ans; 
+
+ }
+
+ printf("%d\n",ans);
+
+}
+
+int main(){
+
+ while(get()) work() ;
+
+ return 0;
+
+}

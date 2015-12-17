@@ -1,0 +1,61 @@
+poj 1351 Number of locks - scorpiocj的专栏 - 博客频道 - CSDN.NET
+
+dp[i][j][k][s]表示当前到第i把锁,高度为j,是否出现高度差为3（k=1表示出现过，0表示没有出现过),使用高度的种数为s的方案数
+类似于按位DP的思想，记忆化求解
+dfs的时候枚举第i+1位选择的高度，并和当前s状态比较，记录出现高度的种数
+代码：
+
+#include<iostream>
+#include<memory.h>
+#include<string>
+#include<cstdio>
+#include<algorithm>
+#include<math.h>
+#include<stack>
+#include<queue>
+#include<vector>
+#include<map>
+#include<ctime>
+using namespace std;
+long long dp[50][5][2][4];
+int n;
+long long dfs(int i,int now,int j,int s,int m)
+{
+	if(i>=n)
+	{
+		if(j&&m>=3)
+			return 1;
+		else	
+			return 0;
+	}
+	if(dp[i][now][j][m]!=-1)
+		return dp[i][now][j][m];
+	long long ans=0;
+	int tmp;
+	for(int k=1;k<=4;k++)
+	{
+		if((s&(1<<(k-1)))==0)
+			tmp=m+1;
+		else
+			tmp=m;
+		if(tmp>3)
+			tmp=3;
+		ans+=dfs(i+1,k,(now!=0&&abs(k-now)==3)||j,s|(1<<(k-1)),tmp);
+	}
+	dp[i][now][j][m]=ans;
+	return ans;
+}
+int main()
+{
+	int i,j;
+	while(scanf("%d",&n)!=EOF)
+	{
+		if(n==-1)
+			break;
+		memset(dp,-1,sizeof(dp));
+		dfs(0,0,0,0,0);
+		printf("%d: %lld\n",n,dp[0][0][0][0]);
+	}
+	return 0;
+}
+

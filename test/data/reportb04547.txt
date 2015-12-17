@@ -1,0 +1,47 @@
+pku2100 连续数的平方和 - 笑风生 - 博客频道 - CSDN.NET
+
+ #include <stdio.h>
+#include <math.h>
+int ret1[10000001];
+int ret2[10000001];
+int main()
+{
+	int i, j;
+	int cnt = 0;
+	__int64 N;
+	scanf("%I64u", &N);
+	__int64 base = 0;
+	int r = (int)sqrt((float)N);
+	i = 1, j = 0;
+	while(i <= r && j <= r)
+	{
+		if(base == N)
+		{
+			cnt++;
+			ret1[cnt] = i;
+			ret2[cnt] = j;
+			j++;
+			base += (__int64)j*j;
+			continue;
+		}
+		else if(base > N)
+		{
+			base -= (__int64)i*i;
+			i++;
+		}
+		else
+		{
+			j++;
+			base += (__int64)j*j;
+		}
+	}
+	printf("%d/n", cnt);
+	for(i = 1; i <= cnt; ++i)
+	{
+		printf("%d ", ret2[i]-ret1[i]+1);
+		for(j = ret1[i]; j <= ret2[i]; ++j)
+			printf("%d ",j);
+		printf("/n");
+	}
+	return 0;
+} 

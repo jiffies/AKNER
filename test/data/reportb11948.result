@@ -1,0 +1,1446 @@
+PKU	eng	N	Y	O	B-OJ
+
+1090	m	N	N	O	O
+
+Chain	eng	N	N	O	O
+_	x	N	N	O	O
+Thinker	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+paradise	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Chain	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+1759	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+597	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Byteland	eng	N	N	O	O
+
+had	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+always	eng	N	N	O	O
+
+been	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+democratic	eng	N	N	O	O
+
+country	eng	N	N	O	O
+.	m	N	N	O	O
+
+There	eng	N	N	O	O
+
+were	eng	N	N	O	O
+
+also	eng	N	N	O	O
+
+black	eng	N	N	O	O
+
+pages	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+its	eng	N	N	O	O
+
+book	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+history	eng	N	N	O	O
+.	m	N	N	O	O
+
+One	eng	N	N	O	O
+
+lovely	eng	N	N	O	O
+
+day	eng	N	N	O	O
+
+general	eng	N	N	O	O
+
+Bytel	eng	N	N	O	O
+
+−	x	N	N	O	O
+
+commander	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+junta	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+had	eng	N	N	O	O
+
+power	eng	N	N	O	O
+
+over	eng	N	N	O	O
+
+Byteland	eng	N	N	O	O
+
+−	x	N	N	O	O
+−	x	N	N	O	O
+
+decided	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+finish	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+long	eng	N	N	O	O
+−	x	N	N	O	O
+lasting	eng	N	N	O	O
+
+time	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+war	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+released	eng	N	N	O	O
+
+imprisoned	eng	N	N	O	O
+
+activists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+opposition	eng	N	N	O	O
+.	m	N	N	O	O
+
+However	eng	N	N	O	O
+,	x	N	N	O	O
+
+he	eng	Y	N	O	O
+
+had	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+intention	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+let	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+leader	eng	N	N	O	O
+
+Bytesar	eng	N	N	O	O
+
+free	eng	N	N	O	O
+.	m	N	N	O	O
+
+He	eng	N	N	O	O
+
+decided	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+
+him	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+wall	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bytish	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+.	m	N	N	O	O
+
+It	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+joined	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+
+fixed	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+wall	eng	N	N	O	O
+.	m	N	N	O	O
+
+Although	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+joined	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+,	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+hard	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+off	eng	N	N	O	O
+.	m	N	N	O	O
+
+'	x	N	N	O	O
+General	eng	N	N	O	O
+,	x	N	N	O	O
+
+why	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+chained	eng	N	N	O	O
+
+me	eng	Y	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+prison	eng	N	N	O	O
+
+walls	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+did	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+let	eng	N	N	O	O
+
+rejoice	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+freedom	eng	N	N	O	O
+!	x	N	N	O	O
+'	x	N	N	O	O
+
+cried	eng	N	N	O	O
+
+Bytesar	eng	N	N	O	O
+.	m	N	N	O	O
+
+'	x	N	N	O	O
+But	eng	N	N	O	O
+
+Bytesar	eng	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+chained	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+all	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+I	x	N	N	O	O
+
+am	eng	Y	N	O	O
+
+certain	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+able	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+yourself	eng	N	N	O	O
+.	m	N	N	O	O
+'	x	N	N	O	O
+
+perfidiously	eng	N	N	O	O
+
+answered	eng	N	N	O	O
+
+general	eng	N	N	O	O
+
+Bytel	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+added	eng	N	N	O	O
+
+'	x	N	N	O	O
+But	eng	N	N	O	O
+
+deal	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+before	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+clock	eng	N	N	O	O
+
+strikes	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+cyber	eng	N	N	O	O
+
+hour	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+make	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+noise	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+night	eng	N	N	O	O
+,	x	N	N	O	O
+
+otherwise	eng	N	N	O	O
+
+I	x	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+forced	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+call	eng	N	N	O	O
+
+Civil	eng	N	N	O	O
+
+Cyber	eng	N	N	O	O
+
+Police	eng	N	N	O	O
+.	m	N	N	O	O
+'	x	N	N	O	O
+
+Help	eng	N	N	O	O
+
+Bytesar	eng	N	N	O	O
+!	x	N	N	O	O
+
+Number	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+following	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+...	m	N	N	O	O
+,	x	N	N	O	O
+n	eng	N	N	O	O
+.	m	N	N	O	O
+
+We	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+these	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+following	eng	N	N	O	O
+
+rules	eng	N	N	O	O
+:	x	N	N	O	O
+
+.	m	N	N	O	O
+only	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+taken	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+one	eng	N	N	O	O
+
+move	eng	N	N	O	O
+,	x	N	N	O	O
+
+.	m	N	N	O	O
+the	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+always	eng	N	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+taken	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+,	x	N	N	O	O
+
+.	m	N	N	O	O
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+...	m	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+−	x	N	N	O	O
+1	x	N	N	O	O
+
+(	x	N	N	O	O
+for	eng	Y	N	O	O
+
+1	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+are	eng	N	N	O	O
+
+taken	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+k	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+,	x	N	N	O	O
+
+we	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+take	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+k	eng	N	N	O	O
++	x	N	N	O	O
+1.	m	N	N	O	O
+
+Write	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+program	eng	N	N	O	O
+
+which	eng	N	N	O	O
+:	x	N	N	O	O
+
+.	m	N	N	O	O
+reads	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+std	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+description	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bytish	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+,	x	N	N	O	O
+
+.	m	N	N	O	O
+computes	eng	N	N	O	O
+
+minimal	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+moves	eng	N	N	O	O
+
+necessary	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bytish	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+,	x	N	N	O	O
+
+.	m	N	N	O	O
+writes	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+result	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+std	eng	N	N	O	O
+
+output	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+In	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+written	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+1000.	m	N	N	O	O
+
+In	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+second	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+written	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+integers	eng	N	N	O	O
+
+o1	eng	N	N	O	O
+,	x	N	N	O	O
+o2	eng	N	N	O	O
+,	x	N	N	O	O
+...	m	N	N	O	O
+,	x	N	N	O	O
+on	eng	N	N	O	O
+
+(	x	N	N	O	O
+each	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+either	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+separated	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+single	eng	N	N	O	O
+
+spaces	eng	N	N	O	O
+.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+oi	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+i	x	N	N	O	O
+−	x	N	N	O	O
+th	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+put	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+oi	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+then	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+i	x	N	N	O	O
+−	x	N	N	O	O
+th	eng	N	N	O	O
+
+ring	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+taken	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+contain	eng	N	N	O	O
+
+exactly	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+equal	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+minimal	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+moves	eng	N	N	O	O
+
+necessary	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+take	eng	N	N	O	O
+
+off	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+rings	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bytish	eng	N	N	O	O
+
+chain	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+bar	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+41	m	N	N	O	O
+
+0	x	N	N	O	O
+
+1	x	N	N	O	O
+
+0	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+6	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+POI	eng	N	N	O	O
+
+2001	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+1090	m	N	N	O	O
+
+User	eng	N	N	O	O
+:	x	N	N	O	O
+
+*	x	N	N	O	O
+*	x	N	N	O	O
+*	x	N	N	O	O
+
+Memory	eng	N	N	O	O
+:	x	N	N	O	O
+
+220	m	N	N	O	O
+K	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+
+47	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Language	eng	N	N	O	O
+:	x	N	N	O	O
+
+C++	nz	N	N	O	O
+
+Result	eng	N	N	O	O
+:	x	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+short	eng	N	N	O	O
+
+link	eng	N	N	O	O
+[	x	N	N	O	O
+1001	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+0	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+short	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+340	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+}	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+340	m	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+0	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+N	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+以下	f	N	N	O	O
+为	p	N	N	O	O
+大数	n	Y	N	O	O
+运算	vn	Y	N	O	O
+，	x	N	N	O	O
+效率	n	N	N	O	O
+不	d	N	N	O	O
+高	a	N	N	O	O
+，	x	N	N	O	O
+但	c	N	N	O	O
+较易	a	N	N	O	O
+编写	v	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+u	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+2	m	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+%	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+n	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+/	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+u	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+v	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+>	x	N	N	O	O
+u	x	N	N	O	O
+?	x	N	N	O	O
+v	x	N	N	O	O
+:	x	N	N	O	O
+u	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+b	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+%	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+n	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+/	x	N	N	O	O
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+v	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+

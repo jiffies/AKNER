@@ -1,0 +1,539 @@
+POJ	eng	N	Y	O	B-OJ
+
+3640	m	N	N	O	I-OJ
+
+Conformity	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+低	a	N	N	O	O
+智商	n	N	N	O	O
+呀	y	N	N	O	O
+>	x	N	N	O	O
+_	x	N	N	O	O
+<	x	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+学生	n	N	N	O	O
+，	x	N	N	O	O
+每人	r	N	N	O	O
+5	m	N	N	O	O
+门	n	N	N	O	O
+课程	n	N	N	O	O
+代号	n	N	N	O	O
+（	x	N	N	O	O
+100	m	N	N	O	O
+~	x	N	N	O	O
+499	m	N	N	O	O
+）	x	N	N	O	O
+的	uj	N	N	O	O
+组合	v	Y	N	O	O
+，	x	N	N	O	O
+定义	n	N	N	O	O
+这些	r	N	N	O	O
+课程	n	N	N	O	O
+组合	v	Y	N	O	O
+的	uj	N	N	O	O
+重复	d	Y	N	O	O
+次数	n	N	N	O	O
+为	p	N	N	O	O
+受欢迎	v	N	N	O	O
+度	zg	N	N	O	O
+。	x	N	N	O	O
+
+问选	v	N	N	O	O
+受欢迎	v	N	N	O	O
+度	zg	N	N	O	O
+最大	a	Y	N	O	O
+的	uj	N	N	O	O
+课程	n	N	N	O	O
+组合	v	Y	N	O	O
+的	uj	N	N	O	O
+学生	n	N	N	O	O
+人数	n	N	N	O	O
+是	v	N	N	O	O
+多少	m	N	N	O	O
+。	x	N	N	O	O
+
+题解	v	N	N	O	O
+：	x	N	N	O	O
+将	d	N	N	O	O
+每个	r	N	N	O	O
+学生	n	N	N	O	O
+所选	v	N	N	O	O
+的	uj	N	N	O	O
+5	m	N	N	O	O
+门	n	N	N	O	O
+课	n	N	N	O	O
+进行	v	N	N	O	O
+从小到大	l	N	N	O	O
+排序	n	Y	N	O	O
+，	x	N	N	O	O
+拼	v	N	N	O	O
+起来	v	N	N	O	O
+组成	v	N	N	O	O
+一个	m	N	N	O	O
+15	m	N	N	O	O
+位	q	N	N	O	O
+的	uj	N	N	O	O
+数	n	N	N	O	O
+。	x	N	N	O	O
+
+即	v	N	N	O	O
+：	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+*	x	N	N	O	O
+1000	m	N	N	O	O
++	x	N	N	O	O
+x	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+由于	c	N	N	O	O
+变换	v	Y	N	O	O
+之后	f	N	N	O	O
+的	uj	N	N	O	O
+数太	n	N	N	O	O
+大	n	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+要	v	N	N	O	O
+哈希	nrt	Y	N	O	B-KNOWLEDGE
+一下	m	N	N	O	O
+在	p	N	N	O	O
+存储	j	N	N	O	O
+。	x	N	N	O	O
+
+接下来	l	N	N	O	O
+再	d	N	N	O	O
+判重	v	Y	N	O	O
+即可	d	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+MOD	eng	N	N	O	O
+=	x	N	N	O	O
+100007	m	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+Hash	eng	N	N	O	O
+[	x	N	N	O	O
+MOD	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+pos	eng	N	N	O	O
+[	x	N	N	O	O
+MOD	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+pop	eng	N	N	O	O
+[	x	N	N	O	O
+MOD	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+6	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Getkey	eng	N	N	O	O
+(	x	N	N	O	O
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+num	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+%	x	N	N	O	O
+MOD	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+Hash	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	m	N	N	O	O
+&&	x	N	N	O	O
+Hash	eng	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+)	x	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+MOD	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+pop	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+pop	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+Hash	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+Hash	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+5	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+temp	eng	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+*	x	N	N	O	O
+1000	m	N	N	O	O
++	x	N	N	O	O
+x	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ps	eng	N	N	O	O
+=	x	N	N	O	O
+Getkey	eng	N	N	O	O
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+Hash	eng	N	N	O	O
+[	x	N	N	O	O
+ps	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+temp	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+max	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+,	x	N	N	O	O
+++	x	N	N	O	O
+pop	eng	N	N	O	O
+[	x	N	N	O	O
+pos	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+ps	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pop	eng	N	N	O	O
+[	x	N	N	O	O
+pos	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+cnt	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

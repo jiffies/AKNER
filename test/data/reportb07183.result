@@ -1,0 +1,765 @@
+pku2480	eng	N	Y	O	B-OJ
+-	x	N	N	O	O
+积性	n	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+欧拉	ns	Y	N	O	O
+_	x	N	N	O	O
+110	m	N	N	O	O
+c	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Longge	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+problem	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+65536	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+4184	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+1258	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Longge	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+good	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+mathematics	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+likes	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+think	eng	N	N	O	O
+
+about	eng	N	N	O	O
+
+hard	eng	N	N	O	O
+
+mathematical	eng	N	N	O	O
+
+problems	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+solved	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+some	eng	N	N	O	O
+
+graceful	eng	N	N	O	O
+
+algorithms	eng	N	N	O	O
+.	m	N	N	O	O
+
+Now	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+problem	eng	N	N	O	O
+
+comes	eng	N	N	O	O
+:	x	N	N	O	O
+
+Given	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+integer	eng	N	N	O	O
+
+N	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+
+N	x	N	N	O	O
+
+<	x	N	N	O	O
+
+2	x	N	N	O	O
+^	x	N	N	O	O
+31	m	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+you	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+calculate	eng	N	N	O	O
+
+∑	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+1	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+N	eng	N	N	O	O
+.	m	N	N	O	O
+
+"	x	N	N	O	O
+Oh	eng	N	N	O	O
+,	x	N	N	O	O
+
+I	x	N	N	O	O
+
+know	eng	N	N	O	O
+,	x	N	N	O	O
+
+I	x	N	N	O	O
+
+know	eng	N	N	O	O
+!	x	N	N	O	O
+"	x	N	N	O	O
+
+Longge	eng	N	N	O	O
+
+shouts	eng	N	N	O	O
+!	x	N	N	O	O
+
+But	eng	N	N	O	O
+
+do	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+know	eng	N	N	O	O
+?	x	N	N	O	O
+
+Please	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+
+it	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+contain	eng	N	N	O	O
+
+several	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+.	m	N	N	O	O
+
+A	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+per	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+output	eng	N	N	O	O
+
+,	x	N	N	O	O
+∑	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+N	x	N	N	O	O
+)	x	N	N	O	O
+
+1	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+26	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+315	m	N	N	O	O
+
+1	x	N	N	O	O
+）	x	N	N	O	O
+因为	c	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+互质	n	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+gcd	eng	Y	N	O	O
+是	v	N	N	O	O
+积性	n	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+
+积性	n	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+和	c	N	N	O	O
+函数	n	Y	N	O	O
+也	d	N	N	O	O
+是	v	N	N	O	O
+积性	n	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+,	x	N	N	O	O
+所以	c	N	N	O	O
+所	c	N	N	O	O
+求函数	l	N	N	O	O
+是	v	N	N	O	O
+积性	n	Y	N	O	B-KNOWLEDGE
+函数	n	Y	N	O	I-KNOWLEDGE
+
+（	x	N	N	O	O
+2	x	N	N	O	O
+）	x	N	N	O	O
+
+所以	c	N	N	O	O
+如果	c	N	N	O	O
+我们	r	N	N	O	O
+设	v	N	N	O	O
+所求	n	N	N	O	O
+答案	n	N	N	O	O
+是	v	N	N	O	O
+f	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+则	d	N	N	O	O
+：	x	N	N	O	O
+
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+f	x	N	N	O	O
+(	x	N	N	O	O
+m1	eng	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+m2	eng	N	N	O	O
+)	x	N	N	O	O
+
+其中	r	N	N	O	O
+，	x	N	N	O	O
+m1	eng	N	N	O	O
+*	x	N	N	O	O
+m2	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+且	c	N	N	O	O
+m1	eng	N	N	O	O
+,	x	N	N	O	O
+m2	eng	N	N	O	O
+互质	n	N	N	O	O
+！	x	N	N	O	O
+经过	p	N	N	O	O
+因子	n	Y	N	O	O
+分解	v	Y	N	O	O
+，	x	N	N	O	O
+那种	r	N	N	O	O
+只	d	N	N	O	O
+要求	v	N	N	O	O
+到	v	N	N	O	O
+f	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+^	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+利用	n	N	N	O	O
+积性	n	Y	N	O	O
+把	p	N	N	O	O
+所有	b	N	N	O	O
+结果	n	N	N	O	O
+
+相乘	v	Y	N	O	O
+得到	v	N	N	O	O
+最后	f	N	N	O	O
+答案	n	N	N	O	O
+。	x	N	N	O	O
+
+还要	c	N	N	O	O
+一个	m	N	N	O	O
+结论	n	N	N	O	O
+：	x	N	N	O	O
+
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+*	x	N	N	O	O
+
+phi	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+/	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+其中	r	N	N	O	O
+p	eng	N	N	O	O
+是	v	N	N	O	O
+n	eng	N	N	O	O
+的	uj	N	N	O	O
+因子	n	Y	N	O	O
+，	x	N	N	O	O
+phi	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+/	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+是从	v	N	N	O	O
+1	m	N	N	O	O
+到	v	N	N	O	O
+n	eng	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个数	n	Y	N	O	O
+和	c	N	N	O	O
+n	eng	N	N	O	O
+的	uj	N	N	O	O
+gcd	eng	Y	N	O	O
+是	v	N	N	O	O
+p	eng	N	N	O	O
+,	x	N	N	O	O
+
+这个	r	N	N	O	O
+结论	n	N	N	O	O
+比较	d	N	N	O	O
+好	a	N	N	O	O
+证明	n	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+推出	v	N	N	O	O
+来	v	N	N	O	O
+一个	m	N	N	O	O
+公式	n	Y	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+^	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+^	x	N	N	O	O
+r	x	N	N	O	O
+-	x	N	N	O	O
+p	x	N	N	O	O
+^	x	N	N	O	O
+(	x	N	N	O	O
+r	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+p	eng	N	N	O	O
+^	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+用积性	n	N	N	O	O
+函数	n	Y	N	O	O
+的	uj	N	N	O	O
+性质	n	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+解决	v	N	N	O	O
+了	ul	N	N	O	O
+
+一些	m	N	N	O	O
+要	v	N	N	O	O
+注意	v	N	N	O	O
+的	uj	N	N	O	O
+细节	n	N	N	O	O
+看	v	N	N	O	O
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+argc	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+argv	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+%	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+注意	v	N	N	O	O
+i	eng	N	N	O	O
+要	v	N	N	O	O
+定义	n	N	N	O	O
+成	n	N	N	O	O
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+，	x	N	N	O	O
+要	v	N	N	O	O
+不	d	N	N	O	O
+相乘	v	Y	N	O	O
+越界	n	N	N	O	O
+可能	v	N	N	O	O
+出现	v	N	N	O	O
+负数	n	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+这里	r	N	N	O	O
+超时	b	N	N	O	O
+一次	m	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+r	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+do	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+n	x	N	N	O	O
+/	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+*	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+r	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+while	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+%	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+*	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+r	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+x	x	N	N	O	O
+/	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+直接	ad	N	N	O	O
+利用	n	N	N	O	O
+结论	n	N	N	O	O
+，	x	N	N	O	O
+真	d	N	N	O	O
+方便	a	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+s	x	N	N	O	O
+*	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+PAUSE	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+EXIT	eng	N	N	O	O
+_	x	N	N	O	O
+SUCCESS	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

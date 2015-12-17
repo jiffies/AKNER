@@ -1,0 +1,1155 @@
+pku1094	eng	N	Y	O	B-OJ
+
+Sorting	eng	N	N	O	O
+
+It	eng	N	N	O	O
+
+All	eng	N	N	O	O
+
+Out	eng	N	N	O	O
+(	x	N	N	O	O
+传递	v	Y	N	O	B-KNOWLEDGE
+闭	v	N	N	O	I-KNOWLEDGE
+包	v	N	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+拓扑	v	Y	N	O	B-KNOWLEDGE
+排序	n	Y	N	O	I-KNOWLEDGE
+)	x	N	N	O	O
+_	x	N	N	O	O
+Archer	eng	N	N	O	O
+&	x	N	N	O	O
+me	eng	Y	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+pku	eng	N	Y	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+JudgeOnline	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1094	m	N	N	O	O
+
+这个	r	N	N	O	O
+题目	n	Y	N	O	O
+意思	n	N	N	O	O
+是	v	N	N	O	O
+说	v	N	N	O	O
+给出	v	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+大写	n	N	N	O	O
+字幕	n	N	N	O	O
+，	x	N	N	O	O
+和	c	N	N	O	O
+m	eng	N	N	O	O
+个	m	N	N	O	O
+<	x	N	N	O	O
+的	uj	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+根据	p	N	N	O	O
+这	r	N	N	O	O
+m	eng	N	N	O	O
+句	q	N	N	O	O
+话	n	N	N	O	O
+可以	c	N	N	O	O
+得到	v	N	N	O	O
+三种	m	N	N	O	O
+结果	n	N	N	O	O
+：	x	N	N	O	O
+
+Sorted	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+determined	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+xxx	eng	N	N	O	O
+
+relations	eng	N	N	O	O
+:	x	N	N	O	O
+
+yyy	eng	N	N	O	O
+...	m	N	N	O	O
+y	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sorted	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+cannot	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+determined	eng	N	N	O	O
+.	m	N	N	O	O
+
+Inconsistency	eng	N	N	O	O
+
+found	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+xxx	eng	N	N	O	O
+
+relations	eng	N	N	O	O
+.	m	N	N	O	O
+
+第一个	m	N	N	O	O
+结果	n	N	N	O	O
+是	v	N	N	O	O
+说	v	N	N	O	O
+根据	p	N	N	O	O
+m	eng	N	N	O	O
+中前	t	N	N	O	O
+k	eng	N	N	O	O
+个	m	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+确定	v	N	N	O	O
+下	v	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+字母	n	Y	N	O	O
+的	uj	N	N	O	O
+由小到大	l	N	N	O	O
+的	uj	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+输出	v	Y	N	O	O
+。	x	N	N	O	O
+
+第二个	m	N	N	O	O
+是	v	N	N	O	O
+说	v	N	N	O	O
+不能	v	N	N	O	O
+确定	v	N	N	O	O
+这	r	N	N	O	O
+n	eng	N	N	O	O
+个字符	n	N	N	O	O
+的	uj	N	N	O	O
+关系	n	N	N	O	O
+。	x	N	N	O	O
+
+第三个	m	N	N	O	O
+是	v	N	N	O	O
+说	v	N	N	O	O
+产生矛盾	l	N	N	O	O
+。	x	N	N	O	O
+
+用	p	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+j	eng	N	N	O	O
+的	uj	N	N	O	O
+关系	n	N	N	O	O
+（	x	N	N	O	O
+即	c	N	N	O	O
+i	eng	N	N	O	O
+,	x	N	N	O	O
+j	eng	N	N	O	O
+有边	d	N	N	O	O
+连	a	N	N	O	O
+）	x	N	N	O	O
+。	x	N	N	O	O
+
+求	v	N	N	O	O
+传递	v	Y	N	O	B-KNOWLEDGE
+闭	v	N	N	O	I-KNOWLEDGE
+包	v	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+当	t	N	N	O	O
+增加	v	N	N	O	O
+一条	m	N	N	O	O
+关系	n	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+改变	v	N	N	O	O
+图	n	N	N	O	O
+的	uj	N	N	O	O
+连通性	n	N	N	O	O
+。	x	N	N	O	O
+
+首先	d	N	N	O	O
+，	x	N	N	O	O
+我们	r	N	N	O	O
+要	v	N	N	O	O
+判定	v	Y	N	O	O
+是否	v	N	N	O	O
+产生矛盾	l	N	N	O	O
+最	d	N	N	O	O
+简单	a	N	N	O	O
+，	x	N	N	O	O
+就是	d	N	N	O	O
+当	t	N	N	O	O
+存在	v	N	N	O	O
+环是	n	N	N	O	O
+即	v	N	N	O	O
+存在	v	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+可	v	N	N	O	O
+判定	v	Y	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+当	t	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+顶点	n	Y	N	O	O
+的度	d	N	N	O	O
+都	d	N	N	O	O
+为	p	N	N	O	O
+n	eng	N	N	O	O
+-	x	N	N	O	O
+1	m	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+判定	v	Y	N	O	O
+可以	c	N	N	O	O
+确定	v	N	N	O	O
+这个	r	N	N	O	O
+排列	v	Y	N	O	O
+。	x	N	N	O	O
+
+其他	r	N	N	O	O
+情况	n	N	N	O	O
+就是	d	N	N	O	O
+Sorted	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+cannot	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+determined	eng	N	N	O	O
+.	m	N	N	O	O
+
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+了	ul	N	N	O	O
+！	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+reg	eng	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+out	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+fun	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+,	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+reg	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+toposort	eng	N	N	O	O
+(	x	N	N	O	O
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+top	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+u	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+top	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+top	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+u	x	N	N	O	O
+=	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+top	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+s	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+u	eng	N	N	O	O
++	x	N	N	O	O
+64	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+stack	eng	N	N	O	O
+[	x	N	N	O	O
+top	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+flag1	eng	N	N	O	O
+,	x	N	N	O	O
+flag2	eng	N	N	O	O
+,	x	N	N	O	O
+flag	eng	N	N	O	O
+;	x	N	N	O	O
+
+fun	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag1	eng	N	N	O	O
+=	x	N	N	O	O
+flag2	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+m	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ch	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+reg	eng	N	N	O	O
+[	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+reg	eng	N	N	O	O
+[	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+flag1	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+in	eng	Y	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+in	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+out	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+out	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag1	eng	N	N	O	O
+&&	x	N	N	O	O
+!	x	N	N	O	O
+flag2	eng	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+x	eng	N	N	O	O
+&&	x	N	N	O	O
+k	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+x	eng	N	N	O	O
+&&	x	N	N	O	O
+k	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+x	eng	N	N	O	O
+&&	x	N	N	O	O
+k	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+out	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag1	eng	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+flag1	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+in	eng	Y	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+out	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+&&	x	N	N	O	O
+!	x	N	N	O	O
+flag2	eng	N	N	O	O
+&&	x	N	N	O	O
+j	eng	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+flag2	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+toposort	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag2	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Sorted	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+determined	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+relations	eng	N	N	O	O
+:	x	N	N	O	O
+
+%	x	N	N	O	O
+s	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+flag2	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag1	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Inconsistency	eng	N	N	O	O
+
+found	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+relations	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+flag1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Sorted	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+cannot	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+determined	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+pku3660	eng	N	Y	O	B-OJ
+
+求	v	N	N	O	O
+传递	v	Y	N	O	B-KNOWLEDGE
+闭	v	N	N	O	I-KNOWLEDGE
+包	v	N	N	O	I-KNOWLEDGE
+

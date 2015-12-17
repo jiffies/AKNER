@@ -1,0 +1,156 @@
+POJ1176 (规律循环) - czhou0的专栏 - 博客频道 - CSDN.NET
+
+问题：
+ 
+　　有N个开着的灯，和控制这个N个灯的四个开关。四个开关作用不同。第一个开关：flip所有的灯。第二个开关：flip奇数编号的灯。第三个开关：flip偶数编号的灯。第四个开关：flip编号为3 * K + 1 的灯，其中K = 0,1,2....。已知在C次操作后其中几个灯的状态，给出所有灯在这C次操作后所有可能的状态。
+ 
+方法：
+ 
+　　通过观察可以发现，这些灯一共可以分成4种，同种灯无论在何种操作下，状态都是相同的。即：（1）编号为1,7,13,19....的灯。（2）编号为4,10,16,22....的灯。（3）编号为奇数，但是不属于（1）的灯。 （4）编号为偶数，但是不属于（2）的灯。
+ 
+　　　　对于第（1）种灯，唯1,2,4号开关能够控制，且这些开关的作用是等效的。
+ 
+　　　　对于第（2）种灯，唯有1,3号开关能够控制，且这些开关的作用是等效的。
+ 
+　　　　对于第（3）种灯，唯有1,2号开关能够控制，且这些开关的作用是等效的。
+ 
+　　　　对于第（4）种灯，唯有第1,3,4号开关能够控制，且这些开关的作用是等效的。
+ 
+　　同一个开关无论按动多少次，其效果只有两种。即所有奇数次的按动的效果与按动一次相同；所有偶数次的按动与不按动的效果也相同。
+ 
+　　现在只需将这四个开关的按动次数按奇偶枚举（共有2 * 2 * 2 * 2 = 16种情况），然后与已知的C次操作后的灯的状态对比即可，若符合，则为潜在的正确答案。这里说是“潜在”的答案，是因为还需要考虑该开关组合能否在C次操作内完成。不可能的情况共有2种：（1）按动奇数次的开关的个数大于C。（2）按动奇数次的开关的个数与C的奇偶性不同。排除这两种情况之后，便得到了正确答案。
+ 
+附代码：
+ 
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+using namespace std;
+bool isEven(int x){
+    return (x % 2 == 0);
+}
+bool is3K1(int x){
+    return ((x - 1) % 3 == 0);
+}
+int main(){
+    int N, C;
+    int isOn[4] = {0};
+    cin >> N >> C;
+    vector<string> result;int temp;
+    while(1){
+        cin >> temp;
+        if(temp == -1)
+            break;
+        if(is3K1(temp) && isEven(temp)){
+            isOn[3] = 1;    
+        }else if(is3K1(temp) && ! isEven(temp)){
+            isOn[0] = 1;
+        }else if(isEven(temp)){
+            isOn[1] = 1;    
+        }else{
+            isOn[2] = 1;    
+        }
+    }
+    while(1){
+        cin >> temp;
+        if(temp == -1)
+            break;
+        if(is3K1(temp) && isEven(temp)){
+            isOn[3] = -1;    
+        }else if(is3K1(temp) && ! isEven(temp)){
+            isOn[0] = -1;
+        }else if(isEven(temp)){
+            isOn[1] = -1;    
+        }else{
+            isOn[2] = -1;    
+        }
+    }
+    for(int i = 0; i < 16; i++){
+        string temp(N, '1');
+        bool on[4] = {0};
+        if((i & 1) == 0)
+            on[0] = 0;
+        else
+            on[0] = 1;
+        if((i & 2) == 0)
+            on[1] = 0;
+        else
+            on[1] = 1;
+        if((i & 4) == 0)
+            on[2] = 0;
+        else
+            on[2] = 1;
+        if((i & 8) == 0)
+            on[3] = 0;
+        else
+            on[3] = 1;
+        if((on[0] + on[1] + on[3]) % 2 == 0){
+            if(isOn[0] == -1)
+                continue;
+        }else{
+            if(isOn[0] == 1)
+                continue;
+        }
+        if((on[0] + on[2]) % 2 == 0){
+            if(isOn[1] == -1)
+                continue;
+        }else{
+            if(isOn[1] == 1)
+                continue;
+        }
+        if((on[0] + on[1] ) % 2 == 0){
+            if(isOn[2] == -1)
+                continue;
+        }else{
+            if(isOn[2] == 1)
+                continue;
+        }
+        if((on[0] + on[2] + on[3]) % 2 == 0){
+            if(isOn[3] == -1)
+                continue;
+        }else{
+            if(isOn[3] == 1)
+                continue;
+        }
+        if((on[0] + on[1] + on[2] + on[3]) % 2 != C % 2)
+            continue;
+        if((on[0] + on[1] + on[2] + on[3]) > C)
+            continue;
+        if(on[0] == 1){
+            for(int i = 0; i < temp.size(); i++)
+                if(temp[i] == '0')
+                    temp[i] = '1';
+                else
+                    temp[i] = '0';
+        }
+        if(on[1] == 1){
+            for(int i = 0; i < temp.size(); i += 2){
+                if(temp[i] == '0')
+                    temp[i] = '1';
+                else
+                    temp[i] = '0';
+            }
+        }
+        if(on[2] == 1){
+            for(int i = 1; i < temp.size(); i += 2){
+                if(temp[i] == '0')
+                    temp[i] = '1';
+                else
+                    temp[i] = '0';
+            }
+        }
+        if(on[3] == 1){
+            for(int i = 0; i < temp.size(); i += 3)
+                if(temp[i] == '0')
+                    temp[i] = '1';
+                else
+                    temp[i] = '0';
+        }
+        result.push_back(temp);
+    }
+    sort(result.begin(), result.end());
+    for(int i = 0; i < result.size(); i++)
+        cout << result[i] << endl;;
+}
+

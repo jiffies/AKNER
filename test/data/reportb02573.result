@@ -1,0 +1,995 @@
+hdu	eng	N	Y	O	B-OJ
+
+3829	m	N	N	O	I-OJ
+
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+最大	a	Y	N	O	B-KNOWLEDGE
+独立	v	N	N	O	I-KNOWLEDGE
+集	q	N	N	O	I-KNOWLEDGE
+
+-	x	N	N	O	O
+
+跟	p	N	N	O	O
+acm	eng	N	N	O	O
+
+say	eng	N	N	O	O
+
+goodbye	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+Cat	eng	N	N	O	O
+
+VS	eng	N	N	O	O
+
+Dog	eng	N	N	O	O
+.	m	N	N	O	O
+cpp	eng	N	N	O	O
+
+:	x	N	N	O	O
+
+定义	n	N	N	O	O
+控制台	v	N	N	O	O
+应用程序	n	N	N	O	O
+的	uj	N	N	O	O
+入口	ns	N	N	O	O
+点	m	N	N	O	O
+。	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+题目	n	Y	N	O	O
+描述	v	N	N	O	O
+：	x	N	N	O	O
+动物园	n	N	N	O	O
+有	v	N	N	O	O
+N	eng	N	N	O	O
+只	m	N	N	O	O
+猫	n	N	N	O	O
+，	x	N	N	O	O
+M	eng	N	N	O	O
+只	m	N	N	O	O
+狗	n	N	N	O	O
+，	x	N	N	O	O
+P	eng	N	N	O	O
+个	m	N	N	O	O
+小孩	n	N	N	O	O
+。	x	N	N	O	O
+
+每个	r	N	N	O	O
+小孩	n	N	N	O	O
+都	d	N	N	O	O
+有	v	N	N	O	O
+自己	r	N	N	O	O
+喜欢	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+和	c	N	N	O	O
+讨厌	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+，	x	N	N	O	O
+如果	c	N	N	O	O
+他	r	N	N	O	O
+喜欢	v	N	N	O	O
+狗	n	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+就	d	N	N	O	O
+讨厌	v	N	N	O	O
+猫	n	N	N	O	O
+，	x	N	N	O	O
+
+如果	c	N	N	O	O
+他	r	N	N	O	O
+讨厌	v	N	N	O	O
+猫	n	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+他	r	N	N	O	O
+就	d	N	N	O	O
+喜欢	v	N	N	O	O
+狗	n	N	N	O	O
+。	x	N	N	O	O
+
+某个	r	N	N	O	O
+小孩	n	N	N	O	O
+能	v	N	N	O	O
+开心	v	N	N	O	O
+，	x	N	N	O	O
+当且	d	N	N	O	O
+仅	d	N	N	O	O
+当	p	N	N	O	O
+他	r	N	N	O	O
+喜欢	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+留在	v	N	N	O	O
+动物园	n	N	N	O	O
+和	c	N	N	O	O
+讨厌	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+不	d	N	N	O	O
+在	p	N	N	O	O
+动物园	n	N	N	O	O
+里面	f	N	N	O	O
+。	x	N	N	O	O
+
+现	tg	N	N	O	O
+让	v	N	N	O	O
+管理员	n	N	N	O	O
+通过	p	N	N	O	O
+带走	v	N	N	O	O
+某些	r	N	N	O	O
+动物	n	N	N	O	O
+，	x	N	N	O	O
+问	v	N	N	O	O
+最多	d	N	N	O	O
+能	v	N	N	O	O
+使	v	N	N	O	O
+多少	m	N	N	O	O
+个	q	N	N	O	O
+孩子	n	N	N	O	O
+开心	v	N	N	O	O
+。	x	N	N	O	O
+
+解题	n	N	N	O	O
+思路	n	N	N	O	O
+：	x	N	N	O	O
+题目	n	Y	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+关键点	n	N	N	O	O
+，	x	N	N	O	O
+孩子	n	N	N	O	O
+喜欢	v	N	N	O	O
+猫	n	N	N	O	O
+，	x	N	N	O	O
+必然	d	N	N	O	O
+不	d	N	N	O	O
+喜欢	v	N	N	O	O
+狗	n	N	N	O	O
+，	x	N	N	O	O
+反之	c	N	N	O	O
+。	x	N	N	O	O
+
+即	v	N	N	O	O
+猫	n	N	N	O	O
+和	c	N	N	O	O
+猫	n	N	N	O	O
+之间	f	N	N	O	O
+，	x	N	N	O	O
+狗	n	N	N	O	O
+和	c	N	N	O	O
+狗	n	N	N	O	O
+之间	f	N	N	O	O
+一定	d	N	N	O	O
+不	d	N	N	O	O
+存在	v	N	N	O	O
+矛盾	an	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+符合	v	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+概念	n	N	N	O	O
+。	x	N	N	O	O
+
+如何	r	N	N	O	O
+建立	v	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+：	x	N	N	O	O
+
+若甲	nr	N	N	O	O
+小孩	n	N	N	O	O
+喜欢	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+与	p	N	N	O	O
+乙	n	N	N	O	O
+小孩	n	N	N	O	O
+讨厌	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+一样	r	N	N	O	O
+，	x	N	N	O	O
+或者	c	N	N	O	O
+甲	n	N	N	O	O
+小孩	n	N	N	O	O
+讨厌	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+与	p	N	N	O	O
+乙	n	N	N	O	O
+小孩	n	N	N	O	O
+喜欢	v	N	N	O	O
+的	uj	N	N	O	O
+动物	n	N	N	O	O
+一样	r	N	N	O	O
+，	x	N	N	O	O
+那	r	N	N	O	O
+甲乙	n	N	N	O	O
+之间	f	N	N	O	O
+就	d	N	N	O	O
+存在	v	N	N	O	O
+着	uz	N	N	O	O
+排斥	v	N	N	O	O
+关系	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+他们	r	N	N	O	O
+之间	f	N	N	O	O
+连接	v	N	N	O	O
+一条	m	N	N	O	O
+边	d	N	N	O	O
+。	x	N	N	O	O
+
+建立	v	N	N	O	O
+完	v	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+之后	f	N	N	O	O
+，	x	N	N	O	O
+相当于	v	N	N	O	O
+求	v	N	N	O	O
+二分	m	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+独立	v	N	N	O	I-KNOWLEDGE
+集	q	N	N	O	I-KNOWLEDGE
+
+=	x	N	N	O	O
+
+顶点	n	Y	N	O	O
+数	n	N	N	O	O
+
+-	x	N	N	O	O
+
+最大	a	Y	N	O	O
+匹配	v	Y	N	O	O
+数	n	N	N	O	O
+。	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdafx	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAXN	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+508	m	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Child	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+like	eng	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+dis	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+Child	eng	N	N	O	O
+
+cat	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+dog	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+link	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+used	eng	N	N	O	O
+[	x	N	N	O	O
+MAXN	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+used	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+used	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+link	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxMatch	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+used	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+m	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+link	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+a	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+将	d	N	N	O	O
+喜欢	v	N	N	O	O
+猫	n	N	N	O	O
+的	uj	N	N	O	O
+孩子	n	N	N	O	O
+划为	v	N	N	O	O
+A	eng	N	N	O	O
+子集	n	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+C	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cat	eng	N	N	O	O
+[	x	N	N	O	O
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+like	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+cat	eng	N	N	O	O
+[	x	N	N	O	O
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+dis	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+将	d	N	N	O	O
+喜欢	v	N	N	O	O
+狗	n	N	N	O	O
+的	uj	N	N	O	O
+孩子	n	N	N	O	O
+划为	v	N	N	O	O
+B	eng	N	N	O	O
+子集	n	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+D	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dog	eng	N	N	O	O
+[	x	N	N	O	O
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+like	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+dog	eng	N	N	O	O
+[	x	N	N	O	O
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+dis	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+若	c	N	N	O	O
+存在	v	N	N	O	O
+排斥	v	N	N	O	O
+关系	n	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+cat	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+like	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+dog	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+dis	eng	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+cat	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+dis	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+dog	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+like	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+maxMatch	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+独立	v	N	N	O	I-KNOWLEDGE
+集	q	N	N	O	I-KNOWLEDGE
+
+=	x	N	N	O	O
+
+顶点	n	Y	N	O	O
+数	n	N	N	O	O
+
+-	x	N	N	O	O
+
+最大	a	Y	N	O	O
+匹配	v	Y	N	O	O
+数	n	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+cat	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
++	x	N	N	O	O
+dog	eng	N	N	O	O
+_	x	N	N	O	O
+num	eng	N	N	O	O
+-	x	N	N	O	O
+cnt	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

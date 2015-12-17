@@ -1,0 +1,1005 @@
+POJ3072	eng	N	Y	O	B-OJ
+—	x	N	N	O	O
+Robot	eng	N	N	O	O
+
+Dijkstra	eng	N	N	O	B-KNOWLEDGE
+实现	v	N	N	O	O
+
+-	x	N	N	O	O
+
+飞翔	nz	N	N	O	O
+的	uj	N	N	O	O
+小鸟	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+简单	a	N	N	O	O
+的	uj	N	N	O	O
+Dijkstra	eng	N	N	O	B-KNOWLEDGE
+题目	n	Y	N	O	O
+，	x	N	N	O	O
+稍微	d	N	N	O	O
+转个弯	l	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+要	v	N	N	O	O
+计算	v	Y	N	O	O
+由	p	N	N	O	O
+一个点	m	N	N	O	O
+转到	v	N	N	O	O
+另	r	N	N	O	O
+一个点	m	N	N	O	O
+时	ng	N	N	O	O
+所	u	N	N	O	O
+需	v	N	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+可以	c	N	N	O	O
+设置	vn	N	N	O	O
+一个	m	N	N	O	O
+结构	n	Y	N	O	O
+体	n	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+个	m	N	N	O	O
+成员	n	N	N	O	O
+变量	vn	N	N	O	O
+记载	v	N	N	O	O
+该	r	N	N	O	O
+点到	v	Y	N	O	O
+起点	n	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+，	x	N	N	O	O
+距离	n	Y	N	O	O
+是	v	N	N	O	O
+起点	n	N	N	O	O
+到	v	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+的	uj	N	N	O	O
+直线	n	Y	N	O	O
+距离	n	Y	N	O	O
+加上	v	N	N	O	O
+上	f	N	N	O	O
+一个点	m	N	N	O	O
+转向	v	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+的	uj	N	N	O	O
+角度	n	N	N	O	O
+（	x	N	N	O	O
+一个	m	N	N	O	O
+角度	n	N	N	O	O
+需	v	N	N	O	O
+时	ng	N	N	O	O
+一秒	m	N	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+再	d	N	N	O	O
+用	p	N	N	O	O
+Dijkstra	eng	N	N	O	B-KNOWLEDGE
+求解	v	N	N	O	O
+就	d	N	N	O	O
+很	d	N	N	O	O
+简单	a	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+22	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+double	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+=	x	N	N	O	O
+atan	eng	N	N	O	O
+(	x	N	N	O	O
+1.0	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+double	eng	N	N	O	O
+
+inf	eng	N	N	O	O
+=	x	N	N	O	O
+100000000	m	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+与	p	N	N	O	O
+起点	n	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+
+double	eng	N	N	O	O
+
+degree	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+与	p	N	N	O	O
+x	eng	N	N	O	O
+轴	n	N	N	O	O
+的	uj	N	N	O	O
+夹角	n	N	N	O	O
+
+}	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+p	x	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+q	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+距离	n	Y	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+q	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+q	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+1.0	m	N	N	O	O
++	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+-	x	N	N	O	O
+q	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+-	x	N	N	O	O
+q	x	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+1.0	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+getDegree	eng	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+计算	v	Y	N	O	O
+两点	m	N	N	O	O
+连线	n	N	N	O	O
+与	p	N	N	O	O
+x	eng	N	N	O	O
+轴	n	N	N	O	O
+的	uj	N	N	O	O
+夹角	n	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+degree	eng	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+next	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+cur	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+next	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+-	x	N	N	O	O
+cur	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+degree	eng	N	N	O	O
+=	x	N	N	O	O
+atan2	eng	N	N	O	O
+(	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+夹角	n	N	N	O	O
+的	uj	N	N	O	O
+范围	n	N	N	O	O
+是	v	N	N	O	O
+-	x	N	N	O	O
+pi	eng	N	N	O	O
+到	v	N	N	O	O
+pi	eng	N	N	O	O
+，	x	N	N	O	O
+不	d	N	N	O	O
+包括	v	N	N	O	O
+-	x	N	N	O	O
+pi	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+degree	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+calDegree	eng	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+next	eng	N	N	O	O
+,	x	N	N	O	O
+double	eng	N	N	O	O
+
+°	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+由	c	N	N	O	O
+cur	eng	N	N	O	O
+点	m	N	N	O	O
+转到	v	N	N	O	O
+next	eng	N	N	O	O
+点	m	N	N	O	O
+转过	v	N	N	O	O
+的	uj	N	N	O	O
+角度	n	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+degree	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+degree	eng	N	N	O	O
+=	x	N	N	O	O
+getDegree	eng	N	N	O	O
+(	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+deg	eng	N	N	O	O
+=	x	N	N	O	O
+degree	eng	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+fabs	eng	N	N	O	O
+(	x	N	N	O	O
+degree	eng	N	N	O	O
+-	x	N	N	O	O
+cur	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+degree	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+>	x	N	N	O	O
+pi	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+转角	n	N	N	O	O
+的	uj	N	N	O	O
+大小	b	N	N	O	O
+不	d	N	N	O	O
+超过	v	N	N	O	O
+Pi	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+pi	eng	N	N	O	O
+-	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+length	eng	N	N	O	O
+,	x	N	N	O	O
+tmplen	eng	N	N	O	O
+,	x	N	N	O	O
+tmpdeg	eng	N	N	O	O
+;	x	N	N	O	O
+
+tmplen	eng	N	N	O	O
+=	x	N	N	O	O
+dist	eng	N	N	O	O
+(	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tmplen	eng	N	N	O	O
+>	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+length	eng	N	N	O	O
+=	x	N	N	O	O
+calDegree	eng	N	N	O	O
+(	x	N	N	O	O
+cur	eng	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+,	x	N	N	O	O
+tmpdeg	eng	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+180	m	N	N	O	O
+/	x	N	N	O	O
+pi	eng	N	N	O	O
++	x	N	N	O	O
+tmplen	eng	N	N	O	O
++	x	N	N	O	O
+cur	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+length	eng	N	N	O	O
+<	x	N	N	O	O
+next	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+len	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+next	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+len	eng	N	N	O	O
+=	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+next	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+degree	eng	N	N	O	O
+=	x	N	N	O	O
+tmpdeg	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+Dijkstra	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+u	x	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+u	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+len	eng	N	N	O	O
+<	x	N	N	O	O
+min	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+u	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+u	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+impossible	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+len	eng	N	N	O	O
++	x	N	N	O	O
+0.5	m	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+r	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+r	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+len	eng	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+degree	eng	N	N	O	O
+=	x	N	N	O	O
+getDegree	eng	N	N	O	O
+(	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+point	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+point	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+len	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+Dijkstra	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

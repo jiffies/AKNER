@@ -1,0 +1,62 @@
+poj 1775 Sum of Factorials - martinblack954的日志 - 网易博客
+
+题目链接：
+http://poj.org/problem?id=1775
+
+题意：给定一个正整数n，问能否找出几个不同的整数xi，xi>=0，使得这些xi的阶乘之和等于这个正整数。
+
+思路：暴搜。n范围为0~1000000，而10! =3628800，所以xi的取值只是0~9。而由于各个xi不会重复，所以暴搜枚举组合最多也只是2^10=1024种方式。实际上我的做法是反过来枚举。将n拿去尝试减这些阶乘，若最后能够变成0，就说明能够找到这些xi。
+
+PS：在这里要记住，0! = 1，所以对于n=4，有解为4=0!+1!+2!~~
+
+#include "stdio.h"
+
+int a[11]={1,1,2,6,24,120,720,5040,40320,362880,3628800};
+
+int find(int s,int t)
+
+{
+
+    int i;
+
+    if(s==a[t]||s==0)
+
+        return 1;
+
+    for(i=t;a[i]<=s;i++)
+
+    {
+
+        if(find(s-a[i],i+1))
+
+            return 1;
+
+    }
+
+    return 0;
+
+}
+
+void main()
+
+{
+
+    int n,t;
+
+    while(scanf("%d",&n)>0&&n>=0)
+
+    {
+
+        t=0;
+
+        if(n>0&&find(n,0))
+
+            printf("YES\n");
+
+        else
+
+            printf("NO\n");
+
+    }
+
+}

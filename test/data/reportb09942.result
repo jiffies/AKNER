@@ -1,0 +1,720 @@
+poj	eng	N	Y	O	B-OJ
+
+2440	m	N	N	O	I-OJ
+_	x	N	N	O	O
+志	n	N	N	O	O
+当存	v	N	N	O	O
+高远	d	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+Description	eng	N	N	O	O
+
+A	x	N	N	O	O
+
+kind	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+virus	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+attacked	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+planet	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+many	eng	N	N	O	O
+
+lives	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+infected	eng	N	N	O	O
+.	m	N	N	O	O
+
+After	eng	N	N	O	O
+
+weeks	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+study	eng	N	N	O	O
+,	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+CHO	eng	N	N	O	O
+
+(	x	N	N	O	O
+Creature	eng	N	N	O	O
+
+Healthy	eng	N	N	O	O
+
+Organization	eng	N	N	O	O
+)	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+X	x	N	N	O	O
+
+planet	eng	N	N	O	O
+
+finally	eng	N	N	O	O
+
+finds	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+kind	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+virus	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+two	eng	N	N	O	O
+
+kind	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+very	eng	N	N	O	O
+
+simple	eng	N	N	O	O
+
+DNA	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+represented	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+101	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+111.	m	N	N	O	O
+
+Unfortunately	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+lives	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+planet	eng	N	N	O	O
+
+also	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+DNA	eng	N	N	O	O
+
+formed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+0	m	N	N	O	O
+s	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+1	m	N	N	O	O
+s	eng	N	N	O	O
+.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+creature	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+DNA	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+virus	eng	N	N	O	O
+'	x	N	N	O	O
+
+DNA	eng	N	N	O	O
+,	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+affected	eng	N	N	O	O
+;	x	N	N	O	O
+
+otherwise	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+not	eng	N	N	O	O
+.	m	N	N	O	O
+
+Given	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+integer	eng	N	N	O	O
+
+L	x	N	N	O	O
+,	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+clear	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+2	x	N	N	O	O
+
+^	x	N	N	O	O
+
+L	x	N	N	O	O
+
+different	eng	N	N	O	O
+
+lives	eng	N	N	O	O
+,	x	N	N	O	O
+
+of	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+DNA	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+L	eng	N	N	O	O
+.	m	N	N	O	O
+
+Your	eng	N	N	O	O
+
+job	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+find	eng	N	N	O	O
+
+out	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+^	x	N	N	O	O
+
+L	x	N	N	O	O
+
+lives	eng	N	N	O	O
+
+how	eng	N	N	O	O
+
+many	eng	N	N	O	O
+
+won	eng	N	N	O	O
+'	x	N	N	O	O
+t	x	N	N	O	O
+
+be	eng	Y	N	O	O
+
+affected	eng	N	N	O	O
+?	x	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+several	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+positive	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+L	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+L	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+10	m	N	N	O	O
+
+^	x	N	N	O	O
+
+8	x	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+indicated	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+end	eng	N	N	O	O
+-	x	N	N	O	O
+of	eng	N	N	O	O
+-	x	N	N	O	O
+file	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+output	eng	N	N	O	O
+
+K	x	N	N	O	O
+
+mod	eng	N	N	O	O
+
+2005	m	N	N	O	O
+,	x	N	N	O	O
+
+here	eng	N	N	O	O
+
+K	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+lives	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+affected	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+9	x	N	N	O	O
+
+解题	n	N	N	O	O
+思路	n	N	N	O	O
+
+可以	c	N	N	O	O
+推出	v	N	N	O	O
+递推	v	Y	N	O	O
+公式	n	Y	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+=	x	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+f	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+f	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+。	x	N	N	O	O
+
+然后	c	N	N	O	O
+输出	v	Y	N	O	O
+1000	m	N	N	O	O
+结果	n	N	N	O	O
+查看	v	N	N	O	O
+结果	n	N	N	O	O
+的	uj	N	N	O	O
+循环	vn	N	N	O	O
+规律	n	Y	N	O	O
+，	x	N	N	O	O
+得到	v	N	N	O	O
+200	m	N	N	O	O
+。	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+205	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+Cal	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+9	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+15	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+200	m	N	N	O	O
+;	x	N	N	O	O
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+%	x	N	N	O	O
+=	x	N	N	O	O
+2005	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+getNum	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+n	x	N	N	O	O
+%	x	N	N	O	O
+=	x	N	N	O	O
+200	m	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+car	eng	N	N	O	O
+.	m	N	N	O	O
+in	eng	Y	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+r	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+stdin	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+car	eng	N	N	O	O
+.	m	N	N	O	O
+out	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+w	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+stdout	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+Cal	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+getNum	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

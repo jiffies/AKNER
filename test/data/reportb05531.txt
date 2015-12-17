@@ -1,0 +1,169 @@
+POJ 1632 Vase collection - bobten2008的专栏 - 博客频道 - CSDN.NET
+
+ 
+
+ Vase collection
+ 
+ 
+  
+   
+    
+    Time Limit: 1000MS 
+      
+    Memory Limit: 10000K 
+    
+    
+    Total Submissions: 1536 
+      
+    Accepted: 552 
+    
+   
+  
+ 
+Description
+ 
+
+ Mr Cheng is a collector of old Chinese porcelain, more specifically late 15th century Feng dynasty vases. The art of vase-making at this time followed very strict artistic rules. There was a limited number of accepted styles, each defined by its shape and decoration. More specifically, there were 36 vase shapes and 36 different patterns of decoration ? in all 1296 different styles. 
+ 
+For a collector, the obvious goal is to own a sample of each of the 1296 styles. Mr Cheng however,like so many other collectors, could never afford a complete collection, and instead concentrates on some shapes and some decorations. As symmetry between shape and decoration was one of the main aestheathical paradigms of the Feng dynasty, Mr Cheng wants to have a full collection of all combinations of k shapes and k decorations, for as large a k as possible. However, he has discovered that determining this k for a given collection is not always trivial. This means that his collection might actually be better than he thinks. Can you help him?
+ 
+Input
+ 
+
+ On the first line of the input, there is a single positive integer n, telling the number of test scenarios to follow. Each test scenario begins with a line containing a single positive integer m <= 100, the number of vases in the collection. Then follow m lines, one per vase, each with a pair of numbers, si and di, separated by a single space, where si ( 0 < si <= 36 ) indicates the shape of Mr Cheng's i:th vase, and di ( 0 < di <= 36 ) indicates its decoration.
+ 
+Output
+ 
+
+ For each test scenario, output one line containing the maximum k, such that there are k shapes and k decorations for which Mr Cheng's collection contains all k*k combined styles.
+ 
+Sample Input
+ 
+2
+5
+11 13
+23 5
+17 36
+11 5
+23 13
+2
+23 15
+15 23 
+Sample Output
+ 
+2
+1 
+Source
+ 
+
+ Northwestern Europe 2003
+ 
+
+/*
+ 搜索的好题
+ 数据结构与状态的表示如下：
+ 1)对于输入i,j置graph[j][i] = true, 称作j和i存在映射关系
+ 2)为了节省搜索时间将收入中出现过的数据，分别顺序存入setsf, setst,并统计数目setsfn,setstn
+ 3)状态利用bit位来表示，每一个shape占一位，用来表示当前的shape是否处在可选集合中，一共可能
+ 有36种shape，所以需要用到__int64，普通int已经无法容纳
+ 搜索策略如下：采用DFS搜索，搜索从第一个decoration开始，依次往下遍历，每处理一个decoration时
+ 需要判断当前decoration能否被选，如果可以被选那么下一步可以有两种选择，选择该decoration和不选
+ 该decoration
+ 假设当前可选集合中decoration的数量是num,则判断当前decoration可不可以被选的方法如下：对于当前
+ 状态state中，必须存在至少num + 1种shape是当前decoration在输入数据中映射到的,注意要特殊处理起
+ 始情况即num为0的情况
+ 
+ 
+  
+   
+   6095577 
+   bobten2008  
+   1632  
+   Accepted  
+   168K 
+   16MS 
+   C++  
+   1428B 
+   2009-11-06 13:53:17 
+   
+  
+ 
+
+ */
+#include <iostream>
+#define MAX_N 36
+using namespace std;
+bool graph[MAX_N + 1][MAX_N + 1];
+int setsf[MAX_N + 1], setsfn;
+int setst[MAX_N + 1], setstn;
+__int64 expv[MAX_N + 1];
+int maxK;
+//curState表示当前状态,即当前被选的shapes
+//curPos表示当前需要考虑的decoration的序号，即考虑改decoration是否被选
+//num表示当前已选decoration值
+void dfs(__int64 curState, int curPos, int num)
+{
+    //已经遍历完所有decoration
+    if(curPos > setstn)
+    {
+        //更新最大成员数
+        if(num > maxK) maxK = num;
+        return;
+    }
+    int countv = 0, tid = setst[curPos];
+    int newState = curState, i;
+    //遍历所有的shapes，统计当前decoration在curState中可以找到多少自己对应的shapes
+    for(i = 1; i <= setsfn; i++)
+    {
+        int fid = setsf[i];
+        //输入中存在fid tid
+        if(graph[tid][fid])
+        {
+            //如果当前已选shapes中已经存在，则统计值+1
+            if(curState & expv[fid])
+                countv++;
+            //初始状态特殊处理
+            if(num == 0)
+            {
+                countv++;
+                //需要加入初始decoration所有对应的shapes到状态中
+                newState |= expv[fid];
+            }
+        }
+        //不是初始状态的话需要从当前状态中去除当前当前decoration无法映射的shapes
+        else if(num != 0 && (curState & expv[fid]))
+            newState -= expv[fid];
+    }
+    dfs(curState, curPos + 1, num);
+    if(countv >= num + 1) dfs(newState, curPos + 1, num + 1);
+}
+int main()
+{
+    int caseN, n, i, j;
+    expv[0] = 1;
+    for(i = 1; i <= MAX_N; i++)
+        expv[i] = expv[i - 1] * 2;
+    scanf("%d", &caseN);
+    while(caseN--)
+    {
+        maxK = INT_MIN;
+        setstn = setsfn = 0;
+        memset(graph, 0, sizeof(graph));
+        scanf("%d", &n);
+        int from, to;
+        for(i = 1; i <= n; i++)
+        {
+            scanf("%d%d", &from, &to);
+            graph[to][from] = true;
+            for(j = 1; j <= setsfn; j++)
+                if(setsf[j] == from) break;
+            if(j == setsfn + 1) setsf[++setsfn] = from;
+            for(j = 1; j <= setstn; j++)
+                if(setst[j] == to) break;
+            if(j == setstn + 1) setst[++setstn] = to;
+        }
+        dfs(0, 1, 0);
+        printf("%d/n", maxK);
+    }
+    return 0;
+} 

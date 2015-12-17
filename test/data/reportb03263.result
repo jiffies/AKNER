@@ -1,0 +1,878 @@
+POJ	eng	N	Y	O	B-OJ
+
+1226	m	N	N	O	I-OJ
+
+Substrings	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+ZZB	eng	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+6609	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+2192	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+You	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+case	eng	N	N	O	O
+-	x	N	N	O	O
+sensitive	eng	N	N	O	O
+
+strings	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+alphabetic	eng	N	N	O	O
+
+characters	eng	N	N	O	O
+,	x	N	N	O	O
+
+find	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+largest	eng	N	N	O	O
+
+string	eng	N	N	O	O
+
+X	x	N	N	O	O
+,	x	N	N	O	O
+
+such	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+either	eng	N	N	O	O
+
+X	x	N	N	O	O
+,	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+its	eng	N	N	O	O
+
+inverse	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+found	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+substring	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+strings	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+t	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+t	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+10	m	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+integer	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+100	m	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+strings	eng	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+lines	eng	N	N	O	O
+,	x	N	N	O	O
+
+each	eng	N	N	O	O
+
+representing	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+string	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+minimum	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+100.	m	N	N	O	O
+
+There	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+extra	eng	N	N	O	O
+
+white	eng	N	N	O	O
+
+space	eng	N	N	O	O
+
+before	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+after	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+string	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+There	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+per	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+largest	eng	N	N	O	O
+
+string	eng	N	N	O	O
+
+found	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+3	x	N	N	O	O
+
+ABCD	eng	N	N	O	O
+
+BCDFF	eng	N	N	O	O
+
+BRCD	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+rose	eng	N	N	O	O
+
+orchid	eng	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+2	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Tehran	eng	N	N	O	O
+
+2002	m	N	N	O	O
+
+Preliminary	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+搜索	v	Y	N	O	O
++	x	N	N	O	O
+字符串	n	Y	N	O	O
+理	n	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+学习	v	N	N	O	O
+strstr	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+reverse	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+102	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+102	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+mark	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+nn	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+lentemp	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+102	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+102	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+nn	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+mark	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+lentemp	eng	N	N	O	O
+=	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+lentemp	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+len	eng	N	N	O	O
+-	x	N	N	O	O
+lentemp	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+,	x	N	N	O	O
+lentemp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+lentemp	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+\	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+strcpy	eng	N	N	O	O
+(	x	N	N	O	O
+str2	eng	N	N	O	O
+,	x	N	N	O	O
+str1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+reverse	eng	N	N	O	O
+(	x	N	N	O	O
+str2	eng	N	N	O	O
+,	x	N	N	O	O
+str2	eng	N	N	O	O
++	x	N	N	O	O
+lentemp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+strstr	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+nn	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+str1	eng	N	N	O	O
+)	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+strstr	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+nn	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+str2	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+,	x	N	N	O	O
+lentemp	eng	N	N	O	O
+,	x	N	N	O	O
+nn	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+lentemp	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+
+mark	eng	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+min	eng	N	N	O	O
+_	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+102	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+t	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+t	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+len	eng	N	N	O	O
+=	x	N	N	O	O
+INT	eng	N	N	O	O
+_	x	N	N	O	O
+MAX	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+len	eng	N	N	O	O
+<	x	N	N	O	O
+min	eng	N	N	O	O
+_	x	N	N	O	O
+len	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+len	eng	N	N	O	O
+=	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+strcpy	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+solve	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+min	eng	N	N	O	O
+_	x	N	N	O	O
+len	eng	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+mark	eng	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

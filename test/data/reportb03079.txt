@@ -1,0 +1,64 @@
+poj 3517 - Missa - 博客园
+
+约瑟夫环问题
+http://www.cnblogs.com/alex4814/archive/2011/09/11/2173739.html
+约瑟夫问题：
+用数学方法解的时候需要注意应当从0开始编号，因为取余会等到0解。
+实质是一个递推，n个人中最终存活下来的序号与n-1个人中存活的人的序号有一个递推关系式。
+分析：
+假设除去第k个人。
+0, 1, 2, 3, ..., k-2, k-1, k, ..., n-1　　//original sequence (1)
+0, 1, 2, 3, ..., k-2,      , k, ..., n-1　　//get rid of kth person (2)
+k, k+1, ..., n-1,    0,    1,        ..., k-2　　//rearrange the sequence (3)
+0, 1,     ..., n-k-1, n-k, n-k+1, ..., n-2　　//the n-1 person (4)
+我们假设f(n)的值为n个人中最后存活的人的序号，则
+注意到(2)式(3)式(4)式其实是同一个序列。
+注意(1)式和(4)式，是同一个问题，不同的仅仅是人数。
+假设我们已知f(n-1)，即(4)式中最后剩下的人的序号，则(3)式所对应的序号，就是f(n)，即(1)式n个人中最后存活的序号。
+而从(3)(4)式中我们不难发现有这样一个递推式：
+f(n) = (f(n-1) + k) % n
+显然，f(1) = 0。
+于是递推得f(n)
+ 
+
+ 
+ 
+ View Code  
+  
+   1 // File Name: 3517.cpp
+ 2 // Author: Missa
+ 3 // Created Time: 2013/2/15 星期五 20:22:11
+ 4 
+ 5 #include<iostream>
+ 6 #include<cstdio>
+ 7 #include<cstring>
+ 8 #include<algorithm>
+ 9 #include<cmath>
+10 #include<queue>
+11 #include<stack>
+12 #include<string>
+13 #include<vector>
+14 #include<cstdlib>
+15 #include<map>
+16 #include<set>
+17 using namespace std;
+18 #define CL(x,v) memset(x,v,sizeof(x));
+19 
+20 int n,k,m;
+21 
+22 int main()
+23 {
+24     while(~scanf("%d%d%d",&n,&k,&m))
+25     {
+26         if(n==0) break;
+27         int x=0,i=2;
+28         for(;i<n;i++)
+29             x=(x+k)%i;
+30         x=(x+m)%i+1;
+31         printf("%d\n",x);
+32     }
+33     return 0;
+34 } 
+  
+ 
+

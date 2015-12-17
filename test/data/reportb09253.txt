@@ -1,0 +1,59 @@
+poj 3244 Difference between Triplets - celia01 - 博客园
+
+3244 一个数学题
+Difference between Triplets
+ 
+For every pair of triplets, Ta = (Ia, Ja, Ka) and Tb= (Ib, Jb, Kb), we define the difference value between Ta and Tbas follows:
+ 
+D(Ta, Tb) = max {Ia − Ib, Ja − Jb, Ka − Kb} − min {Ia − Ib, Ja − Jb, Ka − Kb}
+ 
+Now you are given N triplets, could you write a program to calculate the sum of the difference values between every unordered pair of triplets?
+给出N个三元组，将给出的三元组两两组合，分别求出D(Ta, Tb)的值。
+若任意两个三元组为Ta = (Ia, Ja, Ka) and Tb= (Ib, Jb, Kb),
+ 
+则：D(Ta, Tb) = max {Ia − Ib, Ja − Jb, Ka − Kb} − min {Ia − Ib, Ja − Jb, Ka − Kb}
+最后求所有D(Ta, Tb)和的值
+这道题有个很关键的公式，知道的就很容易做出来了
+//公式max(a,b,c)-min(a,b,c)=(|a-b|+|b-c|+|a-c|)/2.
+把a、b、c想成是数轴上的三个点就很容易得出上述公式了。
+然而求出所有的|a-b|+|b-c|+|a-c|，再求和也不是简单的问题，所以进而继续化简得：
+max {Ia − Ib, Ja − Jb, Ka − Kb} − min {Ia − Ib, Ja − Jb, Ka − Kb}
+=(|(Ia − Ib)—( Ja – Jb)|+|(Ja – Jb)—(Ka − Kb)|+|( Ka − Kb)-( Ia − Ib)|)/2
+= (|(Ia – Ja)—(Ib—Jb)|+|(Ja − Ka)—(Jb − Kb)|+| (Ka – Ia)—( Ka − Ib)|)/2
+ 
+如果令a=( Ii – Ji),b=( Ji – Ki),c=( Ki – Ii),原问题等价为(|ai-aj|+|bi-bj|+|ci-cj|)/2，对于每个含a、b、c的绝对值式子可以分开求：
+例如，根据ai，aj的大小即可知道在最后的求和式中贡献了多少次加法和减法。
+将x数组排序，对于第xi个，他前面的比它小，所以在和i点比较时i点贡献了i次加，对后面的n-i个点向他们贡献了n-i次减法
+ 
+ 
+  1 #include<iostream>
+ 2 #include<cstdio>
+ 3 #include<cstring>
+ 4 #include<cmath>
+ 5 #include<algorithm>
+ 6 #define see(x) cout<<#x<<":"<<x<<endl;
+ 7 #define N 200010
+ 8 using namespace std;
+ 9 long long x[N], y[N], z[N];
+10 
+11 int main(){ 
+12     int i, j, k, l, n, m;
+13     long long a, b, c, sum;
+14     while(~scanf("%d",&n)&&n){
+15 
+16         sum = 0;
+17         for(i=0;i<n;i++){
+18             scanf("%lld%lld%lld",&a,&b,&c);
+19             x[i]=a-b;y[i]=b-c;z[i]=a-c;
+20         }
+21         sort(x,x+n); sort(y,y+n); sort(z,z+n);
+22         for(i=0;i<n;i++){
+23             sum += ((i-(n-1-i))*(x[i]+y[i]+z[i]));
+24         }
+25         cout<<sum/2<<endl;
+26     }
+27     return 0;
+28 }  
+ 
+
+ 

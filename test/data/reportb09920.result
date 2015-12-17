@@ -1,0 +1,824 @@
+POJ	eng	N	Y	O	B-OJ
+
+1013	m	N	N	O	O
+
+-	x	N	N	O	O
+
+XtestW	eng	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+1013	m	N	N	O	O
+
+一	m	N	N	O	O
+开始	v	N	N	O	O
+的	uj	N	N	O	O
+算法	n	Y	N	O	O
+是	v	N	N	O	O
+even	eng	N	N	O	O
+时	n	N	N	O	O
+每个	r	N	N	O	O
+赋值	n	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+，	x	N	N	O	O
+即必	d	N	N	O	O
+为	p	N	N	O	O
+真币	n	N	N	O	O
+，	x	N	N	O	O
+不是	c	N	N	O	O
+“	x	N	N	O	O
+even	eng	N	N	O	O
+”	x	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+，	x	N	N	O	O
+重	a	N	N	O	O
+的	uj	N	N	O	O
+赋值	n	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+轻	a	N	N	O	O
+的	uj	N	N	O	O
+赋值	n	N	N	O	O
+为	p	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+（	x	N	N	O	O
+初始化	l	N	N	O	O
+所有	b	N	N	O	O
+为	p	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+）	x	N	N	O	O
+
+最后	f	N	N	O	O
+扫描	v	Y	N	O	O
+一遍	m	N	N	O	O
+，	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+1	m	N	N	O	O
+中	f	N	N	O	O
+必	d	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+只	d	N	N	O	O
+出现	v	N	N	O	O
+一次	m	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+那个	r	N	N	O	O
+就是	d	N	N	O	O
+假币	n	N	N	O	O
+，	x	N	N	O	O
+后来	t	N	N	O	O
+WA	eng	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+改	v	N	N	O	O
+了	ul	N	N	O	O
+算法	n	Y	N	O	O
+，	x	N	N	O	O
+初始化	l	N	N	O	O
+为	p	N	N	O	O
+0	m	N	N	O	O
+，	x	N	N	O	O
+even	eng	N	N	O	O
+赋值	n	N	N	O	O
+为	p	N	N	O	O
+1000	m	N	N	O	O
+，	x	N	N	O	O
+必为	d	N	N	O	O
+真币	n	N	N	O	O
+，	x	N	N	O	O
+不是	c	N	N	O	O
+even	eng	N	N	O	O
+的	uj	N	N	O	O
+重	a	N	N	O	O
+的	uj	N	N	O	O
+加	v	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+轻	a	N	N	O	O
+的	uj	N	N	O	O
+减	v	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+最后	f	N	N	O	O
+扫描	v	Y	N	O	O
+一遍	m	N	N	O	O
+，	x	N	N	O	O
+不是	c	N	N	O	O
+1000	m	N	N	O	O
+的	uj	N	N	O	O
+中得	ns	N	N	O	O
+绝对值	l	N	N	O	O
+最大	a	Y	N	O	O
+的	uj	N	N	O	O
+那个	r	N	N	O	O
+是	v	N	N	O	O
+假币	n	N	N	O	O
+，	x	N	N	O	O
+正的	d	N	N	O	O
+重	a	N	N	O	O
+，	x	N	N	O	O
+负	v	N	N	O	O
+的	uj	N	N	O	O
+轻	a	N	N	O	O
+，	x	N	N	O	O
+AC	eng	N	N	O	O
+鸟	n	N	N	O	O
+~	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+12	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str3	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+str	eng	Y	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+must	eng	N	N	O	O
+
+char	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+100	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+tt	eng	N	N	O	O
+,	x	N	N	O	O
+mm	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+min	eng	N	N	O	O
+,	x	N	N	O	O
+flag	eng	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+12	m	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+str1	eng	N	N	O	O
+,	x	N	N	O	O
+str2	eng	N	N	O	O
+,	x	N	N	O	O
+str3	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+str3	eng	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+even	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+str3	eng	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+up	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+str3	eng	N	N	O	O
+,	x	N	N	O	O
+"	x	N	N	O	O
+down	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str1	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str1	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str2	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+str2	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+12	m	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+abs	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+flag	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+flag	eng	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+str	eng	Y	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+heavy	eng	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+light	eng	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+c	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+counterfeit	eng	N	N	O	O
+
+coin	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+%	x	N	N	O	O
+s	eng	N	N	O	O
+.	m	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+flag	eng	N	N	O	O
++	x	N	N	O	O
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

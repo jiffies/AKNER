@@ -1,0 +1,246 @@
+POJ 1657 Distance on Chessboard 解题报告 - 端木 - 博客园
+
+POJ 1657 Distance on Chessboard 解题报告
+    
+ 
+编号：1657
+   
+ 
+考查点：简单计算题
+   
+ 
+思路：水题，有一点弯弯的就是象是如何走的，仔细观察可知：象只可以在横竖坐标之差为偶数的两点移动.看出来这点就相当easy了
+   
+ 
+提交情况: 刷水题，一次AC.。
+   
+ 
+Source Code：
+   
+ 
+ //
+ POJ Grids 1657
+ 
+ 
+ #include 
+ <
+ string
+ >
+ 
+ #include 
+ <
+ iostream
+ >
+ 
+ 
+ using
+  
+ namespace
+  std;
+ 
+ int
+  main()
+ {
+     
+ int
+  t;cin
+ >>
+ t;
+     
+ while
+  (t
+ --
+ )
+     {
+         
+ string
+  str1,str2;
+         cin
+ >>
+ str1
+ >>
+ str2;
+         
+ int
+  x 
+ =
+  abs(str1[
+ 0
+ ]
+ -
+ str2[
+ 0
+ ]);
+         
+ int
+  y 
+ =
+  abs(str1[
+ 1
+ ]
+ -
+ str2[
+ 1
+ ]);
+         
+ if
+  (x
+ +
+ y
+ ==
+ 0
+ )
+         {
+             cout
+ <<
+ "
+ 0 0 0 0
+ "
+ <<
+ endl;
+             
+ continue
+ ;
+         }
+         
+ if
+  (x
+ >
+ y)
+             cout
+ <<
+ x
+ <<
+ "
+  
+ "
+ ;
+         
+ else
+ 
+             cout
+ <<
+ y
+ <<
+ "
+  
+ "
+ ;
+         
+ if
+  (x
+ ==
+ 0
+ ||
+ y
+ ==
+ 0
+ ||
+ x
+ ==
+ y)
+             cout
+ <<
+ 1
+ <<
+ "
+  
+ "
+ ;
+         
+ else
+ 
+             cout
+ <<
+ 2
+ <<
+ "
+  
+ "
+ ;
+         
+ if
+  (x
+ ==
+ 0
+ ||
+ y
+ ==
+ 0
+ )
+             cout
+ <<
+ 1
+ <<
+ "
+  
+ "
+ ;
+         
+ else
+ 
+             cout
+ <<
+ 2
+ <<
+ "
+  
+ "
+ ;
+         
+ if
+  (x
+ ==
+ y)
+             cout
+ <<
+ 1
+ <<
+ endl;
+         
+ else
+ 
+         {
+             
+ if
+  (abs(x
+ -
+ y)
+ %
+ 2
+ ==
+ 0
+ )
+                 cout
+ <<
+ 2
+ <<
+ endl;
+             
+ else
+ 
+                 cout
+ <<
+ "
+ Inf
+ "
+ <<
+ endl;
+         }
+     }
+     
+ return
+  
+ 0
+ ;
+ }
+ 
+ 
+总结：这道题我寒假刚开始的时候做过，现在再做一遍，感觉自己进步了很多，思路也开阔了，想当年这道题我用了四个小时，汗.。
+   
+ 
+                                                       By   Ns517
+   
+ 
+                                                      Time 09.02.11
+  

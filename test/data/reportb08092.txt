@@ -1,0 +1,115 @@
+POJ 3100 Root of the Problem_乐吾天_百度空间
+
+ 
+#include<stdio.h>
+
+
+int power(int a, int b)
+
+
+{
+
+
+     int m=1;
+
+
+    while(b--)
+
+
+         m = m*a;
+
+
+    return m;
+
+
+}
+
+
+int main()
+
+
+{
+
+
+     int b, n, i;
+
+
+    while(scanf("%d %d", &b, &n))
+
+
+     {
+
+
+        if(b==0 && n==0)
+
+
+            break;
+
+
+        for(i=1; ; i++)
+
+
+         {
+
+
+            if(power(i, n) > b)
+
+
+                break;
+
+
+         }
+
+
+        if(power(i, n)-b > b-power(i-1, n))
+
+
+            printf("%d\n", i-1);
+
+
+        else
+
+
+            printf("%d\n", i);
+
+
+     }
+
+
+    return 0;
+
+
+} 
+
+推荐文章:
+
+1. 
+POJ 1036 DP 强盗闯门
+
+2. 
+转一首poj的情诗，先留这里，以后定有用
+
+3. 
+poj 2311 Cutting Game(博弈论 之 sg函数)
+
+4. 
+转战POJ
+
+5. 
+POJ 3150 Cellular Automaton 矩阵法
+
+6. 
+POJ 2352 Stars [树状数组]
+
+7. 
+poj 2288——Islands and Bridges——基于Hamilton回路的状态压缩动态规划（DP)
+
+8. 
+poj 3530——A Modular Arithmetic Challenge——数论
+
+9. 
+都不想在POJ上做题了
+
+10. 
+POJ 1201
+

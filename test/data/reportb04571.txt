@@ -1,0 +1,116 @@
+求pku 2426 Remainder的解题报告及代码_百度知道
+
+这题做了有一段时间了，当初我也卡了很久。。
+解题思路是这样的：
+1。先考虑一个以个特殊情况 当 M = K的时候。
+这个时候问题就简单了，因为M=K的，所以可以用BFS，因为答案最终比较的时候是（N的最终值)%K,实际上就是(N + - * % M 的一些算数运输）% K,由于M = K的，加上%的特性之，可以把%放到括号里面的每一步。。这是一个很好的想法，因为 K <= 1000的，这时候你会发现，BFS的状态空间就顶多包含1000个节点！
+2.当M != K 的时候，由于(()%M)%K) 不一定等于 (()%K)%M，这时候1的算法就行不通了。。。但题目有个很好的限制，就是规定字典序的时候，%的字典序是最大的，而答案最终要输出的是字典序最小的运算系列。。认真分析一下你会发觉出现%运算只有两种情况：1.开头出现一次%；2.开头出现*%。基于这个特征可以枚举这两种情况，那么后面的运算就没有%了，进而转化成第一种情况！
+算法可能稍微复杂了点，但想清楚%出现的情况后实际上就是一水BFS.
+代码如下：
+#include <iostream>
+using namespace std;
+const int N = 1010;
+const int MAX = INT_MAX / 2;
+int dis[N];
+char op[N];
+int q[N];
+int parent[N];
+int * head, * tail;
+int Mod(int n, int m)
+{
+ n %= m;
+ if(n < 0){
+  n += m;
+ }
+ return n;
+}
+int BFS(char * ans, int ini, int goal, int k, int m)
+{
+// printf("ini = %d, goal = %d, k = %d, m = %d\n", ini, goal, k, m);
+ memset(dis, -1, k * sizeof(int));
+ head = tail = q;
+ dis[ini] = 0;
+ *(tail++) = ini;
+// printf("aaaaaaa\n");
+ while(head < tail)
+ {
+  int n = *(head++);
+  if(n == goal){
+   break;
+  }
+  int next = Mod(n + m, k);
+  if(dis[next] == -1){
+   dis[next] = dis[n] + 1;
+   parent[next] = n;
+   op[next] = '+';
+   *(tail++) = next;
+  }
+  next = Mod(n - m, k);
+  if(dis[next] == -1){
+   dis[next] = dis[n] + 1;
+   op[next] = '-';
+   parent[next] = n;
+   *(tail++) = next;
+  }
+  next = Mod(n * m, k);
+  if(dis[next] == -1){
+   dis[next] = dis[n] + 1;
+   op[next] = '*';
+   parent[next] = n;
+   *(tail++) = next;
+  }
+ }
+// printf("bbbbbbbb\n");
+ if(head == tail){
+  return MAX;
+ }
+ int pos = dis[goal], d = dis[goal];
+ ans[pos--] = '\0';
+ while(goal != ini){
+  ans[pos--] = op[goal];
+  goal = parent[goal];
+ }
+ return d;
+}
+int main()
+{
+ int n, k, m;
+ char ans[100], t[100];
+ while(true){
+  scanf("%d%d%d", &n, &k, &m);
+  if(!n && !k && !m){
+   break;
+  }
+  char add[10] = "\0";
+//  printf("aaaaaaa\n");
+  int goal = Mod(n + 1, k);
+//  printf("bbbbbbbb\n");
+  int tot = BFS(ans, Mod(n, k), goal, k, m);
+//  printf("aaaaaaaa\n");
+//  printf("tot = %d\n", tot);
+  int tt = BFS(t, 0, goal, k, m);
+  if(tot > tt + 2){
+   tot = tt + 2;
+   add[0] = '*';
+   add[1] = '%';
+   add[2] = '\0';
+   strcpy(ans, t);
+  }
+//  printf("bbbbbbbbb\n");
+  tt = BFS(t, Mod(n, m), goal, k, m);
+  if(tot > tt + 1){
+   tot = tt + 1;
+   add[0] = '%';
+   add[1] = '\0';
+   strcpy(ans, t);
+  }
+  if(tot >= MAX){
+   printf("0\n");
+  }
+  else {
+   printf("%d\n", tot);
+   printf("%s%s\n", add, ans);
+  }
+ }
+ return 0;
+}

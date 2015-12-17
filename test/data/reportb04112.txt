@@ -1,0 +1,276 @@
+PKU_1112(补图，背包DP)_Otaku_geek_百度空间
+
+PKU 1112:PKU上一道比较经典的题，以前一直做不来，今天总算把它过掉了，分析题目的条件可以建立这样一个无向图：如果A不认识B或者B不认识A，那么这两个必然是两个组的人，因为题目要求一个组的所有人都必须两两认识，这样就可以在原图的基础上建立一个补图，对于每一个点我们可以进行这样一个操作，把它自己标记为1，并且把与他相邻的点都标记为2，相同的点不能重复标记，如果在标记的过程中发现某个点即可以标记为1又可以标记为2，则不存在解，这样一个标记的过程可以用简单的DFS完成，完成这样一个操作后，我们对于每次DFS的过程都可以得到两个数，一个数是标记为1的点的数量，另一个则是标记为2的点的数量，假如图中存在n个连通分量，则我们就可以得到n组这样的数据，然后就是背包DP了，每次都在上一次的基础上选择放入第一个或者第二个数，注意这两个DP是互相独立的，即他们不会互相影响，最后再进行一下路劲压缩就可以得到最后的答案了，AC了之后发现速度很慢，感觉我的方法复杂度也就是100*100，怎么会这么慢呢，忘大牛指教～～～
+
+ #include <cstdio>
+
+ #include <cstring>
+
+ #include <cmath>
+
+ #include <vector>
+
+ using namespace std;
+
+ const int N = 105;
+
+ bool _map[N][N];//原图
+
+ vector<int> _revMap[N];//补图
+
+ bool _visited[N];
+
+ int _n;
+
+ int _cnt[N][2];
+
+ int _col[N];
+
+ int _now;
+
+ int _sumOne;
+
+ int _sumTwo;
+
+ int _peo[N][2][N];
+
+ int _res[N][N];
+
+ int _min;
+
+ int _path[N][N];
+
+ bool _dp[N][N];
+
+ bool _flg[N];
+
+ bool _noSol;
+
+ int ABS(int x) {
+
+     if (x<0) x *= -1;
+
+     return x;
+
+ }
+
+ void CreateRevMap()
+
+ {
+
+     int i, j;
+
+     for (i=1; i<=_n; ++i) {
+
+         for (j=1; j<=_n; ++j) {
+
+             if (i == j) continue;
+
+             if (!_map[i][j]) {
+
+                 _revMap[i].push_back(j);
+
+                 _revMap[j].push_back(i);
+
+             }
+
+         }
+
+     }
+
+ }
+
+ void DFS(int x)
+
+ {
+
+     _visited[x] = true;
+
+     if (_col[x] == 1) {
+
+         _sumOne++;
+
+         _peo[_now][0][_sumOne] = x;
+
+     }
+
+     else {
+
+         _sumTwo++;
+
+         _peo[_now][1][_sumTwo] = x;
+
+     }
+
+     int i, size = _revMap[x].size();
+
+     for (i=0; i<size; ++i) {
+
+         int u = _revMap[x][i];
+
+         if (_col[u] == _col[x]) {
+
+             _noSol = true;
+
+             return;
+
+         }
+
+         if (_visited[u]) continue;
+
+         if (_col[x] == 1) {
+
+             _col[u] = 2;
+
+         }
+
+         else _col[u] = 1;
+
+         DFS(u);
+
+     }
+
+ }
+
+ void DP()
+
+ {    
+
+     int i, j, id;
+
+     _dp[0][0] = true;
+
+     for (i=1; i<_now; ++i) {
+
+         for (id=0; id<=1; ++id) {
+
+             for (j=_n; j>=_cnt[i][id]; --j) {
+
+                 if (_dp[i-1][ j - _cnt[i][id] ]) {
+
+                     _dp[i][j] = true;
+
+                     _path[i][j] = id;
+
+                     if (i == _now-1) {
+
+                         if (ABS(j - _n/2) < ABS(_min)) _min = j - _n/2;
+
+                     }
+
+                 }
+
+             }
+
+         }
+
+     }
+
+ }
+
+ void Print()
+
+ {
+
+     int ans = _min + _n/2, tmp = ans;
+
+     int i, j, tag;
+
+     printf("%d", ans);
+
+     for (i=_now-1; i>=1; --i) {
+
+         tag = _path[i][tmp];
+
+         for (j=1; j<=_cnt[i][tag]; ++j) {
+
+             printf(" %d", _peo[i][tag][j]);
+
+             _flg[ _peo[i][tag][j] ] = true;
+
+         }
+
+         tmp -= _cnt[i][tag];
+
+     }
+
+     ans = _n - ans;
+
+     printf("\n%d", ans);
+
+     for (i=1; i<=_n; ++i) {
+
+         if (!_flg[i]) printf(" %d", i);
+
+     }
+
+     putchar('\n');
+
+ }
+
+ int main()
+
+ {
+
+     scanf("%d", &_n);
+
+     int i;
+
+     for (i=1; i<=_n; ++i) {
+
+         int p;
+
+         while (scanf("%d", &p), p) {
+
+             _map[i][p] = true;
+
+         }
+
+     }
+
+     CreateRevMap();
+
+     _now = 1;
+
+     _noSol = false;
+
+     for (i=1; i<=_n; ++i) {
+
+         if (_visited[i]) continue;
+
+         _sumOne = 0;
+
+         _sumTwo = 0;
+
+         _col[i] = 1;
+
+         DFS(i);
+
+         if (_noSol) break;
+
+         _cnt[_now][0] = _sumOne;
+
+         _cnt[_now][1] = _sumTwo;
+
+         _now++;
+
+     }
+
+     if (_noSol) {
+
+         puts("No solution");
+
+         return 0;
+
+     }
+
+     _min = 1000;
+
+     DP();
+
+     Print();
+
+     return 0;
+
+ }
+

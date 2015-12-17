@@ -1,0 +1,3544 @@
+pku	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1324	m	N	N	I-OJ
+ 	x	N	N	O
+ 	x	N	N	O
+Holedox	eng	N	N	O
+ 	x	N	N	O
+Moving	eng	N	N	O
+_	x	N	N	O
+lywdx	eng	N	N	O
+_	x	N	N	O
+百度	n	N	N	O
+空间	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+首先	d	N	N	O
+声明	n	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+程序	n	N	N	O
+写	v	N	N	O
+的	uj	N	N	O
+很烂	a	N	N	O
+，	x	N	N	O
+限时	n	N	N	O
+5	m	N	N	O
+秒	m	N	N	O
+，	x	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+程序	n	N	N	O
+4.5	m	N	N	O
+秒	m	N	N	O
+水	n	N	N	O
+过去	t	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+思想	n	Y	N	O
+应该	v	N	N	O
+是	v	N	N	O
+正确	ad	N	N	O
+的	uj	N	N	O
+，	x	N	N	O
+肯定	v	N	N	O
+还有	v	N	N	O
+剪枝	n	Y	N	B-KNOWLEDGE
+的	uj	N	N	O
+地方	n	N	N	O
+没	v	N	N	O
+注意	v	N	N	O
+到	v	N	N	O
+！	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+先	d	N	N	O
+说	v	N	N	O
+一下	m	N	N	O
+题目	n	Y	N	O
+大意	d	N	N	O
+：	x	N	N	O
+给	p	N	N	O
+你	r	N	N	O
+一个	m	N	N	O
+用	p	N	N	O
+二维	m	N	N	O
+数组	n	Y	N	O
+，	x	N	N	O
+告诉	v	N	N	O
+你	r	N	N	O
+蛇	n	N	N	O
+的	uj	N	N	O
+初始	v	N	N	O
+位置	v	N	N	O
+，	x	N	N	O
+并	c	N	N	O
+告诉	v	N	N	O
+你	r	N	N	O
+那些	r	N	N	O
+坐标	v	Y	N	O
+点	m	N	N	O
+是	v	N	N	O
+石头	n	Y	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+是	v	N	N	O
+石头	n	Y	N	O
+的	uj	N	N	O
+点	m	N	N	O
+蛇	n	N	N	O
+不能	v	N	N	O
+通过	p	N	N	O
+，	x	N	N	O
+问	v	N	N	O
+你	r	N	N	O
+蛇	n	N	N	O
+从	p	N	N	O
+起始	v	N	N	O
+点	m	N	N	O
+到	v	N	N	O
+（	x	N	N	O
+1	x	N	N	O
+，	x	N	N	O
+1	x	N	N	O
+）	x	N	N	O
+这点	mq	N	N	O
+用	p	N	N	O
+的	uj	N	N	O
+最少	d	N	N	O
+步数	n	N	N	O
+！	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+思路	n	N	N	O
+：	x	N	N	O
+广	a	N	N	B-KNOWLEDGE
+搜	v	N	N	I-KNOWLEDGE
+，	x	N	N	O
+关键	n	N	N	O
+是	v	N	N	O
+怎么	r	N	N	O
+设置	vn	N	N	O
+状态	n	Y	N	O
+，	x	N	N	O
+首先	d	N	N	O
+头	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+必须	d	N	N	O
+清楚	a	N	N	O
+，	x	N	N	O
+之后	f	N	N	O
+是	v	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+，	x	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+我们	r	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+可以	c	N	N	O
+用	p	N	N	O
+一个	m	N	N	O
+int	eng	N	N	O
+类型	n	Y	N	O
+的	uj	N	N	O
+整数	n	Y	N	O
+（	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+（	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+）	x	N	N	O
+位	q	N	N	O
+的	uj	N	N	O
+二进制	n	N	N	O
+数	n	N	N	O
+）	x	N	N	O
+，	x	N	N	O
+我	r	N	N	O
+设	v	N	N	O
+4	m	N	N	O
+个	m	N	N	O
+方向	n	N	N	O
+为	p	N	N	O
+上下左右	m	N	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+其中	r	N	N	O
+上	f	N	N	O
+（	x	N	N	O
+00	m	N	N	O
+也	d	N	N	O
+就是	d	N	N	O
+十进制	j	N	N	O
+的	uj	N	N	O
+0	m	N	N	O
+）	x	N	N	O
+，	x	N	N	O
+右	f	N	N	O
+（	x	N	N	O
+01	m	N	N	O
+也	d	N	N	O
+就是	d	N	N	O
+十进制	j	N	N	O
+的	uj	N	N	O
+1	m	N	N	O
+）	x	N	N	O
+，	x	N	N	O
+下	f	N	N	O
+（	x	N	N	O
+10	m	N	N	O
+也	d	N	N	O
+就是	d	N	N	O
+十进制	j	N	N	O
+的	uj	N	N	O
+2	m	N	N	O
+）	x	N	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+左	m	N	N	O
+（	x	N	N	O
+11	m	N	N	O
+也	d	N	N	O
+就是	d	N	N	O
+十进制	j	N	N	O
+的	uj	N	N	O
+3	m	N	N	O
+）	x	N	N	O
+，	x	N	N	O
+记录	n	Y	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+方法	n	Y	N	O
+就是	d	N	N	O
+，	x	N	N	O
+看	v	N	N	O
+蛇	n	N	N	O
+的	uj	N	N	O
+颈部	n	N	N	O
+在	p	N	N	O
+头	n	N	N	O
+的	uj	N	N	O
+什么	r	N	N	O
+方向	n	N	N	O
+，	x	N	N	O
+得到	v	N	N	O
+颈部	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+，	x	N	N	O
+再	d	N	N	O
+看	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+通过	p	N	N	O
+颈部	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+，	x	N	N	O
+看	v	N	N	O
+身体	n	N	N	O
+在	p	N	N	O
+颈部	n	N	N	O
+的	uj	N	N	O
+什么	r	N	N	O
+方向	n	N	N	O
+，	x	N	N	O
+得到	v	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+.....	m	N	N	O
+这样	r	N	N	O
+进行	v	N	N	O
+直到	v	N	N	O
+找到	v	N	N	O
+尾部	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+！	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+这样	r	N	N	O
+，	x	N	N	O
+一个	m	N	N	O
+状态	n	Y	N	O
+怎么	r	N	N	O
+表示	v	Y	N	O
+就	d	N	N	O
+出来	v	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+它	r	N	N	O
+包含	v	N	N	O
+：	x	N	N	O
+1	x	N	N	O
+，	x	N	N	O
+头	n	N	N	O
+的	uj	N	N	O
+坐标	v	Y	N	O
+，	x	N	N	O
+2	x	N	N	O
+，	x	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+状态	n	Y	N	O
+，	x	N	N	O
+3	x	N	N	O
+，	x	N	N	O
+到	v	N	N	O
+该	r	N	N	O
+状态	n	Y	N	O
+走	v	N	N	O
+了	ul	N	N	O
+多少	m	N	N	O
+步	n	N	N	O
+！	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+如果	c	N	N	O
+用	p	N	N	O
+结构	n	Y	N	O
+体	n	N	N	O
+表示	v	Y	N	O
+一个	m	N	N	O
+状态	n	Y	N	O
+，	x	N	N	O
+就	d	N	N	O
+应该	v	N	N	O
+是	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+Node	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+头	n	N	N	O
+坐标	v	Y	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+state	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+改	v	N	N	O
+状态	n	Y	N	O
+身体	n	N	N	O
+情况	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+steps	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+当前	t	N	N	O
+用	p	N	N	O
+了	ul	N	N	O
+多少	m	N	N	O
+步	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+怎么	r	N	N	O
+把	p	N	N	O
+状态	n	Y	N	O
+转换成	i	N	N	O
+int	eng	N	N	O
+类型	n	Y	N	O
+，	x	N	N	O
+我	r	N	N	O
+是	v	N	N	O
+这样	r	N	N	O
+做	v	N	N	O
+的	uj	N	N	O
+，	x	N	N	O
+比如	v	N	N	O
+，	x	N	N	O
+题目	n	Y	N	O
+中	f	N	N	O
+的	uj	N	N	O
+测试数据	n	N	N	O
+，	x	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+；	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+头	n	N	N	O
+坐标	v	Y	N	O
+4	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+则	d	N	N	O
+ 	x	N	N	O
+（	x	N	N	O
+4	x	N	N	O
+，	x	N	N	O
+2	x	N	N	O
+）	x	N	N	O
+ 	x	N	N	O
+头	n	N	N	O
+的	uj	N	N	O
+右边	f	N	N	O
+，	x	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+其中	r	N	N	O
+的	uj	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+是	v	N	N	O
+表示	v	Y	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+头	n	N	N	O
+后面	f	N	N	O
+的	uj	N	N	O
+第几个	m	N	N	O
+节点	n	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+二进制	n	N	N	O
+是	v	N	N	O
+位高	v	N	N	O
+—	x	N	N	O
+—	x	N	N	O
+>	x	N	N	O
+低	a	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+表示	v	Y	N	O
+蛇	n	N	N	O
+的	uj	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+颈	ng	N	N	O
+—	x	N	N	O
+—	x	N	N	O
+>	x	N	N	O
+尾	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+（	x	N	N	O
+3	x	N	N	O
+，	x	N	N	O
+2	x	N	N	O
+）	x	N	N	O
+又	d	N	N	O
+在	p	N	N	O
+（	x	N	N	O
+4	x	N	N	O
+，	x	N	N	O
+2	x	N	N	O
+）	x	N	N	O
+的	uj	N	N	O
+上边	f	N	N	O
+，	x	N	N	O
+上边	f	N	N	O
+不用	v	N	N	O
+管	vn	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+｜	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+没	v	N	N	O
+变化	vn	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+（	x	N	N	O
+3	x	N	N	O
+，	x	N	N	O
+1	x	N	N	O
+）	x	N	N	O
+在	p	N	N	O
+（	x	N	N	O
+3	x	N	N	O
+，	x	N	N	O
+2	x	N	N	O
+）	x	N	N	O
+ 	x	N	N	O
+的	uj	N	N	O
+左边	f	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+｜	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+；	x	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+｜	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+这里	r	N	N	O
+有	v	N	N	O
+两个	m	N	N	O
+式子	n	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+左边	f	N	N	O
+是	v	N	N	O
+二进制	n	N	N	O
+11	m	N	N	O
+，	x	N	N	O
+两个	m	N	N	O
+1	x	N	N	O
+，	x	N	N	O
+所以	c	N	N	O
+都	d	N	N	O
+要	v	N	N	O
+处理	v	N	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+这样	r	N	N	O
+就	d	N	N	O
+得到	v	N	N	O
+了	ul	N	N	O
+初始状态	l	N	N	O
+，	x	N	N	O
+在	p	N	N	O
+后面	f	N	N	O
+的	uj	N	N	O
+蛇头	n	N	N	O
+移动	vn	N	N	O
+后	f	N	N	O
+，	x	N	N	O
+要	v	N	N	O
+找	v	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+位置	v	N	N	O
+的	uj	N	N	O
+状态	n	Y	N	O
+ 	x	N	N	O
+也	d	N	N	O
+是	v	N	N	O
+这种	r	N	N	O
+方法	n	Y	N	O
+，	x	N	N	O
+但是	c	N	N	O
+在	p	N	N	O
+那里	r	N	N	O
+既	c	N	N	O
+要	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+注意	v	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+如果	c	N	N	O
+蛇头	n	N	N	O
+往	zg	N	N	O
+上	f	N	N	O
+运动	vn	N	N	O
+，	x	N	N	O
+则	d	N	N	O
+颈部	n	N	N	O
+在	p	N	N	O
+它	r	N	N	O
+的	uj	N	N	O
+下边	f	N	N	O
+，	x	N	N	O
+如果	c	N	N	O
+蛇头	n	N	N	O
+往左边	z	N	N	O
+移动	vn	N	N	O
+，	x	N	N	O
+则	d	N	N	O
+颈部	n	N	N	O
+在	p	N	N	O
+它	r	N	N	O
+的	uj	N	N	O
+右边	f	N	N	O
+，	x	N	N	O
+这里	r	N	N	O
+别	d	N	N	O
+弄	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+混	v	N	N	O
+了	ul	N	N	O
+！	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+这个	r	N	N	O
+题	n	N	N	O
+的	uj	N	N	O
+标记	n	N	N	O
+要	v	N	N	O
+用	p	N	N	O
+三维	m	Y	N	O
+的	uj	N	N	O
+数组	n	Y	N	O
+，	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+状态	n	Y	N	O
+都	d	N	N	O
+设计	vn	N	N	O
+出来	v	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+这个	r	N	N	O
+题	n	N	N	O
+就	d	N	N	O
+简单	a	N	N	O
+了	ul	N	N	O
+！	x	N	N	O
+ 	x	N	N	O
+直接	ad	N	N	O
+bfs	eng	N	N	B-KNOWLEDGE
+；	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+可是	c	N	N	O
+我	r	N	N	O
+没	d	N	N	O
+找出	v	Y	N	O
+哪里	r	N	N	O
+还	d	N	N	O
+可以	c	N	N	O
+剪枝	n	Y	N	B-KNOWLEDGE
+的	uj	N	N	O
+地方	n	N	N	O
+！	x	N	N	O
+！	x	N	N	O
+！	x	N	N	O
+继续	v	N	N	O
+调试	vn	N	N	O
+中	ns	N	N	O
+..............	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+iostream	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+cstdio	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+cstring	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+algorithm	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+queue	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+Max	eng	N	N	O
+ 	x	N	N	O
+25	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+Maxn	eng	N	N	O
+ 	x	N	N	O
+10010	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+Node	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+steps	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+state	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+Node1	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+G	x	N	N	O
+[	x	N	N	O
+Max	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+Max	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+move	eng	N	N	O
+[	x	N	N	O
+4	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+2	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+{	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+}	x	N	N	O
+,	x	N	N	O
+{	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+1	x	N	N	O
+}	x	N	N	O
+,	x	N	N	O
+{	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+}	x	N	N	O
+,	x	N	N	O
+{	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+}	x	N	N	O
+}	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+visit	eng	N	N	O
+[	x	N	N	O
+Max	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+Max	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+Maxn	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+r	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+c	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+bfs	eng	N	N	O
+(	x	N	N	O
+Node	eng	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+queue	eng	N	N	O
+<	x	N	N	O
+Node	eng	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+q	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Node	eng	N	N	O
+ 	x	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+juge	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Node1	eng	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+Max	eng	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+parent	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+parent	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+push	eng	N	N	O
+(	x	N	N	O
+fir	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+empty	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+front	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+pop	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+j	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+计算	v	Y	N	O
+蛇	n	N	N	O
+在	p	N	N	O
+上	f	N	N	O
+一	m	N	N	O
+状态	n	Y	N	O
+中	f	N	N	O
+的	uj	N	N	O
+身体	n	N	N	O
+的	uj	N	N	O
+坐标	v	Y	N	O
+，	x	N	N	O
+并	c	N	N	O
+记录	n	Y	N	O
+在	p	N	N	O
+parent	eng	N	N	O
+中	ns	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+rez	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+index1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+rez	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+index1	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+index2	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+rez	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+index2	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+xnow	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+move	eng	N	N	O
+[	x	N	N	O
+rez	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+ynow	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+move	eng	N	N	O
+[	x	N	N	O
+rez	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+xnow	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+ynow	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+xnow	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+_	x	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+ynow	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+蛇头	n	N	N	O
+向	p	N	N	O
+4	m	N	N	O
+个	m	N	N	O
+方向	n	N	N	O
+移动	vn	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Node	eng	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+flag	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+move	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+move	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+r	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+c	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+G	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+到达	v	N	N	O
+（	x	N	N	O
+1	x	N	N	O
+，	x	N	N	O
+1	x	N	N	O
+）	x	N	N	O
+退出	v	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+steps	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+juge	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+上边	f	N	N	O
+条件	n	N	N	O
+全部	n	N	N	O
+满足	v	N	N	O
+后	f	N	N	O
+，	x	N	N	O
+计算	v	Y	N	O
+蛇头	n	N	N	O
+移动	vn	N	N	O
+一步	m	N	N	O
+后	f	N	N	O
+，	x	N	N	O
+当前	t	N	N	O
+蛇	n	N	N	O
+身体	n	N	N	O
+状态	n	Y	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+3	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+visit	eng	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+假如	c	N	N	O
+这个	r	N	N	O
+状态	n	Y	N	O
+没有	v	N	N	O
+出现	v	N	N	O
+过	ug	N	N	O
+，	x	N	N	O
+入	v	N	N	O
+队列	n	Y	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+parent	eng	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+flag	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+flag	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+visit	eng	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+x	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+y	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+state	eng	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+标记	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+media	eng	N	N	O
+.	m	N	N	O
+steps	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+fir	eng	N	N	O
+.	m	N	N	O
+steps	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+push	eng	N	N	O
+(	x	N	N	O
+media	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+juge	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+juge	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+break	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+empty	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+q	eng	N	N	O
+.	m	N	N	O
+pop	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+juge	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+sum	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+test	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+r	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+c	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+r	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+c	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Node	eng	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+rez	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+Case	eng	N	N	O
+ 	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+test	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+test	eng	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+x	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+y	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+ 	x	N	N	O
+计算	v	Y	N	O
+蛇	n	N	N	O
+的	uj	N	N	O
+初始状态	l	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+x1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+2	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+state	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+index	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+steps	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+m	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+Max	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+i	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+Max	eng	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+G	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+++	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+y	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+G	x	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+x	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+y	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+0	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+visit	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+visit	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+visit	eng	N	N	O
+[	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+x	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+y	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+str	eng	Y	N	O
+.	m	N	N	O
+state	eng	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+bfs	eng	N	N	O
+(	x	N	N	O
+str	eng	Y	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+init	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O

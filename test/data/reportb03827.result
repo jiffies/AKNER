@@ -1,0 +1,1225 @@
+poj1182	eng	N	Y	O	B-OJ
+
+食物链	n	N	N	O	O
+和	c	N	N	O	O
+poj1988	eng	N	Y	O	B-OJ
+
+cube	eng	N	N	O	O
+
+stacking	eng	N	N	O	O
+类似	v	N	N	O	O
+（	x	N	N	O	O
+并	c	N	N	O	B-KNOWLEDGE
+查集	v	Y	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+经典	n	N	N	O	O
+应用	v	N	N	O	O
+）	x	N	N	O	O
+_	x	N	N	O	O
+Keep	eng	N	N	O	O
+
+Moving	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+50005	m	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+ready	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+
+=	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+和	c	N	N	O	O
+cube	eng	N	N	O	O
+
+stacking	eng	N	N	O	O
+一样	r	N	N	O	O
+
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+就	d	N	N	O	O
+像	v	N	N	O	O
+其	r	N	N	O	O
+上面	f	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个	q	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+次步	n	N	N	O	O
+也	d	N	N	O	O
+不太好	v	N	N	O	O
+想	v	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+void	eng	N	N	O	O
+
+UNION	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+}	x	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ready	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+count	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+b	x	N	N	O	O
+>	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+2	m	N	N	O	O
+&&	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+aa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+bb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+aa	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+bb	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+2	m	N	N	O	O
+&&	x	N	N	O	O
+(	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+3	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+次	m	N	N	O	O
+步	n	N	N	O	O
+不好	d	N	N	O	O
+想	v	N	N	O	O
+啊	y	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	m	N	N	O	O
+&&	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+bb	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+(	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+kind	eng	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
++	x	N	N	O	O
+k	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+bb	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+aa	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+count	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+本题	n	N	N	O	O
+算法	n	Y	N	O	O
+参考	v	N	N	O	O
+各个	r	N	N	O	O
+大	a	N	N	O	O
+牛	n	N	N	O	O
+的	uj	N	N	O	O
+博客	nr	N	N	O	O
+才	d	N	N	O	O
+写成	v	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+本题	n	N	N	O	O
+和	c	N	N	O	O
+poj1988cube	eng	N	Y	O	B-OJ
+
+stacking	eng	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+查找	v	Y	N	O	O
+极	d	N	N	O	O
+像	v	N	N	O	O
+，	x	N	N	O	O
+只是	c	N	N	O	O
+本题	n	N	N	O	O
+是	v	N	N	O	O
+类型	n	Y	N	O	O
+，	x	N	N	O	O
+就	d	N	N	O	O
+加	v	N	N	O	O
+个	q	N	N	O	O
+取	v	N	N	O	O
+模	n	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+详解	v	N	N	O	O
+见	v	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+hi	eng	N	N	O	O
+.	m	N	N	O	O
+baidu	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+flabbyan	eng	N	N	O	O
+/	x	N	N	O	O
+blog	eng	N	N	O	O
+/	x	N	N	O	O
+item	eng	N	N	O	O
+/	x	N	N	O	O
+4374633	m	N	N	O	O
+e9fdad2cb7c1e7131	eng	N	N	O	O
+.	m	N	N	O	O
+html	eng	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+和	c	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+www	eng	N	N	O	O
+.	m	N	N	O	O
+cnblogs	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+kdy71107216	eng	N	N	O	O
+/	x	N	N	O	O
+archive	eng	N	N	O	O
+/	x	N	N	O	O
+2008	m	N	N	O	O
+/	x	N	N	O	O
+11	m	N	N	O	O
+/	x	N	N	O	O
+19	m	N	N	O	O
+/	x	N	N	O	O
+1246722.	m	N	N	O	O
+html	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+30003	m	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+S	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pa	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+up	eng	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+S	x	N	N	O	O
+;	x	N	N	O	O
+
+S	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+ready	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+maxn	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+up	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+
+=	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+up	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+r	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+up	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+这	r	N	N	O	O
+一步	m	N	N	O	O
+和	c	N	N	O	O
+食物链	n	N	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+同	n	N	N	O	O
+一步	m	N	N	O	O
+一样	r	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+aa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+bb	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+bb	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+aa	eng	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+bb	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+up	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+aa	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+set	eng	N	N	O	O
+[	x	N	N	O	O
+aa	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+bb	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+ready	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+ch	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+switch	eng	N	N	O	O
+(	x	N	N	O	O
+ch	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+case	eng	N	N	O	O
+
+'	x	N	N	O	O
+M	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+he	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+case	eng	N	N	O	O
+
+'	x	N	N	O	O
+C	x	N	N	O	O
+'	x	N	N	O	O
+:	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+aa	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+aa	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
+-	x	N	N	O	O
+set	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+up	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+详解	v	N	N	O	O
+见	v	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+www	eng	N	N	O	O
+.	m	N	N	O	O
+cppblog	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+RyanWang	eng	N	N	O	O
+/	x	N	N	O	O
+archive	eng	N	N	O	O
+/	x	N	N	O	O
+2009	m	N	N	O	O
+/	x	N	N	O	O
+02	m	N	N	O	O
+/	x	N	N	O	O
+21	m	N	N	O	O
+/	x	N	N	O	O
+74518.	m	N	N	O	O
+aspx	eng	N	N	O	O
+

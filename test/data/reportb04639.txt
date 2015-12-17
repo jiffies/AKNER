@@ -1,0 +1,153 @@
+poj1135 Domino Effect(最短路径)_chenhuang_新浪博客
+
+题目：http://acm.pku.edu.cn/JudgeOnline/problem?id=1135
+思路：达到每个关键多米诺的时间就是与第一个关键多米诺骨牌的最短距离
+ 与第一个关键多米诺骨牌距离最远的关键多米诺骨牌必定最晚倒下，然后
+ 穷举每个关键多米诺骨牌和它的相邻多米诺骨牌，查找最晚倒下的多米诺骨牌
+源代码：
+#include <iostream>
+ #include <vector>
+ #include <queue>
+ #include <cstdio>
+ using namespace std;
+const int INF = 100000000;
+ const int MAXN = 501;
+ typedef struct node
+ {
+  int to;
+  int time;
+ }Edge;
+int n;//多米诺骨牌的个数
+ int m;//骨牌的排数，即边数
+ vector<Edge> g[MAXN];//存放图的邻接表
+ priority_queue<Edge> pq;
+ int dist[MAXN];//存放每个关键多米诺骨牌到1号多米诺骨牌的最短路径
+//比较器
+ bool operator < (const Edge& a,const Edge& b)
+ {
+  return a.time > b.time;
+ }
+ void Init()
+ {
+  int i;
+  for (i = 1; i <= n; i ++)
+   g[i].clear();
+ }
+ void Dijkstra()
+ {
+  bool flag[MAXN];
+  int i,ct = 0;
+  Edge e,e1;
+  for (i = 1; i <= n; i ++)
+  {
+   flag[i] = false;
+   dist[i] = INF;
+  }
+  while (!pq.empty())
+   pq.pop();
+  e.to = 1;
+  e.time = 0;
+  dist[1] = 0;
+  pq.push(e);
+  while (ct < n && !pq.empty())
+  {
+   do{
+    e = pq.top();
+    pq.pop();
+   }while (flag[e.to] && !pq.empty());
+   if (!flag[e.to])
+   {
+    flag[e.to] = true;
+    ct ++;
+    for (i = 0; i < g[e.to].size(); i ++)
+     if (!flag[g[e.to][i].to])
+     {
+      if (dist[e.to] + g[e.to][i].time < dist[g[e.to][i].to])
+      {
+       dist[g[e.to][i].to] = dist[e.to] + g[e.to][i].time;
+       e1.to = g[e.to][i].to;
+       e1.time = dist[g[e.to][i].to];
+       pq.push(e1);
+      }
+     }
+   }
+  }
+ }
+ void GetAns()
+ {
+  int i,p1,p2,j;
+  p1 = p2 = 1;
+  double ans = 0;
+  for (i = 1; i <= n; i ++)
+   for (j = 0; j < g[i].size(); j ++)
+    if (g[i][j].to > i)
+    {
+     if (dist[i] <= dist[g[i][j].to])
+     {
+      if (dist[i] + g[i][j].time > dist[g[i][j].to] &&
+       ((double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2) > ans)
+      {
+       p1 = i;
+       p2 = g[i][j].to;
+       ans = (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2;
+      }
+      else if (dist[i] + g[i][j].time == dist[g[i][j].to] &&
+       dist[g[i][j].to] > ans)
+      {
+       p1 = p2 = g[i][j].to;
+       ans = dist[g[i][j].to];
+      }
+     }
+     else if (dist[i] > dist[g[i][j].to])
+     {
+      if (dist[g[i][j].to] + g[i][j].time > dist[i] &&
+       (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2 > ans)
+      {
+       p1 = i;
+       p2 = g[i][j].to;
+       ans = (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2;
+      }
+      else if (dist[g[i][j].to] + g[i][j].time == dist[i] &&
+       dist[i] > ans)
+      {
+       p1 = p2 = i;
+       ans = dist[i];
+      }
+     }
+    }
+  if (p1 != p2)
+  {
+   if (p1 > p2)
+   {
+    p1 ^= p2;
+    p2 ^= p1;
+    p1 ^= p2;
+   }
+   printf("The last domino falls after %.1f seconds, between key dominoes %d and %d.\n\n",ans,p1,p2);
+  }
+  else
+   printf("The last domino falls after %.1f seconds, at key domino %d.\n\n",ans,p1);
+ }
+ int main(void)
+ {
+  int ct = 1,x,y,z,i;
+  Edge e;
+  while (cin >> n >> m,n || m)
+  {
+   Init();
+   //建图
+   for (i = 0; i < m; i ++)
+   {
+    cin >> x >> y >> z;
+    e.to = y;
+    e.time = z;
+    g[x].push_back(e);
+    e.to = x;
+    g[y].push_back(e);
+   }
+   Dijkstra();
+   cout << "System #" << (ct++) << endl;
+   GetAns();
+  }
+  return 0;
+ }

@@ -1,0 +1,51 @@
+poj2756二叉树 -  - 博客频道 - CSDN.NET
+
+出去兴趣做做这些。牛人可以直接无视..
+ 
+/*
+		Author:snowflake
+		Time:2012/4/9
+		desc:poj2756简单题 
+*/
+/*
+结题报告：这题就是找到一个最先能使两个点重合的节点，依次枚举两个数所经历的节点，
+直到根节点，然后在对比其内容。 
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int x, y;
+	while(cin >> x >> y)
+	{
+		int a[10], b[10], i = 0, j = 0;
+		while(x)
+		{
+			a[i] = x;
+			x = (int)floor(x / 2);
+			i++;
+		}
+		while(y)
+		{
+			b[j] = y;
+			y = (int)floor(y / 2);
+			j++;
+		}
+		int ok = 0;
+		for(int p = 0; p < i; p++)
+		{
+			for(int q = 0; q < j; q++)
+			{
+				if(a[p] == b[q])
+				{
+					cout << a[p] << endl;
+					ok = 1;
+				}
+			}
+			if(ok) break;
+		}
+	}
+	return 0;
+}
+

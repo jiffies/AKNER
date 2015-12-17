@@ -1,0 +1,488 @@
+pku	eng	N	Y	O	B-OJ
+
+3349	m	N	N	O	I-OJ
+
+(	x	N	N	O	O
+Snowflake	eng	N	N	O	O
+
+Snow	eng	N	N	O	O
+
+Snowflakes	eng	N	N	O	O
+)	x	N	N	O	O
+未	d	N	N	O	O
+解决	v	N	N	O	O
+_	x	N	N	O	O
+void	eng	N	N	O	O
+
+com	eng	N	N	O	O
+(	x	N	N	O	O
+fool	eng	N	N	O	O
+
+G	x	N	N	O	O
+,	x	N	N	O	O
+fool	eng	N	N	O	O
+
+G	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+happy	eng	N	N	O	O
+
+every	eng	N	N	O	O
+
+day	eng	N	N	O	O
+!	x	N	N	O	O
+}	x	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+先	d	N	N	O	O
+留	v	N	N	O	O
+着	uz	N	N	O	O
+，	x	N	N	O	O
+思想	n	Y	N	O	O
+都	d	N	N	O	O
+有	v	N	N	O	O
+，	x	N	N	O	O
+写	v	N	N	O	O
+得	ud	N	N	O	O
+太	d	N	N	O	O
+麻烦	an	N	N	O	O
+，	x	N	N	O	O
+等	u	N	N	O	O
+做够	v	N	N	O	O
+足够	v	N	N	O	O
+的	uj	N	N	O	O
+HASH	eng	N	N	O	B-KNOWLEDGE
+题	n	N	N	O	O
+再说	c	N	N	O	O
+吧	y	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+Prime	eng	N	N	O	O
+=	x	N	N	O	O
+14997	m	N	N	O	O
+
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+100010	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+7	x	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+150000	m	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+idx	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+next	eng	N	N	O	O
+=	x	N	N	O	O
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+idx	eng	N	N	O	O
+=	x	N	N	O	O
+id	eng	N	N	O	O
+;	x	N	N	O	O
+
+next	eng	N	N	O	O
+=	x	N	N	O	O
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+idx	eng	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+next	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+table	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+table	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+idx	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+table	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+=	x	N	N	O	O
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+hash	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+*	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+6	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+%	x	N	N	O	O
+149997	m	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+OK	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+count	eng	N	N	O	O
+(	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+N	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+N	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+6	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+[	x	N	N	O	O
+count	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+count	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+count	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+<	x	N	N	O	O
+
+6	x	N	N	O	O
+
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

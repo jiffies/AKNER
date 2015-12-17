@@ -1,0 +1,34 @@
+PKU 2027 No Brainer(简单题)_双月鸟_百度空间
+
+No Brainer 
+Time Limit: 1000MS 
+Memory Limit: 30000K 
+Total Submissions: 8953 
+Accepted: 6298 
+
+Description
+Zombies love to eat brains. Yum.
+
+Input
+The first line contains a single integer n indicating the number of data sets. 
+
+The following n lines each represent a data set. Each data set will be formatted according to the following description: 
+
+A single data set consists of a line "X Y", where X is the number of brains the zombie eats and Y is the number of brains the zombie requires to stay alive.
+
+Output
+For each data set, there will be exactly one line of output. This line will be "MMM BRAINS" if the number of brains the zombie eats is greater than or equal to the number of brains the zombie requires to stay alive. Otherwise, the line will be "NO BRAINS".
+
+Sample Input
+34 53 34 3
+
+Sample Output
+NO BRAINSMMM BRAINSMMM BRAINS
+
+Source
+South Central USA 2004
+Source Code
+ Problem: 2027 User: LXpeng Memory: 204K Time: 0MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include <iostream>using namespace std;int main() { int n,x,y; scanf("%d",&n); while(n--) { scanf("%d %d",&x,&y); if(x>=y) printf("MMM BRAINS\n"); else printf("NO BRAINS\n"); } return 0;} 

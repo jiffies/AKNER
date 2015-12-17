@@ -1,0 +1,63 @@
+[pku1716]Integer Intervals - lovekid的日志 - 网易博客
+
+Source Code
+ 
+ 
+  
+   
+   Problem: 1716 
+    
+   User: loveKid
+   
+   
+   Memory: 248K 
+    
+   Time: 0MS
+   
+   
+   Language: C++ 
+    
+   Result: Accepted
+  
+ 
+ 
+ 
+ Source Code  
+ //贪心...周赛卡住了... 
+ #include<stdio.h>
+#include<algorithm>
+using namespace std;
+int n;
+struct lovekid{
+ int start,end;
+}kid[10002];
+bool cmp(lovekid t1,lovekid t2){
+ return t2.end>t1.end;
+} 
+ int main(){
+ int i,currentS,currentE,ans;
+ //freopen("C:\\Documents and Settings\\Administrator\\桌面\\in.txt","r",stdin);
+ while(scanf("%d",&n)!=EOF){
+  for(i=0;i<n;i++)
+   scanf("%d%d",&kid[i].start,&kid[i].end);
+  sort(kid,kid+n,cmp);
+  currentS=kid[0].end-1;
+  currentE=kid[0].end;
+  for(ans=2,i=1;i<n;i++){
+   if(kid[i].start<=currentS)continue;
+   else if(kid[i].start<=currentE){
+    ans++;
+    currentS=currentE;
+    currentE=kid[i].end;
+   }
+   else {
+    ans+=2;
+    currentS=kid[i].end-1;
+    currentE=kid[i].end;
+   }
+   }
+  printf("%d\n",ans);
+ }
+return 0;
+}
+

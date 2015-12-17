@@ -1,0 +1,358 @@
+poj1740	eng	N	Y	O	B-OJ
+(	x	N	N	O	O
+A	x	N	N	O	O
+
+New	eng	N	N	O	O
+
+Stone	eng	N	N	O	O
+
+Game	eng	N	N	O	O
++	x	N	N	O	O
+男人	n	N	N	O	O
+八题	n	N	N	O	O
+之一	r	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+鸟	zg	N	N	O	O
+
+的	uj	N	N	O	O
+
+天	q	N	N	O	O
+
+空	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+题目	n	Y	N	O	O
+链接	n	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+1740	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+有	v	N	N	O	O
+N	eng	N	N	O	O
+堆	v	N	N	O	O
+石子	n	Y	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+从	p	N	N	O	O
+一堆	m	N	N	O	O
+中	f	N	N	O	O
+取走	v	N	N	O	O
+至少	d	N	N	O	O
+一个	m	N	N	O	O
+石子	n	Y	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+将此	d	N	N	O	O
+堆	v	N	N	O	O
+剩余	v	N	N	O	O
+的	uj	N	N	O	O
+石子	n	Y	N	O	O
+的	uj	N	N	O	O
+任意	v	Y	N	O	O
+多个	m	N	N	O	O
+任意	v	Y	N	O	O
+分配	vn	N	N	O	O
+到	v	N	N	O	O
+其它	r	N	N	O	O
+的	uj	N	N	O	O
+堆中	v	N	N	O	O
+，	x	N	N	O	O
+最后	f	N	N	O	O
+一个	m	N	N	O	O
+取完	v	N	N	O	O
+石子	n	Y	N	O	O
+的	uj	N	N	O	O
+胜利	vn	N	N	O	O
+。	x	N	N	O	O
+
+两个	m	N	N	O	O
+人	n	N	N	O	O
+都	d	N	N	O	O
+使用	v	N	N	O	O
+最	d	N	N	O	O
+有	v	N	N	O	O
+策略	n	N	N	O	O
+，	x	N	N	O	O
+问	n	N	N	O	O
+是不是	l	N	N	O	O
+先	d	N	N	O	O
+手	n	N	N	O	O
+胜利	vn	N	N	O	O
+。	x	N	N	O	O
+
+男人	n	N	N	O	O
+八题	n	N	N	O	O
+中	f	N	N	O	O
+题解	v	N	N	O	O
+：	x	N	N	O	O
+当	p	N	N	O	O
+且仅	c	N	N	O	O
+当	t	N	N	O	O
+N	eng	N	N	O	O
+为	p	N	N	O	O
+偶数	n	N	N	O	O
+并且	c	N	N	O	O
+“	x	N	N	O	O
+每个	r	N	N	O	O
+数字	n	Y	N	O	O
+出现	v	N	N	O	O
+偶数	n	N	N	O	O
+次	q	N	N	O	O
+”	x	N	N	O	O
+时先	n	N	N	O	O
+手会	n	N	N	O	O
+输	v	N	N	O	O
+；	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+numpie	eng	N	N	O	O
+[	x	N	N	O	O
+105	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+N	eng	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+N	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+pie	eng	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+numpie	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+numpie	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+pie	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+numpie	eng	N	N	O	O
+[	x	N	N	O	O
+pie	eng	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+101	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+numpie	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+%	x	N	N	O	O
+2	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+101	m	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+0	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+1	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

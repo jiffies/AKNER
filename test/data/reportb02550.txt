@@ -1,0 +1,63 @@
+UVa 590 - Always on the run_Knowledgetime的空间_百度空间
+
+UVa 590 - Always on the run
+   读了半天题目，又在st8676746帮助下才真正将题理解，不过大部分还是靠我的努力。在这里感谢st867646！
+   说实在的在看到别人对这题的评价：简单题，水题...再想想自己当时在看这题的时候没有思路，也不知如何下手，心理无不是一种打击，心中不由产生一种自卑感……感觉自己太弱了。
+   可我并没有被这击倒，我还是坚强的面对。我也没看那些牛人的代码，他们写得高级我可能不太看懂。
+    只是自己永不停息的想……半天了过去了，直到现在我才解决这题，但，我一次AC的。
+    就说说这题的解法吧，我没有利用什么高级的东西，只是利用简单语句，我想代码可读性还可以。
+    这题是好像是最短路径问题，但是再仔细想想，最好的做法是利用动态规划，这样可以使问题变得简单。最优解的来源可能有n-1个，所以我们令ans[i][j]表示城市i在j天的旅行最小费用，那么则有状态转移方程：
+    ans[i][j]=min{ ans[c][j-1]+p[c][i][j] | 1<=c<=n and c≠i }.
+    Initinatify:ans[1][0]=0, Anothers:ans[][]= -1
+   目标： ans[n][k] .
+/* Source Code */
+#include <stdio.h>
+#include <string.h>
+int n,k,cas=0;
+int p[16][16][32]={0},days[16][16]={0};
+int ans[16][1024]={0};
+void readdata()
+{
+     for(int i=1;i<=n;i++)
+        for(int j=1;j<=n;j++)
+        if(i!=j)
+        {
+           scanf("%d",&days[i][j]);
+           for(int c=0;c<days[i][j];c++)
+              scanf("%d",&p[i][j][c]);
+        }
+}
+void travel()
+{
+     int t,min;
+     memset(ans,-1,sizeof(ans));
+     ans[1][0]=0;
+     for(int j=1;j<=k;j++)
+        for(int i=1;i<=n;i++)
+        {
+           min=-1;
+           for(int c=1;c<=n;c++)
+           {
+              if(c==i||ans[c][j-1]<0) continue;//No answer
+              t=(j-1)%days[c][i];
+              if(!p[c][i][t]) continue;//No flight
+              if(min<0) min=ans[c][j-1]+p[c][i][t];
+              else   if(min>ans[c][j-1]+p[c][i][t])
+                        min=ans[c][j-1]+p[c][i][t];
+           }
+           ans[i][j]=min;
+        }
+     printf("Scenario #%d\n",++cas);
+     if(ans[n][k]>=0) printf("The best flight costs %d.\n\n",ans[n][k]);
+     else printf("No flight possible.\n\n");
+}
+int main()
+{
+    while(scanf("%d%d",&n,&k)==2)
+    {
+       if(!n && !k) break;
+       readdata();
+       travel();
+    }
+    return 0;
+}

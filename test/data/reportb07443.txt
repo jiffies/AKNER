@@ -1,0 +1,291 @@
+poj 2985_乐吾天_百度空间
+
+昨天zbwm让我用splay写这道题，但是由于我傻不小心忘了splay怎么写了。
+
+想了很久终于想起来怎么写splay了，用vijos1081试了试发现的确没写次，于是我就用splay写了个这道题。
+
+gnaggnoyil神牛用sbt只用了1313ms，我就比较弱，写了个splay用了1422ms
+
+#include <cstdio>
+
+using namespace std;
+
+const int maxn=250001;
+
+int c[maxn][2],s[maxn],key[maxn],count[maxn],root,total,nt,n,m;
+
+int fa[maxn],size[maxn];
+
+void splay(int&x,int k)
+
+{
+
+ if (x==0) return;
+
+ int pt[2],ps[2];
+
+ pt[0]=pt[1]=ps[0]=ps[1]=c[0][0]=c[0][1]=0;
+
+ key[0]=k;
+
+ while (key[x]!=k)
+
+ {
+
+ int w=k>key[x];
+
+ if (k>key[c[x][w]]==w&&k!=key[c[x][w]])
+
+ {
+
+ int y=c[x][w];c[x][w]=c[y][!w];c[y][!w]=x;
+
+ s[x]=s[c[x][0]]+s[c[x][1]]+count[x];
+
+ x=y;
+
+ }
+
+ if (!c[x][w]) break;
+
+ c[pt[!w]][w]=x;
+
+ pt[!w]=x;
+
+ ps[!w]+=s[c[x][!w]]+count[x];
+
+ x=c[x][w];
+
+ }
+
+ for (int w=0;w<2;++w)
+
+ {
+
+ c[pt[w]][!w]=c[x][w];
+
+ pt[w]=c[x][w];
+
+ ps[w]+=s[c[x][w]];
+
+ c[x][w]=c[0][!w];
+
+ int y=c[x][w];
+
+ while (y!=pt[w])
+
+ {
+
+ s[y]=ps[w];
+
+ ps[w]-=s[c[y][w]]+count[y];
+
+ y=c[y][!w];
+
+ }
+
+ }
+
+ s[x]=s[c[x][0]]+s[c[x][1]]+count[x];
+
+}
+
+void insert(int&x,int k)
+
+{
+
+ splay(x,k);
+
+ if (x&&key[x]==k) {count[x]++;s[x]++;return;}
+
+ int y=++total;key[y]=k;s[y]=1;count[y]=1;
+
+ if (x==0) {x=y;return;}
+
+ int w=k>key[x];
+
+ c[y][!w]=x;
+
+ c[y][w]=c[x][w];
+
+ c[x][w]=0;
+
+ s[x]=s[c[x][!w]]+count[x];
+
+ x=y;
+
+ s[x]=s[c[x][0]]+s[c[x][1]]+count[x];
+
+}
+
+void remove(int&x,int k)
+
+{
+
+ splay(x,k);
+
+ if (count[x]>1) {count[x]--;s[x]--;return;}
+
+ int y=c[x][0];
+
+ if (!y) {x=c[x][1];return;}
+
+ splay(y,k+1);
+
+ c[y][1]=c[x][1];
+
+ x=y;
+
+ s[x]=s[c[x][0]]+s[c[x][1]]+count[x];
+
+}
+
+int get_kth(int x,int k)
+
+{
+
+ for (;;)
+
+ {
+
+ if (k<=s[c[x][0]]) {x=c[x][0];continue;}
+
+ k-=s[c[x][0]];
+
+ if (k<=count[x]) break;
+
+ k-=count[x];
+
+ x=c[x][1];
+
+ }
+
+ splay(root,key[x]);
+
+ return key[x];
+
+}
+
+int father(int i)
+
+{
+
+ int p=i;
+
+ for (;fa[p];p=fa[p]);
+
+ for (;fa[i];)
+
+ {
+
+ int t=fa[i];
+
+ fa[i]=p;
+
+ i=t;
+
+ }
+
+ return p;
+
+}
+
+int main()
+
+{
+
+// freopen("1.in","r",stdin);
+
+ scanf("%d%d",&n,&m);
+
+ nt=n;
+
+ for (int i=1;i<=n;++i)
+
+ {
+
+ insert(root,1);
+
+ size[i]=1;
+
+ }
+
+ for (int i=1;i<=m;++i)
+
+ {
+
+ int w,u,v;
+
+ scanf("%d",&w);
+
+ if (w==0)
+
+ {
+
+ scanf("%d%d",&u,&v);
+
+ u=father(u);v=father(v);
+
+ if (u!=v)
+
+ {
+
+ remove(root,size[u]);
+
+ remove(root,size[v]);
+
+ size[v]+=size[u];
+
+ fa[u]=v;
+
+ nt--;
+
+ insert(root,size[v]);
+
+ }
+
+ }
+
+ else
+
+ {
+
+ scanf("%d",&u);
+
+ printf("%d\n",get_kth(root,nt+1-u));
+
+ }
+
+ }
+
+}
+
+推荐文章:
+
+1. 
+POJ 1733 / URAL 1003 Parity game [并查集]
+
+2. 
+poj 1611-The Suspects
+
+3. 
+POJ 1006 Biorhythms
+
+4. 
+POJ 1005 I Think I Need a Houseboat
+
+5. 
+[POJ 2019]矩阵处理
+
+6. 
+[POJ 1019]数字处理
+
+7. 
+[POJ 2299]逆序对
+
+8. 
+[POJ 2029]矩阵处理
+
+9. 
+poj 1140 Expanding Fractions 模拟
+

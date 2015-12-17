@@ -1,0 +1,65 @@
+pku1160   Post Office    解题报告 - xxm137164869的专栏 - 博客频道 - CSDN.NET
+
+ 思路：用opt[i][j]记录把前i个邮局建到前j个村庄中的最优解，用cost[i][j]记录所有在i到j村庄中，建1个邮局的最小代价。显然邮局应该设到中点。让前i个邮局覆盖前j个村庄，第i+1个邮局覆盖第j+1至j+k个村庄(j+k<=n)，则状态转移方程为
+ opt[i+1][j+k]=min{opt[i][j]+cost[j+1][j+k];} (k+j<=n)
+代码如下：
+ 
+ 
+  
+  
+   Code:
+   
+  
+  
+  #include<iostream>   
+  using namespace std;   
+     
+  const int Max(305);   
+  int data[Max];   
+     
+  int main()   
+  {   
+      int op[Max][Max];   
+      int n,m;   
+      cin>>n>>m;   
+      int cost[Max][Max];   
+      for(int i=1;i<=n;i++)   
+          cin>>data[i];   
+      for(int i=1;i<=n;i++)   
+      {   
+          for(int j=i;j<=n;j++)   
+          {   
+              int mid;   
+              cost[i][j]=0;   
+              mid=(i+j)/2;   
+              for(int k=i;k<=j;k++)   
+                  cost[i][j]+=(data[mid]-data[k])>=0?data[mid]-data[k]:data[k]-data[mid];   
+                 
+          }   
+      }   
+      for(int i=0;i<=m;i++)   
+      {   
+          for(int j=0;j<=n;j++)   
+              op[i][j]=3000000;   
+      }   
+      op[0][0]=0;   
+      for(int i=0;i<m;i++)   
+      {   
+          for(int j=0;j<=n;j++)   
+          {   
+              if(op[i][j]<3000000)   
+              {   
+                  for(int k=1;j+k<=n;k++)   
+                      if(op[i+1][j+k]>op[i][j]+cost[j+1][j+k])   
+                      {   
+                          op[i+1][j+k]=op[i][j]+cost[j+1][j+k];   
+                      }   
+              }   
+          }   
+      }   
+      cout<<op[m][n]<<endl;   
+      return 0;   
+  }  
+  
+ 
+

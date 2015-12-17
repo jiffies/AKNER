@@ -1,0 +1,679 @@
+PKU	eng	N	Y	O	B-OJ
+
+1026	m	N	N	O	O
+
+Cipher	eng	N	N	O	O
+_	x	N	N	O	O
+乐吾天	nr	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+这	r	N	N	O	O
+需	v	N	N	O	O
+要求	v	N	N	O	O
+每	zg	N	N	O	O
+一个	m	N	N	O	O
+位置	v	N	N	O	O
+的	uj	N	N	O	O
+循环	vn	N	N	O	O
+因子	n	Y	N	O	O
+，	x	N	N	O	O
+最后	f	N	N	O	O
+用	p	N	N	O	O
+k	eng	N	N	O	O
+模	ng	N	N	O	O
+每	r	N	N	O	O
+一位	m	N	N	O	O
+的	uj	N	N	O	O
+循环	vn	N	N	O	O
+因子	n	Y	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+输出	v	Y	N	O	O
+相应	v	N	N	O	O
+的	uj	N	N	O	O
+字符	n	Y	N	O	O
+即可	d	N	N	O	O
+。	x	N	N	O	O
+
+不过	c	N	N	O	O
+陷阱	n	N	N	O	O
+不少	d	N	N	O	O
+，	x	N	N	O	O
+WA	eng	N	N	O	O
+了	ul	N	N	O	O
+N	eng	N	N	O	O
+次	t	N	N	O	O
+。	x	N	N	O	O
+
+每个	r	N	N	O	O
+block	eng	N	N	O	O
+之后	f	N	N	O	O
+有个	r	N	N	O	O
+
+空行	n	N	N	O	O
+。	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+也	d	N	N	O	O
+会	v	N	N	O	O
+WA	eng	N	N	O	O
+。	x	N	N	O	O
+
+要	v	N	N	O	O
+用	p	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+输出	v	Y	N	O	O
+必须	d	N	N	O	O
+有	v	N	N	O	O
+n	eng	N	N	O	O
+位	v	N	N	O	O
+，	x	N	N	O	O
+后面	f	N	N	O	O
+需要	v	N	N	O	O
+补	v	N	N	O	O
+空格	n	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+1026	m	N	N	O	O
+
+User	eng	N	N	O	O
+:	x	N	N	O	O
+
+AlbertLiu	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+:	x	N	N	O	O
+
+312	m	N	N	O	O
+K	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+
+47	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Language	eng	N	N	O	O
+:	x	N	N	O	O
+
+C++	nz	N	N	O	O
+
+Result	eng	N	N	O	O
+:	x	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+klen	eng	N	N	O	O
+=	x	N	N	O	O
+200	m	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+sw	eng	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+mod	eng	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+
+;	x	N	N	O	O
+char	eng	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+
+,	x	N	N	O	O
+
+res	eng	N	N	O	O
+[	x	N	N	O	O
+klen	eng	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+&&	x	N	N	O	O
+n	eng	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+sw	eng	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+sw	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+j	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+
+;	x	N	N	O	O
+
+do	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+
+sw	eng	N	N	O	O
+[	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+
+)	x	N	N	O	O
+
+;	x	N	N	O	O
+
+mod	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+)	x	N	N	O	O
+&&	x	N	N	O	O
+k	eng	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+&&	x	N	N	O	O
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+10	m	N	N	O	O
+
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+j	eng	N	N	O	O
+)	x	N	N	O	O
+
+res	eng	N	N	O	O
+[	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+%	x	N	N	O	O
+mod	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+;	x	N	N	O	O
+
+res	eng	N	N	O	O
+[	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+推荐	v	N	N	O	O
+文章	n	N	N	O	O
+:	x	N	N	O	O
+
+1.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1733	m	N	N	O	I-OJ
+
+/	x	N	N	O	O
+
+URAL	eng	N	N	O	O
+
+1003	m	N	N	O	I-OJ
+
+Parity	eng	N	N	O	O
+
+game	eng	N	N	O	O
+
+[	x	N	N	O	O
+并	c	N	N	O	B-KNOWLEDGE
+查集	v	Y	N	O	I-KNOWLEDGE
+]	x	N	N	O	I-KNOWLEDGE
+
+2.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+1611	m	N	N	O	I-OJ
+-	x	N	N	O	O
+The	eng	N	N	O	O
+
+Suspects	eng	N	N	O	O
+
+3.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1006	m	N	N	O	I-OJ
+
+Biorhythms	eng	N	N	O	O
+
+4.	m	N	N	O	O
+
+POJ	eng	N	Y	O	B-OJ
+
+1005	m	N	N	O	O
+
+I	x	N	N	O	O
+
+Think	eng	N	N	O	O
+
+I	x	N	N	O	O
+
+Need	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+Houseboat	eng	N	N	O	O
+
+5.	m	N	N	O	O
+
+[	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+2019	m	N	N	O	I-OJ
+]	x	N	N	O	O
+矩阵	n	Y	N	O	O
+处理	v	N	N	O	O
+
+6.	m	N	N	O	O
+
+[	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+1019	m	N	N	O	I-OJ
+]	x	N	N	O	O
+数字	n	Y	N	O	O
+处理	v	N	N	O	O
+
+7.	m	N	N	O	O
+
+[	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+2299	m	N	N	O	I-OJ
+]	x	N	N	O	O
+逆序	n	Y	N	O	O
+对	p	N	N	O	O
+
+8.	m	N	N	O	O
+
+[	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+2029	m	N	N	O	I-OJ
+]	x	N	N	O	O
+矩阵	n	Y	N	O	O
+处理	v	N	N	O	O
+
+9.	m	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+1140	m	N	N	O	I-OJ
+
+Expanding	eng	N	N	O	O
+
+Fractions	eng	N	N	O	O
+
+模拟	v	Y	N	O	B-KNOWLEDGE
+

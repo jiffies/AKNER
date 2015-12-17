@@ -1,0 +1,142 @@
+poj 4001 Xiangqi - fire__ice的专栏 - 博客频道 - CSDN.NET
+
+题目链接：http://poj.org/problem?id=4001
+题意：给出象棋的一个状态，判断是否是死棋。
+模拟题。。。
+开始用scanf()，WA了，改成cin就对了，输入格式不对。
+
+#include<iostream>
+#include<cstdio>
+#include<cmath>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+#define clr(a,b) memset(a,b,sizeof(a))
+const int d[4][2] = {-1,0,1,0,0,-1,0,1};
+int G[15][15],sc,sr,n;
+bool judgeG(int x,int y)
+{
+    return (x < 4 && x > 0 && y < 7 && y > 3);
+}
+bool judgeH(int xH,int yH,int xG,int yG)
+{
+    if(xH-2 > 0 && xG == xH-2 && (yG==yH-1 || yG==yH+1)) return !G[xH-1][yH] ;
+    if(xH+2 < 11 && xG == xH+2 && (yG==yH-1 || yG==yH+1)) return !G[xH+1][yH];
+    if(yH-2 > 0 && yG == yH-2 && (xG==xH-1 || xG==xH+1)) return !G[xH][yH-1] ;
+    if(yH+2 < 10 && yG == yH+2 && (xG==xH-1 || xG==xH+1)) return !G[xH][yH+1];
+    return false;
+}
+bool solve()
+{
+    bool flag = true;
+    int x,y;
+    for(int i = 0;i < 4;++i)
+    {
+        bool flag1 = false;
+        x = sc + d[i][0];
+        y = sr + d[i][1];
+        if(!judgeG(x,y)) continue;
+        //判断车和帅
+        for(int j = x+1,k = x-1;j<11 || k>0;++j,--k)
+        {
+            if(j < 11)
+            {
+                if(G[j][y])
+                {
+                    if(G[j][y]==1 || G[j][y] == 4)
+                    flag1 = true;
+                    j = 11;
+                }
+            }
+            if(k > 0)
+            {
+                if(G[k][y])
+                {
+                    if(G[k][y]==1 || G[k][y] == 4)
+                    flag1 = true;
+                    k = 0;
+                }
+            }
+        }
+        for(int j = y+1,k = y-1;k>0 || j < 10;++j,--k)
+        {
+            if(j < 10)
+            {
+                if(G[x][j])
+                {
+                    if(G[x][j] == 1 || G[x][j] == 4)
+                    flag1 = true;
+                    j = 10;
+                }
+            }
+            if(k > 0)
+            {
+                if(G[x][k])
+                {
+                    if(G[x][k] == 1 || G[x][k] == 4)
+                    flag1 = true;
+                    k = 0;
+                }
+            }
+        }
+        if(flag1) continue;
+        //判断马
+        for(int j = 1;j < 11;++j)
+        for(int k = 1;k < 10;++k)
+        {
+            if(G[j][k] == 2 && judgeH(j,k,x,y))
+            flag1 = true;
+        }
+        if(flag1) continue;
+        //判断炮
+        int cnt = 0;
+        for(int j = x-1;j > 0;--j)
+        {
+            if(G[j][y] == 3 && cnt == 1) flag1 = true;
+            if(G[j][y]) cnt++;
+        }
+        cnt = 0;
+        for(int j = x+1;j < 11;++j)
+        {
+            if(G[j][y] == 3 && cnt == 1) flag1 = true;
+            if(G[j][y]) cnt++;
+        }
+        cnt = 0;
+        for(int j = y-1;j > 0;--j)
+        {
+            if(G[x][j] == 3 && cnt == 1) flag1 = true;
+            if(G[x][j]) cnt++;
+        }
+        cnt = 0;
+        for(int j = y+1;j < 10;++j)
+        {
+            if(G[x][j] == 3 && cnt == 1) flag1 = true;
+            if(G[x][j]) cnt++;
+        }
+        if(flag1) continue;
+        flag = false;
+        break;
+    }
+    return flag;
+}
+int main()
+{
+   // freopen("1.txt","r",stdin);
+    while(cin>>n>>sc>>sr && n+sc+sr)
+    {
+        clr(G,0);
+        char ch;
+        int x,y;
+        for(int i = 0;i < n;++i)
+        {
+            cin>>ch>>x>>y;
+            if(ch == 'R') G[x][y] = 1;
+            if(ch == 'H') G[x][y] = 2;
+            if(ch == 'C') G[x][y] = 3;
+            if(ch == 'G') G[x][y] = 4;
+        }
+        printf(solve()?"YES\n":"NO\n");
+    }
+    return 0;
+}
+

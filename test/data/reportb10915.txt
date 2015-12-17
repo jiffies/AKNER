@@ -1,0 +1,249 @@
+POJ  3695  Cell Phone Network（ 记忆化搜索）_doxi_百度空间
+
+代码其实写的乱七八糟，但是放在这里， 其中部分代码由XCLEE 提供...
+
+其中date[maxt][3]代表的是记忆化的值.....
+
+date[x][0]   代表的是在x地方放一个后 ，以他为根的子树最少需要多少个
+
+date[x][1]   代表的是在 x的地方不放，但是他的儿子中有一个可以覆盖到他
+
+date[x][2]  代表的是在x的地方不放，而且他的儿子都不可以覆盖到他
+
+#include<iostream>
+
+#include<string.h>
+
+#include<vector>
+
+#define MAXN 10001
+
+using namespace std;
+
+vector<vector<int> >g;
+
+int n;
+
+bool vis[MAXN];
+
+vector<int>S;
+
+int C[MAXN];
+
+int pre[MAXN];
+
+int date[MAXN][3];
+
+vector< int > V[MAXN];
+
+void dfs(int id)
+
+{
+
+ int sz=g[id].size();
+
+ for(int i =0; i<sz; i++)
+
+ {
+
+ int v = g[id][i];
+
+ if(pre[id]!=v)
+
+ {
+
+ pre[v]=id;
+
+ dfs(v);
+
+ }
+
+ }
+
+}
+
+int Min( int a, int b)
+
+{
+
+ return ( a <= b ? a : b);
+
+}
+
+int DFS( int city , int mark)
+
+{
+
+ if(date[city][mark]!=MAXN)return date[city][mark];
+
+ int all = 0;
+
+ int sz=V[city].size();
+
+ if( sz == 0) return 0;
+
+ if( mark == 0)
+
+ {
+
+ for(int i = 0;i< sz; i++)
+
+ {
+
+ int id= V[city][i];
+
+ all += Min( DFS( id , 0) , Min( DFS( id , 1) , DFS( id , 2)));
+
+ }
+
+ all ++;
+
+ }
+
+ else if( mark == 1)
+
+ { 
+
+ //他的儿子中，有一个是date[id][0];
+
+ //其他的都用date[id][1]和date[id][0]中的最值;
+
+ all =1000000;
+
+ int sum = 0;
+
+ for( int i =0 ; i < sz ;i ++)
+
+ {
+
+ int id = V[city][i];
+
+ sum = DFS( id , 0);
+
+ for( int j = 0 ; j < sz ; ++j)
+
+ {
+
+ if( i == j) continue;
+
+ int dd = V[city][j];
+
+ sum += Min(DFS( dd , 0 ),DFS( dd , 1));
+
+ }
+
+ all = Min( sum , all);
+
+ }
+
+ }
+
+ else // mark == 2;
+
+ {
+
+ for( int i = 0 ; i < sz ; i ++)
+
+ {
+
+ int id = V[city][i];
+
+ all += DFS( id , 1);
+
+ }
+
+ }
+
+ if( all == 0) all = MAXN;
+
+ date[city][mark] = all;
+
+ return all;
+
+}
+
+int main(){
+
+ //freopen("date.in","r",stdin);
+
+ while(scanf("%d",&n) != EOF)
+
+ {
+
+ g.resize(MAXN);
+
+ g.clear();
+
+ for( int i = 1 ; i <= n ; ++i) V[i].clear();
+
+ for(int i =1; i<n ;i++)
+
+ {
+
+ int a,b;
+
+ scanf("%d %d",&a,&b);
+
+ g[a].push_back(b);
+
+ g[b].push_back(a);
+
+ }
+
+ for(int i=1;i<=n ;i++)C[i] =0,pre[i]=-1 ;
+
+ memset(vis,0,sizeof(vis));
+
+ dfs(1);
+
+ int mark;
+
+ for(int i =1;i<=n; i++)
+
+ {
+
+ if( pre[i] != -1) V[pre[i]].push_back(i);
+
+ else mark = i;
+
+ }
+
+ for( int i = 1 ; i <= n ; ++i)
+
+ {
+
+ for( int j = 0 ; j <= 2 ; ++j)
+
+ date[i][j] = MAXN;
+
+ }
+
+ for( int i = 1 ; i <= n ; ++i) 
+
+ {
+
+ if( V[i].size() == 0)
+
+ {
+
+ date[i][1] = date[i][0] = 1;
+
+ date[i][2] = 0;
+
+ }
+
+ }
+
+ DFS( mark , 0);
+
+ DFS( mark , 1);
+
+ int ans = Min( date[mark][0] , date[mark][1]);
+
+ printf("%d\n",ans);
+
+ }
+
+ return 0;
+
+}

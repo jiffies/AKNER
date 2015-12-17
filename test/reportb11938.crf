@@ -54,6 +54,7 @@ DP	eng	B-KNOWLEDGE
 的	uj	O
 。	x	O
 
+
 	x	O
 但	c	O
 可以	c	O
@@ -84,6 +85,7 @@ N	x	O
 。	x	O
 。	x	O
 。	x	O
+
 
 	x	O
 给	p	O
@@ -168,11 +170,12 @@ P	eng	O
 这个	r	O
 顺序	n	O
 作为	v	O
-动态	n	O
-规划	n	O
+动态	n	B-KNOWLEDGE
+规划	n	I-KNOWLEDGE
 的	uj	O
 阶段	n	O
 。	x	O
+
 
 	x	O
  	x	O
@@ -244,6 +247,7 @@ N	x	O
 优化	vn	O
 。	x	O
 
+
 	x	O
  	x	O
 顺序	n	O
@@ -283,6 +287,7 @@ I	eng	O
 左	m	O
 边界	n	O
 。	x	O
+
 
 	x	O
  	x	O
@@ -327,6 +332,7 @@ I	x	O
 这个	r	O
 K	x	O
 。	x	O
+
 
 	x	O
  	x	O
@@ -418,6 +424,7 @@ K	x	O
 边界	n	O
 。	x	O
 
+
 	x	O
 我	r	O
 差不多	l	O
@@ -448,6 +455,7 @@ K	x	O
 着	uz	O
 的	uj	O
 。	x	O
+
 
 	x	O
 #	x	O
@@ -555,9 +563,6 @@ node	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 int	eng	O
  	x	O
 pos	eng	O
@@ -596,9 +601,6 @@ b	x	O
 {	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 return	eng	O
  	x	O
@@ -640,9 +642,6 @@ len	eng	O
 {	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 for	eng	O
 (	x	O
@@ -707,9 +706,6 @@ main	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 scanf	eng	O
 (	x	O
 "	x	O
@@ -728,9 +724,6 @@ K	eng	O
 ;	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 for	eng	O
 (	x	O
@@ -787,9 +780,6 @@ pos	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 sort	eng	O
 (	x	O
 nodes	eng	O
@@ -802,9 +792,6 @@ K	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 _	x	O
 clr	eng	O
 (	x	O
@@ -815,9 +802,6 @@ DP	eng	O
 ;	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 for	eng	O
 (	x	O
@@ -906,9 +890,6 @@ cost	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 for	eng	O
 (	x	O
 int	eng	O
@@ -983,9 +964,6 @@ len	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 for	eng	O
 (	x	O
 int	eng	O
@@ -1008,18 +986,9 @@ i	x	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 {	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
 int	eng	O
@@ -1049,12 +1018,6 @@ len	eng	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 intcpy	eng	O
 (	x	O
 DP	eng	O
@@ -1080,12 +1043,6 @@ N	x	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 end	eng	O
 [	x	O
 0	x	O
@@ -1102,12 +1059,6 @@ pos	eng	O
 ;	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
 for	eng	O
@@ -1134,24 +1085,9 @@ j	eng	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 {	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
  	x	O
@@ -1269,15 +1205,6 @@ pos	eng	O
  	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 else	eng	O
  	x	O
 end	eng	O
@@ -1296,21 +1223,9 @@ j	x	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 }	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
 for	eng	O
@@ -1340,24 +1255,9 @@ start	eng	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 {	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
  	x	O
@@ -1439,21 +1339,9 @@ cost	eng	O
 	x	O
  	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
 }	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
  	x	O
 for	eng	O
@@ -1499,15 +1387,9 @@ dd	eng	O
 
 	x	O
  	x	O
- 	x	O
- 	x	O
- 	x	O
 }	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 printf	eng	O
 (	x	O
@@ -1529,9 +1411,6 @@ DP	eng	O
 ;	x	O
 
 	x	O
- 	x	O
- 	x	O
- 	x	O
  	x	O
 return	eng	O
  	x	O

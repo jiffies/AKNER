@@ -1,0 +1,408 @@
+poj1674	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+Rainy	eng	N	N	O	O
+
+Days	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+简单	a	N	N	O	O
+题	n	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+iostream	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+cstdlib	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+cstring	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+cstdio	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+
+10005	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+findit	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+freopen	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+D	x	N	N	O	O
+:	x	N	N	O	O
+\	x	N	N	O	O
+\	x	N	N	O	O
+t	eng	N	N	O	O
+.	m	N	N	O	O
+txt	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+r	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+stdin	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+t	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+t	x	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+temp	eng	N	N	O	O
+)	x	N	N	O	O
+
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+findit	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+temp	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+swap	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+temp	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

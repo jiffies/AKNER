@@ -1,0 +1,2465 @@
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+2418	m	N	N	I-OJ
+ 	x	N	N	O
+Hardwood	eng	N	N	O
+ 	x	N	N	O
+Species	eng	N	N	O
+(	x	N	N	O
+排序	n	Y	N	O
+二叉树	n	Y	N	B-KNOWLEDGE
+)	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+Alasky	eng	N	N	O
+的	uj	N	N	O
+日志	ns	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+网易	n	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+不用	v	N	N	O
+平衡	a	Y	N	O
+技术	n	N	N	O
+的	uj	N	N	O
+后果	n	N	N	O
+...	m	N	N	O
+果断	d	N	N	O
+1313	m	N	N	O
+MS	eng	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+一般	a	N	N	O
+我	r	N	N	O
+的	uj	N	N	O
+代码	n	N	N	O
+会	v	N	N	O
+相对	d	N	N	O
+比较	d	N	N	O
+长	a	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+我	r	N	N	O
+自己	r	N	N	O
+写	v	N	N	O
+栈	ng	N	N	B-KNOWLEDGE
+。	x	N	N	O
+。	x	N	N	O
+
+初学者	n	N	N	O
+还是	c	N	N	O
+多	m	N	N	O
+自己	r	N	N	O
+写写	v	N	N	O
+吧	y	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+string	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+malloc	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+stdlib	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+SIZE	eng	N	N	O
+ 	x	N	N	O
+30	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+STACKSIZE	eng	N	N	O
+ 	x	N	N	O
+10000	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+EQ	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+strcmp	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+RT	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+strcmp	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+define	eng	N	N	O
+ 	x	N	N	O
+LT	eng	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+strcmp	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+)	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+typedef	eng	N	N	O
+ 	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+BSTNode	eng	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+amount	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+tree	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+this	eng	N	N	O
+ 	x	N	N	O
+type	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+char	eng	N	N	O
+ 	x	N	N	O
+key	eng	N	N	O
+[	x	N	N	O
+SIZE	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+tree	eng	N	N	O
+ 	x	N	N	O
+name	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTNode	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+lchild	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+rchild	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+BSTNode	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+BSTree	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+root	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+total	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+树	v	N	N	O
+的	uj	N	N	O
+总数	n	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+____________	x	N	N	O
+得	ud	N	N	O
+，	x	N	N	O
+自己	r	N	N	O
+再	d	N	N	O
+写	v	N	N	O
+一个	m	N	N	O
+栈	n	N	N	B-KNOWLEDGE
+，	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+fact	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+that	eng	N	N	O
+ 	x	N	N	O
+it	eng	N	N	O
+ 	x	N	N	O
+only	eng	N	N	O
+ 	x	N	N	O
+costs	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+few	eng	N	N	O
+ 	x	N	N	O
+time	eng	N	N	O
+.	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+typedef	eng	N	N	O
+ 	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+SNode	eng	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+base	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+top	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+stacksize	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+SqStack	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+InitStack	eng	N	N	O
+(	x	N	N	O
+SqStack	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+S	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+初始化	l	N	N	O
+一个	m	N	N	O
+栈	n	N	N	B-KNOWLEDGE
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+*	x	N	N	O
+)	x	N	N	O
+malloc	eng	N	N	O
+(	x	N	N	O
+STACKSIZE	eng	N	N	O
+*	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+exit	eng	N	N	O
+(	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+stacksize	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+STACKSIZE	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+InitStack	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+Push	eng	N	N	O
+(	x	N	N	O
+SqStack	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+S	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+e	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+stacksize	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+)	x	N	N	O
+realloc	eng	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+stacksize	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+STACKSIZE	eng	N	N	O
+)	x	N	N	O
+*	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+exit	eng	N	N	O
+(	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+stacksize	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+stacksize	eng	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+STACKSIZE	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+++	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+e	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+Push	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+Pop	eng	N	N	O
+(	x	N	N	O
+SqStack	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+S	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+e	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+e	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+(	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+Pop	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+EmptyStack	eng	N	N	O
+(	x	N	N	O
+SqStack	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+S	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+top	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+S	eng	N	N	O
+.	m	N	N	O
+base	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+EmptyStack	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+SearchBST	eng	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+char	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+p	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+在	p	N	N	O
+二叉树	n	Y	N	B-KNOWLEDGE
+中	f	N	N	O
+查找	v	Y	N	O
+key	eng	N	N	O
+，	x	N	N	O
+查找	v	Y	N	O
+成功	a	N	N	O
+，	x	N	N	O
+对应	vn	N	N	O
+n	eng	N	N	O
+值	n	N	N	O
++	x	N	N	O
+1	m	N	N	O
+；	x	N	N	O
+否则	c	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+p	eng	N	N	O
+值	n	N	N	O
+返回	v	N	N	O
+应该	v	N	N	O
+插入	v	N	N	O
+的	uj	N	N	O
+结点	n	Y	N	O
+的	uj	N	N	O
+双亲	n	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+T	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+p	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+EQ	eng	N	N	O
+(	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+key	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+n	eng	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+LT	eng	N	N	O
+(	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+key	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+SearchBST	eng	N	N	O
+(	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+lchild	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+SearchBST	eng	N	N	O
+(	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+rchild	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+SearchBST	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+InsertBST	eng	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+&	x	N	N	O
+T	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+char	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+e	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+查找	v	Y	N	O
+e	eng	N	N	O
+.	m	N	N	O
+key	eng	N	N	O
+，	x	N	N	O
+如果	c	N	N	O
+存在	v	N	N	O
+n	eng	N	N	O
+值	n	N	N	O
++	x	N	N	O
+1	m	N	N	O
+；	x	N	N	O
+否则	c	N	N	O
+插入	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTNode	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+p	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+SearchBST	eng	N	N	O
+(	x	N	N	O
+T	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+e	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+NULL	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+BSTNode	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+s	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+)	x	N	N	O
+malloc	eng	N	N	O
+(	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+BSTNode	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+n	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+strcpy	eng	N	N	O
+(	x	N	N	O
+s	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+e	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+lchild	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+rchild	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+NULL	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+p	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+LT	eng	N	N	O
+(	x	N	N	O
+e	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+key	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+lchild	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+p	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+rchild	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+false	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+InsertBST	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+从小到大	l	N	N	O
+输出	v	Y	N	O
+需要	v	N	N	O
+中序	n	N	N	O
+遍历	v	Y	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+InOrdTraverse	eng	N	N	O
+(	x	N	N	O
+BSTree	eng	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+中序	n	N	N	O
+遍历	v	Y	N	O
+排序	n	Y	N	O
+二叉树	n	Y	N	B-KNOWLEDGE
+，	x	N	N	O
+虽然	c	N	N	O
+这里	r	N	N	O
+我	r	N	N	O
+没有	v	N	N	O
+引入	v	N	N	O
+平衡	a	Y	N	B-KNOWLEDGE
+二叉树	n	Y	N	I-KNOWLEDGE
+的	uj	N	N	O
+结构	n	Y	N	O
+，	x	N	N	O
+但	c	N	N	O
+勉强	v	N	N	O
+来	v	N	N	O
+一次	m	N	N	O
+吧	y	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+damn	eng	N	N	O
+ 	x	N	N	O
+it	eng	N	N	O
+!	x	N	N	O
+!	x	N	N	O
+我	r	N	N	O
+突然	ad	N	N	O
+发现	v	N	N	O
+，	x	N	N	O
+Stack	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+demand	eng	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+more	eng	N	N	O
+ 	x	N	N	O
+time	eng	N	N	O
+ 	x	N	N	O
+will	eng	N	N	O
+ 	x	N	N	O
+elaps	eng	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+SqStack	eng	N	N	O
+ 	x	N	N	O
+S	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+InitStack	eng	N	N	O
+(	x	N	N	O
+S	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+T	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+EmptyStack	eng	N	N	O
+(	x	N	N	O
+S	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+T	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Push	eng	N	N	O
+(	x	N	N	O
+S	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+lchild	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Pop	eng	N	N	O
+(	x	N	N	O
+S	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+s	x	N	N	O
+ 	x	N	N	O
+%	x	N	N	O
+.4	m	N	N	O
+lf	eng	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+key	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+double	eng	N	N	O
+)	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+n	x	N	N	O
+/	x	N	N	O
+total	eng	N	N	O
+*	x	N	N	O
+100	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+T	x	N	N	O
+-	x	N	N	O
+>	x	N	N	O
+rchild	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+InOrdTraverse	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+char	eng	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+[	x	N	N	O
+SIZE	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+total	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+gets	eng	N	N	O
+(	x	N	N	O
+s	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+total	eng	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+InsertBST	eng	N	N	O
+(	x	N	N	O
+root	eng	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+s	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+InOrdTraverse	eng	N	N	O
+(	x	N	N	O
+root	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O

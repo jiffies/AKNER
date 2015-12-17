@@ -1,0 +1,49 @@
+POJ 1027_乐吾天_百度空间
+
+ 题意：
+一个长15宽10的格子内，有R,G,B三种颜色的球。颜色相同的一片球（不少于2个球）可以消除，每一片球用最左边的最下面的球表示。消除以后，上面的球会落下来。如果有空列，其右边的列左移补上空列。每消除一次，得分为(消除的球数-2)^2。如果可以消除同样球数的方法不唯一，则消除代表球最左边的最下面的那一片。如果最后全部消除，则再加1000分。请问这样，最后剩下多少球，得多少分。
+思路：
+有个同学说这个就是Windows Mobile里面的Bubble Breaker那个游戏，有兴趣的可以去看看那个游戏。
+ while( 没有结束 ){ 找出要消除的那一片 删除那一片} 
+思路不难，可是我做了整整一天，充分显示代码能力太差。
+不过，这里面一些优化还是值得提一下。首先是在bfs的时候，就记录下最佳消除的是哪些球，消除的时候不再进行bfs。我看discuss和网友不少用的dfs，我觉得那样肯定不快，因为递归太多了。另外，每消除一片球，可以压缩格子，也就是我的程序中的top和right_，用于记录目前整个地图的右上角。这样每次也能少搜索很多。
+这题被列为较难的模拟题。我觉得找时间还可以再做，练习代码能力。
+错误：
+1. 行列容易写反
+2. 消除函数有些地方考虑不全面，比如要判断一个格子如果消除了，不能进行bfs
+3. 全局变量有点多，后来自己都搞不清什么含义了
+统计：
+5418B，创记录了。276k, 250ms
+ #include <iostream>//#include <cstdio>#include <cmath>#include <string>//#include <memory>#define F(i,a,b) for( int i=a;i<=b;i++)#define FD(i,a,b) for (int i=a;i>=b;i--)using namespace std;struct P2{ int x, y; P2() { } P2(int a, int b) { x = a ; y = b; } friend ostream& operator << (ostream& os, const P2& b) { os << b.x << "," << b.y ; return os; }};bool mk[10][15];int map[10][15], points, top = 9, right_ = 14, removed;P2 tempQ[151], Q[151], p, tempp;int move[ 4 ][ 2 ] = { {-1, 0}, {0, 1}, {1, 0}, {0, -1} };char Color[ 4 ] = { 'R', 'G', 'B', ' ' };void scan(){ string str; memset(map, 0, sizeof( map ) ); FD(i, 9, 0) { cin >> str; F(j, 0, 14) { switch ( str[ j ] ) { case 'R': map[ i ][ j ] = 0; break; case 'G': map[ i ][ j ] = 1; break; case 'B': map[ i ][ j ] = 2; break; } } }}// return the block size, modify mk,int bfs(P2 pp){ P2 t; int now = 0, last = 1, left = 20, down = 20; tempQ[ 0 ] = pp; mk[ pp.x ][ pp.y ] = true; while ( now < last ) { pp = tempQ[ now ]; if ( pp.y < left || ( pp.y == left && pp.x < down ) ) { left = pp.y; down = pp.x; } F(i, 0, 3) { t = P2( pp.x + move[ i ][ 0 ], pp.y + move[ i ][ 1 ]); if ( t.x >= 0 && t.x <= top && t.y <= right_ && t.y >= 0 ) { if ( !mk[ t.x ][ t.y ] && map[ t.x ][ t.y ] != 3 && map[ t.x ][ t.y ] == map[ pp.x ][ pp.y ] ) { //cout << "added: " << t.x << "," << t.y << endl; tempQ[ last++ ] = t; mk[ t.x ][ t.y ] = true; } } } now++; } tempp = P2(down, left) ; return last;}bool findMax(){ memset( mk, 0, sizeof( mk ) ) ; removed = 0; F(i, 0, top) { F(j, 0, right_) { if (map[ i ][ j ] == 3) { mk[ i ][ j ] = true; continue; } if ( !mk[ i ][ j ] ) { //cout << i << "," << j << ": "; int t = bfs( P2(i, j) ); //cout << t << endl; if (t > removed) { F(k, 0, t-1) Q[k] = tempQ[k]; p = tempp; removed = t; } if (t == removed) { if (tempp.y < p.y || (tempp.y == p.y && tempp.x < p.x) ) { F(k, 0, t-1) Q[k] = tempQ[k]; p = tempp; removed = t; } } } } } points = (int)( pow( (removed - 2.0), 2.0 ) + 0.1 ); //cout << "Max: " << Max << endl; if ( removed > 1 ) return true; return false;}void disp(){ cout << endl; FD(i, top, 0) { F(j, 0, right_) cout << Color[ map[i][j] ] ; //cout << map[i][j]; cout << endl; } cout << endl;}void Cancel(P2 p){ F(i, 0, removed - 1) { P2 t = Q[ i ]; map[ t.x ][ t.y ] = 3; } //check column F(i, 0, right_) { int newp = 0, oldp = 0; while (oldp <= top) { if (map[ oldp ][ i ] != 3) map[ newp++ ][ i ] = map[ oldp ][ i ]; oldp++; } while (newp <= top) map[ newp++ ][ i ] = 3; } // check horizontal int newp = 0, oldp = 0; while (oldp <= right_ ) { bool empty = true; F(i, 0, top) if (map[ i ][ oldp ] != 3) { empty = false; break; } if ( !empty ) { F(i, 0, top) map[ i ][ newp ] = map[ i ][ oldp ]; newp++; } oldp ++; } while (newp <= right_) { F(i, 0, top) map[ i ][ newp ] = 3; newp++; } // modify int top_ = 0, right__ = 0; F(i, 0, top) F(j, 0, right_) { if (map[ i ][ j ] != 3 ) { if ( i > top_) top_ = i; if ( j > right__) right__ = j; } } top = top_, right_ = right__;}int main(){ int T, sum, leftBall, c, steps; cin >> T; F(t, 1, T) { points = 0.0, removed = 0, top = 9, right_ = 14, leftBall = 150, sum = 0, steps = 0; printf("Game %d: \n\n", t ); scan(); while ( findMax() ) { sum += points; leftBall -= removed; c = map[ p.x ][ p.y ]; Cancel( p ); steps++; printf( "Move %d at (%d,%d): removed %d balls of color %c, got %d points.\n", steps, p.x + 1, p.y + 1, removed, Color[ c ], points ) ; } if (leftBall == 0) sum += 1000; printf("Final score: %d, with %d balls remaining.\n\n", sum, leftBall); } return 0;} 
+推荐文章:
+
+1. 
+poj 1975
+
+2. 
+POJ 3674 Super Assassin
+
+3. 
+ACM（poj上的）-题型分类的代码（转1）
+
+4. 
+ACM（poj）-题型分类的代码（转2）
+
+5. 
+*LS4* 【重做】 Pku Poj 1095 Trees Made to Order 卡特兰数
+
+6. 
+poj 2251 Dungeon Master(6方向广搜)
+
+7. 
+poj 1950 Dessert(深搜 好像有爆搜过的 ⊙﹏⊙b汗 郁闷了两天 作出来的 晕死)
+
+8. 
+poj 1703
+
+9. 
+教训－－poj 3667
+
+10. 
+POJ分类
+

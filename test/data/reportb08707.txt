@@ -1,0 +1,152 @@
+poj3401 - lyg_wangyushi的专栏 - 博客频道 - CSDN.NET
+
+http://acm.pku.edu.cn/JudgeOnline/problem?id=3401
+                                                          String reduction
+ 
+ 
+  
+   
+    
+    Time Limit: 1000MS 
+      
+    Memory Limit: 65536K 
+    
+    
+    Total Submissions: 799 
+      
+    Accepted: 219 
+    
+   
+  
+ 
+Description
+There is a string of characters 'a' and 'b' with the length of no more than 255 characters. You can perform the substring reduction on the initial string in the following way: a substring "a*a" or "b*b" (where *(asterisk) denotes any character) can be reduces to a substring "*".
+The task is to achieve a string of minimal possible length after several substring reductions.
+ 
+  
+ 
+Input
+The input contains the initial string.
+ 
+ 
+Output
+The output contains a single line with the minimal possible length.
+ 
+ 
+Sample Input
+ 
+aab 
+Sample Output
+ 
+3 
+Source
+ 
+
+ Northeastern Europe 2001, Western Subregion
+ 
+
+ 
+题目意思是说，有一个只有'a','b'组成的字符串，可以有一种操作reduction  ,可以将形如 a*a,b*b的字符变为a或者b，要求
+ 
+
+ 给定一个字符串，求能变化后的最小的长度。
+ 
+
+ 看了discuss后才AC,具体是这样做的：
+ 
+
+ 我们先用F[i][j]表示能否将i,j之间的字符串变化为一个单个字符，这个是标准的动态规划，状态转移方程为：
+ 
+
+ F[i][j] =  true  if( str[i] == str[j] && F[i+1][j-1] = = true
+ 
+
+ F[i][j] =  true if(i+2 != j && (F[i+2][j] == true || F[i][j-2] ==true)
+ 
+
+ else F[i][j] = false;
+ 
+
+ 然后我们用Len[i][j] 表示i，j之间的字串能够变为的最小长度，可以看出这个也是一个标准的动态规划
+ 
+
+ 状态转移方程为：
+ 
+
+ Len[i][j] = 1 if(F[i][j] == true)
+ 
+
+ else Len[i][j] = min(Len[i+1][j-1] + 2,Len[i+1][j]+1,Len[i][j-1]+1)
+ 
+
+ 由此我们就可以得到求这个题目的具体做法，代码如下：
+ 
+
+ #include "iostream"
+#include "cstdio"
+#include "cstring"
+using namespace std;
+const int MaxN = 260;
+bool F[MaxN][MaxN];
+char str[MaxN];
+int Len[MaxN][MaxN],len;
+inline int min(int a,int b,int c){
+    int ret = a;
+    if(b < ret) ret = b;
+    if(c < ret) ret = c;
+    return ret;
+}
+void work(){
+    len = strlen(str);
+    memset(F,false,sizeof(F));
+    for(int i = 0 ;i < len; ++i)
+        F[i][i] = true;
+    memset(Len,0,sizeof(Len));
+    for(int i =  0;i < len; ++i)
+        Len[i][i] = 1;
+    for(int j = 2;j < len ;++j){
+        for(int i = 0 ;i < len - j; ++i){
+            if(str[i] == str[i+j] && F[i+1][i+j-1])
+                F[i][i+j] = true;
+            else if( j!= 2 && (F[i+2][i+j] || F[i][i+j-2]))
+                F[i][i+j] = true;
+        }
+    }
+    for(int j = 1;j < len; ++j){
+        for(int i = 0 ;i < len - j; ++i){
+            if(F[i][i+j] == true)
+                Len[i][i+j] = 1;
+            else
+                Len[i][i+j] = min(Len[i+1][i+j-1] + 2,Len[i+1][i+j]+1,Len[i][i+j-1]+1);
+        }
+    }
+}
+int main(){
+    scanf("%s",&str);
+    work();
+    printf("%d/n",Len[0][len-1]);
+    return 0;
+}
+后来突然发现这个题目有一个非常桥面简单的方法，由于a*a, b*b之类的字符可以匹配任意字符，那么我们只要从前
+向后扫描，如果有相隔的两个字符相同，由于这三个字符能够匹配a,b任意字符，那么我们就可以让这种匹配一直进行
+下去，从而将字符串不断的reduction ，只要注意字符串长度的奇偶性就可以了，如此我们可以得到一个很简单的方法
+代码如下：
+#include "iostream"
+#include "cstdio"
+#include "cstring"
+using namespace  std;
+char str[256];
+int main(){
+    scanf("%s",str);
+    int len = strlen(str);
+    int ans = len;
+    for(int i = 0 ;i +2 <len;++i){
+        if(str[i] == str[i+2]){
+            if(len %2)
+                ans = 1;
+            else ans = 2;
+        }
+    }
+    printf("%d/n",ans);
+    return 0;
+} 

@@ -1,0 +1,593 @@
+求树的最小覆盖所有点的点的个数poj3659_CCYJAVA_新浪博客
+
+这个是dfs中用dp，当前点状态取决于其子节点的状态，具体转换如下：
+
+ i,0表示以i为根的子树被覆盖，i点未放置的最小数目
+
+ i,1表示以i为根的子树被覆盖，i点放置的最小数目
+
+ i,2表示i的子树被覆盖，i点未被覆盖的最小数目
+
+ 之所以有这三种状态，是因为，一个点被覆盖的方式有三种：该点被放置，该点的子节点放置，该点的父节点放置
+
+ i,0 =sigm(min(j,0;j,1;j,2)且保证至少一个j,1被取到
+
+ i,1 =sigm(min(j,0;j,1;j,2)
+
+ i,2 =sigmj,0
+
+ #include "stdio.h"
+
+ #include "string.h"
+
+ #include "stdlib.h"
+
+ int vd[10001];
+
+ int n,m;
+
+ int arm[20001][2];//记录边
+
+ int index[10001];//记录i节点的邻接边在arm里的索引
+
+ int num[10001][3];//记录以i为根的树，选改节点与不选该节点的最小数目
+
+ int cmp(const void *a,const void *b){
+
+  
+ 
+ 
+ int *x=(int *)a;
+
+  
+ 
+ 
+ int *y=(int *)b;
+
+  
+ 
+ 
+ return x[0]-y[0];
+
+ }
+
+ int min(int a,int b){
+
+  
+ 
+ 
+ if(a<b)
+
+  
+ 
+ 
+  
+ 
+ 
+ return a;
+
+  
+ 
+ 
+ return b;
+
+ }
+
+ void init(){
+
+  
+ 
+ 
+ int i,j;
+
+  
+ 
+ 
+ scanf("%d",&n);
+
+  
+ 
+ 
+ for(i=0;i<n-1;i++){
+
+  
+ 
+ 
+  
+ 
+ 
+ int a,b;
+
+  
+ 
+ 
+  
+ 
+ 
+ scanf("%d%d",&a,&b);
+
+  
+ 
+ 
+  
+ 
+ 
+ arm[2*i][0]=a;
+
+  
+ 
+ 
+  
+ 
+ 
+ arm[2*i][1]=b;
+
+  
+ 
+ 
+  
+ 
+ 
+ arm[2*i+1][0]=b;
+
+  
+ 
+ 
+  
+ 
+ 
+ arm[2*i+1][1]=a;
+
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ m=2*n-2;
+
+  
+ 
+ 
+ memset(vd,0,sizeof(vd));
+
+  
+ 
+ 
+ memset(index,-1,sizeof(index));
+
+  
+ 
+ 
+ qsort(arm,m,sizeof(int)*2,cmp);
+
+  
+ 
+ 
+ for(i=0,j=0;i<m;i++){
+
+  
+ 
+ 
+  
+ 
+ 
+ if(i==0||arm[i][0]!=arm[i-1][0]){
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ index[arm[i][0]]=i;
+
+  
+ 
+ 
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ }
+
+ }
+
+ void dfs(int v){
+
+  
+ 
+ 
+ int i,j,k,t;
+
+  
+ 
+ 
+ vd[v]=1;
+
+  
+ 
+ 
+ int isleaf=1;
+
+  
+ 
+ 
+ int sum1=0;
+
+  
+ 
+ 
+ int sum0=0;
+
+  
+ 
+ 
+ int sum2=0;
+
+  
+ 
+ 
+ int reduce=99999999;
+
+  
+ 
+ 
+ if(index[v]!=-1){
+
+  
+ 
+ 
+  
+ 
+ 
+ for(i=index[v];arm[i][0]==v;i++){
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ if(vd[arm[i][1]]==0){
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ dfs(arm[i][1]);
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ isleaf=0;
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ sum1+=min(min(num[arm[i][1]][0],num[arm[i][1]][1]),num[arm[i][1]][2]);
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ sum2+=num[arm[i][1]][0];
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ //统计sum0=================================================reduce 始终>=0
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ sum0+=min(num[arm[i][1]][0],num[arm[i][1]][1]);//先取最小的和
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ if(num[arm[i][1]][1]-num[arm[i][1]][0]<reduce){//求需要在sum0上添加的最小值
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ if(num[arm[i][1]][1]-num[arm[i][1]][0]>=0)//小于当前最小值且非负，更新之
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ reduce=num[arm[i][1]][1]-num[arm[i][1]][0];
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ else//取到=1时的了，不用reduce了
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ reduce=0;
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ //==========================================================
+
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ if(isleaf){
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][1]=1;
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][0]=1;
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][2]=0;
+
+  
+ 
+ 
+ }else{
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][1]=1+sum1;
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][0]=sum0+reduce;
+
+  
+ 
+ 
+  
+ 
+ 
+ num[v][2]=sum2;
+
+  
+ 
+ 
+ }
+
+ }
+
+ int main(){
+
+  
+ 
+ 
+ int r;
+
+  
+ 
+ 
+ init();
+
+  
+ 
+ 
+ dfs(1);
+
+  
+ 
+ 
+ r=min(num[1][0],num[1][1]);
+
+  
+ 
+ 
+ printf("%d\n",r);
+
+  
+ 
+ 
+ scanf("%d",&r);
+
+  
+ 
+ 
+ return 0;
+
+ }
+

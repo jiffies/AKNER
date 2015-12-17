@@ -1,0 +1,67 @@
+poj 1827_foreverlin_百度空间
+
+#include<iostream>
+#include<queue> 
+using namespace std;
+const int maxn=50001;
+//贪心+并查集
+//题目描述：一共有x个盒子，一个盒子有一个数，一个数只能放在一个盒子里
+//有n个怪兽，每个随机检起一张卡片，打开获得的数字为d[i]，不能改变且不能再打开其他盒子，d[i]范围[1,m]
+//如果第i个怪兽获得数字d[i]，他只能打开编号<=d[i]的盒子，一个盒子只能给一个怪兽，一个怪兽只能由一个盒子
+//jim有权利去分配，他知道第i个怪兽的能力为s[i]，问题要使得所有没有获得盒子的怪兽的s[i]之和sum最小
+//首先我们按s从大到小排序，如果s相同，那么按d的值从大到小，这样做是为了尽量先把s大的安顿好，因为惹不起
+//每次都采取靠后原则，俗话说的好，物尽其用，这里的数字也是一样，然后用并查集保留下当前最近的那个祖先 
+bool use[maxn];
+int n,m;
+int a[maxn];
+typedef struct node
+{
+    int d,s;
+    node(){};
+    node(int dd,int ss){d=dd;s=ss;}    
+    }node;
+node p[maxn];
+bool cmp(node x,node y)
+{
+    if(x.s!=y.s)return x.s>y.s;
+    return x.d>y.d; 
+    }
+int find(int x)
+{
+    if(a[x]!=x)a[x]=find(a[x]);
+    return a[x];
+    }        
+void unit(int x,int y)
+{
+    x=find(x);y=find(y);
+    a[x]=y; 
+    }    
+int main()
+{
+    int i,j,k,sum,x;
+    while(scanf("%d%d",&n,&m)!=EOF)
+    {
+          if(n==0&&m==0)break;                         
+          for(i=1;i<=n;i++)scanf("%d",&p[i].d);
+          for(i=1;i<=n;i++)scanf("%d",&p[i].s);
+          for(i=1;i<=m;i++)use[i]=0;
+          sort(p+1,p+n+1,cmp);
+          for(i=0;i<=m+1;i++)a[i]=i;
+          sum=0;
+          for(i=1;i<=n;i++)
+          {
+              x=find(p[i].d);
+//              cout<<"x="<<x<<endl;
+//              cout<<"sum="<<sum<<endl;system("pause");
+              if(x==0)sum+=p[i].s;              
+              else
+              {
+                 use[x]=1; 
+                 if(use[x-1])unit(x,x-1);
+                 else a[x]=a[x-1];          
+                 }             
+              }                        
+          printf("%d\n",sum);    
+          }   
+    return 0;
+    }

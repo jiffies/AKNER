@@ -1,0 +1,103 @@
+HDU 4294 Multiple（12年成都） - 窝是爱酱,喵~~~~ - 博客频道 - CSDN.NET
+
+转载请注明出处，谢谢http://blog.csdn.net/acm_cxlove/article/details/7854526       by---cxlove
+题目：在K进制下，用最少的不同的数，表示成n的倍数
+http://acm.hdu.edu.cn/showproblem.php?pid=4294 
+首先要得到一个结论，就是最多用两个数就行了。
+证明 ：对于一个数字a，可以构造出的数字有
+a,aa,aaa,aaaa,aaaaa,……
+每一个数对于n都有一个余数，余数最多有n个，根据鸽巢原理，前n+1个数中，必然有两个余数相等
+那么二者之差，必定为n的倍数，形式为a……a0……0。
+有这个结论，就简单了
+先枚举一个数，然后枚举两个数，BFS即可
+
+#include<iostream>
+#include<cstdio>
+#include<map>
+#include<cstring>
+#include<cmath>
+#include<vector>
+#include<algorithm>
+#include<set>
+#include<string>
+#include<queue>
+#define inf 1<<28
+#define M 100005
+#define N 50005
+#define Min(a,b) ((a)<(b)?(a):(b))
+#define Max(a,b) ((a)>(b)?(a):(b))
+#define pb(a) push_back(a)
+#define mem(a,b) memset(a,b,sizeof(a))
+#define LL long long
+#define MOD 1000000007
+using namespace std;
+int num[2],m,step[N],pre[N];
+int n,c,ope[N];
+string s,ans;
+bool bfs(){
+	queue<int>que;
+	mem(step,0);
+	for(int i=0;i<m;i++){
+		if(!num[i]||step[num[i]%n]) continue;
+		pre[num[i]%n]=-1;
+		step[num[i]%n]=1;
+		ope[num[i]%n]=num[i];
+		que.push(num[i]%n);
+	}
+	while(!que.empty()){
+		int u=que.front();
+		que.pop();
+		if(u==0) return true;
+		if(ans.size()&&step[u]>ans.size()) return false;
+		for(int i=0;i<m;i++){
+			int v=(u*c+num[i])%n;
+			if(!step[v]){
+				step[v]=step[u]+1;
+				ope[v]=num[i];
+				pre[v]=u;
+				que.push(v);
+			}
+		}
+	}
+	return false;
+}
+void slove(int k){
+	if(pre[k]!=-1) slove(pre[k]);
+	s+=(char)(ope[k]+'0');
+}
+bool cmp(string a,string b){
+	if(b.size()==0) return true;
+	if(a.size()>b.size()) return false;
+	if(b.size()>a.size()) return true;
+	return a<b;
+}
+int main(){
+	while(cin>>n>>c){
+		bool flag=false;ans="";
+		for(int i=1;i<c;i++){
+			num[0]=i;m=1;
+			if(bfs()){
+				flag=true;
+				s="";
+				slove(0);
+				if(cmp(s,ans))
+					ans=s;
+			}
+		}
+		if(!flag){
+			for(int i=1;i<c;i++){
+				for(int j=0;j<i;j++){
+					num[0]=j;num[1]=i;m=2;
+					if(bfs()){
+				    	s="";
+						slove(0);
+						if(cmp(s,ans))
+							ans=s;
+					}
+				}
+			}
+		}
+		cout<<ans<<endl;
+	}
+	return 0;
+}

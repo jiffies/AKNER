@@ -1,0 +1,4742 @@
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+
+ZOJ1109	eng	N	Y	O	B-OJ
+
+HDU1251	eng	N	Y	O	B-OJ
+
+PKU1204	eng	N	Y	O	B-OJ
+
+HDU1075	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+孟起	nr	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+又称	n	N	N	O	O
+单词	n	Y	N	O	O
+查找	v	Y	N	O	O
+树	v	N	N	O	O
+，	x	N	N	O	O
+Trie	eng	N	N	O	B-KNOWLEDGE
+树	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+是	v	N	N	O	O
+一种	m	N	N	O	O
+树形	n	Y	N	O	O
+结构	n	Y	N	O	O
+，	x	N	N	O	O
+是	v	N	N	O	O
+一种	m	N	N	O	O
+哈希	nrt	Y	N	O	O
+树	v	N	N	O	O
+的	uj	N	N	O	O
+变种	n	N	N	O	O
+。	x	N	N	O	O
+
+典型	n	Y	N	O	O
+应用	v	N	N	O	O
+是	v	N	N	O	O
+用于	v	N	N	O	O
+统计	v	Y	N	O	O
+，	x	N	N	O	O
+排序	n	Y	N	O	B-KNOWLEDGE
+和	c	N	N	O	O
+保存	v	N	N	O	O
+大量	n	N	N	O	O
+的	uj	N	N	O	O
+字符串	n	Y	N	O	O
+（	x	N	N	O	O
+但	c	N	N	O	O
+不仅	c	N	N	O	O
+限于	v	N	N	O	O
+字符串	n	Y	N	O	O
+）	x	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+经常	d	N	N	O	O
+被	p	N	N	O	O
+搜索引擎	n	N	N	O	O
+系统	n	Y	N	O	O
+用于	v	N	N	O	O
+文本	n	N	N	O	O
+词频	n	N	N	O	O
+统计	v	Y	N	O	O
+。	x	N	N	O	O
+
+它	r	N	N	O	O
+的	uj	N	N	O	O
+优点	n	N	N	O	O
+是	v	N	N	O	O
+：	x	N	N	O	O
+利用	n	N	N	O	O
+字符串	n	Y	N	O	O
+的	uj	N	N	O	O
+公共	b	Y	N	O	O
+前缀	v	Y	N	O	O
+来	v	N	N	O	O
+节约	n	N	N	O	O
+存储空间	n	N	N	O	O
+，	x	N	N	O	O
+最大	a	Y	N	O	O
+限度	n	N	N	O	O
+地	uv	N	N	O	O
+减少	v	N	N	O	O
+无谓	v	N	N	O	O
+的	uj	N	N	O	O
+字符串	n	Y	N	O	O
+比较	d	N	N	O	O
+，	x	N	N	O	O
+查询	v	N	N	O	O
+效率	n	N	N	O	O
+比	p	N	N	O	O
+哈希	nrt	Y	N	O	B-KNOWLEDGE
+表高	v	N	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+假设	vn	N	N	O	O
+有	v	N	N	O	O
+abc	eng	N	N	O	O
+，	x	N	N	O	O
+abcd	eng	N	N	O	O
+，	x	N	N	O	O
+abd	eng	N	N	O	O
+,	x	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+
+bcd	eng	N	N	O	O
+，	x	N	N	O	O
+efg	eng	N	N	O	O
+，	x	N	N	O	O
+hii	eng	N	N	O	O
+这	r	N	N	O	O
+7	m	N	N	O	O
+个	m	N	N	O	O
+单词	n	Y	N	O	O
+，	x	N	N	O	O
+可	v	N	N	O	O
+构建	v	N	N	O	O
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+如下	t	N	N	O	O
+：	x	N	N	O	O
+
+查找	v	Y	N	O	O
+一个	m	N	N	O	O
+字符串	n	Y	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+我们	r	N	N	O	O
+只	d	N	N	O	O
+需从	v	N	N	O	O
+根	p	N	N	O	O
+结点	n	Y	N	O	O
+按	p	N	N	O	O
+字符串	n	Y	N	O	O
+中	f	N	N	O	O
+字符	n	Y	N	O	O
+出现	v	N	N	O	O
+顺序	n	N	N	O	O
+依次	d	N	N	O	O
+往下走	v	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+到	v	N	N	O	O
+最后	f	N	N	O	O
+字符串	n	Y	N	O	O
+结束	v	N	N	O	O
+时	n	N	N	O	O
+，	x	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+结点	n	Y	N	O	O
+标记	n	N	N	O	O
+为	p	N	N	O	O
+红色	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+该	r	N	N	O	O
+字符串	n	Y	N	O	O
+存在	v	N	N	O	O
+;	x	N	N	O	O
+否则	c	N	N	O	O
+不	d	N	N	O	O
+存在	v	N	N	O	O
+。	x	N	N	O	O
+
+插入	v	N	N	O	O
+时	ng	N	N	O	O
+也	d	N	N	O	O
+只	d	N	N	O	O
+需从	v	N	N	O	O
+根	p	N	N	O	O
+结点	n	Y	N	O	O
+往	zg	N	N	O	O
+下	f	N	N	O	O
+遍历	v	Y	N	O	O
+，	x	N	N	O	O
+碰到	v	N	N	O	O
+已	d	N	N	O	O
+存在	v	N	N	O	O
+的	uj	N	N	O	O
+字符	n	Y	N	O	O
+结点	n	Y	N	O	O
+就往	d	N	N	O	O
+下	v	N	N	O	O
+遍历	v	Y	N	O	O
+，	x	N	N	O	O
+否则	c	N	N	O	O
+，	x	N	N	O	O
+建立	v	N	N	O	O
+新	a	N	N	O	O
+结点	n	Y	N	O	O
+;	x	N	N	O	O
+最后	f	N	N	O	O
+标记	n	N	N	O	O
+最后	f	N	N	O	O
+一个	m	N	N	O	O
+字符	n	Y	N	O	O
+的	uj	N	N	O	O
+结点	n	Y	N	O	O
+为	p	N	N	O	O
+红色	n	N	N	O	O
+即可	d	N	N	O	O
+。	x	N	N	O	O
+
+性质	n	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+它	r	N	N	O	O
+有	v	N	N	O	O
+3	m	N	N	O	O
+个	m	N	N	O	O
+基本	n	N	N	O	O
+性质	n	N	N	O	O
+：	x	N	N	O	O
+
+根	p	N	N	O	O
+节点	n	N	N	O	O
+不	d	N	N	O	O
+包含	v	N	N	O	O
+字符	n	Y	N	O	O
+，	x	N	N	O	O
+除根	nz	N	N	O	O
+节点	n	N	N	O	O
+外	f	N	N	O	O
+每	r	N	N	O	O
+一个	m	N	N	O	O
+节点	n	N	N	O	O
+都	d	N	N	O	O
+只	d	N	N	O	O
+包含	v	N	N	O	O
+一个	m	N	N	O	O
+字符	n	Y	N	O	O
+。	x	N	N	O	O
+
+从	p	N	N	O	O
+根	a	N	N	O	O
+节点	n	N	N	O	O
+到	v	N	N	O	O
+某一	r	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+路径	n	Y	N	O	O
+上	f	N	N	O	O
+经过	p	N	N	O	O
+的	uj	N	N	O	O
+字符	n	Y	N	O	O
+连接起来	l	N	N	O	O
+，	x	N	N	O	O
+为	p	N	N	O	O
+该	r	N	N	O	O
+节点	n	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+字符串	n	Y	N	O	O
+。	x	N	N	O	O
+
+每个	r	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+子	ng	N	N	O	O
+节点	n	N	N	O	O
+包含	v	N	N	O	O
+的	uj	N	N	O	O
+字符	n	Y	N	O	O
+都	d	N	N	O	O
+不	d	N	N	O	O
+相同	d	N	N	O	O
+。	x	N	N	O	O
+
+基本操作	n	N	N	O	O
+
+其	r	N	N	O	O
+基本操作	n	N	N	O	O
+有	v	N	N	O	O
+:	x	N	N	O	O
+查找	v	Y	N	O	O
+
+插入	v	N	N	O	O
+和	c	N	N	O	O
+删除	v	N	N	O	O
+,	x	N	N	O	O
+当然	d	N	N	O	O
+删除	v	N	N	O	O
+操作	v	Y	N	O	O
+比较	d	N	N	O	O
+少见	n	N	N	O	O
+.	m	N	N	O	O
+我	r	N	N	O	O
+在	p	N	N	O	O
+这里	r	N	N	O	O
+只是	c	N	N	O	O
+实现	v	N	N	O	O
+了	ul	N	N	O	O
+对	p	N	N	O	O
+整个	b	N	N	O	O
+树	v	N	N	O	O
+的	uj	N	N	O	O
+删除	v	N	N	O	O
+操作	v	Y	N	O	O
+,	x	N	N	O	O
+至于	p	N	N	O	O
+单个	b	N	N	O	O
+word	eng	N	N	O	O
+的	uj	N	N	O	O
+删除	v	N	N	O	O
+操作	v	Y	N	O	O
+也	d	N	N	O	O
+很	d	N	N	O	O
+简单	a	N	N	O	O
+.	x	N	N	O	O
+
+搜索	v	Y	N	O	O
+字典	n	N	N	O	O
+项目	n	N	N	O	O
+的	uj	N	N	O	O
+方法	n	Y	N	O	O
+为	p	N	N	O	O
+：	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+从	p	N	N	O	O
+根	a	N	N	O	O
+结点	n	Y	N	O	O
+开始	v	N	N	O	O
+一次	m	N	N	O	O
+搜索	v	Y	N	O	O
+；	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+取得	v	N	N	O	O
+要	v	N	N	O	O
+查找	v	Y	N	O	O
+关键词	n	N	N	O	O
+的	uj	N	N	O	O
+第一个	m	N	N	O	O
+字母	n	Y	N	O	O
+，	x	N	N	O	O
+并	c	N	N	O	O
+根据	p	N	N	O	O
+该	r	N	N	O	O
+字母	n	Y	N	O	O
+选择	v	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+并	c	N	N	O	O
+转到	v	N	N	O	O
+该	r	N	N	O	O
+子树	n	N	N	O	O
+继续	v	N	N	O	O
+进行	v	N	N	O	O
+检索	vn	N	N	O	O
+；	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+
+在	p	N	N	O	O
+相应	v	N	N	O	O
+的	uj	N	N	O	O
+子	n	N	N	O	O
+树上	s	N	N	O	O
+，	x	N	N	O	O
+取得	v	N	N	O	O
+要	v	N	N	O	O
+查找	v	Y	N	O	O
+关键词	n	N	N	O	O
+的	uj	N	N	O	O
+第二个	m	N	N	O	O
+字母	n	Y	N	O	O
+,	x	N	N	O	O
+并	c	N	N	O	O
+进一步	d	N	N	O	O
+选择	v	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+进行	v	N	N	O	O
+检索	vn	N	N	O	O
+。	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+
+迭代	v	Y	N	O	O
+过程	n	N	N	O	O
+…	x	N	N	O	O
+…	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+(	x	N	N	O	O
+5	x	N	N	O	O
+)	x	N	N	O	O
+
+在	p	N	N	O	O
+某个	r	N	N	O	O
+结点	n	Y	N	O	O
+处	n	N	N	O	O
+，	x	N	N	O	O
+关键词	n	N	N	O	O
+的	uj	N	N	O	O
+所有	b	N	N	O	O
+字母	n	Y	N	O	O
+已	d	N	N	O	O
+被	p	N	N	O	O
+取出	v	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+读取	v	N	N	O	O
+附	v	N	N	O	O
+在	p	N	N	O	O
+该	r	N	N	O	O
+结点	n	Y	N	O	O
+上	f	N	N	O	O
+的	uj	N	N	O	O
+信息	n	N	N	O	O
+，	x	N	N	O	O
+即	v	N	N	O	O
+完成	v	N	N	O	O
+查找	v	Y	N	O	O
+。	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+其他	r	N	N	O	O
+操作	v	Y	N	O	O
+类似	v	N	N	O	O
+处理	v	N	N	O	O
+
+以上	f	N	N	O	O
+内容	n	N	N	O	O
+来自	v	N	N	O	O
+百度	n	N	N	O	O
+百科	nz	N	N	O	O
+：	x	N	N	O	O
+。	x	N	N	O	O
+
+对应	vn	N	N	O	O
+练习	v	N	N	O	O
+：	x	N	N	O	O
+ZOJ1109	eng	N	Y	O	B-OJ
+
+HDU1251	eng	N	Y	O	B-OJ
+
+ZOJ1109	eng	N	Y	O	B-OJ
+
+Language	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+FatMouse	eng	N	N	O	O
+
+map	eng	N	N	O	O
+方法	n	Y	N	O	O
+
+1320	m	N	N	O	O
+MS	eng	N	N	O	O
+
+9556	m	N	N	O	O
+K	eng	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+iostream	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+pragma	eng	N	N	O	O
+
+warning	eng	N	N	O	O
+
+(	x	N	N	O	O
+disable	eng	N	N	O	O
+:	x	N	N	O	O
+4786	m	N	N	O	O
+)	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+
+40	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+
+20	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+
+20	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+
++	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+m	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+:	x	N	N	O	O
+:	x	N	N	O	O
+iterator	eng	N	N	O	O
+
+it	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+m	eng	N	N	O	O
+.	m	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+it	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+m	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+(	x	N	N	O	O
+
+*	x	N	N	O	O
+
+it	eng	N	N	O	O
+)	x	N	N	O	O
+.	m	N	N	O	O
+second	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+eh	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+：	x	N	N	O	O
+140	m	N	N	O	O
+MS	eng	N	N	O	O
+
+14960	m	N	N	O	O
+K	eng	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+100006	m	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+{	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+h	x	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+26	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+*	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+,	x	N	N	O	O
+T	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+
+&	x	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+26	m	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+path	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+path	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+t	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+j	x	N	N	O	O
+
+<	x	N	N	O	O
+
+26	m	N	N	O	O
+
+;	x	N	N	O	O
+j	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+t	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+t	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+strcpy	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+eh	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+
+25	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+strncpy	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+
++	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+root	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+root	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+HDU1251	eng	N	Y	O	B-OJ
+
+统计	v	Y	N	O	O
+难题	n	N	N	O	O
+
+140	m	N	N	O	O
+MS	eng	N	N	O	O
+
+43736	m	N	N	O	O
+K	eng	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+26	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+*	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+,	x	N	N	O	O
+T	x	N	N	O	O
+;	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+建	v	N	N	O	O
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+newnode	eng	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+;	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+;	x	N	N	O	O
+str	eng	Y	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+newnode	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+26	m	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+newnode	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+newnode	eng	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+查找	v	Y	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+;	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+;	x	N	N	O	O
+str	eng	Y	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+
+20	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+26	m	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+PKU1204	eng	N	Y	O	B-OJ
+
+Word	eng	N	N	O	O
+
+Puzzles	eng	N	N	O	O
+
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+：	x	N	N	O	O
+1485	m	N	N	O	O
+MS	eng	N	N	O	O
+
+14320	m	N	N	O	O
+K	eng	N	N	O	O
+（	x	N	N	O	O
+对	p	N	N	O	O
+给定	v	N	N	O	O
+的	uj	N	N	O	O
+单词	n	Y	N	O	O
+建树	n	Y	N	O	O
+，	x	N	N	O	O
+对	p	N	N	O	O
+表	v	N	N	O	O
+进行	v	N	N	O	O
+暴力	n	Y	N	O	O
+search	eng	N	N	O	O
+）	x	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+1002	m	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+tree	eng	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+count	eng	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+tree	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+26	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+*	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+,	x	N	N	O	O
+T	x	N	N	O	O
+;	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+result	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+3	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+
+8	x	N	N	O	O
+
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+2	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+{	x	N	N	O	O
+{	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+,	x	N	N	O	O
+{	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+}	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+con	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+,	x	N	N	O	O
+q	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+A	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+q	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+q	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+q	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+q	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+
+=	x	N	N	O	O
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+A	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+q	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+A	x	N	N	O	O
+
+'	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+con	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+search	eng	N	N	O	O
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+x1	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+l	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+y1	eng	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+y1	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+c	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+A	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+result	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+0	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+result	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+result	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+count	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+2	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+
++	x	N	N	O	O
+
+'	x	N	N	O	O
+
+A	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+x1	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+0	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+y1	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+slove	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+l	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+j	x	N	N	O	O
+
+<	x	N	N	O	O
+
+c	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+k	x	N	N	O	O
+
+<	x	N	N	O	O
+
+8	x	N	N	O	O
+
+;	x	N	N	O	O
+k	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+search	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+w	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+c	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+result	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+0	x	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+result	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+1	x	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+result	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+2	x	N	N	O	O
+
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+l	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+c	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+
+w	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+Tree	eng	N	N	O	O
+)	x	N	N	O	O
+malloc	eng	N	N	O	O
+(	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+T	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+root	eng	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+l	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+w	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+word	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+slove	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+据说	v	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+还	d	N	N	O	O
+可以	c	N	N	O	O
+用	p	N	N	O	O
+AC	eng	N	N	O	B-KNOWLEDGE
+自动机	n	N	N	O	I-KNOWLEDGE
+实现	v	N	N	O	O
+，	x	N	N	O	O
+不	d	N	N	O	O
+了解	v	N	N	O	O
+AC	eng	N	N	O	B-KNOWLEDGE
+自动机	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+有待	v	N	N	O	O
+提高	v	N	N	O	O
+…	x	N	N	O	O
+…	x	N	N	O	O
+
+HDU1075	eng	N	Y	O	B-OJ
+
+同	c	N	N	O	O
+ZOJ1109	eng	N	Y	O	B-OJ
+同一	b	N	N	O	O
+道理	n	N	N	O	O
+，	x	N	N	O	O
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+基本	n	N	N	O	O
+应用	v	N	N	O	O
+。	x	N	N	O	O
+
+map	eng	N	N	O	O
+方法	n	Y	N	O	O
+
+3375	m	N	N	O	O
+MS	eng	N	N	O	O
+
+42368	m	N	N	O	O
+K	eng	N	N	O	O
+
+752	m	N	N	O	O
+B	eng	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+iostream	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+map	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+,	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+M	x	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+
+END	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+M	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+
+3005	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+
+END	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+
+++	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+!	x	N	N	O	O
+
+islower	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+M	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+M	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+"	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+b	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+：	x	N	N	O	O
+437	m	N	N	O	O
+MS	eng	N	N	O	O
+
+59796	m	N	N	O	O
+K	eng	N	N	O	O
+
+1274	m	N	N	O	O
+B	eng	N	N	O	O
+（	x	N	N	O	O
+可以	c	N	N	O	O
+用做	v	N	N	O	O
+模板	n	Y	N	O	O
+了	ul	N	N	O	O
+吧	y	N	N	O	O
+）	x	N	N	O	O
+
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+ctype	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+{	x	N	N	O	O
+
+node	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+
+26	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+h	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+word	eng	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+next	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+
+(	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+*	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+,	x	N	N	O	O
+T	x	N	N	O	O
+;	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+root	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+new	eng	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+eng	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+mar	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+*	x	N	N	O	O
+
+mar	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+
+=	x	N	N	O	O
+*	x	N	N	O	O
+
+mar	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+new	eng	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+mar	eng	N	N	O	O
+
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+;	x	N	N	O	O
+
+strcpy	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+word	eng	N	N	O	O
+,	x	N	N	O	O
+eng	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+root	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+
+=	x	N	N	O	O
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+
+a	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+++	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+*	x	N	N	O	O
+
+str	eng	Y	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+NULL	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+h	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+-	x	N	N	O	O
+>	x	N	N	O	O
+
+word	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+return	eng	N	N	O	O
+
+NULL	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+
+12	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+
+3005	m	N	N	O	O
+
+]	x	N	N	O	O
+,	x	N	N	O	O
+tp	eng	N	N	O	O
+[	x	N	N	O	O
+
+3005	m	N	N	O	O
+
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+p	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+
+END	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+strcmp	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+
+END	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+
+++	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+
+;	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+len	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+
+!	x	N	N	O	O
+
+islower	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+tp	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+tp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+"	x	N	N	O	O
+
+,	x	N	N	O	O
+tp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+len	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+
+)	x	N	N	O	O
+
+putchar	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+tp	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+
+++	x	N	N	O	O
+
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+puts	eng	N	N	O	O
+(	x	N	N	O	O
+
+"	x	N	N	O	O
+"	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

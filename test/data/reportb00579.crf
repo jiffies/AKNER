@@ -1,0 +1,1936 @@
+poj	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+3533	m	N	N	I-OJ
+ 	x	N	N	O
+ 	x	N	N	O
+Nim	eng	N	N	O
+积	ad	N	N	O
+_	x	N	N	O
+年轻	a	N	N	O
+_	x	N	N	O
+百度	n	N	N	O
+空间	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+nim	eng	Y	N	O
+-	x	N	N	O
+product	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+Fermat	eng	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+-	x	N	N	O
+power	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+any	eng	N	N	O
+ 	x	N	N	O
+smaller	eng	N	N	O
+ 	x	N	N	O
+number	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+their	eng	N	N	O
+ 	x	N	N	O
+ordinary	eng	N	N	O
+ 	x	N	N	O
+product	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+(	x	N	N	O
+ii	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+The	eng	N	N	O
+ 	x	N	N	O
+nim	eng	Y	N	O
+-	x	N	N	O
+product	eng	N	N	O
+ 	x	N	N	O
+of	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+Fermat	eng	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+-	x	N	N	O
+power	eng	N	N	O
+ 	x	N	N	O
+with	eng	N	N	O
+ 	x	N	N	O
+itself	eng	N	N	O
+ 	x	N	N	O
+is	eng	N	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+Fermat	eng	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+-	x	N	N	O
+power	eng	N	N	O
+ 	x	N	N	O
+times	eng	N	N	O
+ 	x	N	N	O
+3	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+in	eng	Y	N	O
+ 	x	N	N	O
+the	eng	N	N	O
+ 	x	N	N	O
+ordinary	eng	N	N	O
+ 	x	N	N	O
+sense	eng	N	N	O
+.	m	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+竟然	d	N	N	O
+又	d	N	N	O
+因为	c	N	N	O
+位	q	N	N	O
+运算	vn	Y	N	O
+的	uj	N	N	O
+优先级	b	Y	N	O
+问题	n	N	N	O
+找	v	N	N	O
+了	ul	N	N	O
+好久	m	N	N	O
+，	x	N	N	O
+因	p	N	N	O
+该是	r	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+i	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+而	c	N	N	O
+不是	c	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+i	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+，	x	N	N	O
+ 	x	N	N	O
+鄙视	v	N	N	O
+自己	r	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+晚饭	n	N	N	O
+都	d	N	N	O
+耽误	v	N	N	O
+了	ul	N	N	O
+~	x	N	N	O
+~	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+iostream	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+cstring	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+cstdio	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+const	eng	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1001	m	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+N	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+N	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+N	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+flag	eng	N	N	O
+[	x	N	N	O
+N	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+mex	eng	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+flag	eng	N	N	O
+,	x	N	N	O
+false	eng	N	N	O
+,	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+flag	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+flag	eng	N	N	O
+[	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+true	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+flag	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+,	x	N	N	O
+int	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+声明	n	N	N	O
+一下	m	N	N	O
+，	x	N	N	O
+因为	c	N	N	O
+f	eng	N	N	O
+与	p	N	N	O
+g	eng	N	N	O
+互相	d	N	N	O
+嵌套	nz	N	N	O
+调用	vn	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+g	x	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+计算	v	Y	N	O
+2	x	N	N	O
+^	x	N	N	O
+x	eng	N	N	O
+与	p	N	N	O
+2	m	N	N	O
+^	x	N	N	O
+y	eng	N	N	O
+的	uj	N	N	O
+nim	eng	Y	N	O
+积	ad	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+查	v	N	N	O
+备忘录	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+x	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+x	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	m	N	N	O
+也	d	N	N	O
+就是	d	N	N	O
+1	m	N	N	O
+与	p	N	N	O
+2	m	N	N	O
+^	x	N	N	O
+y	eng	N	N	O
+的	uj	N	N	O
+nim	eng	Y	N	O
+积	ad	N	N	O
+，	x	N	N	O
+等于	v	N	N	O
+2	x	N	N	O
+^	x	N	N	O
+y	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+同	p	N	N	O
+上	f	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+x	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+k	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+=	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+y1	eng	N	N	O
+=	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+再	d	N	N	O
+将	d	N	N	O
+x	eng	N	N	O
+和	c	N	N	O
+y	eng	N	N	O
+分为	v	N	N	O
+二进制	n	N	N	O
+，	x	N	N	O
+这里	r	N	N	O
+计算	v	Y	N	O
+那些	r	N	N	O
+普通	nz	N	N	O
+乘积	n	N	N	O
+的	uj	N	N	O
+（	x	N	N	O
+即	v	N	N	O
+对应	vn	N	N	O
+二进制位	n	N	N	O
+不同	a	N	N	O
+的	uj	N	N	O
+）	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+从此	c	N	N	O
+位	q	N	N	O
+得到	v	N	N	O
+的	uj	N	N	O
+最终	d	N	N	O
+的	uj	N	N	O
+数	n	N	N	O
+2	m	N	N	O
+^	x	N	N	O
+k	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+x	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+y	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+&&	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+x	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+&&	x	N	N	O
+(	x	N	N	O
+y	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+该	r	N	N	O
+位	q	N	N	O
+不同	a	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+*	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+从此	c	N	N	O
+位	q	N	N	O
+得到	v	N	N	O
+的	uj	N	N	O
+指数	n	N	N	O
+(	x	N	N	O
+本身	r	N	N	O
+也	d	N	N	O
+是	v	N	N	O
+2	m	N	N	O
+的	uj	N	N	O
+幂	n	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+x1	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+y1	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+计算	v	Y	N	O
+那些	r	N	N	O
+相同	d	N	N	O
+的	uj	N	N	O
+fermat	eng	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+-	x	N	N	O
+power	eng	N	N	O
+ 	x	N	N	O
+数	n	N	N	O
+，	x	N	N	O
+与	p	N	N	O
+已	d	N	N	O
+得出	v	N	N	O
+的	uj	N	N	O
+数	m	N	N	O
+的	uj	N	N	O
+nim	eng	Y	N	O
+积	ad	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+x	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+&&	x	N	N	O
+(	x	N	N	O
+y	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+该	r	N	N	O
+位	q	N	N	O
+相同	d	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+(	x	N	N	O
+ans	eng	N	N	O
+,	x	N	N	O
+t	x	N	N	O
+/	x	N	N	O
+2	x	N	N	O
+*	x	N	N	O
+3	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+从此	c	N	N	O
+位	q	N	N	O
+得到	v	N	N	O
+的	uj	N	N	O
+指数	n	N	N	O
+(	x	N	N	O
+本身	r	N	N	O
+也	d	N	N	O
+是	v	N	N	O
+2	m	N	N	O
+的	uj	N	N	O
+幂	n	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+gg	eng	N	N	O
+[	x	N	N	O
+x1	eng	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+y1	eng	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+计算	v	Y	N	O
+二维	m	N	N	O
+的	uj	N	N	O
+nim	eng	Y	N	O
+积	ad	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+!	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+)	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+a	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+a	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+完成	v	N	N	O
+（	x	N	N	O
+将	d	N	N	O
+x	eng	N	N	O
+和	c	N	N	O
+y	eng	N	N	O
+分解	v	Y	N	O
+后	f	N	N	O
+）	x	N	N	O
+按	p	N	N	O
+分配律	n	N	N	O
+计算	v	Y	N	O
+其	r	N	N	O
+积	ad	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+i	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+该	r	N	N	O
+位	q	N	N	O
+（	x	N	N	O
+bit	eng	N	N	O
+）	x	N	N	O
+是	v	N	N	O
+1	m	N	N	O
+才	d	N	N	O
+计算	v	Y	N	O
+，	x	N	N	O
+否则	c	N	N	O
+跳	v	N	N	O
+过	ug	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+,	x	N	N	O
+b	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+b	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+j	eng	N	N	O
+&	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+^	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+g	x	N	N	O
+(	x	N	N	O
+a	x	N	N	O
+,	x	N	N	O
+b	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+,	x	N	N	O
+y	x	N	N	O
+,	x	N	N	O
+z	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+ans	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+memset	eng	N	N	O
+(	x	N	N	O
+gg	eng	N	N	O
+,	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+,	x	N	N	O
+sizeof	eng	N	N	O
+(	x	N	N	O
+gg	eng	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+先	d	N	N	O
+计算	v	Y	N	O
+出	v	N	N	O
+一维	m	N	N	O
+的	uj	N	N	O
+sg	eng	N	N	O
+值	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+mex	eng	N	N	O
+(	x	N	N	O
+i	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+EOF	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+x	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+y	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+z	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+^	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+f	x	N	N	O
+(	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+x	x	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+f	x	N	N	O
+(	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+y	x	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+sg	eng	N	N	O
+[	x	N	N	O
+z	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+puts	eng	N	N	O
+(	x	N	N	O
+ans	eng	N	N	O
+ 	x	N	N	O
+?	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+No	eng	N	N	O
+"	x	N	N	O
+ 	x	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+Yes	eng	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O

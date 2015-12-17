@@ -1,0 +1,54 @@
+POJ 2976 - tmeteorj - 博客园
+
+算是一道裸的0-1分数规划，0-1规划正确性的证明请参考OI论文《最小割模型在信息学竞赛中的应用》，里面非常详细。
+总之，就是枚举比例，求a-bx的最大值，由于最多可以删去k个物品，实际就是保留n-k个，然后就在n个物品中选出最大的n-k个物品，然后再看剩下的物品里面权值为正就加进来，最后，看ans是否等于0
+ 
+
+ 
+ 
+ View Code  
+  
+   1 #include<cstdio>
+ 2 #include<cstring>
+ 3 #include<algorithm>
+ 4 using namespace std;
+ 5 double a[1005],b[1005];
+ 6 const double eps=1e-8;
+ 7 int n,r;
+ 8 double solve(double x)
+ 9 {
+10     double temp[1005],ans=0;
+11     for(int i=0;i<n;i++)
+12         temp[i]=100*a[i]-x*b[i];
+13     sort(temp,temp+n);
+14     for(int i=0;i<r;i++)
+15         ans+=temp[n-i-1];
+16     for(int i=r;i<n&&temp[n-i-1]>-eps;i++)
+17         ans+=temp[n-i-1];
+18     return ans;
+19 }
+20 int main()
+21 {
+22     while(scanf("%d%d",&n,&r))
+23     {
+24         if(!(n||r))
+25             break;
+26         r=n-r;
+27         for(int i=0;i<n;i++)
+28             scanf("%lf",a+i);
+29         for(int i=0;i<n;i++)
+30             scanf("%lf",b+i);
+31         double ll=0,rr=100,mid;
+32         while(rr-ll>eps)
+33         {
+34             mid=(ll+rr)/2.0;
+35             if(solve(mid)>eps)
+36                 ll=mid;
+37             else
+38                 rr=mid;
+39         }
+40         printf("%.0lf\n",ll);
+41     }
+42     return 0;
+43 } 
+  

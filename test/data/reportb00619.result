@@ -1,0 +1,385 @@
+poj	eng	N	Y	O	B-OJ
+
+1493	m	N	N	O	I-OJ
+
+:	x	N	N	O	O
+
+Machined	eng	N	N	O	O
+
+Surfaces	eng	N	N	O	O
+_	x	N	N	O	O
+依然	d	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+每张	r	N	N	O	O
+照片	n	N	N	O	O
+由	c	N	N	O	O
+n	eng	N	N	O	O
+行串	n	N	N	O	O
+组成	v	N	N	O	O
+，	x	N	N	O	O
+每行	r	N	N	O	O
+串	v	N	N	O	O
+长度	ns	Y	N	O	O
+为	p	N	N	O	O
+25	m	N	N	O	O
+，	x	N	N	O	O
+都	d	N	N	O	O
+由	p	N	N	O	O
+X	eng	N	N	O	O
+开头	v	N	N	O	O
+，	x	N	N	O	O
+空格	n	N	N	O	O
+中间	f	N	N	O	O
+(	x	N	N	O	O
+也	d	N	N	O	O
+可	v	N	N	O	O
+没有	v	N	N	O	O
+)	x	N	N	O	O
+，	x	N	N	O	O
+X	x	N	N	O	O
+结尾	n	N	N	O	O
+。	x	N	N	O	O
+
+所有	b	N	N	O	O
+串	v	N	N	O	O
+的	uj	N	N	O	O
+左边	f	N	N	O	O
+X	x	N	N	O	O
+部分	n	Y	N	O	O
+同时	c	N	N	O	O
+右移	n	N	N	O	O
+，	x	N	N	O	O
+直到	v	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+串	v	N	N	O	O
+没有	v	N	N	O	O
+空格	n	N	N	O	O
+。	x	N	N	O	O
+
+问	n	N	N	O	O
+这时	r	N	N	O	O
+所有	b	N	N	O	O
+串合	v	N	N	O	O
+起来	v	N	N	O	O
+总共	b	N	N	O	O
+有	v	N	N	O	O
+几个	m	N	N	O	O
+空格	n	N	N	O	O
+。	x	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+水题	n	N	N	O	O
+。	x	N	N	O	O
+
+求	v	N	N	O	O
+最短	z	Y	N	O	O
+的	uj	N	N	O	O
+空格	n	N	N	O	O
+数	n	N	N	O	O
+minLen	eng	N	N	O	O
+，	x	N	N	O	O
+每	zg	N	N	O	O
+一行	m	N	N	O	O
+的	uj	N	N	O	O
+空格	n	N	N	O	O
+数	n	N	N	O	O
+减去	v	N	N	O	O
+minLen	eng	N	N	O	O
+之	u	N	N	O	O
+和	c	N	N	O	O
+就是	d	N	N	O	O
+结果	n	N	N	O	O
+了	ul	N	N	O	O
+。	x	N	N	O	O
+
+源代码	n	N	N	O	O
+：	x	N	N	O	O
+(	x	N	N	O	O
+212	m	N	N	O	O
+K	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	m	N	N	O	O
+MS	eng	N	N	O	O
+)	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+<	x	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+:	x	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+15	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+img	eng	N	N	O	O
+[	x	N	N	O	O
+30	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+getchar	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+minLen	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+30	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+gets	eng	N	N	O	O
+(	x	N	N	O	O
+img	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+<	x	N	N	O	O
+
+25	m	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+img	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+minLen	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+minLen	eng	N	N	O	O
+,	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+-	x	N	N	O	O
+
+minLen	eng	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

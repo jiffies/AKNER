@@ -1,0 +1,86 @@
+ZOJ 1123 Triangle Encapsulation_庒谐的空间_百度空间
+
+求解位于三角形内部的整数坐标点,由于三角形特别小(x-y坐标的范围是-9……9),使用一个平行于坐标轴的矩形把三角形套起来.显然矩形的边界是三角形三个顶点坐标中的最大,最小值.
+采用计算三角形面积的办法判断点是否在三角形内部,如果顶点p在三角形内部,该店与三角形三个顶点构成的三个三角形面积的和等于大三角形的面积,否则不相等.如果顶点p在三角形的边界上,则三个三角形中,必然有一个面积为0.但x-y坐标的范围是-9……9,直接用xy当做数组的下表,负数值是非法的,所以在坐标上加上10即可,输出时在减去10.
+在矩形区域内的点(i,j),如果标记数组为1,则输出该坐标,否则为空输出域.
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int min(int a,int b,int c)                                    //计算最小值
+{
+    int tmp=(a<b)?a:b;
+    return (tmp<c)?tmp:c;
+}
+int max(int a,int b,int c)                                   //计算最大值
+{
+    int tmp=(a>b)?a:b;
+    return (tmp>c)?tmp:c;
+}
+int area(int a,int b,int c,int d)                            //计算面积,叉乘的方法,是实际面积的两倍
+{
+    int s=a*d-b*c;
+    if(s<0)
+       s=-s;
+    return s;
+}
+int main()
+{
+    int x1,x2,x3,y1,y2,y3;                                  //三角形三个顶点的坐标
+    int right,top,left,below;                               //套住三角形的矩形边界
+    int minx,miny,maxx,maxy;                                //套住三角形内部整数点的矩形边界
+    int ss,s1,s2,s3;                                        //三角形面积
+    char map[50][50];                                       //保存坐标点在三角形内外的状态
+    int border;                                             //控制行末的空输出域
+    int i,j;
+    printf("Program 4 by team X\n");
+    while(scanf("%d%d%d%d%d%d",&x1,&y1,&x2,&y2,&x3,&y3)!=EOF)
+    {
+          minx=miny=10;
+          maxx=maxy=-10;
+          ss=area(x2-x1,y2-y1,x3-x1,y3-y1);
+          memset(map,0,sizeof(map));
+          right=max(x1,x2,x3);                             //计算包含三角形的矩形
+          top  =max(y1,y2,y3); 
+          left =min(x1,x2,x3);
+          below=min(y1,y2,y3);
+          for(i=left;i<=right;i++)                        //判断该矩形内那些点是三角形内部的整数点 
+           for(j=below;j<=top;j++)
+           {
+                s1=area(x1-i,y1-j,x2-i,y2-j);
+                s2=area(x1-i,y1-j,x3-i,y3-j);
+                s3=area(x2-i,y2-j,x3-i,y3-j);
+                if(s1 && s2 && s3 &&(s1+s2+s3)==ss)       //若某个面积为0,表示该点在边界上 
+                {
+                      map[i+10][j+10]=1;
+                      if(i+10<minx)                       //计算包围三角形内整点的矩形 
+                         minx=i+10;
+                      if(i+10>maxx)
+                         maxx=i+10;
+                      if(j+10>maxy)
+                         maxy=j+10;
+                      if(j+10<miny)
+                         miny=j+10;
+                }
+           } 
+          for(j=maxy;j>=miny;j--)
+          {
+                for(i=minx;i<=maxx;i++)                  //计算行末的右边界
+                 if(map[i][j])
+                    border=i;
+                for(i=minx;i<=border;i++)
+                {
+                    if(i!=minx)
+                       printf(" ");
+                    if(map[i][j])
+                       printf("(%2d, %2d)",i-10,j-10);   
+                    else 
+                       printf("        ");              //9个空格
+                }
+                printf("\n");
+          }
+          printf("\n");
+    }
+    printf("End of program 4 by team X\n");
+    system("pause");
+    return 0;
+}

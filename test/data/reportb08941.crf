@@ -1,0 +1,370 @@
+poj	eng	N	Y	B-OJ
+ 	x	N	N	O
+pku	eng	N	Y	B-OJ
+ 	x	N	N	O
+2245	m	N	N	O
+ 	x	N	N	O
+Lotto	eng	N	N	O
+_	x	N	N	O
+天空	n	N	N	O
+之城	ns	N	N	O
+_	x	N	N	O
+百度	n	N	N	O
+空间	n	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+简单	a	N	N	O
+的	uj	N	N	O
+搜索	v	Y	N	O
+dfs	eng	Y	N	B-KNOWLEDGE
+.	m	N	N	O
+
+	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+poj	eng	N	Y	B-OJ
+_	x	N	N	I-OJ
+2245	m	N	N	I-OJ
+ 	x	N	N	O
+Lotto	eng	N	N	O
+
+	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+LiQi	eng	N	N	O
+ 	x	N	N	O
+2010	m	N	N	O
+-	x	N	N	O
+8	x	N	N	O
+-	x	N	N	O
+01	m	N	N	O
+ 	x	N	N	O
+13	m	N	N	O
+:	x	N	N	O
+20	m	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+iostream	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+15	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+15	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+void	eng	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+,	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+n	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+6	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+j	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+j	x	N	N	O
+<	x	N	N	O
+6	x	N	N	O
+;	x	N	N	O
+j	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+m	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+a	x	N	N	O
+[	x	N	N	O
+n	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+n	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+,	x	N	N	O
+i	eng	N	N	O
++	x	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+freopen	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+in	eng	Y	N	O
+.	m	N	N	O
+txt	eng	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+"	x	N	N	O
+r	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+stdin	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+k	eng	N	N	O
+)	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+EOF	eng	N	N	O
+&&	x	N	N	O
+k	eng	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+num	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+dfs	eng	Y	N	O
+(	x	N	N	O
+0	x	N	N	O
+,	x	N	N	O
+0	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O

@@ -1,0 +1,71 @@
+pku 1062 - MickJack的专栏 - 博客频道 - CSDN.NET
+
+题目链接：http://acm.pku.edu.cn/JudgeOnline/problem?id=1062
+这是一道比较明显的最短路径....建图也比较容易...就是在处理等级的时候比较麻烦，可以枚举吧。比如 酋长的等级是6   m的值是3 那么有3~6 ，4~7，5~8，6~9 这4种可能。Dijkstra算法经典算法就乐意ac了。。貌似这道题spfa算法并不比Dijkstra的快，当然只是针对个别。
+#include<iostream>
+#include<cmath>
+#include<string.h>
+using namespace std;
+const int MAX=400;
+const int MAXINT=1234565789; 
+int map[MAX][MAX];
+int lift[MAX];
+int D[MAX]; 
+int n,m;
+int Dijkstra()
+{
+     int distance=D[1],tmpd[MAX],visit[MAX]; 
+     for(int t=lift[1]-n;t<=lift[1];t++)
+     {  
+            for(int i=1;i<=m;i++)    
+            {  
+                     tmpd[i]=D[i]; 
+                     visit[i]=0; 
+            }        
+            int v,min;     
+            for(int T=1;T<=m;T++)
+            {
+                   min=MAXINT; 
+                   for(int i=1;i<=m;i++)
+                   if(!visit[i]) 
+                   if(lift[i]>=t&&lift[i]<=t+n&&tmpd[i]<min)
+                   {
+                         v=i;
+                         min=tmpd[i];
+                   }                        
+                   visit[v]=1;
+                   for(int j=1;j<=m;j++)
+                           if(!visit[j]&&(lift[j]>=t&&lift[j]<=t+n)&&(tmpd[v]+map[v][j]<tmpd[j]))
+                                 tmpd[j]=tmpd[v]+map[v][j]; 
+            }      
+            if(tmpd[1]<distance) distance=tmpd[1];    
+    }  
+ return distance; 
+} 
+int main()
+{
+   while(cin>>n>>m)
+   { 
+        memset(D,0,sizeof(D));
+        memset(lift,0,sizeof(lift));
+        int money,t,num;
+        for(int i=1;i<=m;i++)
+          for(int j=1;j<=m;j++)
+             map[i][j]=MAXINT; 
+        for(int i=1;i<=m;i++)
+        {
+                cin>>money>>t>>num;
+                lift[i]=t; 
+                int x,y; 
+                D[i]=map[0][i]=money;
+                for(int j=0;j<num;j++)
+                {
+                        cin>>x>>y;
+                        map[x][i]=y;         
+                }       
+        } 
+        int cost=Dijkstra();    
+        cout<<cost<<endl;
+   }
+   return 0;
+}

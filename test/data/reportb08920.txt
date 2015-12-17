@@ -1,0 +1,58 @@
+POJ 2506 递推_石家庄二中2011级OI_百度空间
+
+好像状压DP啊，可惜不是。。
+题意：你这题看不懂就回去读小学英语去吧。。
+递推：由于当前状态根i-2之前的无关，所以只需考虑i-1和i-2,。
+假设i-1方案数已经算好，此时只能添加1个竖着的。
+假设i-2方案数已经算好，此时能添加两个横着的和一个2*2的，为什么没有两个竖着的？因为i-1的时候已经算过竖着的了。
+注意N有0的时候，要输出1，我因为这WA了两次。。
+配上高精度计算。。
+（代码仅供参考和学习，请不要直接粘贴刷AC数，期待你写出更好的代码）
+#include<cstdio>
+#include<cstring>
+#include<iostream>
+using namespace std;
+int n;
+struct H
+{int a[100],len;}f[310];
+inline H operator + (const H &x,const H &y)
+{
+int l=max(x.len,y.len);
+H z;
+memset(z.a,0,sizeof z.a);
+for(int i=1;i<=l;i++)
+{
+z.a[i]+=x.a[i]+y.a[i];
+z.a[i+1]=z.a[i]/10;
+z.a[i]%=10;
+}
+if(z.a[l+1]) l++;
+z.len=l;
+return z;
+}
+inline H mut(H x)
+{
+for(int i=1;i<=x.len;i++)
+x.a[i]*=2;
+for(int i=1;i<=x.len;i++)
+{
+x.a[i+1]+=x.a[i]/10;
+x.a[i]%=10;
+}
+if(x.a[x.len+1]) x.len++;
+return x;
+}
+int main()
+{
+f[0].a[1]=1;f[0].len=1;
+f[1].a[1]=1;f[1].len=1;
+for(int i=2;i<=250;i++)
+f[i]=f[i-1]+mut(f[i-2]);
+while(scanf("%d",&n)+1)
+{
+for(int i=f[n].len;i>=1;i--)
+printf("%d",f[n].a[i]);
+printf("\n");
+}
+return 0;
+}

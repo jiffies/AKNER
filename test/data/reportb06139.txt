@@ -1,0 +1,102 @@
+POJ3072—Robot Dijkstra实现 - 飞翔的小鸟 - 博客频道 - CSDN.NET
+
+简单的Dijkstra题目，稍微转个弯就可以了，因为要计算由一个点转到另一个点时所需的时间，所以可以设置一个结构体，用个成员变量记载该点到起点的距离，距离是起点到该点的直线距离加上上一个点转向该点的角度（一个角度需时一秒），然后再用Dijkstra求解就很简单了。
+ 
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <cmath>
+using namespace std;
+const int maxn=22;
+const double pi=atan(1.0)*4;
+const double inf=100000000;
+bool visit[maxn];
+int r,n;
+struct node
+{
+    int x;
+    int y;
+    double len;           //与起点的距离
+    double degree;        //与x轴的夹角
+}point[maxn];
+double dist(node *p,node *q)  //计算距离
+{
+    return sqrt((p->x-q->x)*(p->x-q->x)*1.0+(p->y-q->y)*(p->y-q->y)*1.0);
+}
+double getDegree(node *cur,node *next)       //计算两点连线与x轴的夹角
+{
+    int x,y;
+    double degree;
+    x=next->x-cur->x;
+    y=next->y-cur->y;
+    degree=atan2(double(y),double(x));    //夹角的范围是-pi到pi，不包括-pi
+    return degree;
+}
+double calDegree(node *cur,node *next,double °) //由cur点转到next点转过的角度
+{
+    double degree,ans;
+    degree=getDegree(cur,next);
+    deg=degree;
+    ans=fabs(degree-cur->degree);
+    if(ans>pi)                                 //转角的大小不超过Pi
+    ans=2*pi-ans;
+    return ans;
+}
+void update(node *cur,node *next)
+{
+    double length,tmplen,tmpdeg;
+    tmplen=dist(cur,next);
+    if(tmplen>r)
+    return ;
+    length=calDegree(cur,next,tmpdeg)*180/pi+tmplen+cur->len;
+    if(length<next->len)
+    {
+        next->len=length;
+        next->degree=tmpdeg;
+    }
+}
+void Dijkstra()
+{
+    int i,u;
+    double min;
+    while(!visit[n-1])
+    {
+        u=-1;
+        min=inf;
+        for(i=0;i<n;i++)
+        if(!visit[i] && point[i].len<min)
+        {
+            min=point[i].len;
+            u=i;
+        }
+        if(u==-1)
+        break;
+        visit[u]=true;
+        for(i=0;i<n;i++)
+        if(!visit[i])
+        update(&point[u],&point[i]);
+    }
+    if(!visit[n-1])
+    printf("impossible\n");
+    else
+    printf("%d\n",(int)(point[n-1].len+0.5));
+}
+int main()
+{
+    int i,j;
+    while(scanf("%d%d",&r,&n))
+    {
+        if(r==-1 && n==-1)
+        break;
+        for(i=0;i<n;i++)
+        {
+            scanf("%d%d",&point[i].x,&point[i].y);
+            point[i].len=inf;
+        }
+        point[0].degree=getDegree(&point[0],&point[n-1]);
+        point[0].len=0;
+        memset(visit,0,sizeof(visit));
+        Dijkstra();
+    }
+    return 0;
+}

@@ -1,0 +1,25 @@
+POJ 2226 Muddy Fields_Lonely Star-浩宇孤星_百度空间
+
+这个问题转化为 二分图的最小覆盖。等价于求二分图的最大匹配。为了做这道题专门看了下组合数学。原来树上求最大匹配的算法就是　匈牙利算法。
+计算二分图的算法有网络流算法和匈牙利算法（目前就知道这两种），其中匈牙利算法是比较巧妙的，具体过程如下（
+转自组合数学）：
+令g=（x,*,y）是一个二分图，其中x={x1,x2...},y={y1,y2,....}.令m为g中的任意匹配。 
+1。将x的所有不与m的边关联的顶点表上￥，并称所有的顶点为未扫描的。转到2。 
+2。如果在上一步没有新的标记加到x的顶点上，则停，否则 ，转3 
+3。当存在x被标记但未被扫描的顶点时，选择一个被标记但未被扫描的x的顶点，比如xi，用（xi）标 
+记y 的所有顶点，这些顶点被不属于m且尚未标记的边连到xi。 
+ 现在顶点xi 是被扫描的。如果不存在被标记但未被扫描的顶点，转4。 
+4。如果在步骤3没有新的标记被标记到y的顶点上，则停，否则转5。 
+5。当存在y被标记但未被扫描的顶点时。选择y的一个被标记但未被扫描的顶点，比如yj， 
+用（yj）标记x的顶点，这些顶点被属于m且尚未标记的边连到yj。现在，顶点yj是被扫描的。 
+如果不存在被标记但未被扫描的顶点则转道2。
+由于每一个顶点最多被标记一次且由于每一个顶点最多被扫描一次，本匹配算法在有限步内终止。
+贴代码：
+Source Code
+ Problem: 2226 User: AlbertLiu Memory: 1152K Time: 16MS Language: C++ Result: Accepted 
+
+ 
+ Source Code //ＤＦＳ增广　和　ＢＦＳ增广#include <iostream>using namespace std;const int maxn=500;char grid[51][51] ;int mapx[51][51] ,mapy[51][51] ;int nx , ny , g[maxn][maxn] , cx[maxn] , cy[maxn] , mk[maxn] ;// cx[i]表示与Xi匹配的Y顶点// cy[i]同理int R , C ;int MaxMatch();int path(int u);int MaxMatchBFS();int main(){ //freopen("in.txt","r",stdin); scanf( "%d %d\n" , &R , &C ); for(int i=0;i<R;++i) for(int j=0;j<=C;++j) grid[i][j]=getchar(); for(int i=0;i<R;++i) // 横着分点 for(int j=0;j<C;++j) { if(grid[i][j]=='*') { while(grid[i][j]=='*') mapx[i][j++]=nx; ++nx; } } for(int j=0;j<C;++j) // 竖着分点 for(int i=0;i<R;++i) { if(grid[i][j]=='*') { while(grid[i][j]=='*') mapy[i++][j]=ny; ++ny; } } for(int i=0;i<R;++i) // 构造二分图 for(int j=0;j<C;++j) if(grid[i][j]=='*') g[ mapx[i][j] ][ mapy[i][j] ] = 1; //cout <<MaxMatch()<< endl; cout <<MaxMatchBFS()<< endl; return 0;}/*DFS增广从某一个X顶点出发，用深度优先的策略寻找增广路，并在找到之后，巧妙地利用递归来修改匹配。优点：实现简洁，理解容易适用：稠密图，由于边多，dfs找增广路很快复杂度：O(n^3)*/int path(int u){ for (int v = 0 ; v < ny ; v++) // 从X中的点u出发，遍历所有相连且未访问的Y点。 if (g[u][v] && !mk[v]) { mk[v] = 1 ; if ( cy[v] == -1 || path(cy[v]) ) // 递归直到有某个Y点不在匹配中，或失败。当找到时则形成一条增广路径 { cx[u] = v ; cy[v] = u ; // 表示X中的u有一条指向Y中的v的匹配 return 1 ; } } return 0 ;}int MaxMatch(){ int res(0) ; memset(cx , 0xff , sizeof(cx)) ; memset(cy , 0xff , sizeof(cy)) ; for (int i = 0 ; i <= nx ; i++) // 深度遍历所有X集合节点，找出所有增广路径 if (cx[i] == -1) { memset(mk , 0 , sizeof(mk)) ; // 防止增光路径回路死循环 res += path(i) ; // 若找到一条增广路径则匹配加1 } return res ;}/*2、BFS增广 复杂度：O(n^3)适用：稀疏二分图，边少，增广路短*/int pred[maxn] , open[maxn] ;int MaxMatchBFS(){ int i , u , v , t , d , e , cur , tail , res(0) ; memset(mk , 0xff , sizeof(mk)) ; memset(cx , 0xff , sizeof(cx)) ; memset(cy , 0xff , sizeof(cy)) ; for (i = 0 ; i < nx ; i++) { pred[i] = -1 ; cur = tail = 0 ; for (open[0] = i ; cur <= tail && cx[i] == -1 ; cur++) { for (u = open[cur] , v = 0 ; v < ny && cx[i] == -1 ; v ++) if (g[u][v] && mk[v] != i) { mk[v] = i ; open[++tail] = cy[v] ; if (open[tail] >= 0) { pred[open[tail]] = u ; continue ; } for (d = u , e = v ; d != -1 ; t = cx[d] , cx[d] = e , cy[e] = d , e = t , d = pred[d]) ; break ; } } if (cx[i] != -1) res++ ; } return res ;} 
+参考：http://www.cnblogs.com/jesonpeng/articles/1352713.html
+http://hi.baidu.com/scaneelingg/blog/item/b368a1cba775248fc817685b.html
+ 

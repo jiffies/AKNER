@@ -1,0 +1,92 @@
+poj 2440 DNA_chenwenwen0210_百度空间
+
+题目大意：要求01串的种数，01里面不能出现101，111这两种子串。输入长度N（1<=N<=10^8）,要求输出满足要求的串的数目。
+解题报告：一看到这种数据范围就想到了DP加矩阵优化。
+n<3的时候输出2^n
+当n>2的时候
+可以先用DP表示dp[i][j]代表长度为i最后两位的01，状态是j的种数目。
+0<=j<4
+然后由当前的j后面加上一个0或者1，可以推出i+1的对应种数
+状态之间的转移图如下：
+当长度为2的时候有初始状态
+00，01，10，11
+可以构造一个矩阵满足上图的递推式。
+矩阵A如下：
+矩阵B=
+A*B就推出了dp[i+1][j]的状态。
+
+#include<stdio.h>
+#include<algorithm>
+#include<stdlib.h>
+using namespace std;
+const int MAX=4;
+const int MOD=2005;
+void multi(int a[MAX][MAX],int b[MAX][MAX],int n,int m)
+{
+    int c[MAX][MAX]={0};
+    int i,j,k;
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            for(k=0;k<n;k++)
+            {
+                c[i][j]+=a[i][k]*b[k][j];
+            }
+            c[i][j]%=m;
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            a[i][j]=c[i][j];
+        }
+    }
+}
+int main()
+{
+    int n;
+    while(scanf("%d",&n)!=EOF)
+    {
+        if(n<3)
+        {
+            printf("%d\n",1<<n);
+            continue;
+        }
+        n-=2;
+        int ret[MAX][MAX]={
+            {1,0,0,0},
+            {0,1,0,0},
+            {0,0,1,0},
+            {0,0,0,1}
+        };
+        int tmp[MAX][MAX]={
+            {1,0,1,0},
+            {1,0,0,0},
+            {0,1,0,1},
+            {0,1,0,0}
+        };
+        while(n)
+        {
+            if(n&1)multi(ret,tmp,MAX,MOD);
+            multi(tmp,tmp,MAX,MOD);
+            n>>=1;
+        }
+        int ans=0;
+        int i,j;
+        for(i=0;i<MAX;i++)
+        {
+            for(j=0;j<MAX;j++)
+            {
+                ans+=ret[i][j];
+            }
+        }
+        printf("%d\n",ans%MOD);
+    }
+    return 0;
+}
+/*
+638 5 851
+*/
+

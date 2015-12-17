@@ -1,0 +1,3329 @@
+poj	eng	N	Y	O	B-OJ
+
+1417	m	N	N	O	I-OJ
+
+状态	n	Y	N	O	O
+并	c	N	N	O	B-KNOWLEDGE
+查集	v	Y	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+背包	n	Y	N	O	B-KNOWLEDGE
+dp	eng	Y	N	O	B-KNOWLEDGE
+_	x	N	N	O	O
+C	eng	N	N	O	O
+_	x	N	N	O	O
+down	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+这	r	N	N	O	O
+题	n	N	N	O	O
+纠结	v	N	N	O	O
+了	ul	N	N	O	O
+几天	m	N	N	O	O
+，	x	N	N	O	O
+
+不	d	N	N	O	O
+解释	v	N	N	O	O
+的	uj	N	N	O	O
+30	m	N	N	O	O
++	x	N	N	O	O
+
+才	d	N	N	O	O
+A	eng	N	N	O	O
+
+掉	zg	N	N	O	O
+，	x	N	N	O	O
+
+之前	f	N	N	O	O
+一直	d	N	N	O	O
+runtime	eng	N	N	O	O
+
+搞	v	N	N	O	O
+得	ud	N	N	O	O
+我	r	N	N	O	O
+一直	d	N	N	O	O
+都	d	N	N	O	O
+很	d	N	N	O	O
+无	v	N	N	O	O
+语	n	N	N	O	O
+，	x	N	N	O	O
+疯狂	a	N	N	O	O
+提交	v	N	N	O	O
+找	v	N	N	O	O
+是	v	N	N	O	O
+哪里	r	N	N	O	O
+出	v	N	N	O	O
+了	ul	N	N	O	O
+问题	n	N	N	O	O
+，	x	N	N	O	O
+
+后来	t	N	N	O	O
+静下来	l	N	N	O	O
+后	f	N	N	O	O
+，	x	N	N	O	O
+
+把	p	N	N	O	O
+程序	n	N	N	O	O
+有读	v	N	N	O	O
+了	ul	N	N	O	O
+几遍	m	N	N	O	O
+终于	d	N	N	O	O
+找到	v	N	N	O	O
+了	ul	N	N	O	O
+错误	n	N	N	O	O
+所在	b	N	N	O	O
+，	x	N	N	O	O
+
+不是	c	N	N	O	O
+栈	n	N	N	O	B-KNOWLEDGE
+溢出	v	N	N	O	O
+，	x	N	N	O	O
+
+也	d	N	N	O	O
+不是	c	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+其实	d	N	N	O	O
+就是	d	N	N	O	O
+少	a	N	N	O	O
+了	ul	N	N	O	O
+个	q	N	N	O	O
+符号	n	N	N	O	O
+
+搞	v	N	N	O	O
+得	ud	N	N	O	O
+数组	n	Y	N	O	O
+溢出	v	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+好	a	N	N	O	O
+吧	y	N	N	O	O
+，	x	N	N	O	O
+辛辛苦苦	z	N	N	O	O
+敲	v	N	N	O	O
+了	ul	N	N	O	O
+两百多	m	N	N	O	O
+行	zg	N	N	O	O
+，	x	N	N	O	O
+
+没有	v	N	N	O	O
+看	v	N	N	O	O
+别人	r	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+其实	d	N	N	O	O
+做	v	N	N	O	O
+了	ul	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+1112	m	N	N	O	I-OJ
+
+team	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+up	eng	N	N	O	O
+
+和	c	N	N	O	O
+
+poj	eng	N	Y	O	B-OJ
+
+1733	m	N	N	O	I-OJ
+
+这	r	N	N	O	O
+题	n	N	N	O	O
+就	d	N	N	O	O
+没	v	N	N	O	O
+问题	n	N	N	O	O
+，	x	N	N	O	O
+要	v	N	N	O	O
+的	uj	N	N	O	O
+是	v	N	N	O	O
+无限	v	Y	N	O	O
+的	uj	N	N	O	O
+耐心	a	N	N	O	O
+，	x	N	N	O	O
+和	c	N	N	O	O
+纠结	v	N	N	O	O
+再	d	N	N	O	O
+纠结	v	N	N	O	O
+...	m	N	N	O	O
+
+True	eng	N	N	O	O
+
+Liars	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+1428	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+402	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+After	eng	N	N	O	O
+
+having	eng	N	N	O	O
+
+drifted	eng	N	N	O	O
+
+about	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+small	eng	N	N	O	O
+
+boat	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+couple	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+,	x	N	N	O	O
+
+Akira	eng	N	N	O	O
+
+Crusoe	eng	N	N	O	O
+
+Maeda	eng	N	N	O	O
+
+was	eng	N	N	O	O
+
+finally	eng	N	N	O	O
+
+cast	eng	N	N	O	O
+
+ashore	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+foggy	eng	N	N	O	O
+
+island	eng	N	N	O	O
+.	m	N	N	O	O
+
+Though	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+was	eng	N	N	O	O
+
+exhausted	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+despaired	eng	N	N	O	O
+,	x	N	N	O	O
+
+he	eng	Y	N	O	O
+
+was	eng	N	N	O	O
+
+still	eng	N	N	O	O
+
+fortunate	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+remember	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+legend	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+foggy	eng	N	N	O	O
+
+island	eng	N	N	O	O
+,	x	N	N	O	O
+
+which	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+had	eng	N	N	O	O
+
+heard	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+patriarchs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+his	eng	N	N	O	O
+
+childhood	eng	N	N	O	O
+.	m	N	N	O	O
+
+This	eng	N	N	O	O
+
+must	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+island	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+.	m	N	N	O	O
+
+In	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+,	x	N	N	O	O
+
+two	eng	N	N	O	O
+
+tribes	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+inhabited	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+island	eng	N	N	O	O
+,	x	N	N	O	O
+
+one	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+devilish	eng	N	N	O	O
+,	x	N	N	O	O
+
+once	eng	N	N	O	O
+
+members	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+
+bless	eng	N	N	O	O
+
+you	eng	N	N	O	O
+,	x	N	N	O	O
+
+your	eng	N	N	O	O
+
+future	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+bright	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+promising	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+your	eng	N	N	O	O
+
+soul	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+eventually	eng	N	N	O	O
+
+go	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+Heaven	eng	N	N	O	O
+,	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+contrast	eng	N	N	O	O
+,	x	N	N	O	O
+
+once	eng	N	N	O	O
+
+members	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+devilish	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+
+curse	eng	N	N	O	O
+
+you	eng	N	N	O	O
+,	x	N	N	O	O
+
+your	eng	N	N	O	O
+
+future	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+bleak	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+hopeless	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+your	eng	N	N	O	O
+
+soul	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+eventually	eng	N	N	O	O
+
+fall	eng	N	N	O	O
+
+down	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+Hell	eng	N	N	O	O
+.	m	N	N	O	O
+
+In	eng	N	N	O	O
+
+order	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+prevent	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+worst	eng	N	N	O	O
+-	x	N	N	O	O
+case	eng	N	N	O	O
+
+scenario	eng	N	N	O	O
+,	x	N	N	O	O
+
+Akira	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+distinguish	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+devilish	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+.	m	N	N	O	O
+
+But	eng	N	N	O	O
+
+how	eng	N	N	O	O
+?	x	N	N	O	O
+
+They	eng	N	N	O	O
+
+looked	eng	N	N	O	O
+
+exactly	eng	N	N	O	O
+
+alike	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+could	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+distinguish	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+solely	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+appearances	eng	N	N	O	O
+.	m	N	N	O	O
+
+He	eng	N	N	O	O
+
+still	eng	N	N	O	O
+
+had	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+last	eng	N	N	O	O
+
+hope	eng	N	N	O	O
+,	x	N	N	O	O
+
+however	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+members	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+truth	eng	N	N	O	O
+-	x	N	N	O	O
+tellers	eng	N	N	O	O
+,	x	N	N	O	O
+
+that	eng	N	N	O	O
+
+is	eng	N	N	O	O
+,	x	N	N	O	O
+
+they	eng	N	N	O	O
+
+always	eng	N	N	O	O
+
+tell	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+truth	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+those	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+devilish	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+liars	eng	N	N	O	O
+,	x	N	N	O	O
+
+that	eng	N	N	O	O
+
+is	eng	N	N	O	O
+,	x	N	N	O	O
+
+they	eng	N	N	O	O
+
+always	eng	N	N	O	O
+
+tell	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+lie	eng	N	N	O	O
+.	m	N	N	O	O
+
+He	eng	N	N	O	O
+
+asked	eng	N	N	O	O
+
+some	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+whether	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+not	eng	N	N	O	O
+
+some	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+.	m	N	N	O	O
+
+They	eng	N	N	O	O
+
+knew	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+another	eng	N	N	O	O
+
+very	eng	N	N	O	O
+
+much	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+always	eng	N	N	O	O
+
+responded	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+him	eng	N	N	O	O
+
+"	x	N	N	O	O
+faithfully	eng	N	N	O	O
+"	x	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+individual	eng	N	N	O	O
+
+natures	eng	N	N	O	O
+
+(	x	N	N	O	O
+i	eng	N	N	O	O
+.	m	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+,	x	N	N	O	O
+
+they	eng	N	N	O	O
+
+always	eng	N	N	O	O
+
+tell	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+truth	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+always	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+lie	eng	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+He	eng	N	N	O	O
+
+did	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+dare	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+ask	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+other	eng	N	N	O	O
+
+forms	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+questions	eng	N	N	O	O
+,	x	N	N	O	O
+
+since	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+
+says	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+devilish	eng	N	N	O	O
+
+member	eng	N	N	O	O
+
+would	eng	N	N	O	O
+
+curse	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+person	eng	N	N	O	O
+
+forever	eng	N	N	O	O
+
+when	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+did	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+like	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+question	eng	N	N	O	O
+.	m	N	N	O	O
+
+He	eng	N	N	O	O
+
+had	eng	N	N	O	O
+
+another	eng	N	N	O	O
+
+piece	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+useful	eng	N	N	O	O
+
+informationf	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+
+tells	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+populations	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+both	eng	N	N	O	O
+
+tribes	eng	N	N	O	O
+.	m	N	N	O	O
+
+These	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+trustworthy	eng	N	N	O	O
+
+since	eng	N	N	O	O
+
+everyone	eng	N	N	O	O
+
+living	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+island	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+immortal	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+none	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+ever	eng	N	N	O	O
+
+been	eng	N	N	O	O
+
+born	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+least	eng	N	N	O	O
+
+these	eng	N	N	O	O
+
+millennia	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+good	eng	N	N	O	O
+
+computer	eng	N	N	O	O
+
+programmer	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+so	eng	N	N	O	O
+
+requested	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+help	eng	N	N	O	O
+
+Akira	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+writing	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+program	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+classifies	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+inhabitants	eng	N	N	O	O
+
+according	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+their	eng	N	N	O	O
+
+answers	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+inquiries	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+multiple	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+sets	eng	N	N	O	O
+,	x	N	N	O	O
+
+each	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+following	eng	N	N	O	O
+
+format	eng	N	N	O	O
+
+:	x	N	N	O	O
+
+n	x	N	N	O	O
+
+p1	eng	N	N	O	O
+
+p2	eng	N	N	O	O
+
+xl	eng	N	N	O	O
+
+yl	eng	N	N	O	O
+
+a1	eng	N	N	O	O
+
+x2	eng	N	N	O	O
+
+y2	eng	N	N	O	O
+
+a2	eng	N	N	O	O
+
+...	m	N	N	O	O
+
+xi	eng	N	N	O	O
+
+yi	eng	N	N	O	O
+
+ai	eng	N	N	O	O
+
+...	m	N	N	O	O
+
+xn	eng	N	N	O	O
+
+yn	eng	N	N	O	O
+
+an	eng	Y	N	O	O
+
+The	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+three	eng	N	N	O	O
+
+non	eng	N	N	O	O
+-	x	N	N	O	O
+negative	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+p2	eng	N	N	O	O
+.	m	N	N	O	O
+
+n	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+questions	eng	N	N	O	O
+
+Akira	eng	N	N	O	O
+
+asked	eng	N	N	O	O
+.	m	N	N	O	O
+
+pl	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+p2	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+populations	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+devilish	eng	N	N	O	O
+
+tribes	eng	N	N	O	O
+,	x	N	N	O	O
+
+respectively	eng	N	N	O	O
+,	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+legend	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+following	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+lines	eng	N	N	O	O
+
+has	eng	Y	N	O	O
+
+two	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+xi	eng	N	N	O	O
+,	x	N	N	O	O
+
+yi	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+word	eng	N	N	O	O
+
+ai	eng	N	N	O	O
+.	m	N	N	O	O
+
+xi	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+yi	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+identification	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+inhabitants	eng	N	N	O	O
+,	x	N	N	O	O
+
+each	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+between	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+p1	eng	N	N	O	O
+
++	x	N	N	O	O
+
+p2	eng	N	N	O	O
+,	x	N	N	O	O
+
+inclusive	eng	N	N	O	O
+.	m	N	N	O	O
+
+ai	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+either	eng	N	N	O	O
+
+yes	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+inhabitant	eng	N	N	O	O
+
+xi	eng	N	N	O	O
+
+said	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+inhabitant	eng	N	N	O	O
+
+yi	eng	N	N	O	O
+
+was	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+member	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+,	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+no	eng	N	N	O	O
+,	x	N	N	O	O
+
+otherwise	eng	N	N	O	O
+.	m	N	N	O	O
+
+Note	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+xi	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+yi	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+since	eng	N	N	O	O
+
+"	x	N	N	O	O
+are	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+member	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+tribe	eng	N	N	O	O
+?	x	N	N	O	O
+"	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+valid	eng	N	N	O	O
+
+question	eng	N	N	O	O
+.	m	N	N	O	O
+
+Note	eng	N	N	O	O
+
+also	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+lines	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+x	x	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+y	x	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+since	eng	N	N	O	O
+
+Akira	eng	N	N	O	O
+
+was	eng	N	N	O	O
+
+very	eng	N	N	O	O
+
+upset	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+might	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+asked	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+question	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+more	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+once	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+assume	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+less	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+1000	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+p1	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+p2	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+less	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+300.	m	N	N	O	O
+
+A	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+zeros	eng	N	N	O	O
+,	x	N	N	O	O
+
+i	eng	N	N	O	O
+.	m	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+represents	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+assume	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+set	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+consistent	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+contradictory	eng	N	N	O	O
+
+answers	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+included	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+set	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+includes	eng	N	N	O	O
+
+sufficient	eng	N	N	O	O
+
+information	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+classify	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+inhabitants	eng	N	N	O	O
+,	x	N	N	O	O
+
+print	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+identification	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+ones	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+ascending	eng	N	N	O	O
+
+order	eng	N	N	O	O
+,	x	N	N	O	O
+
+one	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+In	eng	N	N	O	O
+
+addition	eng	N	N	O	O
+,	x	N	N	O	O
+
+following	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+numbers	eng	N	N	O	O
+,	x	N	N	O	O
+
+print	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Otherwise	eng	N	N	O	O
+,	x	N	N	O	O
+
+i	eng	N	N	O	O
+.	m	N	N	O	O
+e	eng	N	N	O	O
+.	m	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+given	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+set	eng	N	N	O	O
+
+does	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+include	eng	N	N	O	O
+
+sufficient	eng	N	N	O	O
+
+information	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+identify	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+divine	eng	N	N	O	O
+
+members	eng	N	N	O	O
+,	x	N	N	O	O
+
+print	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+1	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+no	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+no	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+1	x	N	N	O	O
+
+1	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+2	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+3	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+2	x	N	N	O	O
+
+1	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+3	x	N	N	O	O
+
+no	eng	N	N	O	O
+
+5	x	N	N	O	O
+
+4	x	N	N	O	O
+
+3	x	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+3	x	N	N	O	O
+
+no	eng	N	N	O	O
+
+4	x	N	N	O	O
+
+5	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+5	x	N	N	O	O
+
+6	x	N	N	O	O
+
+yes	eng	N	N	O	O
+
+6	x	N	N	O	O
+
+7	x	N	N	O	O
+
+no	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+no	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+2	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+4	x	N	N	O	O
+
+5	x	N	N	O	O
+
+6	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Japan	eng	N	N	O	O
+
+2002	m	N	N	O	O
+
+Kanazawa	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+606	m	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+to	eng	N	N	O	O
+,	x	N	N	O	O
+next	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+1010	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+mark	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+prt	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+1010	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+1010	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+path	eng	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+N	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+,	x	N	N	O	O
+tcnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+tcnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
++	x	N	N	O	O
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+mark	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+mark	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+pre	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+pre	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+path	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+path	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+cnt1	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+cnt1	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+prt	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+prt	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+s	x	N	N	O	O
+]	x	N	N	O	O
+^	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+merge	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+b	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+^	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+y	x	N	N	O	O
+]	x	N	N	O	O
+^	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+add	eng	N	N	O	O
+_	x	N	N	O	O
+edge	eng	N	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+u	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+flag	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+cnt	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+cnt	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+=	x	N	N	O	O
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+flag	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+u	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+flag	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+cnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+fuc	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
++	x	N	N	O	O
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+c	x	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+yes	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+len	eng	N	N	O	O
+,	x	N	N	O	O
+ttmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p2	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+&&	x	N	N	O	O
+(	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+p1	eng	N	N	O	O
++	x	N	N	O	O
+p2	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
++	x	N	N	O	O
+p2	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+tmp	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+tmp	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+
+v	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+v	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+merge	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+fuc	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tcnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+mark	eng	N	N	O	O
+[	x	N	N	O	O
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+mark	eng	N	N	O	O
+[	x	N	N	O	O
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+tcnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+add	eng	N	N	O	O
+_	x	N	N	O	O
+edge	eng	N	N	O	O
+(	x	N	N	O	O
+tcnt	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+tcnt	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+add	eng	N	N	O	O
+_	x	N	N	O	O
+edge	eng	N	N	O	O
+(	x	N	N	O	O
+mark	eng	N	N	O	O
+[	x	N	N	O	O
+bin	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+tcnt	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+=	x	N	N	O	O
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+=	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+=	x	N	N	O	O
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+=	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+path	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+no	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+path	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+tcnt	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ttmp	eng	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ttmp	eng	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+find	eng	N	N	O	O
+
+now	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+catch	eng	N	N	O	O
+
+them	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+ff	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ttmp	eng	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+tcnt	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+no	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+tcnt	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	m	N	N	O	O
+&&	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ff	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ff	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ff	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+no	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+=	x	N	N	O	O
+p1	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+mm	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+tcnt	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+path	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+ttmp	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+mm	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+mm	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+ttmp	eng	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+cnt1	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+=	x	N	N	O	O
+pre	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+mm	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+p	x	N	N	O	O
+=	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+
+prt	eng	N	N	O	O
+[	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+to	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+len	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+prt	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+end	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

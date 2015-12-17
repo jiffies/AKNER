@@ -1,0 +1,1608 @@
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1657	m	N	N	I-OJ
+ 	x	N	N	O
+Distance	eng	N	N	O
+ 	x	N	N	O
+on	eng	N	N	O
+ 	x	N	N	O
+Chessboard	eng	N	N	O
+ 	x	N	N	O
+解题	n	N	N	O
+报告	n	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+端木	n	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+博客园	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+POJ	eng	N	Y	B-OJ
+ 	x	N	N	I-OJ
+1657	m	N	N	I-OJ
+ 	x	N	N	O
+Distance	eng	N	N	O
+ 	x	N	N	O
+on	eng	N	N	O
+ 	x	N	N	O
+Chessboard	eng	N	N	O
+ 	x	N	N	O
+解题	n	N	N	O
+报告	n	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+编号	n	N	N	O
+：	x	N	N	O
+1657	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+考查	vn	N	N	O
+点	m	N	N	O
+：	x	N	N	O
+简单	a	N	N	O
+计算题	n	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+思路	n	N	N	O
+：	x	N	N	O
+水题	n	N	N	O
+，	x	N	N	O
+有	v	N	N	O
+一点	m	N	N	O
+弯弯的	z	N	N	O
+就是	d	N	N	O
+象是	v	N	N	O
+如何	r	N	N	O
+走	v	N	N	O
+的	uj	N	N	O
+，	x	N	N	O
+仔细观察	n	N	N	O
+可知	v	N	N	O
+：	x	N	N	O
+象	n	N	N	O
+只	d	N	N	O
+可以	c	N	N	O
+在	p	N	N	O
+横竖	d	N	N	O
+坐标	v	Y	N	O
+之	u	N	N	O
+差	a	N	N	O
+为	p	N	N	O
+偶数	n	N	N	O
+的	uj	N	N	O
+两点	m	N	N	O
+移动	vn	N	N	O
+.	m	N	N	O
+看	v	N	N	O
+出来	v	N	N	O
+这点	mq	N	N	O
+就	d	N	N	O
+相当	d	N	N	O
+easy	eng	N	N	O
+了	ul	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+提交	v	N	N	O
+情况	n	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+刷	v	N	N	O
+水题	n	N	N	O
+，	x	N	N	O
+一次	m	N	N	O
+AC	eng	N	N	O
+.	m	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+Source	eng	N	N	O
+ 	x	N	N	O
+Code	eng	N	N	O
+：	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+POJ	eng	N	Y	O
+ 	x	N	N	O
+Grids	eng	N	N	O
+ 	x	N	N	O
+1657	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+string	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+iostream	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+using	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+cin	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+t	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+t	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+-	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+string	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+str1	eng	N	N	O
+,	x	N	N	O
+str2	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cin	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str1	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str2	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+abs	eng	N	N	O
+(	x	N	N	O
+str1	eng	N	N	O
+[	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+]	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str2	eng	N	N	O
+[	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+abs	eng	N	N	O
+(	x	N	N	O
+str1	eng	N	N	O
+[	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+]	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+str2	eng	N	N	O
+[	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
++	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+continue	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+|	x	N	N	O
+|	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+abs	eng	N	N	O
+(	x	N	N	O
+x	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+y	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+%	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+=	x	N	N	O
+=	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Inf	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+"	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+总结	n	N	N	O
+：	x	N	N	O
+这	r	N	N	O
+道题	n	N	N	O
+我	r	N	N	O
+寒假	n	N	N	O
+刚	d	N	N	O
+开始	v	N	N	O
+的	uj	N	N	O
+时候	n	N	N	O
+做	v	N	N	O
+过	ug	N	N	O
+，	x	N	N	O
+现在	t	N	N	O
+再	d	N	N	O
+做	v	N	N	O
+一遍	m	N	N	O
+，	x	N	N	O
+感觉	n	N	N	O
+自己	r	N	N	O
+进步	d	N	N	O
+了	ul	N	N	O
+很多	m	N	N	O
+，	x	N	N	O
+思路	n	N	N	O
+也	d	N	N	O
+开阔	v	N	N	O
+了	ul	N	N	O
+，	x	N	N	O
+想当年	l	N	N	O
+这	r	N	N	O
+道题	n	N	N	O
+我	r	N	N	O
+用	p	N	N	O
+了	ul	N	N	O
+四个	m	N	N	O
+小时	n	N	N	O
+，	x	N	N	O
+汗	n	N	N	O
+.	m	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+By	eng	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Ns517	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Time	eng	N	N	O
+ 	x	N	N	O
+09.02.11	m	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O

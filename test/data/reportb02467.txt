@@ -1,0 +1,105 @@
+poj 2836 Rectangular Covering_鈺仯爺_百度空间
+
+状态压缩DP，不错又学到了不少。
+
+因为要面积最小，一定是以每次覆盖两个点为主，并让这两个点在矩形的对角。
+
+此题不可以出现面积为0的矩形，所以当出现x[i]==x[j]或者y[i]==y[j]时，让它为0的这边的边长变成1。
+
+预处理，枚举任意两点，求它的面积，并看这两点之间还有多少点被覆盖，将被覆盖的所有点存入状态。
+
+然后就可以DP了，有人说这道题可以记忆化搜索，但是记忆化搜索好像必须从状态(（1<<n）-1)向0状态推吧。我不知道该如何推，状态的转移该怎么样弄。
+
+#include<iostream>
+
+#include<cmath>
+
+using namespace std;
+
+#define INF 99999999
+
+int n,m;
+
+int x[16],y[16];
+
+int dp[1<<15];
+
+int s[16*16];
+
+int state[16*16];
+
+void gets(int i,int j)
+
+{
+
+ int k=(1<<i)+(1<<j);
+
+ for(int t=0;t<n;t++)
+
+ if((x[i]-x[t])*(x[t]-x[j])>=0&&(y[i]-y[t])*(y[t]-y[j])>=0)
+
+ k|=(1<<t);
+
+ int are=0;
+
+ if(x[i]==x[j])are=abs(y[i]-y[j]);
+
+ else if(y[i]==y[j])are=abs(x[i]-x[j]);
+
+ else are=abs(x[i]-x[j])*abs(y[i]-y[j]);
+
+ state[m]=k;
+
+ s[m++]=are;
+
+ return;
+
+}
+
+int main()
+
+{
+
+ int i,j;
+
+ while(scanf("%d",&n)&&n)
+
+ {
+
+ for(i=0;i<n;i++)
+
+ scanf("%d%d",&x[i],&y[i]);
+
+ m=0;
+
+ for(i=1;i<n;i++)
+
+ for(j=0;j<i;j++)
+
+ gets(i,j);
+
+ for(i=1;i<(1<<n);i++)
+
+ dp[i]=INF;
+
+ dp[0]=0;
+
+ for(i=0;i<(1<<n);i++)
+
+ for(j=0;j<m;j++)
+
+ {
+
+ int temp=i|state[j];
+
+ if(temp==i)continue;
+
+ dp[temp]=min(dp[temp],dp[i]+s[j]);
+
+ }
+
+ printf("%d\n",dp[(1<<n)-1]);
+
+ }
+
+}

@@ -1,0 +1,808 @@
+poj	eng	N	Y	O	B-OJ
+
+3517	m	N	N	O	I-OJ
+
+-	x	N	N	O	O
+
+Missa	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+约瑟夫	nrt	Y	N	O	B-KNOWLEDGE
+环	v	N	N	O	I-KNOWLEDGE
+问题	n	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+www	eng	N	N	O	O
+.	m	N	N	O	O
+cnblogs	eng	N	N	O	O
+.	m	N	N	O	O
+com	eng	N	N	O	O
+/	x	N	N	O	O
+alex4814	eng	N	N	O	O
+/	x	N	N	O	O
+archive	eng	N	N	O	O
+/	x	N	N	O	O
+2011	m	N	N	O	O
+/	x	N	N	O	O
+09	m	N	N	O	O
+/	x	N	N	O	O
+11	m	N	N	O	O
+/	x	N	N	O	O
+2173739.	m	N	N	O	O
+html	eng	N	N	O	O
+
+约瑟夫	nrt	Y	N	O	O
+问题	n	N	N	O	O
+：	x	N	N	O	O
+
+用	p	N	N	O	O
+数学方法	n	N	N	O	O
+解	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+需要	v	N	N	O	O
+注意	v	N	N	O	O
+应当	v	N	N	O	O
+从	p	N	N	O	O
+0	m	N	N	O	O
+开始	v	N	N	O	O
+编号	n	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+取余	v	N	N	O	O
+会	v	N	N	O	O
+等到	v	N	N	O	O
+0	m	N	N	O	O
+解	v	N	N	O	O
+。	x	N	N	O	O
+
+实质	n	N	N	O	O
+是	v	N	N	O	O
+一个	m	N	N	O	O
+递推	v	Y	N	O	O
+，	x	N	N	O	O
+n	x	N	N	O	O
+个人	n	N	N	O	O
+中	f	N	N	O	O
+最终	d	N	N	O	O
+存活	vn	N	N	O	O
+下来	t	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+与	p	N	N	O	O
+n	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+个人	n	N	N	O	O
+中	f	N	N	O	O
+存活	vn	N	N	O	O
+的	uj	N	N	O	O
+人	n	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+递推	v	Y	N	O	O
+关系式	n	N	N	O	O
+。	x	N	N	O	O
+
+分析	vn	N	N	O	O
+：	x	N	N	O	O
+
+假设	vn	N	N	O	O
+除去	t	N	N	O	O
+第	m	N	N	O	O
+k	eng	N	N	O	O
+个人	n	N	N	O	O
+。	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+original	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+get	eng	N	N	O	O
+
+rid	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+kth	eng	N	N	O	O
+
+person	eng	N	N	O	O
+
+(	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+k	x	N	N	O	O
+,	x	N	N	O	O
+
+k	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+rearrange	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+sequence	eng	N	N	O	O
+
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+k	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+k	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+
+...	m	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+　	x	N	N	O	O
+　	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+the	eng	N	N	O	O
+
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+person	eng	N	N	O	O
+
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+
+我们	r	N	N	O	O
+假设	vn	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+的	uj	N	N	O	O
+值为	v	N	N	O	O
+n	eng	N	N	O	O
+个人	n	N	N	O	O
+中	f	N	N	O	O
+最后	f	N	N	O	O
+存活	vn	N	N	O	O
+的	uj	N	N	O	O
+人	n	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+
+注意	v	N	N	O	O
+到	v	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+其实	d	N	N	O	O
+是	v	N	N	O	O
+同一个	b	N	N	O	O
+序列	n	Y	N	O	O
+。	x	N	N	O	O
+
+注意	v	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+和	c	N	N	O	O
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+，	x	N	N	O	O
+是	v	N	N	O	O
+同一个	b	N	N	O	O
+问题	n	N	N	O	O
+，	x	N	N	O	O
+不同	a	N	N	O	O
+的	uj	N	N	O	O
+仅仅	d	N	N	O	O
+是	v	N	N	O	O
+人数	n	N	N	O	O
+。	x	N	N	O	O
+
+假设	vn	N	N	O	O
+我们	r	N	N	O	O
+已知	v	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+，	x	N	N	O	O
+即	v	N	N	O	O
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+中	f	N	N	O	O
+最后	f	N	N	O	O
+剩下	v	N	N	O	O
+的	uj	N	N	O	O
+人	n	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+，	x	N	N	O	O
+则	d	N	N	O	O
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+所	u	N	N	O	O
+对应	vn	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+，	x	N	N	O	O
+就是	d	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+，	x	N	N	O	O
+即	v	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+n	eng	N	N	O	O
+个人	n	N	N	O	O
+中	f	N	N	O	O
+最后	f	N	N	O	O
+存活	vn	N	N	O	O
+的	uj	N	N	O	O
+序号	n	N	N	O	O
+。	x	N	N	O	O
+
+而	c	N	N	O	O
+从	p	N	N	O	O
+(	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+式	k	N	N	O	O
+中	f	N	N	O	O
+我们	r	N	N	O	O
+不难	d	N	N	O	O
+发现	v	N	N	O	O
+有	v	N	N	O	O
+这样	r	N	N	O	O
+一个	m	N	N	O	O
+递推	v	Y	N	O	O
+式	k	N	N	O	O
+：	x	N	N	O	O
+
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
++	x	N	N	O	O
+
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+%	x	N	N	O	O
+
+n	x	N	N	O	O
+
+显然	ad	N	N	O	O
+，	x	N	N	O	O
+f	x	N	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+。	x	N	N	O	O
+
+于是	c	N	N	O	O
+递推	v	Y	N	O	O
+得	ud	N	N	O	O
+f	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+File	eng	N	N	O	O
+
+Name	eng	N	N	O	O
+:	x	N	N	O	O
+
+3517.	m	N	N	O	O
+cpp	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+Author	eng	N	N	O	O
+:	x	N	N	O	O
+
+Missa	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+Created	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+
+2013	m	N	N	O	O
+/	x	N	N	O	O
+2	x	N	N	O	O
+/	x	N	N	O	O
+15	m	N	N	O	O
+
+星期五	t	N	N	O	O
+
+20	m	N	N	O	O
+:	x	N	N	O	O
+22	m	N	N	O	O
+:	x	N	N	O	O
+11	m	N	N	O	O
+
+4	x	N	N	O	O
+
+5	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+6	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+7	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+8	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+9	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+10	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+queue	eng	N	N	O	O
+>	x	N	N	O	O
+
+11	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stack	eng	N	N	O	O
+>	x	N	N	O	O
+
+12	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+13	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+vector	eng	N	N	O	O
+>	x	N	N	O	O
+
+14	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+15	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+map	eng	N	N	O	O
+>	x	N	N	O	O
+
+16	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+set	eng	N	N	O	O
+>	x	N	N	O	O
+
+17	m	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+18	m	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+CL	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+)	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+v	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+19	m	N	N	O	O
+
+20	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+21	m	N	N	O	O
+
+22	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+23	m	N	N	O	O
+
+{	x	N	N	O	O
+
+24	m	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+~	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+25	m	N	N	O	O
+
+{	x	N	N	O	O
+
+26	m	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+27	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+28	m	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+29	m	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+k	eng	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+30	m	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+31	m	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+32	m	N	N	O	O
+
+}	x	N	N	O	O
+
+33	m	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+34	m	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,989 @@
+【	x	N	N	O	O
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
+】	x	N	N	O	O
+
+poj3321	eng	N	Y	O	B-OJ
+
+Apple	eng	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+Ted	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+游乐园	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+Apple	eng	N	N	O	O
+
+Tree	eng	N	N	O	O
+
+题目	n	Y	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+3321	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+一棵	m	N	N	O	O
+有	v	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+结点	n	Y	N	O	O
+的	uj	N	N	O	O
+树	n	N	N	O	O
+，	x	N	N	O	O
+初始	v	N	N	O	O
+时	n	N	N	O	O
+每个	r	N	N	O	O
+结点	n	Y	N	O	O
+都	d	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+苹果	n	N	N	O	O
+，	x	N	N	O	O
+之后	f	N	N	O	O
+有	v	N	N	O	O
+m	eng	N	N	O	O
+个	m	N	N	O	O
+操作	v	Y	N	O	O
+，	x	N	N	O	O
+C	x	N	N	O	O
+操作	v	Y	N	O	O
+：	x	N	N	O	O
+如果	c	N	N	O	O
+x	x	N	N	O	O
+结点	n	Y	N	O	O
+有	v	N	N	O	O
+苹果	n	N	N	O	O
+，	x	N	N	O	O
+执行	v	N	N	O	O
+操作	v	Y	N	O	O
+后	t	N	N	O	O
+x	eng	N	N	O	O
+结点	n	Y	N	O	O
+无	v	N	N	O	O
+苹果	n	N	N	O	O
+;	x	N	N	O	O
+如果	c	N	N	O	O
+x	x	N	N	O	O
+结点	n	Y	N	O	O
+没有	v	N	N	O	O
+苹果	n	N	N	O	O
+，	x	N	N	O	O
+执行	v	N	N	O	O
+操作	v	Y	N	O	O
+后	t	N	N	O	O
+x	eng	N	N	O	O
+结点	n	Y	N	O	O
+出现	v	N	N	O	O
+苹果	n	N	N	O	O
+。	x	N	N	O	O
+
+Q	x	N	N	O	O
+操作	v	Y	N	O	O
+：	x	N	N	O	O
+问	n	N	N	O	O
+x	eng	N	N	O	O
+结点	n	Y	N	O	O
+及其	c	N	N	O	O
+子	ng	N	N	O	O
+树上	s	N	N	O	O
+一共	j	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+苹果	n	N	N	O	O
+。	x	N	N	O	O
+
+题解	v	N	N	O	O
+：	x	N	N	O	O
+单点	n	N	N	O	O
+更新	d	N	N	O	O
+，	x	N	N	O	O
+区间	n	Y	N	O	O
+查询	v	N	N	O	O
+，	x	N	N	O	O
+一	m	N	N	O	O
+看	v	N	N	O	O
+就是	d	N	N	O	O
+线段	n	Y	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+类型	n	Y	N	O	O
+的	uj	N	N	O	O
+题目	n	Y	N	O	O
+。	x	N	N	O	O
+
+但是	c	N	N	O	O
+这个	r	N	N	O	O
+是	v	N	N	O	O
+树形	n	Y	N	O	O
+结构	n	Y	N	O	O
+，	x	N	N	O	O
+需要	v	N	N	O	O
+转换成	i	N	N	O	O
+线性	n	Y	N	O	O
+的	uj	N	N	O	O
+才能	v	N	N	O	O
+计算	v	Y	N	O	O
+。	x	N	N	O	O
+
+先序	n	N	N	O	O
+遍历	v	Y	N	O	O
+整个	b	N	N	O	O
+树	v	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+每个	r	N	N	O	O
+结点	n	Y	N	O	O
+的	uj	N	N	O	O
+子	n	N	N	O	O
+结点	n	Y	N	O	O
+都	d	N	N	O	O
+是	v	N	N	O	O
+连续	a	Y	N	O	O
+存放	v	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+
+100005	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+表示	v	Y	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+条边	n	N	N	O	O
+的	uj	N	N	O	O
+终点	d	N	N	O	O
+
+int	eng	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+与	p	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+条边	n	N	N	O	O
+同	c	N	N	O	O
+起点	n	N	N	O	O
+的	uj	N	N	O	O
+下	v	N	N	O	O
+一条	m	N	N	O	O
+边	d	N	N	O	O
+的	uj	N	N	O	O
+位置	v	N	N	O	O
+
+int	eng	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+以	p	N	N	O	O
+i	eng	N	N	O	O
+为	p	N	N	O	O
+起点	n	N	N	O	O
+的	uj	N	N	O	O
+第一条	m	N	N	O	O
+边	d	N	N	O	O
+的	uj	N	N	O	O
+储存	n	N	N	O	O
+位置	v	N	N	O	O
+
+int	eng	N	N	O	O
+
+low	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+high	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cnt	eng	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+&	x	N	N	O	O
+(	x	N	N	O	O
+-	x	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+value	eng	N	N	O	O
+)	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+更新	d	N	N	O	O
+pos	eng	N	N	O	O
+的	uj	N	N	O	O
+值	n	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+pos	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+x	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+value	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+getsum	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+pos	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+求	v	N	N	O	O
+1	m	N	N	O	O
+到	v	N	N	O	O
+pos	eng	N	N	O	O
+位置	v	N	N	O	O
+的	uj	N	N	O	O
+和	c	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+>	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+a	x	N	N	O	O
+起点	n	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+终点	d	N	N	O	O
+
+{	x	N	N	O	O
+
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+next	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+pre	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+low	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+++	x	N	N	O	O
+cnt	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+head	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+next	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+pre	eng	N	N	O	O
+)	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+edge	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+high	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+cnt	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+op	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+;	x	N	N	O	O
+
+~	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cnt	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+next	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+next	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+insert	eng	N	N	O	O
+(	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+遍历	v	Y	N	O	O
+树	v	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+初始化	l	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+,	x	N	N	O	O
+false	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+++	x	N	N	O	O
+i	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+op	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+op	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+C	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+更新	d	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+visit	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+查询	v	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+getsum	eng	N	N	O	O
+(	x	N	N	O	O
+high	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+-	x	N	N	O	O
+getsum	eng	N	N	O	O
+(	x	N	N	O	O
+low	eng	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+来源	n	N	N	O	O
+：	x	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+blog	eng	N	N	O	O
+.	m	N	N	O	O
+csdn	eng	N	N	O	O
+.	m	N	N	O	O
+net	eng	N	N	O	O
+/	x	N	N	O	O
+ACM	eng	N	N	O	O
+_	x	N	N	O	O
+Ted	eng	N	N	O	O
+

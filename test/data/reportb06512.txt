@@ -1,0 +1,119 @@
+poj 1422Air Raid--最小路径覆盖  - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+[cpp]
+ /*
+ 题意：有个城镇，所有路都是单行道，并且没有环，所有路都连接在十字路口上
+ 现在用最少的伞兵走完这些式子路口，每个只能走一遍
+ 很明显的最小路径覆盖
+ 最小路径覆盖=点数-最大匹配
+ 需要拆点 所有式子路口  在X中一个 在Y中一个
+ 路把两个集合中十字路口连接起来
+ 求最大匹配  还是匈牙利
+ */ 
+ #include<stdio.h>  
+ #include<vector>  
+ using namespace std; 
+ vector<int>v[150]; 
+ int t,n,m; 
+ int match[150],vis[150];//都只是对Y集中的点  
+ int dfs(int i) 
+ { 
+     for(int j=0;j<v[i].size();++j) 
+     { 
+         if(!vis[v[i][j]]) 
+         { 
+             vis[v[i][j]]=1; 
+             if(match[v[i][j]]==-1||dfs(match[v[i][j]])) 
+             { 
+                 match[v[i][j]]=i; 
+                 return 1; 
+             } 
+         } 
+     } 
+     return 0; 
+ } 
+ int main() 
+ { 
+     int i,a,b; 
+     scanf("%d",&t); 
+     while(t--) 
+     { 
+         scanf("%d%d",&n,&m); 
+         for(i=0;i<=n;i++) 
+             v[i].clear(); 
+         for(i=1;i<=m;++i) 
+         { 
+             scanf("%d%d",&a,&b); 
+             v[a].push_back(b); 
+         } 
+         a=0;////  
+         memset(match,-1,sizeof(match)); 
+         for(i=1;i<=n;i++) 
+         { 
+             memset(vis,0,sizeof(vis)); 
+             if(dfs(i)) 
+                 a++; 
+         }////  
+         printf("%d\n",n-a);//最小路径覆盖=点数-最大匹配  
+     } 
+     return 0; 
+ } 
+/*
+ 题意：有个城镇，所有路都是单行道，并且没有环，所有路都连接在十字路口上
+ 现在用最少的伞兵走完这些式子路口，每个只能走一遍
+很明显的最小路径覆盖
+最小路径覆盖=点数-最大匹配
+需要拆点 所有式子路口  在X中一个 在Y中一个
+ 路把两个集合中十字路口连接起来
+求最大匹配  还是匈牙利
+ */
+ #include<stdio.h>
+ #include<vector>
+ using namespace std;
+ vector<int>v[150];
+ int t,n,m;
+ int match[150],vis[150];//都只是对Y集中的点
+ int dfs(int i)
+ {
+  for(int j=0;j<v[i].size();++j)
+  {
+   if(!vis[v[i][j]])
+   {
+    vis[v[i][j]]=1;
+    if(match[v[i][j]]==-1||dfs(match[v[i][j]]))
+    {
+     match[v[i][j]]=i;
+     return 1;
+    }
+   }
+  }
+  return 0;
+ }
+ int main()
+ {
+  int i,a,b;
+  scanf("%d",&t);
+  while(t--)
+  {
+   scanf("%d%d",&n,&m);
+   for(i=0;i<=n;i++)
+    v[i].clear();
+   for(i=1;i<=m;++i)
+   {
+    scanf("%d%d",&a,&b);
+    v[a].push_back(b);
+   }
+   a=0;////
+   memset(match,-1,sizeof(match));
+   for(i=1;i<=n;i++)
+   {
+    memset(vis,0,sizeof(vis));
+    if(dfs(i))
+     a++;
+   }////
+   printf("%d\n",n-a);//最小路径覆盖=点数-最大匹配
+  }
+  return 0;
+ }
+ 作者：qq172108805
+

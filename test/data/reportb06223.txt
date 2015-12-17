@@ -1,0 +1,39 @@
+pku 1061 - Because Of You - 博客园
+
+
+ 
+ 
+ View Code  
+  
+  #include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+typedef __int64 lld;
+void gcd(lld a,lld b,lld &d,lld &x,lld &y)
+{
+    if(!b) {d=a;x=1;y=0;}
+    else { gcd(b,a%b,d,y,x);y-=x*(a/b);}
+}
+int main()
+{
+    lld x,y,m,n,l;
+    lld a,b,c,d,g,s;
+    scanf("%I64d%I64d%I64d%I64d%I64d",&x,&y,&m,&n,&l);
+    a=l,b=n-m,c=x-y;
+    gcd(a,b,d,x,y);
+    if(c%d!=0)
+        cout<<"Impossible"<<endl;
+    else 
+    {
+        s=a/d;
+        y=y*(c/d);
+        y=(y%s+s)%s;
+        printf("%I64d\n",y);
+    }
+    return 0;
+} 
+  
+ 
+
+　　若方程ax+by=c的一组正整数解为(x0,y0),则它的任意整数解都可以写成（x0+kb',y0-ka'）,其中，a'=a/gcd(a,b),b'=b/gcd(a,b),k取任意整数

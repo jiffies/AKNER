@@ -1,0 +1,48 @@
+FOJ 1000  PKU 1000 FJNU 1000 A B Problem_乐吾天_百度空间
+
+Calculate a + b 
+Input
+The input will consist of a series of pairs of integers a and b,separated by a space, one pair of integers per line. 
+Output
+For each pair of input integers a and b you should output the sum of a and b in one line,and with one line of output for each line in input. 
+Sample Input 1 52 3Sample Output 65
+#include <stdio.h><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" />
+int main()
+{int a,b;
+ while(scanf("%d%d",&a,&b)-EOF)
+ printf("%d\n",a+b);
+return 0;
+}
+还记的第一次写的时候不知道什么EOF..Orz
+http://hi.baidu.com/lewutian---> 推荐文章:
+
+1. 
+PKU OJ 1019 Number Sequence
+
+2. 
+pku 1166[回溯]
+
+3. 
+PKU 2329
+
+4. 
+pku 1160 Post Office
+
+5. 
+Pku acm 2492 A Bug's Life数据结构题目解题报告(十)
+
+6. 
+pku 2385 Apple Catching
+
+7. 
+PKU 1011 Sticks
+
+8. 
+pku 3378（树状数组实现）
+
+9. 
+pku 1057 文件结构问题
+
+10. 
+PKU 1002 487
+

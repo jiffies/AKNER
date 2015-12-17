@@ -1,0 +1,505 @@
+POJ1256	eng	N	Y	O	B-OJ
+
+(	x	N	N	O	O
+C++	nz	N	N	O	O
+
+compare	eng	N	N	O	O
+函数	n	Y	N	O	I-KNOWLEDGE
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+bobchou	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+问题	n	N	N	O	O
+：	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+只	d	N	N	O	O
+含大	a	N	N	O	O
+小写字母	n	N	N	O	O
+的	uj	N	N	O	O
+字符串	n	Y	N	O	O
+，	x	N	N	O	O
+给出	v	N	N	O	O
+所有	b	N	N	O	O
+该	r	N	N	O	O
+字符串	n	Y	N	O	O
+的	uj	N	N	O	O
+排列	v	Y	N	O	O
+，	x	N	N	O	O
+以	p	N	N	O	O
+字典	n	N	N	O	O
+顺序	n	N	N	O	O
+输出	v	Y	N	O	O
+。	x	N	N	O	O
+
+其中	r	N	N	O	O
+
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+B	x	N	N	O	O
+'	x	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+b	x	N	N	O	O
+'	x	N	N	O	O
+<	x	N	N	O	O
+...	m	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+<	x	N	N	O	O
+'	x	N	N	O	O
+z	x	N	N	O	O
+'	x	N	N	O	O
+。	x	N	N	O	O
+
+方法	n	Y	N	O	O
+：	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+只	d	N	N	O	O
+需	v	N	N	O	O
+调用	vn	N	N	O	O
+C++	nz	N	N	O	O
+
+STL	eng	N	N	O	O
+中	ns	N	N	O	O
+
+next	eng	N	N	O	O
+_	x	N	N	O	O
+permutation	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+和	c	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+函数	n	Y	N	O	O
+，	x	N	N	O	O
+重点	n	N	N	O	O
+在于	v	N	N	O	O
+编写	v	N	N	O	O
+自定义	l	N	N	O	O
+的	uj	N	N	O	O
+compare	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+函数	n	Y	N	O	O
+。	x	N	N	O	O
+
+hint	eng	N	N	O	O
+：	x	N	N	O	O
+（	x	N	N	O	O
+compare	eng	N	N	O	O
+
+函数	n	Y	N	O	O
+的	uj	N	N	O	O
+编写	v	N	N	O	O
+方法	n	Y	N	O	O
+）	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+
+=	x	N	N	O	O
+
+....	m	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+处理	v	N	N	O	O
+a	x	N	N	O	O
+
+b	x	N	N	O	O
+
+=	x	N	N	O	O
+
+....	m	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+处理	v	N	N	O	O
+b	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+(	x	N	N	O	O
+condition	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+若要	c	N	N	O	O
+增序	n	N	N	O	O
+排列	v	Y	N	O	O
+，	x	N	N	O	O
+只	d	N	N	O	O
+需	v	N	N	O	O
+将	d	N	N	O	O
+condition	eng	N	N	O	O
+填补	v	N	N	O	O
+为	p	N	N	O	O
+所有	b	N	N	O	O
+可能	v	N	N	O	O
+使	v	N	N	O	O
+a	eng	N	N	O	O
+小于	v	N	N	O	O
+b	eng	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+
+}	x	N	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+char	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+b	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+b	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+b	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+
+<	x	N	N	O	O
+
+b	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+a	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+Z	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+
+-	x	N	N	O	O
+
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+input	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+N	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+input	eng	N	N	O	O
+;	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+.	m	N	N	O	O
+begin	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+do	eng	N	N	O	O
+{	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+input	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+while	eng	N	N	O	O
+(	x	N	N	O	O
+next	eng	N	N	O	O
+_	x	N	N	O	O
+permutation	eng	N	N	O	O
+(	x	N	N	O	O
+input	eng	N	N	O	O
+.	m	N	N	O	O
+begin	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+input	eng	N	N	O	O
+.	m	N	N	O	O
+end	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+

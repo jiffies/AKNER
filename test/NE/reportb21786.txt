@@ -1,0 +1,209 @@
+poj 2288 Islands and Bridges_光辉岁月_百度空间
+
+Islands and Bridges 
+Time Limit: 4000MS 
+Memory Limit: 65536K 
+Total Submissions: 4770 
+Accepted: 1170 
+
+Description
+Given a map of islands and bridges that connect these islands, a Hamilton path, as we all know, is a path along the bridges such that it visits each island exactly once. On our map, there is also a positive integer value associated with each island. We call a Hamilton path the best triangular Hamilton path if it maximizes the value described below. 
+
+Suppose there are n islands. The value of a Hamilton path C1C2...Cn is calculated as the sum of three parts. Let Vi be the value for the island Ci. As the first part, we sum over all the Vi values for each island in the path. For the second part, for each edge CiC
+i+1 in the path, we add the product Vi*V
+i+1. And for the third part, whenever three consecutive islands CiC
+i+1C
+i+2 in the path forms a triangle in the map, i.e. there is a bridge between Ci and C
+i+2, we add the product Vi*V
+i+1*V
+i+2. 
+
+Most likely but not necessarily, the best triangular Hamilton path you are going to find contains many triangles. It is quite possible that there might be more than one best triangular Hamilton paths; your second task is to find the number of such paths.
+
+Input
+The input file starts with a number q (q<=20) on the first line, which is the number of test cases. Each test case starts with a line with two integers n and m, which are the number of islands and the number of bridges in the map, respectively. The next line contains n positive integers, the i-th number being the Vi value of island i. Each value is no more than 100. The following m lines are in the form x y, which indicates there is a (two way) bridge between island x and island y. Islands are numbered from 1 to n. You may assume there will be no more than 13 islands.
+
+Output
+For each test case, output a line with two numbers, separated by a space. The first number is the maximum value of a best triangular Hamilton path; the second number should be the number of different best triangular Hamilton paths. If the test case does not contain a Hamilton path, the output must be `0 0'. 
+
+Note: A path may be written down in the reversed order. We still think it is the same path.
+
+Sample Input
+2
+
+3 3
+
+2 2 2
+
+1 2
+
+2 3
+
+3 1
+
+4 6
+
+1 2 3 4
+
+1 2
+
+1 3
+
+1 4
+
+2 3
+
+2 4
+
+3 4
+
+Sample Output
+22 3
+
+69 1
+
+要点：
+
+1 还是状态压缩DP。
+
+2 一定要用long long 
+
+3 要注意结果除2（方向相反的路径只算一条）
+
+4 把递归取消掉估计会快不少，目前1390ms 过，算很慢了
+
+#include <stdio.h>
+
+#include <string.h>
+
+long long mem_value[1<<14][14][14];
+
+long long nways[1<<14][14][14];
+
+int map[14][14];
+
+int nisland,nbridge;
+
+inline int isset(int state, int i)
+
+{
+
+ return state&(1<<i);
+
+}
+
+long long 
+hamilton(int state, int prev2,int prev)
+
+{
+
+ if(nways[state][prev2][prev])
+
+ return nways[state][prev2][prev];
+
+ long long nw=0, val=0;
+
+ if(state == (1<<(nisland+1))-2){
+
+ nw = 1;
+
+ nways[state][prev2][prev]=nw;
+
+ mem_value[state][prev2][prev]=0;
+
+ return nw;
+
+ }
+
+ long long max_nw=0,max_nv=0;
+
+ for(int i= 1; i<=nisland;++i){
+
+ if(!isset(state,i)&&(prev==0||map[prev][i])){
+
+ val=map[i][i];
+
+ if(map[i][prev])val+=map[i][i]*map[prev][prev];
+
+ if(map[prev2][i])val+=map[i][i]*map[prev][prev]*map[prev2][prev2];
+
+ int w = hamilton(state|(1<<i),prev,i);
+
+ if(w>0&&val+mem_value[state|(1<<i)][prev][i]>max_nv){
+
+ max_nv = mem_value[state|(1<<i)][prev][i]+val;
+
+ max_nw = w;
+
+ }
+
+ else if(w>0&& val+mem_value[state|(1<<i)][prev][i] == max_nv)
+
+ max_nw+=w;
+
+ }
+
+ }
+
+ if(!max_nw)max_nv = 0;
+
+ mem_value[state][prev2][prev]=max_nv;
+
+ nways[state][prev2][prev]=max_nw;
+
+ return max_nw;
+
+}
+
+int 
+main()
+
+{
+
+ int ncases;
+
+ scanf("%d",&ncases);
+
+ while(ncases--){
+
+ memset(map,0,sizeof(map));
+
+ int n,m;
+
+ scanf("%d%d",&n,&m);
+
+ nisland=n;
+
+ for(int i = 1; i<=n;++i){
+
+ scanf("%d",&map[i][i]);
+
+ }
+
+ for(int i = 1; i<=m;++i){
+
+ int a,b;
+
+ scanf("%d%d",&a,&b);
+
+ map[a][b]=map[b][a]=1;
+
+ } 
+
+ memset(mem_value,0,sizeof(mem_value));
+
+ memset(nways,0,sizeof(nways));
+
+ hamilton(0,0,0);
+
+ if(nways[0][0][0]%2==0)
+
+ nways[0][0][0]/=2;
+
+ printf("%lld %lld\n",mem_value[0][0][0],nways[0][0][0]);
+
+ }
+
+ return 0;
+
+}

@@ -1,0 +1,230 @@
+pku 2288 Islands and Bridges(状态压缩DP) - low coder - 博客频道 - CSDN.NET
+
+ 
+Description
+Given a map of islands and bridges that connect these islands, a Hamilton path, as we all know, is a path along the bridges such that it visits each island exactly once. On our map, there is also a positive integer value associated with each island. We call a Hamilton path the best triangular Hamilton path if it maximizes the value described below. 
+Suppose there are n islands. The value of a Hamilton path C1C2...Cn is calculated as the sum of three parts. Let Vi be the value for the island Ci. As the first part, we sum over all the Vi values for each island in the path. For the second part, for each edge CiCi+1 in the path, we add the product Vi*Vi+1 . And for the third part, whenever three consecutive islands CiCi+1 Ci+2 in the path forms a triangle in the map, i.e. there is a bridge between Ci and Ci+2 , we add the product Vi*Vi+1 *Vi+2 . 
+Most likely but not necessarily, the best triangular Hamilton path you are going to find contains many triangles. It is quite possible that there might be more than one best triangular Hamilton paths; your second task is to find the number of such paths. 
+[state][i][j],state表示已经到达过的顶点，i记录倒数第2个顶点，j记录倒数第一个顶点。
+DP[][][]记录最大值,way[][][]记录最大值对应的路径数。
+做这题，才注意到位运算的<<>>左移右移优先级好低，不如+-加减，得加括号。
+要注意的地方有两个
+1.一个点的情况
+2.用__int64
+我的代码用的是最直观的DP，跑了2500ms。
+假设state1可以由state2转化得到，通过分析可以发现0<=state2<state1。于是可以在最外层循环用state递增。
+#include <iostream>
+using namespace std;
+const int max_n=1<<13;
+__int64 DP[max_n][13][13];
+__int64 way[max_n][13][13];
+bool map[13][13];
+int value[13];
+int NumOfOne(int n)
+{
+	int ans=0;
+	while(n)
+	{
+		ans+=1;
+		n=n&(n-1);
+	}
+	return ans;
+}
+void DP_Fun(int n)
+{
+	memset(way,0,sizeof(way));
+	memset(DP,0,sizeof(DP));
+	for(int i=0;i<n;i++)//初始化
+	{
+		for(int j=0;j<n;j++)
+		{
+			if(i!=j&&map[i][j])
+			{
+				DP[(1<<i)+(1<<j)][i][j]=value[i]+value[j]+value[i]*value[j];
+				way[(1<<i)+(1<<j)][i][j]=1;
+			}
+		}
+	}
+	for(int k=2;k<n;k++)//寻找第（k+1）个节点
+	{
+		for(int i=0;i<n;i++)//枚举倒数两个节点的组合
+		{
+			for(int j=0;j<n;j++)
+			{
+				if(i==j) continue;
+				int end=1<<n;
+				for(int state=0;state<end;state++)//寻找合适的状态
+				{
+					if(way[state][i][j]&&NumOfOne(state)==k)
+					{
+						for(int t=0;t<n;t++)
+						{
+							if(!map[j][t]||((1<<t)&state)) continue;//寻找合适的下一节点，不连通或者已经出现则跳过
+							int new_state=state+(1<<t);
+							int new_value=DP[state][i][j]+value[t]+value[j]*value[t]+(map[i][t]?value[i]*value[j]*value[t]:0);
+							if(new_value>DP[new_state][j][t])
+							{
+								DP[new_state][j][t]=new_value;
+								way[new_state][j][t]=way[state][i][j];
+							}
+							else if(new_value==DP[new_state][j][t])
+							{
+								way[new_state][j][t]+=way[state][i][j];
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+int main()
+{
+	int t,island,bridge;
+	scanf("%d",&t);
+	while(t--)
+	{
+		scanf("%d%d",&island,&bridge);
+		for(int i=0;i<island;i++)
+		{
+			scanf("%d",&value[i]);
+		}
+		memset(map,0,sizeof(map));
+		int start,end;
+		for(int i=0;i<bridge;i++)
+		{
+			scanf("%d%d",&start,&end);
+			map[end-1][start-1]=map[start-1][end-1]=true;
+		}
+		if(island==1)
+		{
+			printf("%d %d/n",value[0],1);
+			continue;
+		}
+		DP_Fun(island);
+		__int64 max_value=0,way_num=0,end_state=(1<<island)-1;
+		for(int i=0;i<island;i++)
+		{
+			for(int j=0;j<island;j++)
+			{
+				if(DP[end_state][i][j]>max_value)
+				{
+					max_value=DP[end_state][i][j];
+					way_num=way[end_state][i][j];
+				}
+				else if(DP[end_state][i][j]==max_value)
+				{
+					way_num+=way[end_state][i][j];
+				}
+			}
+		}
+		printf("%I64d %I64d/n",max_value,way_num/2);
+	}
+	return 0;
+}
+用记忆化搜索重新写了一遍。本以为可以很快搞定，但WA了差不多10次。__int64，血的教训。
+#include <string>
+#include <vector>
+#include <cmath>
+#include <queue>
+#include <algorithm>
+#include <iostream>
+#define _clr(a,b) memset(a,b,sizeof(a))
+template<class T> T _abs(T a)
+{ if(a<0) return -a;return a;}
+template<class T> void get_min(T& a,T b)
+{ if(a>b) a=b;}
+template<class T> void get_max(T& a,T b)
+{ if(a<b) a=b;}
+using namespace std;
+int n,m,end;
+bool map[14][14];
+int weight[14];
+__int64 DP[14][14][1<<13],maxn;
+__int64 cnt[14][14][1<<13];
+__int64 travel(int first,int second,int mask)
+{
+	if(DP[first][second][mask]>=0) return DP[first][second][mask];
+	if(mask==end) 
+	{
+		DP[first][second][mask]=0;
+		cnt[first][second][mask]=1;
+		return DP[first][second][mask];
+	}
+	int new_mask;
+	__int64 ans;
+	for(int i=0;i<n;i++)
+	{
+		if(map[second][i]&&((mask&(1<<i))==0))
+		{
+			new_mask=mask|(1<<i);
+			ans=travel(second,i,new_mask);
+			if(ans<0) continue;
+			ans+=weight[second]*weight[i];
+			if(map[first][i]) ans+=weight[first]*weight[second]*weight[i];
+			if(ans>DP[first][second][mask])
+			{
+				DP[first][second][mask]=ans;
+				cnt[first][second][mask]=cnt[second][i][new_mask];
+			}
+			else if(ans==DP[first][second][mask]) cnt[first][second][mask]+=cnt[second][i][new_mask];
+		}
+	}
+	return DP[first][second][mask];
+}
+int main()
+{
+	int T;
+	int sum;
+	__int64 count;
+	scanf("%d",&T);
+	for(int t=1;t<=T;t++)
+	{
+		_clr(map,0);
+		_clr(DP,-1);
+		_clr(cnt,0);
+		maxn=-1;
+		sum=0;
+		count=0;
+		scanf("%d%d",&n,&m);
+		end=(1<<n)-1;
+		for(int i=0;i<n;i++) 
+		{
+			scanf("%d",&weight[i]);
+			sum+=weight[i];
+		}
+		for(int i=0;i<m;i++)
+		{
+			int a,b;
+			scanf("%d%d",&a,&b);
+			map[b-1][a-1]=map[a-1][b-1]=true;
+		}
+		if(n>=2)
+		{
+			for(int i=0;i<n;i++)
+			{
+				for(int j=0;j<n;j++)
+				{
+					if(!map[i][j]) continue;
+					int mask=(1<<i)|(1<<j);
+					__int64 ans=travel(i,j,mask);
+					if(ans>=0) ans+=weight[i]*weight[j];
+					if(ans>maxn)
+					{
+						maxn=ans;
+						count=cnt[i][j][mask];
+					}
+					else if(ans==maxn) 
+						count+=cnt[i][j][mask];;
+				}
+			}
+			if(maxn==-1) printf("0 0/n");
+			else printf("%I64d %I64d/n",maxn+sum,count/2);
+		}
+		else
+		{
+			printf("%d %d/n",weight[0],1);
+		}
+	}
+	return 0;
+}

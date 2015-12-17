@@ -1,0 +1,29 @@
+POJ 1063 - ACM-King伟的日志 - 网易博客
+
+        又是一道经典题，数塔的DP思想极容易理解，是一个学DP很好的开端例子，毕竟不是每个人都可以马上理解投0-1背包。
+#include<cstdio>
+#include<cstdlib>
+#include<iostream>
+using namespace std;
+int main()
+{
+ int n,a[100][100],b[100][100],t;
+ scanf("%d",&n);
+ for(int i=0;i<n;i++)
+  for(int j=0;j<=i;j++)
+   scanf("%d",&a[i][j]);
+ for(int i=0;i<n;i++)
+  b[n-1][i]=a[n-1][i];
+ for(int i=n-2;i>=0;i--)
+  for(int j=0;j<=i;j++)
+   {
+    b[i][j]=b[i+1][j]+a[i][j];
+    t=b[i+1][j+1]+a[i][j];
+    if(t>b[i][j])
+     b[i][j]=t;
+   }
+ printf("%d\n",b[0][0]);
+ system("pause");
+ return 0; 
+}
+       代码短，记得DP自下而上，有点把平常思维倒过来的味道，逆着想就差不多可以了。例如先假设当问题的最优解得出来了，那么得出最优解的上一步也必须是最优的，一步步向上找，那个专业一点的名词叫什么来的???貌似是“最优子结构”。

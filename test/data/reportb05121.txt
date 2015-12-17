@@ -1,0 +1,51 @@
+POJ 3640 Conformity - 低智商呀>_< - 博客频道 - CSDN.NET
+
+题意：n个学生，每人5门课程代号（100~499）的组合，定义这些课程组合的重复次数为受欢迎度。问选受欢迎度最大的课程组合的学生人数是多少。
+题解：将每个学生所选的5门课进行从小到大排序，拼起来组成一个15位的数。即：
+ 
+ for(int j=0;j<5;j++)
+                  temp=temp*1000+x[j];
+ 
+ 由于变换之后的数太大，所以要哈希一下在存储。接下来再判重即可。
+ 
+ #include<algorithm>
+ #include<iostream>
+ #include<cstring>
+ #include<cstdio>
+ using namespace std;
+ const long long MOD=100007;
+ long long Hash[MOD],pos[MOD],pop[MOD],x[6];
+ int Getkey(long long num){
+     int temp=num%MOD;
+     while(Hash[temp]!=-1&&Hash[temp]!=num)
+         temp=(temp+1)%MOD;
+     return temp;
+ }
+ int main()
+ {
+     int n;
+     while(scanf("%d",&n),n){
+         long long ans=0;
+         memset(pop,0,sizeof(pop));
+         memset(Hash,-1,sizeof(Hash));
+         for(int i=0;i<n;i++){
+             for(int j=0;j<5;j++)
+                 scanf("%I64d",&x[j]);
+             sort(x,x+5);
+             long long temp=0;
+             for(int j=0;j<5;j++)
+                 temp=temp*1000+x[j];
+             int  ps=Getkey(temp);
+             Hash[ps]=temp;
+             ans=max(ans,++pop[pos[i]=ps]);
+         }
+         int cnt=0;
+         for(int j=0;j<n;j++){
+             if(pop[pos[j]]==ans)
+                 cnt++;
+         }
+         printf("%d\n",cnt);
+     }
+     return 0;
+ } 
+

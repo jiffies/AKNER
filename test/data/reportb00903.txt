@@ -1,0 +1,104 @@
+POJ3481 double queue——treap做法_lovedream_新浪博客
+
+ 记得校赛的时候包菜牛说过手打平衡树，现在终于会平衡树了，试了一下，果然很水……写了个treap，很无聊的TLE了一下就过了
+#include<stdio.h>
+ #include<string.h>
+ #include<time.h>
+ #include<stdlib.h>
+int key1[1000010],key2[1000010],fa[1000010],ch[1000010][2],root;
+inline void rotate(int n)
+ {
+     int t=fa[n];
+     bool isr=(ch[t][1]==n);
+    ch[t][isr]=ch[n][!isr],fa[ch[n][!isr]]=t;
+     fa[n]=fa[t],fa[t]=n,ch[n][!isr]=t,ch[fa[n]][ch[fa[n]][1]==t]=n;
+     if(!fa[n])
+         root=n;
+ }
+ inline void insert(int k,int p)
+ {
+     int t=root;
+     ch[k][0]=ch[k][1]=0;
+     if(!root)
+     {
+         root=k;
+         return ;
+     }
+    while(1)
+     {
+         if(p<key1[t])
+         {
+             if(!ch[t][0])
+             {
+                 ch[t][0]=k;
+                 fa[k]=t;
+                 break;
+             }
+             t=ch[t][0];
+         }
+         else
+         {
+             if(!ch[t][1])
+             {
+                 ch[t][1]=k;
+                 fa[k]=t;
+                 break;
+             }
+             t=ch[t][1];
+         }
+     }
+     while(root-k&&key2[k]>key2[fa[k]])
+         rotate(k);
+ }
+int get1()
+ {
+     if(!root)
+         return 0;
+     int t=root;
+     if(!ch[root][0]&&!ch[root][1])
+     {
+         root=0;
+         return t;
+     }
+     while(ch[t][1])
+         t=ch[t][1];
+     ch[fa[t]][1]=ch[t][0],fa[ch[t][0]]=fa[t];
+     if(t==root)
+         root=ch[t][0];
+     return t;
+ }
+int get2()
+ {
+     if(!root)
+         return 0;
+     int t=root;
+     if(!ch[root][0]&&!ch[root][1])
+     {
+         root=0;
+         return t;
+     }
+     while(ch[t][0])
+         t=ch[t][0];
+     ch[fa[t]][0]=ch[t][1],fa[ch[t][1]]=fa[t];
+     if(t==root)
+         root=ch[t][1];
+     return t;
+ }
+int main()
+ {
+     int r,k,p;
+     srand(time(0));
+    while(scanf("%d",&r),r)
+     {
+         if(r==1)
+         {
+             scanf("%d%d",&k,&p);
+             key1[k]=p,key2[k]=rand();
+             insert(k,p);
+         }
+         else if(r==2)
+             printf("%d\n",get1());
+         else
+             printf("%d\n",get2());
+     }
+ }

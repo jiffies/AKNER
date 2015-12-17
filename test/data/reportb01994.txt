@@ -1,0 +1,39 @@
+Coin Toss【poj】3440 - 只是路过的日志 - 网易博客
+
+主要是找准图形的对应的区域，那么代码就简单了
+#include<iostream>
+#define pi 3.141592653
+using namespace std;
+double a2(double m,double n,double v,double r)
+{
+ return (v-r)*r*((m-1)*(n)+(m)*(n-1))+r*r/2.0*(m+n-2)*2;
+}
+double a4(double m,double n,double v,double r)
+{
+ return pi*r*r/4.0*(m-1)*(n-1);
+}
+double a3(double m,double n,double v,double r)
+{
+ return (r*r-pi*r*r/4.0)*(m-1)*(n-1);
+}
+int main()
+{
+ int c,i;
+ cin>>c;
+ for(i=1;i<=c;i++)
+ {
+   double m,n,v,arc;
+   cin>>m>>n>>v>>arc;
+   //2:
+   double are2=a2(m,n,v,arc);
+   double are4=a4(m,n,v,arc);
+   double are3=a3(m,n,v,arc);
+   double are1=m*n*v*v-are2-are3-are4;
+   printf("Case %d:\n",i);
+   printf("Probability of covering 1 tile = %.4f%%\n",are1*100/(m*n*v*v));
+   printf("Probability of covering 2 tiles = %.4f%%\n",are2*100/(m*n*v*v));
+   printf("Probability of covering 3 tiles = %.4f%%\n",are3*100/(m*n*v*v));
+   printf("Probability of covering 4 tiles = %.4f%%\n\n",are4*100/(m*n*v*v));
+ }
+ return 0;
+}

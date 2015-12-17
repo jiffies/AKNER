@@ -1,0 +1,1469 @@
+poj1006	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+地平线	n	N	N	O	O
+的	uj	N	N	O	O
+日志	ns	N	N	O	O
+
+-	x	N	N	O	O
+
+网易	n	N	N	O	O
+博客	nr	N	N	O	O
+
+Biorhythms	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+1000	m	N	N	O	O
+MS	eng	N	N	O	O
+
+Memory	eng	N	N	O	O
+
+Limit	eng	N	N	O	O
+:	x	N	N	O	O
+
+10000	m	N	N	O	O
+K	eng	N	N	O	O
+
+Total	eng	N	N	O	O
+
+Submissions	eng	N	N	O	O
+:	x	N	N	O	O
+
+68666	m	N	N	O	O
+
+Accepted	eng	N	N	O	O
+:	x	N	N	O	O
+
+20234	m	N	N	O	O
+
+Description	eng	N	N	O	O
+
+Some	eng	N	N	O	O
+
+people	eng	N	N	O	O
+
+believe	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+there	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+person	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+life	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+start	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+day	eng	N	N	O	O
+
+he	eng	Y	N	O	O
+
+or	eng	Y	N	O	O
+
+she	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+born	eng	N	N	O	O
+.	m	N	N	O	O
+
+These	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+physical	eng	N	N	O	O
+,	x	N	N	O	O
+
+emotional	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+intellectual	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+periods	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+lengths	eng	N	N	O	O
+
+23	m	N	N	O	O
+,	x	N	N	O	O
+
+28	m	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+33	m	N	N	O	O
+
+days	eng	N	N	O	O
+,	x	N	N	O	O
+
+respectively	eng	N	N	O	O
+.	m	N	N	O	O
+
+There	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+period	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+cycle	eng	N	N	O	O
+.	m	N	N	O	O
+
+At	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+cycle	eng	N	N	O	O
+,	x	N	N	O	O
+
+a	x	N	N	O	O
+
+person	eng	N	N	O	O
+
+performs	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+his	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+her	eng	Y	N	O	O
+
+best	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+corresponding	eng	N	N	O	O
+
+field	eng	N	N	O	O
+
+(	x	N	N	O	O
+physical	eng	N	N	O	O
+,	x	N	N	O	O
+
+emotional	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+mental	eng	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+mental	eng	N	N	O	O
+
+curve	eng	N	N	O	O
+,	x	N	N	O	O
+
+thought	eng	N	N	O	O
+
+processes	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+sharper	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+concentration	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+easier	eng	N	N	O	O
+.	m	N	N	O	O
+
+Since	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+have	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+periods	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+peaks	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+generally	eng	N	N	O	O
+
+occur	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+times	eng	N	N	O	O
+.	m	N	N	O	O
+
+We	eng	N	N	O	O
+
+would	eng	N	N	O	O
+
+like	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+determine	eng	N	N	O	O
+
+when	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+(	x	N	N	O	O
+the	eng	N	N	O	O
+
+peaks	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+all	eng	N	N	O	O
+
+three	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+occur	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+day	eng	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+any	eng	N	N	O	O
+
+person	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+cycle	eng	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+given	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+beginning	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+current	eng	N	N	O	O
+
+year	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+its	eng	N	N	O	O
+
+peaks	eng	N	N	O	O
+
+(	x	N	N	O	O
+not	eng	N	N	O	O
+
+necessarily	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+)	x	N	N	O	O
+
+occurs	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+also	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+given	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+date	eng	N	N	O	O
+
+expressed	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+beginning	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+current	eng	N	N	O	O
+
+year	eng	N	N	O	O
+.	m	N	N	O	O
+
+You	eng	N	N	O	O
+
+task	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+determine	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+counted	eng	N	N	O	O
+.	m	N	N	O	O
+
+For	eng	N	N	O	O
+
+example	eng	N	N	O	O
+,	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+10	m	N	N	O	O
+
+and	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+day	eng	N	N	O	O
+
+12	m	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+answer	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+2	x	N	N	O	O
+,	x	N	N	O	O
+
+not	eng	N	N	O	O
+
+3.	m	N	N	O	O
+
+If	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+,	x	N	N	O	O
+
+you	eng	N	N	O	O
+
+should	eng	N	N	O	O
+
+give	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+occurrence	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+You	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+given	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+cases	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+each	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+four	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+d	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+values	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+are	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+from	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+beginning	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+current	eng	N	N	O	O
+
+year	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+which	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+physical	eng	N	N	O	O
+,	x	N	N	O	O
+
+emotional	eng	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+intellectual	eng	N	N	O	O
+
+cycles	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+,	x	N	N	O	O
+
+respectively	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+d	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+smaller	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+
+e	x	N	N	O	O
+,	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+i	eng	N	N	O	O
+.	m	N	N	O	O
+
+All	eng	N	N	O	O
+
+values	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+non	eng	N	N	O	O
+-	x	N	N	O	O
+negative	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+most	eng	N	N	O	O
+
+365	m	N	N	O	O
+,	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+you	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+assume	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+occur	eng	N	N	O	O
+
+within	eng	N	N	O	O
+
+21252	m	N	N	O	O
+
+days	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+given	eng	N	N	O	O
+
+date	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+indicated	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+which	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+e	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+d	x	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+test	eng	N	N	O	O
+
+case	eng	N	N	O	O
+,	x	N	N	O	O
+
+print	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+case	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+message	eng	N	N	O	O
+
+indicating	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+days	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+,	x	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+form	eng	N	N	O	O
+:	x	N	N	O	O
+
+Case	eng	N	N	O	O
+
+1	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+1234	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+
+Use	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+plural	eng	N	N	O	O
+
+form	eng	N	N	O	O
+
+`	x	N	N	O	O
+`	x	N	N	O	O
+days	eng	N	N	O	O
+'	x	N	N	O	O
+'	x	N	N	O	O
+
+even	eng	N	N	O	O
+
+if	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+answer	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+1.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+00	m	N	N	O	O
+
+0	x	N	N	O	O
+
+0	x	N	N	O	O
+
+1005	m	N	N	O	O
+
+20	m	N	N	O	O
+
+34	m	N	N	O	O
+
+3254	m	N	N	O	O
+
+5	x	N	N	O	O
+
+6	x	N	N	O	O
+
+7283	m	N	N	O	O
+
+102	m	N	N	O	O
+
+23	m	N	N	O	O
+
+320203	m	N	N	O	O
+
+301	m	N	N	O	O
+
+203	m	N	N	O	O
+
+40	m	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+Case	eng	N	N	O	O
+
+1	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+21252	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+Case	eng	N	N	O	O
+
+2	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+21152	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+Case	eng	N	N	O	O
+
+3	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+19575	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+Case	eng	N	N	O	O
+
+4	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+16994	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+Case	eng	N	N	O	O
+
+5	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+8910	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+Case	eng	N	N	O	O
+
+6	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+10789	m	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+
+Source	eng	N	N	O	O
+
+East	eng	N	N	O	O
+
+Central	eng	N	N	O	O
+
+North	eng	N	N	O	O
+
+America	eng	N	N	O	O
+
+1999	m	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdlib	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+argc	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+*	x	N	N	O	O
+argv	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+p	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+e	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+i	x	N	N	O	O
+>	x	N	N	O	O
+>	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+if	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+c++	nz	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+28	m	N	N	O	O
+*	x	N	N	O	O
+33	m	N	N	O	O
+*	x	N	N	O	O
+23	m	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+28	m	N	N	O	O
+*	x	N	N	O	O
+33	m	N	N	O	O
+*	x	N	N	O	O
+6	x	N	N	O	O
+*	x	N	N	O	O
+p	x	N	N	O	O
+%	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+23	m	N	N	O	O
+*	x	N	N	O	O
+33	m	N	N	O	O
+*	x	N	N	O	O
+19	m	N	N	O	O
+*	x	N	N	O	O
+e	x	N	N	O	O
+%	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+23	m	N	N	O	O
+*	x	N	N	O	O
+28	m	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+%	x	N	N	O	O
+m	x	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+>	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+Case	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+c	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+s	x	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+-	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+/	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+sum	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+s	eng	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+Case	eng	N	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+c	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+:	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+triple	eng	N	N	O	O
+
+peak	eng	N	N	O	O
+
+occurs	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+sum	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+
+days	eng	N	N	O	O
+.	m	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+PAUSE	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+EXIT	eng	N	N	O	O
+_	x	N	N	O	O
+SUCCESS	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,1154 @@
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+模版	v	N	N	O	O
+(	x	N	N	O	O
+T9	eng	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+1451	m	N	N	O	I-OJ
+)	x	N	N	O	O
+_	x	N	N	O	O
+piratehome	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+字典	n	N	N	O	B-KNOWLEDGE
+树	v	N	N	O	I-KNOWLEDGE
+模版	v	N	N	O	O
+(	x	N	N	O	O
+T9	eng	N	N	O	O
+
+PKU	eng	N	Y	O	B-OJ
+
+1451	m	N	N	O	I-OJ
+)	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+iostream	eng	N	N	O	O
+"	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+{	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+3	x	N	N	O	O
+,	x	N	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+5	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+6	x	N	N	O	O
+,	x	N	N	O	O
+7	x	N	N	O	O
+,	x	N	N	O	O
+8	x	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+9	x	N	N	O	O
+,	x	N	N	O	O
+10	m	N	N	O	O
+,	x	N	N	O	O
+11	m	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+12	m	N	N	O	O
+,	x	N	N	O	O
+13	m	N	N	O	O
+,	x	N	N	O	O
+14	m	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+15	m	N	N	O	O
+,	x	N	N	O	O
+16	m	N	N	O	O
+,	x	N	N	O	O
+17	m	N	N	O	O
+,	x	N	N	O	O
+18	m	N	N	O	O
+,	x	N	N	O	O
+
+19	m	N	N	O	O
+,	x	N	N	O	O
+20	m	N	N	O	O
+,	x	N	N	O	O
+21	m	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+22	m	N	N	O	O
+,	x	N	N	O	O
+23	m	N	N	O	O
+,	x	N	N	O	O
+24	m	N	N	O	O
+,	x	N	N	O	O
+25	m	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+nowp	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxsum	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+strp	eng	N	N	O	O
+[	x	N	N	O	O
+150	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+Node	eng	N	N	O	O
+*	x	N	N	O	O
+
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+26	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+frq	eng	N	N	O	O
+[	x	N	N	O	O
+26	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+*	x	N	N	O	O
+DicTree	eng	N	N	O	O
+,	x	N	N	O	O
+Node	eng	N	N	O	O
+;	x	N	N	O	O
+
+DicTree	eng	N	N	O	O
+
+NewTree	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+DicTree	eng	N	N	O	O
+
+DicT	eng	N	N	O	O
+;	x	N	N	O	O
+
+DicT	eng	N	N	O	O
+=	x	N	N	O	O
+new	eng	N	N	O	O
+
+Node	eng	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+,	x	N	N	O	O
+NULL	eng	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+frq	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+frq	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+DicT	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+BuiltTree	eng	N	N	O	O
+(	x	N	N	O	O
+DicTree	eng	N	N	O	O
+
+&	x	N	N	O	O
+DicT	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+DicT	eng	N	N	O	O
+=	x	N	N	O	O
+NewTree	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+DicTree	eng	N	N	O	O
+
+InsetLetter	eng	N	N	O	O
+(	x	N	N	O	O
+DicTree	eng	N	N	O	O
+
+&	x	N	N	O	O
+DicT	eng	N	N	O	O
+,	x	N	N	O	O
+char	eng	N	N	O	O
+
+les	eng	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+frqu	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+les	eng	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+les	eng	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+NewTree	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+frq	eng	N	N	O	O
+[	x	N	N	O	O
+les	eng	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+frqu	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+les	eng	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+InsetString	eng	N	N	O	O
+(	x	N	N	O	O
+DicTree	eng	N	N	O	O
+
+&	x	N	N	O	O
+DicT	eng	N	N	O	O
+,	x	N	N	O	O
+char	eng	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+frqu	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+DicTree	eng	N	N	O	O
+
+TempTree	eng	N	N	O	O
+=	x	N	N	O	O
+DicT	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+\	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+TempTree	eng	N	N	O	O
+=	x	N	N	O	O
+InsetLetter	eng	N	N	O	O
+(	x	N	N	O	O
+TempTree	eng	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+frqu	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+DelTree	eng	N	N	O	O
+(	x	N	N	O	O
+DicTree	eng	N	N	O	O
+
+&	x	N	N	O	O
+DicT	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+NULL	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+26	m	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+DelTree	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+delete	eng	N	N	O	O
+
+DicT	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+FindWords	eng	N	N	O	O
+(	x	N	N	O	O
+DicTree	eng	N	N	O	O
+
+&	x	N	N	O	O
+DicT	eng	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+instr	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+outstr	eng	N	N	O	O
+[	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+mx	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+nowp	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+mx	eng	N	N	O	O
+>	x	N	N	O	O
+maxsum	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+maxsum	eng	N	N	O	O
+=	x	N	N	O	O
+mx	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+p	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+strp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+outstr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+instr	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+'	x	N	N	O	O
+0	x	N	N	O	O
+'	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+have	eng	N	N	O	O
+=	x	N	N	O	O
+false	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	m	N	N	O	O
+&&	x	N	N	O	O
+
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+frq	eng	N	N	O	O
+[	x	N	N	O	O
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+outstr	eng	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+have	eng	N	N	O	O
+|	x	N	N	O	O
+=	x	N	N	O	O
+FindWords	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+letter	eng	N	N	O	O
+[	x	N	N	O	O
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+instr	eng	N	N	O	O
+,	x	N	N	O	O
+outstr	eng	N	N	O	O
+,	x	N	N	O	O
+p	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+DicT	eng	N	N	O	O
+-	x	N	N	O	O
+>	x	N	N	O	O
+frq	eng	N	N	O	O
+[	x	N	N	O	O
+dir	eng	N	N	O	O
+[	x	N	N	O	O
+t	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+have	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+cas	eng	N	N	O	O
+,	x	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+fq	eng	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+len	eng	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+time	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+DicTree	eng	N	N	O	O
+
+DicT	eng	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+instr	eng	N	N	O	O
+[	x	N	N	O	O
+150	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+outstr	eng	N	N	O	O
+[	x	N	N	O	O
+150	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+[	x	N	N	O	O
+150	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+have	eng	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+cas	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cas	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+time	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+Scenario	eng	N	N	O	O
+
+#	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+:	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+time	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+BuiltTree	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+fq	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+InsetString	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+,	x	N	N	O	O
+str	eng	Y	N	O	O
+,	x	N	N	O	O
+fq	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+instr	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+nowp	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+have	eng	N	N	O	O
+=	x	N	N	O	O
+true	eng	N	N	O	O
+;	x	N	N	O	O
+
+len	eng	N	N	O	O
+=	x	N	N	O	O
+strlen	eng	N	N	O	O
+(	x	N	N	O	O
+instr	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+len	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+have	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+nowp	eng	N	N	O	O
+=	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+maxsum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+have	eng	N	N	O	O
+=	x	N	N	O	O
+FindWords	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+,	x	N	N	O	O
+instr	eng	N	N	O	O
+,	x	N	N	O	O
+outstr	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+have	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+c	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+strp	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+MANUALLY	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+DelTree	eng	N	N	O	O
+(	x	N	N	O	O
+DicT	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

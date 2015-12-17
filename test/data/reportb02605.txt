@@ -1,0 +1,414 @@
+POJ 1129 Channel Allocation - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+Channel Allocation 
+
+ Time Limit: 1000MS
+   
+  Memory Limit: 10000K
+ 
+
+ Total Submissions: 10300
+   
+  Accepted: 5245
+ 
+
+ Description
+ 
+
+  
+ 
+
+ When a radio station is broadcasting over a very large area, repeaters are used to retransmit the signal so that every receiver has a strong signal. However, the channels used by each repeater must be carefully chosen so that nearby repeaters do not interfere with one another. This condition is satisfied if adjacent repeaters use different channels. 
+ 
+
+  
+ 
+
+ Since the radio frequency spectrum is a precious resource, the number of channels required by a given network of repeaters should be minimised. You have to write a program that reads in a description of a repeater network and determines the minimum number of channels required.
+ 
+
+ Input
+ 
+
+  
+ 
+
+ The input consists of a number of maps of repeater networks. Each map begins with a line containing the number of repeaters. This is between 1 and 26, and the repeaters are referred to by consecutive upper-case letters of the alphabet starting with A. For example, ten repeaters would have the names A,B,C,...,I and J. A network with zero repeaters indicates the end of input. 
+ 
+
+  
+ 
+
+ Following the number of repeaters is a list of adjacency relationships. Each line has the form: 
+ 
+
+  
+ 
+
+ A:BCDH 
+ 
+
+  
+ 
+
+ which indicates that the repeaters B, C, D and H are adjacent to the repeater A. The first line describes those adjacent to repeater A, the second those adjacent to B, and so on for all of the repeaters. If a repeater is not adjacent to any other, its line has the form 
+ 
+
+  
+ 
+
+ A: 
+ 
+
+  
+ 
+
+ The repeaters are listed in alphabetical order. 
+ 
+
+  
+ 
+
+ Note that the adjacency is a symmetric relationship; if A is adjacent to B, then B is necessarily adjacent to A. Also, since the repeaters lie in a plane, the graph formed by connecting adjacent repeaters does not have any line segments that cross. 
+ 
+
+ Output
+ 
+
+  
+ 
+
+ For each map (except the final one with no repeaters), print a line containing the minumum number of channels needed so that no adjacent channels interfere. The sample output shows the format of this line. Take care that channels is in the singular form when only one channel is required.
+ 
+
+ Sample Input
+ 
+
+  
+ 
+
+ 2
+ 
+
+ A:
+ 
+
+ B:
+ 
+
+ 4
+ 
+
+ A:BC
+ 
+
+ B:ACD
+ 
+
+ C:ABD
+ 
+
+ D:BC
+ 
+
+ 4
+ 
+
+ A:BCD
+ 
+
+ B:ACD
+ 
+
+ C:ABD
+ 
+
+ D:ABC
+ 
+
+ 0
+ 
+
+ Sample Output
+ 
+
+  
+ 
+
+ 1 channel needed.
+ 
+
+ 3 channels needed.
+ 
+
+ 4 channels needed. 
+ 
+
+ Source
+ 
+
+  
+ 
+
+ Southern African 2001
+ 
+
+ 其实这道题目并不难 dfs暴搜一下就可以了，但是确实很容易错 ，请注意最后输出的单复数的变化，结果是1的时候是不加s的。或者复数的时候应该加s 很容易忽视掉
+ 
+
+ [cpp]  
+ 
+
+ #include <stdio.h>  
+ 
+
+ #include <string.h>  
+ 
+
+ char s1[1000];  
+ 
+
+ int a[30][30];  
+ 
+
+ int b[30][30],chan[30];  
+ 
+
+ int n,res,key;  
+ 
+
+ int main()  
+ 
+
+ {  
+ 
+
+     void dfs(int x);  
+ 
+
+     int i,j,m,s,t;  
+ 
+
+     int x,y,l;  
+ 
+
+     while(scanf("%d",&n)!=EOF)  
+ 
+
+     {  
+ 
+
+         if(n==0)  
+ 
+
+         {  
+ 
+
+             break;  
+ 
+
+         }  
+ 
+
+         memset(a,0,sizeof(a));  
+ 
+
+         memset(b,0,sizeof(b));  
+ 
+
+         memset(chan,0,sizeof(chan));  
+ 
+
+         for(i=0;i<=n-1;i++)  
+ 
+
+         {  
+ 
+
+             scanf("%s",s1);  
+ 
+
+             l=strlen(s1);  
+ 
+
+             x=s1[0]-'A'+1;  
+ 
+
+             for(j=2;j<=l-1;j++)  
+ 
+
+             {  
+ 
+
+                 y=s1[j]-'A'+1;  
+ 
+
+                 a[x][y]=1;  
+ 
+
+                 a[y][x]=1;  
+ 
+
+             }  
+ 
+
+         }  
+ 
+
+         res=0; key=0;  
+ 
+
+         dfs(1);  
+ 
+
+         if(res==1)  
+ 
+
+         {  
+ 
+
+             printf("%d channel needed.\n",res);  
+ 
+
+         }else  
+ 
+
+         {  
+ 
+
+             printf("%d channels needed.\n",res);  
+ 
+
+         }  
+ 
+
+     }  
+ 
+
+     return 0;  
+ 
+
+ }  
+ 
+
+ void dfs(int x)  
+ 
+
+ {  
+ 
+
+     int i,j,u,v;  
+ 
+
+     if(key)  
+ 
+
+     {  
+ 
+
+         return ;  
+ 
+
+     }  
+ 
+
+     for(i=1;i<=n;i++)  
+ 
+
+     {  
+ 
+
+         for(j=1;j<=n;j++)  
+ 
+
+         {  
+ 
+
+             if(a[x][j]&&b[j][i])  
+ 
+
+             {  
+ 
+
+                 break;  
+ 
+
+             }  
+ 
+
+         }  
+ 
+
+         if(j==n+1)  
+ 
+
+         {  
+ 
+
+             b[x][i]=1;  
+ 
+
+             chan[i]=1;  
+ 
+
+             if(x==n)  
+ 
+
+             {  
+ 
+
+                 for(u=1;u<=n;u++)  
+ 
+
+                 {  
+ 
+
+                     if(chan[u])  
+ 
+
+                     {  
+ 
+
+                         res++;  
+ 
+
+                     }  
+ 
+
+                 }  www.2cto.com
+ 
+
+                 key=1;  
+ 
+
+                 return ;  
+ 
+
+             }else  
+ 
+
+             {  
+ 
+
+                 dfs(x+1);  
+ 
+
+             }  
+ 
+
+             b[x][i]=0;  
+ 
+
+             chan[i]=0;  
+ 
+
+         }  
+ 
+
+     }  
+ 
+
+ }  
+ 
+
+  

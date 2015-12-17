@@ -1,0 +1,564 @@
+poj	eng	N	Y	O	B-OJ
+
+3333	m	N	N	O	I-OJ
+_	x	N	N	O	O
+foreverlin	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
+,	x	N	N	O	O
+从	p	N	N	O	O
+1	m	N	N	O	O
+到	v	N	N	O	O
+n	eng	N	N	O	O
+有序	n	Y	N	O	O
+的	uj	N	N	O	O
+检查	vn	N	N	O	O
+
+dfs	eng	Y	N	O	B-KNOWLEDGE
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+这么	r	N	N	O	O
+想	v	N	N	O	O
+如果	c	N	N	O	O
+能	v	N	N	O	O
+回到	v	N	N	O	O
+比	p	N	N	O	O
+当前	t	N	N	O	O
+小	a	N	N	O	O
+的	uj	N	N	O	O
+编号	n	N	N	O	O
+，	x	N	N	O	O
+那	r	N	N	O	O
+当然	d	N	N	O	O
+回去	v	N	N	O	O
+划算	v	N	N	O	O
+啦	y	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+这点	mq	N	N	O	O
+的	uj	N	N	O	O
+跳跃	v	N	N	O	O
+点	m	N	N	O	O
+比	p	N	N	O	O
+当前	t	N	N	O	O
+大	a	N	N	O	O
+，	x	N	N	O	O
+且	c	N	N	O	O
+值比	v	N	N	O	O
+顺序	n	N	N	O	O
+走	v	N	N	O	O
+又	d	N	N	O	O
+多	m	N	N	O	O
+肯定	v	N	N	O	O
+不会	v	N	N	O	O
+选择	v	N	N	O	O
+跳跃	v	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+Node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+d	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+正常	d	N	N	O	O
+的	uj	N	N	O	O
+查询	v	N	N	O	O
+
+int	eng	N	N	O	O
+
+td	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+玩	n	N	N	O	O
+trick	eng	N	N	O	O
+了	ul	N	N	O	O
+他	r	N	N	O	O
+检查	vn	N	N	O	O
+所需	n	N	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+tc	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+到	v	N	N	O	O
+下	f	N	N	O	O
+个	q	N	N	O	O
+房间	n	N	N	O	O
+去	v	N	N	O	O
+
+}	x	N	N	O	O
+Node	eng	N	N	O	O
+;	x	N	N	O	O
+
+Node	eng	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+101	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+101	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+101	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+c	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+>	x	N	N	O	O
+sum	eng	N	N	O	O
+)	x	N	N	O	O
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+c	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+<	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+<	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+td	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+,	x	N	N	O	O
+c	eng	N	N	O	O
++	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+td	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+c	eng	N	N	O	O
++	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+t	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+t	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+td	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+tc	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+记录	n	Y	N	O	O
+顺序	n	N	N	O	O
+找	v	N	N	O	O
+的	uj	N	N	O	O
+代价	n	N	N	O	O
+
+{	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

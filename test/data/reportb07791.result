@@ -1,0 +1,800 @@
+POJ	eng	N	Y	O	B-OJ
+
+2914	m	N	N	O	I-OJ
+
+Minimum	eng	N	N	O	O
+
+Cut	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+scorpiocj	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+无向	v	Y	N	O	B-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+每	r	N	N	O	O
+对	p	N	N	O	O
+顶点	n	Y	N	O	O
+间	f	N	N	O	O
+可能	v	N	N	O	O
+有	v	N	N	O	O
+多条	m	Y	N	O	O
+边	d	N	N	O	O
+，	x	N	N	O	O
+问	n	N	N	O	O
+最少	d	N	N	O	O
+删除	v	N	N	O	O
+多少	m	N	N	O	O
+条边	n	N	N	O	O
+才能	v	N	N	O	O
+将图	n	N	N	O	O
+分为	v	N	N	O	O
+两个	m	N	N	O	O
+子图	nr	N	N	O	O
+
+把	p	N	N	O	O
+两点	m	N	N	O	O
+间	f	N	N	O	O
+的	uj	N	N	O	O
+边数	n	N	N	O	O
+看成	v	N	N	O	O
+权重	n	N	N	O	O
+，	x	N	N	O	O
+就	d	N	N	O	O
+变成	v	N	N	O	O
+了求	v	N	N	O	O
+带权	v	Y	N	O	B-KNOWLEDGE
+无向	v	Y	N	O	I-KNOWLEDGE
+图	n	N	N	O	I-KNOWLEDGE
+的	uj	N	N	O	O
+最小	a	Y	N	O	B-KNOWLEDGE
+割	v	N	N	O	I-KNOWLEDGE
+了	ul	N	N	O	O
+，	x	N	N	O	O
+采用	v	N	N	O	O
+Stoer	eng	N	N	O	B-KNOWLEDGE
+-	x	N	N	O	I-KNOWLEDGE
+Wagner	eng	N	N	O	I-KNOWLEDGE
+算法	n	Y	N	O	O
+
+代码	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+inf	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+30	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+=	x	N	N	O	O
+510	m	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+MinCut	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+点	m	N	N	O	O
+到	v	N	N	O	O
+A	eng	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+，	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+表示	v	Y	N	O	O
+i	eng	N	N	O	O
+号	m	N	N	O	O
+节点	n	N	N	O	O
+属于	v	N	N	O	O
+哪个	r	N	N	O	O
+点	m	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+prev	eng	N	N	O	O
+,	x	N	N	O	O
+maxj	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+inf	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+>	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+maxj	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+初始化	l	N	N	O	O
+A	x	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+与	p	N	N	O	O
+各	r	N	N	O	O
+点	q	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+,	x	N	N	O	O
+即	c	N	N	O	O
+W	eng	N	N	O	O
+(	x	N	N	O	O
+A	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+选出	v	N	N	O	O
+第二个	m	N	N	O	O
+加入	v	N	N	O	O
+A	eng	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+
+maxj	eng	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+prev	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+第一个	m	N	N	O	O
+加入	v	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+是	v	N	N	O	O
+0	m	N	N	O	O
+号	m	N	N	O	O
+点	m	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+vis	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+vis	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+A	x	N	N	O	O
+=	x	N	N	O	O
+V	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+,	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+将	d	N	N	O	O
+prev	eng	N	N	O	O
+和	c	N	N	O	O
+maxj	eng	N	N	O	O
+两个	m	N	N	O	O
+点	m	N	N	O	O
+缩为	v	N	N	O	O
+一个点	m	N	N	O	O
+
+,	x	N	N	O	O
+prev	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+prev	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+prev	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+n	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+删除	v	N	N	O	O
+顶点	n	Y	N	O	O
+maxj	eng	N	N	O	O
+
+}	x	N	N	O	O
+
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+prev	eng	N	N	O	O
+=	x	N	N	O	O
+maxj	eng	N	N	O	O
+;	x	N	N	O	O
+
+maxj	eng	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+找	v	N	N	O	O
+点	q	N	N	O	O
+加入	v	N	N	O	O
+A	x	N	N	O	O
+，	x	N	N	O	O
+同时	c	N	N	O	O
+更新	d	N	N	O	O
+W	x	N	N	O	O
+(	x	N	N	O	O
+A	x	N	N	O	O
+,	x	N	N	O	O
+p	x	N	N	O	O
+)	x	N	N	O	O
+
+,	x	N	N	O	O
+因为	c	N	N	O	O
+A	eng	N	N	O	O
+新	a	N	N	O	O
+加入	v	N	N	O	O
+了	ul	N	N	O	O
+节点	n	N	N	O	O
+prev	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+vis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+g	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+prev	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+maxj	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+maxj	eng	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+dis	eng	N	N	O	O
+[	x	N	N	O	O
+node	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+maxj	eng	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+g	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+g	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+m	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+w	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+[	x	N	N	O	O
+b	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+a	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+w	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+/	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+MinCut	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

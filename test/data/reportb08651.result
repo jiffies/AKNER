@@ -1,0 +1,379 @@
+poj2756	eng	N	Y	O	B-OJ
+二叉树	n	Y	N	O	B-KNOWLEDGE
+
+-	x	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+出去	v	N	N	O	O
+兴趣	n	N	N	O	O
+做做	v	N	N	O	O
+这些	r	N	N	O	O
+。	x	N	N	O	O
+
+牛	n	N	N	O	O
+人	n	N	N	O	O
+可以	c	N	N	O	O
+直接	ad	N	N	O	O
+无视	v	N	N	O	O
+..	m	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+Author	eng	N	N	O	O
+:	x	N	N	O	O
+snowflake	eng	N	N	O	O
+
+Time	eng	N	N	O	O
+:	x	N	N	O	O
+2012	m	N	N	O	O
+/	x	N	N	O	O
+4	x	N	N	O	O
+/	x	N	N	O	O
+9	x	N	N	O	O
+
+desc	eng	N	N	O	O
+:	x	N	N	O	O
+poj2756	eng	N	Y	O	B-OJ
+简单	a	N	N	O	O
+题	n	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+/	x	N	N	O	O
+*	x	N	N	O	O
+
+结题	n	N	N	O	O
+报告	n	N	N	O	O
+：	x	N	N	O	O
+这	r	N	N	O	O
+题	n	N	N	O	O
+就是	d	N	N	O	O
+找到	v	N	N	O	O
+一个	m	N	N	O	O
+最先	d	N	N	O	O
+能	v	N	N	O	O
+使	v	N	N	O	O
+两个	m	N	N	O	O
+点	m	N	N	O	O
+重合	vn	N	N	O	O
+的	uj	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+依次	d	N	N	O	O
+枚举	nz	Y	N	O	O
+两个	m	N	N	O	O
+数所	n	N	N	O	O
+经历	n	N	N	O	O
+的	uj	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+
+直到	v	N	N	O	O
+根	p	N	N	O	O
+节点	n	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+在	p	N	N	O	O
+对比	v	N	N	O	O
+其	r	N	N	O	O
+内容	n	N	N	O	O
+。	x	N	N	O	O
+
+*	x	N	N	O	O
+/	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+x	x	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+j	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+floor	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+
+/	x	N	N	O	O
+
+2	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ok	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+p	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+p	x	N	N	O	O
+
+<	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+p	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+q	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+q	x	N	N	O	O
+
+<	x	N	N	O	O
+
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+q	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+b	x	N	N	O	O
+[	x	N	N	O	O
+q	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+p	x	N	N	O	O
+]	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+ok	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ok	eng	N	N	O	O
+)	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,36 @@
+zoj 1024 Calendar Game - I am coming！ - 博客频道 - CSDN.NET
+
+/*
+zoj_1024 博弈
+引用别人解释：
+Tips:
+这是一道博弈题，活的胜利的一方必须翻倒2001年11月4日；
+下面是观察推论结果，11月4日，11+4=15是奇数。由于无论是加
+一天还是加一个月都会改变m+d的奇偶性，除了下面几个特例
+2月28日、9月30日和11月30日，显然如果m和d是这三个日子的话
+则先行者必胜：
+2月28日到3月28日
+9月30日到10月1日
+11月30日到12月1日
+剩下的只有当m+d为偶数时先行者必胜。
+这里还要说明的是在中间的过程中会不会遇到这几个特殊情况，答案
+是否定的，认真想一下就很快能明白了。
+这个MS是01年韩国亚洲赛的题目，看来数学还是王道的啊！
+*/
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int main()
+{
+    int n,year,month,day;
+    scanf( "%d",&n );
+    while( n-- )
+    {
+        scanf( "%d%d%d",&year,&month,&day );
+        if( month==9 && day==30 ) printf( "YES\n" );
+        else if( month==11 && day==30 ) printf( "YES\n" );
+        else if( (month+day)%2==0 ) printf( "YES\n" );
+        else printf( "NO\n" );
+    }
+    return 0;
+}

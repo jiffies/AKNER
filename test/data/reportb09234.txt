@@ -1,0 +1,64 @@
+PKU 3174 Alignment of the Planets_Somethings_百度空间
+
+看懂题目直接暴力，O N3的算法也可以过得。。。
+不过精度上可能有点问题
+学习了一下别人的
+用数学变换就可以得到一个不用做除法的式子。。。小技巧
+又学了一招 哈哈
+哎。。。如果昨天能做到这个，可能又不一样了
+不过还是要感谢PIP，因为昨天发现一个人在真的很低落的时候，一句短短的鼓励，确实能让人感到很温暖~
+谢谢PIP，虽然你依然很猥琐
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include <math.h>
+using namespace std;
+struct node
+{
+int x,y;
+}node[800];
+struct list
+{
+int n1,n2,n3;
+}list[800*800];
+int main()
+{
+int n,count;
+while (scanf ("%d",&n)!=EOF)
+{
+int a,b;
+count=0;
+for (int i=0;i<n;i++)
+{
+scanf ("%d %d",&a,&b);
+node[i].x=a;
+node[i].y=b;
+}
+// sort(node,node+n,cmp);
+// printf ("go to se1\n");
+for (int i=0;i<n;i++)
+{
+for (int j=i+1;j<n;j++)
+{
+for (int k=j+1;k<n;k++)
+{
+int xl1=0,xl2=0;/////
+xl1=(node[k].y-node[j].y)*(node[j].x-node[i].x);
+xl2=(node[j].y-node[i].y)*(node[k].x-node[j].x);
+if(xl1==xl2)
+{
+list[count].n1=i;
+list[count].n2=j;
+list[count].n3=k;
+count++;
+}
+}
+}
+}
+printf ("%d\n",count);
+for (int i=0;i<count;i++)
+{
+printf ("%d %d %d\n",list[i].n1+1,list[i].n2+1,list[i].n3+1);
+}
+}
+}

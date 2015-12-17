@@ -1,0 +1,901 @@
+poj1835	eng	N	Y	O	B-OJ
+
+宇航员	n	N	N	O	O
+
+三维空间	n	N	N	O	O
+的	uj	N	N	O	O
+模拟	v	Y	N	O	O
+_	x	N	N	O	O
+hala	eng	N	N	O	O
+_	x	N	N	O	O
+acmer	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+之前	f	N	N	O	O
+一直	d	N	N	O	O
+在	p	N	N	O	O
+wa	eng	N	N	O	O
+，	x	N	N	O	O
+本来	t	N	N	O	O
+是用	v	N	N	O	O
+了	ul	N	N	O	O
+一个二维	m	N	N	O	O
+数组	n	Y	N	O	O
+保存	v	N	N	O	O
+，	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+，	x	N	N	O	O
+i	x	N	N	O	O
+表示	v	Y	N	O	O
+当前	t	N	N	O	O
+的	uj	N	N	O	O
+方向	n	N	N	O	O
+代表	n	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+，	x	N	N	O	O
+j	x	N	N	O	O
+表示	v	Y	N	O	O
+需要	v	N	N	O	O
+做	v	N	N	O	O
+的	uj	N	N	O	O
+转向	v	N	N	O	O
+，	x	N	N	O	O
+其实	d	N	N	O	O
+仅仅	d	N	N	O	O
+这些	r	N	N	O	O
+信息	n	N	N	O	O
+是	v	N	N	O	O
+不够	v	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+在	p	N	N	O	O
+xy	eng	N	N	O	O
+平面	n	Y	N	O	O
+上	f	N	N	O	O
+，	x	N	N	O	O
+面朝	n	N	N	O	O
+z	x	N	N	O	O
+方向	n	N	N	O	O
+，	x	N	N	O	O
+向左转	nr	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+根本	a	N	N	O	O
+不	d	N	N	O	O
+知道	v	N	N	O	O
+左	f	N	N	O	O
+是	v	N	N	O	O
+哪个	r	N	N	O	O
+方向	n	N	N	O	O
+，	x	N	N	O	O
+而	c	N	N	O	O
+如果	c	N	N	O	O
+一个	m	N	N	O	O
+人面	n	N	N	O	O
+朝	p	N	N	O	O
+的	uj	N	N	O	O
+方向	n	N	N	O	O
+和	c	N	N	O	O
+头顶	n	N	N	O	O
+的	uj	N	N	O	O
+方向	n	N	N	O	O
+能	v	N	N	O	O
+确定	v	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+就	d	N	N	O	O
+确定	v	N	N	O	O
+了	ul	N	N	O	O
+一个二维	m	N	N	O	O
+平面	n	Y	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+左边	f	N	N	O	O
+和	c	N	N	O	O
+右边	f	N	N	O	O
+也	d	N	N	O	O
+就	d	N	N	O	O
+定	v	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+需要	v	N	N	O	O
+一个	m	N	N	O	O
+6	x	N	N	O	O
+*	x	N	N	O	O
+6	m	N	N	O	O
+的	uj	N	N	O	O
+数组	n	Y	N	O	O
+保存	v	N	N	O	O
+前方	f	N	N	O	O
+和	c	N	N	O	O
+上方	f	N	N	O	O
+确定	v	N	N	O	O
+下	f	N	N	O	O
+以后	f	N	N	O	O
+左边	f	N	N	O	O
+的	uj	N	N	O	O
+方向	n	N	N	O	O
+，	x	N	N	O	O
+下面	f	N	N	O	O
+是	v	N	N	O	O
+代码	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+6	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+6	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+20	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+5	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+4	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+;	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+5	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+cal	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+&	x	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+&	x	N	N	O	O
+z	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+step	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+x	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+y	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+z	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+3	x	N	N	O	O
+)	x	N	N	O	O
+
+x	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+4	x	N	N	O	O
+)	x	N	N	O	O
+
+y	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+5	x	N	N	O	O
+)	x	N	N	O	O
+
+z	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+step	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+T	x	N	N	O	O
+;	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+T	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+z	x	N	N	O	O
+,	x	N	N	O	O
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+step	eng	N	N	O	O
+,	x	N	N	O	O
+head	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+T	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+=	x	N	N	O	O
+z	x	N	N	O	O
+=	x	N	N	O	O
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+direction	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+step	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+b	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+pos	eng	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+l	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+pos	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+head	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+r	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+pos	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+head	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+u	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+pos	eng	N	N	O	O
+;	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+head	eng	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+t	eng	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+direction	eng	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+'	x	N	N	O	O
+d	x	N	N	O	O
+'	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+t	x	N	N	O	O
+=	x	N	N	O	O
+pos	eng	N	N	O	O
+;	x	N	N	O	O
+
+pos	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+head	eng	N	N	O	O
++	x	N	N	O	O
+3	m	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+6	x	N	N	O	O
+;	x	N	N	O	O
+
+head	eng	N	N	O	O
+=	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cal	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+z	x	N	N	O	O
+,	x	N	N	O	O
+pos	eng	N	N	O	O
+,	x	N	N	O	O
+step	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+z	x	N	N	O	O
+,	x	N	N	O	O
+pos	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

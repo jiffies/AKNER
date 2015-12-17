@@ -1,0 +1,43 @@
+PKU 1026 Cipher_乐吾天_百度空间
+
+这需要求每一个位置的循环因子，最后用k模每一位的循环因子，然后输出相应的字符即可。
+不过陷阱不少，WA了N次。
+    每个block之后有个 空行。
+    scanf("%d ",&k); 也会WA。要用      scanf("%d",&k); getchar();
+     输出必须有n位，后面需要补空格 ' ' ;
+Source Code
+ Problem: 1026 User: AlbertLiu Memory: 312K Time: 47MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include <iostream>const int klen=200 ;int a[klen][klen] , sw[klen] , mod[klen] , n ;char word[klen] , res[klen] ;int main(){ int i , j , k ; while( scanf("%d",&n)&&n ) { for(i=0; i<n; ++i) scanf("%d",sw+i); for(i=0; i<n; ++i) --sw[i]; for( i=1,j=0; j<n; ++j,i=1) { a[0][j]=j ; do { a[i][j]= sw[ a[i-1][j] ] ; } while( a[i++][j]!=j ) ; mod[j] = i-1; } while( scanf("%d",&k)&&k ) { getchar(); gets(word); for(i=0; word[i]&&word[i]!=10 ; ++i); for(;i<n; ++i) word[i]=' '; for( j=0; j<n; ++j) res[ a[k%mod[j]][j] ] = word[j] ; res[n]=0; puts(res); } printf("\n"); } return 0;} 
+
+
+推荐文章:
+
+1. 
+POJ 1733 / URAL 1003 Parity game [并查集]
+
+2. 
+poj 1611-The Suspects
+
+3. 
+POJ 1006 Biorhythms
+
+4. 
+POJ 1005 I Think I Need a Houseboat
+
+5. 
+[POJ 2019]矩阵处理
+
+6. 
+[POJ 1019]数字处理
+
+7. 
+[POJ 2299]逆序对
+
+8. 
+[POJ 2029]矩阵处理
+
+9. 
+poj 1140 Expanding Fractions 模拟
+

@@ -1,0 +1,419 @@
+pku 1324  Holedox Moving_lywdx_百度空间
+
+首先声明我的程序写的很烂，限时5秒，我的程序4.5秒水过去了，
+
+我的思想应该是正确的，肯定还有剪枝的地方没注意到！
+
+先说一下题目大意：给你一个用二维数组，告诉你蛇的初始位置，并告诉你那些坐标点是石头，
+
+是石头的点蛇不能通过，问你蛇从起始点到（1，1）这点用的最少步数！
+
+思路：广搜，关键是怎么设置状态，首先头的位置必须清楚，之后是身体的位置，身体的位置我们
+
+可以用一个int类型的整数（2*（n-1）位的二进制数），我设4个方向为上下左右，
+
+其中上（00也就是十进制的0），右（01也就是十进制的1），下（10也就是十进制的2），
+
+左（11也就是十进制的3），记录身体的方法就是，看蛇的颈部在头的什么方向，得到颈部的位置，再看
+
+通过颈部的位置，看身体在颈部的什么方向，得到身体的位置.....这样进行直到找到尾部的位置！
+
+这样，一个状态怎么表示就出来了，它包含：1，头的坐标，2，身体的状态，3，到该状态走了多少步！
+
+如果用结构体表示一个状态，就应该是
+
+struct Node
+
+{
+
+     int s, y;   //头坐标
+
+     int state;   //改状态身体情况
+
+     int steps;   //当前用了多少步
+
+};
+
+怎么把状态转换成int类型，我是这样做的，比如，题目中的测试数据，state = 0；
+
+4 1
+
+4 2
+
+3 2
+
+3 1
+
+头坐标4 1
+
+则 （4，2） 头的右边，state |= 1 << (2*(n-i)-2);//其中的  i  是表示
+
+头后面的第几个节点，因为我的二进制是位高——>低  表示蛇的  颈——>尾
+
+（3，2）又在（4，2）的上边，上边不用管，因为  state ｜= 0 << (2*(n-i)-2)没变化
+
+（3，1）在（3，2） 的左边  state ｜= 0 << (2*(n-i)-1)；state ｜= 0 << (2*(n-i)-2)
+
+这里有两个式子，因为左边是二进制11，两个1，所以都要处理，
+
+这样就得到了初始状态，在后面的蛇头移动后，要找身体的位置的状态 也是这种方法，但是在那里既要
+
+注意了，如果蛇头往上运动，则颈部在它的下边，如果蛇头往左边移动，则颈部在它的右边，这里别弄
+
+混了！
+
+这个题的标记要用三维的数组，
+
+状态都设计出来了，这个题就简单了！ 直接bfs；
+
+可是我没找出哪里还可以剪枝的地方！！！继续调试中..............
+
+#include <iostream>
+
+#include <cstdio>
+
+#include <cstring>
+
+#include <algorithm>
+
+#include <queue>
+
+#define Max 25
+
+#define Maxn 10010
+
+using namespace std;
+
+struct Node
+
+{
+
+ int x, y;
+
+ int steps;
+
+ int state;
+
+};
+
+struct Node1
+
+{
+
+ int x, y;
+
+};
+
+bool G[Max][Max];
+
+int move[4][2] = {{-1,0},{0,1},{1,0},{0,-1}};
+
+bool visit[Max][Max][Maxn];
+
+int r, c, n, m;
+
+void bfs(Node fir)
+
+{
+
+ queue<Node> q;
+
+ Node end;
+
+ int sum = 0;
+
+ bool juge = false;
+
+ Node1 parent[Max];
+
+ memset(parent, 0 , sizeof(parent));
+
+ parent[0].x = fir.x;
+
+ parent[0].y = fir.y;
+
+ q.push(fir);
+
+ while(!q.empty())
+
+ {
+
+ fir = q.front();
+
+ q.pop();
+
+ int index_x = fir.x;
+
+ int index_y = fir.y;
+
+ for(int j = 1; j < n; ++j)    //计算蛇在上一状态中的身体的坐标，并记录在parent中
+
+ {
+
+ int index = 0, rez = 0;
+
+ index = (((1<<(2*(n-j)-1)) | (1<<(2*(n-j)-2))) & fir.state) ;
+
+ int index1 = (index & (1<<(2*(n-j)-2)));
+
+ rez = index1 >> (2*(n-j)-2);
+
+ int index2 = (index & (1<<(2*(n-j)-1)));
+
+ rez |= index2 >> (2*(n-j)-2);
+
+ int xnow = index_x + move[rez][0];
+
+ int ynow = index_y + move[rez][1];
+
+ parent[j].x = xnow;
+
+ parent[j].y = ynow;
+
+ index_x = xnow;
+
+ index_y = ynow;
+
+ }
+
+ for(int i = 0; i < 4; ++i)          //蛇头向4个方向移动
+
+ {
+
+ Node media;
+
+ bool flag = false;
+
+ media.x = fir.x + move[i][0];
+
+ media.y = fir.y + move[i][1];
+
+ if(media.x <= 0 || media.x > r || media.y <= 0 || media.y > c || G[media.x][media.y])
+
+ continue;
+
+ if(media.x == 1 && media.y == 1)           //到达（1，1）退出
+
+ {
+
+ sum = fir.steps + 1;
+
+ juge = true;
+
+ break;
+
+ }
+
+ if(i == 0)                 //上边条件全部满足后，计算蛇头移动一步后，当前蛇身体状态
+
+ {
+
+ media.state = (fir.state >> 2) | (1 << (2*(n-1)-1));
+
+ }
+
+ else if(i == 1)
+
+ {
+
+ media.state = (fir.state >> 2) | (1 << (2*(n-1)-1)) | (1 << (2*(n-1)-2));
+
+ }
+
+ else if(i == 2)
+
+ {
+
+ media.state = fir.state >> 2;
+
+ }
+
+ else if(i == 3)
+
+ {
+
+ media.state = (fir.state >> 2) | (1<<(2*(n-1)-2));
+
+ }
+
+ if(!visit[media.x][media.y][media.state] )            //假如这个状态没有出现过，入队列
+
+ {
+
+ for(int j = 1; j < n; ++ j)
+
+ {
+
+ if(media.x == parent[j].x && media.y == parent[j].y)
+
+ {
+
+ flag = true;
+
+ break;
+
+ }
+
+ }
+
+ if(flag)
+
+ continue;
+
+ visit[media.x][media.y][media.state] = true;       //标记
+
+ media.steps = fir.steps + 1;
+
+ q.push(media);
+
+ }
+
+ if(juge) break;
+
+ }
+
+ if(juge) break;
+
+ }
+
+ while(!q.empty()) q.pop();
+
+ if(juge) printf("%d\n",sum);
+
+ else printf("-1\n");
+
+}
+
+void init()
+
+{
+
+ int test = 1;
+
+ while(scanf("%d%d%d",&r,&c,&n) && r && c && n)
+
+ {
+
+ Node str;
+
+ int x, y, index = 0, rez = 0;
+
+ printf("Case %d", test);
+
+ printf(": ");
+
+ test ++;
+
+ int x1, y1;
+
+ scanf("%d%d",&str.x,&str.y);
+
+ x1 = str.x;
+
+ y1 = str.y;
+
+ for(int i = 1; i < n; ++i)           // 计算蛇的初始状态
+
+ {
+
+ scanf("%d%d",&x,&y);
+
+ if(x1 == x)
+
+ {
+
+ if(y > y1)
+
+ {
+
+ index |= 1 << (2*(n-i)-2);
+
+ }
+
+ else
+
+ {
+
+ index |= 1 << (2*(n-i)-1);
+
+ index |= 1 << (2*(n-i)-2);
+
+ }
+
+ }
+
+ else if(y == y1)
+
+ {
+
+ if(x > x1)
+
+ {
+
+ index |= 1 << (2*(n-i)-1);
+
+ }
+
+ }
+
+ x1 = x;
+
+ y1 = y;
+
+ }
+
+ str.state = index;
+
+ str.steps = 0;
+
+ scanf("%d", &m);
+
+ for(int i = 0; i < Max; ++i)
+
+ {
+
+ for(int j = 0; j < Max ; ++ j)
+
+ G[i][j] = false;
+
+ }
+
+ for(int i = 0; i < m ; ++ i)
+
+ {
+
+ scanf("%d%d",&x,&y);
+
+ G[x][y] = true;
+
+ }
+
+ if(str.x == 1 && str.y == 1)
+
+ {
+
+ printf("0\n");
+
+ continue;
+
+ }
+
+ memset(visit, false, sizeof(visit));
+
+ visit[str.x][str.y][str.state] = true;
+
+ bfs(str);
+
+ }
+
+}
+
+int main()
+
+{
+
+ init();
+
+ return 0;
+
+}

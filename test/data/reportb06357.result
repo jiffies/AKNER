@@ -1,0 +1,653 @@
+POJ2038	eng	N	Y	O	B-OJ
+
+-	x	N	N	O	O
+
+hongshundi	eng	N	N	O	O
+的	uj	N	N	O	O
+专栏	n	N	N	O	O
+
+-	x	N	N	O	O
+
+博客	nr	N	N	O	O
+频道	n	N	N	O	O
+
+-	x	N	N	O	O
+
+CSDN	eng	N	N	O	O
+.	m	N	N	O	O
+NET	eng	N	N	O	O
+
+摘要	v	N	N	O	O
+：	x	N	N	O	O
+水题	n	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+了	ul	N	N	O	O
+next	eng	N	N	O	O
+_	x	N	N	O	O
+permutation	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+size	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+100	m	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+length	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+5	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+array	eng	N	N	O	O
+[	x	N	N	O	O
+length	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+size	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+calDist	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+dist	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+<	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+=	x	N	N	O	O
+j	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+<	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+index	eng	N	N	O	O
+_	x	N	N	O	O
+1	m	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+index	eng	N	N	O	O
+_	x	N	N	O	O
+2	m	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+s	x	N	N	O	O
+<	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+s	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+data	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+at	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+array	eng	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+index	eng	N	N	O	O
+_	x	N	N	O	O
+1	m	N	N	O	O
+
+=	x	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+data	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+at	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+array	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+index	eng	N	N	O	O
+_	x	N	N	O	O
+2	m	N	N	O	O
+
+=	x	N	N	O	O
+
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+index	eng	N	N	O	O
+_	x	N	N	O	O
+1	m	N	N	O	O
+
+>	x	N	N	O	O
+
+index	eng	N	N	O	O
+_	x	N	N	O	O
+2	m	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+dist	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+dist	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+n	x	N	N	O	O
+
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+n	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+cin	eng	N	N	O	O
+
+>	x	N	N	O	O
+>	x	N	N	O	O
+
+data	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+100	m	N	N	O	O
+
+*	x	N	N	O	O
+
+10	m	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+array	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+'	x	N	N	O	O
+A	x	N	N	O	O
+'	x	N	N	O	O
++	x	N	N	O	O
+i	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+string	eng	N	N	O	O
+
+median	eng	N	N	O	O
+_	x	N	N	O	O
+str	eng	Y	N	O	O
+
+=	x	N	N	O	O
+
+"	x	N	N	O	O
+ABCDE	eng	N	N	O	O
+"	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+,	x	N	N	O	O
+
+calDist	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+
+next	eng	N	N	O	O
+_	x	N	N	O	O
+permutation	eng	N	N	O	O
+(	x	N	N	O	O
+array	eng	N	N	O	O
+,	x	N	N	O	O
+
+array	eng	N	N	O	O
++	x	N	N	O	O
+length	eng	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+calDist	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+
+value	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+value	eng	N	N	O	O
+;	x	N	N	O	O
+
+median	eng	N	N	O	O
+_	x	N	N	O	O
+str	eng	Y	N	O	O
+.	m	N	N	O	O
+clear	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+char	eng	N	N	O	O
+
+buf	eng	N	N	O	O
+[	x	N	N	O	O
+10	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+<	x	N	N	O	O
+length	eng	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+sprintf	eng	N	N	O	O
+(	x	N	N	O	O
+buf	eng	N	N	O	O
+,	x	N	N	O	O
+
+"	x	N	N	O	O
+%	x	N	N	O	O
+c	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+array	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+median	eng	N	N	O	O
+_	x	N	N	O	O
+str	eng	Y	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+buf	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+cout	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+median	eng	N	N	O	O
+_	x	N	N	O	O
+str	eng	Y	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+median	eng	N	N	O	O
+
+ranking	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+min	eng	N	N	O	O
+_	x	N	N	O	O
+value	eng	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+"	x	N	N	O	O
+.	x	N	N	O	O
+"	x	N	N	O	O
+
+<	x	N	N	O	O
+<	x	N	N	O	O
+
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+

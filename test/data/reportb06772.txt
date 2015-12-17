@@ -1,0 +1,41 @@
+poj1740(A New Stone Game+男人八题之一) - 鸟 的 天 空 - 博客频道 - CSDN.NET
+
+      题目链接：http://poj.org/problem?id=1740
+      题意：有N堆石子，可以从一堆中取走至少一个石子，然后将此堆剩余的石子的任意多个任意分配到其它的堆中，最后一个取完石子的胜利。两个人都使用最有策略，问是不是先手胜利。
+       男人八题中题解：当且仅当N为偶数并且“每个数字出现偶数次”时先手会输；
+代码：
+ 
+#include<stdio.h>
+#include<string.h>
+int numpie[105];
+int main()
+{
+	int N;
+	while(scanf("%d",&N) && N!=0)
+	{
+		int i;
+		int pie;
+		memset(numpie,0,sizeof(numpie));
+		for(i=0;i<N;i++)
+		{
+			scanf("%d",&pie);
+			numpie[pie]++;
+		}
+        if(N%2 == 1)
+		{
+			printf("1\n");
+			continue;
+		}
+		for(i=0;i<101;i++)
+        {
+			if(numpie[i]%2 ==1)
+				break;
+		}
+		if(i==101)
+			printf("0\n");
+		else 
+			printf("1\n");
+	}
+	return 0;
+} 
+

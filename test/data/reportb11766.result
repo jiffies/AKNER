@@ -1,0 +1,1171 @@
+zoj1041	eng	N	Y	O	B-OJ
+
+poj1106	eng	N	Y	O	B-OJ
+
+Transmitters	eng	N	N	O	O
+_	x	N	N	O	O
+xiao	eng	N	N	O	O
+_	x	N	N	O	O
+mifan	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+Description	eng	N	N	O	O
+
+In	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+wireless	eng	N	N	O	O
+
+network	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+multiple	eng	N	N	O	O
+
+transmitters	eng	N	N	O	O
+
+sending	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+frequencies	eng	N	N	O	O
+,	x	N	N	O	O
+
+it	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+often	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+requirement	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+signals	eng	N	N	O	O
+
+don	eng	N	N	O	O
+'	x	N	N	O	O
+t	x	N	N	O	O
+
+overlap	eng	N	N	O	O
+,	x	N	N	O	O
+
+or	eng	Y	N	O	O
+
+at	eng	N	N	O	O
+
+least	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+don	eng	N	N	O	O
+'	x	N	N	O	O
+t	x	N	N	O	O
+
+conflict	eng	N	N	O	O
+.	m	N	N	O	O
+
+One	eng	N	N	O	O
+
+way	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+accomplishing	eng	N	N	O	O
+
+this	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+restrict	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+transmitter	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+coverage	eng	N	N	O	O
+
+area	eng	N	N	O	O
+.	m	N	N	O	O
+
+This	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+uses	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+shielded	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+only	eng	N	N	O	O
+
+broadcasts	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+semicircle	eng	N	N	O	O
+.	m	N	N	O	O
+
+A	x	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+T	x	N	N	O	O
+
+is	eng	N	N	O	O
+
+located	eng	N	N	O	O
+
+somewhere	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+000	m	N	N	O	O
+
+square	eng	N	N	O	O
+
+meter	eng	N	N	O	O
+
+grid	eng	N	N	O	O
+.	m	N	N	O	O
+
+It	eng	N	N	O	O
+
+broadcasts	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+a	x	N	N	O	O
+
+semicircular	eng	N	N	O	O
+
+area	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+radius	eng	N	N	O	O
+
+r	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+may	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+rotated	eng	N	N	O	O
+
+any	eng	N	N	O	O
+
+amount	eng	N	N	O	O
+,	x	N	N	O	O
+
+but	eng	N	N	O	O
+
+not	eng	N	N	O	O
+
+moved	eng	N	N	O	O
+.	m	N	N	O	O
+
+Given	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+points	eng	N	N	O	O
+
+anywhere	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+grid	eng	N	N	O	O
+,	x	N	N	O	O
+
+compute	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+simultaneously	eng	N	N	O	O
+
+reached	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+'	x	N	N	O	O
+s	x	N	N	O	O
+
+signal	eng	N	N	O	O
+.	m	N	N	O	O
+
+Figure	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+shows	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+rotations	eng	N	N	O	O
+.	m	N	N	O	O
+
+poj1106	eng	N	Y	O	B-OJ
+
+Transmitters	eng	N	N	O	O
+"	x	N	N	O	O
+
+title	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+zoj1041	eng	N	Y	O	B-OJ
+
+poj1106	eng	N	Y	O	B-OJ
+
+Transmitters	eng	N	N	O	O
+"	x	N	N	O	O
+>	x	N	N	O	O
+
+All	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+coordinates	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+integers	eng	N	N	O	O
+
+(	x	N	N	O	O
+0	x	N	N	O	O
+-	x	N	N	O	O
+1000	m	N	N	O	O
+)	x	N	N	O	O
+.	x	N	N	O	O
+
+The	eng	N	N	O	O
+
+radius	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+positive	eng	N	N	O	O
+
+real	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+greater	eng	N	N	O	O
+
+than	eng	N	N	O	O
+
+0.	m	N	N	O	O
+
+Points	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+boundary	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+semicircle	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+considered	eng	N	N	O	O
+
+within	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+semicircle	eng	N	N	O	O
+.	m	N	N	O	O
+
+There	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+1	x	N	N	O	O
+-	x	N	N	O	O
+150	m	N	N	O	O
+
+unique	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+to	eng	N	N	O	O
+
+examine	eng	N	N	O	O
+
+per	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+.	m	N	N	O	O
+
+No	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+at	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+same	eng	N	N	O	O
+
+location	eng	N	N	O	O
+
+as	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+.	m	N	N	O	O
+
+Input	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+consists	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+information	eng	N	N	O	O
+
+for	eng	Y	N	O	O
+
+one	eng	N	N	O	O
+
+or	eng	Y	N	O	O
+
+more	eng	N	N	O	O
+
+independent	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+problems	eng	N	N	O	O
+.	m	N	N	O	O
+
+Each	eng	N	N	O	O
+
+problem	eng	N	N	O	O
+
+begins	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+one	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+containing	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+coordinates	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+broadcast	eng	N	N	O	O
+
+radius	eng	N	N	O	O
+,	x	N	N	O	O
+
+r	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+next	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+on	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+grid	eng	N	N	O	O
+,	x	N	N	O	O
+
+followed	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+N	x	N	N	O	O
+
+sets	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+coordinates	eng	N	N	O	O
+,	x	N	N	O	O
+
+one	eng	N	N	O	O
+
+set	eng	N	N	O	O
+
+per	eng	N	N	O	O
+
+line	eng	N	N	O	O
+.	m	N	N	O	O
+
+The	eng	N	N	O	O
+
+end	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+input	eng	N	N	O	O
+
+is	eng	N	N	O	O
+
+signalled	eng	N	N	O	O
+
+by	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+line	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+negative	eng	N	N	O	O
+
+radius	eng	N	N	O	O
+;	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+values	eng	N	N	O	O
+
+will	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+present	eng	N	N	O	O
+
+but	eng	N	N	O	O
+
+indeterminate	eng	N	N	O	O
+.	m	N	N	O	O
+
+Figures	eng	N	N	O	O
+
+1	x	N	N	O	O
+
+and	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+represent	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+the	eng	N	N	O	O
+
+first	eng	N	N	O	O
+
+two	eng	N	N	O	O
+
+example	eng	N	N	O	O
+
+data	eng	N	N	O	O
+
+sets	eng	N	N	O	O
+
+below	eng	N	N	O	O
+,	x	N	N	O	O
+
+though	eng	N	N	O	O
+
+they	eng	N	N	O	O
+
+are	eng	N	N	O	O
+
+on	eng	N	N	O	O
+
+different	eng	N	N	O	O
+
+scales	eng	N	N	O	O
+.	m	N	N	O	O
+
+Figures	eng	N	N	O	O
+
+1	m	N	N	O	O
+a	eng	N	N	O	O
+
+and	eng	N	N	O	O
+
+2	x	N	N	O	O
+
+show	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+
+rotations	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+result	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+maximal	eng	N	N	O	O
+
+coverage	eng	N	N	O	O
+.	m	N	N	O	O
+
+Output	eng	N	N	O	O
+
+For	eng	N	N	O	O
+
+each	eng	N	N	O	O
+
+transmitter	eng	N	N	O	O
+,	x	N	N	O	O
+
+the	eng	N	N	O	O
+
+output	eng	N	N	O	O
+
+contains	eng	N	N	O	O
+
+a	x	N	N	O	O
+
+single	eng	N	N	O	O
+
+line	eng	N	N	O	O
+
+with	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+maximum	eng	N	N	O	O
+
+number	eng	N	N	O	O
+
+of	eng	N	N	O	O
+
+points	eng	N	N	O	O
+
+that	eng	N	N	O	O
+
+can	eng	N	N	O	O
+
+be	eng	Y	N	O	O
+
+contained	eng	N	N	O	O
+
+in	eng	Y	N	O	O
+
+some	eng	N	N	O	O
+
+semicircle	eng	N	N	O	O
+.	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Input	eng	N	N	O	O
+
+25	m	N	N	O	O
+
+25	m	N	N	O	O
+
+3.5	m	N	N	O	O
+
+7	x	N	N	O	O
+
+25	m	N	N	O	O
+
+28	m	N	N	O	O
+
+23	m	N	N	O	O
+
+27	m	N	N	O	O
+
+27	m	N	N	O	O
+
+27	m	N	N	O	O
+
+24	m	N	N	O	O
+
+23	m	N	N	O	O
+
+26	m	N	N	O	O
+
+23	m	N	N	O	O
+
+24	m	N	N	O	O
+
+29	m	N	N	O	O
+
+26	m	N	N	O	O
+
+29	m	N	N	O	O
+
+350	m	N	N	O	O
+
+200	m	N	N	O	O
+
+2.0	m	N	N	O	O
+
+5	x	N	N	O	O
+
+350	m	N	N	O	O
+
+202	m	N	N	O	O
+
+350	m	N	N	O	O
+
+199	m	N	N	O	O
+
+350	m	N	N	O	O
+
+198	m	N	N	O	O
+
+348	m	N	N	O	O
+
+200	m	N	N	O	O
+
+352	m	N	N	O	O
+
+200	m	N	N	O	O
+
+995	m	N	N	O	O
+
+995	m	N	N	O	O
+
+10.0	m	N	N	O	O
+
+4	x	N	N	O	O
+
+1000	m	N	N	O	O
+
+1000	m	N	N	O	O
+
+999	m	N	N	O	O
+
+998	m	N	N	O	O
+
+990	m	N	N	O	O
+
+992	m	N	N	O	O
+
+1000	m	N	N	O	O
+
+999	m	N	N	O	O
+
+100	m	N	N	O	O
+
+100	m	N	N	O	O
+
+-	x	N	N	O	O
+2.5	m	N	N	O	O
+
+Sample	eng	N	N	O	O
+
+Output	eng	N	N	O	O
+
+3	x	N	N	O	O
+
+4	x	N	N	O	O
+
+4	x	N	N	O	O
+
+利用	n	N	N	O	O
+向量	n	Y	N	O	O
+叉积	n	Y	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+1010	m	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+1010	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+,	x	N	N	O	O
+max	eng	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+r	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+r	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+*	x	N	N	O	O
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+-	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+(	x	N	N	O	O
+y1	eng	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+y1	eng	N	N	O	O
+-	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+-	x	N	N	O	O
+x1	eng	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+-	x	N	N	O	O
+y1	eng	N	N	O	O
+;	x	N	N	O	O
+
+j	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+max	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+num	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+ans	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+k	x	N	N	O	O
+<	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+k	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+k	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+num	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+x	x	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+ans	eng	N	N	O	O
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+>	x	N	N	O	O
+max	eng	N	N	O	O
+)	x	N	N	O	O
+max	eng	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+ans	eng	N	N	O	O
+>	x	N	N	O	O
+max	eng	N	N	O	O
+)	x	N	N	O	O
+max	eng	N	N	O	O
+=	x	N	N	O	O
+ans	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+max	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

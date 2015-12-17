@@ -1,0 +1,622 @@
+[	x	N	N	O
+pku1716	eng	N	Y	B-OJ
+]	x	N	N	O
+Integer	eng	N	N	O
+ 	x	N	N	O
+Intervals	eng	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+lovekid	eng	N	N	O
+的	uj	N	N	O
+日志	ns	N	N	O
+ 	x	N	N	O
+-	x	N	N	O
+ 	x	N	N	O
+网易	n	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+Source	eng	N	N	O
+ 	x	N	N	O
+Code	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Problem	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+1716	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+User	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+loveKid	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Memory	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+248	m	N	N	O
+K	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Time	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+0	m	N	N	O
+MS	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Language	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+C++	nz	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+Result	eng	N	N	O
+:	x	N	N	O
+ 	x	N	N	O
+Accepted	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+Source	eng	N	N	O
+ 	x	N	N	O
+Code	eng	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+贪心	v	Y	N	B-KNOWLEDGE
+...	m	N	N	O
+周赛	nr	N	N	O
+卡住	nr	N	N	O
+了	ul	N	N	O
+...	m	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+stdio	eng	N	N	O
+.	m	N	N	O
+h	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+<	x	N	N	O
+algorithm	eng	N	N	O
+>	x	N	N	O
+
+	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+struct	eng	N	N	O
+ 	x	N	N	O
+lovekid	eng	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+start	eng	N	N	O
+,	x	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+10002	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+bool	eng	N	N	O
+ 	x	N	N	O
+cmp	eng	N	N	O
+(	x	N	N	O
+lovekid	eng	N	N	O
+ 	x	N	N	O
+t1	eng	N	N	O
+,	x	N	N	O
+lovekid	eng	N	N	O
+ 	x	N	N	O
+t2	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+t2	eng	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+>	x	N	N	O
+t1	eng	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+currentS	eng	N	N	O
+,	x	N	N	O
+currentE	eng	N	N	O
+,	x	N	N	O
+ans	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+/	x	N	N	O
+/	x	N	N	O
+freopen	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+C	x	N	N	O
+:	x	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+Documents	eng	N	N	O
+ 	x	N	N	O
+and	eng	N	N	O
+ 	x	N	N	O
+Settings	eng	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+Administrator	eng	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+桌面	n	N	N	O
+\	x	N	N	O
+\	x	N	N	O
+in	eng	Y	N	O
+.	m	N	N	O
+txt	eng	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+"	x	N	N	O
+r	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+stdin	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+while	eng	N	N	O
+(	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+n	eng	N	N	O
+)	x	N	N	O
+!	x	N	N	O
+=	x	N	N	O
+EOF	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+scanf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+start	eng	N	N	O
+,	x	N	N	O
+&	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+sort	eng	N	N	O
+(	x	N	N	O
+kid	eng	N	N	O
+,	x	N	N	O
+kid	eng	N	N	O
++	x	N	N	O
+n	eng	N	N	O
+,	x	N	N	O
+cmp	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentS	eng	N	N	O
+=	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentE	eng	N	N	O
+=	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+ans	eng	N	N	O
+=	x	N	N	O
+2	x	N	N	O
+,	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+n	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+start	eng	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+currentS	eng	N	N	O
+)	x	N	N	O
+continue	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+start	eng	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+currentE	eng	N	N	O
+)	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
+++	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentS	eng	N	N	O
+=	x	N	N	O
+currentE	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentE	eng	N	N	O
+=	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ans	eng	N	N	O
++	x	N	N	O
+=	x	N	N	O
+2	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentS	eng	N	N	O
+=	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+currentE	eng	N	N	O
+=	x	N	N	O
+kid	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+.	m	N	N	O
+end	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+printf	eng	N	N	O
+(	x	N	N	O
+"	x	N	N	O
+%	x	N	N	O
+d	x	N	N	O
+\	x	N	N	O
+n	x	N	N	O
+"	x	N	N	O
+,	x	N	N	O
+ans	eng	N	N	O
+)	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O

@@ -1,0 +1,390 @@
+pku	eng	N	Y	O	B-OJ
+
+1061	m	N	N	O	I-OJ
+
+-	x	N	N	O	O
+
+Because	eng	N	N	O	O
+
+Of	eng	N	N	O	O
+
+You	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+博客园	nr	N	N	O	O
+
+View	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+__	x	N	N	O	O
+int64	eng	N	N	O	O
+
+lld	eng	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+lld	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+lld	eng	N	N	O	O
+
+b	x	N	N	O	O
+,	x	N	N	O	O
+lld	eng	N	N	O	O
+
+&	x	N	N	O	O
+d	eng	N	N	O	O
+,	x	N	N	O	O
+lld	eng	N	N	O	O
+
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+lld	eng	N	N	O	O
+
+&	x	N	N	O	O
+y	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+!	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+d	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+y	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+a	x	N	N	O	O
+%	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+y	x	N	N	O	O
+-	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+/	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+lld	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+n	x	N	N	O	O
+,	x	N	N	O	O
+l	x	N	N	O	O
+;	x	N	N	O	O
+
+lld	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+g	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+x	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+y	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+l	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+=	x	N	N	O	O
+l	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+c	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+Impossible	eng	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+s	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+/	x	N	N	O	O
+d	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+*	x	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+/	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+y	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+%	x	N	N	O	O
+s	eng	N	N	O	O
++	x	N	N	O	O
+s	eng	N	N	O	O
+)	x	N	N	O	O
+%	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+　	x	N	N	O	O
+　	x	N	N	O	O
+若	c	N	N	O	O
+方程	n	Y	N	O	O
+ax	eng	N	N	O	O
++	x	N	N	O	O
+by	eng	N	N	O	O
+=	x	N	N	O	O
+c	eng	N	N	O	O
+的	uj	N	N	O	O
+一组	m	N	N	O	O
+正整数	n	N	N	O	O
+解为	v	N	N	O	O
+(	x	N	N	O	O
+x0	eng	N	N	O	O
+,	x	N	N	O	O
+y0	eng	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+则	d	N	N	O	O
+它	r	N	N	O	O
+的	uj	N	N	O	O
+任意	v	Y	N	O	O
+整数	n	Y	N	O	O
+解	v	N	N	O	O
+都	d	N	N	O	O
+可以	c	N	N	O	O
+写成	v	N	N	O	O
+（	x	N	N	O	O
+x0	eng	N	N	O	O
++	x	N	N	O	O
+kb	eng	N	N	O	O
+'	x	N	N	O	O
+,	x	N	N	O	O
+y0	eng	N	N	O	O
+-	x	N	N	O	O
+ka	eng	Y	N	O	O
+'	x	N	N	O	O
+）	x	N	N	O	O
+,	x	N	N	O	O
+其中	r	N	N	O	O
+，	x	N	N	O	O
+a	x	N	N	O	O
+'	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+/	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+'	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+/	x	N	N	O	O
+gcd	eng	Y	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+k	eng	N	N	O	O
+取	v	N	N	O	O
+任意	v	Y	N	O	O
+整数	n	Y	N	O	O
+

@@ -1,0 +1,83 @@
+POJ 1655 Balancing Act - 浙西贫农 - 博客园
+
+实际上，这个题不难，状态很好写：balace[i]=max(size[j],N-size[i])，其中i是j的父节点，size[i]表示以节点i为根节点所构成子树的节点总数。
+一遍dfs就可以搞定。题目里给的数据是告诉你每两个节点之间有一条边，而不是父子节点关系。。。
+ 
+
+ 
+ 
+ View Code  
+  
+   1 #include <iostream>
+ 2 #include <cstdio>
+ 3 #include <vector>
+ 4 #define MAX 0xffffff
+ 5 using namespace std;
+ 6 
+ 7 vector <int> G[20001];
+ 8 int balance[20001];
+ 9 bool visit[20001];
+10 int n,t;
+11 
+12 int max(int a,int b)
+13 {
+14     return a > b ? a : b;
+15 }
+16 
+17 int min(int a,int b)
+18 {
+19     return a < b ? a : b;
+20 }
+21 
+22 int dfs(int v)
+23 {
+24     visit[v] = true;
+25     int sum = 1,temp;
+26     for(vector<int>::size_type i = 0;i < G[v].size();i++)
+27     {
+28         int u = G[v][i];
+29         if(visit[u])
+30             continue;
+31 
+32         temp = dfs(u);
+33         sum += temp;
+34         balance[v] = max(balance[v],temp);
+35     }
+36     balance[v] = max(balance[v],n - sum);
+37     return sum;
+38 }
+39 int main()
+40 {
+41     scanf("%d",&t);
+42     while(t--)
+43     {
+44         int i,p,q;
+45         scanf("%d",&n);
+46         for(i = 1;i <= n;i++)
+47         {
+48             G[i].clear();
+49             balance[i] = -1;
+50             visit[i] = false;
+51         }
+52         for(i = 1;i < n;i++)
+53         {
+54             scanf("%d%d",&p,&q);
+55             G[p].push_back(q);
+56             G[q].push_back(p);
+57         }
+58 
+59         dfs(1);
+60         int flag,ans = MAX;
+61         for(i = 1;i <= n;i++)
+62         {
+63             if(balance[i] < ans)
+64             {
+65                 ans = balance[i];
+66                 flag = i;
+67             }
+68         }
+69         printf("%d %d\n",flag,ans);
+70     }
+71     return 0;
+72 } 
+  

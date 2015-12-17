@@ -1,0 +1,1821 @@
+数据结构	n	N	N	O	O
+与	p	N	N	O	O
+算法	n	Y	N	O	O
+学习	v	N	N	O	O
+之	u	N	N	O	O
+十一	m	N	N	O	O
+【	x	N	N	O	O
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
+】	x	N	N	O	O
+(	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+HOJ	eng	N	Y	O	B-OJ
+
+2430	m	N	N	O	O
+
++	x	N	N	O	O
+
+HOJ	eng	N	Y	O	B-OJ
+
+2098	m	N	N	O	O
+/	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+2299	m	N	N	O	I-OJ
+_	x	N	N	O	O
+漫步	vn	N	N	O	O
+在	p	N	N	O	O
+橙色	n	N	N	O	O
+夕阳	ns	N	N	O	O
+下	f	N	N	O	O
+的	uj	N	N	O	O
+路	n	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+HOJ	eng	N	Y	O	B-OJ
+
+2430	m	N	N	O	O
+
+Counting	eng	N	N	O	O
+
+the	eng	N	N	O	O
+
+algorithms	eng	N	N	O	O
+
+传送门	n	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+hit	eng	N	N	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+hoj	eng	N	Y	O	B-OJ
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+/	x	N	N	O	O
+view	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+2430	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+给出	v	N	N	O	O
+2	m	N	N	O	O
+N	eng	N	N	O	O
+个数	n	Y	N	O	O
+，	x	N	N	O	O
+1	x	N	N	O	O
+
+-	x	N	N	O	O
+
+N	x	N	N	O	O
+出现	v	N	N	O	O
+两次	m	N	N	O	O
+，	x	N	N	O	O
+每次	r	N	N	O	O
+去掉	v	N	N	O	O
+1	m	N	N	O	O
+个	m	N	N	O	O
+数字	n	Y	N	O	O
+，	x	N	N	O	O
+得	ud	N	N	O	O
+分为	v	N	N	O	O
+这个	r	N	N	O	O
+数字	n	Y	N	O	O
+两次	m	N	N	O	O
+出现	v	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+3	x	N	N	O	O
+第一次	m	N	N	O	O
+出现	v	N	N	O	O
+在	p	N	N	O	O
+86	m	N	N	O	O
+位	v	N	N	O	O
+，	x	N	N	O	O
+第二次	m	N	N	O	O
+出现	v	N	N	O	O
+在	p	N	N	O	O
+88	m	N	N	O	O
+位	v	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+得	ud	N	N	O	O
+2	m	N	N	O	O
+分	v	N	N	O	O
+，	x	N	N	O	O
+给出	v	N	N	O	O
+能得	v	N	N	O	O
+的	uj	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+分	v	N	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+输入	v	N	N	O	O
+：	x	N	N	O	O
+2	m	N	N	O	O
+N	eng	N	N	O	O
+个数	n	Y	N	O	O
+。	x	N	N	O	O
+
+输出	v	Y	N	O	O
+：	x	N	N	O	O
+最大	a	Y	N	O	B-KNOWLEDGE
+分	v	N	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+从左到右	l	N	N	O	O
+扫描	v	Y	N	O	O
+或者	c	N	N	O	O
+从右到左	nr	N	N	O	O
+扫描	v	Y	N	O	O
+，	x	N	N	O	O
+将	d	N	N	O	O
+外层	n	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+先	d	N	N	O	O
+删除	v	N	N	O	O
+，	x	N	N	O	O
+再	d	N	N	O	O
+删除	v	N	N	O	O
+内层	n	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+即可	d	N	N	O	O
+。	x	N	N	O	O
+
+需要	v	N	N	O	O
+记录	n	Y	N	O	O
+每个	r	N	N	O	O
+数字	n	Y	N	O	O
+第一次	m	N	N	O	O
+出现	v	N	N	O	O
+和	c	N	N	O	O
+第二次	m	N	N	O	O
+出现	v	N	N	O	O
+的	uj	N	N	O	O
+位置	v	N	N	O	O
+。	x	N	N	O	O
+
+初始化	l	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+，	x	N	N	O	O
+将	d	N	N	O	O
+每个	r	N	N	O	O
+点	m	N	N	O	O
+设置	vn	N	N	O	O
+为	p	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+查询	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+就是	d	N	N	O	O
+就是	d	N	N	O	O
+两者	n	N	N	O	O
+的	uj	N	N	O	O
+距离	n	Y	N	O	O
+，	x	N	N	O	O
+当	t	N	N	O	O
+数字	n	Y	N	O	O
+被	p	N	N	O	O
+删除	v	N	N	O	O
+之后	f	N	N	O	O
+，	x	N	N	O	O
+将	d	N	N	O	O
+这	r	N	N	O	O
+两个	m	N	N	O	O
+点	m	N	N	O	O
+减	v	N	N	O	O
+1	m	N	N	O	O
+，	x	N	N	O	O
+变成	v	N	N	O	O
+0	x	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+不	d	N	N	O	O
+影响	vn	N	N	O	O
+其他	r	N	N	O	O
+数字	n	Y	N	O	O
+的	uj	N	N	O	O
+计算	v	Y	N	O	O
+。	x	N	N	O	O
+
+程序	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+102400	m	N	N	O	O
+;	x	N	N	O	O
+
+class	eng	N	N	O	O
+
+TreeArray	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+private	eng	N	N	O	O
+:	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+,	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	x	N	N	O	O
+
+&	x	N	N	O	O
+
+(	x	N	N	O	O
+-	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ret	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+>	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+=	x	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ret	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ret	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+public	eng	N	N	O	O
+:	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+N	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+query	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+s	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+e	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+)	x	N	N	O	O
+
+-	x	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+s	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+TreeArray	eng	N	N	O	O
+
+ta	eng	Y	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+
+first	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+second	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+
+*	x	N	N	O	O
+
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+n	x	N	N	O	O
+
+*	x	N	N	O	O
+=	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+init	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+second	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+update	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+>	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+!	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+continue	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+query	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+second	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+update	eng	N	N	O	O
+(	x	N	N	O	O
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+update	eng	N	N	O	O
+(	x	N	N	O	O
+second	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+first	eng	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+HOJ	eng	N	Y	O	B-OJ
+
+2098	m	N	N	O	O
+/	x	N	N	O	O
+POJ	eng	N	Y	O	B-OJ
+
+2299	m	N	N	O	O
+
+Ultra	eng	N	N	O	O
+-	x	N	N	O	O
+QuickSort	eng	N	N	O	O
+（	x	N	N	O	O
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+离散	v	Y	N	O	B-KNOWLEDGE
+化	n	N	N	O	I-KNOWLEDGE
++	x	N	N	O	O
+HOJ	eng	N	Y	O	B-OJ
+坑	n	N	N	O	O
+爹	n	N	N	O	O
+）	x	N	N	O	O
+
+传送门	n	N	N	O	O
+：	x	N	N	O	O
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+acm	eng	N	N	O	O
+.	m	N	N	O	O
+hit	eng	N	N	O	O
+.	m	N	N	O	O
+edu	eng	N	N	O	O
+.	m	N	N	O	O
+cn	eng	N	N	O	O
+/	x	N	N	O	O
+hoj	eng	N	Y	O	B-OJ
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+/	x	N	N	O	O
+view	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+2098	m	N	N	O	O
+
+http	eng	N	N	O	O
+:	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+poj	eng	N	Y	O	O
+.	m	N	N	O	O
+org	eng	N	N	O	O
+/	x	N	N	O	O
+problem	eng	N	N	O	O
+?	x	N	N	O	O
+id	eng	N	N	O	O
+=	x	N	N	O	O
+2299	m	N	N	O	O
+
+题意	n	N	N	O	O
+：	x	N	N	O	O
+就是	d	N	N	O	O
+相邻	v	N	N	O	O
+的	uj	N	N	O	O
+两个	m	N	N	O	O
+如果	c	N	N	O	O
+是	v	N	N	O	O
+逆序	n	Y	N	O	O
+的话	u	N	N	O	O
+需要	v	N	N	O	O
+交换	v	N	N	O	O
+，	x	N	N	O	O
+直到	v	N	N	O	O
+最后	f	N	N	O	O
+都	d	N	N	O	O
+有序	n	Y	N	O	O
+，	x	N	N	O	O
+问	n	N	N	O	O
+需要	v	N	N	O	O
+交换	v	N	N	O	O
+多少	m	N	N	O	O
+次	q	N	N	O	O
+？	x	N	N	O	O
+
+输入	v	N	N	O	O
+：	x	N	N	O	O
+初始	v	N	N	O	O
+序列	n	Y	N	O	O
+。	x	N	N	O	O
+
+输出	v	Y	N	O	O
+：	x	N	N	O	O
+需要	v	N	N	O	O
+交换	v	N	N	O	O
+的	uj	N	N	O	O
+次数	n	N	N	O	O
+。	x	N	N	O	O
+
+思路	n	N	N	O	O
+：	x	N	N	O	O
+不	d	N	N	O	O
+知道	v	N	N	O	O
+HOJ	eng	N	Y	O	B-OJ
+上	f	N	N	O	O
+的	uj	N	N	O	O
+编译器	n	N	N	O	O
+有	v	N	N	O	O
+问题	n	N	N	O	O
+还是	c	N	N	O	O
+怎么样	r	N	N	O	O
+，	x	N	N	O	O
+用	p	N	N	O	O
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+存	v	N	N	O	O
+结果	n	N	N	O	O
+就是	d	N	N	O	O
+过	ug	N	N	O	O
+不了	v	N	N	O	O
+，	x	N	N	O	O
+改用	v	N	N	O	O
+double	eng	N	N	O	O
+过	ug	N	N	O	O
+了	ul	N	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+！	x	N	N	O	O
+但是	c	N	N	O	O
+这	r	N	N	O	O
+道题	n	N	N	O	O
+还是	c	N	N	O	O
+很	d	N	N	O	O
+有	v	N	N	O	O
+代表性	n	N	N	O	O
+的	uj	N	N	O	O
+。	x	N	N	O	O
+
+首先	d	N	N	O	O
+数	n	N	N	O	O
+个数	n	Y	N	O	O
+上限	v	N	N	O	O
+为	p	N	N	O	O
+500000	m	N	N	O	O
+，	x	N	N	O	O
+但是	c	N	N	O	O
+数据	n	N	N	O	O
+范围	n	N	N	O	O
+非常	d	N	N	O	O
+大	a	N	N	O	O
+，	x	N	N	O	O
+远远	d	N	N	O	O
+超出	v	N	N	O	O
+了	ul	N	N	O	O
+这个	r	N	N	O	O
+范围	n	N	N	O	O
+，	x	N	N	O	O
+需要	v	N	N	O	O
+用到	v	N	N	O	O
+离散	v	Y	N	O	B-KNOWLEDGE
+化	n	N	N	O	I-KNOWLEDGE
+，	x	N	N	O	O
+说白了	l	N	N	O	O
+就是	d	N	N	O	O
+把	p	N	N	O	O
+这	r	N	N	O	O
+n	eng	N	N	O	O
+个数	n	Y	N	O	O
+映射	v	N	N	O	O
+到	v	N	N	O	O
+1	m	N	N	O	O
+
+–	x	N	N	O	O
+
+n	eng	N	N	O	O
+上	ns	N	N	O	O
+，	x	N	N	O	O
+来	v	N	N	O	O
+表示	v	Y	N	O	O
+他们	r	N	N	O	O
+的	uj	N	N	O	O
+相对	d	N	N	O	O
+大小	b	N	N	O	O
+，	x	N	N	O	O
+比如	v	N	N	O	O
+1000	m	N	N	O	O
+，	x	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+100	m	N	N	O	O
+，	x	N	N	O	O
+10	m	N	N	O	O
+这样	r	N	N	O	O
+在	p	N	N	O	O
+存储	j	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+就	d	N	N	O	O
+可以	c	N	N	O	O
+变为	v	N	N	O	O
+4	x	N	N	O	O
+，	x	N	N	O	O
+1	x	N	N	O	O
+，	x	N	N	O	O
+3	x	N	N	O	O
+，	x	N	N	O	O
+2	x	N	N	O	O
+，	x	N	N	O	O
+大大降低	n	N	N	O	O
+了	ul	N	N	O	O
+需要	v	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+。	x	N	N	O	O
+
+然后	c	N	N	O	O
+就是	d	N	N	O	O
+从左到右	l	N	N	O	O
+扫描	v	Y	N	O	O
+4	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+3	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+，	x	N	N	O	O
+累加	v	Y	N	O	O
+每次	r	N	N	O	O
+出现	v	N	N	O	O
+的	uj	N	N	O	O
+时候	n	N	N	O	O
+已经	d	N	N	O	O
+有	v	N	N	O	O
+多少	m	N	N	O	O
+个	m	N	N	O	O
+比	p	N	N	O	O
+它	r	N	N	O	O
+大	a	N	N	O	O
+的	uj	N	N	O	O
+数组	n	Y	N	O	O
+出现	v	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+通过	p	N	N	O	O
+当前	t	N	N	O	O
+个数	n	Y	N	O	O
+
+–	x	N	N	O	O
+
+树状	n	Y	N	O	B-KNOWLEDGE
+数组	n	Y	N	O	I-KNOWLEDGE
+统计	v	Y	N	O	O
+的	uj	N	N	O	O
+比	p	N	N	O	O
+它	r	N	N	O	O
+小	n	N	N	O	O
+或者	c	N	N	O	O
+等于	v	N	N	O	O
+它	r	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+来算	v	N	N	O	O
+出	v	N	N	O	O
+。	x	N	N	O	O
+
+程序	n	N	N	O	O
+：	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstdio	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+cstring	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+algorithm	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+512000	m	N	N	O	O
+;	x	N	N	O	O
+
+class	eng	N	N	O	O
+
+TreeArray	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+private	eng	N	N	O	O
+:	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	x	N	N	O	O
+
+&	x	N	N	O	O
+
+(	x	N	N	O	O
+-	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+public	eng	N	N	O	O
+:	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+N	x	N	N	O	O
+
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+,	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+c	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+update	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+v	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+ret	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+>	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+=	x	N	N	O	O
+
+lowbit	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ret	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+c	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+ret	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+class	eng	N	N	O	O
+
+Array	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+public	eng	N	N	O	O
+:	x	N	N	O	O
+
+long	eng	N	N	O	O
+
+long	eng	N	N	O	O
+
+value	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+id	eng	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+operator	eng	N	N	O	O
+<	x	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+Array	eng	N	N	O	O
+&	x	N	N	O	O
+
+a	x	N	N	O	O
+)	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+value	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+a	eng	N	N	O	O
+.	m	N	N	O	O
+value	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+TreeArray	eng	N	N	O	O
+
+ta	eng	Y	N	O	O
+;	x	N	N	O	O
+
+Array	eng	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+MAX	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+init	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+I64d	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+value	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+id	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+stable	eng	N	N	O	O
+_	x	N	N	O	O
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+arr	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+,	x	N	N	O	O
+
+arr	eng	N	N	O	O
+
++	x	N	N	O	O
+
+1	x	N	N	O	O
+
++	x	N	N	O	O
+
+n	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+value	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+value	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+arr	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+id	eng	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+ans	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+<	x	N	N	O	O
+=	x	N	N	O	O
+
+n	x	N	N	O	O
+;	x	N	N	O	O
+
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+update	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ans	eng	N	N	O	O
+
++	x	N	N	O	O
+=	x	N	N	O	O
+
+i	x	N	N	O	O
+
+-	x	N	N	O	O
+
+ta	eng	Y	N	O	O
+.	m	N	N	O	O
+sum	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.0	m	N	N	O	O
+lf	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+ans	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

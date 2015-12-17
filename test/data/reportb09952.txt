@@ -1,0 +1,72 @@
+poj1016 - 冰上游鱼 - 博客频道 - CSDN.NET
+
+#include<iostream>
+#include<stdio.h>
+#include<stdlib.h>
+#include<fstream>
+#include<string>
+using namespace std;
+string change(string s)
+{
+	string output="";
+	int len=s.length();
+	int count[10]={};
+	for(int i=0;i<len;i++)
+	{
+		count[s[i]-'0']++;
+	}
+	for(int i=0;i<10;i++)
+	{
+		if(count[i]>0)
+		{
+			char temp[33];
+		        sprintf(temp,"%d",count[i]);
+			output+=temp;
+			output+=char('0'+i);
+		}
+	}
+	return output;
+}
+int main()
+{
+	ifstream cin("input.txt");
+	ofstream cout("output.txt");
+	string str[16];
+	while(cin>>str[0])
+	{
+		if(str[0]=="-1")
+			break;
+		bool flag=false;
+		for(int i=1;i<=15;i++)
+		{
+			str[i]=change(str[i-1]);
+		//	cout<<str[i]<<" "<<str[i-1]<<endl;
+			int m;
+			for(m=0;m<i;m++)
+			{
+				if(str[m]==str[i])
+				{
+					flag=true;
+					break;
+				}
+			}
+			if(m==i-1)
+			{
+				if(m==0)
+					cout<<str[0]<<" is self-inventorying "<<endl;
+				else
+					cout<<str[0]<<" is self-inventorying after "<<i-1<<" steps "<<endl;
+			}
+			else if(m<i-1)
+			{
+				cout<<str[0]<<" enters an inventory loop of length "<<i-m<<" "<<endl;
+			}
+			if(flag)
+				break;
+		}
+		if(flag==false)
+			cout<<str[0]<<" can not be classified after 15 iterations"<<endl;
+	}	
+	return 0;
+}
+

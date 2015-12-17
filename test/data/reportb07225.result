@@ -1,0 +1,1844 @@
+poj1606	eng	N	Y	O	B-OJ
+-	x	N	N	O	O
+没想好	l	N	N	O	O
+就	d	N	N	O	O
+不要	df	N	N	O	O
+下手	v	N	N	O	O
+，	x	N	N	O	O
+否则	c	N	N	O	O
+浪费时间	n	N	N	O	O
+-	x	N	N	O	O
+模拟题	n	N	N	O	O
+的	uj	N	N	O	O
+教训	vn	N	N	O	O
+
+-	x	N	N	O	O
+
+c++	nz	N	N	O	O
+语言	n	N	N	O	O
+程序开发	nr	N	N	O	O
+技术	n	N	N	O	O
+文章	n	N	N	O	O
+_	x	N	N	O	O
+c++	nz	N	N	O	O
+编程	n	N	N	O	O
+
+-	x	N	N	O	O
+
+红	a	N	N	O	O
+黑	a	N	N	O	O
+联盟	j	N	N	O	O
+
+这	r	N	N	O	O
+道	q	N	N	O	O
+题目	n	Y	N	O	O
+题意	n	N	N	O	O
+很	zg	N	N	O	O
+简单	a	N	N	O	O
+，	x	N	N	O	O
+就是	d	N	N	O	O
+给	p	N	N	O	O
+你	r	N	N	O	O
+两个	m	N	N	O	O
+容器	n	N	N	O	O
+，	x	N	N	O	O
+求	v	N	N	O	O
+出	v	N	N	O	O
+获得	v	N	N	O	O
+指定	v	N	N	O	O
+量	n	N	N	O	O
+水	n	N	N	O	O
+的	uj	N	N	O	O
+步骤	n	N	N	O	O
+。	x	N	N	O	O
+
+一	m	N	N	O	O
+看	v	N	N	O	O
+稍微	d	N	N	O	O
+分析	vn	N	N	O	O
+就	d	N	N	O	O
+知道	v	N	N	O	O
+是	v	N	N	O	O
+广度	ns	Y	N	O	B-KNOWLEDGE
+优先	vn	Y	N	O	I-KNOWLEDGE
+搜索	v	Y	N	O	I-KNOWLEDGE
+。	x	N	N	O	O
+
+就是	d	N	N	O	O
+每次	r	N	N	O	O
+最多	d	N	N	O	O
+有	v	N	N	O	O
+六种	m	N	N	O	O
+情况	n	N	N	O	O
+，	x	N	N	O	O
+填满	v	N	N	O	O
+a	x	N	N	O	O
+，	x	N	N	O	O
+填满	v	N	N	O	O
+b	x	N	N	O	O
+，	x	N	N	O	O
+清空	n	N	N	O	O
+a	x	N	N	O	O
+，	x	N	N	O	O
+清空	n	N	N	O	O
+b	x	N	N	O	O
+，	x	N	N	O	O
+从	p	N	N	O	O
+a	eng	N	N	O	O
+倒到	v	N	N	O	O
+b	eng	N	N	O	O
+，	x	N	N	O	O
+从	p	N	N	O	O
+b	eng	N	N	O	O
+倒到	v	N	N	O	O
+a	eng	N	N	O	O
+。	x	N	N	O	O
+
+对	p	N	N	O	O
+每种	r	N	N	O	O
+情况	n	N	N	O	O
+将	d	N	N	O	O
+在	p	N	N	O	O
+这种	r	N	N	O	O
+情况	n	N	N	O	O
+下	f	N	N	O	O
+的	uj	N	N	O	O
+可能	v	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+进入	v	N	N	O	O
+队列	n	Y	N	O	O
+，	x	N	N	O	O
+直到	v	N	N	O	O
+找到	v	N	N	O	O
+最终	d	N	N	O	O
+结果	n	N	N	O	O
+。	x	N	N	O	O
+
+注意	v	N	N	O	O
+不要	df	N	N	O	O
+以为	c	N	N	O	O
+和	c	N	N	O	O
+题目	n	Y	N	O	O
+答案	n	N	N	O	O
+不	d	N	N	O	O
+一样	r	N	N	O	O
+就	d	N	N	O	O
+以为	c	N	N	O	O
+自己	r	N	N	O	O
+是	v	N	N	O	O
+错	n	N	N	O	O
+的	uj	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+倒	v	N	N	O	O
+的	uj	N	N	O	O
+方法	n	Y	N	O	O
+可能	v	N	N	O	O
+不	d	N	N	O	O
+一样	r	N	N	O	O
+，	x	N	N	O	O
+所以	c	N	N	O	O
+最好	a	N	N	O	O
+自己	r	N	N	O	O
+验证	v	N	N	O	O
+一下	m	N	N	O	O
+，	x	N	N	O	O
+题目	n	Y	N	O	O
+也	d	N	N	O	O
+标出	v	N	N	O	O
+了	ul	N	N	O	O
+special	eng	N	N	O	O
+
+judge	eng	N	N	O	O
+，	x	N	N	O	O
+就是	d	N	N	O	O
+答案	n	N	N	O	O
+不止	v	N	N	O	O
+一种	m	N	N	O	O
+。	x	N	N	O	O
+
+下面	f	N	N	O	O
+是	v	N	N	O	O
+代码	n	N	N	O	O
+及	c	N	N	O	O
+注释	v	N	N	O	O
+，	x	N	N	O	O
+注释	v	N	N	O	O
+的	uj	N	N	O	O
+地方	n	N	N	O	O
+就是	d	N	N	O	O
+自己	r	N	N	O	O
+没	v	N	N	O	O
+关注	v	N	N	O	O
+细节	n	N	N	O	O
+浪费时间	n	N	N	O	O
+的	uj	N	N	O	O
+地方	n	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+[	x	N	N	O	O
+cpp	eng	N	N	O	O
+]	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+<	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+Max	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+>	x	N	N	O	O
+b	x	N	N	O	O
+?	x	N	N	O	O
+a	x	N	N	O	O
+:	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+Min	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+(	x	N	N	O	O
+a	x	N	N	O	O
+<	x	N	N	O	O
+b	x	N	N	O	O
+?	x	N	N	O	O
+a	x	N	N	O	O
+:	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+enum	eng	N	N	O	O
+
+METHOD	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+这里	r	N	N	O	O
+用	p	N	N	O	O
+了	ul	N	N	O	O
+一下	m	N	N	O	O
+枚举	nz	Y	N	O	O
+
+{	x	N	N	O	O
+
+fillA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+,	x	N	N	O	O
+
+fillB	eng	N	N	O	O
+,	x	N	N	O	O
+
+emptyA	eng	N	N	O	O
+,	x	N	N	O	O
+
+emptyB	eng	N	N	O	O
+,	x	N	N	O	O
+
+pourAB	eng	N	N	O	O
+,	x	N	N	O	O
+
+pourBA	eng	N	N	O	O
+
+}	x	N	N	O	O
+methods	eng	N	N	O	O
+;	x	N	N	O	O
+
+struct	eng	N	N	O	O
+
+QUEUE	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+nowA	eng	N	N	O	O
+,	x	N	N	O	O
+nowB	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+a	x	N	N	O	O
+，	x	N	N	O	O
+b	x	N	N	O	O
+当前	t	N	N	O	O
+的	uj	N	N	O	O
+水量	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+method	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+上	f	N	N	O	O
+一步	m	N	N	O	O
+是	v	N	N	O	O
+通过	p	N	N	O	O
+什么	r	N	N	O	O
+方式	n	N	N	O	O
+到	v	N	N	O	O
+这	r	N	N	O	O
+一步	m	N	N	O	O
+的	uj	N	N	O	O
+
+int	eng	N	N	O	O
+
+pre	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+记录	n	Y	N	O	O
+上	f	N	N	O	O
+一步	m	N	N	O	O
+在	p	N	N	O	O
+队列	n	Y	N	O	O
+中	f	N	N	O	O
+的	uj	N	N	O	O
+下标	v	N	N	O	O
+
+}	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+100000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Ca	eng	N	N	O	O
+,	x	N	N	O	O
+Cb	eng	N	N	O	O
+,	x	N	N	O	O
+N	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+输入	v	N	N	O	O
+
+int	eng	N	N	O	O
+
+start	eng	N	N	O	O
+,	x	N	N	O	O
+
+end	eng	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+队列	n	Y	N	O	O
+的	uj	N	N	O	O
+头	n	N	N	O	O
+和	c	N	N	O	O
+尾	n	N	N	O	O
+
+void	eng	N	N	O	O
+
+output	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+step	eng	N	N	O	O
+[	x	N	N	O	O
+10000	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+index	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+找到	v	N	N	O	O
+success	eng	N	N	O	O
+的	uj	N	N	O	O
+整个	b	N	N	O	O
+路径	n	Y	N	O	O
+，	x	N	N	O	O
+倒	v	N	N	O	O
+着	uz	N	N	O	O
+找到	v	N	N	O	O
+第一个	m	N	N	O	O
+，	x	N	N	O	O
+放到	v	N	N	O	O
+step	eng	N	N	O	O
+数组	n	Y	N	O	O
+中	f	N	N	O	O
+
+step	eng	N	N	O	O
+[	x	N	N	O	O
+index	eng	N	N	O	O
+
+++	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+k	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+step	eng	N	N	O	O
+[	x	N	N	O	O
+index	eng	N	N	O	O
+
+++	x	N	N	O	O
+]	x	N	N	O	O
+
+=	x	N	N	O	O
+
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+k	x	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+k	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+输出	v	Y	N	O	O
+，	x	N	N	O	O
+注意	v	N	N	O	O
+queue	eng	N	N	O	O
+的	uj	N	N	O	O
+下标	v	N	N	O	O
+是	v	N	N	O	O
+step	eng	N	N	O	O
+数组	n	Y	N	O	O
+，	x	N	N	O	O
+开始	v	N	N	O	O
+写成	v	N	N	O	O
+i	eng	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+怎么	r	N	N	O	O
+搞	v	N	N	O	O
+都	d	N	N	O	O
+不	d	N	N	O	O
+对	p	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+。	x	N	N	O	O
+
+for	eng	Y	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+
+=	x	N	N	O	O
+
+index	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+i	x	N	N	O	O
+
+>	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+-	x	N	N	O	O
+-	x	N	N	O	O
+
+i	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+fillA	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+fill	eng	N	N	O	O
+
+A	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+fillB	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+fill	eng	N	N	O	O
+
+B	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+emptyA	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+empty	eng	N	N	O	O
+
+A	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+emptyB	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+empty	eng	N	N	O	O
+
+B	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+pourAB	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pour	eng	N	N	O	O
+
+A	x	N	N	O	O
+
+B	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+step	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+pourBA	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pour	eng	N	N	O	O
+
+B	x	N	N	O	O
+
+A	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+success	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+start	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+end	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+初始化	l	N	N	O	O
+队列	n	Y	N	O	O
+，	x	N	N	O	O
+第一步	m	N	N	O	O
+肯定	v	N	N	O	O
+是	v	N	N	O	O
+先	d	N	N	O	O
+填满	v	N	N	O	O
+A	x	N	N	O	O
+或者	c	N	N	O	O
+B	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+fillA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+fillB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+广度	ns	Y	N	O	B-KNOWLEDGE
+优先	vn	Y	N	O	I-KNOWLEDGE
+搜索	v	Y	N	O	I-KNOWLEDGE
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+start	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+end	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+start	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+
+|	x	N	N	O	O
+|	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+N	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+A	x	N	N	O	O
+或者	c	N	N	O	O
+B	x	N	N	O	O
+达到	v	N	N	O	O
+最终	d	N	N	O	O
+状态	n	Y	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+队列	n	Y	N	O	O
+结束	v	N	N	O	O
+
+{	x	N	N	O	O
+
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+A	x	N	N	O	O
+，	x	N	N	O	O
+B	eng	N	N	O	O
+都	d	N	N	O	O
+不是	c	N	N	O	O
+全	a	N	N	O	O
+满	a	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+下	f	N	N	O	O
+，	x	N	N	O	O
+可以	c	N	N	O	O
+填充	v	N	N	O	O
+其中	r	N	N	O	O
+一个	m	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+都	d	N	N	O	O
+满	a	N	N	O	O
+了	ul	N	N	O	O
+没	v	N	N	O	O
+意义	n	N	N	O	O
+。	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+
+&&	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+fillA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+fillB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+AB	eng	N	N	O	O
+都	d	N	N	O	O
+不是	c	N	N	O	O
+空	a	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+下	f	N	N	O	O
+，	x	N	N	O	O
+才	d	N	N	O	O
+清空	n	N	N	O	O
+其中	r	N	N	O	O
+一个	m	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+都	d	N	N	O	O
+空	a	N	N	O	O
+的	uj	N	N	O	O
+情况	n	N	N	O	O
+又	d	N	N	O	O
+回到	v	N	N	O	O
+了	ul	N	N	O	O
+初始状态	l	N	N	O	O
+，	x	N	N	O	O
+浪费	n	N	N	O	O
+queue	eng	N	N	O	O
+的	uj	N	N	O	O
+空间	n	N	N	O	O
+，	x	N	N	O	O
+浪费	n	N	N	O	O
+搜索	v	Y	N	O	O
+的	uj	N	N	O	O
+时间	n	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+emptyA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+emptyB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+a	eng	N	N	O	O
+不为	c	N	N	O	O
+空	a	N	N	O	O
+且	c	N	N	O	O
+B	eng	N	N	O	O
+没有	v	N	N	O	O
+满	a	N	N	O	O
+，	x	N	N	O	O
+才	d	N	N	O	O
+执行	v	N	N	O	O
+从	p	N	N	O	O
+a	eng	N	N	O	O
+向	p	N	N	O	O
+b	eng	N	N	O	O
+倒	v	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+a	eng	N	N	O	O
+空	a	N	N	O	O
+了	ul	N	N	O	O
+或者	c	N	N	O	O
+b	x	N	N	O	O
+已经	d	N	N	O	O
+满	a	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+执行	v	N	N	O	O
+这	r	N	N	O	O
+一步	m	N	N	O	O
+没	v	N	N	O	O
+意义	n	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+
++	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Cb	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
++	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+pourAB	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+b	eng	N	N	O	O
+不为	c	N	N	O	O
+空	a	N	N	O	O
+且	c	N	N	O	O
+a	eng	N	N	O	O
+没有	v	N	N	O	O
+满	a	N	N	O	O
+，	x	N	N	O	O
+才	d	N	N	O	O
+执行	v	N	N	O	O
+从	p	N	N	O	O
+b	eng	N	N	O	O
+向	p	N	N	O	O
+a	eng	N	N	O	O
+倒	v	N	N	O	O
+。	x	N	N	O	O
+
+如果	c	N	N	O	O
+b	eng	N	N	O	O
+空	a	N	N	O	O
+了	ul	N	N	O	O
+或者	c	N	N	O	O
+a	x	N	N	O	O
+已经	d	N	N	O	O
+满	a	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+执行	v	N	N	O	O
+这	r	N	N	O	O
+一步	m	N	N	O	O
+没	v	N	N	O	O
+意义	n	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+
+&&	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+<	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+
+(	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+>	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+-	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+
++	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+Ca	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowA	eng	N	N	O	O
+
++	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+start	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+nowB	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+method	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+pourBA	eng	N	N	O	O
+;	x	N	N	O	O
+
+queue	eng	N	N	O	O
+[	x	N	N	O	O
+end	eng	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+pre	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+start	eng	N	N	O	O
+;	x	N	N	O	O
+
+end	eng	N	N	O	O
+
+++	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+output	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+while	eng	N	N	O	O
+
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+Ca	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+Cb	eng	N	N	O	O
+,	x	N	N	O	O
+
+&	x	N	N	O	O
+N	eng	N	N	O	O
+)	x	N	N	O	O
+
+!	x	N	N	O	O
+=	x	N	N	O	O
+
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+bfs	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

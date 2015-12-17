@@ -1,0 +1,105 @@
+poj 1251; zoj 1406 Jungle Roads[ MST ] - 小猴子、 - 博客园
+
+题目连接 http://poj.org/problem?id=1251
+代码
+ 
+ 
+ #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int parent[257];
+int n, m;
+struct node {
+	char u, v;
+	int w;
+};
+struct node a[101];
+int cmp(const void *a, const void *b)
+{
+	struct node c = *(struct node *)a;
+	struct node d = *(struct node *)b;
+	return c.w - d.w;
+}
+int Find(int x)
+{
+	int s = x;
+	while( parent[s] >= 0 ) {
+		s = parent[s];
+	}
+	while(s != x) {
+		int tmp = parent[x];
+		parent[x] = s;
+		x = tmp;
+	}
+	return s;
+}
+int Union(int R1, int R2) 
+{
+	int r1 = Find(R1);
+	int r2 = Find(R2);
+	if(r1 == r2) return 0;
+	int tmp = parent[r1] + parent[r2];
+	if(parent[r1] > parent[r2]) {
+		parent[r1] = r2;
+		parent[r2] = tmp;
+	} else {
+		parent[r2] = r1;
+		parent[r1] = tmp;
+	}
+	return 1;
+}
+int Kruskal()
+{
+	int ans = 0;
+	int edge = 0;
+	for(int i = 0; i < m; i++) {
+		int R1 = a[i].u;
+		int R2 = a[i].v;
+		if(Union(R1, R2)) {
+			ans += a[i].w;
+			edge++;
+		}
+		if(edge >= n-1) break;
+	}
+	return ans;
+}
+int main()
+{
+	while(scanf("%d%*c", &n), n) {
+		char c;
+		int t;
+		m = 0;
+		for(int i = 0; i < n-1; i++) {
+			scanf("%c %d%*c", &c, &t);
+			for(int j = 0; j < t; j++) {
+				char cc;
+				int w;
+				scanf("%c %d%*c", &cc, &w);
+				a[m].u = c;
+				a[m].v = cc;
+				a[m].w =w;
+				m++;
+			} 
+		}
+		memset(parent, -1, sizeof(parent));
+		qsort(a, m, sizeof(struct node), cmp);
+		printf("%d\n", Kruskal());
+	}
+	return 0;
+}
+　　上面代码在ｚｏｊ上ＡＣ，但是在ｐｏｊ上会ＲＥ或ＴＬＥ，主要是输入的问题，把输入改成下面的代码就可以了，其实我也不知道为什么这么改。
+ 
+ 
+ for(int i = 0; i < n-1; i++) {
+			scanf(" %c %d", &c, &t);
+			for(int j = 0; j < t; j++) {
+				char cc;
+				int w;
+				scanf(" %c %d", &cc, &w);
+				a[m].u = c;
+				a[m].v = cc;
+				a[m].w =w;
+				m++;
+			} 
+		}
+　　

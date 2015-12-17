@@ -1,0 +1,121 @@
+poj1182 食物链和poj1988 cube stacking类似（并查集的经典应用）_Keep  Moving_百度空间
+
+#include   <iostream>
+using   namespace std;
+const int maxn = 50005;
+int set[maxn],kind[maxn];
+void   ready(int n)
+{
+    for(int   i=0;i<=n;i++) {set[i] = i;kind[i]=0;}
+}
+int find(int a)
+{
+   if(set[a]!=a)
+   {
+      int t = set[a];
+      set[a] = find(set[a]);
+      kind[a] = (kind[a]+kind[t])%3;//和cube stacking一样 kind[]就像其上面有多少个。。。//次步也不太好想
+   }     
+   return set[a];
+}
+/*void UNION(int a,int b,int k)
+{
+ set[b] = 
+}*/
+int main()
+{
+int i,j,k,n,m,a,b;
+scanf("%d%d",&n,&m);
+ready(n);
+int count = 0;
+for(i=0;i<m;i++)
+{
+scanf("%d%d%d",&k,&a,&b);
+ if(a>n||b>n) count++;
+    else if(k==2&&(a==b)) {count++;}
+     else {
+        int aa = find(a);
+        int bb = find(b);
+        if(aa==bb)
+          {
+                  if(k==2&&(kind[b]-kind[a]+3)%3!=1) count++;//次步不好想啊。。。
+                  if(k==1&&kind[a]!=kind[b]) count++;   
+          }
+          else
+          {
+             kind[bb] =(kind[a]-kind[b]+3+k-1)%3;
+             set[bb] = aa; 
+          }
+          } 
+}
+printf("%d\n",count);
+//system("pause");
+return 0;     
+}
+//本题算法参考各个大牛的博客才写成。。。
+//本题和poj1988cube stacking中的查找极像，只是本题是类型，就加个取模。。。。
+//详解见http://hi.baidu.com/flabbyan/blog/item/4374633e9fdad2cb7c1e7131.html
+//和http://www.cnblogs.com/kdy71107216/archive/2008/11/19/1246722.html
+#include <iostream>
+using namespace std;
+const int maxn = 30003;
+typedef struct S{
+ int pa;
+ int up,sum;         
+}S;
+S set[maxn];
+void ready()
+{
+ for(int i=1;i<maxn;i++)
+ {
+    set[i].pa = i;
+    set[i].up = 0;
+    set[i].sum = 1;;                   
+ }    
+ return ; 
+}
+int find(int i)
+{
+ int r = set[i].pa;
+ int sum = 0;
+ if(set[i].pa!=i)
+ {
+ set[i].pa = find(set[i].pa);
+ set[i].up+=set[r].up;//这一步和食物链中的同一步一样。。。
+ }
+ return set[i].pa;
+}
+void he(int a,int b)
+{
+ int aa = find(a);
+ int bb = find(b);
+ set[bb].pa = aa;
+ set[bb].up = set[aa].sum;
+ set[aa].sum+=set[bb].sum;
+ return ;
+}
+int main()
+{
+     int i,j,k,n,a,b,c;
+     ready();
+     scanf("%d",&n);
+     char ch[4];
+     while(n--)
+     {
+       scanf("%s",&ch);
+       switch(ch[0])
+       {
+         case 'M':
+               scanf("%d%d",&a,&b);
+               he(a,b); break;
+         case 'C':
+               scanf("%d",&a);
+               int aa = find(a);
+               printf("%d\n",set[aa].sum-set[a].up-1);
+               break;
+       }
+     }
+    // system("pause");
+     return 0;
+}
+//详解见 http://www.cppblog.com/RyanWang/archive/2009/02/21/74518.aspx

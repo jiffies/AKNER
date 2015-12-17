@@ -1,0 +1,457 @@
+pku2777 Count Color - Beetlebum - 博客园
+
+思路：用位图记录区间已涂上的颜色
+ 
+
+ 
+ #include 
+ <
+ iostream
+ >
+ 
+ 
+ using
+  
+ namespace
+  std;
+ 
+ #define
+  clr(x) memset(x,0,sizeof(x))
+ 
+ 
+ #define
+  max(a,b) (a>b?a:b)
+ 
+ 
+ #define
+  min(a,b) (a<b?a:b)
+ 
+ 
+ #define
+  MAXN 100002
+ 
+ 
+ struct
+  Node{
+     
+ int
+  l,r;
+     __int64 s;
+ }nod[MAXN
+ *
+ 3
+ ];
+ inline 
+ bool
+  single(__int64 a){
+     
+ return
+  (((a
+ -
+ 2
+ ) 
+ &
+  a)
+ ==
+ 0
+ );
+ }
+ 
+ void
+  init(
+ int
+  tag,
+ int
+  l,
+ int
+  r){
+     nod[tag].l
+ =
+ l;
+     nod[tag].r
+ =
+ r;
+     nod[tag].s
+ =
+ 2
+ ;
+     
+ if
+ (l
+ ==
+ r){
+         
+ return
+ ;
+     }
+     init(tag
+ *
+ 2
+ ,l,(l
+ +
+ r)
+ /
+ 2
+ );
+     init(tag
+ *
+ 2
+ +
+ 1
+ ,(l
+ +
+ r)
+ /
+ 2
+ +
+ 1
+ ,r);
+ }
+ 
+ void
+  query(
+ int
+  tag,
+ int
+  l,
+ int
+  r,__int64 
+ &
+ ss){
+     
+ if
+ (l
+ <=
+ nod[tag].l 
+ &&
+  nod[tag].r
+ <=
+ r){
+         ss
+ |=
+ nod[tag].s;
+         
+ return
+ ;
+     }
+     
+ if
+ (single(nod[tag].s)){
+ //
+ 若该结点所示区间为单色，则其儿子所示区间也为单色，故无需再查看以该结点为根的树
+ 
+ 
+         ss
+ |=
+ nod[tag].s;
+         
+ return
+ ;
+     }
+     
+ if
+ (l
+ <=
+ nod[tag
+ *
+ 2
+ ].r)
+         query(tag
+ *
+ 2
+ ,l,r,ss);
+     
+ if
+ (r
+ >=
+ nod[tag
+ *
+ 2
+ +
+ 1
+ ].l)
+         query(tag
+ *
+ 2
+ +
+ 1
+ ,l,r,ss);
+ }
+ 
+ void
+  paint(
+ int
+  tag,
+ int
+  l,
+ int
+  r,
+ int
+  c){
+ //
+ 将[l,r]涂成颜色c
+ 
+ 
+     
+ if
+ (l
+ <=
+ nod[tag].l 
+ &&
+  nod[tag].r
+ <=
+ r){
+         nod[tag].s
+ =
+ (
+ 1
+ <<
+ c);
+         
+ return
+ ;
+     }
+     
+ if
+ (nod[tag].s
+ ==
+ (
+ 1
+ <<
+ c))
+ //
+ 若该区间已被染成颜色c则无需再染
+ 
+ 
+         
+ return
+ ;
+     
+ if
+ (single(nod[tag].s)){
+ //
+ 若该区间为单色，则在上一次改变中，其儿子没有被改变，又因为需要进入该区间的子树，所以必须先将儿子更新为单色
+ 
+ 
+         nod[tag
+ *
+ 2
+ ].s
+ =
+ nod[tag].s;
+         nod[tag
+ *
+ 2
+ +
+ 1
+ ].s
+ =
+ nod[tag].s;
+     }
+     
+ if
+ (l
+ <=
+ nod[tag
+ *
+ 2
+ ].r)
+         paint(tag
+ *
+ 2
+ ,l,r,c);
+     
+ if
+ (r
+ >=
+ nod[tag
+ *
+ 2
+ +
+ 1
+ ].l)
+         paint(tag
+ *
+ 2
+ +
+ 1
+ ,l,r,c);
+     nod[tag].s
+ =
+ nod[tag
+ *
+ 2
+ ].s
+ |
+ nod[tag
+ *
+ 2
+ +
+ 1
+ ].s;
+ }
+ 
+ int
+  main(){
+     
+ int
+  L,T,O,i,j,x,y,z,cnt;
+     
+ char
+  ch[
+ 3
+ ];
+     __int64 ss;
+     
+ while
+ (scanf(
+ "
+ %d%d%d
+ "
+ ,
+ &
+ L,
+ &
+ T,
+ &
+ O)
+ !=
+ EOF){
+         init(
+ 1
+ ,
+ 1
+ ,L);
+         
+ for
+ (i
+ =
+ 0
+ ;i
+ <
+ O;i
+ ++
+ ){
+             scanf(
+ "
+ %s
+ "
+ ,ch);
+             
+ if
+ (ch[
+ 0
+ ]
+ ==
+ '
+ C
+ '
+ ){
+                 scanf(
+ "
+ %d%d%d
+ "
+ ,
+ &
+ x,
+ &
+ y,
+ &
+ z);
+                 
+ if
+ (x
+ >
+ y){
+                     
+ int
+  t
+ =
+ x;
+                     x
+ =
+ y;
+                     y
+ =
+ t;
+                 }
+                 paint(
+ 1
+ ,x,y,z);
+             }
+             
+ else
+ {
+                 scanf(
+ "
+ %d%d
+ "
+ ,
+ &
+ x,
+ &
+ y);
+                 
+ if
+ (x
+ >
+ y){
+                     
+ int
+  t
+ =
+ x;
+                     x
+ =
+ y;
+                     y
+ =
+ t;
+                 }
+                 ss
+ =
+ 0
+ ;
+                 query(
+ 1
+ ,x,y,ss);
+                 cnt
+ =
+ 0
+ ;
+                 
+ for
+ (j
+ =
+ 1
+ ;j
+ <=
+ T;j
+ ++
+ ){
+                     
+ if
+ (ss
+ &
+ (
+ 1
+ <<
+ j))
+                         cnt
+ ++
+ ;
+                 }
+                 printf(
+ "
+ %d\n
+ "
+ ,cnt);
+             }
+         }
+     }
+     
+ return
+  
+ 0
+ ;
+ }

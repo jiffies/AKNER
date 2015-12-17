@@ -1,0 +1,28 @@
+hdu 1060_striver_新浪博客
+
+题目：http://acm.hdu.edu.cn/showproblem.php?pid=1060
+思路：刚开始做，发现很纠结！！
+后来，看到了一个人的分析，是这样转换的
+m=n^n;两边同取对数，得到，log10(m)=n*log10(n);再得到，m=10^(n*log10(n));
+然后，对于10的整数次幂，第一位是1，所以，第一位数取决于n*log10(n)的小数部分
+总之，log很强大啊，在求一个数的位数上，在将大整数化成范围内的整数上，在指数问题上
+代码：
+#include <iostream>
+ #include <cmath>
+ using namespace std;
+ int main()
+ {
+     __int64 n,i,a,sum;
+     double s,num,x;
+     cin>>n;
+     for(i=0;i<n;i++)
+     {
+        cin>>num;
+        s=num*log10(num);
+        a=(__int64)(s);
+        x=s-a;
+        sum=(__int64)(pow((double)10,(x)));
+        cout<<sum<<endl;
+     }
+     return 0;                               
+ }

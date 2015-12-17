@@ -1,0 +1,30 @@
+POJ 1491 简单模拟_石家庄二中2011级OI_百度空间
+
+都是英语阅读理解。
+题意：给出n（<=50）个数和计算公式6/pi^2=x/y，其中y为数对的个数，x为互质的数对的个数。输出pi的计算结果。如果x==0，输出No estimate for this data set.
+直接模拟吧，没有可说的。。
+（代码仅供参考和学习，请不要直接粘贴刷AC数，期待你写出更好的代码）
+#include<cstdio>
+#include<cmath>
+int n,a[100];
+inline int gcd(int x,int y)
+{
+if(!y) return x;
+return gcd(y,x%y);
+}
+int main()
+{
+while(scanf("%d",&n),n)
+{
+for(int i=1;i<=n;i++)
+scanf("%d",&a[i]);
+int cnt=0;
+for(int i=1;i<=n;i++)
+for(int j=i+1;j<=n;j++)
+if(gcd(a[i],a[j])==1)
+cnt++;
+if(cnt) printf("%.6lf\n",sqrt(6.0*n*(n-1)/2/cnt));
+else printf("No estimate for this data set.\n");
+}
+return 0;
+}

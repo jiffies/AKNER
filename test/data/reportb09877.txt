@@ -1,0 +1,129 @@
+POJ 3585 一道很好的树DP - ronaflx - 博客园
+
+题目要求给一棵加权无向树，求每个点到叶子节点的最大流量。范围20万。
+必须是O(N)的树DP才行。
+首先固定一个为根，做一次DFS，求每个节点到其子树的叶子节点的流量和son[i]，以及每个节点对其父亲节点的贡献belong[i]，还有每个点和他父亲节点的边权edge[i]。然后对每个节点做一次记忆化搜索，顺着第一次搜索的边反向搜索。DP的转移方程是
+dp[i] = min(dp[father[i]] - belong[i], dege[i])  + son[i];
+解题的过程比较坎坷。首先状态转移方程多次修改，导致第一次DFS所要求的东西不明确，所以改了好多次。这是写DP的一大忌讳……没确定转移过程就开始写题
+确定转移方程以后，有一种特殊的情况没有处理好，就是当固定的根是个度为1的点时，需要特殊处理。思考问题需要群面。
+一下为此题的代码：
+ 
+
+ 
+ 
+ POJ 3585 
+  
+    1 /*
+  2  * =====================================================================================
+  3  *
+  4  *       Filename:  dp.cpp
+  5  *
+  6  *    Description:  tree dp problem
+  7  *
+  8  *        Version:  1.0
+  9  *        Created:  2011年07月22日 13时41分18秒
+ 10  *       Revision:  none
+ 11  *       Compiler:  gcc
+ 12  *
+ 13  *         Author:  ronaflx
+ 14  *        Company:  hit-ACM-Group
+ 15  *
+ 16  * =====================================================================================
+ 17  */
+ 18 #include <cstdlib>
+ 19 #include <cctype>
+ 20 #include <cstring>
+ 21 #include <cstdio>
+ 22 #include <cmath>
+ 23 #include <ctime>
+ 24 #include <climits>
+ 25 #include <algorithm>
+ 26 #include <functional>
+ 27 #include <numeric>
+ 28 #include <vector>
+ 29 #include <map>
+ 30 #include <set>
+ 31 #include <queue>
+ 32 #include <stack>
+ 33 #include <bitset>
+ 34 #include <list>
+ 35 #include <string>
+ 36 #include <iostream>
+ 37 #include <sstream>
+ 38 #include <fstream>
+ 39 #include <iomanip>
+ 40 #include <stdexcept>
+ 41 #include <utility>
+ 42 #include <cassert>
+ 43 #include <complex>
+ 44 using namespace std;
+ 45 #define LEFT(i) ((i) << 1)
+ 46 #define RIGHT(i) (((i) << 1) | 1)
+ 47 #define MID(i) ((l[i] + r[i]) >> 1)
+ 48 #define CC(i, v) memset(i, v, sizeof(i))
+ 49 #define REP(i, l, n) for(int i = l;i < int(n);++i)
+ 50 #define FOREACH(con, i) for(__typeof(con.begin()) i = con.begin();i != con.end();++i)
+ 51 const int N = 200000;
+ 52 const long long INF = (long long) N * N;
+ 53 vector<pair<int, long long> > adj[N];
+ 54 long long son[N], dp[N], belong[N], edge[N];
+ 55 int father[N];
+ 56 long long DP(int x)
+ 57 {
+ 58     if(x == -1) return 0;
+ 59     if(dp[x] != - 1 && x != 0) return dp[x];
+ 60     if(x == 0)
+ 61     {
+ 62         dp[x] = son[x];
+ 63         if(adj[x].size() == 1) return adj[x][0].second * 2;
+ 64         else return dp[x];
+ 65     }
+ 66     long long ans = (min(DP(father[x])  - belong[x], father[x] == -1 ? 0 : edge[x]) + son[x]);
+ 67     dp[x] = ans;
+ 68     return dp[x];
+ 69 }
+ 70 long long dfs(int x, int pre)
+ 71 {
+ 72     father[x] = pre;
+ 73     int isLeaf = true;
+ 74     FOREACH(adj[x], i)
+ 75     {
+ 76         if(i->first == pre) edge[x] = i->second;
+ 77         else
+ 78         {
+ 79             isLeaf = false;
+ 80             int score = min(i->second, dfs(i->first, x));
+ 81             son[x] += score;
+ 82             belong[i->first] = score;
+ 83         }
+ 84     }
+ 85     return (isLeaf ? edge[x] : son[x]);
+ 86 }
+ 87 
+ 88 
+ 89 int main()
+ 90 {
+ 91     int t, n, v, u, c;
+ 92     scanf("%d", &t);
+ 93     while(t--)
+ 94     {
+ 95         scanf("%d", &n);
+ 96         for(int i = 0;i < n;i++) adj[i].clear();
+ 97         CC(son, 0);
+ 98         CC(dp, -1);
+ 99         for(int i = 1;i < n;i++)
+100         {
+101             scanf("%d%d%d", &v, &u, &c);
+102             v--, u--;
+103             adj[v].push_back(make_pair(u, (long long)c));
+104             adj[u].push_back(make_pair(v, (long long)c));
+105         }
+106         dfs(0, -1);
+107         for(int i = 0;i < n;i++)
+108             DP(i);
+109 //        for(int i = 0;i < n++) printf("%lld %d %lld\n", son[i], father[i], dp[i]);
+110         printf("%lld\n", *max_element(dp, dp + n));
+111     }
+112     return 0;
+113 } 
+  

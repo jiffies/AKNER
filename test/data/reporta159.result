@@ -1,0 +1,995 @@
+poj1191	eng	N	Y	O	B-OJ
+______________________	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+看	v	N	N	O	O
+了	ul	N	N	O	O
+那本	r	N	N	O	O
+黑书	n	N	N	O	O
+，	x	N	N	O	O
+按照	p	N	N	O	O
+它	r	N	N	O	O
+的	uj	N	N	O	O
+思路	n	N	N	O	O
+写	v	N	N	O	O
+了	ul	N	N	O	O
+一下	m	N	N	O	O
+，	x	N	N	O	O
+对于	p	N	N	O	O
+动态	n	Y	N	O	B-KNOWLEDGE
+规划	n	Y	N	O	I-KNOWLEDGE
+还是	c	N	N	O	O
+陌生	n	N	N	O	O
+啊	zg	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+cmath	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MIN	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+(	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+>	x	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+?	x	N	N	O	O
+(	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+:	x	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+
+10000000	m	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+map	eng	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+15	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+g	x	N	N	O	O
+,	x	N	N	O	O
+h	x	N	N	O	O
+,	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+8	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+sum	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+sum	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+e	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+e	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+)	x	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+e	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+e	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+g	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+g	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+g	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+h	x	N	N	O	O
+=	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+h	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+g	x	N	N	O	O
+;	x	N	N	O	O
+h	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+g	x	N	N	O	O
+]	x	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+tmp	eng	N	N	O	O
+[	x	N	N	O	O
+h	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+e	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+cut	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y2	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+cut	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+cut	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+cut	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x1	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+x2	eng	N	N	O	O
+&&	x	N	N	O	O
+y1	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+y2	eng	N	N	O	O
+&&	x	N	N	O	O
+cut	eng	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+MAX	eng	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+min	eng	N	N	O	O
+,	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+g	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+MAX	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+x1	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+x2	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+e	x	N	N	O	O
+=	x	N	N	O	O
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+cut	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+=	x	N	N	O	O
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+cut	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+MIN	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+,	x	N	N	O	O
+MIN	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+g	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+y1	eng	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+y2	eng	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+e	x	N	N	O	O
+=	x	N	N	O	O
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+cut	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+y1	eng	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+i	x	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+g	x	N	N	O	O
+=	x	N	N	O	O
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+cut	eng	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+x1	eng	N	N	O	O
+,	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+x2	eng	N	N	O	O
+,	x	N	N	O	O
+y2	eng	N	N	O	O
+)	x	N	N	O	O
++	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+*	x	N	N	O	O
+sum	eng	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+min	eng	N	N	O	O
+=	x	N	N	O	O
+MIN	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+,	x	N	N	O	O
+MIN	eng	N	N	O	O
+(	x	N	N	O	O
+e	x	N	N	O	O
+,	x	N	N	O	O
+g	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+dp	eng	Y	N	O	O
+[	x	N	N	O	O
+cut	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y1	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+x2	eng	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+y2	eng	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+min	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+sum1	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sum2	eng	N	N	O	O
+;	x	N	N	O	O
+
+float	eng	N	N	O	O
+
+ave	eng	N	N	O	O
+,	x	N	N	O	O
+ss	eng	Y	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+k	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+<	x	N	N	O	O
+8	x	N	N	O	O
+;	x	N	N	O	O
+j	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sum1	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+map	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+j	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+ave	eng	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+float	eng	N	N	O	O
+)	x	N	N	O	O
+sum1	eng	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+float	eng	N	N	O	O
+)	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+ave	eng	N	N	O	O
+*	x	N	N	O	O
+=	x	N	N	O	O
+ave	eng	N	N	O	O
+;	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sum2	eng	N	N	O	O
+=	x	N	N	O	O
+sol	eng	N	N	O	O
+(	x	N	N	O	O
+k	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+7	x	N	N	O	O
+,	x	N	N	O	O
+7	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+ss	eng	Y	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+float	eng	N	N	O	O
+)	x	N	N	O	O
+sum2	eng	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+float	eng	N	N	O	O
+)	x	N	N	O	O
+k	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+.3	m	N	N	O	O
+f	eng	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+sqrt	eng	N	N	O	O
+(	x	N	N	O	O
+ss	eng	Y	N	O	O
+-	x	N	N	O	O
+ave	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

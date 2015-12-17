@@ -1,0 +1,65 @@
+POJ2472 n次迪杰斯特拉 - Belong to Sopranos - 博客频道 - CSDN.NET
+
+ 一个简单的最短路，之前写过一个等效于floyd（floyd太简单，但人家思想很强大）的DJ，这次又重温一下，不错，依然好用。。。根据floyd的思想和DJ的思想可知，n次DJ算法相当于一次floyd算法：
+#include<iostream>
+#include<cstring>
+#include<cmath>
+using namespace std;
+#define buzhun_tou_zhuan_pzjay_wenzhang 0
+const int N=1000;
+const double pp=-1.00;
+double Pzjay[N][N];
+bool used[N];
+const int nax=101;
+void DJ(int n)
+{
+	int i,j;
+	int k,beg;
+	double min;
+	for(i=1;i<=n;++i)
+	{
+		memset(used,0,sizeof(used));
+		used[i]=true;
+		k=n;
+		while(k--)
+		{
+			min=pp;
+			for(j=1;j<=n;++j)
+				if(!used[j] && Pzjay[i][j]>min)
+				{
+					min=Pzjay[i][j];
+					beg=j;
+				}
+				used[beg]=true;
+				for(j=1;j<=n;++j)
+					if(!used[j] && Pzjay[i][j]<Pzjay[i][beg]*Pzjay[beg][j])
+						Pzjay[i][j]=Pzjay[i][beg]*Pzjay[beg][j];
+		}
+	}
+}
+int main()
+{
+	int i,j,n,m;
+	int tmp;
+	while(scanf("%d",&n),n)
+	{
+		scanf("%d",&m);
+		memset(Pzjay,0,sizeof(Pzjay));
+		memset(used,0,sizeof(used));
+		while(m--)
+		{
+			scanf("%d%d",&i,&j);
+			scanf("%d",&tmp);
+			Pzjay[j][i]=Pzjay[i][j]=tmp*0.01;
+		}
+		DJ(n);
+		/*for(i=1;i<=n;++i)
+		{
+			for(j=1;j<=n;++j)
+				printf("%.2lf ",Pzjay[i][j]);
+			printf("/n");
+		}*/	
+		printf("%.6lf percent/n",100.0*Pzjay[1][n]);
+	}
+	return buzhun_tou_zhuan_pzjay_wenzhang;
+} 

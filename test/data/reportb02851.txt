@@ -1,0 +1,105 @@
+PKU 1222 EXTENDED LIGHTS OUT (枚举）_prayer_百度空间
+
+DescriptionIn an extended version of the game Lights Out, is a puzzle with 5 rows of 6 buttons each (the actual puzzle has 5 rows of 5 buttons each). Each button has a light. When a button is pressed, that button and each of its (up to four) neighbors above, below, right and left, has the state of its light reversed. (If on, the light is turned off; if off, the light is turned on.) Buttons in the corners change the state of 3 buttons; buttons on an edge change the state of 4 buttons and other buttons change the state of 5. For example, if the buttons marked X on the left below were to be pressed,the display would change to the image on the right. 
+
+The aim of the game is, starting from any initial set of lights on in the display, to press buttons to get the display to a state where all lights are off. When adjacent buttons are pressed, the action of one button can undo the effect of another. For instance, in the display below, pressing buttons marked X in the left display results in the right display.Note that the buttons in row 2 column 3 and row 2 column 5 both change the state of the button in row 2 column 4,so that, in the end, its state is unchanged. 
+
+Note: 
+
+1. It does not matter what order the buttons are pressed. 
+
+2. If a button is pressed a second time, it exactly cancels the effect of the first press, so no button ever need be pressed more than once. 
+
+3. As illustrated in the second diagram, all the lights in the first row may be turned off, by pressing the corresponding buttons in the second row. By repeating this process in each row, all the lights in the first 
+
+four rows may be turned out. Similarly, by pressing buttons in columns 2, 3 ?, all lights in the first 5 columns may be turned off. 
+
+Write a program to solve the puzzle.
+
+Input
+The first line of the input is a positive integer n which is the number of puzzles that follow. Each puzzle will be five lines, each of which has six 0抯 or 1抯 separated by one or more spaces. A 0 indicates that the light is off, while a 1 indicates that the light is on initially.
+
+Output
+For each puzzle, the output consists of a line with the string: "PUZZLE #m", where m is the index of the puzzle in the input file. Following that line, is a puzzle-like display (in the same format as the input) . In this case, 1's indicate buttons that must be pressed to solve the puzzle, while 0抯 indicate buttons, which are not pressed. There should be exactly one space between each 0 or 1 in the output puzzle-like display.
+
+Sample Input
+20 1 1 0 1 01 0 0 1 1 10 0 1 0 0 11 0 0 1 0 10 1 1 1 0 00 0 1 0 1 01 0 1 0 1 10 0 1 0 1 11 0 1 1 0 00 1 0 1 0 0
+
+Sample Output
+PUZZLE #11 0 1 0 0 11 1 0 1 0 10 0 1 0 1 11 0 0 1 0 00 1 0 0 0 0PUZZLE #21 0 0 1 1 11 1 0 0 0 00 0 0 1 0 01 1 0 1 0 11 0 1 1 0 1
+
+Source
+Greater New York 2002
+算法：枚举第一行的状态，接下来模拟。
+MY code：
+#include<iostream>
+#include<stdio.h>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+int mat[6][6];
+int dx[4] = {0, 0, 1, -1};
+int dy[4] = {1, -1, 0, 0};
+int main() {
+    int cas;
+    scanf("%d", &cas);
+    for (int nth = 1; nth <= cas; nth++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 6; j++) {
+                scanf("%d", &mat[i][j]);
+            }
+        }
+        int method[6][6];
+        printf("PUZZLE #%d\n", nth);
+        int tmp[6][6];
+        memcpy(tmp, mat, sizeof (mat));
+        for (int st = 0; st < (1 << 6); st++) {
+            memset(method, 0, sizeof (method));
+            memcpy(mat, tmp, sizeof (tmp));
+            for (int i = 0; i < 6; i++) {
+                if ((1 << i) & st) {
+                    method[0][i] = 1;
+                    mat[0][i] ^= 1;
+                    for (int k = 0; k < 4; k++) {
+                        int X = 0 + dx[k];
+                        int Y = i + dy[k];
+                        if (X < 0 || Y < 0 || Y > 5) continue;
+                        mat[X][Y] ^= 1;
+                    }
+                }
+            }
+            for (int i = 1; i < 5; i++) {
+                for (int j = 0; j < 6; j++) {
+                    if (mat[i - 1][j] == 1) {
+                        method[i][j] = 1;
+                        mat[i][j] ^= 1;
+                        for (int k = 0; k < 4; k++) {
+                            int X = i + dx[k];
+                            int Y = j + dy[k];
+                            if (X < 0 || X > 4 || Y < 0 || Y > 5) continue;
+                            mat[X][Y] ^= 1;
+                        }
+                    }
+                }
+            }
+            int check = 0;
+            for (int i = 0; i < 6; i++) {
+                if (mat[4][i] != 0) {
+                    check = 1;
+                    break;
+                }
+            }
+            if (!check) {
+                for (int i = 0; i < 5; i++) {
+                    for (int j = 0; j < 6; j++) {
+                        if (j > 0) printf(" ");
+                        printf("%d", method[i][j]);
+                    }
+                    printf("\n");
+                }
+                break;
+            }
+        }
+    }
+    return 0;
+}

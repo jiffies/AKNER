@@ -1,0 +1,196 @@
+PKU	eng	N	Y	O	B-OJ
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+2959	m	N	N	O	O
+_	x	N	N	O	O
+Gaming	eng	N	N	O	O
+
+&	x	N	N	O	O
+
+programing	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+Problem	eng	N	N	O	O
+:	x	N	N	O	O
+
+2959	m	N	N	O	O
+User	eng	N	N	O	O
+:	x	N	N	O	O
+
+jesse	eng	N	N	O	O
+_	x	N	N	O	O
+luzexiMemory	eng	N	N	O	O
+:	x	N	N	O	O
+
+196	m	N	N	O	O
+KTime	eng	N	N	O	O
+:	x	N	N	O	O
+
+0	m	N	N	O	O
+MSLanguage	eng	N	N	O	O
+:	x	N	N	O	O
+
+C++	nz	N	N	O	O
+Result	eng	N	N	O	O
+:	x	N	N	O	O
+
+Accepted	eng	N	N	O	O
+
+Source	eng	N	N	O	O
+
+Code	eng	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+iostream	eng	N	N	O	O
+"	x	N	N	O	O
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+math	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+#	x	N	N	O	O
+define	eng	N	N	O	O
+
+pi	eng	N	N	O	O
+
+3.1415926535897932384626433832795	m	N	N	O	O
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+Case	eng	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+Case	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+
+;	x	N	N	O	O
+Case	eng	N	N	O	O
+-	x	N	N	O	O
+-	x	N	N	O	O
+;	x	N	N	O	O
+
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+double	eng	N	N	O	O
+
+D	x	N	N	O	O
+,	x	N	N	O	O
+d	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+%	x	N	N	O	O
+lf	eng	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+D	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+d	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+s	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+res	eng	N	N	O	O
+
+=	x	N	N	O	O
+
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+(	x	N	N	O	O
+
+pi	eng	N	N	O	O
+/	x	N	N	O	O
+asin	eng	N	N	O	O
+(	x	N	N	O	O
+(	x	N	N	O	O
+s	eng	N	N	O	O
++	x	N	N	O	O
+d	eng	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+(	x	N	N	O	O
+D	x	N	N	O	O
+-	x	N	N	O	O
+d	x	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+res	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+

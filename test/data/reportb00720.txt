@@ -1,0 +1,303 @@
+PKU 3233_一杯茶 一根烟  写代码!_百度空间
+
+题目大意：
+求解A^1+A^2+A^3+....+A^(k-1)+A^k（A是N阶方阵）
+这个题目有两种算法解决：
+算法一:
+构造方阵法
+设：A^1+A^2+A^3+....+A^(k-1)+A^k==B;
+E==N阶单位方阵
+则可以构造2*N阶方阵
+       B       E
+C= O      E
+C^(k+1)==A^k   B+E
+                O       E
+最后我们只要去求C^(k+1)的右上方N矩阵减去一个E就行了！
+CODE:
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<time.h>
+const int MAX=65;
+int N,K,M;
+//将一个整数转化为二进制用数组存储
+void Change(int n,int *b)
+{
+    int k=1,j,t;
+    while(n)
+    {
+        b[k++]=n%2;
+        n/=2;
+    }
+    b[0]=k-1;
+    for(j=1;j<=k/2;j++)
+    {
+        t=b[j];
+        b[j]=b[k-j];
+        b[k-j]=t;
+    }
+}
+//c[][]=(a[][]*b[][])%10000
+void Mult(int a[][MAX],int b[][MAX],int c[][MAX])
+{
+int i,j,k;
+for(i=1;i<=2*N;i++)
+   for(j=1;j<=2*N;j++)
+   {
+    int ans=0;
+    for(k=1;k<=2*N;k++)
+     ans=(ans+a[i][k]*b[k][j])%M;
+    c[i][j]=ans;
+   }
+}
+void Copy(int a[][MAX],int b[][MAX])
+{
+int i,j;
+for(i=1;i<=2*N;i++)
+   for(j=1;j<=2*N;j++)
+    a[i][j]=b[i][j];
+}
+//A^n%m
+void ModPow(int A[][MAX],int k,int ans[][MAX])//init ans[][]=n阶单位矩阵
+{
+int i;
+        int a[105];
+int x[MAX][MAX];
+int y[MAX][MAX];
+Change(k,a);//将n转化为2进制 
+for(i=1;i<=a[0];i++)
+{
+   Copy(x,ans);
+   Copy(y,ans);
+   Mult(x,y,ans);//ans*=ans;
+   if(a[i])
+   {
+    Copy(x,ans);
+    Mult(x,A,ans);//ans*=A;
+   }
+}
+}
+int main()
+{
+int A[MAX][MAX];
+int ans[MAX][MAX];
+int i,j;
+FILE *in;
+FILE *out;
+in=fopen("in.txt","r");
+out=fopen("out.txt","w");
+while(scanf("%d%d%d",&N,&K,&M)!=EOF)
+{
+   memset(A,0,sizeof(A));
+   memset(ans,0,sizeof(ans));
+   for(i=1;i<=N;i++)
+   for(j=1;j<=N;j++)
+   {
+     scanf("%d",&A[i][j]);
+     A[i][j]%=M;
+   }
+   for(i=1;i<=N;i++)
+   A[i][i+N]=1,ans[i][i]=1;
+   for(i=N+1;i<=2*N;i++)
+   A[i][i]=1,ans[i][i]=1;
+   ++K;
+         int st=clock();
+         ModPow(A,K,ans);//A^K%M
+   //最后的矩阵右上子矩阵减去一个N阶的单位矩阵,如果为负数加M再取莫
+   for(i=1;i<=N;i++)
+   ans[i][i+N]=(ans[i][i+N]-1+M)%M;
+   int ed=clock();
+   //printf(out,"time=%lf\n",(double)(ed-st)/CLOCKS_PER_SEC);//检测花费的时间
+   for(i=1;i<=N;i++)
+   {
+    for(j=N+1;j<=2*N-1;j++)
+    printf("%d ",ans[i][j]);
+    printf("%d\n",ans[i][j]);
+   }
+}
+return 0;
+}
+/*
+2 2 4
+0 1
+1 1
+1 2
+2 3
+*/  
+第2种算法：
+思路：2分递归+2分快速幂指数算法(在下面的程序注释中解释的很详细)
+关于2分递归算法
+下面问题，可能会加深你的理解
+例如：计算x^1+x^2+x^3+x^4+....+x^(k-1)^+x^k (x&&k都是整数)
+我们可以2分递归解决这个问题
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+#include<time.h>
+int x,k;
+int cal(int n)
+{
+int i,ans=1;
+for(i=1;i<=n;i++)
+   ans*=x;
+return ans;
+}
+int MatrixSum(int k)
+{
+if(k==1)
+   return x;
+int tnow,temp;
+temp=MatrixSum(k/2);
+if(k&1)
+{
+   tnow=cal(k/2+1);
+   temp=temp+temp*tnow+tnow;
+}
+else
+{
+   tnow=cal(k/2);
+   temp=temp+temp*tnow;
+}
+return temp;
+}
+//2分递归计算:
+//x^1+x^2+x^3+x^4+....+x^(k-1)^+x^k
+int main()
+{
+while(scanf("%d%d",&x,&k)!=EOF)
+{
+   printf("%d\n",MatrixSum(k));
+}
+return 0;
+}
+CODE
+#include<iostream>using namespace std;const int MAX=35;typedef struct Matrix{ int A[MAX][MAX];}Matrix;Matrix E;//单位矩阵Matrix ans;//结果矩阵Matrix init;//初始化矩阵int N,M,K;//z=(x+y)%MMatrix Add(Matrix x,Matrix y){ int i,j; Matrix z; for(i=1;i<=N;i++) for(j=1;j<=N;j++) { z.A[i][j]=x.A[i][j]+y.A[i][j]; z.A[i][j]%=M; } return z;}//Z=(x*y)%M;Matrix Mult(Matrix x,Matrix y){ int i,j,k; Matrix z; for(i=1;i<=N;i++) for(j=1;j<=N;j++) { z.A[i][j]=0; for(k=1;k<=N;k++) z.A[i][j]+=x.A[i][k]*y.A[k][j]; z.A[i][j]%=M; } return z;}//A^expMatrix Cal(int exp){ Matrix p,q; p=init;//p是初始矩阵 q=E;//q是单位矩阵 while(exp!=1) { if(exp&1)//幂指数是奇数 { exp--; q=Mult(p,q); } else//幂指数是偶数 { exp>>=1;//除于2 p=Mult(p,p); } } p=Mult(p,q); return p;}Matrix MatrixSum(int k){ if(k==1) return init;//最底层只有A了,返回A Matrix temp,now; //2分A+A^2+A^3+.....+A^k temp=MatrixSum(k/2);//A+A^2+A^3+.....+A^(k/2) if(k&1)//k为奇数 { now=Cal(k/2+1);//A^(k/2+1) /* temp=temp+temp*now+now==A+A^2+A^3+.....+A^k EG： A^1+A^2+A^3+A^4+A^4+A^5+A^6+A^7 =A^1+A^2+A^3+A^4+A^4*(A^1+A^2+A^3) =temp+now+temp*now */ temp=Add(temp,Mult(temp,now)); temp=Add(now,temp); } else//k为偶数 { now=Cal(k/2);//A^(k/2) /* temp=temp+temp*now==A+A^2+A^3+.....+A^k EG： A^1+A^2+A^3+A^4+A^4+A^5+A^6 =A^1+A^2+A^3+A^3*(A^1+A^2+A^3) =temp+temp*now */ temp=Add(temp,Mult(temp,now)); } return temp;}int main(){ int i,j; while(scanf("%d%d%d",&N,&K,&M)!=EOF) { for(i=1;i<=N;i++) for(j=1;j<=N;j++) { scanf("%d",&init.A[i][j]); init.A[i][j]%=M; E.A[i][j]=(i==j);//E单位矩阵 } ans=MatrixSum(K); for(i=1;i<=N;i++) { for(j=1;j<=N-1;j++) printf("%d ",ans.A[i][j]); printf("%d\n",ans.A[i][j]); } } return 0;}/*2 2 40 11 11 22 3*/为了曾加程序的可读性，这里对+和*运算符重载应该是个不错的选择
+
+CODE
+#include<iostream>
+using namespace std;
+const int MAX=35;
+int N,M,K;
+typedef struct Matrix
+{
+int A[MAX][MAX];
+//+号运算符重载
+Matrix operator+(const Matrix &y)
+{
+       int i,j;
+    Matrix z;
+    for(i=1;i<=N;i++)
+    for(j=1;j<=N;j++)
+    {
+      z.A[i][j]=A[i][j]+y.A[i][j];
+         z.A[i][j]%=M;
+    }
+    return z;
+}
+//*号运算符重载
+Matrix operator*(const Matrix &y)
+{
+        int i,j,k;
+     Matrix z;
+     for(i=1;i<=N;i++)
+     for(j=1;j<=N;j++)
+   {
+       z.A[i][j]=0;
+       for(k=1;k<=N;k++)
+          z.A[i][j]+=A[i][k]*y.A[k][j];
+       z.A[i][j]%=M;
+   }
+     return z;
+}
+}Matrix;
+Matrix E;//单位矩阵
+Matrix ans;//结果矩阵
+Matrix init;//初始化矩阵
+//A^exp
+Matrix Cal(int exp)
+{
+   Matrix p,q;
+   p=init;//p是初始矩阵
+   q=E;//q是单位矩阵
+   while(exp!=1)
+   {
+    if(exp&1)//幂指数是奇数
+    {
+     exp--;
+     //q=Mult(p,q);
+     q=p*q;
+    }
+    else//幂指数是偶数
+    {
+     exp>>=1;//除于2
+     //p=Mult(p,p);
+     p=p*p;
+    }
+   }
+   //p=Mult(p,q);
+   p=p*q;
+   return p;
+}
+Matrix MatrixSum(int k)
+{
+if(k==1)
+   return init;//最底层只有A了,返回A
+Matrix temp,now;
+//2分A+A^2+A^3+.....+A^k
+temp=MatrixSum(k/2);//A+A^2+A^3+.....+A^(k/2)
+if(k&1)//k为奇数
+{
+   now=Cal(k/2+1);//A^(k/2+1)
+   /*
+   temp=temp+temp*now+now==A+A^2+A^3+.....+A^k
+   EG：
+   A^1+A^2+A^3+A^4+A^4+A^5+A^6+A^7
+     =A^1+A^2+A^3+A^4+A^4*(A^1+A^2+A^3)
+   =temp+now+temp*now
+   */
+   temp=temp+temp*now+now;
+}
+else//k为偶数
+{
+   now=Cal(k/2);//A^(k/2)
+   /*
+        temp=temp+temp*now==A+A^2+A^3+.....+A^k
+   EG：
+   A^1+A^2+A^3+A^4+A^4+A^5+A^6
+     =A^1+A^2+A^3+A^3*(A^1+A^2+A^3)
+   =temp+temp*now
+   */
+   temp=temp+temp*now;
+}
+return temp;
+}
+int main()
+{
+int i,j;
+while(scanf("%d%d%d",&N,&K,&M)!=EOF)
+{
+   for(i=1;i<=N;i++)
+   for(j=1;j<=N;j++)
+   {
+   scanf("%d",&init.A[i][j]);
+   init.A[i][j]%=M;
+   E.A[i][j]=(i==j);//E单位矩阵
+   }
+   ans=MatrixSum(K);
+   for(i=1;i<=N;i++)
+   {
+    for(j=1;j<=N-1;j++)
+    printf("%d ",ans.A[i][j]);
+    printf("%d\n",ans.A[i][j]);
+   }
+}
+return 0;
+}
+/*
+2 2 4
+0 1
+1 1
+1 2
+2 3
+*/

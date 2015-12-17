@@ -1,0 +1,1012 @@
+8,"PKU 2027 No Brainer(简单题)_双月鸟_百度空间
+
+No Brainer 
+Time Limit: 1000MS 
+Memory Limit: 30000K 
+Total Submissions: 8953 
+Accepted: 6298 
+
+Description
+Zombies love to eat brains. Yum.
+
+Input
+The first line contains a single integer n indicating the number of data sets. 
+
+The following n lines each represent a data set. Each data set will be formatted according to the following description: 
+
+A single data set consists of a line ""X Y"", where X is the number of brains the zombie eats and Y is the number of brains the zombie requires to stay alive.
+
+Output
+For each data set, there will be exactly one line of output. This line will be ""MMM BRAINS"" if the number of brains the zombie eats is greater than or equal to the number of brains the zombie requires to stay alive. Otherwise, the line will be ""NO BRAINS"".
+
+Sample Input
+34 53 34 3
+
+Sample Output
+NO BRAINSMMM BRAINSMMM BRAINS
+
+Source
+South Central USA 2004
+Source Code
+ Problem: 2027 User: LXpeng Memory: 204K Time: 0MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include <iostream>using namespace std;int main() { int n,x,y; scanf(""%d"",&n); while(n--) { scanf(""%d %d"",&x,&y); if(x>=y) printf(""MMM BRAINS\n""); else printf(""NO BRAINS\n""); } return 0;} 
+"
+31,"pku 3214(lis) - 心尘的日志 - 网易博客
+
+/* 题目：父节点>= 子结点   右节点>左节点 
+
+    为了适应最长非递减序列，当存在右节点时 
+
+    右节点和父亲节点都必须减去一个数 
+
+*/ 
+
+#include<iostream>
+
+#define base 1024*1024+10
+
+using namespace std;
+
+struct node{ 
+
+     int v;
+
+     int lson,rson;    
+
+}a[base];
+
+int tag,n,m;
+
+int f[base],b[base];
+
+int sub=1;
+
+void dfs(int k){
+
+    if(a[k].lson<=m) dfs(a[k].lson);
+
+    if(a[k].rson<=m){sub++; dfs(a[k].rson); }
+
+    f[tag++]=a[k].v-sub;     
+
+}
+
+int list(){
+
+    int len=1,p,r,mid;    
+
+    b[0]=-10; b[1]=f[1];
+
+    for(int i=2;i<=m;i++){
+
+         p=0; r=len;
+
+         while(p<=r){
+
+              int mid=(p+r)/2;
+
+              if(b[mid]<=f[i]) p=mid+1;
+
+              else r=mid-1;            
+
+         }        
+
+         b[p]=f[i];
+
+         if(p>len) len=len+1;
+
+    }
+
+    return len;
+
+}
+
+int main(){
+
+    scanf(""%d"",&n);
+
+    tag=1; m=1;   
+
+    while(scanf(""%d"",&a[m].v)!=EOF && a[m].v!=-1){
+
+       a[m].lson=m*2; 
+
+       a[m].rson=m*2+1; 
+
+       m++;
+
+    } 
+
+    m--;                           
+
+    dfs(1);
+
+    for(int i=1;i<=m;i++) cout<<f[i]<<"" ""; cout<<endl;
+
+    printf(""%d\n"",m-list()); 
+
+    system(""pause"");
+
+    return 0;
+
+}
+
+"
+32,"The Fun Number System [ PKU 1023 ]_青云行客_百度空间
+
+The Fun Number System 
+Time Limit: 1000MS 
+Memory Limit: 10000K 
+Total Submissions: 3621 
+Accepted: 993 
+
+Description
+In a k bit 2's complement number, where the bits are indexed from 0 to k-1, the weight of the most significant bit (i.e., in position k-1), is -2^(k-1), and the weight of a bit in any position i (0 ≤ i < k-1) is 2^i. For example, a 3 bit number 101 is -2^2 + 0 + 2^0 = -3. A negatively weighted bit is called a negabit (such as the most significant bit in a 2's complement number), and a positively weighted bit is called a posibit. 
+
+A Fun number system is a positional binary number system, where each bit can be either a negabit, or a posibit. For example consider a 3-bit fun number system Fun3, where bits in positions 0, and 2 are posibits, and the bit in position 1 is a negabit. (110)Fun3 is evaluated as 2^2-2^1 + 0 = 3. Now you are going to have fun with the Fun number systems! You are given the description of a k-bit Fun number system Funk, and an integer N (possibly negative. You should determine the k bits of a representation of N in Funk, or report that it is not possible to represent the given N in the given Funk. For example, a representation of -1 in the Fun3 number system (defined above), is 011 (evaluated as 0 - 2^1 + 2^0), and 
+
+representing 6 in Fun3 is impossible.
+
+Input
+The first line of the input file contains a single integer t (1 ≤ t ≤ 10), the number of test cases, followed by the input data for each test case. Each test case is given in three consecutive lines. In the first line there is a positive integer k (1 ≤ k ≤ 64). In the second line of a test data there is a string of length k, composed only of letters n, and p, describing the Fun number system for that test data, where each n (p) indicates that the bit in that position is a negabit (posibit). 
+
+The third line of each test data contains an integer N (-2^63 ≤ N < 2^63), the number to be represented in the Funk number 
+
+system by your program.
+
+Output
+For each test data, you should print one line containing either a k-bit string representing the given number N in the Funk number system, or the word Impossible, when it is impossible to represent the given number.
+
+Sample Input
+23pnp64ppnn10
+
+Sample Output
+Impossible1110
+
+Source
+Tehran 2002, First Iran Nationwide Internet Programming Contest
+//-------------------------------------------------------------------------------------------
+#include <stdio.h>
+int main( )
+{
+    long long n;
+    int cases, k;
+    char pn[70];
+scanf(""%d"", &cases);
+    while(cases--)
+{
+   scanf(""%d%s%I64d"", &k, pn, &n);
+        while(k--)
+   {// 关键是直接用n的二进制形式，每次判断处理最后一位 
+            if( n & 0x1 )
+    {// n二进制形式的最后一位为1
+     n += (pn[k]=='p')?-1:1;
+     pn[k]='1';// 该位都要置1，不过为'n'时还要进1位
+    }
+    else 
+     pn[k]='0';
+    n >>= 1;// 处理该位以前的位
+   }
+   puts(n?""Impossible"":pn);
+}
+    return 0;
+}
+/*
+算法说明：
+（1）、一个符号数转换为二进制01序列，要对应到给我们的pn序列上填充01
+（2）、一个比较好的想法是从低位到高位的逐位填充，因为最低位的01选择对应着当前填充数的奇偶，是唯一的
+（3）、当 n & 0x1 为1时，还要判断pn序列：当为'n'时说明填上了-1（相对的位上-1），于是要加上1；否则加-1
+（4）、处理一位后右移一位，作为当前值处理
+*/
+"
+39,"PKU 1090 Chain_Thinker's paradise_百度空间
+
+                                                       Chain 
+Time Limit: 1000MS 
+Memory Limit: 10000K 
+Total Submissions: 1759 
+Accepted: 597 
+
+Description
+Byteland had not always been a democratic country. There were also black pages in its book of history. One lovely day general Bytel − commander of the junta which had power over Byteland −− decided to finish the long−lasting time of war and released imprisoned activists of the opposition. However, he had no intention to let the leader Bytesar free. He decided to chain him to the wall with the bytish chain. It consists of joined rings and the bar fixed to the wall. Although the rings are not joined with the bar, it is hard to take them off. 
+
+'General, why have you chained me to the prison walls and did not let rejoice at freedom!' cried Bytesar. 
+
+'But Bytesar, you are not chained at all, and I am certain you are able to take off the rings from the bar by yourself.' perfidiously answered general Bytel, and he added 'But deal with that before a clock strikes the cyber hour and do not make a noise at night, otherwise I will be forced to call Civil Cyber Police.' 
+
+Help Bytesar! Number the following rings of the chain with integers 1,2,...,n. We may put on and take off these rings according to the following rules: 
+
+.only one ring can be put on or taken off from the bar in one move, 
+
+.the ring number 1 can be always put on or taken off from the bar, 
+
+.if the rings with the numbers 1,...,k−1 (for 1<= k < n) are taken off from the bar and the ring number k is put on, we can put on or take off the ring number k+1. 
+
+Write a program which: 
+
+.reads from std input the description of the bytish chain, 
+
+.computes minimal number of moves necessary to take off all rings of the bytish chain from the bar, 
+
+.writes the result to std output.
+
+Input
+In the first line of the input there is written one integer n, 1 <= n <= 1000. In the second line there are written n integers o1,o2,...,on (each of them is either 0 or 1) separated by single spaces. If oi=1, then the i−th ring is put on the bar, and if oi=0, then the i−th ring is taken off the bar.
+
+Output
+The output should contain exactly one integer equal to the minimal number of moves necessary to take off all the rings of the bytish chain from the bar.
+
+Sample Input
+41 0 1 0
+
+Sample Output
+6
+
+Source
+
+POI 2001
+
+Source Code
+ 
+Problem: 
+1090 
+User: *** 
+Memory: 220K 
+Time: 47MS 
+Language: C++ 
+Result: Accepted 
+ 
+ Source Code #include<iostream>using namespace std;int main(){ short link[1001]={0}; short a[340]={1,0},b[340]={0}; int N,i; cin>>N; for(i=0;i<N;i++) cin>>link[i]; while(!link[N--]); N++; for(i=N;i>=0;i--) link[i]=(link[i]+link[i+1])%2; /*以下为大数运算，效率不高，但较易编写*/ i=0; int u=1; int v=1; int m=0,n=0; while(i<=N) { m=n=0; if(i>=1) { for(int j=0;j<u;j++) { m=a[j]*2+n; a[j]=m%10; n=m/10; } if(n) { a[u]=n; u++; } } if(link[i]) { m=n=0; v=v>u?v:u; for(int j=0;j<v;j++) { m=a[j]+b[j]+n; b[j]=m%10; n=m/10; } if(n) { b[v]=n; v++; } } i++; } for(i=v-1;i>=0;i--) cout<<b[i]; cout<<endl; return 0;} 
+"
+40,"pku 1493_皇傲殛天的空间_百度空间
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+
+ int n, i, j;
+
+ int num,max;
+
+ int out=0;
+
+ string a1;
+
+ string a2;
+
+ int result[14];
+
+ while( cin>>n && n )
+
+ {
+
+   memset( result,0,sizeof(result) );
+
+   for( i = 0; i < n; i++ )
+
+   {
+
+    cin >> a1 ;
+
+    if( a1.length() != 25 )
+
+     cin >> a2;
+
+    if( a1.length() == 25 )
+
+                result[i] = a1.length();
+
+    else
+
+                result[i] = a1.length() + a2.length();
+
+   }
+
+   max = num = 0;
+
+   for( i = 0; i < n; i++ )
+
+   {
+
+    if( result[i] > max )
+
+     max = result[i];
+
+    num+=result[i];
+
+   }
+
+   out = n*max - num;
+
+   cout << out << endl;
+
+ }     
+
+ return 0;
+
+}
+
+"
+42,"pku 3286(正反dijkstara )_jingtianzi的百度空间_百度空间
+
+考虑到牛还要往回走的情况，可以建立反图让它们返回 ，其实对于这个题来说反图很简单 ， 就是把所有的x ,y 全调换就可以了……调用两次dijkstara 拿下…… Problem: 3268 User: jingtianzi Memory: 4272K Time: 63MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include <iostream>using namespace std;#define NNN 1001#define MMM 999999int mp[NNN][NNN];int n, m;int save[10001] ;int dis[10001];void dijkstara ( int start ){ int i, k, index, minnum, parent[NNN]; bool f[NNN]; memset ( f, 0, sizeof(f) ); memset ( parent, 0xff, sizeof(parent) ); for ( i = 0; i < n; i++ ) dis[i] = mp[start][i]; for ( k = 0; k < n-1; k++ ) { for ( minnum = MMM, i = 0; i < n; i++ ) { if ( !f[i] && dis[i] < minnum ) { index = i; minnum = dis[i]; } } if ( minnum == MMM ) break; f[index] = 1; for ( i = 0; i < n; i++ ) { if ( !f[i] && dis[i] > dis[index] + mp[index][i] ){ dis[i] = dis[index] + mp[index][i]; parent[i] = index; } } } for ( i = 0; i < n; i++ ) { save[i] += dis[i];// printf(""%d -> %d %d\n"", start + 1, i + 1, dis[i]); }}int save_x[10001] , save_y[10000] ,save_map[10000] ;int main(){ int x, y,xx ; while ( scanf(""%d%d%d"", &n, &m ,&xx) != EOF ) { int i , j ; for ( i = 0; i < n; i++ ) { for ( j = 0; j < n; j++ ) { mp[i][j] = MMM; } } for ( i = 0; i < m; i++ ) { scanf ( ""%d%d"", &x, &y ); save_x[i] = y ; save_y[i] = x ; scanf ( ""%d"", &mp[x-1][y-1] ); save_map[i] = mp[x-1][y-1]; } dijkstara(xx - 1); for ( i = 0; i < n; i++ ) { for ( j = 0; j < n; j++ ) { mp[i][j] = MMM; } } for ( i = 0; i < m; i++ ) { mp[save_x[i]-1][save_y[i]-1] = save_map[i] ; } memset(dis , 0 , sizeof(dis)) ; dijkstara(xx - 1); int max = 0 ; for( i = 0 ; i < n ; i++) { if( i != xx - 1) { if(save[i] > max) max = save[i] ; } } cout<<max<<endl; } return 0;} 
+"
+54,"PKU_1147_唐武的空间_百度空间
+
+//虽然在网上找到不少代码，但的确看的不是很明白，只好自己再摸索规律。
+//假设最后一列有n个0，则可以确定第1列的前n个也是0，后面的全为1，第1列的第i个0和最后一列0相对应，第j个1和最后一列的第j个1相对应。
+#include <stdio.h>
+const int NUM = 3001;
+int input[NUM];
+int zero[NUM];           //zero[i]表示第i个0在input中的位置
+int one[NUM];            //one[i]表示第i个1在input中的位置 
+int output[NUM];
+int N;                   //输入的0、1的个数
+int zero_num;            //0的个数
+int one_num;
+void Ans();
+int main()
+{
+ int i;
+ while(scanf(""%d"", &N) != EOF)
+ {
+   zero_num = one_num = 0;
+   for(i = 1; i <= N; i++)
+   {
+    scanf(""%d"", &input[i]);
+    if(input[i] == 0)
+    {
+     zero_num++;
+     zero[zero_num] = i;
+    }
+    else
+    {
+     one_num++;
+     one[one_num] = i;
+    }
+   }
+   Ans();
+   for(i = 1; i <= N; i++)
+    printf(""%d "", output[i]);
+   printf(""\n"");
+ }
+ return 0;
+}
+void Ans()
+{
+ int i;
+ if(zero_num > 0)
+   output[1] = 0;        //第一个一定是0
+ else
+ {
+   for(i = 1; i <= N; i++)
+    output[i] = 1;
+   return ;
+ }
+ int k = 0, h = 1, c = zero[h]; //k表示是0还是1，h表示是第几个0或第几个1
+ for(i = 2; i <= N; i++)
+ {
+   if(c > zero_num)
+   {
+    k = 1;
+    h = c - zero_num;
+    output[i] = 1;
+    c = one[h];
+   }
+   else
+   {
+    output[i] = 0;
+    k = 0;
+    h = c;
+    c = zero[h];
+   }
+ }
+}
+"
+65,"PKU Problem: 2959_Gaming & programing_百度空间
+
+Source Code
+Problem: 2959User: jesse_luzexiMemory: 196KTime: 0MSLanguage: C++Result: Accepted
+
+
+ Source Code #include ""iostream""#include ""math.h""using namespace std;#define pi 3.1415926535897932384626433832795int main(){ int Case; scanf(""%d"",&Case); for( ;Case--; ) { double D,d,s; scanf(""%lf%lf%lf"",&D,&d,&s); int res = (int)( pi/asin((s+d)/(D-d)) ); printf(""%d\n"",res); } return 0;}
+
+
+"
+70,"HDU 2517 (PKU 1191) 棋盘分割_Hurricane_百度空间
+
+http://acm.hdu.edu.cn/showproblem.php?pid=2517
+http://poj.org/problem?id=1191
+#include<stdio.h>
+#include<math.h>
+const int INF = 2000000000;
+int f[9][9][9][9][15];
+int s[9][9][9][9];
+int d[9][9];
+void init()//初始化 将s[x1][y1][x2][y2]保存一个“矩形面积”范围的格子值之和，
+               //若x1=x2,y1=y2表示s[x1][y1][x2][y2]所保存的值是一个格子的值
+{
+ int x1,y1,x2,y2;
+ int i,j,sum;
+ for(x1=1;x1<=8;x1++)
+  for(y1=1;y1<=8;y1++)
+   for(x2=x1;x2<=8;x2++)
+    for(y2=y1;y2<=8;y2++)
+    {
+     sum=0;
+     for(i=x1;i<=x2;i++)
+      for(j=y1;j<=y2;j++)
+       sum+=d[i][j];// 求矩形框每个格子值的和
+    s[x1][y1][x2][y2]=sum;
+    f[x1][y1][x2][y2][1]=sum*sum;//保存sum的平方值
+   }
+}
+int main()
+{
+ int n,i,j,k;
+ int x1,y1,x2,y2;
+ int a,b,t,tmp;
+ double p=0;
+ scanf(""%d"",&n);
+ for(i=1;i<=8;i++)
+   for(j=1;j<=8;j++)
+    {
+     scanf(""%d"",&d[i][j]);
+     p+=d[i][j];//所有格子值的和
+   }
+   p/=n;//求平均值
+   init();
+   for(k=2;k<=n;k++)//分割N-1次
+   {
+    for(x1=1;x1<=8;x1++)
+     for(y1=1;y1<=8;y1++)
+      for(x2=x1;x2<=8;x2++)
+       for(y2=y1;y2<=8;y2++)
+       {
+          tmp=INF;
+          for(a=x1;a<x2;a++)//水平方向切割
+          {
+           t=f[x1][y1][a][y2][k-1]+s[a+1][y1][x2][y2]*s[a+1][y1][x2][y2];
+           if(tmp>t) tmp=t;
+           t=f[a+1][y1][x2][y2][k-1]+s[x1][y1][a][y2]*s[x1][y1][a][y2];
+          if(tmp>t)  tmp=t;
+          }
+         for(b=y1;b<y2;b++)//竖直方向切割
+        {
+          t=f[x1][y1][x2][b][k-1]+s[x1][b+1][x2][y2]*s[x1][b+1][x2][y2];
+         if(tmp>t) tmp=t;
+         t=f[x1][b+1][x2][y2][k-1]+s[x1][y1][x2][b]*s[x1][y1][x2][b];
+         if(tmp>t) tmp=t;
+         }
+        f[x1][y1][x2][y2][k]=tmp;
+       }
+   }
+  printf(""%.3lf\n"",sqrt((double)(f[1][1][8][8][n])/(double)(n)-p*p));
+}
+"
+76,"pku 2242_何长兵 的空间_百度空间
+
+求三角形外接圆的周长
+#include ""stdio.h""
+#include ""math.h""
+double PI = 3.141592653589793;
+double dist(double x,double y,double xx,double yy)
+{
+double s = (x - xx) * (x - xx) + (y - yy) * (y - yy);
+return sqrt(s);
+}
+int main()
+{
+double x1,x2,x3,y1,y2,y3,d1,d2,d3,p,s,R;
+while(scanf(""%lf%lf%lf%lf%lf%lf"",&x1,&y1,&x2,&y2,&x3,&y3)!=EOF)
+{
+   d1 = dist(x1,y1,x2,y2);
+   d2 = dist(x1,y1,x3,y3);
+   d3 = dist(x2,y2,x3,y3);
+   p = (d1 + d2 + d3) / 2;
+   s = p * (p - d1) * (p - d2) * (p - d3);
+   s = sqrt(s);
+   R = PI * d1 * d2 * d3 / s / 2;
+   printf(""%.2lf\n"",R);
+}
+return 0;
+}
+"
+101,"pku 1160_King___haha的空间_百度空间
+
+http://poj.org/problem?id=1160
+///状态转移方程：
+// cost[i][j]+=(po[k]-po[mid]) 其中 i=<k<=j mid=(i+j)/2;
+//cost[i][j]表示从第i个村庄到第j个村庄建一个邮局的最优解 
+///dp[i][j]=min(dp[i-1][k]+cost[k+1][j])      其中i-1=<k<=j-1
+//特别要注意初始化 
+#include <iostream>
+#include <cmath>
+using namespace std;
+#define maxn1 35
+#define maxn2 305
+#define maxn3 2110000000
+int po[maxn2];
+int cost[maxn2][maxn2];
+int dp[maxn1][maxn2];
+int v,p;
+void init()
+{
+    int i,j,k;
+    for(i=1;i<=v;i++) 
+        for(j=i;j<=v;j++)
+        {
+            int mid=(i+j)/2;
+            for(k=i;k<=j;k++)
+            {
+                 cost[i][j]+=abs(po[k]-po[mid]);
+            }
+            cost[j][i]=cost[i][j];
+        }
+}
+void DP()
+{
+    int i,j,k;
+    for(i=2;i<=p;i++)
+        for(j=i;j<=v;j++)
+        {
+            for(k=i-1;k<=j-1;k++)
+            {
+                dp[i][j]=min(dp[i][j],dp[i-1][k]+cost[k+1][j]);
+            }
+        }
+}
+int main()
+{
+    int i,j;
+    scanf(""%d%d"",&v,&p);
+    for(i=1;i<=v;i++)
+        scanf(""%d"",&po[i]);
+    for(i=1;i<=p;i++)
+        for(j=i;j<=v;j++)
+           dp[i][j]=maxn3;
+    init();
+    for(i=1;i<=v;i++)
+        dp[1][i]=cost[1][i];
+    DP();
+    printf(""%d\n"",dp[p][v]);
+}
+"
+122,"HDU_1060 Leftmost Digit - 枭笔记 - 博客频道 - CSDN.NET
+
+ 
+Leftmost Digit 
+Time Limit: 2000/1000 MS (Java/Others)    Memory Limit: 65536/32768 K (Java/Others)
+ Total Submission(s): 8280    Accepted Submission(s): 3178
+ 
+
+ Problem Description
+ 
+
+ Given a positive integer N, you should output the leftmost digit of N^N.
+ 
+ 
+
+ Input
+ 
+
+ The input contains several test cases. The first line of the input is a single integer T which is the number of test cases. T test cases follow.
+ 
+ Each test case contains a single positive integer N(1<=N<=1,000,000,000).
+ 
+ 
+
+ Output
+ 
+
+ For each test case, you should output the leftmost digit of N^N.
+ 
+ 
+
+ Sample Input
+ 
+ 
+ 
+  
+   2
+3
+4
+   
+ 
+
+  
+ 
+
+ 
+
+ Sample Output
+ 
+ 
+ 
+  
+   2
+2
+
+   
+    
+     Hint
+     In the first case, 3 * 3 * 3 = 27, so the leftmost digit is 2. In the second case, 4 * 4 * 4 * 4 = 256, so the leftmost digit is 2. 
+   
+    
+   
+ 
+
+  
+ 
+#include<stdio.h>
+#include<math.h>
+int T;
+int main()
+{
+    int n,a;
+    double m;
+    scanf(""%d"",&T);
+    while(T--){
+        scanf(""%d"",&n);
+        m = n * log10(n);
+        printf(""%d\n"",(int)floor(pow(10,m - floor(m))));
+    }
+   return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+n^n = a * 10^b; 
+ 将乘方转化为科学计数法，则此时floor(a)就是我们要就的Leftmost Digit.
+两边同时取log10,
+n * lg(n) = lg(a) + b;
+考虑到科学计数法的表达，a < 10,则lg(a) < 1; 则 b 为 n * lg(n) 的整数部分，lg(a) 为小数部分；
+则 lg(a) = n * lg(n) - b;  b = floor(n * lg(n));
+ 
+函数定义与语法 
+
+ 
+#include <math.h>
+double   log(double x);   /* 计算一个数字的自然对数 */
+double log10(double x);   /* 计算以10为基数的对数 */
+函数名: floor　　功 能: 返回小于或者等于指定表达式的最大整数　　用 法: double floor(double x);　　头文件:math.h
+"
+126,"pku 1061 - Because Of You - 博客园
+
+
+ 
+ 
+ View Code  
+  
+  #include<stdio.h>
+#include<math.h>
+#include<iostream>
+using namespace std;
+typedef __int64 lld;
+void gcd(lld a,lld b,lld &d,lld &x,lld &y)
+{
+    if(!b) {d=a;x=1;y=0;}
+    else { gcd(b,a%b,d,y,x);y-=x*(a/b);}
+}
+int main()
+{
+    lld x,y,m,n,l;
+    lld a,b,c,d,g,s;
+    scanf(""%I64d%I64d%I64d%I64d%I64d"",&x,&y,&m,&n,&l);
+    a=l,b=n-m,c=x-y;
+    gcd(a,b,d,x,y);
+    if(c%d!=0)
+        cout<<""Impossible""<<endl;
+    else 
+    {
+        s=a/d;
+        y=y*(c/d);
+        y=(y%s+s)%s;
+        printf(""%I64d\n"",y);
+    }
+    return 0;
+} 
+  
+ 
+
+　　若方程ax+by=c的一组正整数解为(x0,y0),则它的任意整数解都可以写成（x0+kb',y0-ka'）,其中，a'=a/gcd(a,b),b'=b/gcd(a,b),k取任意整数
+"
+142,"PKU 3174 Alignment of the Planets_Somethings_百度空间
+
+看懂题目直接暴力，O N3的算法也可以过得。。。
+不过精度上可能有点问题
+学习了一下别人的
+用数学变换就可以得到一个不用做除法的式子。。。小技巧
+又学了一招 哈哈
+哎。。。如果昨天能做到这个，可能又不一样了
+不过还是要感谢PIP，因为昨天发现一个人在真的很低落的时候，一句短短的鼓励，确实能让人感到很温暖~
+谢谢PIP，虽然你依然很猥琐
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include <math.h>
+using namespace std;
+struct node
+{
+int x,y;
+}node[800];
+struct list
+{
+int n1,n2,n3;
+}list[800*800];
+int main()
+{
+int n,count;
+while (scanf (""%d"",&n)!=EOF)
+{
+int a,b;
+count=0;
+for (int i=0;i<n;i++)
+{
+scanf (""%d %d"",&a,&b);
+node[i].x=a;
+node[i].y=b;
+}
+// sort(node,node+n,cmp);
+// printf (""go to se1\n"");
+for (int i=0;i<n;i++)
+{
+for (int j=i+1;j<n;j++)
+{
+for (int k=j+1;k<n;k++)
+{
+int xl1=0,xl2=0;/////
+xl1=(node[k].y-node[j].y)*(node[j].x-node[i].x);
+xl2=(node[j].y-node[i].y)*(node[k].x-node[j].x);
+if(xl1==xl2)
+{
+list[count].n1=i;
+list[count].n2=j;
+list[count].n3=k;
+count++;
+}
+}
+}
+}
+printf (""%d\n"",count);
+for (int i=0;i<count;i++)
+{
+printf (""%d %d %d\n"",list[i].n1+1,list[i].n2+1,list[i].n3+1);
+}
+}
+}
+"
+144,"PKU 1222 EXTENDED LIGHTS OUT (枚举）_prayer_百度空间
+
+DescriptionIn an extended version of the game Lights Out, is a puzzle with 5 rows of 6 buttons each (the actual puzzle has 5 rows of 5 buttons each). Each button has a light. When a button is pressed, that button and each of its (up to four) neighbors above, below, right and left, has the state of its light reversed. (If on, the light is turned off; if off, the light is turned on.) Buttons in the corners change the state of 3 buttons; buttons on an edge change the state of 4 buttons and other buttons change the state of 5. For example, if the buttons marked X on the left below were to be pressed,the display would change to the image on the right. 
+
+The aim of the game is, starting from any initial set of lights on in the display, to press buttons to get the display to a state where all lights are off. When adjacent buttons are pressed, the action of one button can undo the effect of another. For instance, in the display below, pressing buttons marked X in the left display results in the right display.Note that the buttons in row 2 column 3 and row 2 column 5 both change the state of the button in row 2 column 4,so that, in the end, its state is unchanged. 
+
+Note: 
+
+1. It does not matter what order the buttons are pressed. 
+
+2. If a button is pressed a second time, it exactly cancels the effect of the first press, so no button ever need be pressed more than once. 
+
+3. As illustrated in the second diagram, all the lights in the first row may be turned off, by pressing the corresponding buttons in the second row. By repeating this process in each row, all the lights in the first 
+
+four rows may be turned out. Similarly, by pressing buttons in columns 2, 3 ?, all lights in the first 5 columns may be turned off. 
+
+Write a program to solve the puzzle.
+
+Input
+The first line of the input is a positive integer n which is the number of puzzles that follow. Each puzzle will be five lines, each of which has six 0抯 or 1抯 separated by one or more spaces. A 0 indicates that the light is off, while a 1 indicates that the light is on initially.
+
+Output
+For each puzzle, the output consists of a line with the string: ""PUZZLE #m"", where m is the index of the puzzle in the input file. Following that line, is a puzzle-like display (in the same format as the input) . In this case, 1's indicate buttons that must be pressed to solve the puzzle, while 0抯 indicate buttons, which are not pressed. There should be exactly one space between each 0 or 1 in the output puzzle-like display.
+
+Sample Input
+20 1 1 0 1 01 0 0 1 1 10 0 1 0 0 11 0 0 1 0 10 1 1 1 0 00 0 1 0 1 01 0 1 0 1 10 0 1 0 1 11 0 1 1 0 00 1 0 1 0 0
+
+Sample Output
+PUZZLE #11 0 1 0 0 11 1 0 1 0 10 0 1 0 1 11 0 0 1 0 00 1 0 0 0 0PUZZLE #21 0 0 1 1 11 1 0 0 0 00 0 0 1 0 01 1 0 1 0 11 0 1 1 0 1
+
+Source
+Greater New York 2002
+算法：枚举第一行的状态，接下来模拟。
+MY code：
+#include<iostream>
+#include<stdio.h>
+#include<cstring>
+#include<algorithm>
+using namespace std;
+int mat[6][6];
+int dx[4] = {0, 0, 1, -1};
+int dy[4] = {1, -1, 0, 0};
+int main() {
+    int cas;
+    scanf(""%d"", &cas);
+    for (int nth = 1; nth <= cas; nth++) {
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 6; j++) {
+                scanf(""%d"", &mat[i][j]);
+            }
+        }
+        int method[6][6];
+        printf(""PUZZLE #%d\n"", nth);
+        int tmp[6][6];
+        memcpy(tmp, mat, sizeof (mat));
+        for (int st = 0; st < (1 << 6); st++) {
+            memset(method, 0, sizeof (method));
+            memcpy(mat, tmp, sizeof (tmp));
+            for (int i = 0; i < 6; i++) {
+                if ((1 << i) & st) {
+                    method[0][i] = 1;
+                    mat[0][i] ^= 1;
+                    for (int k = 0; k < 4; k++) {
+                        int X = 0 + dx[k];
+                        int Y = i + dy[k];
+                        if (X < 0 || Y < 0 || Y > 5) continue;
+                        mat[X][Y] ^= 1;
+                    }
+                }
+            }
+            for (int i = 1; i < 5; i++) {
+                for (int j = 0; j < 6; j++) {
+                    if (mat[i - 1][j] == 1) {
+                        method[i][j] = 1;
+                        mat[i][j] ^= 1;
+                        for (int k = 0; k < 4; k++) {
+                            int X = i + dx[k];
+                            int Y = j + dy[k];
+                            if (X < 0 || X > 4 || Y < 0 || Y > 5) continue;
+                            mat[X][Y] ^= 1;
+                        }
+                    }
+                }
+            }
+            int check = 0;
+            for (int i = 0; i < 6; i++) {
+                if (mat[4][i] != 0) {
+                    check = 1;
+                    break;
+                }
+            }
+            if (!check) {
+                for (int i = 0; i < 5; i++) {
+                    for (int j = 0; j < 6; j++) {
+                        if (j > 0) printf("" "");
+                        printf(""%d"", method[i][j]);
+                    }
+                    printf(""\n"");
+                }
+                break;
+            }
+        }
+    }
+    return 0;
+}
+"
+157,"FOJ 1000  PKU 1000 FJNU 1000 A B Problem_乐吾天_百度空间
+
+Calculate a + b 
+Input
+The input will consist of a series of pairs of integers a and b,separated by a space, one pair of integers per line. 
+Output
+For each pair of input integers a and b you should output the sum of a and b in one line,and with one line of output for each line in input. 
+Sample Input 1 52 3Sample Output 65
+#include <stdio.h><?xml:namespace prefix = o ns = ""urn:schemas-microsoft-com:office:office"" />
+int main()
+{int a,b;
+ while(scanf(""%d%d"",&a,&b)-EOF)
+ printf(""%d\n"",a+b);
+return 0;
+}
+还记的第一次写的时候不知道什么EOF..Orz
+http://hi.baidu.com/lewutian---> 推荐文章:
+
+1. 
+PKU OJ 1019 Number Sequence
+
+2. 
+pku 1166[回溯]
+
+3. 
+PKU 2329
+
+4. 
+pku 1160 Post Office
+
+5. 
+Pku acm 2492 A Bug's Life数据结构题目解题报告(十)
+
+6. 
+pku 2385 Apple Catching
+
+7. 
+PKU 1011 Sticks
+
+8. 
+pku 3378（树状数组实现）
+
+9. 
+pku 1057 文件结构问题
+
+10. 
+PKU 1002 487
+
+"
+176,"PKU  1286 Necklace of Beads_prayer_百度空间
+
+Necklace of BeadsDescriptionBeads of red, blue or green colors are connected together into a circular necklace of n beads ( n < 24 ). If the repetitions that are produced by rotation around the center of the circular necklace or reflection to the axis of symmetry are all neglected, how many different forms of the necklace are there? 
+
+Input
+The input has several lines, and each line contains the input data n. 
+
+-1 denotes the end of the input file.
+
+Output
+The output should contain the output data: Number of different forms, in each line correspondent to the input data.
+
+Sample Input
+45-1
+
+Sample Output
+2139
+
+Source
+Xi'an 2002
+Source Code
+ Problem: 1286 User: prayer Memory: 356K Time: 0MS Language: G++ Result: Accepted 
+
+ 
+ Source Code #include<iostream>#include<cmath>using namespace std;int N,M;bool vis[1003];int main(){ while(scanf(""%d"",&N)!=EOF && N!=-1) { if(N==0) { printf(""0\n"");continue; } double ans=0;int M=3; for(int Len=0;Len<N;Len++) { memset(vis,0,sizeof(vis)); double K=0; for(int j=0;j<N;j++) if(!vis[j]) { vis[j]=1;K=K+1;int jj=j; while(!vis[ (jj+Len) % N ]) vis[(jj+Len) % N ]=1,jj=(jj+Len) % N ; } // cout<<K<<endl; ans+=pow(double(M),K); } if(N %2==1) ans+=N*pow(double(M),double(N/2+1)) ; else ans+=N/2*pow(double(M),double(N/2+1) ) + N/2*pow(double(M),N/2); printf(""%0.0lf\n"",ans/(2*N) ); } return 0;} 
+"
+182,"PKU Problem: 3191_Gaming & programing_百度空间
+
+打过广告后，就该介绍下自己了，我其实很久没有做ACM了，在08年5月省里的比赛后就没有再做了。对于我ACM只是个证明自己的手段，也是锻炼自己的途径，
+
+我并不期望去进入国家队什么的，也没有这个资质。做ACM这段经历让我永生难忘。在每个菜鸟眼里，那些参加比赛，做了多少道多少道题目的人总以为是牛人，自己赶不上。其实大家都是这么过来的，有些人志在全国，有些人只希望达到省份水平就可以了。但其实后面的路都无法想象的，可能一个全国竞赛拿奖的人，到最后还是去写网页了，或是回家研究农业了，抑或下海做生意了。世界之大无奇不有，不要把眼前的东西看得太死，我们在这个世上变化太快，没有人能预料到。
+把这些资料发上来，只为了大家一个参考，不要直接发上去提交了。没意思的。如果你真要这样，不如花点时间去我网店里看看有什么你需要的，跟我聊聊天什么的。
+Source Code
+ Problem: 3191 User: jesse_luzexi Memory: 100K Time: 30MS Language: C++ Result: Accepted 
+
+ 
+ Source Code #include ""iostream""using namespace std ;int main(){ int n; while(scanf(""%d"",&n)!=EOF) { string s=""""; if(n==0) { printf(""0\n""); continue; } while(n) { if(n>0) { if(n%2==0) s+='0'; else { n--; s+='1'; } n=n/-2; } else { n=-n; if(n%2==0) s+='0'; else { n++; s+='1'; } n=n/2; } } for(int i=s.size()-1;i>=0;i--) printf(""%c"",s[i]); printf(""\n""); } }/*#include ""iostream""using namespace std;int a[1001];int function(int *x){ int i,j; if((*x)<0) { for(i=2,j=1;i<-(*x);i*=4,j+=2); (*x)=i+(*x); return j; } else { for(i=1,j=0;i<(*x);i*=4,j+=2); if((i-(*x)<=i/2)) { (*x)-=i; return j; } else { if(i==1) { (*x)=0; return 0; } (*x)=(*x)-i/4; return j-2; } }}int main (){ int i,k; int n,m; for(;scanf(""%d"",&n)!=EOF;) { memset(a,0,sizeof(a)); m=0; for(;n;) { k=function(&n); if(m<k) m=k; a[m-k]=1; } for(i=0;i<=m;i++) printf(""%d"",a[i]); printf(""\n""); } return 1;}*/ 
+
+
+"
+192,"hdu 1060_striver_新浪博客
+
+题目：http://acm.hdu.edu.cn/showproblem.php?pid=1060
+思路：刚开始做，发现很纠结！！
+后来，看到了一个人的分析，是这样转换的
+m=n^n;两边同取对数，得到，log10(m)=n*log10(n);再得到，m=10^(n*log10(n));
+然后，对于10的整数次幂，第一位是1，所以，第一位数取决于n*log10(n)的小数部分
+总之，log很强大啊，在求一个数的位数上，在将大整数化成范围内的整数上，在指数问题上
+代码：
+#include <iostream>
+ #include <cmath>
+ using namespace std;
+ int main()
+ {
+     __int64 n,i,a,sum;
+     double s,num,x;
+     cin>>n;
+     for(i=0;i<n;i++)
+     {
+        cin>>num;
+        s=num*log10(num);
+        a=(__int64)(s);
+        x=s-a;
+        sum=(__int64)(pow((double)10,(x)));
+        cout<<sum<<endl;
+     }
+     return 0;                               
+ }
+"

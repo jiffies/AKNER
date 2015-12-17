@@ -1,0 +1,35 @@
+poj1118	eng	N	Y	O	B-OJ
+题	n	N	N	O	O
+，	x	N	N	O	O
+超时	b	N	N	O	O
+，	x	N	N	O	O
+麻烦	an	N	N	O	O
+大哥	n	N	N	O	O
+大姐	n	N	N	O	O
+帮忙	v	N	N	O	O
+改	v	N	N	O	O
+一下	m	N	N	O	O
+...	m	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+知道	v	N	N	O	O
+
+不要	df	N	N	O	O
+用	p	N	N	O	O
+cin	eng	N	N	O	O
+
+用	p	N	N	O	O
+scanf	eng	N	N	O	O
+
+如果	c	N	N	O	O
+还	d	N	N	O	O
+不行	v	N	N	O	O
+的话	u	N	N	O	O
+
+只能	v	N	N	O	O
+用	p	N	N	O	O
+排序	n	Y	N	O	B-KNOWLEDGE
+来	v	N	N	O	O
+优化	vn	Y	N	O	O
+了	ul	N	N	O	O
+

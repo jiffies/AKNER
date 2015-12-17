@@ -1,0 +1,1322 @@
+求	v	N	N	O	O
+树	v	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+覆盖	v	Y	N	O	O
+所有	b	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+点	m	N	N	O	O
+的	uj	N	N	O	O
+个数	n	Y	N	O	O
+poj3659	eng	N	Y	O	B-OJ
+_	x	N	N	O	O
+CCYJAVA	eng	N	N	O	O
+_	x	N	N	O	O
+新浪	nz	N	N	O	O
+博客	nr	N	N	O	O
+
+这个	r	N	N	O	O
+是	v	N	N	O	O
+dfs	eng	Y	N	O	B-KNOWLEDGE
+中用	n	N	N	O	O
+dp	eng	Y	N	O	O
+，	x	N	N	O	O
+当前	t	N	N	O	O
+点	m	N	N	O	O
+状态	n	Y	N	O	O
+取决于	v	N	N	O	O
+其子	r	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+状态	n	Y	N	O	O
+，	x	N	N	O	O
+具体	a	N	N	O	O
+转换	v	Y	N	O	O
+如下	t	N	N	O	O
+：	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+表示	v	Y	N	O	O
+以	p	N	N	O	O
+i	eng	N	N	O	O
+为	p	N	N	O	O
+根	q	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+被	p	N	N	O	O
+覆盖	v	Y	N	O	O
+，	x	N	N	O	O
+i	eng	N	N	O	O
+点	m	N	N	O	O
+未	t	N	N	O	O
+放置	v	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+数目	n	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+表示	v	Y	N	O	O
+以	p	N	N	O	O
+i	eng	N	N	O	O
+为	p	N	N	O	O
+根	q	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+被	p	N	N	O	O
+覆盖	v	Y	N	O	O
+，	x	N	N	O	O
+i	eng	N	N	O	O
+点	m	N	N	O	O
+放置	v	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+数目	n	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+表示	v	Y	N	O	O
+i	eng	N	N	O	O
+的	uj	N	N	O	O
+子树	n	N	N	O	O
+被	p	N	N	O	O
+覆盖	v	Y	N	O	O
+，	x	N	N	O	O
+i	eng	N	N	O	O
+点	m	N	N	O	O
+未	d	N	N	O	O
+被	p	N	N	O	O
+覆盖	v	Y	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+数目	n	N	N	O	O
+
+之所以	c	N	N	O	O
+有	v	N	N	O	O
+这	r	N	N	O	O
+三种	m	N	N	O	O
+状态	n	Y	N	O	O
+，	x	N	N	O	O
+是因为	c	N	N	O	O
+，	x	N	N	O	O
+一个点	m	N	N	O	O
+被	p	N	N	O	O
+覆盖	v	Y	N	O	O
+的	uj	N	N	O	O
+方式	n	N	N	O	O
+有	v	N	N	O	O
+三种	m	N	N	O	O
+：	x	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+被	p	N	N	O	O
+放置	v	N	N	O	O
+，	x	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+的	uj	N	N	O	O
+子	n	N	N	O	O
+节点	n	N	N	O	O
+放置	v	N	N	O	O
+，	x	N	N	O	O
+该	r	N	N	O	O
+点	q	N	N	O	O
+的	uj	N	N	O	O
+父	n	N	N	O	O
+节点	n	N	N	O	O
+放置	v	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+
+=	x	N	N	O	O
+sigm	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+且	zg	N	N	O	O
+保证	v	N	N	O	O
+至少	d	N	N	O	O
+一个	m	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+1	m	N	N	O	O
+被	p	N	N	O	O
+取到	v	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+
+=	x	N	N	O	O
+sigm	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+)	x	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+2	x	N	N	O	O
+
+=	x	N	N	O	O
+sigmj	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdio	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+string	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+
+"	x	N	N	O	O
+stdlib	eng	N	N	O	O
+.	m	N	N	O	O
+h	eng	N	N	O	O
+"	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+vd	eng	N	N	O	O
+[	x	N	N	O	O
+10001	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+20001	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+记录	n	Y	N	O	O
+边	d	N	N	O	O
+
+int	eng	N	N	O	O
+
+index	eng	N	N	O	O
+[	x	N	N	O	O
+10001	m	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+记录	n	Y	N	O	O
+i	x	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+邻接	v	Y	N	O	O
+边	d	N	N	O	O
+在	p	N	N	O	O
+arm	eng	N	N	O	O
+里	f	N	N	O	O
+的	uj	N	N	O	O
+索引	nr	N	N	O	O
+
+int	eng	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+10001	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+3	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+记录	n	Y	N	O	O
+以	p	N	N	O	O
+i	eng	N	N	O	O
+为	p	N	N	O	O
+根	q	N	N	O	O
+的	uj	N	N	O	O
+树	n	N	N	O	O
+，	x	N	N	O	O
+选改	v	N	N	O	O
+节点	n	N	N	O	O
+与	p	N	N	O	O
+不选	v	N	N	O	O
+该	r	N	N	O	O
+节点	n	N	N	O	O
+的	uj	N	N	O	O
+最小	a	Y	N	O	O
+数目	n	N	N	O	O
+
+int	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+
+*	x	N	N	O	O
+a	x	N	N	O	O
+,	x	N	N	O	O
+const	eng	N	N	O	O
+
+void	eng	N	N	O	O
+
+*	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+*	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+*	x	N	N	O	O
+y	x	N	N	O	O
+=	x	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+*	x	N	N	O	O
+)	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+y	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+min	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+b	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+<	x	N	N	O	O
+b	x	N	N	O	O
+)	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+,	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+a	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+b	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+b	x	N	N	O	O
+;	x	N	N	O	O
+
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+i	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+m	x	N	N	O	O
+=	x	N	N	O	O
+2	x	N	N	O	O
+*	x	N	N	O	O
+n	x	N	N	O	O
+-	x	N	N	O	O
+2	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+vd	eng	N	N	O	O
+,	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+vd	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+memset	eng	N	N	O	O
+(	x	N	N	O	O
+index	eng	N	N	O	O
+,	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+index	eng	N	N	O	O
+)	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+qsort	eng	N	N	O	O
+(	x	N	N	O	O
+arm	eng	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+,	x	N	N	O	O
+sizeof	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+)	x	N	N	O	O
+*	x	N	N	O	O
+2	x	N	N	O	O
+,	x	N	N	O	O
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+|	x	N	N	O	O
+|	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+index	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+v	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+t	x	N	N	O	O
+;	x	N	N	O	O
+
+vd	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+isleaf	eng	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum1	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum0	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+sum2	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+reduce	eng	N	N	O	O
+=	x	N	N	O	O
+99999999	m	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+index	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+index	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+v	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+vd	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+isleaf	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+sum1	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+sum2	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+统计	v	Y	N	O	O
+sum0	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+reduce	eng	N	N	O	O
+
+始终	d	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+
+sum0	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+先	d	N	N	O	O
+取	v	N	N	O	O
+最小	a	Y	N	O	O
+的	uj	N	N	O	O
+和	c	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+<	x	N	N	O	O
+reduce	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+求	v	N	N	O	O
+需要	v	N	N	O	O
+在	p	N	N	O	O
+sum0	eng	N	N	O	O
+上	ns	N	N	O	O
+添加	v	N	N	O	O
+的	uj	N	N	O	O
+最小值	l	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+>	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+小于	v	N	N	O	O
+当前	t	N	N	O	O
+最小值	l	N	N	O	O
+且	c	N	N	O	O
+非	h	N	N	O	O
+负	n	N	N	O	O
+，	x	N	N	O	O
+更新	d	N	N	O	O
+之	u	N	N	O	O
+
+reduce	eng	N	N	O	O
+=	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+-	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+arm	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+/	x	N	N	O	O
+/	x	N	N	O	O
+取	v	N	N	O	O
+到	v	N	N	O	O
+=	x	N	N	O	O
+1	m	N	N	O	O
+时	ng	N	N	O	O
+的	uj	N	N	O	O
+了	ul	N	N	O	O
+，	x	N	N	O	O
+不用	v	N	N	O	O
+reduce	eng	N	N	O	O
+了	ul	N	N	O	O
+
+reduce	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+isleaf	eng	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+else	eng	N	N	O	O
+{	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	m	N	N	O	O
++	x	N	N	O	O
+sum1	eng	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+sum0	eng	N	N	O	O
++	x	N	N	O	O
+reduce	eng	N	N	O	O
+;	x	N	N	O	O
+
+num	eng	N	N	O	O
+[	x	N	N	O	O
+v	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+2	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+sum2	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+r	x	N	N	O	O
+;	x	N	N	O	O
+
+init	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+dfs	eng	Y	N	O	O
+(	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+r	x	N	N	O	O
+=	x	N	N	O	O
+min	eng	N	N	O	O
+(	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+0	x	N	N	O	O
+]	x	N	N	O	O
+,	x	N	N	O	O
+num	eng	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+r	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+r	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

@@ -1,0 +1,1035 @@
+9,"网络流 HDU2732 && PKU 2711 最大流 SAP - 下棋找高手，弄斧就要到班门____啊啊啊啊啊 - 博客频道 - CSDN.NET
+
+这题目没别的就是TM英语难理解，说什么不好说蜥蜴跳啊跳题目理解了半天，输出TM更BT，还要有单复数之分。哎。。。
+题目意思：
+是有一些蜥蜴在一个迷宫里面，求这些蜥蜴还有多少是无论如何都逃不出来的。题目只给定一个行数，一个最远能够跳跃的距离，列数是不确定的（题目告知列数小于等于20），但是数据一定会是一个矩阵。每只蜥蜴有一个初始的位置，题目保证这些位置都有一些柱子，每次蜥蜴从一个位置跳到另外一个位置的时候，就会由于反作用力使得一根柱子倒下，你的任务是让尽量多的蜥蜴逃到边界外。每行每列中相邻石柱的距离为1，蜥蜴的跳跃距离是d，即蜥蜴可以跳到平面距离不超过d的任何一个石柱上。
+ 石柱都不稳定，每次当蜥蜴跳跃时，所离开 的石柱高度减1（如果仍然落在地图内部，则到达的石柱高度不变），
+ 如果该石柱原来高度为1，则蜥蜴离开后消失。以后其他蜥蜴不能落脚。任何时刻不能有两只 蜥蜴在同一个石柱上。
+还有就是题目说d只会是0-3 又是错的 不信你加个if(d>=4)break; 绝对是错的害我wa了好久真心坑爹。后来去了这一句就ac了。哎。。。太扣条件反而会错呢。
+分析：
+很显然，这一题，可以用网络流来求解，建图：首先我们要确定一个贪心思想，即如果从某一根柱子能够直接跳到迷宫的外面，那么我们就将这个点连接到汇点，而不用将这个点连接到其他的点了。对于哪些不能跳出去但是又有柱子的点，那么我们就去按照跳跃距离搜寻有没有其他的柱子能够去跳跃，如果能够找到的话，那么连接这两点，并且将容量控制为弧尾节点的柱子数，也正是由于一条弧只能够约束一个顶点，所以我们需要进行拆点，点内之间流量为本身柱子数。题目给定的第二个矩阵其实就是用来确定源点的。该题输入要小心，要符合英语语法～～
+步骤：
+ 源点s到每条蜥蜴都连一条容量为1的边 
+ 对于每个格子出发，看做一个点，那么这个点能够到达的点和这个点（-）连一条容量无穷的边
+ 由于点有容量的限制，所以把一个点拆成点（-）和点（+），添加 一条容量为点的容量的边，如果某个点可以跳出来，那么就从这个点（+）
+ 向汇点添加一条容量无穷的边，然后最大流即可 
+最开始做的优化不是很好，看到网上有用数组保存个点的，那样建图比较快，后来那样优化了下就0MS了
+我是0做起点 t是r*c*2+1 ISAP做还是比较快的
+ 
+#include<iostream> 
+#include<cstdio> 
+#include<cmath>
+#include<cstring> 
+using namespace std;   
+#define MAXN 810 
+#define MAXE 30000 
+#define INF 0x7fffff      
+int ne,nv,tmp,s,t,index;
+int dir[40][2]={
+               {1,0},{0,-1},{-1,0},{0,1},//4
+               {2,0},{1,-1},{0,-2},{-1,-1},{-2,0},{-1,1},{0,2},{1,1},//8
+               {3,0},{2,-1},{1,-2},{0,-3},{-1,-2},{-2,-1},{-3,0},{-2,1},{-1,2},{0,3},{1,2},{2,1},//12
+               {4,0},{3,-1},{2,-2},{1,-3},{0,-4},{-1,-3},{-2,-2},{-3,-1},{-4,0},{-3,1},{-2,2},{-1,3},{0,4},{1,3},{2,2},{3,1},//16
+               }; 
+int size[5]={0,4,12,24,40};  
+struct Edge{ 
+    int next,pair; 
+    int v,cap,fLow; 
+}edge[MAXE];
+int net[MAXN];
+int hash[22][22],id;
+char gid[22][22],map[22][22];
+int getid(int x,int y)
+{
+    if(hash[x][y]==-1)hash[x][y]=id++;
+    return hash[x][y];
+} 
+bool check(int x,int y,int n,int m)
+{
+    if(x>=0&&x<n&&y>=0&&y<m)return 1;
+    return 0; 
+} 
+int ISAP() 
+{ 
+	int numb[MAXN],dist[MAXN],curedge[MAXN],pre[MAXN]; 
+    int cur_fLow,max_fLow,u,tmp,neck,i; 
+    memset(dist,0,sizeof(dist)); 
+    memset(numb,0,sizeof(numb)); 
+    memset(pre,-1,sizeof(pre)); 
+    for(i = 1 ; i <= nv ; ++i) 
+        curedge[i] = net[i]; 
+    numb[nv] = nv; 
+    max_fLow = 0; 
+    u = s; 
+    while(dist[s] < nv) 
+    { 
+        if(u == t) 
+        { 
+            cur_fLow = INF; 
+            for(i = s; i != t;i = edge[curedge[i]].v)  
+            {   
+                if(cur_fLow > edge[curedge[i]].cap) 
+                { 
+                    neck = i; 
+                    cur_fLow = edge[curedge[i]].cap; 
+                } 
+            } 
+            for(i = s; i != t; i = edge[curedge[i]].v) 
+            { 
+                tmp = curedge[i]; 
+                edge[tmp].cap -= cur_fLow; 
+                edge[tmp].fLow += cur_fLow; 
+                tmp = edge[tmp].pair; 
+                edge[tmp].cap += cur_fLow; 
+                edge[tmp].fLow -= cur_fLow; 
+            } 
+            max_fLow += cur_fLow; 
+            u = neck; 
+        } 
+        for(i = curedge[u]; i != -1; i = edge[i].next) 
+            if(edge[i].cap > 0 && dist[u] == dist[edge[i].v]+1) 
+                break; 
+        if(i != -1) 
+        { 
+            curedge[u] = i; 
+            pre[edge[i].v] = u; 
+            u = edge[i].v; 
+        }else{ 
+            if(0 == --numb[dist[u]]) break; 
+            curedge[u] = net[u]; 
+            for(tmp = nv,i = net[u]; i != -1; i = edge[i].next) 
+                if(edge[i].cap > 0) 
+                    tmp = tmp<dist[edge[i].v]?tmp:dist[edge[i].v]; 
+            dist[u] = tmp + 1; 
+            ++numb[dist[u]]; 
+            if(u != s) u = pre[u]; 
+        } 
+    }      
+    return max_fLow; 
+}
+void addedge(int u,int v,int f)
+{
+	edge[index].next = net[u]; 
+    edge[index].v = v; 
+    edge[index].cap = f; 
+    edge[index].fLow = 0; 
+    edge[index].pair = index+1; 
+    net[u] = index++; 
+    edge[index].next = net[v]; 
+    edge[index].v = u; 
+    edge[index].cap = 0; 
+    edge[index].fLow = 0; 
+    edge[index].pair = index-1; 
+    net[v] = index++;
+} 
+int main() 
+{ 
+    int i,j,np,nc,m,n; 
+    int a,b,d,k,xx,yy,y; 
+    int cases;
+    scanf(""%d"",&cases);
+    for(int zz=1;zz<=cases;zz++)
+    {
+    	scanf(""%d%d"",&n,&d);
+    	if(d>4)break;
+    	int lizard=0,r=n,c=0,sum=0;		
+		index=0;//index从0开始扫 
+        s = 0;  
+        memset(net,-1,sizeof(net));
+        memset(hash,-1,sizeof(hash));
+		memset(gid,0,sizeof(gid));
+		memset(map,0,sizeof(map));
+		for(i=0;i<n;i++)scanf(""%s"",gid[i]);
+		for(i=0;i<n;i++)scanf(""%s"",map[i]);
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			if(map[i][j]=='L')lizard++;
+		c=strlen(gid[0]);
+		sum=r*c;
+		s=0;t=sum+sum+1;
+		nv=t+1;
+		id=1;//对应点的id 
+		/*建图*/
+		//连接源点到各个蜥蜴的边
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				if(map[i][j]=='L')
+				addedge(s,getid(i,j),1);
+			}
+		//连接点与拆点之间的边
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				if(gid[i][j]>'0')
+				addedge(getid(i,j),getid(i,j)+sum,gid[i][j]-'0');
+			}
+		//连接各个可以跳出去的点到汇点的边和点与点之间的边 
+		for(i=0;i<n;i++)
+			for(j=0;map[i][j];j++)
+			{
+				//dir代表每次往外可以调的格子，
+				//距离为1跳4个方向，距离2就可以调8个了以此往外跳 
+				int temp=getid(i,j)+sum;
+				for(k=0;k<size[d];k++)
+              	{
+					xx=i+dir[k][0];
+                  	yy=j+dir[k][1];
+                  	if(check(xx,yy,r,c)==0)y=t;
+                  	else y=getid(xx,yy);
+                  	addedge(temp,y,INF);                                    
+            	}
+			}
+		int ans=ISAP();
+		lizard-=ans;
+		printf(""Case #%d: "",zz);
+		if(lizard==0)printf(""no lizard was left behind.\n"");
+        else if(lizard==1)printf(""%d lizard was left behind.\n"",lizard);
+        else printf(""%d lizards were left behind.\n"",lizard); 
+    } 
+    return 0; 
+}
+"
+20,"POJ 2394 -- Checking an Alibi_snuc_新浪博客
+
+
+ http://acm.pku.edu.cn/JudgeOnline/problem?id=2394
+ 
+
+ 单源最短路径(无负权),dijkstra算法.
+ 
+
+ 程序如下:
+ 
+ 
+ 
+#include<stdio.h>
+#define MAX 500
+#define MAXVALUE 100000000//表示两点之间无边连通
+int Cost[MAX][MAX],Dist[MAX],Prev[MAX];
+void Dijkstra(int n,int v)//求n个结点的图中(邻接矩阵存储),顶点v到其他各点的最短路径,Dist数组保存最短路径的值,Prev数组保存路径
+{
+    int newdist,i,j,temp,u;
+    bool s[MAX];
+    for(i=0;i<n;i++)
+    {
+          Dist[i]=Cost[v][i];
+          s[i]=false;
+          if (Dist[i]==MAXVALUE)
+                Prev[i]=0;
+          else Prev[i]=v;
+    }
+    Dist[v]=0;
+    s[v]=true;
+    for(i=1;i<n;i++)
+    {
+          temp=MAXVALUE;
+          u=v;
+          for(j=0;j<n;j++)
+          {
+                if((!s[j]) && (Dist[j]<temp))
+                {
+                      u=j;
+                      temp=Dist[j];
+                }
+          }
+          s[u]=true;
+          for(j=0;j<n;j++)
+          {
+                if((!s[j]) && (Cost[u][j]<MAXVALUE))
+                {
+                      newdist=Dist[u]+Cost[u][j];
+                      if(newdist<Dist[j])
+                      {
+                            Dist[j]=newdist;
+                            Prev[j]=u;
+                      }
+                }
+          }
+    }
+}
+int main()
+{
+    int f,p,c,m,cow[100]={0},r=0;
+    int i,j,k,t;
+    scanf(""%d%d%d%d"",&f,&p,&c,&m);
+    for (i=0;i<f;i++)
+    {
+          for (j=0;j<f;j++)
+                Cost[i][j]=MAXVALUE;
+          Cost[i][i]=0;
+    }
+    for (i=0;i<p;i++)
+    {
+          scanf(""%d%d%d"",&j,&k,&t);
+          if (Cost[j-1][k-1]>t)
+          {
+                Cost[j-1][k-1]=t;
+                Cost[k-1][j-1]=t;
+          }
+    }
+    Dijkstra(f,0);
+    for (i=1;i<=c;i++)
+    {
+          scanf(""%d"",&j);
+          if (Dist[j-1]<=m)
+                cow[r++]=i;
+    }
+    printf(""%d\n"",r);
+    for (i=0;i<r;i++)
+          printf(""%d\n"",cow[i]);
+    return 0;
+}
+
+"
+43,"poj 1422Air Raid--最小路径覆盖  - c++语言程序开发技术文章_c++编程 - 红黑联盟
+
+[cpp]
+ /*
+ 题意：有个城镇，所有路都是单行道，并且没有环，所有路都连接在十字路口上
+ 现在用最少的伞兵走完这些式子路口，每个只能走一遍
+ 很明显的最小路径覆盖
+ 最小路径覆盖=点数-最大匹配
+ 需要拆点 所有式子路口  在X中一个 在Y中一个
+ 路把两个集合中十字路口连接起来
+ 求最大匹配  还是匈牙利
+ */ 
+ #include<stdio.h>  
+ #include<vector>  
+ using namespace std; 
+ vector<int>v[150]; 
+ int t,n,m; 
+ int match[150],vis[150];//都只是对Y集中的点  
+ int dfs(int i) 
+ { 
+     for(int j=0;j<v[i].size();++j) 
+     { 
+         if(!vis[v[i][j]]) 
+         { 
+             vis[v[i][j]]=1; 
+             if(match[v[i][j]]==-1||dfs(match[v[i][j]])) 
+             { 
+                 match[v[i][j]]=i; 
+                 return 1; 
+             } 
+         } 
+     } 
+     return 0; 
+ } 
+ int main() 
+ { 
+     int i,a,b; 
+     scanf(""%d"",&t); 
+     while(t--) 
+     { 
+         scanf(""%d%d"",&n,&m); 
+         for(i=0;i<=n;i++) 
+             v[i].clear(); 
+         for(i=1;i<=m;++i) 
+         { 
+             scanf(""%d%d"",&a,&b); 
+             v[a].push_back(b); 
+         } 
+         a=0;////  
+         memset(match,-1,sizeof(match)); 
+         for(i=1;i<=n;i++) 
+         { 
+             memset(vis,0,sizeof(vis)); 
+             if(dfs(i)) 
+                 a++; 
+         }////  
+         printf(""%d\n"",n-a);//最小路径覆盖=点数-最大匹配  
+     } 
+     return 0; 
+ } 
+/*
+ 题意：有个城镇，所有路都是单行道，并且没有环，所有路都连接在十字路口上
+ 现在用最少的伞兵走完这些式子路口，每个只能走一遍
+很明显的最小路径覆盖
+最小路径覆盖=点数-最大匹配
+需要拆点 所有式子路口  在X中一个 在Y中一个
+ 路把两个集合中十字路口连接起来
+求最大匹配  还是匈牙利
+ */
+ #include<stdio.h>
+ #include<vector>
+ using namespace std;
+ vector<int>v[150];
+ int t,n,m;
+ int match[150],vis[150];//都只是对Y集中的点
+ int dfs(int i)
+ {
+  for(int j=0;j<v[i].size();++j)
+  {
+   if(!vis[v[i][j]])
+   {
+    vis[v[i][j]]=1;
+    if(match[v[i][j]]==-1||dfs(match[v[i][j]]))
+    {
+     match[v[i][j]]=i;
+     return 1;
+    }
+   }
+  }
+  return 0;
+ }
+ int main()
+ {
+  int i,a,b;
+  scanf(""%d"",&t);
+  while(t--)
+  {
+   scanf(""%d%d"",&n,&m);
+   for(i=0;i<=n;i++)
+    v[i].clear();
+   for(i=1;i<=m;++i)
+   {
+    scanf(""%d%d"",&a,&b);
+    v[a].push_back(b);
+   }
+   a=0;////
+   memset(match,-1,sizeof(match));
+   for(i=1;i<=n;i++)
+   {
+    memset(vis,0,sizeof(vis));
+    if(dfs(i))
+     a++;
+   }////
+   printf(""%d\n"",n-a);//最小路径覆盖=点数-最大匹配
+  }
+  return 0;
+ }
+ 作者：qq172108805
+
+"
+89,"poj 1934 Trip 多个最长公共子序列 - 涛涛不解 - 博客频道 - CSDN.NET
+
+题目要你按字典序输出两个字符串的多个最长公共子序列
+ 
+转自http://blog.csdn.net/tsaid/article/details/6726698
+ 
+思路：
+ 
+先用动态规划求两个字符串的最长公共子序列的保存在dp[i][j];dp[i][j]表示s1字符串1到i和s2字符串1到j的最长公共子序列的长度
+ 
+然后用两个变量last1[i][j],last2[i][j]来分别保存字符j(a的序号为0，b的序号为1，.....z的序号为25)在字符串1-i中出现的最大标号，要是字符j没有出现,则last[i][j]= 0;
+然后从两个字符串的长度len1和len2开始枚举a---z字符,比如开始 t1 = last1[len1][0], t2 = last2[len2][0]表示a在s1字符串1---len1的最大下标为t1, 在s2字符串1--len2的最大下标为t2，那么若dp[t1][t2] 的值为s1和s2的最大公共子序列长度cnt则表示这个字符符合，保存起来，否则枚举下一个字符b。若满足情况的话，在继续在t1-1 和 t2 - 1 符合最大公共子序列为cnt - 1的字符串保存，如此循环，知道到达最长公共子序列为0时结束。把保存的字符串放入set集合里面，让它按字典序排序。
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <set>
+using namespace std;
+int const maxn = 100;
+char s1[maxn], s2[maxn], tmp[maxn];
+int dp[maxn][maxn], last1[100][30], last2[100][30], len1, len2, cnt;
+set<string> collection;
+void LCA();
+void handle(char s[], int len, int last[][30]);
+void find(int index1, int index2, int len);
+int main()
+{
+    scanf(""%s %s"", &s1[1], &s2[1]);
+    LCA();
+    handle(s1, len1, last1);
+    handle(s2, len2, last2);
+    cnt = dp[len1][len2];
+    tmp[cnt+1] = '\0';
+    find(len1, len2, cnt);
+    for(set<string>::iterator iter = collection.begin(); iter != collection.end(); iter++)
+        printf(""%s\n"", iter->c_str());
+    return 0;
+}
+void LCA()
+{
+    int i, j;
+    for(i = 1; s1[i] != '\0'; i++)
+    {
+        for(j = 1; s2[j] != '\0'; j++)
+        {
+            if(s1[i] == s2[j])
+                dp[i][j] = dp[i-1][j-1] + 1;
+            else if(dp[i-1][j] >= dp[i][j-1])
+                dp[i][j] = dp[i-1][j];
+            else
+                dp[i][j] = dp[i][j-1];
+        }
+    }
+    len1 = i - 1;
+    len2 = j - 1;
+}
+void handle(char s[], int len, int last[][30])
+{
+    for(int i = 0; i < 26; i++)
+    {
+        char c = 'a' + i;
+        for(int j = 1; j <= len; j++)
+        {
+            int k;
+            for(k = j; k >= 1; k--)
+            {
+                if(c == s[k])
+                {
+                    last[j][i] = k;
+                    break;
+                }
+            }
+            if(k == 0)
+                last[j][i] = 0;
+        }
+    }
+}
+void find(int index1, int index2, int len)
+{
+    if(len <= 0)
+    {
+        collection.insert(&tmp[1]);
+        return;
+    }
+    if(index1 > 0 && index2 > 0)
+    {
+        for(int i = 0; i < 26; i++)
+        {
+            int t1 = last1[index1][i];
+            int t2 = last2[index2][i];
+            if(dp[t1][t2] == len)
+            {
+                tmp[len] = 'a' + i;
+                find(t1 - 1, t2 - 1, len - 1);
+            }
+        }
+    }
+}
+"
+109,"hdu 3829 二分图最大独立集 - 跟acm say goodbye - 博客频道 - CSDN.NET
+
+//Cat VS Dog.cpp : 定义控制台应用程序的入口点。
+//
+/*
+题目描述：动物园有N只猫，M只狗，P个小孩。每个小孩都有自己喜欢的动物和讨厌的动物，如果他喜欢狗，那么就讨厌猫，
+如果他讨厌猫，那么他就喜欢狗。某个小孩能开心，当且仅当他喜欢的动物留在动物园和讨厌的动物不在动物园里面。
+现让管理员通过带走某些动物，问最多能使多少个孩子开心。
+解题思路：题目有一个关键点，孩子喜欢猫，必然不喜欢狗，反之。 即猫和猫之间，狗和狗之间一定不存在矛盾关系，符合二分图的概念。
+如何建立二分图：
+若甲小孩喜欢的动物与乙小孩讨厌的动物一样，或者甲小孩讨厌的动物与乙小孩喜欢的动物一样，那甲乙之间就存在着排斥关系，则他们之间连接一条边。
+建立完二分图之后，相当于求二分图的最大独立集 = 顶点数 - 最大匹配数。
+*/
+#include ""stdafx.h""
+#include <iostream>
+#include <cstring>
+#include <string>
+#include <algorithm>
+using namespace std;
+const int MAXN = 508;
+struct Child
+{
+	string like;
+	string dis;
+};
+Child cat[MAXN],dog[MAXN];
+int map[MAXN][MAXN];
+int link[MAXN];
+int used[MAXN];
+int cat_num;
+int dog_num;
+int dfs(int k)
+{
+	for(int i=0; i<dog_num; i++)
+	{
+		if(!used[i] && map[k][i])
+		{
+			used[i] = 1;
+			if(link[i] == -1 || dfs(link[i]))
+			{
+				link[i] = k;
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+int maxMatch()
+{
+	int cnt = 0;
+	for(int i=0; i<cat_num; i++)
+	{
+		memset(used,0,sizeof(used));
+		if(dfs(i))
+		{
+			cnt++;
+		}
+	}
+	return cnt;
+}
+int main()
+{
+	int n,m,p;
+	string a,b;
+	while(cin>>n>>m>>p)
+	{
+		memset(map,0,sizeof(map));
+		memset(link,-1,sizeof(link));
+		cat_num = dog_num = 0;
+		while(p--)
+		{
+			cin>>a>>b;
+			//将喜欢猫的孩子划为A子集
+			if(a[0] == 'C') 
+			{
+				cat[cat_num].like = a;
+				cat[cat_num].dis = b;
+				cat_num++;
+			}
+			//将喜欢狗的孩子划为B子集
+			if(a[0] == 'D')
+			{
+				dog[dog_num].like = a;
+				dog[dog_num].dis = b;
+				dog_num++;
+			}
+		}
+		for(int i=0; i<cat_num; i++)
+		{
+			for(int j=0; j<dog_num; j++)
+			{
+				//若存在排斥关系
+				if(cat[i].like == dog[j].dis || cat[i].dis == dog[j].like)
+				{
+					map[i][j] = 1;
+				}
+			}
+		}
+		int cnt = maxMatch();
+		//最大独立集 = 顶点数 - 最大匹配数
+		cout<<cat_num+dog_num-cnt<<endl;
+	}
+	return 0;
+}
+
+"
+127,"poj1135 Domino Effect(最短路径)_chenhuang_新浪博客
+
+题目：http://acm.pku.edu.cn/JudgeOnline/problem?id=1135
+思路：达到每个关键多米诺的时间就是与第一个关键多米诺骨牌的最短距离
+ 与第一个关键多米诺骨牌距离最远的关键多米诺骨牌必定最晚倒下，然后
+ 穷举每个关键多米诺骨牌和它的相邻多米诺骨牌，查找最晚倒下的多米诺骨牌
+源代码：
+#include <iostream>
+ #include <vector>
+ #include <queue>
+ #include <cstdio>
+ using namespace std;
+const int INF = 100000000;
+ const int MAXN = 501;
+ typedef struct node
+ {
+  int to;
+  int time;
+ }Edge;
+int n;//多米诺骨牌的个数
+ int m;//骨牌的排数，即边数
+ vector<Edge> g[MAXN];//存放图的邻接表
+ priority_queue<Edge> pq;
+ int dist[MAXN];//存放每个关键多米诺骨牌到1号多米诺骨牌的最短路径
+//比较器
+ bool operator < (const Edge& a,const Edge& b)
+ {
+  return a.time > b.time;
+ }
+ void Init()
+ {
+  int i;
+  for (i = 1; i <= n; i ++)
+   g[i].clear();
+ }
+ void Dijkstra()
+ {
+  bool flag[MAXN];
+  int i,ct = 0;
+  Edge e,e1;
+  for (i = 1; i <= n; i ++)
+  {
+   flag[i] = false;
+   dist[i] = INF;
+  }
+  while (!pq.empty())
+   pq.pop();
+  e.to = 1;
+  e.time = 0;
+  dist[1] = 0;
+  pq.push(e);
+  while (ct < n && !pq.empty())
+  {
+   do{
+    e = pq.top();
+    pq.pop();
+   }while (flag[e.to] && !pq.empty());
+   if (!flag[e.to])
+   {
+    flag[e.to] = true;
+    ct ++;
+    for (i = 0; i < g[e.to].size(); i ++)
+     if (!flag[g[e.to][i].to])
+     {
+      if (dist[e.to] + g[e.to][i].time < dist[g[e.to][i].to])
+      {
+       dist[g[e.to][i].to] = dist[e.to] + g[e.to][i].time;
+       e1.to = g[e.to][i].to;
+       e1.time = dist[g[e.to][i].to];
+       pq.push(e1);
+      }
+     }
+   }
+  }
+ }
+ void GetAns()
+ {
+  int i,p1,p2,j;
+  p1 = p2 = 1;
+  double ans = 0;
+  for (i = 1; i <= n; i ++)
+   for (j = 0; j < g[i].size(); j ++)
+    if (g[i][j].to > i)
+    {
+     if (dist[i] <= dist[g[i][j].to])
+     {
+      if (dist[i] + g[i][j].time > dist[g[i][j].to] &&
+       ((double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2) > ans)
+      {
+       p1 = i;
+       p2 = g[i][j].to;
+       ans = (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2;
+      }
+      else if (dist[i] + g[i][j].time == dist[g[i][j].to] &&
+       dist[g[i][j].to] > ans)
+      {
+       p1 = p2 = g[i][j].to;
+       ans = dist[g[i][j].to];
+      }
+     }
+     else if (dist[i] > dist[g[i][j].to])
+     {
+      if (dist[g[i][j].to] + g[i][j].time > dist[i] &&
+       (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2 > ans)
+      {
+       p1 = i;
+       p2 = g[i][j].to;
+       ans = (double)(dist[i] + g[i][j].time + dist[g[i][j].to]) / 2;
+      }
+      else if (dist[g[i][j].to] + g[i][j].time == dist[i] &&
+       dist[i] > ans)
+      {
+       p1 = p2 = i;
+       ans = dist[i];
+      }
+     }
+    }
+  if (p1 != p2)
+  {
+   if (p1 > p2)
+   {
+    p1 ^= p2;
+    p2 ^= p1;
+    p1 ^= p2;
+   }
+   printf(""The last domino falls after %.1f seconds, between key dominoes %d and %d.\n\n"",ans,p1,p2);
+  }
+  else
+   printf(""The last domino falls after %.1f seconds, at key domino %d.\n\n"",ans,p1);
+ }
+ int main(void)
+ {
+  int ct = 1,x,y,z,i;
+  Edge e;
+  while (cin >> n >> m,n || m)
+  {
+   Init();
+   //建图
+   for (i = 0; i < m; i ++)
+   {
+    cin >> x >> y >> z;
+    e.to = y;
+    e.time = z;
+    g[x].push_back(e);
+    e.to = x;
+    g[y].push_back(e);
+   }
+   Dijkstra();
+   cout << ""System #"" << (ct++) << endl;
+   GetAns();
+  }
+  return 0;
+ }
+"
+133,"poj 1849  Two - Because Of You - 博客园
+
+在某个点派出两个点去遍历所有的边，花费为边的权值，求最少的花费
+仔细分析后发现从哪个点出发是无所谓的
+如果从某个点出发要回到这个点，那么它走过的边肯定都被他遍历了两遍，画个图模拟一下就知道了
+但是如果不回来，则所走路径中有一条简单路径是可以只走一遍的，派出了两个点去遍历，也就是说有两条简单路径是可以直走一边的，我们要使这两条简单路径的总和尽可能的长，就转换为了树的最长路径问题了
+所以答案就为总的边权和的两倍减去树的最长路
+ 
+
+ 
+ 
+ View Code  
+  
+  #include<cstdio>
+#include<cstring>
+#include<vector>
+#include<queue>
+#include<algorithm>
+using namespace std;
+vector<pair<int,int> > edge[100010];
+int step[100100];
+int vis[100010];
+int bfs(int &s){
+    int Max=0;
+    memset(vis,0,sizeof(vis));
+    queue<int> Q;
+    Q.push(s);step[s]=0;
+    while(!Q.empty()){
+        int fr=Q.front();Q.pop();
+        for(int i=0;i<edge[fr].size();i++){
+        int to=edge[fr][i].first,w=edge[fr][i].second;
+            if(vis[to]) continue;
+            step[to]=step[fr]+w;
+            if(step[to]>Max){
+                Max=step[to];
+                s=to;
+            }
+            vis[to]=1;
+            Q.push(to);
+        }
+    }return Max;
+}
+int main(){
+    int n,s,i,a,b,w;
+    while(scanf(""%d%d"",&n,&s)!=EOF){
+        int sum=0;
+        for(i=0;i<n-1;i++){
+            scanf(""%d%d%d"",&a,&b,&w);
+            sum+=2*w;
+            edge[a].push_back(make_pair(b,w));
+            edge[b].push_back(make_pair(a,w));
+        }
+        bfs(s);
+        int mm=bfs(s);
+        printf(""%d\n"",sum-mm);
+    }
+} 
+  
+ 
+
+"
+163,"pku 1062 - MickJack的专栏 - 博客频道 - CSDN.NET
+
+题目链接：http://acm.pku.edu.cn/JudgeOnline/problem?id=1062
+这是一道比较明显的最短路径....建图也比较容易...就是在处理等级的时候比较麻烦，可以枚举吧。比如 酋长的等级是6   m的值是3 那么有3~6 ，4~7，5~8，6~9 这4种可能。Dijkstra算法经典算法就乐意ac了。。貌似这道题spfa算法并不比Dijkstra的快，当然只是针对个别。
+#include<iostream>
+#include<cmath>
+#include<string.h>
+using namespace std;
+const int MAX=400;
+const int MAXINT=1234565789; 
+int map[MAX][MAX];
+int lift[MAX];
+int D[MAX]; 
+int n,m;
+int Dijkstra()
+{
+     int distance=D[1],tmpd[MAX],visit[MAX]; 
+     for(int t=lift[1]-n;t<=lift[1];t++)
+     {  
+            for(int i=1;i<=m;i++)    
+            {  
+                     tmpd[i]=D[i]; 
+                     visit[i]=0; 
+            }        
+            int v,min;     
+            for(int T=1;T<=m;T++)
+            {
+                   min=MAXINT; 
+                   for(int i=1;i<=m;i++)
+                   if(!visit[i]) 
+                   if(lift[i]>=t&&lift[i]<=t+n&&tmpd[i]<min)
+                   {
+                         v=i;
+                         min=tmpd[i];
+                   }                        
+                   visit[v]=1;
+                   for(int j=1;j<=m;j++)
+                           if(!visit[j]&&(lift[j]>=t&&lift[j]<=t+n)&&(tmpd[v]+map[v][j]<tmpd[j]))
+                                 tmpd[j]=tmpd[v]+map[v][j]; 
+            }      
+            if(tmpd[1]<distance) distance=tmpd[1];    
+    }  
+ return distance; 
+} 
+int main()
+{
+   while(cin>>n>>m)
+   { 
+        memset(D,0,sizeof(D));
+        memset(lift,0,sizeof(lift));
+        int money,t,num;
+        for(int i=1;i<=m;i++)
+          for(int j=1;j<=m;j++)
+             map[i][j]=MAXINT; 
+        for(int i=1;i<=m;i++)
+        {
+                cin>>money>>t>>num;
+                lift[i]=t; 
+                int x,y; 
+                D[i]=map[0][i]=money;
+                for(int j=0;j<num;j++)
+                {
+                        cin>>x>>y;
+                        map[x][i]=y;         
+                }       
+        } 
+        int cost=Dijkstra();    
+        cout<<cost<<endl;
+   }
+   return 0;
+}
+"
+165,"UVa 590 - Always on the run_Knowledgetime的空间_百度空间
+
+UVa 590 - Always on the run
+   读了半天题目，又在st8676746帮助下才真正将题理解，不过大部分还是靠我的努力。在这里感谢st867646！
+   说实在的在看到别人对这题的评价：简单题，水题...再想想自己当时在看这题的时候没有思路，也不知如何下手，心理无不是一种打击，心中不由产生一种自卑感……感觉自己太弱了。
+   可我并没有被这击倒，我还是坚强的面对。我也没看那些牛人的代码，他们写得高级我可能不太看懂。
+    只是自己永不停息的想……半天了过去了，直到现在我才解决这题，但，我一次AC的。
+    就说说这题的解法吧，我没有利用什么高级的东西，只是利用简单语句，我想代码可读性还可以。
+    这题是好像是最短路径问题，但是再仔细想想，最好的做法是利用动态规划，这样可以使问题变得简单。最优解的来源可能有n-1个，所以我们令ans[i][j]表示城市i在j天的旅行最小费用，那么则有状态转移方程：
+    ans[i][j]=min{ ans[c][j-1]+p[c][i][j] | 1<=c<=n and c≠i }.
+    Initinatify:ans[1][0]=0, Anothers:ans[][]= -1
+   目标： ans[n][k] .
+/* Source Code */
+#include <stdio.h>
+#include <string.h>
+int n,k,cas=0;
+int p[16][16][32]={0},days[16][16]={0};
+int ans[16][1024]={0};
+void readdata()
+{
+     for(int i=1;i<=n;i++)
+        for(int j=1;j<=n;j++)
+        if(i!=j)
+        {
+           scanf(""%d"",&days[i][j]);
+           for(int c=0;c<days[i][j];c++)
+              scanf(""%d"",&p[i][j][c]);
+        }
+}
+void travel()
+{
+     int t,min;
+     memset(ans,-1,sizeof(ans));
+     ans[1][0]=0;
+     for(int j=1;j<=k;j++)
+        for(int i=1;i<=n;i++)
+        {
+           min=-1;
+           for(int c=1;c<=n;c++)
+           {
+              if(c==i||ans[c][j-1]<0) continue;//No answer
+              t=(j-1)%days[c][i];
+              if(!p[c][i][t]) continue;//No flight
+              if(min<0) min=ans[c][j-1]+p[c][i][t];
+              else   if(min>ans[c][j-1]+p[c][i][t])
+                        min=ans[c][j-1]+p[c][i][t];
+           }
+           ans[i][j]=min;
+        }
+     printf(""Scenario #%d\n"",++cas);
+     if(ans[n][k]>=0) printf(""The best flight costs %d.\n\n"",ans[n][k]);
+     else printf(""No flight possible.\n\n"");
+}
+int main()
+{
+    while(scanf(""%d%d"",&n,&k)==2)
+    {
+       if(!n && !k) break;
+       readdata();
+       travel();
+    }
+    return 0;
+}
+"
+184,"POJ 2914 Minimum Cut - scorpiocj的专栏 - 博客频道 - CSDN.NET
+
+无向图，每对顶点间可能有多条边，问最少删除多少条边才能将图分为两个子图
+把两点间的边数看成权重，就变成了求带权无向图的最小割了，采用Stoer-Wagner算法
+代码：
+#include<iostream>
+using namespace std;
+const int inf=1<<30;
+const int MAX=510;
+int g[MAX][MAX];
+int MinCut(int n)
+{
+	int dis[MAX],node[MAX],vis[MAX];//dis[i]表示第i点到A的距离，node[i]表示i号节点属于哪个点 
+	int i,j,k,prev,maxj,ans=inf;
+	for(i=0;i<n;i++)
+	{
+		node[i]=i;
+	}
+	while(n>1)
+	{
+		maxj=1;
+		for(i=0;i<n;i++)
+		{
+			dis[node[i]]=g[node[0]][node[i]];//初始化A(node[0])与各点的距离,即W(A,p) 
+			if(dis[node[i]]>dis[node[maxj]])//选出第二个加入A的点 
+				maxj=i;	
+		}
+		prev=0;//第一个加入的点是0号点 
+		memset(vis,0,sizeof(vis));
+		vis[node[0]]=1;
+		for(i=1;i<n;i++)
+		{
+			if(i==n-1)//A=V 
+			{
+				ans=min(ans,dis[node[maxj]]);
+				for(k=0;k<n;k++)//将prev和maxj两个点缩为一个点 ,prev
+				{
+					g[node[k]][node[prev]]=(g[node[prev]][node[k]]+=g[node[k]][node[maxj]]);
+				}
+				node[maxj]=node[--n];//删除顶点maxj 
+			}
+			vis[node[maxj]]=1;
+			prev=maxj;
+			maxj=-1;
+			for(j=1;j<n;j++)//找点加入A，同时更新W(A,p) ,因为A新加入了节点prev 
+			{
+				if(!vis[node[j]])
+				{
+					dis[node[j]]+=g[node[prev]][node[j]];
+					if(maxj==-1||dis[node[maxj]]<dis[node[j]])
+						maxj=j;
+				}
+			}
+		}
+	}
+	return ans;
+}
+int main()
+{
+	int a,b,n,m,w;
+	while(scanf(""%d%d"",&n,&m)!=EOF)
+	{
+		memset(g,0,sizeof(g));
+		while(m--)
+		{
+			scanf(""%d%d%d"",&a,&b,&w);
+			g[a][b]+=w;
+			g[b][a]+=w;
+		}
+		printf(""%d/n"",MinCut(n));
+	}
+	return 0;
+} 
+"

@@ -1,0 +1,835 @@
+poj	eng	N	Y	O	B-OJ
+
+1827	m	N	N	O	I-OJ
+_	x	N	N	O	O
+foreverlin	eng	N	N	O	O
+_	x	N	N	O	O
+百度	n	N	N	O	O
+空间	n	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+iostream	eng	N	N	O	O
+>	x	N	N	O	O
+
+#	x	N	N	O	O
+include	eng	N	N	O	O
+<	x	N	N	O	O
+queue	eng	N	N	O	O
+>	x	N	N	O	O
+
+using	eng	N	N	O	O
+
+namespace	eng	N	N	O	O
+
+std	eng	N	N	O	O
+;	x	N	N	O	O
+
+const	eng	N	N	O	O
+
+int	eng	N	N	O	O
+
+maxn	eng	N	N	O	O
+=	x	N	N	O	O
+50001	m	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+贪心	v	Y	N	O	B-KNOWLEDGE
++	x	N	N	O	O
+并	c	N	N	O	B-KNOWLEDGE
+查集	v	Y	N	O	I-KNOWLEDGE
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+题目	n	Y	N	O	O
+描述	v	N	N	O	O
+：	x	N	N	O	O
+一共	j	N	N	O	O
+有	v	N	N	O	O
+x	eng	N	N	O	O
+个	m	N	N	O	O
+盒子	n	N	N	O	O
+，	x	N	N	O	O
+一个	m	N	N	O	O
+盒子	n	N	N	O	O
+有	v	N	N	O	O
+一个	m	N	N	O	O
+数	n	N	N	O	O
+，	x	N	N	O	O
+一个	m	N	N	O	O
+数	n	N	N	O	O
+只能	v	N	N	O	O
+放在	v	N	N	O	O
+一个	m	N	N	O	O
+盒子	n	N	N	O	O
+里	f	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+有	v	N	N	O	O
+n	eng	N	N	O	O
+个	m	N	N	O	O
+怪兽	n	N	N	O	O
+，	x	N	N	O	O
+每个	r	N	N	O	O
+随机	d	Y	N	O	O
+检起	v	N	N	O	O
+一张	m	N	N	O	O
+卡片	nz	N	N	O	O
+，	x	N	N	O	O
+打开	v	N	N	O	O
+获得	v	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+为	p	N	N	O	O
+d	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+，	x	N	N	O	O
+不能	v	N	N	O	O
+改变	v	N	N	O	O
+且	zg	N	N	O	O
+不能	v	N	N	O	O
+再	d	N	N	O	O
+打开	v	N	N	O	O
+其他	r	N	N	O	O
+盒子	n	N	N	O	O
+，	x	N	N	O	O
+d	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+范围	n	N	N	O	O
+[	x	N	N	O	O
+1	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+]	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+如果	c	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+个	m	N	N	O	O
+怪兽	n	N	N	O	O
+获得	v	N	N	O	O
+数字	n	Y	N	O	O
+d	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+，	x	N	N	O	O
+他	r	N	N	O	O
+只能	v	N	N	O	O
+打开	v	N	N	O	O
+编号	n	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+d	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+的	uj	N	N	O	O
+盒子	n	N	N	O	O
+，	x	N	N	O	O
+一个	m	N	N	O	O
+盒子	n	N	N	O	O
+只能	v	N	N	O	O
+给	p	N	N	O	O
+一个	m	N	N	O	O
+怪兽	n	N	N	O	O
+，	x	N	N	O	O
+一个	m	N	N	O	O
+怪兽	n	N	N	O	O
+只能	v	N	N	O	O
+由	p	N	N	O	O
+一个	m	N	N	O	O
+盒子	n	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+jim	eng	N	N	O	O
+有	v	N	N	O	O
+权利	n	N	N	O	O
+去	v	N	N	O	O
+分配	vn	N	N	O	O
+，	x	N	N	O	O
+他	r	N	N	O	O
+知道	v	N	N	O	O
+第	m	N	N	O	O
+i	eng	N	N	O	O
+个	m	N	N	O	O
+怪兽	n	N	N	O	O
+的	uj	N	N	O	O
+能力	n	N	N	O	O
+为	p	N	N	O	O
+s	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+，	x	N	N	O	O
+问题	n	N	N	O	O
+要	v	N	N	O	O
+使得	v	N	N	O	O
+所有	b	N	N	O	O
+没有	v	N	N	O	O
+获得	v	N	N	O	O
+盒子	n	N	N	O	O
+的	uj	N	N	O	O
+怪兽	n	N	N	O	O
+的	uj	N	N	O	O
+s	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+之	u	N	N	O	O
+和	c	N	N	O	O
+sum	eng	N	N	O	O
+最小	a	Y	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+首先	d	N	N	O	O
+我们	r	N	N	O	O
+按	p	N	N	O	O
+s	eng	N	N	O	O
+从	p	N	N	O	O
+大	a	N	N	O	O
+到	v	N	N	O	O
+小	a	N	N	O	O
+排序	n	Y	N	O	O
+，	x	N	N	O	O
+如果	c	N	N	O	O
+s	x	N	N	O	O
+相同	d	N	N	O	O
+，	x	N	N	O	O
+那么	r	N	N	O	O
+按	p	N	N	O	O
+d	eng	N	N	O	O
+的	uj	N	N	O	O
+值	n	N	N	O	O
+从	p	N	N	O	O
+大	a	N	N	O	O
+到	v	N	N	O	O
+小	a	N	N	O	O
+，	x	N	N	O	O
+这样	r	N	N	O	O
+做	v	N	N	O	O
+是	v	N	N	O	O
+为了	p	N	N	O	O
+尽量	d	N	N	O	O
+先	d	N	N	O	O
+把	p	N	N	O	O
+s	eng	N	N	O	O
+大	a	N	N	O	O
+的	uj	N	N	O	O
+安顿	ns	N	N	O	O
+好	a	N	N	O	O
+，	x	N	N	O	O
+因为	c	N	N	O	O
+惹不起	l	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+每次	r	N	N	O	O
+都	d	N	N	O	O
+采取	v	N	N	O	O
+靠	v	N	N	O	O
+后	f	N	N	O	O
+原则	n	N	N	O	O
+，	x	N	N	O	O
+俗话说	l	N	N	O	O
+的	uj	N	N	O	O
+好	a	N	N	O	O
+，	x	N	N	O	O
+物尽其用	l	N	N	O	O
+，	x	N	N	O	O
+这里	r	N	N	O	O
+的	uj	N	N	O	O
+数字	n	Y	N	O	O
+也	d	N	N	O	O
+是	v	N	N	O	O
+一样	r	N	N	O	O
+，	x	N	N	O	O
+然后	c	N	N	O	O
+用	p	N	N	O	O
+并	c	N	N	O	O
+查集	v	Y	N	O	O
+保留	v	N	N	O	O
+下	f	N	N	O	O
+当前	t	N	N	O	O
+最近	f	N	N	O	O
+的	uj	N	N	O	O
+那个	r	N	N	O	O
+祖先	nr	N	N	O	O
+
+bool	eng	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+n	x	N	N	O	O
+,	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+typedef	eng	N	N	O	O
+
+struct	eng	N	N	O	O
+
+node	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+d	x	N	N	O	O
+,	x	N	N	O	O
+s	x	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+}	x	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+dd	eng	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+ss	eng	Y	N	O	O
+)	x	N	N	O	O
+{	x	N	N	O	O
+d	x	N	N	O	O
+=	x	N	N	O	O
+dd	eng	N	N	O	O
+;	x	N	N	O	O
+s	x	N	N	O	O
+=	x	N	N	O	O
+ss	eng	Y	N	O	O
+;	x	N	N	O	O
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+node	eng	N	N	O	O
+;	x	N	N	O	O
+
+node	eng	N	N	O	O
+
+p	x	N	N	O	O
+[	x	N	N	O	O
+maxn	eng	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+bool	eng	N	N	O	O
+
+cmp	eng	N	N	O	O
+(	x	N	N	O	O
+node	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+node	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	eng	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+y	eng	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+)	x	N	N	O	O
+return	eng	N	N	O	O
+
+x	eng	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+>	x	N	N	O	O
+y	eng	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+x	eng	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+>	x	N	N	O	O
+y	eng	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+find	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+void	eng	N	N	O	O
+
+unit	eng	N	N	O	O
+(	x	N	N	O	O
+int	eng	N	N	O	O
+
+x	x	N	N	O	O
+,	x	N	N	O	O
+int	eng	N	N	O	O
+
+y	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+y	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+y	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+y	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+main	eng	N	N	O	O
+(	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+int	eng	N	N	O	O
+
+i	x	N	N	O	O
+,	x	N	N	O	O
+j	x	N	N	O	O
+,	x	N	N	O	O
+k	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+;	x	N	N	O	O
+
+while	eng	N	N	O	O
+(	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+n	eng	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+m	eng	N	N	O	O
+)	x	N	N	O	O
+!	x	N	N	O	O
+=	x	N	N	O	O
+EOF	eng	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+n	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	m	N	N	O	O
+&&	x	N	N	O	O
+m	eng	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+break	eng	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+scanf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+&	x	N	N	O	O
+p	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+sort	eng	N	N	O	O
+(	x	N	N	O	O
+p	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+p	eng	N	N	O	O
++	x	N	N	O	O
+n	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+,	x	N	N	O	O
+cmp	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+m	eng	N	N	O	O
++	x	N	N	O	O
+1	m	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+i	x	N	N	O	O
+;	x	N	N	O	O
+
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+for	eng	Y	N	O	O
+(	x	N	N	O	O
+i	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+i	x	N	N	O	O
+<	x	N	N	O	O
+=	x	N	N	O	O
+n	x	N	N	O	O
+;	x	N	N	O	O
+i	eng	N	N	O	O
+++	x	N	N	O	O
+)	x	N	N	O	O
+
+{	x	N	N	O	O
+
+x	x	N	N	O	O
+=	x	N	N	O	O
+find	eng	N	N	O	O
+(	x	N	N	O	O
+p	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+d	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+x	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+
+/	x	N	N	O	O
+/	x	N	N	O	O
+
+cout	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+"	x	N	N	O	O
+sum	eng	N	N	O	O
+=	x	N	N	O	O
+"	x	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+sum	eng	N	N	O	O
+<	x	N	N	O	O
+<	x	N	N	O	O
+endl	eng	N	N	O	O
+;	x	N	N	O	O
+system	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+pause	eng	N	N	O	O
+"	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+=	x	N	N	O	O
+=	x	N	N	O	O
+0	x	N	N	O	O
+)	x	N	N	O	O
+sum	eng	N	N	O	O
++	x	N	N	O	O
+=	x	N	N	O	O
+p	x	N	N	O	O
+[	x	N	N	O	O
+i	x	N	N	O	O
+]	x	N	N	O	O
+.	m	N	N	O	O
+s	eng	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+{	x	N	N	O	O
+
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+1	x	N	N	O	O
+;	x	N	N	O	O
+
+if	eng	N	N	O	O
+(	x	N	N	O	O
+use	eng	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+)	x	N	N	O	O
+unit	eng	N	N	O	O
+(	x	N	N	O	O
+x	x	N	N	O	O
+,	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+else	eng	N	N	O	O
+
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+]	x	N	N	O	O
+=	x	N	N	O	O
+a	x	N	N	O	O
+[	x	N	N	O	O
+x	x	N	N	O	O
+-	x	N	N	O	O
+1	x	N	N	O	O
+]	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+}	x	N	N	O	O
+
+printf	eng	N	N	O	O
+(	x	N	N	O	O
+"	x	N	N	O	O
+%	x	N	N	O	O
+d	x	N	N	O	O
+\	x	N	N	O	O
+n	x	N	N	O	O
+"	x	N	N	O	O
+,	x	N	N	O	O
+sum	eng	N	N	O	O
+)	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+
+return	eng	N	N	O	O
+
+0	x	N	N	O	O
+;	x	N	N	O	O
+
+}	x	N	N	O	O
+

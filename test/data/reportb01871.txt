@@ -1,0 +1,248 @@
+POJ3277(线段树,离散化,扫描线)_飘羽逸狂_新浪博客
+
+
+ City Horizon
+ 
+ 
+  
+   
+    
+    Time Limit: 2000MS 
+     
+    Memory Limit: 65536K 
+    
+    
+    Total Submissions: 13819 
+     
+    Accepted: 3734 
+    
+   
+  
+ 
+
+Description
+Farmer John has taken his cows on a trip to the city! As the sun sets, the cows gaze at the city horizon and observe the beautiful silhouettes formed by the rectangular buildings.
+The entire horizon is represented by a number line with N (1 ≤ N ≤ 40,000) buildings. Building i's silhouette has a base that spans locations Ai through Bi along the horizon (1 ≤ Ai < Bi ≤ 1,000,000,000) and has height Hi (1 ≤ Hi ≤ 1,000,000,000). Determine the area, in square units, of the aggregate silhouette formed by all N buildings.
+Input
+ 
+
+ Line 1: A single integer: N
+ Lines 2..N+1: Input line i+1 describes building i with three space-separated integers: Ai, Bi, and Hi
+ 
+
+Output
+ 
+
+ Line 1: The total area, in square units, of the silhouettes formed by all N buildings
+ 
+
+Sample Input
+4
+2 5 1
+9 10 4
+6 8 2
+4 6 3
+Sample Output
+16
+Hint
+ 
+
+ The first building overlaps with the fourth building for an area of 1 square unit, so the total area is just 3*1 + 1*4 + 2*2 + 2*3 - 1 = 16.
+ 
+
+Source
+ 
+
+  USACO 2007 Open Silver
+ 
+
+ //----------------------------------------------------------------
+ 
+
+ MYCode:
+ 
+
+ #pragma warning(disable:4786)
+ #include<iostream>
+ #include<algorithm>
+ using namespace std;
+ //线段树模板
+ struct line
+ {
+  __int64 left,right;//左端点、右端点
+  __int64 len;
+  int cover;
+ };
+ 
+
+ struct sline
+ {
+  __int64 left,right;
+  __int64 x;
+  int flag;
+ };
+ int id;
+ __int64 y[40001];//在y轴上建立线段树,所以对y排序并去重
+ __int64 rev[40001];//给出每个编号对应的高度
+ struct line a[350001];//y轴线段树
+ sline p[80001];//插入线段树的竖直线段
+ __int64 yy[40001];
+ //建立
+ void build(int s,int t,int n)
+ {
+  int mid=(s+t)/2;
+  a[n].left=s;
+  a[n].right=t;
+  a[n].len = 0;
+  a[n].cover = 0;
+  if (t - s == 1) return;//叶节点返回
+  build(s,mid,2*n);//端点模型,不是格子模型
+  build(mid,t,2*n+1);
+ }
+ //插入
+ void insert(int left,int right,double x,int flag,int step)//要插入的线段的左端点和右端点、以及当前线段树中的某条线段
+ {
+   if(left == a[step].left && right == a[step].right)
+   {
+     a[step].cover += flag;
+     return;//插入结束返回
+   }
+   if (a[step].left == a[step].right - 1)   return;//当前线段树的线段没有儿子，插入结束返回
+   int mid=(a[step].left+a[step].right)/2;
+   if (mid>=right)    insert(left,right,x,flag,step*2);//如果中点在t的右边，则应该插入到左儿子
+   else if (mid<left)    insert(left,right,x,flag,step*2+1);//如果中点在s的左边，则应该插入到右儿子
+   else//否则，中点一定在s和t之间，把待插线段分成两半分别插到左右儿子里面
+   {
+         insert(left,mid,x,flag,step*2);
+         insert(mid,right,x,flag,step*2+1);
+   }
+ }
+ //访问
+ void update(int step)
+ {
+  if (a[step].cover > 0)
+  {
+   a[step].len = yy[a[step].right] - yy[a[step].left]; 
+   return;
+  }
+     else if (a[step].left == a[step].right-1)
+  {
+   a[step].len = 0;
+   return;
+  }
+     else
+     {
+      update(step*2);
+      update(step*2+1);
+      a[step].len = a[step*2].len + a[step*2+1].len;
+     }
+ }
+ int cmp(const sline&p1,const sline&p2)
+ {
+  return p1.x < p2.x;
+ };
+ int b_search(__int64 key)
+ {
+  int left = 0,right = id;//note
+  while(left < right-1)//note
+  {
+   __int64 mid = (left + right)/2;
+   if(yy[mid] == key)
+   return mid;
+   if(yy[mid] < key)
+   left = mid;
+   else
+   right = mid;
+  }
+ }
+ int main()
+ {
+   int n,i;
+   scanf("%d",&n);
+   memset(a,0,sizeof(a));
+   __int64 x1,x2,yi;
+   for(i = 1;i <= n; i++)
+   {
+    scanf("%I64d%I64d%I64d",&x1,&x2,&yi);
+    p[2*i-1].x = x1 ;
+    p[2*i-1].left = 0;
+    p[2*i-1].right = yi;
+    p[2*i-1].flag = 1;
+    p[2*i].x = x2;
+    p[2*i].left = 0;
+    p[2*i].right = yi;
+    p[2*i].flag = -1;
+    y[i] = yi;
+   }
+   sort(y+1,y+n+1);
+   sort(p+1,p+2*n+1,cmp);
+   id = 2;
+   yy[0] = 0;
+   yy[1] = y[1];
+   for(i = 2 ;i <= n;i++)
+   {
+    if(y[i] != y[i-1])
+    yy[id++] = y[i];
+   }
+   build(0,id-1,1);//线段树区间[0,id-1];
+   __int64 total = 0;
+   insert(0,b_search(p[1].right),p[1].x,p[1].flag,1);
+   for(i = 2;i <= (n*2); i++)
+   {
+    update(1);//更新线段树
+    total += a[1].len*(p[i].x - p[i-1].x);
+    insert(0,b_search(p[i].right),p[i].x,p[i].flag,1);
+   }
+   printf("%I64d\n",total);
+ }
+ 
+ 
+  
+   
+    
+    Run ID 
+    User 
+    Problem 
+    Result 
+    Memory 
+    Time 
+    Language 
+    Code Length 
+    Submit Time 
+    
+    
+    10616667 
+    ruffy 
+    3277 
+    Accepted 
+    14244K 
+    938MS 
+    C++ 
+    3114B 
+    2012-08-06 13:07:35 
+    
+    
+    10616077 
+    ruffy 
+    3277 
+    Time Limit Exceeded 
+     
+     
+    C++ 
+    2634B 
+    2012-08-06 11:38:11 
+    
+   
+  
+ 
+
+ //-----------------------------------------------------------------
+ 
+
+ 这道题和POJ1151类似,更为简单一些,1151可以用map离散化,不会超时,但是这道题离散化的方式只能够是二分查找,如果用map的话将会TLE,因为这道题的数据量更大,map的缺陷就暴露出来了.
+ 
+
+ 虽然用STL的map可以使得离散化变得更为简单一些,但是效率不行,所以离散化还是要用自己写的二分查找.
+ 
+
+ 这道题有一点不明白,为什么中间数据会超int?如果只有结果用__int64将会得到wa.

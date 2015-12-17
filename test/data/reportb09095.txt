@@ -1,0 +1,127 @@
+PKU 2750 Potted Flower 解题报告 - ldyhot的专栏 - 博客频道 - CSDN.NET
+
+
+ 
+  /*
+    Title: Potted Flower
+    Author: Jeff
+    Time:  2008/10/28
+    Complexity: O(nlog(n));
+    Result: 7884K 344MS/ AC
+    Reference: 
+          http://203.208.39.99/search?q=cache:bZTSBU3KVGUJ:hi.baidu.com/fandywang_jlu/blog/item/505b40f4c864bddff3d38574.html+poj+2750&hl=zh-CN&lr=lang_zh-CN|lang_zh-TW&newwindow=1&gl=cn&st_usg=ALhdy29PmISlzFU8Pg-GsftyKbxS8Nqc6A&strip=1
+    Description: 
+          给定一个环形序列，进行在线操作，每次修改一个元素，
+          输出环上的最大连续子列的和。
+    Tips:
+          线段树+DP 
+          出题者的简单解题报告：把环从一个地方，切断拉成一条直线，
+          用线段树记录当前区间的非空最大子列和当前区间的非空最小
+          子列。如果环上的数都是正整数，答案是：环上数的总和－根
+          结点的非空最小子列；否则，答案是：max{根结点的非空最大
+          子列, 环上数的总和－根结点的非空最小子列}，每次问答的
+          复杂度是O(logN)。
+    p.s. 
+    
+  */
+  
+
+  #include <cstdio>
+  #include <cstring>
+  
+  using namespace std;
+  
+  const int MAX = 100000;
+  
+  struct Node{
+      int sum;    //该区间数的总和 
+      int maxSum, minSum; //该区间 最大子列和 与 最小子列和 
+      int maxl, maxr; //该区间 从左端点开始的最大子列和 与 到右端点结束的最小子列和 
+      int minl, minr; //该区间 从左端点开始的最小子列和 与 到右端点结束的最小子列和 
+  };
+  
+  int Num[MAX];
+  Node M[1 << 18];
+  
+
+  
+  inline int min(int a, int b){
+      return a < b ? a : b; 
+  }
+  inline int max(int a, int b){
+      return a > b ? a : b;    
+  }
+  
+
+  
+  //根据左右子节点更新父亲节点 (DP)
+  void update_node(int parent, int left, int right){
+      M[parent].sum = M[left].sum + M[right].sum;
+      M[parent].maxSum = max(max(M[left].maxSum, M[right].maxSum), 
+                  M[left].maxr + M[right].maxl);
+      M[parent].minSum = min(min(M[left].minSum, M[right].minSum),
+                  M[left].minr + M[right].minl);
+      M[parent].maxl = max(M[left].maxl, M[left].sum+M[right].maxl);
+      M[parent].maxr = max(M[left].maxr+M[right].sum, M[right].maxr);
+      M[parent].minl = min(M[left].minl, M[left].sum+M[right].minl);
+      M[parent].minr = min(M[left].minr+M[right].sum, M[right].minr);
+  }
+  
+  //初始化线段树 
+  void init_tree(int node, int l, int r){
+      if(l == r){
+          M[node].sum = M[node].maxSum = M[node].minSum = Num[l];    
+          M[node].maxl = M[node].maxr = M[node].minl = M[node].minr = Num[l];
+      }else{
+          init_tree(node * 2, l, (l+r)/2);
+          init_tree(node*2+1, (l+r)/2+1, r);
+          update_node(node, node * 2, node * 2 + 1);    
+      }
+      //printf("(%d %d): %d %d %d/n", l, r, M[node].sum, M[node].maxSum, M[node].minSum);
+  }
+  
+
+  
+  //改变一个叶子节点的值，从叶子到树根更新各个节点值 log(n)
+  void change_query(int node, int l, int r, int pos, int value){
+      //if(l <= pos <= r){
+          if(l == r){
+              if(l == pos)
+                  M[node].sum = M[node].maxSum = M[node].minSum = value;
+                  M[node].maxl = M[node].maxr = M[node].minl = M[node].minr = value;    
+          }else{
+              if(l <= pos && pos <= (l+r)/2)
+                  change_query(node * 2, l, (l+r)/2, pos, value);
+              else 
+                  change_query(node*2+1, (l+r)/2+1, r, pos, value);
+              update_node(node, node*2, node*2+1);
+          }
+      //}
+      //printf("(%d %d): %d %d %d/n", l, r, M[node].sum, M[node].maxSum, M[node].minSum);    
+  }
+  
+
+  
+  int main(){
+      freopen("in.txt", "r", stdin);
+      freopen("out.txt", "w", stdout);
+      int N;
+      while(scanf("%d", &N) != EOF){
+          for(int i = 0; i < N; i++)
+              scanf("%d", &Num[i]);
+          init_tree(1, 0, N-1);
+          int K, A, B;
+          scanf("%d", &K);
+          for(int i = 0; i < K; i++){
+              scanf("%d%d", &A, &B);
+              change_query(1, 0, N-1, A-1, B);
+              //printf("%d %d %d ", M[1].sum, M[1].maxSum, M[1].minSum);
+              if(M[1].sum == M[1].maxSum)printf("%d/n", M[1].sum - M[1].minSum);
+              else printf("%d/n", max(M[1].maxSum, M[1].sum - M[1].minSum));
+          }
+      }
+      return 0;    
+  }
+  
+ 
+ 

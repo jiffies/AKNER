@@ -1,0 +1,665 @@
+POJ3628-Bookshelf 2_vjudge_新浪博客
+
+ 题目链接：
+http://poj.org/problem?id=3628
+
+ 
+题意描述：有n头牛，有一个高为m的书架，求其中某几头牛摞起来比书架高的最小高度。
+ 题意分析：0-1背包、、、
+ 代码如下：
+ 一、背包写法：
+
+ #include<stdio.h>
+
+ #include<string.h>
+
+ #include<stdlib.h>
+
+ #define max(a,b) (a)>(b) ? (a):(b)
+
+ #define MAX 20000005
+
+ int w[25];
+
+ int dp[MAX];
+
+ int main(){
+
+  
+ 
+ 
+ int m,n,sum;
+
+  
+ 
+ 
+ int i,j;
+
+  
+ 
+ 
+ while( scanf( "%d%d", &n, &m ) == 2 ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ sum = 0;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=1; i<=n; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ scanf( "%d", &w[i] );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ sum += w[i];
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=0; i<=sum; i++ )
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ dp[i] = 0;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=1; i<=n; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ for( j=sum; j>=w[i]; j-- ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ dp[j] = max( dp[j], dp[ j-w[i] ] + w[i] );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=m; i<=sum; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ if( dp[i] == i ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ printf( "%d\n", i-m );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ break;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ return 0;
+
+ }
+
+ 
+二、改写背包：
+
+ #include<stdio.h>
+
+ #include<string.h>
+
+ #include<stdlib.h>
+
+ #define MAX 20000005
+
+ int w[22];
+
+ bool dp[MAX];
+
+ int main(){
+
+  
+ 
+ 
+ int m,n,sum;
+
+  
+ 
+ 
+ int i,j;
+
+  
+ 
+ 
+ while( scanf( "%d%d", &n, &m ) == 2 ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ sum = 0;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=1; i<=n; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ scanf( "%d", &w[i] );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ sum += w[i];
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ memset( dp, 0, sizeof(dp) );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ dp[0] = 1;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=1; i<=n; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ for( j=sum; j>=w[i]; j-- ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ if( dp[ j-w[i] ] )
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ dp[j] = 1;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ for( i=m; i<=sum; i++ ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ if( dp[i] == 1 ){
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ printf( "%d\n", i-m );
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ break;
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+  
+ 
+ 
+ }
+
+  
+ 
+ 
+ return 0;
+
+ }
+
+ 
+三、深搜写法：
+
+ #include<stdio.h>
+
+ #include<string.h>
+
+ #include<stdlib.h>
+
+ #define MAX 99999999
+
+ int w[20];
+
+ int m,n;
+
+ int ans = MAX;
+
+ void DFS( int num,int sum ){
+
+  
+ 
+  
+if( sum >= ans )
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ return;
+
+  
+ 
+  
+if( num == n ){
+
+  
+ 
+  
+ 
+ 
+  
+if( sum >= m )
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ans=sum;
+
+  
+ 
+  
+ 
+ 
+  
+return;
+
+  
+ 
+  
+}
+
+  
+ 
+  
+DFS( num+1, sum );
+
+  
+ 
+  
+DFS( num+1, sum+w[num] );
+
+ }
+
+ int main(){
+
+  
+ 
+  
+int i;
+
+  
+ 
+  
+scanf( "%d%d", &n, &m );
+
+  
+ 
+  
+for( i=0; i<n; i++ )
+
+  
+ 
+  
+ 
+ 
+  
+scanf( "%d", &w[i] );
+
+  
+ 
+  
+DFS( 0,0 );
+
+  
+ 
+  
+printf( "%d",ans-m );
+
+  
+ 
+  
+return 0;
+
+ }

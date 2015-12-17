@@ -1,0 +1,131 @@
+pku3233_chenjiang_百度空间
+
+/* 
+* File:   pku3233.cpp
+* Author: chenjiang
+*第一个矩阵乘法的题目，调试了n久才对啊。
+* Created on 2010年7月8日, 下午4:58
+*/
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <string.h>
+#include <queue>
+#include <stack>
+#include <algorithm>
+#include <cstdio>
+#include <map>
+#include <bitset>
+#include <math.h>
+#include <time.h>
+#include <vector>
+#include <set>
+using namespace std;
+int n, k, m;
+struct matrix
+{
+    int mat[40][40];
+    void Init();
+    void print();
+    matrix operator+(matrix);
+    matrix operator*(matrix);
+    matrix pow(int K);
+    matrix add(int K);
+};
+void matrix::Init()
+{
+    int i,j;
+    for(i=1;i<=n;i++)
+        for(j=1;j<=n;j++)
+            mat[i][j]=0;
+}
+void matrix::print()
+{
+    int i,j;
+    for(i=1;i<=n;i++)
+        for(j=1;j<=n;j++)
+        {
+            if(j<n)
+                printf("%d ",mat[i][j]);
+            else
+                printf("%d\n",mat[i][j]);
+        }
+}
+matrix matrix::operator +(matrix t)
+{
+    int i,j;
+    matrix temp;
+    temp.Init();
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            temp.mat[i][j]=mat[i][j]+t.mat[i][j];
+            if(temp.mat[i][j]>=m)
+                temp.mat[i][j]%=m;
+        }
+    }
+    return temp;
+}
+matrix matrix::operator *(matrix t)
+{
+    int i,j,s;
+    matrix temp;
+    temp.Init();
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=n;j++)
+        {
+            for(s=1;s<=n;s++)
+            {
+                temp.mat[i][j]+=mat[i][s]*t.mat[s][j];
+                if(temp.mat[i][j]>=m)
+                    temp.mat[i][j]%=m;
+            }
+        }
+    }
+    return temp;
+}
+matrix matrix::pow(int K)
+{
+    matrix t=(*this)*(*this);
+    if(K==1)
+        return (*this);
+    else if(K&1)
+    {
+        return t.pow(K>>1)*(*this);
+    }
+    else
+        return t.pow(K>>1);
+}
+matrix matrix::add(int K)
+{
+    if(K==1)
+        return (*this);
+    else if(K&1)
+    {
+        return add(K-1)+pow(K);
+    }
+    else
+    {
+        matrix t=add(K>>1);
+        return t+t*pow(K>>1);
+    }
+}
+/*
+* 
+*/
+int main(int argc, char** argv) {
+    matrix t;
+    int i, j;
+    while (scanf("%d%d%d", &n, &k, &m) != EOF) {
+        t.Init();
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= n; j++) {
+                scanf("%d", &t.mat[i][j]);
+            }
+        }
+        t.add(k).print();
+    }
+    return (EXIT_SUCCESS);
+}

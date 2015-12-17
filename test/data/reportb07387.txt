@@ -1,0 +1,73 @@
+poj 2241 - 宇宙吾心 - 博客园
+
+题意：已知有n（n<30）种类型的block，以及它们的长宽高，每种类型的block都有无限多个。问如果把他们叠起来（上面block的底面的长宽，必须比下面的block的底面长宽都短），最高能有多高。
+代码：
+
+ 
+ #include<iostream>
+#include<fstream>
+using namespace std;
+int n;
+struct e{
+	int s,t,h;
+};
+e a[100];
+int cmp(const void *a,const void *b){
+	return (*(e *)a).s-(*(e *)b).s;
+}
+int dp[101];
+void read(){
+//	ifstream cin("in.txt");
+	int i,j,k=0,s,t,h;
+	while(cin>>n)
+	{
+		if(n==0) return;
+		k++;
+		printf("Case %d: maximum height = ",k);
+		for(i=1;i<=n;i++)
+		{
+			cin>>s>>t>>h;
+			int x,y,v;
+			x=min(s,t);
+			y=max(s,t);
+			v=h;
+			e b;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i-2]=b;
+			x=min(s,h);
+			y=max(s,h);
+			v=t;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i-1]=b;
+			x=min(t,h);
+			y=max(t,h);
+			v=s;
+			b.s=x;
+			b.t=y;
+			b.h=v;
+			a[3*i]=b;
+		}
+		qsort(a+1,3*n,sizeof(e),cmp);
+		n=3*n;
+		for(i=1;i<=n;i++)
+			dp[i]=a[i].h;
+		for(i=2;i<=n;i++)
+			for(j=1;j<i;j++)
+				if(a[i].s>a[j].s&&a[i].t>a[j].t)
+				{	
+					dp[i]=max(dp[j]+a[i].h,dp[i]);
+				}
+		int ans=0;
+		for(i=1;i<=n;i++)
+			ans=max(ans,dp[i]);
+		cout<<ans<<endl;
+	}
+}
+int main(){
+	read();
+	return 0;
+}

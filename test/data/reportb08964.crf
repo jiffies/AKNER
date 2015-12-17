@@ -1,0 +1,1042 @@
+最	d	N	N	O
+简单	a	N	N	O
+的	uj	N	N	O
+DP	eng	N	N	B-KNOWLEDGE
+，	x	N	N	O
+POJ2760	eng	N	Y	B-OJ
+数字	n	Y	N	O
+三角形	n	Y	N	O
+。	x	N	N	O
+。	x	N	N	O
+。	x	N	N	O
+
+_	x	N	N	O
+王彪	nr	N	N	O
+_	x	N	N	O
+NEU	eng	N	N	O
+_	x	N	N	O
+新浪	nz	N	N	O
+博客	nr	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+2760	m	N	N	O
+:	x	N	N	O
+数字	n	Y	N	O
+三角形	n	Y	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+查看	v	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+提交	v	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+统计	v	Y	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+提示	v	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+提问	v	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+时间	n	N	N	O
+限制	v	Y	N	O
+:	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+1000	m	N	N	O
+ms	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+内存	n	N	N	O
+限制	v	Y	N	O
+:	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+65536	m	N	N	O
+kB	eng	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+描述	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+7	x	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+8	x	N	N	O
+
+	x	N	N	O
+8	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+
+	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+7	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+5	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+5	x	N	N	O
+
+	x	N	N	O
+(	x	N	N	O
+图	n	N	N	O
+1	m	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+图	n	N	N	O
+1	m	N	N	O
+给出	v	N	N	O
+了	ul	N	N	O
+一个	m	N	N	O
+数字	n	Y	N	O
+三角形	n	Y	N	O
+。	x	N	N	O
+
+从	p	N	N	O
+三角形	n	Y	N	O
+的	uj	N	N	O
+顶部	f	N	N	O
+到	v	N	N	O
+底部	f	N	N	O
+有	v	N	N	O
+很多	m	N	N	O
+条	n	N	N	O
+不同	a	N	N	O
+的	uj	N	N	O
+路径	n	Y	N	O
+。	x	N	N	O
+
+对于	p	N	N	O
+每	r	N	N	O
+条	q	N	N	O
+路径	n	Y	N	O
+，	x	N	N	O
+把	p	N	N	O
+路径	n	Y	N	O
+上面	f	N	N	O
+的	uj	N	N	O
+数加	n	Y	N	O
+起来	v	N	N	O
+可以	c	N	N	O
+得到	v	N	N	O
+一个	m	N	N	O
+和	c	N	N	O
+，	x	N	N	O
+你	r	N	N	O
+的	uj	N	N	O
+任务	n	N	N	O
+就是	d	N	N	O
+找到	v	N	N	O
+最大	a	Y	N	O
+的	uj	N	N	O
+和	c	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+注意	v	N	N	O
+：	x	N	N	O
+路径	n	Y	N	O
+上	f	N	N	O
+的	uj	N	N	O
+每	r	N	N	O
+一步	m	N	N	O
+只能	v	N	N	O
+从	p	N	N	O
+一个	m	N	N	O
+数	m	N	N	O
+走到	v	N	N	O
+下	f	N	N	O
+一层	m	N	N	O
+上	f	N	N	O
+和	c	N	N	O
+它	r	N	N	O
+最近	f	N	N	O
+的	uj	N	N	O
+左边	f	N	N	O
+的	uj	N	N	O
+那个	r	N	N	O
+数	n	N	N	O
+或者	c	N	N	O
+右边	f	N	N	O
+的	uj	N	N	O
+那个	r	N	N	O
+数	n	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+输入	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+输入	v	N	N	O
+的	uj	N	N	O
+是	v	N	N	O
+一行	m	N	N	O
+是	v	N	N	O
+一个	m	N	N	O
+整数	n	Y	N	O
+N	x	N	N	O
+ 	x	N	N	O
+(	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+ 	x	N	N	O
+N	x	N	N	O
+ 	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+ 	x	N	N	O
+100	m	N	N	O
+)	x	N	N	O
+，	x	N	N	O
+给出	v	N	N	O
+三角形	n	Y	N	O
+的	uj	N	N	O
+行数	n	N	N	O
+。	x	N	N	O
+
+下面	f	N	N	O
+的	uj	N	N	O
+N	eng	N	N	O
+行	n	N	N	O
+给出	v	N	N	O
+数字	n	Y	N	O
+三角形	n	Y	N	O
+。	x	N	N	O
+
+数字	n	Y	N	O
+三角形	n	Y	N	O
+上	f	N	N	O
+的	uj	N	N	O
+数	m	N	N	O
+的	uj	N	N	O
+范围	n	N	N	O
+都	d	N	N	O
+在	p	N	N	O
+0	m	N	N	O
+和	c	N	N	O
+100	m	N	N	O
+之间	f	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+输出	v	Y	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+输出	v	Y	N	O
+最大	a	Y	N	O
+的	uj	N	N	O
+和	c	N	N	O
+。	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+样例	n	N	N	O
+输入	v	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+5	x	N	N	O
+
+	x	N	N	O
+7	x	N	N	O
+
+	x	N	N	O
+3	x	N	N	O
+ 	x	N	N	O
+8	x	N	N	O
+
+	x	N	N	O
+8	x	N	N	O
+ 	x	N	N	O
+1	x	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+7	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+4	x	N	N	O
+
+	x	N	N	O
+4	x	N	N	O
+ 	x	N	N	O
+5	x	N	N	O
+ 	x	N	N	O
+2	x	N	N	O
+ 	x	N	N	O
+6	x	N	N	O
+ 	x	N	N	O
+5	x	N	N	O
+
+	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+样例	n	N	N	O
+输出	v	Y	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+30	m	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+ 	x	N	N	O
+
+	x	N	N	O
+#	x	N	N	O
+include	eng	N	N	O
+
+	x	N	N	O
+using	eng	N	N	O
+ 	x	N	N	O
+namespace	eng	N	N	O
+ 	x	N	N	O
+std	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+main	eng	N	N	O
+(	x	N	N	O
+)	x	N	N	O
+
+	x	N	N	O
+{	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+100	m	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+100	m	N	N	O
+]	x	N	N	O
+,	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+100	m	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+100	m	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+int	eng	N	N	O
+ 	x	N	N	O
+i	x	N	N	O
+,	x	N	N	O
+j	x	N	N	O
+,	x	N	N	O
+k	x	N	N	O
+,	x	N	N	O
+max	eng	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+max	eng	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+cin	eng	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+
+	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+/	x	N	N	O
+SPAN	eng	N	N	O
+>	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+j	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+j	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+j	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+cin	eng	N	N	O
+>	x	N	N	O
+>	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+0	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+1	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+/	x	N	N	O
+SPAN	eng	N	N	O
+>	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+j	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+j	x	N	N	O
+<	x	N	N	O
+=	x	N	N	O
+i	x	N	N	O
+;	x	N	N	O
+j	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+(	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+<	x	N	N	O
+(	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+)	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+else	eng	N	N	O
+ 	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
+=	x	N	N	O
+m	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+]	x	N	N	O
++	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+j	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+for	eng	Y	N	O
+(	x	N	N	O
+i	x	N	N	O
+=	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+i	x	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+/	x	N	N	O
+SPAN	eng	N	N	O
+>	x	N	N	O
+k	x	N	N	O
+;	x	N	N	O
+i	eng	N	N	O
+++	x	N	N	O
+)	x	N	N	O
+ 	x	N	N	O
+{	x	N	N	O
+ 	x	N	N	O
+if	eng	N	N	O
+(	x	N	N	O
+max	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+/	x	N	N	O
+SPAN	eng	N	N	O
+>	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+k	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+)	x	N	N	O
+max	eng	N	N	O
+=	x	N	N	O
+sum	eng	N	N	O
+[	x	N	N	O
+k	x	N	N	O
+-	x	N	N	O
+1	x	N	N	O
+]	x	N	N	O
+[	x	N	N	O
+i	x	N	N	O
+]	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+ 	x	N	N	O
+cout	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+max	eng	N	N	O
+<	x	N	N	O
+<	x	N	N	O
+endl	eng	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+return	eng	N	N	O
+ 	x	N	N	O
+0	x	N	N	O
+;	x	N	N	O
+ 	x	N	N	O
+}	x	N	N	O
+
+	x	N	N	O
